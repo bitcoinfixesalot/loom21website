@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="homeH2TopTitle" datatype="html">
+        <source>Give your Business Real boost Now!</source>
+        <target>Дайте истински тласък на бизнеса си!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Home top title</note>
+      </trans-unit>
+      <trans-unit id="homeTopSubTitle" datatype="html">
+        <source>Track and manage your inventory, invoices, customers, vendors, payments and more.</source>
+        <target>Проследявайте и управлявайте вашите наличности, фактури, клиенти, доставчици, плащания и други.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Home top sub title</note>
+      </trans-unit>
+      <trans-unit id="demoButton" datatype="html">
+        <source>Explore Demo Account</source>
+        <target>Демо акаунт</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Demo account button</note>
+      </trans-unit>
+      <trans-unit id="tryForFreeButton" datatype="html">
+        <source>Try loom21 for free</source>
+        <target>Опитайте безплатно</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+        <note priority="1" from="description">Try for free button</note>
+      </trans-unit>
+      <trans-unit id="featuresTitle" datatype="html">
+        <source>Features</source>
+        <target>Особености</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">Features title</note>
+      </trans-unit>
+      <trans-unit id="benefitsAndFeatures" datatype="html">
+        <source>Key benefits and platform features …</source>
+        <target>Основни предимства и характеристики на платформата...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="description">Benefits and features</note>
+      </trans-unit>
+      <trans-unit id="noKYC" datatype="html">
+        <source>No KYC! Sign-up with just an email address</source>
+        <target>Без KYC! Регистрирайте се само с имейл адрес</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="description">No kyc</note>
+      </trans-unit>
+      <trans-unit id="acceptPayments" datatype="html">
+        <source>Accept Bitcoin, Lightning, and credit/debit card payments</source>
+        <target>Приемайте плащания с Bitcoin, Lightning и кредитни/дебитни карти</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">Accept Payments</note>
+      </trans-unit>
+      <trans-unit id="manageClientsSuppliers" datatype="html">
+        <source>Manage clients and suppliers</source>
+        <target>Управлявайте клиенти и доставчици</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description">Manage clients and suppliers</note>
+      </trans-unit>
+      <trans-unit id="trackInventory" datatype="html">
+        <source>Track products inventory</source>
+        <target>Проследяване складовите наличности на продукти</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <note priority="1" from="description">Track inventory</note>
+      </trans-unit>
+      <trans-unit id="controlData" datatype="html">
+        <source>Control your own data - Import and Export</source>
+        <target>Контролирайте вашите собствени данни - импортиране и експортиране</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note priority="1" from="description">Control your own data</note>
+      </trans-unit>
+      <trans-unit id="getInvoiceNotification" datatype="html">
+        <source>Get notified when invoices are paid</source>
+        <target>Получавайте известия, когато фактурите са платени</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">Get notified</note>
+      </trans-unit>
+      <trans-unit id="theEasiestWay" datatype="html">
+        <source>The easiest way to get paid in bitcoin</source>
+        <target>Най-лесният начин да получите плащане в биткойни</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">71,72</context>
+        </context-group>
+        <note priority="1" from="description">Get paid in bitcoin</note>
+      </trans-unit>
+      <trans-unit id="sendInvoicesAndPayments" datatype="html">
+        <source>Send invoices with ease. Accept payments with Bitcoin, Lightning or credit/debit cards.</source>
+        <target>Изпращайте фактури с лекота. Приемайте плащания с Bitcoin, Lightning или кредитни/дебитни карти.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">73,74</context>
+        </context-group>
+        <note priority="1" from="description">Send invoices with ease</note>
+      </trans-unit>
+      <trans-unit id="home" datatype="html">
+        <source>Home</source>
+        <target>Начало</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/banner/banner.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="description">Home menu</note>
+      </trans-unit>
+      <trans-unit id="blog" datatype="html">
+        <source>Blog</source>
+        <target>Блог</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/banner/banner.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">Blog menu</note>
+      </trans-unit>
+      <trans-unit id="contact" datatype="html">
+        <source>Contact</source>
+        <target>Контакти</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/banner/banner.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description">contact menu</note>
+      </trans-unit>
+      <trans-unit id="launchApp" datatype="html">
+        <source>Launch App</source>
+        <target>Към Loom21</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/banner/banner.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note priority="1" from="description">Launch app button</note>
+      </trans-unit>
+      <trans-unit id="loom21footer" datatype="html">
+        <source>Track and manage your inventory, invoices, customers, vendors, payments and convert prices between bitcoin and other 45 currencies. </source>
+        <target>Проследявайте и управлявайте своите наличности, фактури, клиенти, доставчици, плащания и конвертирайте цените между биткойни и други 45 валути.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/footer/footer.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+        <note priority="1" from="description">Loom21 footer</note>
+      </trans-unit>
+      <trans-unit id="getInTouch" datatype="html">
+        <source>Get in touch</source>
+        <target>Свържете се с нас</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/footer/footer.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description">Get in touch</note>
+      </trans-unit>
+      <trans-unit id="faq" datatype="html">
+        <source>FAQ</source>
+        <target>Често задавани въпроси</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/footer/footer.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note priority="1" from="description">Faq</note>
+      </trans-unit>
+      <trans-unit id="roadMap" datatype="html">
+        <source>Roadmap</source>
+        <target>План за развитие</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/footer/footer.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <note priority="1" from="description">Road map</note>
+      </trans-unit>
+      <trans-unit id="privacy" datatype="html">
+        <source>Privacy</source>
+        <target>Поверителност</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/footer/footer.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <note priority="1" from="description">Privacy</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
