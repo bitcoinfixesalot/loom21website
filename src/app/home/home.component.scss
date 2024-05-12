@@ -1,0 +1,32 @@
+.test{
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
+    -webkit-box-shadow: 0px 5px 20px rgba(0,0,0,.05)!important;
+
+
+}
+
+// .card-heading p {
+//     display: inline-block;
+//   }
+    
+//   .card-heading .icon-holder {
+//     display: inline-block;
+//     vertical-align: middle;
+//   }
+
+   /* Removing the list style of list gfg */
+.gfg{
+    list-style-type:none;
+    margin-left: 0;
+    padding-left: 0;
+}
+  
+/* Adding icon before each list icon */
+.gfg > li:before{
+    content: 'check';
+    font-family: 'Material Icons';
+    font-size: 24px;
+    vertical-align: -16%;
+    margin-right: 8px;
+}
