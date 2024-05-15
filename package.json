@@ -4,10 +4,16 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && node copy-proxy-server.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:loom21website": "node dist/loom21website/server/server.mjs"
+    "serve:ssr:loom21website": "node dist/loom21website/proxy-server.mjs",
+    "dev-bg:ssr": "env LANGUAGE=bg ng run loom21website:serve-ssr --o",
+    "dev-en:ssr": "env LANGUAGE=en ng run loom21website:serve-ssr --o",
+    "serve:ssr": "node dist/loom21website/server/main.js --configuration=tr --o",
+    "build:ssr": "ng build && ng run loom21website:server",
+    "prerender": "ng run loom21website:prerender"
+   
   },
   "private": true,
   "dependencies": {

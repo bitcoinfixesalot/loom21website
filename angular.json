@@ -13,6 +13,15 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale":{ 
+          "code":"en"
+        },
+        "locales": {
+          "bg": { "translation": "src/locale/messages.bg.xlf", 
+          "baseHref": "/bg/" }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -38,7 +47,12 @@
             "prerender": true,
             "ssr": {
               "entry": "server.ts"
-            }
+            },
+            "localize": true,
+            "i18nMissingTranslation": "warning",
+            "i18nDuplicateTranslation": "warning"
+            
+
           },
           "configurations": {
             "production": {
@@ -59,7 +73,11 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "localize": [
+                "en"
+              ],
+              "baseHref": "/en/"
             }
           },
           "defaultConfiguration": "production"
@@ -72,6 +90,9 @@
             },
             "development": {
               "buildTarget": "loom21website:build:development"
+            },
+            "bg": {
+              "buildTarget": "loom21website:build:bg"
             }
           },
           "defaultConfiguration": "development"
