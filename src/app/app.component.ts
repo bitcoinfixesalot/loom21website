@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { TAGS } from './constants/localized-const';
 import { BannerComponent } from './banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
+import { CommonModule } from '@angular/common';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, BannerComponent, FooterComponent],
+  imports: [RouterOutlet, BannerComponent, FooterComponent, CommonModule,RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
