@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule, ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+import { EmailService } from '../services/email.service';
 
 @Component({
   selector: 'app-contact',
@@ -13,7 +14,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ContactComponent {
   form: UntypedFormGroup;
   constructor(private formBuilder: UntypedFormBuilder,
-    private route: ActivatedRoute,) { 
+    private emailService: EmailService) { 
     this.form = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -25,6 +26,7 @@ export class ContactComponent {
   get name() { return this.form.get('name'); }
   get email() { return this.form.get('email'); }
   get message() { return this.form.get('message'); }
+  get business() { return this.form.get('business'); }
   
   
   ngOnInit(): void {
@@ -35,6 +37,23 @@ export class ContactComponent {
       console.log("form invalid");
       return;
     }
-    console.log("submit")
+    const to = 'svetlan.atanasov@gmail.com';
+    const subject = 'loom21 contacted';
+    const content = `
+      <html>
+      <body>
+        <h1>From ${this.business} - ${this.name} - ${this.email}</h1>
+        <p>${this.message}</p>
+      </body>
+      </html>
+    `
+    
+    this.emailService.sendEmail(to, subject, content)
+      .then(() => {
+        console.log('Email sent successfully');
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error);
+      });
   }
 }
