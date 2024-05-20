@@ -58,6 +58,12 @@
                                                     Message is required.
                                                 </div>
                                             </div>
+                                            <div *ngIf="showSuccess"
+                                                class="alert alert-success">
+                                                <div>
+                                                    {{successMessage}}
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">

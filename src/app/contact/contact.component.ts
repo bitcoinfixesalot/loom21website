@@ -12,6 +12,9 @@ import { EmailService } from '../services/email.service';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+
+  showSuccess: boolean = false;
+  successMessage = "Thank You! Your message has been received. We'll get back to you soon." 
   form: UntypedFormGroup;
   constructor(private formBuilder: UntypedFormBuilder,
     private emailService: EmailService) { 
@@ -50,6 +53,7 @@ export class ContactComponent {
     
     this.emailService.sendEmail(to, subject, content)
       .then(() => {
+        this.showSuccess = true;
         console.log('Email sent successfully');
       })
       .catch((error) => {
