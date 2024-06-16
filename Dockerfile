@@ -1,44 +1,15 @@
-FROM node:20.11.0
-
-WORKDIR /app
-COPY . .
-
-RUN apt-get update 
-RUN apt-get install curl gnupg -y
-RUN curl -sL https://deb.nodesource.com/setup_20.x | bash -
-RUN apt-get install nodejs -y
-RUN node -v
-RUN npm -v
-#Angular build
-#FROM node as nodebuilder
-# set working directory
-RUN mkdir /usr/src/app
-WORKDIR /usr/src/app
-
-# add `/usr/src/app/node_modules/.bin` to $PATH
-ENV PATH /usr/src/app/node_modules/.bin:$PATH
-
-
-# install and cache app dependencies
-COPY package.json /usr/src/app/package.json
-RUN npm install
-RUN npm install -g @angular/cli
-
-# add app
-
-COPY . /usr/src/app
-
+FROM node:18-alpine as build
+WORKDIR /app/src
+COPY package*.json ./
+RUN npm ci
+COPY . ./
 RUN npm run build
 
-#End Angular build
-
-WORKDIR /app
-#COPY --from=publish /app/publish .
-RUN mkdir -p /app/dist
-COPY /usr/src/app/dist/. /app/dist/
-
-RUN rm -rf node_modules
+FROM node:18-alpine
+WORKDIR /usr/app
+COPY --from=build /app/src/dist/loom21website ./
+RUN npm install express
 
 EXPOSE 4000
 
-CMD ["node", "dist/loom21website/proxy-server.mjs"]
+CMD ["node", "proxy-server.mjs"]
