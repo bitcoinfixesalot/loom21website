@@ -1,18 +1,20 @@
 # Documentation Overview
 
 ## Settings
-- **General settings**  
+### General settings  
   On this page, you can change your default store, language, currency, VAT settings, show/hide bitcoin prices, or switch between light and dark mode.
-- **BTCPay Server**  
+### BTCPay Server  
   To accept bitcoin payments, you need to set your BTCPay Server URL and API Key.
-- **Stripe**  
+### Stripe  
   To accept fiat payments through Stripe, you need to set Stripe Publishable and Secret keys.
-- **Product Categories**  
+### Product Categories  
   Categorize your products for better organization, making them easier to find.
-- **Measures**  
+### Measures  
   Set product/service measures.
-- **Import Templates**  
+### Import Templates  
   If you already have a list of products/services, customers, and suppliers, you can import them directly into the system.
+<br><br> <br> 
+
 
 ## Accounts
 - You can invite as many users to your organization as needed.
@@ -28,5 +30,5 @@
 ## Products
 ## Services
 ## Deliveries
-## Sales
 ## Customers
+## Sales
