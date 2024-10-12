@@ -1,15 +1,23 @@
 import { ApplicationConfig, SecurityContext } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { provideRouter, withInMemoryScrolling } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { HttpClient, provideHttpClient } from '@angular/common/http';
-import { provideMarkdown } from 'ngx-markdown';
+import { MARKED_OPTIONS, provideMarkdown } from 'ngx-markdown';
+import { markedOptionsFactory } from './marked-options-factory';
+import { AnchorService } from './services/anchor.service';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes)
+  providers: [provideRouter(routes, withInMemoryScrolling({anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled'}))
     ,provideHttpClient()
     , provideClientHydration()
     ,provideMarkdown({
-    loader: HttpClient,sanitize: SecurityContext.NONE,}) ]
+    loader: HttpClient,
+    markedOptions: {
+      provide: MARKED_OPTIONS,
+      useFactory: markedOptionsFactory,
+      deps: [AnchorService],
+    },
+    sanitize: SecurityContext.NONE,}) ]
 };
