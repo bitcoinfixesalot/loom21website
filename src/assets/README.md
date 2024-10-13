@@ -56,12 +56,6 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <!-- <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li> -->
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -101,12 +95,9 @@
 In order to start using the loom21 app you need to create an account.
 
 ### Create Account
+![Sign Up to app.loom21.com](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sign-up-light.PNG)
+- After you sign up you will receive a confirmation email to confirm you account.
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 ### Sign In <a id="sign-in"></a>
 
