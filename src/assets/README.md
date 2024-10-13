@@ -56,20 +56,37 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
+    <!-- <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
-    </li>
+    </li> -->
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#create-account">Create Account</a></li>
+        <li><a href="#sign-in">Sign In</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li>
+      <a href="#settings">Settings</a>
+      <ul>
+        <li><a href="#general-settings">General settings</a></li>
+        <li><a href="#btcpay-server">BTCPay Server</a></li>
+        <li><a href="#stripe">Stripe</a></li>
+        <li><a href="#product-categories">Product Categories</a></li>
+        <li><a href="#measures">Measures</a></li>
+        <li><a href="#import-templates">Import Templates</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#sales">Sales</a>
+      <ul>
+        <li><a href="#add-edit-sales">Add/Edit Sales</a></li>
+        <li><a href="#payments">Payments</a></li>
+      </ul>
+    </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -78,41 +95,12 @@
   </ol>
 </details>
 
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- GETTING STARTED -->
-## Getting Started
+## Getting Started<a id="getting-started"></a>
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+In order to start using the loom21 app you need to create an account.
 
-### Prerequisites
+### Create Account
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
@@ -120,7 +108,7 @@ This is an example of how to list things you need to use the software and how to
   npm install npm@latest -g
   ```
 
-### Installation
+### Sign In <a id="sign-in"></a>
 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
@@ -146,15 +134,75 @@ This is an example of how to list things you need to use the software and how to
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Settings
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Setting up your organization.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+### General settings
+
+![General Settings Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/general-setting-light.PNG)
+- On this page, you can update your default store, language, currency, VAT settings, toggle Bitcoin prices on or off, and switch between light and dark mode.
+- You can also set your address, which will appear on invoices.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### BTCPay Server
+
+![BTCPay Server Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/btcpay-server-light.PNG)
+- To enable Bitcoin payments, you must configure your BTCPay Server URL and API Key.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Stripe
 
+![Stripe Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/stripe-light.PNG)
+- To accept fiat payments via Stripe, you need to configure your Stripe Publishable and Secret keys.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Product Categories
+
+![Product Categories Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/product-categories-light.PNG)
+- Organize your products into categories for easier browsing and improved management.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Measures
+
+![Measures Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/measures-light.PNG)  
+- Define measurement units for your products or services.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Import Templates
+
+![Import Templates Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/import-templates-light.PNG)
+- If you already have a list of products, services, customers, or suppliers, you can import them directly into the system.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Sales<a id="sales"></a>
+You can create a new Sale by pressing the button "New Order" 
+or edit existing one by clicking on the purple arrow.
+![Sales list](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sales-list-light.PNG)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Add/Edit Sales <a id="add-edit-sales"></a>
+![Add new sale order](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sale-add-new-light.PNG)
+ - On the right side of the page, you can enter your order information, and optionally select the store from which you are dispatching (not applicable for services). This selection will be factored into your inventory calculations.
+  - You can add products or services individually, or search and multi-select by clicking on "Select Items."
+  - When selecting a customer, their address will automatically populate, but you can modify it if necessary.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Payments <a id="payments"></a>
+![Saved sale order](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sale-order-saved-light.PNG)
+  - Once your order is saved, payment and share buttons will appear, allowing you to either complete the payment directly or generate and send payment links to your customer.
+  - Payments can be made using fiat currency or Bitcoin.
+  - You can also generate and share or print documents such as quotes, invoices, receipts, or pickup lists.
+  > All features within the application are protected by authentication, except for the links generated through the share button.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -167,8 +215,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
