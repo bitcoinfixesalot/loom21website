@@ -81,6 +81,7 @@
         <li><a href="#payments">Payments</a></li>
       </ul>
     </li>
+    <li><a href="#accounts">Accounts</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -129,28 +130,28 @@ In order to start using the loom21 app you need to create an account.
 
 Setting up your organization.
 
-### General settings
+### General settings <a id="general-settings"></a>
 
 ![General Settings Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/general-setting-light.PNG)
 - On this page, you can update your default store, language, currency, VAT settings, toggle Bitcoin prices on or off, and switch between light and dark mode.
 - You can also set your address, which will appear on invoices.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### BTCPay Server
+### BTCPay Server<a id="btcpay-server"></a>
 
 ![BTCPay Server Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/btcpay-server-light.PNG)
 - To enable Bitcoin payments, you must configure your BTCPay Server URL and API Key.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Stripe
+### Stripe<a id="stripe"></a>
 
 ![Stripe Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/stripe-light.PNG)
 - To accept fiat payments via Stripe, you need to configure your Stripe Publishable and Secret keys.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Product Categories
+### Product Categories <a id="product-categories"></a>
 
 ![Product Categories Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/product-categories-light.PNG)
 - Organize your products into categories for easier browsing and improved management.
@@ -164,7 +165,7 @@ Setting up your organization.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Import Templates
+### Import Templates<a id="import-templates"></a>
 
 ![Import Templates Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/import-templates-light.PNG)
 - If you already have a list of products, services, customers, or suppliers, you can import them directly into the system.
@@ -192,13 +193,29 @@ or edit existing one by clicking on the purple arrow.
 - Payments can be made using fiat currency or Bitcoin.
 - You can also generate and share or print documents such as quotes, invoices, receipts, or pickup lists.
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ![Pay with bitcoin](https://raw.githubusercontent.com/loom21/loom21doc/main/images/pay-with-bitcoin-light.PNG)
-  > All features within the application are protected by authentication, except for the links generated through the share button.
+> :bell: All features within the application are protected by authentication, except for the links generated through the share button.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Accounts <a id="accounts"></a>
+![Invite account](https://raw.githubusercontent.com/loom21/loom21doc/main/images/account-invite-light.PNG)
+- You can invite an unlimited number of users to your organization as needed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Inventory <a id="inventory"></a>
+View and update your product inventory per store.
+
+## Stores <a id="store"></a>
+- Add or edit stores.
+
+## Suppliers <a id="suppliers"></a>
+- View all your vendors, or add and edit new ones.
+## Products and Services <a id="producst-services"></a>
+## Deliveries <a id="deliveries"></a>
+## Customers <a id="customers"></a>
+
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -211,6 +228,9 @@ or edit existing one by clicking on the purple arrow.
 See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -253,18 +273,6 @@ Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_
 Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
