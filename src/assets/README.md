@@ -180,17 +180,22 @@ or edit existing one by clicking on the purple arrow.
 
 ### Add/Edit Sales <a id="add-edit-sales"></a>
 ![Add new sale order](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sale-add-new-light.PNG)
- - On the right side of the page, you can enter your order information, and optionally select the store from which you are dispatching (not applicable for services). This selection will be factored into your inventory calculations.
-  - You can add products or services individually, or search and multi-select by clicking on "Select Items."
-  - When selecting a customer, their address will automatically populate, but you can modify it if necessary.
+- On the right side of the page, you can enter your order information, and optionally select the store from which you are dispatching (not applicable for services). This selection will be factored into your inventory calculations.
+- You can add products or services individually, or search and multi-select by clicking on "Select Items."
+- When selecting a customer, their address will automatically populate, but you can modify it if necessary.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Payments <a id="payments"></a>
 ![Saved sale order](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sale-order-saved-light.PNG)
-  - Once your order is saved, payment and share buttons will appear, allowing you to either complete the payment directly or generate and send payment links to your customer.
-  - Payments can be made using fiat currency or Bitcoin.
-  - You can also generate and share or print documents such as quotes, invoices, receipts, or pickup lists.
+- Once your order is saved, payment and share buttons will appear, allowing you to either complete the payment directly or generate and send payment links to your customer.
+- Payments can be made using fiat currency or Bitcoin.
+- You can also generate and share or print documents such as quotes, invoices, receipts, or pickup lists.
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+![Pay with bitcoin](https://raw.githubusercontent.com/loom21/loom21doc/main/images/pay-with-bitcoin-light.PNG)
   > All features within the application are protected by authentication, except for the links generated through the share button.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
