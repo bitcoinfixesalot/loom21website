@@ -82,6 +82,7 @@
       </ul>
     </li>
     <li><a href="#accounts">Accounts</a></li>
+    <li><a href="#products-services">Products and Services</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -204,15 +205,28 @@ or edit existing one by clicking on the purple arrow.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Products and Services <a id="products-services"></a>
+![Products list](https://raw.githubusercontent.com/loom21/loom21doc/main/images/product-list-light.PNG)
+
+![Product edit](https://raw.githubusercontent.com/loom21/loom21doc/main/images/product-edit-light.PNG)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Inventory <a id="inventory"></a>
+![Inventory](https://raw.githubusercontent.com/loom21/loom21doc/main/images/inventory-light.PNG)
 View and update your product inventory per store.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## Stores <a id="store"></a>
+![Stores](https://raw.githubusercontent.com/loom21/loom21doc/main/images/stores-light.PNG)
 - Add or edit stores.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Suppliers <a id="suppliers"></a>
 - View all your vendors, or add and edit new ones.
-## Products and Services <a id="producst-services"></a>
+
 ## Deliveries <a id="deliveries"></a>
 ## Customers <a id="customers"></a>
 
