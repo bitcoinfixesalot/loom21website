@@ -97,10 +97,9 @@
 In order to start using the loom21 app you need to create an account.
 
 ### Create Account
+After you sign up you will receive a confirmation email to confirm you account.
 ![Sign Up to app.loom21.com](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sign-up-light.PNG)
-- After you sign up you will receive a confirmation email to confirm you account.
-
-
+<!-- 
 ### Sign In <a id="sign-in"></a>
 
 1. Get a free API Key at [https://example.com](https://example.com)
@@ -120,7 +119,7 @@ In order to start using the loom21 app you need to create an account.
    ```sh
    git remote set-url origin github_username/repo_name
    git remote -v # confirm the changes
-   ```
+   ``` -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,44 +131,45 @@ In order to start using the loom21 app you need to create an account.
 Setting up your organization.
 
 ### General settings <a id="general-settings"></a>
-
-![General Settings Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/general-setting-light.PNG)
 - On this page, you can update your default store, language, currency, VAT settings, toggle Bitcoin prices on or off, and switch between light and dark mode.
 - You can also set your address, which will appear on invoices.
+
+![General Settings Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/general-setting-light.PNG)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### BTCPay Server<a id="btcpay-server"></a>
+- To enable Bitcoin payments, you must configure your BTCPay Server URL and API Key.
 
 ![BTCPay Server Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/btcpay-server-light.PNG)
-- To enable Bitcoin payments, you must configure your BTCPay Server URL and API Key.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Stripe<a id="stripe"></a>
+- To accept fiat payments via Stripe, you need to configure your Stripe Publishable and Secret keys.
 
 ![Stripe Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/stripe-light.PNG)
-- To accept fiat payments via Stripe, you need to configure your Stripe Publishable and Secret keys.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Product Categories <a id="product-categories"></a>
+- Organize your products into categories for easier browsing and improved management.
 
 ![Product Categories Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/product-categories-light.PNG)
-- Organize your products into categories for easier browsing and improved management.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Measures
+- Define measurement units for your products or services.
 
 ![Measures Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/measures-light.PNG)  
-- Define measurement units for your products or services.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Import Templates<a id="import-templates"></a>
+- If you already have a list of products, services, customers, or suppliers, you can import them directly into the system.
 
 ![Import Templates Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/import-templates-light.PNG)
-- If you already have a list of products, services, customers, or suppliers, you can import them directly into the system.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,17 +181,20 @@ or edit existing one by clicking on the purple arrow.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Add/Edit Sales <a id="add-edit-sales"></a>
-![Add new sale order](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sale-add-new-light.PNG)
 - On the right side of the page, you can enter your order information, and optionally select the store from which you are dispatching (not applicable for services). This selection will be factored into your inventory calculations.
 - You can add products or services individually, or search and multi-select by clicking on "Select Items."
 - When selecting a customer, their address will automatically populate, but you can modify it if necessary.
 
+![Add new sale order](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sale-add-new-light.PNG)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Payments <a id="payments"></a>
-![Saved sale order](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sale-order-saved-light.PNG)
 - Once your order is saved, payment and share buttons will appear, allowing you to either complete the payment directly or generate and send payment links to your customer.
-- Payments can be made using fiat currency or Bitcoin.
+
+![Saved sale order](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sale-order-saved-light.PNG)
+
+- Payments can be made using your local currency or Bitcoin.
 - You can also generate and share or print documents such as quotes, invoices, receipts, or pickup lists.
 
 ![Pay with bitcoin](https://raw.githubusercontent.com/loom21/loom21doc/main/images/pay-with-bitcoin-light.PNG)
@@ -200,27 +203,44 @@ or edit existing one by clicking on the purple arrow.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Accounts <a id="accounts"></a>
-![Invite account](https://raw.githubusercontent.com/loom21/loom21doc/main/images/account-invite-light.PNG)
 - You can invite an unlimited number of users to your organization as needed.
+
+![Invite account](https://raw.githubusercontent.com/loom21/loom21doc/main/images/account-invite-light.PNG)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Products and Services <a id="products-services"></a>
+On this page, you can efficiently manage your products
+- Easily find products by name, category, or specific measurements.
+- Seamlessly import product lists from external sources.
+- Add new products or update existing ones with just a click. Simply press the button to create new or the purple arrow icon to modify product details.
+
 ![Products list](https://raw.githubusercontent.com/loom21/loom21doc/main/images/product-list-light.PNG)
+
+On the next picture you can see the product details. The following fields and options are available:
+- Product Name: Set or update the full name of the product.
+- Abbreviation: Define a short form or acronym for easier reference.
+- Category: Assign the product to a relevant category for better organization.
+- Measure: Specify the unit of measurement (e.g., liters, kilograms).
+- Code & Note: Add unique product codes or internal notes.
+- Barcode & QR Code: Generate and manage barcodes and QR codes for the product.
+- Price Calculation: Convert prices between your local currency and Bitcoin, and vice versa.
 
 ![Product edit](https://raw.githubusercontent.com/loom21/loom21doc/main/images/product-edit-light.PNG)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Inventory <a id="inventory"></a>
-![Inventory](https://raw.githubusercontent.com/loom21/loom21doc/main/images/inventory-light.PNG)
 View and update your product inventory per store.
+
+![Inventory](https://raw.githubusercontent.com/loom21/loom21doc/main/images/inventory-light.PNG)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Stores <a id="store"></a>
-![Stores](https://raw.githubusercontent.com/loom21/loom21doc/main/images/stores-light.PNG)
 - Add or edit stores.
+
+![Stores](https://raw.githubusercontent.com/loom21/loom21doc/main/images/stores-light.PNG)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
