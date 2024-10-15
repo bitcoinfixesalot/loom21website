@@ -230,10 +230,7 @@ On the next picture you can see the product details. The following fields and op
 
 #### Services Management
 
-Services are managed in a similar way to products. You can create, edit, and categorize services just like products. However, services differ in that they are not included in inventory calculations, as they don't affect stock levels or require physical tracking.
-
-
-
+> :bell: Services are managed in a similar way to products. You can create, edit, and categorize services just like products. However, services differ in that they are not included in inventory calculations, as they don't affect stock levels or require physical tracking.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Inventory <a id="inventory"></a>
