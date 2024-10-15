@@ -234,7 +234,8 @@ On the next picture you can see the product details. The following fields and op
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Inventory <a id="inventory"></a>
-View and update your product inventory per store.
+On this page, you can view and update the inventory of products across different stores. The inventory is automatically calculated based on sales and deliveries, ensuring accurate stock levels. You can manually adjust inventory if needed, giving you full control over product availability per location.
+
 
 ![Inventory](https://raw.githubusercontent.com/loom21/loom21doc/main/images/inventory-light.PNG)
 
