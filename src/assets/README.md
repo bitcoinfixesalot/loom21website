@@ -253,7 +253,7 @@ On this page, you can view and update the inventory of products across different
 
 ## Deliveries <a id="deliveries"></a>
 ## Customers <a id="customers"></a>
-
+![Customers](https://raw.githubusercontent.com/loom21/loom21doc/main/images/customers-light.PNG)
 
 <!-- ROADMAP -->
 ## Roadmap
