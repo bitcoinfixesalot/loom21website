@@ -253,7 +253,15 @@ On this page, you can view and update the inventory of products across different
 
 ## Deliveries <a id="deliveries"></a>
 ## Customers <a id="customers"></a>
-![Customers](https://raw.githubusercontent.com/loom21/loom21doc/main/images/customers-light.PNG)
+This page allows you to easily manage your customer database. Key features include:
+- Search Customers: Quickly find customers by name using the search bar.
+- Import Customers: Bring in customer data from external sources.
+- Create or Edit Customers: Add new customers by pressing the blue button or modify existing customer details by clicking the purple arrow.
+
+![Customers list](https://raw.githubusercontent.com/loom21/loom21doc/main/images/customers-light.PNG)
+
+![Customer Edit](https://raw.githubusercontent.com/loom21/loom21doc/main/images/customer-edit-light.PNG)
+
 
 <!-- ROADMAP -->
 ## Roadmap
