@@ -83,6 +83,7 @@
     </li>
     <li><a href="#accounts">Accounts</a></li>
     <li><a href="#products-services">Products and Services</a></li>
+    <li><a href="#customers-suppliers">Customers and Suppliers</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -252,26 +253,33 @@ On this page, you can view and update the inventory of products across different
 - View all your vendors, or add and edit new ones.
 
 ## Deliveries <a id="deliveries"></a>
-## Customers <a id="customers"></a>
+## Customers and Suppliers <a id="customers-suppliers"></a>
 This page allows you to easily manage your customer database. Key features include:
 - Search Customers: Quickly find customers by name using the search bar.
 - Import Customers: Bring in customer data from external sources.
 - Create or Edit Customers: Add new customers by pressing the blue button or modify existing customer details by clicking the purple arrow.
 
 ![Customers list](https://raw.githubusercontent.com/loom21/loom21doc/main/images/customers-light.PNG)
+On this page, you can manage and update detailed information for each customer. The available fields include:
+
+#### Customer Details
+Customer Name: Set or modify the customer’s full name.
+Contact Information: Add primary contact details.
+Tax Number: Input the customer’s tax identification number.
+Phone & Email: Provide the customer’s phone number and email address.
+Website: Add the customer’s website, if applicable.
+Multiple Addresses: Manage and store multiple addresses for the customer.
 
 ![Customer Edit](https://raw.githubusercontent.com/loom21/loom21doc/main/images/customer-edit-light.PNG)
 
+#### Suppliers Management
 
-<!-- ROADMAP -->
-## Roadmap
+Suppliers are managed similarly to customers, with the same ability to search, import, create, and edit their information. However, the key distinction is in their usage:
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- Suppliers are selected during Deliveries Management.
+- Customers are selected during Sales Management.
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+This ensures that suppliers are linked to product supply, while customers are tied to sales transactions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
