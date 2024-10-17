@@ -56,11 +56,6 @@
     <li><a href="#accounts">Accounts</a></li>
     <li><a href="#products-services">Products and Services</a></li>
     <li><a href="#customers-suppliers">Customers and Suppliers</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -218,10 +213,8 @@ On this page, you can view and update the inventory of products across different
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Suppliers <a id="suppliers"></a>
-- View all your vendors, or add and edit new ones.
-
 ## Deliveries <a id="deliveries"></a>
+
 ## Customers and Suppliers <a id="customers-suppliers"></a>
 This page allows you to easily manage your customer database. Key features include:
 - Search Customers: Quickly find customers by name using the search bar.
@@ -251,8 +244,6 @@ Suppliers are managed similarly to customers, with the same ability to search, i
 This ensures that suppliers are linked to product supply, while customers are tied to sales transactions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 
 ### Top contributors:
