@@ -218,6 +218,8 @@ On this page, you can view and update the inventory of products across different
 
 ![Deliveries List](https://raw.githubusercontent.com/loom21/loom21doc/main/images/deliveries-list-light.PNG)
 
+![Delivery Edit](https://raw.githubusercontent.com/loom21/loom21doc/main/images/delivery-edit-light.PNG)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Customers and Suppliers <a id="customers-suppliers"></a>
