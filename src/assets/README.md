@@ -56,6 +56,7 @@
     <li><a href="#accounts">Accounts</a></li>
     <li><a href="#products-services">Products and Services</a></li>
     <li><a href="#customers-suppliers">Customers and Suppliers</a></li>
+    <li><a href="#deliveries">Deliveries</a></li>
   </ol>
 </details>
 
@@ -214,6 +215,10 @@ On this page, you can view and update the inventory of products across different
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Deliveries <a id="deliveries"></a>
+
+![Deliveries List](https://raw.githubusercontent.com/loom21/loom21doc/main/images/deliveries-list-light.PNG)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Customers and Suppliers <a id="customers-suppliers"></a>
 This page allows you to easily manage your customer database. Key features include:
