@@ -56,7 +56,7 @@
     <li><a href="#accounts">Accounts</a></li>
     <li><a href="#products-services">Products and Services</a></li>
     <li><a href="#customers-suppliers">Customers and Suppliers</a></li>
-    <li><a href="#deliveries">Deliveries</a></li>
+    <li><a href="#deliveries">Delivery Orders</a></li>
   </ol>
 </details>
 
@@ -214,7 +214,11 @@ On this page, you can view and update the inventory of products across different
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Deliveries <a id="deliveries"></a>
+## Delivery Orders <a id="deliveries"></a>
+On this page, you can efficiently manage your delivery orders. Key actions include:
+
+- Create New Orders: Press the blue button to create a new delivery order.
+- Search Existing Orders: Use the search function to find existing orders, and press the purple arrow icon to edit them.
 
 ![Deliveries List](https://raw.githubusercontent.com/loom21/loom21doc/main/images/deliveries-list-light.PNG)
 
