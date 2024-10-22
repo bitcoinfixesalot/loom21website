@@ -227,13 +227,14 @@ On this page, you can efficiently manage your delivery orders. Key actions inclu
 On this page, you can manage the details of each delivery order:
 
 Left Section: Fill in the order information, including:
-Order number
-Status
-Due date
-Tax details
-Payment method
-Store location for delivery
-Any additional remarks, if needed.
+- Order number
+- Status
+- Due date
+- Tax details
+- Payment method
+- Store location for delivery
+- Any additional remarks, if needed.
+
 Main Section: Select the products to be delivered.
 Additionally, you can use the Print button to generate and print an invoice, receipt, or pickup list.
 
