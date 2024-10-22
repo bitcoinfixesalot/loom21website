@@ -252,12 +252,12 @@ This page allows you to easily manage your customer database. Key features inclu
 On this page, you can manage and update detailed information for each customer. The available fields include:
 
 #### Customer Details
-Customer Name: Set or modify the customer’s full name.
-Contact Information: Add primary contact details.
-Tax Number: Input the customer’s tax identification number.
-Phone & Email: Provide the customer’s phone number and email address.
-Website: Add the customer’s website, if applicable.
-Multiple Addresses: Manage and store multiple addresses for the customer.
+- Customer Name: Set or modify the customer’s full name.
+- Contact Information: Add primary contact details.
+- Tax Number: Input the customer’s tax identification number.
+- Phone & Email: Provide the customer’s phone number and email address.
+- Website: Add the customer’s website, if applicable.
+- Multiple Addresses: Manage and store multiple addresses for the customer.
 
 ![Customer Edit](https://raw.githubusercontent.com/loom21/loom21doc/main/images/customer-edit-light.PNG)
 
