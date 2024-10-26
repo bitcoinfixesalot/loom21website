@@ -66,8 +66,8 @@
 In order to start using the loom21 app you need to create an account.
 
 ### Create Account
-After you sign up you will receive a confirmation email to confirm you account.
-![Sign Up to app.loom21.com](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sign-up-light.PNG)
+After you sign up you will receive a confirmation email to confirm you account and then you can sign in.
+![Sign Up to app.loom21.com](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sign-up-and-in-light.PNG)
 <!-- 
 ### Sign In <a id="sign-in"></a>
 
@@ -140,8 +140,8 @@ Setting up your organization.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Sales<a id="sales"></a>
-You can create a new Sale by pressing the button "New Order" 
-or edit existing one by clicking on the purple arrow.
+- You can create a new Sale by pressing the button "New Order" or edit existing one by clicking on the purple arrow.
+
 ![Sales list](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sales-list-light.PNG)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
