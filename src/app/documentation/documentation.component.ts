@@ -1,4 +1,4 @@
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef, Inject, LOCALE_ID, OnInit } from '@angular/core';
 import { MarkdownComponent } from 'ngx-markdown';
 
 @Component({
@@ -8,12 +8,19 @@ import { MarkdownComponent } from 'ngx-markdown';
   templateUrl: './documentation.component.html',
   styleUrl: './documentation.component.scss'
 })
-export class DocumentationComponent {
+export class DocumentationComponent implements OnInit {
   headings: Element[] | undefined;
 
-  constructor(
+  constructor(@Inject(LOCALE_ID) protected localeId: string,
     //private elementRef: ElementRef<HTMLElement>,
   ) { }
+
+  ngOnInit(): void {
+    console.log('locale', this.localeId);
+    if(this.localeId !== "en")
+      this.srcPath = 'assets/README-bg.md';
+  }
+
   srcPath = 'assets/README.md'//"https://raw.githubusercontent.com/loom21/loom21doc/main/README.md";
   // onLoad(): void {
   //   this.stripContent();
