@@ -68,27 +68,6 @@ In order to start using the loom21 app you need to create an account.
 ### Create Account
 After you sign up you will receive a confirmation email to confirm you account and then you can sign in.
 ![Sign Up to app.loom21.com](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sign-up-and-in-light.PNG)
-<!-- 
-### Sign In <a id="sign-in"></a>
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ``` -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
