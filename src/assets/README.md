@@ -216,7 +216,7 @@ Left Section: Fill in the order information, including:
 - Order number
 - Status
 - Due date
-- Tax details
+- Include Tax
 - Payment method
 - Store location for delivery
 - Any additional remarks, if needed.
@@ -258,19 +258,12 @@ This ensures that suppliers are linked to product supply, while customers are ti
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-### Top contributors:
-
-<a href="https://github.com/github_username/repo_name/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
-</a>
-
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+loom21 - [@loom21app](https://x.com/loom21app)
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/loom21/loom21doc](https://github.com/loom21/loom21doc)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
