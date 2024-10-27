@@ -16,8 +16,8 @@
     <a href="https://github.com/loom21/loom21doc" target="_blank"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
+    <!-- <a href="https://github.com/loom21/demo">View Demo</a>
+    · -->
     <a href="https://github.com/loom21/loom21doc/issues" target="_blank">Report Bug</a>
     ·
     <a href="https://github.com/loom21/loom21doc/issues" target="_blank">Request Feature</a>
