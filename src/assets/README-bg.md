@@ -19,44 +19,44 @@
   <summary>Съдържание</summary>
   <ol>
     <li>
-      <a href="#getting-started">Как да започнете</a>
+      <a href="#getting-started">Начало</a>
       <ul>
         <li><a href="#create-account">Създайте акаунт</a></li>
-        <li><a href="#sign-in">Влезте</a></li>
+        <li><a href="#sign-in">Вход</a></li>
       </ul>
     </li>
     <li>
       <a href="#sales">Продажби</a>
       <ul>
-        <li><a href="#add-edit-sales">Добавяне/Редактиране на продажби</a></li>
+        <li><a href="#add-edit-sales">Добавяне/Редакция на продажби</a></li>
         <li><a href="#payments">Плащания</a></li>
       </ul>
     </li>
     <li>
       <a href="#settings">Настройки</a>
       <ul>
-        <li><a href="#general-settings">Общи настройки</a></li>
-        <li><a href="#btcpay-server">Сървър BTCPay</a></li>
+        <li><a href="#general-settings">Основни настройки</a></li>
+        <li><a href="#btcpay-server">BTCPay Сървър</a></li>
         <li><a href="#stripe">Stripe</a></li>
-        <li><a href="#product-categories">Категории на продуктите</a></li>
-        <li><a href="#measures">Мерки</a></li>
-        <li><a href="#import-templates">Шаблони за импортиране</a></li>
+        <li><a href="#product-categories">Категории продукти</a></li>
+        <li><a href="#measures">Мерни единици</a></li>
+        <li><a href="#import-templates">Шаблони за импорт</a></li>
       </ul>
     </li>
     <li><a href="#accounts">Акаунти</a></li>
     <li><a href="#products-services">Продукти и услуги</a></li>
     <li><a href="#inventory">Инвентар</a></li>
     <li><a href="#customers-suppliers">Клиенти и доставчици</a></li>
-    <li><a href="#deliveries">Поръчки за доставка</a></li>
+    <li><a href="#deliveries">Доставки</a></li>
   </ol>
 </details>
 
 <!-- GETTING STARTED -->
-## Как да започнете<a id="getting-started"></a>
+## Начало<a id="getting-started"></a>
 
-За да започнете да използвате приложението loom21, трябва да създадете акаунт.
+За да започнете да използвате приложението loom21, е необходимо да създадете акаунт.
 
-### Създайте акаунт
+### Създаване на акаунт
 След като се регистрирате, ще получите имейл за потвърждение, за да потвърдите вашия акаунт и след това можете да влезете.
 ![Регистрация в app.loom21.com](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sign-up-and-in-light.PNG)
 
@@ -71,7 +71,7 @@
 <p align="right">(<a href="#readme-top">нагоре</a>)</p>
 
 ### Добавяне/Редактиране на продажби<a id="add-edit-sales"></a>
-- От дясната страна на страницата можете да въведете информацията за вашата поръчка и опционално да изберете магазина, от който изпращате (не важи за услуги). Този избор ще се отрази върху изчисленията ви за инвентар.
+- От дясната страна на екрана можете да въведете информацията за вашата поръчка и опционално да изберете магазина, от който изпращате (не важи за услуги). Този избор ще се отрази върху изчисленията ви за инвентар.
 - Можете да добавяте продукти или услуги поотделно или да търсите и избират много с кликване върху "Изберете артикули".
 - При избора на клиент, адресът му ще се попълни автоматично, но можете да го промените при необходимост.
 
