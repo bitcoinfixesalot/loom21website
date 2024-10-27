@@ -36,6 +36,13 @@
       </ul>
     </li>
     <li>
+      <a href="#sales">Sales</a>
+      <ul>
+        <li><a href="#add-edit-sales">Add/Edit Sales</a></li>
+        <li><a href="#payments">Payments</a></li>
+      </ul>
+    </li>
+    <li>
       <a href="#settings">Settings</a>
       <ul>
         <li><a href="#general-settings">General settings</a></li>
@@ -46,15 +53,9 @@
         <li><a href="#import-templates">Import Templates</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#sales">Sales</a>
-      <ul>
-        <li><a href="#add-edit-sales">Add/Edit Sales</a></li>
-        <li><a href="#payments">Payments</a></li>
-      </ul>
-    </li>
     <li><a href="#accounts">Accounts</a></li>
     <li><a href="#products-services">Products and Services</a></li>
+    <li><a href="#inventory">Inventory</a></li>
     <li><a href="#customers-suppliers">Customers and Suppliers</a></li>
     <li><a href="#deliveries">Delivery Orders</a></li>
   </ol>
@@ -68,6 +69,41 @@ In order to start using the loom21 app you need to create an account.
 ### Create Account
 After you sign up you will receive a confirmation email to confirm you account and then you can sign in.
 ![Sign Up to app.loom21.com](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sign-up-and-in-light.PNG)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SALES AND PAYMENTS -->
+## Sales<a id="sales"></a>
+- You can create a new Sale by pressing the button "New Order" or edit existing one by clicking on the purple arrow.
+
+![Sales list](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sales-list-light.PNG)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Add/Edit Sales <a id="add-edit-sales"></a>
+- On the right side of the page, you can enter your order information, and optionally select the store from which you are dispatching (not applicable for services). This selection will be factored into your inventory calculations.
+- You can add products or services individually, or search and multi-select by clicking on "Select Items."
+- When selecting a customer, their address will automatically populate, but you can modify it if necessary.
+
+![Add new sale order](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sale-add-new-light.PNG)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Payments <a id="payments"></a>
+- Once your order is saved, payment and share buttons will appear, allowing you to either complete the payment directly or generate and send payment links to your customer.
+
+![Saved sale order](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sale-order-saved-light.PNG)
+
+- Payments can be made using your local currency or Bitcoin.
+- You can also generate and share or print documents such as quotes, invoices, receipts, or pickup lists.
+
+![Pay with bitcoin](https://raw.githubusercontent.com/loom21/loom21doc/main/images/pay-with-bitcoin-light.PNG)
+
+- Pay with card
+
+![Pay with card](https://raw.githubusercontent.com/loom21/loom21doc/main/images/payment-order-stripe.PNG)
+
+> :bell: All features within the application are protected by authentication, except for the links generated through the share button.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,40 +151,6 @@ Setting up your organization.
 - If you already have a list of products, services, customers, or suppliers, you can import them directly into the system.
 
 ![Import Templates Setup](https://raw.githubusercontent.com/loom21/loom21doc/main/images/import-templates-light.PNG)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Sales<a id="sales"></a>
-- You can create a new Sale by pressing the button "New Order" or edit existing one by clicking on the purple arrow.
-
-![Sales list](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sales-list-light.PNG)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Add/Edit Sales <a id="add-edit-sales"></a>
-- On the right side of the page, you can enter your order information, and optionally select the store from which you are dispatching (not applicable for services). This selection will be factored into your inventory calculations.
-- You can add products or services individually, or search and multi-select by clicking on "Select Items."
-- When selecting a customer, their address will automatically populate, but you can modify it if necessary.
-
-![Add new sale order](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sale-add-new-light.PNG)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Payments <a id="payments"></a>
-- Once your order is saved, payment and share buttons will appear, allowing you to either complete the payment directly or generate and send payment links to your customer.
-
-![Saved sale order](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sale-order-saved-light.PNG)
-
-- Payments can be made using your local currency or Bitcoin.
-- You can also generate and share or print documents such as quotes, invoices, receipts, or pickup lists.
-
-![Pay with bitcoin](https://raw.githubusercontent.com/loom21/loom21doc/main/images/pay-with-bitcoin-light.PNG)
-
-- Pay with card
-
-![Pay with card](https://raw.githubusercontent.com/loom21/loom21doc/main/images/payment-order-stripe.PNG)
-
-> :bell: All features within the application are protected by authentication, except for the links generated through the share button.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
