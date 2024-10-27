@@ -143,6 +143,11 @@ Setting up your organization.
 - You can also generate and share or print documents such as quotes, invoices, receipts, or pickup lists.
 
 ![Pay with bitcoin](https://raw.githubusercontent.com/loom21/loom21doc/main/images/pay-with-bitcoin-light.PNG)
+
+- Pay with card
+
+![Pay with card](https://raw.githubusercontent.com/loom21/loom21doc/main/images/payment-order-stripe.PNG)
+
 > :bell: All features within the application are protected by authentication, except for the links generated through the share button.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
