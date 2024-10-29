@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { TAGS } from './constants/localized-const';
@@ -6,6 +6,7 @@ import { BannerComponent } from './banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
+import { AnchorService } from './services/anchor.service';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,14 @@ import { ContactComponent } from './contact/contact.component';
 export class AppComponent {
   title = 'loom21website';
 
-   constructor(private meta: Meta) {
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: Event) {
+    this.anchorService.interceptClick(event);
+  }
+  
+
+
+   constructor(private meta: Meta,private anchorService: AnchorService) {
     this.meta.addTags([
       {name: "description", content: TAGS.home_description},
       {name: "keywords", content:TAGS.home_keywords},
