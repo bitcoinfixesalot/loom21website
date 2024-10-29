@@ -7,7 +7,7 @@ import { app as serverBg } from './server/bg/server.mjs';
 const express = require('express');
 
 function run() {
-  const port = process.env.PORT || 4000;
+  const port = process.env.PORT || 80;
   const server = express();
 
   server.use('/bg', serverBg());
@@ -15,7 +15,7 @@ function run() {
   // server.use('/es', serverEs());
   server.use('/en', serverEn());
   server.use('/', serverEn());
-  server.listen(port, () => {
+  server.listen(port, '0.0.0.0', () => {
     console.log(`Node Express server listening on http://localhost:${port}`);
   });
 }
