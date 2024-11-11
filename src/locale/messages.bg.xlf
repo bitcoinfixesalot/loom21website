@@ -65,6 +65,123 @@
         </context-group>
         <note priority="1" from="description">Home keywords tag</note>
       </trans-unit>
+      <trans-unit id="contactUs" datatype="html">
+        <source>Contact Us</source>
+        <target>Пишете ни</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+        <note priority="1" from="description">Contact us title</note>
+      </trans-unit>
+      <trans-unit id="name" datatype="html">
+        <source>Name</source>
+        <target>Име</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <note priority="1" from="description">Name label</note>
+      </trans-unit>
+      <trans-unit id="namePlaceholder" datatype="html">
+        <source>Enter your name...</source>
+        <target>Моля, въведете име</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+        <note priority="1" from="description">Enter your name placeholder</note>
+      </trans-unit>
+      <trans-unit id="nameRequred" datatype="html">
+        <source> Name is required. </source>
+        <target>Моля, въведете име. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">Name requred</note>
+      </trans-unit>
+      <trans-unit id="email" datatype="html">
+        <source>Email Address</source>
+        <target>Имейл адрес</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+        <note priority="1" from="description">Email label</note>
+      </trans-unit>
+      <trans-unit id="emailPlaceholder" datatype="html">
+        <source>Enter your email...</source>
+        <target>Моля въведете имейл</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+        <note priority="1" from="description">Enter your email placeholder</note>
+      </trans-unit>
+      <trans-unit id="emailRequred" datatype="html">
+        <source> Valid email is required. </source>
+        <target>Моля, въведете имейл</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="description">Email requred</note>
+      </trans-unit>
+      <trans-unit id="businessOptional" datatype="html">
+        <source>Business (optional)</source>
+        <target>Фирма (по избор)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+        <note priority="1" from="description">Business label</note>
+      </trans-unit>
+      <trans-unit id="businessPlaceholder" datatype="html">
+        <source>Enter your business...</source>
+        <target>Въведете вашата фирма...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">45,47</context>
+        </context-group>
+        <note priority="1" from="description">Enter your business placeholder</note>
+      </trans-unit>
+      <trans-unit id="inputMessage" datatype="html">
+        <source>Message</source>
+        <target>Съобщение</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+        <note priority="1" from="description">Message label</note>
+      </trans-unit>
+      <trans-unit id="messagePlaceholder" datatype="html">
+        <source>Enter your message...</source>
+        <target>Въведете вашето съобщение...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+        <note priority="1" from="description">Enter your message placeholder</note>
+      </trans-unit>
+      <trans-unit id="messageRequred" datatype="html">
+        <source> Message is required. </source>
+        <target>Моля, въведете съобщение</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <note priority="1" from="description">Message requred</note>
+      </trans-unit>
+      <trans-unit id="submitButton" datatype="html">
+        <source> Submit </source>
+        <target> Изпрати </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+        <note priority="1" from="description">Submit button</note>
+      </trans-unit>
       <trans-unit id="loom21footer" datatype="html">
         <source>Track and manage your inventory, invoices, customers, vendors, payments and convert prices between bitcoin and other 45 currencies. </source>
         <target>Проследявайте и управлявайте своите наличности, фактури, клиенти, доставчици, плащания и конвертирайте цените между биткойни и други 45 валути.</target>
