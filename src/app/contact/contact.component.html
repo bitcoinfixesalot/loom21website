@@ -9,18 +9,18 @@
                 <div class="row m-0">
                     <div class="col-lg-8">
                         <div class="contact-box p-r-40">
-                            <h2 class="title">Contact Us</h2>
+                            <h2 class="title" i18n="Contact us title@@contactUs">Contact Us</h2>
                             <form [formGroup]="form" (ngSubmit)="onSubmit()" data-aos="fade-left"
                                 data-aos-duration="1200">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="form-group m-t-15">
-                                            <label for="name" class="mb-2">Name</label>
+                                            <label for="name" class="mb-2" i18n="Name label@@name">Name</label>
                                             <input formControlName="name" id="name" class="form-control" type="text"
-                                                placeholder="Enter your name..." required>
+                                            i18n-placeholder="Enter your name placeholder@@namePlaceholder" placeholder="Enter your name..." required>
                                             <div *ngIf="name!.invalid && (name!.dirty || name!.touched)"
                                                 class="alert alert-danger">
-                                                <div *ngIf="name!.errors?.['required']">
+                                                <div i18n="Name requred@@nameRequred" *ngIf="name!.errors?.['required']">
                                                     Name is required.
                                                 </div>
                                             </div>
@@ -28,12 +28,11 @@
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-group m-t-15">
-                                            <label for="inputEmail" class="mb-2">Email Address</label>
+                                            <label i18n="Email label@@email" for="inputEmail" class="mb-2">Email Address</label>
                                             <input formControlName="email" id="inputEmail" class="form-control"
-                                                type="text" placeholder="Enter your email...">
-                                            <div *ngIf="email!.invalid && (email!.dirty || email!.touched)"
-                                                class="alert alert-danger">
-                                                <div *ngIf="email!.errors?.['required'] || email!.errors?.['email']">
+                                                i18n-placeholder="Enter your email placeholder@@emailPlaceholder" type="text" placeholder="Enter your email...">
+                                            <div *ngIf="email!.invalid && (email!.dirty || email!.touched)" class="alert alert-danger">
+                                                <div i18n="Email requred@@emailRequred" *ngIf="email!.errors?.['required'] || email!.errors?.['email']">
                                                     Valid email is required.
                                                 </div>
                                             </div>
@@ -41,20 +40,20 @@
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-group m-t-15">
-                                            <label for="inputBusiness" class="mb-2">Business (optional)</label>
+                                            <label i18n="Business label@@businessOptional" for="inputBusiness" class="mb-2">Business (optional)</label>
                                             <input formControlName="business" id="inputBusiness" class="form-control"
-                                                type="text" placeholder="Enter your business...">
+                                                i18n-placeholder="Enter your business placeholder@@businessPlaceholder" type="text" placeholder="Enter your business...">
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
                                         <div class="form-group m-t-15">
-                                            <label for="inputMessage" class="mb-2">Message</label>
+                                            <label i18n="Message label@@inputMessage" for="inputMessage" class="mb-2">Message</label>
                                             <textarea formControlName="message" rows="8" id="inputMessage"
                                                 class="form-control" rows="3"
-                                                placeholder="Enter your message..."></textarea>
+                                                i18n-placeholder="Enter your message placeholder@@messagePlaceholder" placeholder="Enter your message..."></textarea>
                                             <div *ngIf="message!.invalid && (message!.dirty || message!.touched)"
                                                 class="alert alert-danger">
-                                                <div *ngIf="message!.errors?.['required']">
+                                                <div i18n="Message requred@@messageRequred" *ngIf="message!.errors?.['required']">
                                                     Message is required.
                                                 </div>
                                             </div>
@@ -67,8 +66,8 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
-                                        <button type="submit" class="btn waves-effect waves-light btn-primary m-r-20 m-t-5"><span>
-                                                Submit </span></button>
+                                        <button type="submit" class="btn waves-effect waves-light btn-primary m-r-20 m-t-5">
+                                            <span i18n="Submit button@@submitButton"> Submit </span></button>
                                     </div>
                                 </div>
                             </form>
