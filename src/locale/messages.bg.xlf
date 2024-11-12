@@ -139,7 +139,7 @@
       </trans-unit>
       <trans-unit id="businessPlaceholder" datatype="html">
         <source>Enter your business...</source>
-        <target>Въведете вашата фирма...</target>
+        <target>Моля въведете фирма</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
           <context context-type="linenumber">45,47</context>
@@ -157,7 +157,7 @@
       </trans-unit>
       <trans-unit id="messagePlaceholder" datatype="html">
         <source>Enter your message...</source>
-        <target>Въведете вашето съобщение...</target>
+        <target>Моля въведете съобщение</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
           <context context-type="linenumber">53,54</context>
