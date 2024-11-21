@@ -58,7 +58,7 @@
 
 ### Създаване на акаунт
 След като се регистрирате, ще получите имейл за потвърждение, за да потвърдите вашия акаунт и след това можете да влезете в приложението.
-![Регистрация в app.loom21.com](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sign-up-and-in-light.PNG)
+![Регистрация в app.loom21.com](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/sign-up-and-in-light.PNG)
 
 <p align="right">(<a href="#readme-top">нагоре</a>)</p>
 
@@ -66,7 +66,7 @@
 ## Продажби<a id="sales"></a>
 - Можете да създадете нова продажба, като натиснете бутона "Нова поръчка" или да редактирате съществуваща, като кликнете върху лилавата стрелка.
 
-![Списък с продажби](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sales-list-light.PNG)
+![Списък с продажби](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/sales-list-light.PNG)
 
 <p align="right">(<a href="#readme-top">нагоре</a>)</p>
 
@@ -75,23 +75,23 @@
 - Можете да добавяте продукти или услуги поотделно или да търсите и селектирате повече от един с бутона "Избери".
 - При избор на клиент, адресът му ще се попълни автоматично, но можете да го промените ако е необходимо.
 
-![Добавяне на нова продажба](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sale-add-new-light.PNG)
+![Добавяне на нова продажба](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/sale-add-new-light.PNG)
 
 <p align="right">(<a href="#readme-top">нагоре</a>)</p>
 
 ### Плащания<a id="payments"></a>
 - След като вашата поръчка е запазена, ще се появят бутони за плащане и споделяне, което ви позволява да завършите плащането директно или да генерирате и изпратите линкове за плащане на клиента.
 
-![Запазена поръчка](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sale-order-saved-light.PNG)
+![Запазена поръчка](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/sale-order-saved-light.PNG)
 
 - Плащанията могат да се извършват с избраната от вас валута или с Биткойн.
 - Можете също да генерирате и споделяте или печатате документи като оферти, фактури, касови бележки или списъци за вземане.
 
-![Плащане с биткойн](https://raw.githubusercontent.com/loom21/loom21doc/main/images/pay-with-bitcoin-light.PNG)
+![Плащане с биткойн](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/pay-with-bitcoin-light.PNG)
 
 - Плащане с карта
 
-![Плащане с карта](https://raw.githubusercontent.com/loom21/loom21doc/main/images/payment-order-stripe.PNG)
+![Плащане с карта](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/payment-order-stripe.PNG)
 
 > :bell: Всички функции в приложението са защитени с автентикация, с изключение на линковете, генерирани чрез бутона за споделяне.
 
@@ -105,49 +105,49 @@
 - На тази страница можете да актуализирате вашия основен магазин/склад, език, валута, настройки за ДДС, да включите или изключите цени в биткойни, както и да превключвате между светъл и тъмен режим.
 - Можете също да зададете вашия адрес, който ще се показва на фактурите.
 
-![Общи настройки](https://raw.githubusercontent.com/loom21/loom21doc/main/images/general-setting-light.PNG)
+![Общи настройки](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/general-setting-light.PNG)
 
 <p align="right">(<a href="#readme-top">нагоре</a>)</p>
 
 ### BTCPay Сървър<a id="btcpay-server"></a>
 - За да включите плащания с биткойни, трябва да конфигурирате URL на вашия BTCPay Server и API ключ.
 
-![Настройка на BTCPay Server](https://raw.githubusercontent.com/loom21/loom21doc/main/images/btcpay-server-light.PNG)
+![Настройка на BTCPay Server](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/btcpay-server-light.PNG)
 
 <p align="right">(<a href="#readme-top">нагоре</a>)</p>
 
 ### Stripe<a id="stripe"></a>
 - За да приемате плащания в фиат валута чрез Stripe, трябва да конфигурирате вашите Stripe Publishable и Secret ключове.
 
-![Настройка на Stripe](https://raw.githubusercontent.com/loom21/loom21doc/main/images/stripe-light.PNG)
+![Настройка на Stripe](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/stripe-light.PNG)
 
 <p align="right">(<a href="#readme-top">нагоре</a>)</p>
 
 ### Категории на продуктите<a id="product-categories"></a>
 - Организирайте вашите продукти в категории за по-лесно разглеждане и подобрено управление.
 
-![Настройка на категории на продукти](https://raw.githubusercontent.com/loom21/loom21doc/main/images/product-categories-light.PNG)
+![Настройка на категории на продукти](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/product-categories-light.PNG)
 
 <p align="right">(<a href="#readme-top">нагоре</a>)</p>
 
 ### Мерни единици
 - Определете мерните единици за вашите продукти или услуги.
 
-![Настройка на мерки](https://raw.githubusercontent.com/loom21/loom21doc/main/images/measures-light.PNG)  
+![Настройка на мерки](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/measures-light.PNG)  
 
 <p align="right">(<a href="#readme-top">нагоре</a>)</p>
 
 ### Шаблони за импорт<a id="import-templates"></a>
 - Ако вече имате списък с продукти, услуги, клиенти или доставчици, можете да ги импортирате директно в системата.
 
-![Настройка на шаблони за импортиране](https://raw.githubusercontent.com/loom21/loom21doc/main/images/import-templates-light.PNG)
+![Настройка на шаблони за импортиране](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/import-templates-light.PNG)
 
 <p align="right">(<a href="#readme-top">нагоре</a>)</p>
 
 ## Потребители<a id="accounts"></a>
 - Можете да поканите неограничен брой потребители към вашата организация, когато е необходимо и да определите техния достъп.
 
-![Покана за акаунт](https://raw.githubusercontent.com/loom21/loom21doc/main/images/account-invite-light.PNG)
+![Покана за акаунт](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/account-invite-light.PNG)
 
 <p align="right">(<a href="#readme-top">нагоре</a>)</p>
 
@@ -157,7 +157,7 @@
 - Безпроблемно импортирайте списъци с продукти от външни източници.
 - Добавяйте нови продукти или обновявайте съществуващите с едно кликване. Просто натиснете бутона за създаване на нов или лилавата стрелка за редактиране.
 
-![Списък с продукти](https://raw.githubusercontent.com/loom21/loom21doc/main/images/product-list-light.PNG)
+![Списък с продукти](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/product-list-light.PNG)
 
 На следващата картинка можете да видите детайли за продукта. Наличните полета и опции са:
 - Име на продукта: Задайте или обновете пълното име на продукта.
@@ -168,7 +168,7 @@
 - Баркод & QR код: Генерирайте и управлявайте баркове и QR кодове за продукта.
 - Изчисление на цена: Преобразувайте цени между вашата локална валута и Биткойн, и обратно.
 
-![Редактиране на продукт](https://raw.githubusercontent.com/loom21/loom21doc/main/images/product-edit-light.PNG)
+![Редактиране на продукт](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/product-edit-light.PNG)
 
 #### Управление на услуги
 
@@ -179,14 +179,14 @@
 ## Инвентар<a id="inventory"></a>
 На тази страница можете да разгледате и обновите инвентара на продуктите в различни магазини/складове. Инвентарът се изчислява автоматично въз основа на продажбите и доставките, което гарантира точни нива на запасите. Можете ръчно да коригирате инвентара, ако е необходимо, което ви дава пълна контрол върху наличността на продукти по местоположение.
 
-![Инвентар](https://raw.githubusercontent.com/loom21/loom21doc/main/images/inventory-light.PNG)
+![Инвентар](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/inventory-light.PNG)
 
 <p align="right">(<a href="#readme-top">нагоре</a>)</p>
 
 ## Магазини<a id="store"></a>
 - Добавете или редактирайте магазини.
 
-![Магазини](https://raw.githubusercontent.com/loom21/loom21doc/main/images/stores-light.PNG)
+![Магазини](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/stores-light.PNG)
 
 <p align="right">(<a href="#readme-top">нагоре</a>)</p>
 
@@ -196,7 +196,7 @@
 - Създаване на нови поръчки: Натиснете синия бутон за създаване на нова поръчка за доставка.
 - Търсене на съществуващи поръчки: Използвайте функцията за търсене за намиране на съществуващи поръчки и натиснете лилавата стрелка, за да ги редактирате.
 
-![Списък с доставки](https://raw.githubusercontent.com/loom21/loom21doc/main/images/deliveries-list-light.PNG)
+![Списък с доставки](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/deliveries-list-light.PNG)
 
 #### Страница с детайли за поръчка за доставка
 
@@ -214,7 +214,7 @@
 Главна секция: Изберете продуктите, които ще бъдат доставени.
 Освен това, можете да използвате бутона "Печат" за генериране и печат на фактура, касов бон или списък за вземане.
 
-![Редактиране на доставка](https://raw.githubusercontent.com/loom21/loom21doc/main/images/delivery-edit-light.PNG)
+![Редактиране на доставка](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/delivery-edit-light.PNG)
 
 <p align="right">(<a href="#readme-top">нагоре</a>)</p>
 
@@ -224,7 +224,7 @@
 - Импортиране на клиенти: Внасяйте клиентски данни от външни източници.
 - Създаване или редактиране на клиенти: Добавяйте нови клиенти, като натиснете синия бутон или модифицирайте съществуващи данни за клиенти, като кликнете лилавата стрелка.
 
-![Списък с клиенти](https://raw.githubusercontent.com/loom21/loom21doc/main/images/customers-light.PNG)
+![Списък с клиенти](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/customers-light.PNG)
 На тази страница можете да управлявате и обновявате подробна информация за всеки клиент. Наличните полета включват:
 
 #### Детайли за клиенти
@@ -235,7 +235,7 @@
 - Уебсайт: Добавете уебсайта на клиента, ако е приложимо.
 - Множество адреси: Управлявайте и съхранявайте множество адреси на клиента.
 
-![Редактиране на клиент](https://raw.githubusercontent.com/loom21/loom21doc/main/images/customer-edit-light.PNG)
+![Редактиране на клиент](https://raw.githubusercontent.com/loom21/loom21doc/main/images/bg/customer-edit-light.PNG)
 
 #### Управление на доставчици
 
