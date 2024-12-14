@@ -18,10 +18,10 @@ export class DocumentationComponent implements OnInit {
   ngOnInit(): void {
     console.log('locale', this.localeId);
     if(this.localeId !== "en")
-      this.srcPath = 'assets/README-bg.md';
+      this.srcPath = 'https://raw.githubusercontent.com/loom21/loom21doc/main/README-bg.md';
   }
 
-  srcPath = 'assets/README.md'//"https://raw.githubusercontent.com/loom21/loom21doc/main/README.md";
+  srcPath = "https://raw.githubusercontent.com/loom21/loom21doc/main/README.md";
   // onLoad(): void {
   //   this.stripContent();
   //   this.setHeadings();
