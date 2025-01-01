@@ -40,24 +40,32 @@ export class ContactComponent {
       console.log("form invalid");
       return;
     }
-    const to = 'svetlan.atanasov@gmail.com';
     const subject = 'loom21 contacted';
     const content = `
       <html>
       <body>
-        <h1>From ${this.business} - ${this.name} - ${this.email}</h1>
-        <p>${this.message}</p>
+        <h1>From ${this.business?.value} - ${this.name?.value} - ${this.email?.value}</h1>
+        <p>${this.message?.value}</p>
       </body>
       </html>
     `
-    
-    this.emailService.sendEmail(to, subject, content)
-      .then(() => {
+
+    this.emailService.sendEmail(this.email?.value, subject, content).subscribe({
+      next: (response) => {        
         this.showSuccess = true;
-        console.log('Email sent successfully');
-      })
-      .catch((error) => {
-        console.error('Error sending email:', error);
-      });
+        this.form.disable();
+        console.log('Email sent', response);
+      },
+      error: (error) => console.error('There was an error!', error),
+      complete: () => console.log('Email sending completed.')
+    });
+    // this.emailService.sendEmail(this.email, subject, content)
+    //   .then(() => {
+    //     this.showSuccess = true;
+    //     console.log('Email sent successfully');
+    //   })
+    //   .catch((error) => {
+    //     console.error('Error sending email:', error);
+    //   });
   }
 }
