@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class EmailService {
 
-  private apiUrl = 'https://localhost:7284/api/Users/ContactUs'; // Replace with your actual API URL
+  private apiUrl = 'https://app.loom21.com/api/Users/ContactUs'; // Replace with your actual API URL
 
   constructor(private http: HttpClient) { }
 
