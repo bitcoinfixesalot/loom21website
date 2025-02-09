@@ -55,7 +55,7 @@ Header 1
     margin: 0 20px; }
     .h1-nav .navbar-nav .nav-item .nav-link {
       padding: 12px 0px;
-      color: #788093;
+      color: #6c7384;
       font-weight: 400; }
       .h1-nav .navbar-nav .nav-item .nav-link:hover {
         color: #5e35b1; }
@@ -132,7 +132,7 @@ form-banner 1
     display: inline-block;
     vertical-align: top; }
   #banner1 input[type="text"] {
-    color: #788093;
+    color: #6c7384;
     border-radius: 36px 0 0 36px;
     text-indent: 35px;
     padding-right: 15px;
