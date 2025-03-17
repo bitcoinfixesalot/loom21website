@@ -34,29 +34,127 @@
         </context-group>
         <note priority="1" from="description">Launch app button</note>
       </trans-unit>
-      <trans-unit id="homeTitle" datatype="html">
-        <source>Loom21 </source>
+      <trans-unit id="homeKeywords" datatype="html">
+        <source>inventory management, stock control, product management, invoice processing, customer management, supplier management, vendor management, order fulfillment, payment processing, bitcoin payments, sales tracking, service management, delivery management, user roles and permissions, inventory analytics, warehouse management, real-time inventory tracking</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">2</context>
         </context-group>
-        <note priority="1" from="description">Home title</note>
+        <note priority="1" from="description">Home keywords tag</note>
       </trans-unit>
       <trans-unit id="homeDescription" datatype="html">
-        <source>Platform that lets you track and manage your inventory, invoices, customers, vendors, payments and convert prices between bitcoin and other 45 currencies.</source>
+        <source>Manage sales, deliveries, and payments with ease. Track inventory, process invoices, and accept bitcoin in real-time!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">3</context>
+          <context context-type="linenumber">6</context>
         </context-group>
         <note priority="1" from="description">Home description tag</note>
       </trans-unit>
-      <trans-unit id="homeKeywords" datatype="html">
-        <source> inventory management, stock control, product management, invoice processing, customer management, supplier management, vendor management, order fulfillment, payment processing, bitcoin payments, sales tracking, service management, delivery management, user roles and permissions, inventory analytics, warehouse management, real-time inventory tracking</source>
+      <trans-unit id="docDescription" datatype="html">
+        <source>Learn to optimize sales, deliveries, and payments. Guides on inventory, user roles, and real-time tracking!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">4</context>
+          <context context-type="linenumber">7</context>
         </context-group>
-        <note priority="1" from="description">Home keywords tag</note>
+        <note priority="1" from="description">Documentation description tag</note>
+      </trans-unit>
+      <trans-unit id="contactDescription" datatype="html">
+        <source>Questions on sales, deliveries, or payments? Contact us for expert support to grow your business!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Contact description tag</note>
+      </trans-unit>
+      <trans-unit id="homeTitle" datatype="html">
+        <source>Loom 21 </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">Home title</note>
+      </trans-unit>
+      <trans-unit id="documentationTitle" datatype="html">
+        <source>Documentation - Loom 21 </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Documentation title</note>
+      </trans-unit>
+      <trans-unit id="contactTitle" datatype="html">
+        <source>Contact - Loom 21 </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">Contact title</note>
+      </trans-unit>
+      <trans-unit id="homeDescription_ld_json" datatype="html">
+        <source>Manage sales, deliveries, and payments with ease. Track inventory, process invoices, and accept bitcoin in real-time.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">Home description ld_json tag</note>
+      </trans-unit>
+      <trans-unit id="docDescription_ld_json" datatype="html">
+        <source>Explore comprehensive documentation for our app featuring inventory management, stock control, product and customer management, invoice and payment processing (including Bitcoin), order fulfillment, and real-time inventory tracking, plus tools for supplier, vendor, and warehouse management with user roles and analytics.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Documentation description ld_json tag</note>
+      </trans-unit>
+      <trans-unit id="contactDescription_ld_json" datatype="html">
+        <source>Questions on sales, deliveries, or payments? Contact us for expert support to grow your business.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">Contact description ld_json tag</note>
+      </trans-unit>
+      <trans-unit id="salesTracking" datatype="html">
+        <source>Sales Tracking</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="deliveryManagement" datatype="html">
+        <source>Delivery Management</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="paymentProcessing" datatype="html">
+        <source>Payment Processing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inventoryManagement" datatype="html">
+        <source>Inventory Management</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bitcoinPayments" datatype="html">
+        <source>Bitcoin Payments</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="successMessage" datatype="html">
+        <source>Thank You! Your message has been received. We&apos;ll get back to you soon.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="contactUs" datatype="html">
         <source>Contact Us</source>
@@ -182,7 +280,7 @@
         <source>FAQ</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">44</context>
+          <context context-type="linenumber">46</context>
         </context-group>
         <note priority="1" from="description">Faq</note>
       </trans-unit>
@@ -190,7 +288,7 @@
         <source>Roadmap</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">44,45</context>
+          <context context-type="linenumber">46,47</context>
         </context-group>
         <note priority="1" from="description">Road map</note>
       </trans-unit>
@@ -198,7 +296,7 @@
         <source>Privacy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">45,46</context>
+          <context context-type="linenumber">47,48</context>
         </context-group>
         <note priority="1" from="description">Privacy</note>
       </trans-unit>
@@ -219,10 +317,10 @@
         <note priority="1" from="description">Home top sub title</note>
       </trans-unit>
       <trans-unit id="demoButton" datatype="html">
-        <source>Explore Demo Account</source>
+        <source>Demo Account</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">11,12</context>
+          <context context-type="linenumber">11</context>
         </context-group>
         <note priority="1" from="description">Demo account button</note>
       </trans-unit>
@@ -250,51 +348,43 @@
         </context-group>
         <note priority="1" from="description">Benefits and features</note>
       </trans-unit>
-      <trans-unit id="noKYC" datatype="html">
-        <source>No KYC! Sign-up with just an email address</source>
+      <trans-unit id="trackInventory" datatype="html">
+        <source>Track products inventory</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">35,36</context>
         </context-group>
-        <note priority="1" from="description">No kyc</note>
-      </trans-unit>
-      <trans-unit id="acceptPayments" datatype="html">
-        <source>Accept Bitcoin, Lightning, and credit/debit card payments</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">36,37</context>
-        </context-group>
-        <note priority="1" from="description">Accept Payments</note>
+        <note priority="1" from="description">Track inventory</note>
       </trans-unit>
       <trans-unit id="manageClientsSuppliers" datatype="html">
         <source>Manage clients and suppliers</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">37,38</context>
+          <context context-type="linenumber">36,37</context>
         </context-group>
         <note priority="1" from="description">Manage clients and suppliers</note>
-      </trans-unit>
-      <trans-unit id="trackInventory" datatype="html">
-        <source>Track products inventory</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">38,39</context>
-        </context-group>
-        <note priority="1" from="description">Track inventory</note>
       </trans-unit>
       <trans-unit id="controlData" datatype="html">
         <source>Control your own data - Import and Export</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">39,40</context>
+          <context context-type="linenumber">37,38</context>
         </context-group>
         <note priority="1" from="description">Control your own data</note>
+      </trans-unit>
+      <trans-unit id="acceptPayments" datatype="html">
+        <source>Accept Bitcoin, Lightning, and credit/debit card payments</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+        <note priority="1" from="description">Accept Payments</note>
       </trans-unit>
       <trans-unit id="getInvoiceNotification" datatype="html">
         <source>Get notified when invoices are paid</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">40,43</context>
+          <context context-type="linenumber">39,42</context>
         </context-group>
         <note priority="1" from="description">Get notified</note>
       </trans-unit>
@@ -302,7 +392,7 @@
         <source>The easiest way to get paid in bitcoin</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">70,72</context>
+          <context context-type="linenumber">69,71</context>
         </context-group>
         <note priority="1" from="description">Get paid in bitcoin</note>
       </trans-unit>
@@ -310,9 +400,51 @@
         <source>Send invoices with ease. Accept payments with Bitcoin, Lightning or credit/debit cards.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">72,75</context>
+          <context context-type="linenumber">71,74</context>
         </context-group>
         <note priority="1" from="description">Send invoices with ease</note>
+      </trans-unit>
+      <trans-unit id="imAfraidIcantDoThat" datatype="html">
+        <source>I&apos;m afraid I can&apos;t do that.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/not-found/not-found.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="errorMessagePart1" datatype="html">
+        <source>Join Loom 21 back at the </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homepage" datatype="html">
+        <source>homepage</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="errorMessagePart2" datatype="html">
+        <source> or </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactUsPart" datatype="html">
+        <source>contact us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="errorMessagePart3" datatype="html">
+        <source> for help.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
       </trans-unit>
     </body>
   </file>
