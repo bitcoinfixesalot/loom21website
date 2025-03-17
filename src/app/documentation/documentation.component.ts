@@ -1,5 +1,7 @@
 import { Component, ElementRef, Inject, LOCALE_ID, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { MarkdownComponent } from 'ngx-markdown';
+import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
 
 @Component({
   selector: 'app-documentation',
@@ -11,14 +13,33 @@ import { MarkdownComponent } from 'ngx-markdown';
 export class DocumentationComponent implements OnInit {
   headings: Element[] | undefined;
 
-  constructor(@Inject(LOCALE_ID) protected localeId: string,
-    //private elementRef: ElementRef<HTMLElement>,
-  ) { }
+  constructor(@Inject(LOCALE_ID) protected localeId: string,private titleService: Title, private metaService: Meta
+  ) { 
+  }
 
   ngOnInit(): void {
-    console.log('locale', this.localeId);
     if(this.localeId !== "en")
       this.srcPath = 'https://raw.githubusercontent.com/loom21/loom21doc/main/README-bg.md';
+
+
+    this.titleService.setTitle("Loom 21 "+ TITLES.documentation );
+        this.metaService.updateTag({
+          name: 'description',
+          content: DESCRIPTIONS.documentation_description//'Reset your password to manage inventory, payments, and Bitcoin conversions.'
+        });
+        this.metaService.addTag({
+          name: 'application/ld+json',
+          content: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            'name': 'Documentation - Loom 21',
+            'description': LD_JSON.documentation_description,
+            'isPartOf': {
+              '@type': 'WebSite',
+              'name': 'Loom 21'
+            }
+          })
+        });
   }
 
   srcPath = "https://raw.githubusercontent.com/loom21/loom21doc/main/README.md";

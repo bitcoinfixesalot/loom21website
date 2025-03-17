@@ -1,8 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule, ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { EmailService } from '../services/email.service';
+import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
@@ -11,13 +13,15 @@ import { EmailService } from '../services/email.service';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
 
   showSuccess: boolean = false;
   successMessage = "Thank You! Your message has been received. We'll get back to you soon." 
   form: UntypedFormGroup;
-  constructor(private formBuilder: UntypedFormBuilder,
+  constructor(private formBuilder: UntypedFormBuilder,private titleService: Title,private metaService: Meta,
     private emailService: EmailService) { 
+      this.titleService.setTitle("Loom 21 "+ TITLES.contact );
+
     this.form = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -32,8 +36,27 @@ export class ContactComponent {
   get business() { return this.form.get('business'); }
   
   
-  ngOnInit(): void {
-  }
+   ngOnInit(): void {
+  
+      this.titleService.setTitle("Loom 21 "+ TITLES.contact );
+          this.metaService.updateTag({
+            name: 'description',
+            content: DESCRIPTIONS.contact_description//'Reset your password to manage inventory, payments, and Bitcoin conversions.'
+          });
+          this.metaService.addTag({
+            name: 'application/ld+json',
+            content: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'ContactPage',
+              'name': 'Contact - Loom 21',
+              'description': LD_JSON.contact_description,
+              'isPartOf': {
+                '@type': 'WebSite',
+                'name': 'Loom 21'
+              }
+            })
+          });
+    }
   
   onSubmit(){
     if(this.form.invalid){
@@ -59,13 +82,6 @@ export class ContactComponent {
       error: (error) => console.error('There was an error!', error),
       complete: () => console.log('Email sending completed.')
     });
-    // this.emailService.sendEmail(this.email, subject, content)
-    //   .then(() => {
-    //     this.showSuccess = true;
-    //     console.log('Email sent successfully');
-    //   })
-    //   .catch((error) => {
-    //     console.error('Error sending email:', error);
-    //   });
+    
   }
 }
