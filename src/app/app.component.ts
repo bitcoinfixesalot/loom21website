@@ -1,7 +1,7 @@
 import { Component, HostListener } from '@angular/core';
-import { Meta } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';
 import { RouterModule, RouterOutlet } from '@angular/router';
-import { TAGS } from './constants/localized-const';
+import { DESCRIPTIONS, TAGS } from './constants/localized-const';
 import { BannerComponent } from './banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
 import { CommonModule } from '@angular/common';
@@ -25,22 +25,13 @@ export class AppComponent {
   
 
 
-   constructor(private meta: Meta,private anchorService: AnchorService) {
+   constructor(private titleService: Title,private meta: Meta,private anchorService: AnchorService) {
     this.meta.addTags([
-      {name: "description", content: TAGS.home_description},
+      {name: "description", content: DESCRIPTIONS.home_description},
       {name: "keywords", content:TAGS.home_keywords},
       {name: "author", content: "loom 21"},
     ]);
     
+    this.titleService.setTitle("Loom 21");
    }
-
-
-  // constructor(private meta: Meta, private title:Title) {
-  //   this.meta.addTags([
-  //     {name: "description", content: TAGS.home_description},
-  //     {name: "keywords", content:TAGS.home_keywords},
-  //     {name: "author", content: "loom 21"},
-  //   ]);
-  //   this.title.setTitle("Loom21"); //TODO: fix title
-  //  }
 }
