@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { DocumentationComponent } from './documentation/documentation.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -9,4 +10,6 @@ export const routes: Routes = [
     { path: 'docs', component: DocumentationComponent },
     { path: 'blog', component: HomeComponent },
     { path: 'contact', component: ContactComponent },
+    { path: '404', component : NotFoundComponent},
+    { path: '**', redirectTo: '/404', pathMatch: 'full'}
 ];
