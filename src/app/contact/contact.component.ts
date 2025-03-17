@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormsModule, ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { EmailService } from '../services/email.service';
-import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
+import { DESCRIPTIONS, LD_JSON, SUCCESS_MESSAGE, TITLES } from '../constants/localized-const';
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
@@ -16,7 +16,7 @@ import { Meta, Title } from '@angular/platform-browser';
 export class ContactComponent implements OnInit {
 
   showSuccess: boolean = false;
-  successMessage = "Thank You! Your message has been received. We'll get back to you soon." 
+  successMessage = SUCCESS_MESSAGE;//"Thank You! Your message has been received. We'll get back to you soon." 
   form: UntypedFormGroup;
   constructor(private formBuilder: UntypedFormBuilder,private titleService: Title,private metaService: Meta,
     private emailService: EmailService) { 

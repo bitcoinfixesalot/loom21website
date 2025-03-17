@@ -25,3 +25,4 @@ export const DELIVERY_MANAGEMENT = $localize`:@@deliveryManagement:Delivery Mana
 export const PAYMENT_PROCESSING = $localize`:@@paymentProcessing:Payment Processing`;
 export const INVENTORY_MANAGEMENT = $localize`:@@inventoryManagement:Inventory Management`;
 export const BITCOIN_PAYMENTS = $localize`:@@bitcoinPayments:Bitcoin Payments`;
+export const SUCCESS_MESSAGE = $localize`:@@successMessage:Thank You! Your message has been received. We'll get back to you soon.`
