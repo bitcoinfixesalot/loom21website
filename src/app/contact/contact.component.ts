@@ -20,9 +20,8 @@ export class ContactComponent implements OnInit {
   form: UntypedFormGroup;
   constructor(private formBuilder: UntypedFormBuilder,private titleService: Title,private metaService: Meta,
     private emailService: EmailService) { 
-      this.titleService.setTitle(TITLES.contact);
 
-    this.form = this.formBuilder.group({
+      this.form = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       business: [''],
@@ -38,7 +37,7 @@ export class ContactComponent implements OnInit {
   
    ngOnInit(): void {
   
-      this.titleService.setTitle("Loom 21 "+ TITLES.contact );
+      this.titleService.setTitle(TITLES.contact);
           this.metaService.updateTag({
             name: 'description',
             content: DESCRIPTIONS.contact_description//'Reset your password to manage inventory, payments, and Bitcoin conversions.'
