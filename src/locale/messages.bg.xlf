@@ -47,63 +47,63 @@
         </context-group>
         <note priority="1" from="description">Home keywords tag</note>
       </trans-unit>
-      <trans-unit id="homeDescription" datatype="html">
-        <source>Manage sales, deliveries, and payments with ease. Track inventory, process invoices, and accept bitcoin in real-time!</source>
-        <target>Управлявайте продажби, доставки и плащания с лекота. Следете инвентара, обработвайте фактури и приемайте биткойн в реално време!</target>
+      <trans-unit id="homeTitle" datatype="html">
+        <source>Loom 21 </source>
+        <target>Loom 21 </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">6</context>
-        </context-group>
-        <note priority="1" from="description">Home description tag</note>
-      </trans-unit>
-      <trans-unit id="docDescription" datatype="html">
-        <source>Explore comprehensive documentation for our app featuring inventory management, stock control, product and customer management, invoice and payment processing (including Bitcoin), order fulfillment, and real-time inventory tracking, plus tools for supplier, vendor, and warehouse management with user roles and analytics.</source>
-        <target>Разгледайте подробната документация за нашето приложение, включваща управление на инвентара, контрол на складови наличности, управление на продукти и клиенти, обработка на фактури и плащания (включително биткойн), изпълнение на поръчки и проследяване на инвентара в реално време, както и инструменти за управление на доставчици, продавачи и складове с потребителски роли и анализи.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">7</context>
-        </context-group>
-        <note priority="1" from="description">Documentation description tag</note>
-      </trans-unit>
-      <trans-unit id="contactDescription" datatype="html">
-        <source>Questions on sales, deliveries, or payments? Contact us for expert support to grow your business!</source>
-        <target>notranslation</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">8</context>
-        </context-group>
-        <note priority="1" from="description">Contact description tag</note>
-      </trans-unit>
-      <trans-unit id="homeTitle" datatype="html">
-        <source>Loom 21 </source>
-        <target>Loom21 </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">12</context>
         </context-group>
         <note priority="1" from="description">Home title</note>
       </trans-unit>
       <trans-unit id="documentationTitle" datatype="html">
         <source>Documentation - Loom 21 </source>
-        <target>notranslation</target>
+        <target>Документация - Loom 21 </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">13</context>
+          <context context-type="linenumber">7</context>
         </context-group>
         <note priority="1" from="description">Documentation title</note>
       </trans-unit>
       <trans-unit id="contactTitle" datatype="html">
         <source>Contact - Loom 21 </source>
-        <target>notranslation</target>
+        <target>Контакти - Loom 21 </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Contact title</note>
+      </trans-unit>
+      <trans-unit id="homeDescription" datatype="html">
+        <source>Manage sales, deliveries, and payments with ease. Track inventory, process invoices, and accept bitcoin in real-time!</source>
+        <target>Управлявайте продажби, доставки и плащания с лекота. Следете инвентара, обработвайте фактури и приемайте биткойн в реално време!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">Home description tag</note>
+      </trans-unit>
+      <trans-unit id="docDescription" datatype="html">
+        <source>App for inventory management, stock control, customer &amp; supplier tools, invoice &amp; Bitcoin payments, order fulfillment, and real-time tracking with analytics</source>
+        <target>Приложение за управление на инвентара, контрол на складови наличности, инструменти за клиенти и доставчици, фактуриране и плащания с биткойн, изпълнение на поръчки и проследяване в реално време с анализи.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Documentation description tag</note>
+      </trans-unit>
+      <trans-unit id="contactDescription" datatype="html">
+        <source>Questions on sales, deliveries, or payments? Contact us for expert support to grow your business!</source>
+        <target>Имате въпроси относно продажби, доставки или плащания? Свържете се с нас за експертна помощ и развитие на вашия бизнес!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">14</context>
         </context-group>
-        <note priority="1" from="description">Contact title</note>
+        <note priority="1" from="description">Contact description tag</note>
       </trans-unit>
       <trans-unit id="homeDescription_ld_json" datatype="html">
         <source>Manage sales, deliveries, and payments with ease. Track inventory, process invoices, and accept bitcoin in real-time.</source>
-        <target>notranslation</target>
+        <target>Управлявайте продажби, доставки и плащания с лекота. Следете инвентара, обработвайте фактури и приемайте биткойн в реално време.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">18</context>
@@ -112,7 +112,7 @@
       </trans-unit>
       <trans-unit id="docDescription_ld_json" datatype="html">
         <source>Learn to optimize sales, deliveries, and payments. Guides on inventory, user roles, and real-time tracking.</source>
-        <target>notranslation</target>
+        <target>Научете се как да оптимизирате продажбите, доставките и плащанията. Ръководства за инвентар, потребителски роли и проследяване в реално време.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">19</context>
@@ -121,59 +121,155 @@
       </trans-unit>
       <trans-unit id="contactDescription_ld_json" datatype="html">
         <source>Questions on sales, deliveries, or payments? Contact us for expert support to grow your business.</source>
-        <target>notranslation</target>
+        <target>Имате въпроси относно продажби, доставки или плащания? Свържете се с нас за експертна помощ и развитие на вашия бизнес.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">20</context>
         </context-group>
         <note priority="1" from="description">Contact description ld_json tag</note>
       </trans-unit>
-      <trans-unit id="salesTracking" datatype="html">
-        <source>Sales Tracking</source>
-        <target>notranslation</target>
+      <trans-unit id="inventoryManagement" datatype="html">
+        <source>Inventory Management</source>
+        <target>Управление на инвентара</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="deliveryManagement" datatype="html">
-        <source>Delivery Management</source>
-        <target>notranslation</target>
+      <trans-unit id="stockControl" datatype="html">
+        <source>Stock Control</source>
+        <target>контрол на складови наличности</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="paymentProcessing" datatype="html">
-        <source>Payment Processing</source>
-        <target>notranslation</target>
+      <trans-unit id="productManagement" datatype="html">
+        <source>Product Management</source>
+        <target>Управление на продукти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="inventoryManagement" datatype="html">
-        <source>Inventory Management</source>
-        <target>notranslation</target>
+      <trans-unit id="invoiceProcessing" datatype="html">
+        <source>Invoice Processing</source>
+        <target>Обработка на фактури</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="bitcoinPayments" datatype="html">
-        <source>Bitcoin Payments</source>
-        <target>notranslation</target>
+      <trans-unit id="customerManagement" datatype="html">
+        <source>Customer Management</source>
+        <target>Управлени на клиенти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">27</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="successMessage" datatype="html">
-        <source>Thank You! Your message has been received. We'll get back to you soon.</source>
-        <target>notranslation</target>
+      <trans-unit id="supplierManagement" datatype="html">
+        <source>Supplier Management</source>
+        <target>Управлени на доставчици</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="vendorManagement" datatype="html">
+        <source>Vendor Management</source>
+        <target>Управление на партньори</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="orderFulfillment" datatype="html">
+        <source>Order Fulfillment</source>
+        <target>Изпълнение на поръчка</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="paymentProcessing" datatype="html">
+        <source>Payment Processing</source>
+        <target>Обработка на плащания</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bitcoinPayments" datatype="html">
+        <source>Bitcoin Payments</source>
+        <target>Биткойн плащания</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="salesTracking" datatype="html">
+        <source>Sales Tracking</source>
+        <target>Проследяване на продажбите</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="serviceManagement" datatype="html">
+        <source>Service Management</source>
+        <target>Управление на услугите</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="deliveryManagement" datatype="html">
+        <source>Delivery Management</source>
+        <target>Управление на доставките</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="userRolesPermissions" datatype="html">
+        <source>User Roles and Permissions</source>
+        <target>Потребителски роли и права</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inventoryAnalytics" datatype="html">
+        <source>Inventory Analytics</source>
+        <target>Анализи на инвентара</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="warehouseManagement" datatype="html">
+        <source>Warehouse Management</source>
+        <target>Управление на склад</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="realTimeInventoryTracking" datatype="html">
+        <source>Real-Time Inventory Tracking</source>
+        <target>Проследяване на инвентара в реално време</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="successMessage" datatype="html">
+        <source>Thank You! Your message has been received. We'll get back to you soon.</source>
+        <target>Благодарим ви! Вашето съобщение е получено. Ще се свържем с вас скоро.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contactUs" datatype="html">
@@ -457,7 +553,7 @@
       </trans-unit>
       <trans-unit id="imAfraidIcantDoThat" datatype="html">
         <source>I'm afraid I can't do that.</source>
-        <target>notranslation</target>
+        <target>Разбирам, но не мога да изпълня това.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.html</context>
           <context context-type="linenumber">10,12</context>
@@ -465,7 +561,7 @@
       </trans-unit>
       <trans-unit id="errorMessagePart1" datatype="html">
         <source>Join Loom 21 back at the </source>
-        <target>notranslation</target>
+        <target>Присъединете се към Loom 21 отново на </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
           <context context-type="linenumber">12</context>
@@ -473,7 +569,7 @@
       </trans-unit>
       <trans-unit id="homepage" datatype="html">
         <source>homepage</source>
-        <target>notranslation</target>
+        <target>началната страница</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
           <context context-type="linenumber">13</context>
@@ -481,7 +577,7 @@
       </trans-unit>
       <trans-unit id="errorMessagePart2" datatype="html">
         <source> or </source>
-        <target>notranslation</target>
+        <target> или се </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
           <context context-type="linenumber">14</context>
@@ -489,7 +585,7 @@
       </trans-unit>
       <trans-unit id="contactUsPart" datatype="html">
         <source>contact us</source>
-        <target>notranslation</target>
+        <target>свържете с нас</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
           <context context-type="linenumber">15</context>
@@ -497,7 +593,7 @@
       </trans-unit>
       <trans-unit id="errorMessagePart3" datatype="html">
         <source> for help.</source>
-        <target>notranslation</target>
+        <target> за помощ.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
           <context context-type="linenumber">16</context>
