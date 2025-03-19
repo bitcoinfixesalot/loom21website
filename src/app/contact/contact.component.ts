@@ -20,7 +20,7 @@ export class ContactComponent implements OnInit {
   form: UntypedFormGroup;
   constructor(private formBuilder: UntypedFormBuilder,private titleService: Title,private metaService: Meta,
     private emailService: EmailService) { 
-      this.titleService.setTitle("Loom 21 "+ TITLES.contact );
+      this.titleService.setTitle(TITLES.contact);
 
     this.form = this.formBuilder.group({
       name: ['', Validators.required],

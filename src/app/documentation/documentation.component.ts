@@ -22,7 +22,7 @@ export class DocumentationComponent implements OnInit {
       this.srcPath = 'https://raw.githubusercontent.com/loom21/loom21doc/main/README-bg.md';
 
 
-    this.titleService.setTitle("Loom 21 "+ TITLES.documentation );
+    this.titleService.setTitle(TITLES.documentation);
         this.metaService.updateTag({
           name: 'description',
           content: DESCRIPTIONS.documentation_description//'Reset your password to manage inventory, payments, and Bitcoin conversions.'
