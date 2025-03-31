@@ -2,17 +2,18 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { SubscriptionPlanService, SubscriptionType } from '../services/subscription-plan.service';
 import { first } from 'rxjs';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-pricing',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './pricing.component.html',
   styleUrl: './pricing.component.scss'
 })
 export class PricingComponent implements OnInit{
   loading = false;
-  selectedPlan = 'month'; // Default selection
+  selectedPlan = 'year'; // Default selection
 
   public plans: SubscriptionType[] = [];
 

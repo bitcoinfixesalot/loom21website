@@ -1,3 +1,29 @@
+<div class="btn-group d-flex justify-content-center mb-4" role="group" aria-label="Subscription period selection">
+    <input 
+      type="radio" 
+      class="btn-check" 
+      name="selectedPlan" 
+      id="month" 
+      value="month" 
+      [(ngModel)]="selectedPlan"
+      autocomplete="off">
+    <label class="btn btn-outline-primary" for="month" i18n="Monthly button@@monthly">MONTHLY</label>
+  
+    <input 
+      type="radio" 
+      class="btn-check" 
+      name="selectedPlan" 
+      id="year" 
+      value="year" 
+      [(ngModel)]="selectedPlan"
+      autocomplete="off">
+    <label class="btn btn-outline-primary" for="year" i18n="Annual button@@annual">ANNUAL
+        <span class="badge bg-success position-absolute top-0 start-100 translate-middle-x rounded-pill">
+            -10%
+          </span>
+    </label>
+</div>
+
 <div class="container pricing-box">
     <div class="row justify-content-center">
       <div class="col-12">

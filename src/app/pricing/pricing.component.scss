@@ -1,5 +1,5 @@
 .pricing-box {
-    padding: 2rem 0;
+    padding:  0;
   }
   
   .pricing-plan {
@@ -23,4 +23,20 @@
   
   .card-title {
     margin-bottom: 1.5rem;
+  }
+
+  .btn-group {
+    max-width: 300px;
+    margin: 0 auto 2rem;
+    margin-top: 2rem;
+  }
+  
+  .btn-check:checked + .btn-outline-primary {
+    background-color: #1e88e5;
+    color: white;
+    border-color: #1e88e5;
+  }
+  
+  .btn-outline-primary {
+    padding: 0.5rem 2rem;
   }
