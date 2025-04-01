@@ -2,9 +2,9 @@
     <!-- Loading Indicator -->
     <div *ngIf="loading" class="loading-overlay text-center">
       <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
-        <span class="visually-hidden">Loading...</span>
+        <span class="visually-hidden" i18n="Loading label@@loading">Loading...</span>
       </div>
-      <p class="mt-2">Loading subscription plans...</p>
+      <p class="mt-2" i18n="Loading subscription plans label@@loadingSubsciptionPlans">Loading subscription plans...</p>
     </div>
 <div *ngIf="!loading" class="btn-group d-flex justify-content-center mb-4" role="group" aria-label="Subscription period selection">
     <input 
@@ -25,7 +25,7 @@
       value="year" 
       [(ngModel)]="selectedPlan"
       autocomplete="off">
-    <label class="btn btn-outline-primary" for="year" i18n="Annual button@@annual">ANNUAL
+    <label class="btn btn-outline-primary" for="year"><ng-container i18n="Annual button@@annual">ANNUAL</ng-container>
         <span class="badge bg-success position-absolute top-0 start-100 translate-middle-x rounded-pill">
             -10%
           </span>
@@ -70,19 +70,21 @@
       <div *ngFor="let plan of activePlans; let i = index" class="col-md-4 col-lg-4">
         <div class="card h-100">
           <div class="card-body text-center">
-            <h5 class="card-title">{{plan.productName}} Onboarding</h5>
+            <h5 class="card-title">{{plan.productName}}<ng-container i18n="Onboarding after plan@@onboarding_space"> Onboarding</ng-container></h5>
             <p class="card-text">
               <ng-container *ngIf="i === 0; else onboardingFeeBlock">
-                <span class="text-success fw-bold">No onboarding fee</span>
+                <span class="text-success fw-bold" i18n="No onboarding fee@@noOnboardingFee">No onboarding fee</span>
               </ng-container>
-              <ng-template #onboardingFeeBlock>
+              <ng-template #onboardingFeeBlock >
+                <ng-container i18n="One-time onboarding fee@@oneTimeOnboardingFee">
                 One-time onboarding fee: 
+                </ng-container>
                 <span class="fw-bold">
                   {{onboardingFee / 100}}{{plan.currency}}
                 </span>
               </ng-template>
             </p>
-            <p class="text-muted small" *ngIf="i > 0">
+            <p class="text-muted small" *ngIf="i > 0" i18n="Required one-time payment@@reqieredOneTimePayment">
               Required one-time payment in addition to subscription
             </p>
           </div>
@@ -97,13 +99,14 @@
       <div class="col-md-6">
         <div class="card text-center bg-light border-primary">
           <div class="card-body">
-            <h3 class="card-title text-primary">Need a Custom Plan?</h3>
-            <p class="card-text">
+            <h3 class="card-title text-primary" i18n="Need custom plan@@needAcustomPlan">Need a Custom Plan?</h3>
+            <p class="card-text" i18n="Personalized quote@@personalizedQuote">
               Looking for a tailored solution? Contact us to discuss your specific needs and get a personalized quote.
             </p>
             <button 
               class="btn btn-primary btn-lg" 
-              (click)="onContactUs()">
+              (click)="onContactUs()" 
+              i18n="Contact us button@@contactUsPricing">
               Contact Us
             </button>
           </div>
