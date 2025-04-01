@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './pricing.component.scss'
 })
 export class PricingComponent implements OnInit{
-  loading = false;
+  loading = true;
   selectedPlan = 'year'; // Default selection
 
   public plans: SubscriptionType[] = [];
@@ -26,7 +26,7 @@ constructor(private subscriptionPlan: SubscriptionPlanService){
 get activePlans() {
   return this.plans.filter(plan => plan.interval === this.selectedPlan);
 }
-  ngOnInit(): void {
+   ngOnInit(): void {
     this.loading = true;
 
     this.subscriptionPlan.getAvailablePlans().pipe(first()).subscribe({
@@ -75,5 +75,11 @@ get activePlans() {
 
   onCreateOrder(licenseType: SubscriptionType): void {
 
+  }
+
+  onContactUs() {
+    // Add your contact logic here, e.g., open a form, redirect, etc.
+    console.log('Contact Us clicked');
+    // Example: window.location.href = '/contact';
   }
 }

@@ -73,3 +73,17 @@
   .custom-plan-section .btn-lg {
     padding: 0.75rem 2rem;
   }
+
+  /* New styles for loading indicator */
+.loading-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+  
+  .min-hight  {
+    position: relative;
+    min-height: 400px; /* Ensure there's space for the loader */
+  }
