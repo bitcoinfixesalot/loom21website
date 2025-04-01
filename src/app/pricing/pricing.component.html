@@ -50,6 +50,35 @@
                 Choose Plan
               </button>
             </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- Updated onboarding fee information with 3 cards -->
+<div class="container mt-4 onboarding-section">
+    <div class="row justify-content-center">
+      <div *ngFor="let plan of activePlans; let i = index" class="col-md-4 col-lg-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <h5 class="card-title">{{plan.productName}} Onboarding</h5>
+            <p class="card-text">
+              <ng-container *ngIf="i === 0; else onboardingFeeBlock">
+                <span class="text-success fw-bold">No onboarding fee</span>
+              </ng-container>
+              <ng-template #onboardingFeeBlock>
+                One-time onboarding fee: 
+                <span class="fw-bold">
+                  {{onboardingFee / 100}}{{plan.currency}}
+                </span>
+              </ng-template>
+            </p>
+            <p class="text-muted small" *ngIf="i > 0">
+              Required one-time payment in addition to subscription
+            </p>
           </div>
         </div>
       </div>

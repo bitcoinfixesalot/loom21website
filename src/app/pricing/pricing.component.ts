@@ -16,6 +16,8 @@ export class PricingComponent implements OnInit{
   selectedPlan = 'year'; // Default selection
 
   public plans: SubscriptionType[] = [];
+  onboardingFee: number = 9900; // Example: $99.00 - adjust as needed
+
 
 constructor(private subscriptionPlan: SubscriptionPlanService){
   
