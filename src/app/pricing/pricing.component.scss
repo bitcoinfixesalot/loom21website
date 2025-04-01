@@ -43,6 +43,7 @@
 
   .h-100 {
     height: 100%;
+    margin-bottom: 0px;
   }
   
   .fw-bold {
@@ -58,3 +59,17 @@
 //   .text-success {
 //     color: #198754 !important; /* Bootstrap success color */
 //   }
+
+/* New styles for custom plan */
+.custom-plan-section {
+    padding-top: 0!important;
+    padding-bottom: 2rem;
+  }
+  
+  .custom-plan-section .card {
+    border-width: 2px;
+  }
+  
+  .custom-plan-section .btn-lg {
+    padding: 0.75rem 2rem;
+  }
