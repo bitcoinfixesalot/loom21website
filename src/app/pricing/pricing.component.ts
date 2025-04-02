@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
 import { SubscriptionPlanService, SubscriptionType } from '../services/subscription-plan.service';
 import { first } from 'rxjs';
 import { FormsModule } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-pricing',
@@ -19,7 +20,9 @@ export class PricingComponent implements OnInit{
   onboardingFee: number = 9900; // Example: $99.00 - adjust as needed
 
 
-constructor(private subscriptionPlan: SubscriptionPlanService){
+constructor(@Inject(LOCALE_ID) protected localeId: string,
+private route: ActivatedRoute,
+  private router: Router,private subscriptionPlan: SubscriptionPlanService){
   
 }
 
@@ -78,6 +81,8 @@ get activePlans() {
   }
 
   onContactUs() {
+    this.router.navigate(['/contact'], { relativeTo: this.route });
+
     // Add your contact logic here, e.g., open a form, redirect, etc.
     console.log('Contact Us clicked');
     // Example: window.location.href = '/contact';
