@@ -13,12 +13,14 @@ export const DESCRIPTIONS = {
     home_description: $localize`:Home description tag@@homeDescription:Manage sales, deliveries, and payments with ease. Track inventory, process invoices, and accept bitcoin in real-time!`,
     documentation_description: $localize`:Documentation description tag@@docDescription:App for inventory management, stock control, customer & supplier tools, invoice & Bitcoin payments, order fulfillment, and real-time tracking with analytics`,
     contact_description: $localize`:Contact description tag@@contactDescription:Questions on sales, deliveries, or payments? Contact us for expert support to grow your business!`,
+    pricing_description: $localize`:Pricing description tag@@pricingDescription:Explore our subscription plans with flexible pricing options. Choose from monthly or yearly billing, with custom plans available. Contact us for details!`,
 }
 
 export const LD_JSON = {
     home_description: $localize`:Home description ld_json tag@@homeDescription_ld_json:Manage sales, deliveries, and payments with ease. Track inventory, process invoices, and accept bitcoin in real-time.`,
     documentation_description: $localize`:Documentation description ld_json tag@@docDescription_ld_json:Learn to optimize sales, deliveries, and payments. Guides on inventory, user roles, and real-time tracking.`,
     contact_description: $localize`:Contact description ld_json tag@@contactDescription_ld_json:Questions on sales, deliveries, or payments? Contact us for expert support to grow your business.`,
+    pricing_description: $localize`:Pricing description ld_json tag@@pricingDescription_ld_json:Subscription plans for Lomm21 with various features and pricing options.`,
 }
 
 export const INVENTORY_MANAGEMENT = $localize`:@@inventoryManagement:Inventory Management`;

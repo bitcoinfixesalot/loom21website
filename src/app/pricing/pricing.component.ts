@@ -5,7 +5,7 @@ import { first } from 'rxjs';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
-import { TITLES } from '../constants/localized-const';
+import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
 
 @Component({
   selector: 'app-pricing',
@@ -24,10 +24,10 @@ export class PricingComponent implements OnInit {
 
   constructor(@Inject(LOCALE_ID) protected localeId: string,
     private route: ActivatedRoute,
-    private router: Router, 
+    private router: Router,
     private subscriptionPlan: SubscriptionPlanService,
-  private titleService: Title, 
-  private metaService: Meta) {
+    private titleService: Title,
+    private metaService: Meta) {
 
   }
 
@@ -37,6 +37,7 @@ export class PricingComponent implements OnInit {
 
   ngOnInit(): void {
     this.titleService.setTitle(TITLES.pricing);
+    this.setMetaTags();
 
     this.loading = true;
 
@@ -53,6 +54,7 @@ export class PricingComponent implements OnInit {
           }
         });
         this.loading = false;
+        this.updateStructuredData();
 
       },
       error: (e) => {
@@ -98,9 +100,39 @@ export class PricingComponent implements OnInit {
 
   onContactUs() {
     this.router.navigate(['/contact'], { relativeTo: this.route });
+  }
 
-    // Add your contact logic here, e.g., open a form, redirect, etc.
-    console.log('Contact Us clicked');
-    // Example: window.location.href = '/contact';
+
+  setMetaTags() {
+    // Add description meta tag
+    this.metaService.updateTag({
+      name: 'description',
+      content: DESCRIPTIONS.pricing_description
+    });
+  }
+
+  updateStructuredData() {
+    // Structured data for pricing plans
+    const structuredData = {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: 'Loom 21 app',
+      offers: this.activePlans.map((plan, index) => ({
+        '@type': 'Offer',
+        name: plan.productName,
+        price: (plan.amount / 100).toFixed(2),
+        priceCurrency: plan.currency,
+        availability: 'https://schema.org/InStock',
+        url: `${window.location.origin}/pricing#plan-${index}`,
+        description: `${plan.perMonthText} - ${plan.usersText}, ${plan.ordersText}, ${plan.storesText}`
+      })),
+      description: LD_JSON.pricing_description
+    };
+
+    // Add or update the JSON-LD script tag
+    this.metaService.updateTag({
+      name: 'application/ld+json',
+      content: JSON.stringify(structuredData)
+    });
   }
 }
