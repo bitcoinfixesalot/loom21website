@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
+import { Component, Inject, isDevMode, LOCALE_ID, OnInit } from '@angular/core';
 import { SubscriptionPlanService, SubscriptionType } from '../services/subscription-plan.service';
 import { first } from 'rxjs';
 import { FormsModule } from '@angular/forms';
@@ -77,7 +77,15 @@ get activePlans() {
   }
 
   onCreateOrder(licenseType: SubscriptionType): void {
-
+    let appUrl = 'https://app.loom21.com/';
+    if (isDevMode()) {
+      appUrl =  'http://localhost:5000/';
+    }
+    if(this.localeId == 'bg'){
+      window.open(`${appUrl}bg/plans/${licenseType.id}`);
+    }else{
+      window.open(`${appUrl}en-US/plans/${licenseType.id}`);
+    }
   }
 
   onContactUs() {
