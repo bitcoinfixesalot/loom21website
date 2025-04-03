@@ -4,6 +4,8 @@ import { SubscriptionPlanService, SubscriptionType } from '../services/subscript
 import { first } from 'rxjs';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Title, Meta } from '@angular/platform-browser';
+import { TITLES } from '../constants/localized-const';
 
 @Component({
   selector: 'app-pricing',
@@ -12,7 +14,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   templateUrl: './pricing.component.html',
   styleUrl: './pricing.component.scss'
 })
-export class PricingComponent implements OnInit{
+export class PricingComponent implements OnInit {
   loading = true;
   selectedPlan = 'year'; // Default selection
 
@@ -20,23 +22,29 @@ export class PricingComponent implements OnInit{
   onboardingFee: number = 9900; // Example: $99.00 - adjust as needed
 
 
-constructor(@Inject(LOCALE_ID) protected localeId: string,
-private route: ActivatedRoute,
-  private router: Router,private subscriptionPlan: SubscriptionPlanService){
-  
-}
+  constructor(@Inject(LOCALE_ID) protected localeId: string,
+    private route: ActivatedRoute,
+    private router: Router, 
+    private subscriptionPlan: SubscriptionPlanService,
+  private titleService: Title, 
+  private metaService: Meta) {
 
-get activePlans() {
-  return this.plans.filter(plan => plan.interval === this.selectedPlan);
-}
-   ngOnInit(): void {
+  }
+
+  get activePlans() {
+    return this.plans.filter(plan => plan.interval === this.selectedPlan);
+  }
+
+  ngOnInit(): void {
+    this.titleService.setTitle(TITLES.pricing);
+
     this.loading = true;
 
     this.subscriptionPlan.getAvailablePlans().pipe(first()).subscribe({
       next: (types: SubscriptionType[]) => {
         this.plans = types;
         this.plans.forEach((plan: SubscriptionType) => {
-    
+
           this.setTexts(plan);
           if (plan.interval == 'year') {
             plan.perMonthText = $localize`:Billed annually@@billedAnnually:per month (billed annually)`;
@@ -45,7 +53,7 @@ get activePlans() {
           }
         });
         this.loading = false;
-    
+
       },
       error: (e) => {
         console.log(e);
@@ -79,11 +87,11 @@ get activePlans() {
   onCreateOrder(licenseType: SubscriptionType): void {
     let appUrl = 'https://app.loom21.com/';
     if (isDevMode()) {
-      appUrl =  'http://localhost:5000/';
+      appUrl = 'http://localhost:5000/';
     }
-    if(this.localeId == 'bg'){
+    if (this.localeId == 'bg') {
       window.open(`${appUrl}bg/plans/${licenseType.id}`);
-    }else{
+    } else {
       window.open(`${appUrl}en-US/plans/${licenseType.id}`);
     }
   }
