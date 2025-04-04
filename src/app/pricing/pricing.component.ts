@@ -19,7 +19,8 @@ export class PricingComponent implements OnInit {
   selectedPlan = 'year'; // Default selection
 
   public plans: SubscriptionType[] = [];
-  onboardingFee: number = 9900; // Example: $99.00 - adjust as needed
+  onboardingFeeSmall: number = 0; // Example: $99.00 - adjust as needed
+  onboardingFeeMid: number = 0;
 
 
   constructor(@Inject(LOCALE_ID) protected localeId: string,
@@ -54,6 +55,7 @@ export class PricingComponent implements OnInit {
           }
         });
         this.loading = false;
+        this.setOnboardingPrices();
         this.updateStructuredData();
 
       },
@@ -62,6 +64,23 @@ export class PricingComponent implements OnInit {
         this.loading = false;
       }
     });
+  }
+  setOnboardingPrices() {
+     const small = this.plans.find(a=> {
+      return a.interval === 'single' && a.type ==='small';
+     });
+
+     if(small){
+        this.onboardingFeeSmall = small.amount;
+     }
+
+     const mid = this.plans.find(a=> {
+      return a.interval === 'single' && a.type ==='mid';
+     });
+
+     if(mid){
+      this.onboardingFeeMid = mid.amount;
+   }
   }
 
   setTexts(plan: SubscriptionType) {//TODO: refactor this
