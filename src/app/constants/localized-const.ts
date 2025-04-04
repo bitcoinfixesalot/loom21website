@@ -20,7 +20,7 @@ export const LD_JSON = {
     home_description: $localize`:Home description ld_json tag@@homeDescription_ld_json:Manage sales, deliveries, and payments with ease. Track inventory, process invoices, and accept bitcoin in real-time.`,
     documentation_description: $localize`:Documentation description ld_json tag@@docDescription_ld_json:Learn to optimize sales, deliveries, and payments. Guides on inventory, user roles, and real-time tracking.`,
     contact_description: $localize`:Contact description ld_json tag@@contactDescription_ld_json:Questions on sales, deliveries, or payments? Contact us for expert support to grow your business.`,
-    pricing_description: $localize`:Pricing description ld_json tag@@pricingDescription_ld_json:Subscription plans for Lomm21 with various features and pricing options.`,
+    pricing_description: $localize`:Pricing description ld_json tag@@pricingDescription_ld_json:Subscription plans for Loom21 with various features and pricing options.`,
 }
 
 export const INVENTORY_MANAGEMENT = $localize`:@@inventoryManagement:Inventory Management`;
