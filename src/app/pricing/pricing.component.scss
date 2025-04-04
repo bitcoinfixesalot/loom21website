@@ -1,0 +1,89 @@
+.pricing-box {
+    padding:  0;
+  }
+  
+  .pricing-plan {
+    margin: 0.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+  }
+  
+  .price-listing {
+    margin-bottom: 1rem;
+  }
+  
+  .price-listing .list-group-item {
+    border: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  .card-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-group {
+    max-width: 300px;
+    margin: 0 auto 2rem;
+    margin-top: 2rem;
+  }
+  
+  .btn-check:checked + .btn-outline-primary {
+    background-color: #1e88e5;
+    color: white;
+    border-color: #1e88e5;
+  }
+  
+  .btn-outline-primary {
+    padding: 0.5rem 2rem;
+  }
+
+  .h-100 {
+    height: 100%;
+    margin-bottom: 0px;
+  }
+  
+  .fw-bold {
+    font-weight: 700;
+  }
+  
+  /* New styles */
+  .onboarding-section .col-md-4 {
+    flex: 0 0 33.333333%; /* Ensure equal width */
+    max-width: 33.333333%;
+  }
+  
+//   .text-success {
+//     color: #198754 !important; /* Bootstrap success color */
+//   }
+
+/* New styles for custom plan */
+.custom-plan-section {
+    padding-top: 0!important;
+    padding-bottom: 2rem;
+  }
+  
+  .custom-plan-section .card {
+    border-width: 2px;
+  }
+  
+  .custom-plan-section .btn-lg {
+    padding: 0.75rem 2rem;
+  }
+
+  /* New styles for loading indicator */
+.loading-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+  
+  .min-hight  {
+    position: relative;
+    min-height: 400px; /* Ensure there's space for the loader */
+  }
