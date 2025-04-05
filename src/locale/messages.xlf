@@ -678,7 +678,7 @@
         <source>Entrepreneur</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">88</context>
+          <context context-type="linenumber">91</context>
         </context-group>
         <note priority="1" from="description">Entrepreneur</note>
       </trans-unit>
@@ -686,15 +686,15 @@
         <source>1 user</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">89</context>
+          <context context-type="linenumber">92</context>
         </context-group>
         <note priority="1" from="description">One User</note>
       </trans-unit>
       <trans-unit id="basicOrders" datatype="html">
-        <source>1000 orders/year</source>
+        <source>8 000 orders/year</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">90</context>
+          <context context-type="linenumber">93</context>
         </context-group>
         <note priority="1" from="description">Basic Orders</note>
       </trans-unit>
@@ -702,7 +702,7 @@
         <source>1 store location</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">91</context>
+          <context context-type="linenumber">94</context>
         </context-group>
         <note priority="1" from="description">One Store Location</note>
       </trans-unit>
@@ -710,7 +710,7 @@
         <source>Full access</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">92</context>
+          <context context-type="linenumber">95</context>
         </context-group>
         <note priority="1" from="description">One User Access</note>
       </trans-unit>
@@ -718,7 +718,7 @@
         <source>No API Access</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">93</context>
+          <context context-type="linenumber">96</context>
         </context-group>
         <note priority="1" from="description">No Access to API</note>
       </trans-unit>
@@ -726,7 +726,7 @@
         <source>Small Business</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">95</context>
+          <context context-type="linenumber">98</context>
         </context-group>
         <note priority="1" from="description">Small Business</note>
       </trans-unit>
@@ -734,15 +734,15 @@
         <source>5 users</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">96</context>
+          <context context-type="linenumber">99</context>
         </context-group>
         <note priority="1" from="description">Five Users</note>
       </trans-unit>
       <trans-unit id="smallOrders" datatype="html">
-        <source>10 000 orders/year</source>
+        <source>60 000 orders/year</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">97</context>
+          <context context-type="linenumber">100</context>
         </context-group>
         <note priority="1" from="description">Small Orders</note>
       </trans-unit>
@@ -750,7 +750,7 @@
         <source>5 store locations</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">98</context>
+          <context context-type="linenumber">101</context>
         </context-group>
         <note priority="1" from="description">Five Store Location</note>
       </trans-unit>
@@ -758,11 +758,11 @@
         <source>User Access Rights</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">99</context>
+          <context context-type="linenumber">102</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">106</context>
+          <context context-type="linenumber">109</context>
         </context-group>
         <note priority="1" from="description">User Access Rights</note>
       </trans-unit>
@@ -770,7 +770,7 @@
         <source>Limited Access to API</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">100</context>
+          <context context-type="linenumber">103</context>
         </context-group>
         <note priority="1" from="description">Limited Access to API</note>
       </trans-unit>
@@ -778,7 +778,7 @@
         <source>Mid-size</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">102</context>
+          <context context-type="linenumber">105</context>
         </context-group>
         <note priority="1" from="description">Mid-size</note>
       </trans-unit>
@@ -786,15 +786,15 @@
         <source>10 users</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">103</context>
+          <context context-type="linenumber">106</context>
         </context-group>
         <note priority="1" from="description">Ten User</note>
       </trans-unit>
       <trans-unit id="midOrders" datatype="html">
-        <source>50 000 orders/year</source>
+        <source>300 000 orders/year</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">104</context>
+          <context context-type="linenumber">107</context>
         </context-group>
         <note priority="1" from="description">Mid Orders</note>
       </trans-unit>
@@ -802,7 +802,7 @@
         <source>50 store location</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">105</context>
+          <context context-type="linenumber">108</context>
         </context-group>
         <note priority="1" from="description">Mid Store Location</note>
       </trans-unit>
@@ -810,7 +810,7 @@
         <source> Full API Access</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">107</context>
+          <context context-type="linenumber">110</context>
         </context-group>
         <note priority="1" from="description">Full Access to API</note>
       </trans-unit>
