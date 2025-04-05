@@ -682,7 +682,7 @@
       </trans-unit>
       <trans-unit id="onboarding_space" datatype="html">
         <source> Onboarding</source>
-        <target> Въвеждане</target>
+        <target> Стартова такса</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
           <context context-type="linenumber">63,64</context>
@@ -691,7 +691,7 @@
       </trans-unit>
       <trans-unit id="noOnboardingFee" datatype="html">
         <source>No onboarding fee</source>
-        <target>Без такса за въвеждане</target>
+        <target>Без стартова такса</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
           <context context-type="linenumber">67,68</context>
@@ -700,7 +700,7 @@
       </trans-unit>
       <trans-unit id="oneTimeOnboardingFee" datatype="html">
         <source> One-time onboarding fee: </source>
-        <target> Еднократна такса за въвеждане:</target>
+        <target> Еднократна стартова такса:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
           <context context-type="linenumber">71,72</context>
@@ -709,7 +709,7 @@
       </trans-unit>
       <trans-unit id="reqieredOneTimePayment" datatype="html">
         <source> Required one-time payment in addition to subscription </source>
-        <target> Задължително еднократно плащане в допълнение към абонамента </target>
+        <target> Изисква се еднократно плащане в допълнение към абонамента </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
           <context context-type="linenumber">84,86</context>
@@ -727,7 +727,7 @@
       </trans-unit>
       <trans-unit id="personalizedQuote" datatype="html">
         <source> Looking for a tailored solution? Contact us to discuss your specific needs and get a personalized quote. </source>
-        <target> Търсите персонализирано решение? Свържете се с нас, за да обсъдим вашите специфични нужди и да получите персонализирана оферта. </target>
+        <target> Търсите персонализирано решение? Свържете се с нас, за да обсъдим вашите специфични нужди и да получите лична оферта. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
           <context context-type="linenumber">101,102</context>
