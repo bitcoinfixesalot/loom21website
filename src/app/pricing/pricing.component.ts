@@ -88,17 +88,17 @@ export class PricingComponent implements OnInit {
       plan.usersText = $localize`:One User@@oneUser:1 user`;
       plan.ordersText = $localize`:Basic Orders@@basicOrders:1000 orders/year`;
       plan.storesText = $localize`:One Store Location@@oneStoreLocation:1 store location`;
-      plan.userAccessText = $localize`:One User Access@@oneUserAccess:One user all access`;
+      plan.userAccessText = $localize`:One User Access@@oneUserAccess:Full access`;
       plan.apiText = $localize`:No Access to API@@noAccessToAPI:No API Access`;
     } else if (plan.type == 'small') {
       plan.usersText = $localize`:Five Users@@fiveUsers:5 users`;
-      plan.ordersText = $localize`:Small Orders@@smallOrders:10 000 orders`;
+      plan.ordersText = $localize`:Small Orders@@smallOrders:10 000 orders/year`;
       plan.storesText = $localize`:Five Store Location@@fiveStoreLocation:5 store locations`;
       plan.userAccessText = $localize`:User Access Rights@@userAccessRights:User Access Rights`;
       plan.apiText = $localize`:Limited Access to API@@limitedAccessToAPI:Limited Access to API`;
     } else if (plan.type == 'mid') {
       plan.usersText = $localize`:Ten User@@tenUsers:10 users`;
-      plan.ordersText = $localize`:Mid Orders@@midOrders:50 000 orders`;
+      plan.ordersText = $localize`:Mid Orders@@midOrders:50 000 orders/year`;
       plan.storesText = $localize`:Mid Store Location@@fiftyStoreLocation:50 store location`;
       plan.userAccessText = $localize`:User Access Rights@@userAccessRights:User Access Rights`;
       plan.apiText = $localize`:Full Access to API@@fullAccessToAPI: Full API Access`;
