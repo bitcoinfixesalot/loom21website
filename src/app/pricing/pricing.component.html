@@ -7,7 +7,7 @@
         <p class="mt-2" i18n="Loading subscription plans label@@loadingSubsciptionPlans">Loading subscription plans...
         </p>
     </div>
-    <div *ngIf="!loading" class="btn-group d-flex justify-content-center mb-4" role="group"
+    <div *ngIf="loading == false" class="btn-group d-flex justify-content-center mb-4" role="group"
         aria-label="Subscription period selection">
         <input type="radio" class="btn-check" name="selectedPlan" id="month" value="month" [(ngModel)]="selectedPlan"
             autocomplete="off">
@@ -23,7 +23,7 @@
         </label>
     </div>
 
-    <div *ngIf="!loading" class="container pricing-box">
+    <div *ngIf="loading == false" class="container pricing-box">
         <div class="row justify-content-center">
             <div class="col-12">
                 <div class="card-group text-center">
@@ -54,7 +54,7 @@
     </div>
 
     <!-- Updated onboarding fee information with 3 cards -->
-    <div *ngIf="!loading" class="container onboarding-section">
+    <div *ngIf="loading == false" class="container onboarding-section">
         <div class="row justify-content-center">
             <div *ngFor="let plan of activePlans; let i = index" class="col-md-4 col-lg-4">
                 <div class="card h-100">
