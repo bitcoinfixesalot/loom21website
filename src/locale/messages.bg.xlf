@@ -790,7 +790,7 @@
       </trans-unit>
       <trans-unit id="oneUserAccess" datatype="html">
         <source>One user all access</source>
-        <target>Един потребител с пълен достъп</target>
+        <target>Пълен достъп</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
           <context context-type="linenumber">91</context>
@@ -816,8 +816,8 @@
         <note priority="1" from="description">Five Users</note>
       </trans-unit>
       <trans-unit id="smallOrders" datatype="html">
-        <source>10 000 orders</source>
-        <target>10 000 поръчки</target>
+        <source>10 000 orders/year</source>
+        <target>10 000 поръчки/година</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
           <context context-type="linenumber">95</context>
@@ -865,8 +865,8 @@
         <note priority="1" from="description">Ten User</note>
       </trans-unit>
       <trans-unit id="midOrders" datatype="html">
-        <source>50 000 orders</source>
-        <target>50 000 поръчки</target>
+        <source>50 000 orders/year</source>
+        <target>50 000 поръчки/година</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
           <context context-type="linenumber">101</context>
