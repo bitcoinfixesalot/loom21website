@@ -8,7 +8,7 @@ export class SubscriptionPlanService {
   private apiUrl: string;
   constructor(private http: HttpClient) { 
     if (isDevMode()) {
-      this.apiUrl =  'http://localhost:5000/api/payments';
+      this.apiUrl =  'https://localhost:7284/api/payments';
 
     }
     else {
