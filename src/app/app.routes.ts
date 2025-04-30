@@ -7,7 +7,6 @@ import { PricingComponent } from './pricing/pricing.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
-    { path: 'home', component: HomeComponent },
     { path: 'docs', component: DocumentationComponent },
     { path: 'blog', component: HomeComponent },
     { path: 'contact', component: ContactComponent },
