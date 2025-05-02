@@ -11,7 +11,7 @@ export const TITLES = {
 
 export const DESCRIPTIONS = {
     home_description: $localize`:Home description tag@@homeDescription:Manage sales, deliveries, and payments with ease. Track inventory, process invoices, and accept bitcoin in real-time!`,
-    documentation_description: $localize`:Documentation description tag@@docDescription:App for inventory management, stock control, customer & supplier tools, invoice & Bitcoin payments, order fulfillment, and real-time tracking with analytics`,
+    documentation_description: $localize`:Documentation description tag@@docDescription:App for inventory management, stock control, customer & supplier tools, invoice & Bitcoin payments, order fulfilment, and real-time tracking with analytics`,
     contact_description: $localize`:Contact description tag@@contactDescription:Questions on sales, deliveries, or payments? Contact us for expert support to grow your business!`,
     pricing_description: $localize`:Pricing description tag@@pricingDescription:Explore our subscription plans with flexible pricing options. Choose from monthly or yearly billing, with custom plans available. Contact us for details!`,
 }
