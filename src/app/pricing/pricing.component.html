@@ -21,6 +21,15 @@
                 -10%
             </span>
         </label>
+
+        <input type="radio" class="btn-check" name="selectedPlan" id="bitcoin" value="bitcoin" [(ngModel)]="selectedPlan"
+            autocomplete="off">
+        <label class="btn btn-outline-primary" for="bitcoin"><ng-container
+                i18n="Bitcoin button@@bitcoin">BITCOIN</ng-container>
+            <span class="badge bg-success position-absolute top-0 start-100 translate-middle-x rounded-pill">
+                -15%
+            </span>
+        </label>
     </div>
 
     <div *ngIf="loading == false" class="container pricing-box">
