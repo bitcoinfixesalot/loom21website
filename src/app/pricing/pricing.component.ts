@@ -114,12 +114,17 @@ export class PricingComponent implements OnInit {
   onCreateOrder(licenseType: SubscriptionType): void {
     let appUrl = 'https://app.loom21.com/';
     if (isDevMode()) {
-      appUrl = 'https://localhost:7284/'//'http://localhost:5000/';
+      appUrl = 'https://localhost:44412/'//'http://localhost:5000/';
     }
     if (this.localeId == 'bg') {
       window.open(`${appUrl}bg/plans/${licenseType.id}`);
     } else {
+      if(isDevMode()){
+        window.open(`${appUrl}plans/${licenseType.id}`);  
+      }
+      else{
       window.open(`${appUrl}en-US/plans/${licenseType.id}`);
+      }
     }
   }
 
