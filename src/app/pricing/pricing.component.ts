@@ -48,7 +48,7 @@ export class PricingComponent implements OnInit {
         this.plans.forEach((plan: SubscriptionType) => {
 
           this.setTexts(plan);
-          if (plan.interval == 'year') {
+          if (plan.interval == 'year' || plan.priceId == 'bitcoin') {
             plan.perMonthText = $localize`:Billed annually@@billedAnnually:per month (billed annually)`;
           } else {
             plan.perMonthText = $localize`:Per month@@perMonth:per month`;
