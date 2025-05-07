@@ -91,7 +91,7 @@
         <note priority="1" from="description">Home description tag</note>
       </trans-unit>
       <trans-unit id="docDescription" datatype="html">
-        <source>App for inventory management, stock control, customer &amp; supplier tools, invoice &amp; Bitcoin payments, order fulfillment, and real-time tracking with analytics</source>
+        <source>App for inventory management, stock control, customer &amp; supplier tools, invoice &amp; Bitcoin payments, order fulfilment, and real-time tracking with analytics</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">14</context>
@@ -594,11 +594,19 @@
         </context-group>
         <note priority="1" from="description">Annual button</note>
       </trans-unit>
+      <trans-unit id="bitcoin" datatype="html">
+        <source>BITCOIN</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+        <note priority="1" from="description">Bitcoin button</note>
+      </trans-unit>
       <trans-unit id="choosePlan" datatype="html">
         <source> Choose Plan </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">47,48</context>
+          <context context-type="linenumber">56,57</context>
         </context-group>
         <note priority="1" from="description">Choose plan button</note>
       </trans-unit>
@@ -606,7 +614,7 @@
         <source> Onboarding</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">63,64</context>
+          <context context-type="linenumber">72,73</context>
         </context-group>
         <note priority="1" from="description">Onboarding after plan</note>
       </trans-unit>
@@ -614,7 +622,7 @@
         <source>No onboarding fee</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">67,68</context>
+          <context context-type="linenumber">76,77</context>
         </context-group>
         <note priority="1" from="description">No onboarding fee</note>
       </trans-unit>
@@ -622,7 +630,7 @@
         <source> One-time onboarding fee: </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">71,72</context>
+          <context context-type="linenumber">80,81</context>
         </context-group>
         <note priority="1" from="description">One-time onboarding fee</note>
       </trans-unit>
@@ -630,7 +638,7 @@
         <source> Required one-time payment in addition to subscription </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">84,86</context>
+          <context context-type="linenumber">93,95</context>
         </context-group>
         <note priority="1" from="description">Required one-time payment</note>
       </trans-unit>
@@ -638,7 +646,7 @@
         <source>Need a Custom Plan? </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">98,100</context>
+          <context context-type="linenumber">107,109</context>
         </context-group>
         <note priority="1" from="description">Need custom plan</note>
       </trans-unit>
@@ -646,7 +654,7 @@
         <source> Looking for a tailored solution? Contact us to discuss your specific needs and get a personalized quote. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">101,102</context>
+          <context context-type="linenumber">110,111</context>
         </context-group>
         <note priority="1" from="description">Personalized quote</note>
       </trans-unit>
@@ -654,7 +662,7 @@
         <source> Contact Us </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">106,107</context>
+          <context context-type="linenumber">115,116</context>
         </context-group>
         <note priority="1" from="description">Contact us button</note>
       </trans-unit>
