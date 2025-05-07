@@ -102,7 +102,7 @@
         <note priority="1" from="description">Home description tag</note>
       </trans-unit>
       <trans-unit id="docDescription" datatype="html">
-        <source>App for inventory management, stock control, customer &amp; supplier tools, invoice &amp; Bitcoin payments, order fulfillment, and real-time tracking with analytics</source>
+        <source>App for inventory management, stock control, customer &amp; supplier tools, invoice &amp; Bitcoin payments, order fulfilment, and real-time tracking with analytics</source>
         <target>Приложение за управление на инвентара, контрол на складови наличности, инструменти за клиенти и доставчици, фактуриране и плащания с биткойн, изпълнение на поръчки и проследяване в реално време с анализи.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
@@ -671,12 +671,21 @@
         </context-group>
         <note priority="1" from="description">Annual button</note>
       </trans-unit>
+      <trans-unit id="bitcoin" datatype="html">
+        <source>BITCOIN</source>
+        <target>БИТКОЙН</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+        <note priority="1" from="description">Bitcoin button</note>
+      </trans-unit>
       <trans-unit id="choosePlan" datatype="html">
         <source> Choose Plan </source>
         <target>Избери План</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">47,48</context>
+          <context context-type="linenumber">56,57</context>
         </context-group>
         <note priority="1" from="description">Choose plan button</note>
       </trans-unit>
@@ -685,7 +694,7 @@
         <target> Стартова такса</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">63,64</context>
+          <context context-type="linenumber">72,73</context>
         </context-group>
         <note priority="1" from="description">Onboarding after plan</note>
       </trans-unit>
@@ -694,7 +703,7 @@
         <target>Без стартова такса</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">67,68</context>
+          <context context-type="linenumber">76,77</context>
         </context-group>
         <note priority="1" from="description">No onboarding fee</note>
       </trans-unit>
@@ -703,7 +712,7 @@
         <target> Еднократна стартова такса:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">71,72</context>
+          <context context-type="linenumber">80,81</context>
         </context-group>
         <note priority="1" from="description">One-time onboarding fee</note>
       </trans-unit>
@@ -712,7 +721,7 @@
         <target> Изисква се еднократно плащане в допълнение към абонамента </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">84,86</context>
+          <context context-type="linenumber">93,95</context>
         </context-group>
         <note priority="1" from="description">Required one-time payment</note>
       </trans-unit>
@@ -721,7 +730,7 @@
         <target>Нуждаете се от персонализиран план?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">98,100</context>
+          <context context-type="linenumber">107,109</context>
         </context-group>
         <note priority="1" from="description">Need custom plan</note>
       </trans-unit>
@@ -730,7 +739,7 @@
         <target> Търсите персонализирано решение? Свържете се с нас, за да обсъдим вашите специфични нужди и да получите лична оферта. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">101,102</context>
+          <context context-type="linenumber">110,111</context>
         </context-group>
         <note priority="1" from="description">Personalized quote</note>
       </trans-unit>
@@ -739,7 +748,7 @@
         <target> Пишете ни </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">106,107</context>
+          <context context-type="linenumber">115,116</context>
         </context-group>
         <note priority="1" from="description">Contact us button</note>
       </trans-unit>
