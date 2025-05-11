@@ -11,10 +11,8 @@
                     <li class="nav-item active"><a class="nav-link" routerLink="/" i18n="Home menu@@home">Home</a></li>
                     <li class="nav-item active"><a class="nav-link" routerLink="/docs" i18n="Docs menu@@documentation">Documentation</a></li>
                     <li class="nav-item active"><a class="nav-link" routerLink="/pricing" i18n="Pricing menu@@pricing">Pricing</a></li>
-                    <!-- <li class="nav-item active"><a class="nav-link" routerLink="/blog" i18n="Blog menu@@blog">Blog</a></li> -->
                     <li class="nav-item"><a class="nav-link" routerLink="/contact" i18n="contact menu@@contact">Contact</a></li>
-                   
-                    <li class="nav-item"><a class="btn waves-effect waves-light btn-success" href="https://app.loom21.com/" target="_blank" i18n="Launch app button@@launchApp">Launch App</a></li>
+                    <li class="nav-item"><a class="btn waves-effect waves-light btn-success" [href]="appUrl" target="_blank" i18n="Launch app button@@launchApp">Launch App</a></li>
                 </ul>
             </div>
         </nav>
