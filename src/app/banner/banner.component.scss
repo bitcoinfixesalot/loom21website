@@ -1,0 +1,44 @@
+.locale-switcher {
+  display: flex;
+  align-items: center;
+  position: relative; /* Ensure the dropdown is positioned relative to this container */
+}
+
+.btn-outline-light {
+  border-color: #fff;
+  color: #788093;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.btn-outline-light .fas {
+  margin-right: 0.25rem;
+}
+
+.locale-menu {
+  min-width: 120px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute; /* Ensure dropdown stays below the button */
+  top: 100%; /* Align directly below the button */
+  left: 0; /* Align with the left edge of the button */
+  margin-top: 0.125rem; /* Small gap between button and dropdown */
+}
+
+.locale-menu .dropdown-item {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  color: #333;
+}
+
+.locale-menu .dropdown-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
