@@ -21,8 +21,6 @@ function run() {
 
 
   server.use('/bg', serverBg());
-  // server.use('/de', serverDe());
-  // server.use('/es', serverEs());
   server.use('/en', serverEn());
   server.use('/', serverEn());
   server.listen(port, '0.0.0.0', () => {
