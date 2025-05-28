@@ -45,23 +45,8 @@ export class HomeComponent implements OnInit {
     this.titleService.setTitle(TITLES.home_title);
     this.metaService.updateTag({
       name: 'description',
-      content: DESCRIPTIONS.home_description//'Reset your password to manage inventory, payments, and Bitcoin conversions.'
+      content: DESCRIPTIONS.home_description
     });
-    // this.metaService.addTag({
-    //   name: 'application/ld+json',
-    //   content: JSON.stringify({
-    //     '@context': 'https://schema.org',
-    //     '@type': 'SoftwareApplication',
-    //     'name': 'Loom 21',
-    //     'description': LD_JSON.home_description,
-    //     'url': `https://loom21.com/${this.localeId}`,
-    //     'applicationCategory': 'BusinessApplication',
-    //     'featureList': [INVENTORY_MANAGEMENT, STOCK_CONTROL, PRODUCT_MANAGEMENT, INVOICE_PROCESSING, CUSTOMER_MANAGEMENT, SUPPLIER_MANAGEMENT,
-    //       VENDOR_MANAGEMENT, ORDER_FULFILLMENT, PAYMENT_PROCESSING, BITCOIN_PAYMENTS, SALES_TRACKING, SERVICE_MANAGEMENT, DELIVERY_MANAGEMENT,
-    //       USER_ROLES_PERMISSIONS, INVENTORY_ANALYTICS, WAREHOUSE_MANAGEMENT, REAL_TIME_INVENTORY_TRACKING],
-    //       'operatingSystem': 'Web, iOS, Android',
-    //   })
-    // });
 
     this.metaService.addTag({
       name: "application/ld+json",
@@ -86,7 +71,4 @@ export class HomeComponent implements OnInit {
       })
     });
   }
-
-
 }
-
