@@ -7,7 +7,7 @@
         <target>Начало</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">11,12</context>
+          <context context-type="linenumber">16,17</context>
         </context-group>
         <note priority="1" from="description">Home menu</note>
       </trans-unit>
@@ -16,7 +16,7 @@
         <target>Документация</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">12,13</context>
+          <context context-type="linenumber">19,21</context>
         </context-group>
         <note priority="1" from="description">Docs menu</note>
       </trans-unit>
@@ -25,7 +25,7 @@
         <target>Цени</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">13,14</context>
+          <context context-type="linenumber">22,24</context>
         </context-group>
         <note priority="1" from="description">Pricing menu</note>
       </trans-unit>
@@ -34,7 +34,7 @@
         <target>Контакти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">15,17</context>
+          <context context-type="linenumber">25,27</context>
         </context-group>
         <note priority="1" from="description">contact menu</note>
       </trans-unit>
@@ -43,7 +43,7 @@
         <target>Към Loom21</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">17,19</context>
+          <context context-type="linenumber">49,51</context>
         </context-group>
         <note priority="1" from="description">Launch app button</note>
       </trans-unit>
@@ -57,8 +57,8 @@
         <note priority="1" from="description">Home keywords tag</note>
       </trans-unit>
       <trans-unit id="homeTitle" datatype="html">
-        <source>Loom 21 </source>
-        <target>Loom 21 </target>
+        <source>Loom21: Inventory &amp; Payment Management Software</source>
+        <target>Loom21: Софтуер за управление на инвентар и плащания</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">6</context>
@@ -66,7 +66,7 @@
         <note priority="1" from="description">Home title</note>
       </trans-unit>
       <trans-unit id="documentationTitle" datatype="html">
-        <source>Documentation - Loom 21 </source>
+        <source>Documentation - Loom 21</source>
         <target>Документация - Loom 21 </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
@@ -75,7 +75,7 @@
         <note priority="1" from="description">Documentation title</note>
       </trans-unit>
       <trans-unit id="contactTitle" datatype="html">
-        <source>Contact - Loom 21 </source>
+        <source>Contact - Loom 21</source>
         <target>Контакти - Loom 21 </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
@@ -84,7 +84,7 @@
         <note priority="1" from="description">Contact title</note>
       </trans-unit>
       <trans-unit id="PricingTitle" datatype="html">
-        <source>Pricing - Loom 21 </source>
+        <source>Pricing - Loom 21</source>
         <target>Цени - Loom 21 </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
@@ -93,8 +93,8 @@
         <note priority="1" from="description">Pricing title</note>
       </trans-unit>
       <trans-unit id="homeDescription" datatype="html">
-        <source>Manage sales, deliveries, and payments with ease. Track inventory, process invoices, and accept bitcoin in real-time!</source>
-        <target>Управлявайте продажби, доставки и плащания с лекота. Следете инвентара, обработвайте фактури и приемайте биткойн в реално време!</target>
+        <source>Simplify inventory tracking and payment links with Loom21. Accept Bitcoin or fiat, manage sales and customers. Try free!</source>
+        <target>Опростете проследяването на инвентара и връзките за плащане с Loom21. Приемайте Биткойн или фиат, управлявайте продажби и клиенти. Изпробвайте безплатно!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">13</context>
@@ -426,11 +426,11 @@
         <note priority="1" from="description">Submit button</note>
       </trans-unit>
       <trans-unit id="loom21footer" datatype="html">
-        <source>Track and manage your inventory, invoices, customers, vendors, payments and convert prices between bitcoin and other 45 currencies. </source>
-        <target>Проследявайте и управлявайте своите наличности, фактури, клиенти, доставчици, плащания и конвертирайте цените между биткойн и други 45 валути.</target>
+        <source>Loom21: Simplify inventory tracking and payment links for Bitcoin or fiat, plus manage sales and customers. Start now!</source>
+        <target>Loom21: Опростете проследяването на инвентара и връзките за плащане с Биткойн или фиат, плюс управлявайте продажби и клиенти. Започнете сега!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">6,8</context>
+          <context context-type="linenumber">6,7</context>
         </context-group>
         <note priority="1" from="description">Loom21 footer</note>
       </trans-unit>
@@ -439,7 +439,7 @@
         <target>Свържете се с нас</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">23,24</context>
+          <context context-type="linenumber">21,22</context>
         </context-group>
         <note priority="1" from="description">Get in touch</note>
       </trans-unit>
@@ -448,7 +448,7 @@
         <target>Често задавани въпроси</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">44</context>
         </context-group>
         <note priority="1" from="description">Faq</note>
       </trans-unit>
@@ -457,7 +457,7 @@
         <target>План за развитие</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">46,47</context>
+          <context context-type="linenumber">44,45</context>
         </context-group>
         <note priority="1" from="description">Road map</note>
       </trans-unit>
@@ -466,13 +466,13 @@
         <target>Поверителност</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">47,48</context>
+          <context context-type="linenumber">45,46</context>
         </context-group>
         <note priority="1" from="description">Privacy</note>
       </trans-unit>
       <trans-unit id="homeH2TopTitle" datatype="html">
-        <source>Give your Business Real boost Now!</source>
-        <target>Дайте истински тласък на бизнеса си!</target>
+        <source>Inventory &amp; Payment Management Made Simple</source>
+        <target>Управление на инвентар и плащания, направено лесно</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">7,8</context>
@@ -480,7 +480,7 @@
         <note priority="1" from="description">Home top title</note>
       </trans-unit>
       <trans-unit id="homeTopSubTitle" datatype="html">
-        <source>Track and manage your inventory, invoices, customers, vendors, payments and more.</source>
+        <source>Easily create payment links for Bitcoin or fiat and manage products, inventory, sales, deliveries, and customers with Loom21—all in one platform. Try free today!</source>
         <target>Проследявайте и управлявайте вашите наличности, фактури, клиенти, доставчици, плащания и други.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -551,12 +551,21 @@
         </context-group>
         <note priority="1" from="description">Control your own data</note>
       </trans-unit>
+      <trans-unit id="sendPaymentLinks" datatype="html">
+        <source>You can create payment links to take payments</source>
+        <target>notranslation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+        <note priority="1" from="description">Send payment links</note>
+      </trans-unit>
       <trans-unit id="acceptPayments" datatype="html">
         <source>Accept Bitcoin, Lightning, and credit/debit card payments</source>
         <target>Приемайте плащания с Bitcoin, Lightning и кредитни/дебитни карти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">38,39</context>
+          <context context-type="linenumber">39,40</context>
         </context-group>
         <note priority="1" from="description">Accept Payments</note>
       </trans-unit>
@@ -565,7 +574,7 @@
         <target>Получавайте известия, когато фактурите са платени</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">39,42</context>
+          <context context-type="linenumber">40,43</context>
         </context-group>
         <note priority="1" from="description">Get notified</note>
       </trans-unit>
@@ -574,7 +583,7 @@
         <target>Най-лесният начин да получите плащане в биткойн</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">69,71</context>
+          <context context-type="linenumber">70,72</context>
         </context-group>
         <note priority="1" from="description">Get paid in bitcoin</note>
       </trans-unit>
@@ -583,7 +592,7 @@
         <target>Изпращайте фактури с лекота. Приемайте плащания с Bitcoin, Lightning или кредитни/дебитни карти.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">71,74</context>
+          <context context-type="linenumber">72,75</context>
         </context-group>
         <note priority="1" from="description">Send invoices with ease</note>
       </trans-unit>
