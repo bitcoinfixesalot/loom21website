@@ -481,7 +481,7 @@
       </trans-unit>
       <trans-unit id="homeTopSubTitle" datatype="html">
         <source>Easily create payment links for Bitcoin or fiat and manage products, inventory, sales, deliveries, and customers with Loom21—all in one platform. Try free today!</source>
-        <target>Проследявайте и управлявайте вашите наличности, фактури, клиенти, доставчици, плащания и други.</target>
+        <target>Лесно създавайте връзки за плащане с Биткойн или фиат и управлявайте продукти, инвентар, продажби, доставки и клиенти с Loom21 — всичко в една платформа. Изпробвайте безплатно днес!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">8,10</context>
@@ -553,7 +553,7 @@
       </trans-unit>
       <trans-unit id="sendPaymentLinks" datatype="html">
         <source>You can create payment links to take payments</source>
-        <target>notranslation</target>
+        <target>Можете да създавате връзки за плащане, за да приемате плащания.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">38,39</context>
