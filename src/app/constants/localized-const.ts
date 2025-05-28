@@ -3,14 +3,14 @@ export const TAGS = {
 }
 
 export const TITLES = {
-    home_title: $localize`:Home title@@homeTitle:Loom 21 `,
-    documentation: $localize`:Documentation title@@documentationTitle:Documentation - Loom 21 `,
-    contact: $localize`:Contact title@@contactTitle:Contact - Loom 21 `,
-    pricing: $localize`:Pricing title@@PricingTitle:Pricing - Loom 21 `,
+    home_title: $localize`:Home title@@homeTitle:Loom21: Inventory & Payment Management Software`,
+    documentation: $localize`:Documentation title@@documentationTitle:Documentation - Loom 21`,
+    contact: $localize`:Contact title@@contactTitle:Contact - Loom 21`,
+    pricing: $localize`:Pricing title@@PricingTitle:Pricing - Loom 21`,
 }
 
 export const DESCRIPTIONS = {
-    home_description: $localize`:Home description tag@@homeDescription:Manage sales, deliveries, and payments with ease. Track inventory, process invoices, and accept bitcoin in real-time!`,
+    home_description: $localize`:Home description tag@@homeDescription:Simplify inventory tracking and payment links with Loom21. Accept Bitcoin or fiat, manage sales and customers. Try free!`,
     documentation_description: $localize`:Documentation description tag@@docDescription:App for inventory management, stock control, customer & supplier tools, invoice & Bitcoin payments, order fulfilment, and real-time tracking with analytics`,
     contact_description: $localize`:Contact description tag@@contactDescription:Questions on sales, deliveries, or payments? Contact us for expert support to grow your business!`,
     pricing_description: $localize`:Pricing description tag@@pricingDescription:Explore our subscription plans with flexible pricing options. Choose from monthly or yearly billing, with custom plans available. Contact us for details!`,
