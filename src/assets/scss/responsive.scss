@@ -1,3 +1,5 @@
+@use "variable";
+
 /*
 Template Name: Admin Press Admin
 Author: Themedesigner
@@ -126,7 +128,7 @@ File: scss
         margin-left: 15px;
     }
     .topbar{
-        background: $themecolor; 
+        background: variable.$themecolor; 
         position: relative;
         &.animated{
             animation-duration:0s;
@@ -158,7 +160,7 @@ File: scss
     .b-l, .b-r{
         border-left: 0px;
         border-right: 0px;
-        border-bottom: 1px solid $border;
+        border-bottom: 1px solid variable.$border;
     }
     .img-inline{
         li.half-width{
