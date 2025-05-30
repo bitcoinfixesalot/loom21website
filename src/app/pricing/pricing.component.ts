@@ -8,11 +8,10 @@ import { Title, Meta } from '@angular/platform-browser';
 import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
 
 @Component({
-  selector: 'app-pricing',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
-  templateUrl: './pricing.component.html',
-  styleUrl: './pricing.component.scss'
+    selector: 'app-pricing',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './pricing.component.html',
+    styleUrl: './pricing.component.scss'
 })
 export class PricingComponent implements OnInit {
   loading = true;

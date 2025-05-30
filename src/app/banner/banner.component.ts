@@ -3,11 +3,10 @@ import { Component, Inject, isDevMode, LOCALE_ID } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-banner',
-  standalone: true,
-  imports: [RouterOutlet, CommonModule, RouterModule],
-  templateUrl: './banner.component.html',
-  styleUrl: './banner.component.scss'
+    selector: 'app-banner',
+    imports: [RouterOutlet, CommonModule, RouterModule],
+    templateUrl: './banner.component.html',
+    styleUrl: './banner.component.scss'
 })
 export class BannerComponent {
   appUrl: string;
