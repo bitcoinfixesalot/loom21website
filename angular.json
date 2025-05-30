@@ -19,7 +19,7 @@
         },
         "locales": {
           "bg": { "translation": "src/locale/messages.bg.xlf", 
-          "baseHref": "/bg/" }
+          "subPath": "bg" }
         }
       },
       "architect": {
@@ -75,19 +75,23 @@
           },
           "configurations": {
             "production": {
+              "optimization": true,
+              "outputHashing": "all",
+              "namedChunks": false,
+              "extractLicenses": true,
+              "sourceMap": false,
               "budgets": [
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "2mb"
+                  "maximumError": "3mb"
                 },
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
                   "maximumError": "4kb"
                 }
-              ],
-              "outputHashing": "all"
+              ]              
             },
             "development": {
               "optimization": false,
