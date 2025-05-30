@@ -4,7 +4,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
     selector: 'app-banner',
-    imports: [RouterOutlet, CommonModule, RouterModule],
+    imports: [CommonModule, RouterModule],
     templateUrl: './banner.component.html',
     styleUrl: './banner.component.scss'
 })
