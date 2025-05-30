@@ -4,11 +4,10 @@ import { MarkdownComponent } from 'ngx-markdown';
 import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
 
 @Component({
-  selector: 'app-documentation',
-  standalone: true,
-  imports: [MarkdownComponent],
-  templateUrl: './documentation.component.html',
-  styleUrl: './documentation.component.scss'
+    selector: 'app-documentation',
+    imports: [MarkdownComponent],
+    templateUrl: './documentation.component.html',
+    styleUrl: './documentation.component.scss'
 })
 export class DocumentationComponent implements OnInit {
   headings: Element[] | undefined;
