@@ -578,23 +578,32 @@
         </context-group>
         <note priority="1" from="description">Get notified</note>
       </trans-unit>
-      <trans-unit id="theEasiestWay" datatype="html">
-        <source>The easiest way to get paid in bitcoin</source>
-        <target>Най-лесният начин да получите плащане в биткойн</target>
+      <trans-unit id="paymentsMadeSimple" datatype="html">
+        <source>Payments Made Simple</source>
+        <target>Плащанията, направени лесно</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">70,72</context>
+          <context context-type="linenumber">70,71</context>
         </context-group>
-        <note priority="1" from="description">Get paid in bitcoin</note>
+        <note priority="1" from="description">Payments made simple</note>
       </trans-unit>
-      <trans-unit id="sendInvoicesAndPayments" datatype="html">
-        <source>Send invoices with ease. Accept payments with Bitcoin, Lightning or credit/debit cards.</source>
-        <target>Изпращайте фактури с лекота. Приемайте плащания с Bitcoin, Lightning или кредитни/дебитни карти.</target>
+      <trans-unit id="sendPaymentLinksAnd" datatype="html">
+        <source>Send payment links for Bitcoin, Lightning, or fiat card payments. Effortless invoicing for everyone.</source>
+        <target>Изпращайте връзки за плащане с Биткойн, Lightning или карти. Лесно фактуриране за всеки.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">72,75</context>
+          <context context-type="linenumber">71,73</context>
         </context-group>
-        <note priority="1" from="description">Send invoices with ease</note>
+        <note priority="1" from="description">Send payment links and</note>
+      </trans-unit>
+      <trans-unit id="getStarted" datatype="html">
+        <source>Get Started</source>
+        <target>Започнете</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">73,75</context>
+        </context-group>
+        <note priority="1" from="description">Get started</note>
       </trans-unit>
       <trans-unit id="imAfraidIcantDoThat" datatype="html">
         <source>I'm afraid I can't do that.</source>

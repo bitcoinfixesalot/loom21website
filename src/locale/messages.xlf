@@ -512,21 +512,29 @@
         </context-group>
         <note priority="1" from="description">Get notified</note>
       </trans-unit>
-      <trans-unit id="theEasiestWay" datatype="html">
-        <source>The easiest way to get paid in bitcoin</source>
+      <trans-unit id="paymentsMadeSimple" datatype="html">
+        <source>Payments Made Simple</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">70,72</context>
+          <context context-type="linenumber">70,71</context>
         </context-group>
-        <note priority="1" from="description">Get paid in bitcoin</note>
+        <note priority="1" from="description">Payments made simple</note>
       </trans-unit>
-      <trans-unit id="sendInvoicesAndPayments" datatype="html">
-        <source>Send invoices with ease. Accept payments with Bitcoin, Lightning or credit/debit cards.</source>
+      <trans-unit id="sendPaymentLinksAnd" datatype="html">
+        <source>Send payment links for Bitcoin, Lightning, or fiat card payments. Effortless invoicing for everyone.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">72,75</context>
+          <context context-type="linenumber">71,73</context>
         </context-group>
-        <note priority="1" from="description">Send invoices with ease</note>
+        <note priority="1" from="description">Send payment links and</note>
+      </trans-unit>
+      <trans-unit id="getStarted" datatype="html">
+        <source>Get Started</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">73,75</context>
+        </context-group>
+        <note priority="1" from="description">Get started</note>
       </trans-unit>
       <trans-unit id="imAfraidIcantDoThat" datatype="html">
         <source>I&apos;m afraid I can&apos;t do that.</source>
