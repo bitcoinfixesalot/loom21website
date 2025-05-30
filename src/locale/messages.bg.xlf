@@ -472,7 +472,7 @@
       </trans-unit>
       <trans-unit id="homeH2TopTitle" datatype="html">
         <source>Inventory &amp; Payment Management Made Simple</source>
-        <target>Управление на инвентар и плащания, направено лесно</target>
+        <target>Управление на инвентара и плащанията – лесно и удобно</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">7,8</context>
