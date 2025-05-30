@@ -1,3 +1,5 @@
+@use "variable";
+
 /*
 Template Name: Wrakit UI Kit
 Author: wrappixel
@@ -23,7 +25,7 @@ Header 6
 *******************/
 .header6 {
     .navbar-toggler {
-        color: $white;
+        color: variable.$white;
     }
 
     .navbar-brand {
@@ -141,7 +143,7 @@ Subtitle
 *******************/
 
 .subtitle {
-    color: $muted;
+    color: variable.$muted;
     line-height: 24px;
 }
 
@@ -155,12 +157,12 @@ card
     margin-bottom: 30px;
 
     &.card-shadow {
-        box-shadow: $card-shadow;
+        box-shadow: variable.$card-shadow;
     }
 }
 
 .card-group .card {
-    border: 1px solid $border;
+    border: 1px solid variable.$border;
     margin-bottom: 30px;
 }
 
@@ -174,7 +176,7 @@ Icon space
 }
 
 .linking {
-    color: $headingtext;
+    color: variable.$headingtext;
 
     i {
         font-size: 14px;
@@ -183,7 +185,7 @@ Icon space
     }
 
     &:hover {
-        color: $themecolor;
+        color: variable.$themecolor;
 
         i {
             margin-left: 15px;
@@ -214,7 +216,7 @@ Listing
 
     &.with-underline {
         li {
-            border-bottom: 1px solid $border;
+            border-bottom: 1px solid variable.$border;
             padding: 15px 0;
         }
     }
@@ -246,7 +248,7 @@ Image shadow
 *******************/
 
 .img-shadow {
-    box-shadow: $img-shadow;
+    box-shadow: variable.$img-shadow;
 }
 
 
@@ -478,7 +480,7 @@ position
 
 .navbar-nav .dropdown-menu.b-none {
     border: 0px;
-    box-shadow: $card-shadow;
+    box-shadow: variable.$card-shadow;
 }
 
 .navbar-nav {
@@ -487,7 +489,7 @@ position
 
 .navbar-nav .dropdown-menu.b-none {
     border: 0px;
-    box-shadow: $card-shadow;
+    box-shadow: variable.$card-shadow;
 }
 
 
@@ -542,7 +544,7 @@ position
         list-style: none;
 
         a {
-            color: $bodytext;
+            color: variable.$bodytext;
             display: flex;
             padding: 10px 0;
             transition: 0.2s ease-in;
@@ -550,7 +552,7 @@ position
         }
 
         &:hover a {
-            color: $themecolor;
+            color: variable.$themecolor;
             padding-left: 10px;
         }
 
@@ -584,13 +586,13 @@ position
 /*************/
 
 .form-control-dark {
-    background: $border;
-    color: $white;
-    border-color: $border;
+    background: variable.$border;
+    color: variable.$white;
+    border-color: variable.$border;
 
     &:focus {
-        background: $border;
-        color: $white;
+        background: variable.$border;
+        color: variable.$white;
     }
 }
 
@@ -621,13 +623,13 @@ position
 
     &.light {
         a {
-            color: $dark;
-            background: $light;
+            color: variable.$dark;
+            background: variable.$light;
         }
 
         a:hover {
-            background: $dark;
-            color: $white;
+            background: variable.$dark;
+            color: variable.$white;
         }
     }
 }
@@ -672,7 +674,7 @@ position
 
 .form-control {
     padding: .75rem;
-    border: 2px solid $border;
+    border: 2px solid variable.$border;
 }
 
 select.form-control:not([size]):not([multiple]) {
@@ -708,8 +710,8 @@ Grid page
 .show-grid [class^=col-] {
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 1px solid $border;
-    background-color: $light;
+    border: 1px solid variable.$border;
+    background-color: variable.$light;
 }
 
 
@@ -718,22 +720,22 @@ list and media
 ******************/
 
 .list-group a.list-group-item:hover {
-    background: $light;
+    background: variable.$light;
 }
 
 .list-group-item.active,
 .list-group .list-group-item.active:hover {
-    background: $themecolor;
-    border-color: $themecolor;
+    background: variable.$themecolor;
+    border-color: variable.$themecolor;
 }
 
 .list-group-item.disabled {
-    color: $muted;
-    background: $light;
+    color: variable.$muted;
+    background: variable.$light;
 }
 
 .media {
-    border: 1px solid $border;
+    border: 1px solid variable.$border;
     margin-bottom: 10px;
     padding: 15px;
 }
@@ -810,15 +812,15 @@ Vertical tabs
     .tabs-vertical {
         width: 150px;
         border-bottom: 0px;
-        border-right: 1px solid $border;
+        border-right: 1px solid variable.$border;
         display: table-cell;
         vertical-align: top;
 
         li .nav-link {
-            color: $dark;
+            color: variable.$dark;
             margin-bottom: 10px;
             border: 0px;
-            border-radius: $radius 0 0 $radius;
+            border-radius: variable.$radius 0 0 variable.$radius;
         }
     }
 
@@ -832,9 +834,9 @@ Vertical tabs
 .tabs-vertical li .nav-link.active,
 .tabs-vertical li .nav-link:hover,
 .tabs-vertical li .nav-link.active:focus {
-    background: $themecolor;
+    background: variable.$themecolor;
     border: 0px;
-    color: $white;
+    color: variable.$white;
 }
 
 
@@ -843,11 +845,11 @@ Vertical tabs
 .customvtab .tabs-vertical li .nav-link.active,
 .customvtab .tabs-vertical li .nav-link:hover,
 .customvtab .tabs-vertical li .nav-link:focus {
-    background: $white;
+    background: variable.$white;
     border: 0px;
-    border-right: 2px solid $themecolor;
+    border-right: 2px solid variable.$themecolor;
     margin-right: -1px;
-    color: $themecolor;
+    color: variable.$themecolor;
 }
 
 .tabcontent-border {
@@ -860,16 +862,16 @@ Vertical tabs
         a.nav-link {
             border: 0px;
             margin-right: 3px;
-            color: $bodytext;
+            color: variable.$bodytext;
 
             &.active {
-                background: $themecolor;
-                color: $white;
+                background: variable.$themecolor;
+                color: variable.$white;
             }
 
             &:hover {
-                color: $white;
-                background: $themecolor;
+                color: variable.$white;
+                background: variable.$themecolor;
             }
         }
     }
@@ -896,7 +898,7 @@ Timeline page
     left: 50%;
     width: 3px;
     margin-left: -1.5px;
-    background-color: $light;
+    background-color: variable.$light;
 }
 
 .timeline>li {
@@ -929,8 +931,8 @@ Timeline page
     position: relative;
     width: 46%;
     padding: 20px;
-    border: 1px solid $border;
-    border-radius: $radius;
+    border: 1px solid variable.$border;
+    border-radius: variable.$radius;
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
 }
@@ -942,9 +944,9 @@ Timeline page
     top: 26px;
     right: -8px;
     border-top: 8px solid transparent;
-    border-right: 0 solid $border;
+    border-right: 0 solid variable.$border;
     border-bottom: 8px solid transparent;
-    border-left: 8px solid $border;
+    border-left: 8px solid variable.$border;
 }
 
 .timeline>li>.timeline-panel:after {
@@ -954,9 +956,9 @@ Timeline page
     top: 27px;
     right: -7px;
     border-top: 7px solid transparent;
-    border-right: 0 solid $white;
+    border-right: 0 solid variable.$white;
     border-bottom: 7px solid transparent;
-    border-left: 7px solid $white;
+    border-left: 7px solid variable.$white;
 }
 
 .timeline>li>.timeline-badge {
@@ -994,23 +996,23 @@ Timeline page
 }
 
 .timeline-badge.primary {
-    background-color: $primary;
+    background-color: variable.$primary;
 }
 
 .timeline-badge.success {
-    background-color: $success;
+    background-color: variable.$success;
 }
 
 .timeline-badge.warning {
-    background-color: $warning;
+    background-color: variable.$warning;
 }
 
 .timeline-badge.danger {
-    background-color: $danger;
+    background-color: variable.$danger;
 }
 
 .timeline-badge.info {
-    background-color: $info;
+    background-color: variable.$info;
 }
 
 .timeline-title {
@@ -1044,10 +1046,10 @@ ul.list-icons {
         transition: 0.2s ease-in;
 
         a {
-            color: $bodytext;
+            color: variable.$bodytext;
 
             &:hover {
-                color: $themecolor;
+                color: variable.$themecolor;
             }
         }
 
@@ -1067,10 +1069,10 @@ ul.list-inline {
         }
 
         a {
-            color: $bodytext;
+            color: variable.$bodytext;
 
             &:hover {
-                color: $themecolor;
+                color: variable.$themecolor;
             }
         }
     }
@@ -1096,30 +1098,30 @@ html body .accordion {
 
 #accordion4 {
     .card-header {
-        border: 1px solid $border;
+        border: 1px solid variable.$border;
         background: transparent;
         margin-bottom: 10px;
 
         a {
-            color: $muted;
+            color: variable.$muted;
         }
 
         &:hover {
-            background-color: $info;
-            border: 1px solid $info;
+            background-color: variable.$info;
+            border: 1px solid variable.$info;
 
             a {
-                color: $white;
+                color: variable.$white;
             }
         }
     }
 
     .card.active .card-header {
-        background-color: $info;
-        border: 1px solid $info;
+        background-color: variable.$info;
+        border: 1px solid variable.$info;
 
         a {
-            color: $white;
+            color: variable.$white;
         }
     }
 }
@@ -1133,7 +1135,7 @@ Breadcrumb
 
     .breadcrumb-item,
     .breadcrumb-item a {
-        color: $white;
+        color: variable.$white;
 
         &.active {
             opacity: 0.7;
@@ -1159,7 +1161,7 @@ Breadcrumb
 }
 
 .card-subtitle {
-    color: $muted;
+    color: variable.$muted;
     margin-bottom: 30px;
     font-size: 14px;
 }
@@ -1173,44 +1175,44 @@ Breadcrumb
 
 .card-default {
     .card-header {
-        background: $white;
+        background: variable.$white;
         border-bottom: 0px;
     }
 }
 
 .card-success {
-    background: $success;
-    border-color: $success;
+    background: variable.$success;
+    border-color: variable.$success;
 }
 
 .card-danger {
-    background: $danger;
-    border-color: $danger;
+    background: variable.$danger;
+    border-color: variable.$danger;
 }
 
 .card-warning {
-    background: $warning;
-    border-color: $warning;
+    background: variable.$warning;
+    border-color: variable.$warning;
 }
 
 .card-info {
-    background: $info;
-    border-color: $info;
+    background: variable.$info;
+    border-color: variable.$info;
 }
 
 .card-primary {
-    background: $primary;
-    border-color: $primary;
+    background: variable.$primary;
+    border-color: variable.$primary;
 }
 
 .card-dark {
-    background: $inverse;
-    border-color: $inverse;
+    background: variable.$inverse;
+    border-color: variable.$inverse;
 }
 
 .card-megna {
-    background: $megna;
-    border-color: $megna;
+    background: variable.$megna;
+    border-color: variable.$megna;
 }
 
 
@@ -1228,66 +1230,66 @@ Breadcrumb
 }
 
 .card-info {
-    background: $info;
-    border-color: $info;
+    background: variable.$info;
+    border-color: variable.$info;
 }
 
 .card-primary {
-    background: $primary;
-    border-color: $primary;
+    background: variable.$primary;
+    border-color: variable.$primary;
 }
 
 .card-outline-info {
-    border-color: $info;
+    border-color: variable.$info;
 
     .card-header {
-        background: $info;
-        border-color: $info;
+        background: variable.$info;
+        border-color: variable.$info;
     }
 }
 
 .card-outline-inverse {
-    border-color: $inverse;
+    border-color: variable.$inverse;
 
     .card-header {
-        background: $inverse;
-        border-color: $inverse;
+        background: variable.$inverse;
+        border-color: variable.$inverse;
     }
 }
 
 .card-outline-warning {
-    border-color: $warning;
+    border-color: variable.$warning;
 
     .card-header {
-        background: $warning;
-        border-color: $warning;
+        background: variable.$warning;
+        border-color: variable.$warning;
     }
 }
 
 .card-outline-success {
-    border-color: $success;
+    border-color: variable.$success;
 
     .card-header {
-        background: $success;
-        border-color: $success;
+        background: variable.$success;
+        border-color: variable.$success;
     }
 }
 
 .card-outline-danger {
-    border-color: $danger;
+    border-color: variable.$danger;
 
     .card-header {
-        background: $danger;
-        border-color: $danger;
+        background: variable.$danger;
+        border-color: variable.$danger;
     }
 }
 
 .card-outline-primary {
-    border-color: $primary;
+    border-color: variable.$primary;
 
     .card-header {
-        background: $primary;
-        border-color: $primary;
+        background: variable.$primary;
+        border-color: variable.$primary;
     }
 }
 
@@ -1298,7 +1300,7 @@ Custom-select
 
 .custom-select {
     background: url(../../assets/images/ui/custom-select.png) right .75rem center no-repeat;
-    border: 2px solid $border;
+    border: 2px solid variable.$border;
     height: calc(2.25rem + 12px);
 }
 
@@ -1326,7 +1328,7 @@ textarea {
 .has-success .form-check-label,
 .has-success .form-control-feedback,
 .has-success .form-control-label {
-    color: $success;
+    color: variable.$success;
 }
 
 .has-success .form-control-success {
@@ -1334,7 +1336,7 @@ textarea {
 }
 
 .has-success .form-control {
-    border-color: $success;
+    border-color: variable.$success;
 }
 
 .has-warning .col-form-label,
@@ -1342,7 +1344,7 @@ textarea {
 .has-warning .form-check-label,
 .has-warning .form-control-feedback,
 .has-warning .form-control-label {
-    color: $warning;
+    color: variable.$warning;
 }
 
 .has-warning .form-control-warning {
@@ -1350,7 +1352,7 @@ textarea {
 }
 
 .has-warning .form-control {
-    border-color: $warning;
+    border-color: variable.$warning;
 }
 
 .has-danger .col-form-label,
@@ -1358,7 +1360,7 @@ textarea {
 .has-danger .form-check-label,
 .has-danger .form-control-feedback,
 .has-danger .form-control-label {
-    color: $danger;
+    color: variable.$danger;
 }
 
 .has-danger .form-control-danger {
@@ -1366,7 +1368,7 @@ textarea {
 }
 
 .has-danger .form-control {
-    border-color: $danger;
+    border-color: variable.$danger;
 }
 
 .input-group-addon {
@@ -1398,9 +1400,9 @@ custom modals
         position: absolute;
         right: 12px;
         top: 10px;
-        color: $muted;
+        color: variable.$muted;
         font-size: 25px;
-        background: $white;
+        background: variable.$white;
         width: 20px;
         height: 20px;
         text-align: center;
@@ -1471,7 +1473,7 @@ common-innerpage-banner
     background-position: center center;
 
     .title {
-        color: $white;
+        color: variable.$white;
         text-transform: uppercase;
         font-weight: 700;
         font-size: 40px;
@@ -1479,7 +1481,7 @@ common-innerpage-banner
     }
 
     .subtitle {
-        color: $white;
+        color: variable.$white;
     }
 }
 
@@ -1502,7 +1504,7 @@ common-innerpage-banner
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: $themecolor;
+    background: variable.$themecolor;
 }
 
 /*******************
@@ -1514,10 +1516,10 @@ Footer 4
         margin-top: 20px;
 
         a {
-            color: $bodytext;
+            color: variable.$bodytext;
 
             &:hover {
-                color: $info;
+                color: variable.$info;
             }
         }
     }
@@ -1529,7 +1531,7 @@ Footer 4
             line-height: 34px;
 
             &:hover {
-                background: $info;
+                background: variable.$info;
             }
         }
     }
@@ -1584,12 +1586,12 @@ code {
 
 .table {
     th {
-        color: $bodytext !important;
+        color: variable.$bodytext !important;
         border-bottom: 2px solid #e9ecef !important;
     }
 
     td {
-        color: $bodytext !important;
+        color: variable.$bodytext !important;
     }
 }
 

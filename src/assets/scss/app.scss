@@ -4,7 +4,7 @@ Author: wrappixel
 Email: niravjoshi87@gmail.com
 File: scss
 */
-@import 'variable';
+@use 'variable';
 /******************* 
 This is the font import from the google api 
 *******************/
@@ -25,18 +25,18 @@ Global Styles
 }
  
 body {
-    background: $bodycolor;
-    font-family: $bodyfont;
+    background: variable.$bodycolor;
+    font-family: variable.$bodyfont;
     margin: 0; 
     overflow-x: hidden;
-    color: $bodytext;
+    color: variable.$bodytext;
     font-weight: 300; 
 }
 
 html {
     position: relative;
     min-height: 100%;
-    background: $white;
+    background: variable.$white;
 }
 
 a:hover,
@@ -45,17 +45,17 @@ a:focus {
 }
 
 a.link {
-    color: $headingtext;
+    color: variable.$headingtext;
     &:hover,
     &:focus {
-        color: $themecolor;
+        color: variable.$themecolor;
     }
 }
 a.white-link{
-    color: $white;
+    color: variable.$white;
     &:hover,
     &:focus {
-        color: $dark;
+        color: variable.$dark;
     }
 }
 .img-responsive {
@@ -65,7 +65,7 @@ a.white-link{
 }
 
 .img-rounded {
-    border-radius: $radius;
+    border-radius: variable.$radius;
 }
 
 html body .mdi:before,
@@ -84,8 +84,8 @@ h3,
 h4,
 h5,
 h6 {
-    color: $headingtext;
-    font-family: $headingfont;
+    color: variable.$headingtext;
+    font-family: variable.$headingfont;
 }
 
 h1 {
@@ -132,7 +132,7 @@ h6 {
 }
 
 .box {
-    border-radius: $radius;
+    border-radius: variable.$radius;
     padding: 10px;
 }
 
@@ -160,8 +160,8 @@ Blockquote
 *******************/
 
 html body blockquote {
-    border-left: 5px solid $themecolor;
-    border: 1px solid $border;
+    border-left: 5px solid variable.$themecolor;
+    border: 1px solid variable.$border;
     padding: 15px;
 }
 
@@ -429,19 +429,19 @@ html body {
         border: none!important;
     }
     .b-r {
-        border-right: 1px solid $border;
+        border-right: 1px solid variable.$border;
     }
     .b-l {
-        border-left: 1px solid $border;
+        border-left: 1px solid variable.$border;
     }
     .b-b {
-        border-bottom: 1px solid $border;
+        border-bottom: 1px solid variable.$border;
     }
     .b-t {
-        border-top: 1px solid $border;
+        border-top: 1px solid variable.$border;
     }
     .b-all {
-        border: 1px solid $border!important;
+        border: 1px solid variable.$border!important;
     }
 }
 
@@ -474,7 +474,7 @@ Thumb size
 }
 
 .radius {
-    border-radius: $radius;
+    border-radius: variable.$radius;
 }
 
 
@@ -483,41 +483,41 @@ Text Colors
 *******************/
 
 .text-white {
-    color: $white!important;
+    color: variable.$white!important;
 }
 
 .text-danger {
-    color: $danger!important;
+    color: variable.$danger!important;
 }
 
 .text-muted {
-    color: $muted!important;
+    color: variable.$muted!important;
 }
 
 .text-warning {
-    color: $warning!important;
+    color: variable.$warning!important;
 }
 
 .text-success {
-    color: $success!important;
+    color: variable.$success!important;
 }
 
 .text-info {
-    color: $info!important;
+    color: variable.$info!important;
 }
 
 .text-inverse {
-    color: $inverse!important;
+    color: variable.$inverse!important;
 }
 .text-success-gradiant{
-    @include linear-gradient (to right, $success 0%, $success-dark 100%);
+    @include variable.linear-gradient (to right, variable.$success 0%, variable.$success-dark 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color:transparent;
 }
 .text-info-gradiant{
-    @include linear-gradient (to right, $info 0%, $primary 100%);
+    @include variable.linear-gradient (to right, variable.$info 0%, variable.$primary 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -526,22 +526,22 @@ Text Colors
 
 html body {
     .text-blue {
-        color: $blue;
+        color: variable.$blue;
     }
     .text-purple {
-        color: $purple;
+        color: variable.$purple;
     }
     .text-primary {
-        color: $primary!important;
+        color: variable.$primary!important;
     }
     .text-megna {
-        color: $megna;
+        color: variable.$megna;
     }
     .text-dark {
-        color: $bodytext;
+        color: variable.$bodytext;
     }
     .text-themecolor {
-        color: $themecolor;
+        color: variable.$themecolor;
     }
 }
 
@@ -551,87 +551,87 @@ Background Colors
 *******************/
 
 .bg-primary {
-    background-color: $primary !important;
+    background-color: variable.$primary !important;
 }
 
 .bg-success {
-    background-color: $success !important;
+    background-color: variable.$success !important;
 }
 
 .bg-info {
-    background-color: $info !important;
+    background-color: variable.$info !important;
 }
 
 .bg-warning {
-    background-color: $warning !important;
+    background-color: variable.$warning !important;
 }
 
 .bg-danger {
-    background-color: $danger !important;
+    background-color: variable.$danger !important;
 }
 .bg-orange {
-    background-color: $orange !important;
+    background-color: variable.$orange !important;
 }
 .bg-yellow {
-    background-color: $yellow;
+    background-color: variable.$yellow;
 }
 .bg-facebook {
-    background-color: $facebook;
+    background-color: variable.$facebook;
 }
 .bg-twitter {
-    background-color: $twitter;
+    background-color: variable.$twitter;
 }
 .bg-success-gradiant{
-    @include linear-gradient (to right, $success 0%, $success-dark 100%);
+    @include variable.linear-gradient (to right, variable.$success 0%, variable.$success-dark 100%);
 }
 .bg-info-gradiant{
-    @include linear-gradient (to right, $info 0%, $primary 100%);
+    @include variable.linear-gradient (to right, variable.$info 0%, variable.$primary 100%);
 } 
 .bg-danger-gradiant{
-    @include linear-gradient (to right, $danger 0%, $orange 100%); 
+    @include variable.linear-gradient (to right, variable.$danger 0%, variable.$orange 100%); 
 } 
 html body { 
     .bg-megna {
-        background-color: $megna;
+        background-color: variable.$megna;
     }
     .bg-theme {
-        background-color: $themecolor;
+        background-color: variable.$themecolor;
     }
     .bg-inverse {
-        background-color: $inverse;
+        background-color: variable.$inverse;
     }
     .bg-purple {
-        background-color: $purple;
+        background-color: variable.$purple;
     }
     .bg-light{
-        background-color: $light!important;
+        background-color: variable.$light!important;
     }
     .bg-light-primary {
-        background-color: $light-primary;
+        background-color: variable.$light-primary;
     }
     .bg-light-success {
-        background-color: $light-success;
+        background-color: variable.$light-success;
     }
     .bg-light-info {
-        background-color: $light-info;
+        background-color: variable.$light-info;
     }
     .bg-light-extra {
-        background-color: $extra-light;
+        background-color: variable.$extra-light;
     }
     .bg-light-warning {
-        background-color: $light-warning;
+        background-color: variable.$light-warning;
     }
     .bg-light-danger {
-        background-color: $light-danger;
+        background-color: variable.$light-danger;
     }
     .bg-light-inverse {
-        background-color: $light-inverse;
+        background-color: variable.$light-inverse;
     }
     .bg-light {
-        background-color: $light;
+        background-color: variable.$light;
     }
     .bg-white {
-        background-color: $white;
+        background-color: variable.$white;
     }
 }
 
@@ -642,14 +642,14 @@ Rounds
 
 .round {
     line-height: 48px;
-    color: $white;
+    color: variable.$white;
     width: 50px;
     height: 50px;
     display: inline-block;
     font-weight: 400;
     text-align: center;
     border-radius: 100%;
-    background: $info;
+    background: variable.$info;
     img {
         border-radius: 100%;
     }
@@ -663,23 +663,23 @@ Rounds
 }
 
 .round.round-info {
-    background: $info;
+    background: variable.$info;
 }
 
 .round.round-warning {
-    background: $warning;
+    background: variable.$warning;
 }
 
 .round.round-danger {
-    background: $danger;
+    background: variable.$danger;
 }
 
 .round.round-success {
-    background: $success;
+    background: variable.$success;
 }
 
 .round.round-primary {
-    background: $primary;
+    background: variable.$primary;
 }
 
 
@@ -690,9 +690,9 @@ Labels
 .label {
     padding: 3px 15px;
     line-height: 13px;
-    color: $white;
+    color: variable.$white;
     font-weight: 400;
-    border-radius: $radius;
+    border-radius: variable.$radius;
     font-size: 75%;
 }
 
@@ -701,86 +701,86 @@ Labels
 }
 
 .label-custom {
-    background-color: $megna;
+    background-color: variable.$megna;
 }
 
 .label-success {
-    background-color: $success;
+    background-color: variable.$success;
 }
 
 .label-info {
-    background-color: $info;
+    background-color: variable.$info;
 }
 
 .label-warning {
-    background-color: $warning;
+    background-color: variable.$warning;
 }
 
 .label-danger {
-    background-color: $danger;
+    background-color: variable.$danger;
 }
 
 .label-megna {
-    background-color: $megna;
+    background-color: variable.$megna;
 }
 
 .label-primary {
-    background-color: $primary;
+    background-color: variable.$primary;
 }
 
 .label-purple {
-    background-color: $purple;
+    background-color: variable.$purple;
 }
 
 .label-red {
-    background-color: $red;
+    background-color: variable.$red;
 }
 
 .label-inverse {
-    background-color: $inverse;
+    background-color: variable.$inverse;
 }
 
 .label-default {
-    background-color: $light;
+    background-color: variable.$light;
 }
 
 .label-white {
-    background-color: $white;
+    background-color: variable.$white;
 }
 
 .label-light-success {
-    background-color: $light-success;
-    color: $success;
+    background-color: variable.$light-success;
+    color: variable.$success;
 }
 
 .label-light-info {
-    background-color: $light-info;
-    color: $info;
+    background-color: variable.$light-info;
+    color: variable.$info;
 }
 
 .label-light-warning {
-    background-color: $light-warning;
-    color: $warning;
+    background-color: variable.$light-warning;
+    color: variable.$warning;
 }
 
 .label-light-danger {
-    background-color: $light-danger;
-    color: $danger;
+    background-color: variable.$light-danger;
+    color: variable.$danger;
 }
 
 .label-light-megna {
-    background-color: $light-megna;
-    color: $megna;
+    background-color: variable.$light-megna;
+    color: variable.$megna;
 }
 
 .label-light-primary {
-    background-color: $light-primary;
-    color: $primary;
+    background-color: variable.$light-primary;
+    color: variable.$primary;
 }
 
 .label-light-inverse {
-    background-color: $light-inverse;
-    color: $inverse;
+    background-color: variable.$light-inverse;
+    color: variable.$inverse;
 }
 
 
@@ -805,35 +805,35 @@ Labels
 }
 
 .badge-success {
-    background-color: $success;
+    background-color: variable.$success;
 }
 
 .badge-info {
-    background-color: $info;
+    background-color: variable.$info;
 }
 
 .badge-primary {
-    background-color: $primary;
+    background-color: variable.$primary;
 }
 
 .badge-warning {
-    background-color: $warning;
+    background-color: variable.$warning;
 }
 
 .badge-danger {
-    background-color: $danger;
+    background-color: variable.$danger;
 }
 
 .badge-purple {
-    background-color: $purple;
+    background-color: variable.$purple;
 }
 
 .badge-red {
-    background-color: $red;
+    background-color: variable.$red;
 }
 
 .badge-inverse {
-    background-color: $inverse;
+    background-color: variable.$inverse;
 }
 
 
@@ -847,12 +847,12 @@ ul.list-style-none {
     li {
         list-style: none;
         a {
-            color: $bodytext;
+            color: variable.$bodytext;
             padding: 8px 0px;
             display: block;
             text-decoration: none;
             &:hover {
-                color: $themecolor;
+                color: variable.$themecolor;
             }
         }
     }
@@ -865,20 +865,20 @@ dropdown-item
 
 .dropdown-item {
     padding: 8px 1rem;
-    color: $bodytext;
+    color: variable.$bodytext;
 }
 
 /*******************
 Buttons
 ******************/
 .btn{
-    color:$white;
+    color:variable.$white;
     padding: 10px 25px;
     cursor: pointer;
     box-shadow:0 2px 5px rgba(0, 0, 0, 0.14);
     transition: 0s;
     &:hover{
-        color: $white;
+        color: variable.$white;
     }
     &:focus{
         box-shadow:none;
@@ -886,21 +886,21 @@ Buttons
 }
 .btn-link{
     box-shadow: none;
-    color:$dark;
+    color:variable.$dark;
     padding: 10px 15px;
     .underline{
-        border-bottom: 1px solid $dark;
+        border-bottom: 1px solid variable.$dark;
     }
     &:hover{
-        color:$success;
+        color:variable.$success;
     }
 }
 .btn-light{
-    color:$dark;
+    color:variable.$dark;
     &:hover{
-        background: $dark;
-        color:$white;
-        border-color:$dark;
+        background: variable.$dark;
+        color:variable.$white;
+        border-color:variable.$dark;
     }
 }
 .btn-lg{
@@ -984,151 +984,151 @@ Buttons
 .btn-secondary.disabled {
     
     transition: 0.2s ease-in;
-    background-color: $white;
-    color: $bodytext; 
+    background-color: variable.$white;
+    color: variable.$bodytext; 
     &:hover{
         
-        color:$white!important;
+        color:variable.$white!important;
     }
     &.active, &:active, &:focus{
-        color:$white!important;
-        background:$dark;
-        border-color:$dark; 
+        color:variable.$white!important;
+        background:variable.$dark;
+        border-color:variable.$dark; 
     }
 }
 
 .btn-primary,
 .btn-primary.disabled {
-    background: $primary;
-    border: 1px solid $primary;
+    background: variable.$primary;
+    border: 1px solid variable.$primary;
     
     transition: 0.2s ease-in;
     &:hover{
-        background: $primary-dark;
-        border: 1px solid $primary-dark;
+        background: variable.$primary-dark;
+        border: 1px solid variable.$primary-dark;
     }
     &.active, &:active, &:focus{
-        background: $primary-dark;   
+        background: variable.$primary-dark;   
     }
 }
 .btn-themecolor,
 .btn-themecolor.disabled {
-    background: $themecolor;
-    color:$white;
-    border: 1px solid $themecolor;
+    background: variable.$themecolor;
+    color:variable.$white;
+    border: 1px solid variable.$themecolor;
     &:hover{
-        background: $themecolor-dark;
+        background: variable.$themecolor-dark;
         
-        border: 1px solid $themecolor-dark;
+        border: 1px solid variable.$themecolor-dark;
     }
     &.active, &:active, &:focus{
-        background: $themecolor-dark;
+        background: variable.$themecolor-dark;
     }
     
 }
 .btn-success,
 .btn-success.disabled {
-    background: $success;
-    border: 1px solid $success;
+    background: variable.$success;
+    border: 1px solid variable.$success;
     &:hover{
-        background: $success-dark;
-        border: 1px solid $success-dark;
+        background: variable.$success-dark;
+        border: 1px solid variable.$success-dark;
     }
     &.active, &:active, &:focus{
-        background: $success-dark;
+        background: variable.$success-dark;
         
     }
 }
 
 .btn-info,
 .btn-info.disabled {
-    background: $info;
-    border: 1px solid $info;
+    background: variable.$info;
+    border: 1px solid variable.$info;
     
     transition: 0.2s ease-in;
     &:hover{
-        background: $info-dark;
-        border: 1px solid $info-dark;
+        background: variable.$info-dark;
+        border: 1px solid variable.$info-dark;
         
     }
     &.active, &:active, &:focus{
-        background: $info-dark;
+        background: variable.$info-dark;
         
     }
 }
 
 .btn-warning,
 .btn-warning.disabled {
-    background: $warning;
-    color:$white;
-    border: 1px solid $warning;
+    background: variable.$warning;
+    color:variable.$white;
+    border: 1px solid variable.$warning;
     
     &:hover{
-        background: $warning-dark;
-        color:$white;
+        background: variable.$warning-dark;
+        color:variable.$white;
         
-        border: 1px solid $warning-dark;
+        border: 1px solid variable.$warning-dark;
     }
     &.active, &:active, &:focus{
-        background: $warning-dark;
-        color:$white;
+        background: variable.$warning-dark;
+        color:variable.$white;
         
     }
 }
 
 .btn-danger,
 .btn-danger.disabled {
-    background: $danger;
-    border: 1px solid $danger;
+    background: variable.$danger;
+    border: 1px solid variable.$danger;
     
     transition: 0.2s ease-in;
     &:hover{
-        background: $danger-dark;
+        background: variable.$danger-dark;
         
-        border: 1px solid $danger-dark;
+        border: 1px solid variable.$danger-dark;
     }
     &.active, &:active, &:focus{
-        background: $danger-dark;
+        background: variable.$danger-dark;
         
     }
 }
 .btn-inverse,
 .btn-inverse.disabled {
-    background: $inverse;
-    border: 1px solid $inverse;
-     color: $white;
+    background: variable.$inverse;
+    border: 1px solid variable.$inverse;
+     color: variable.$white;
     &:hover{
-        background: $inverse-dark;
+        background: variable.$inverse-dark;
         
-        color: $white;
-        border: 1px solid $inverse-dark;
+        color: variable.$white;
+        border: 1px solid variable.$inverse-dark;
     }
     &.active, &:active, &:focus{
-        background: $inverse-dark;
-        color: $white;
+        background: variable.$inverse-dark;
+        color: variable.$white;
     }
 }
 .btn-red,
 .btn-red.disabled {
-    background: $red;
-    border: 1px solid $red;
-    color: $white;
+    background: variable.$red;
+    border: 1px solid variable.$red;
+    color: variable.$white;
     &:hover {
         
-        border: 1px solid $red-dark;
-        background: $red-dark;
+        border: 1px solid variable.$red-dark;
+        background: variable.$red-dark;
     }
     &.active, &:active, &:focus{
-        background: $danger-dark;
+        background: variable.$danger-dark;
     }
 }
 
 .btn-success-gradiant{
-    @include linear-gradient (to right, $success 0%, $success-dark 100%);
+    @include variable.linear-gradient (to right, variable.$success 0%, variable.$success-dark 100%);
     border:0px;
     
     &:hover{
-        @include linear-gradient (to right, $success-dark 0%, $success 100%);
+        @include variable.linear-gradient (to right, variable.$success-dark 0%, variable.$success 100%);
         
     }
     &.active, &:active, &:focus{
@@ -1138,11 +1138,11 @@ Buttons
 }
 
 .btn-danger-gradiant{
-    @include linear-gradient (to right, $danger 0%, $orange 100%);
+    @include variable.linear-gradient (to right, variable.$danger 0%, variable.$orange 100%);
     border:0px;
     
     &:hover{
-        @include linear-gradient (to right, $orange 0%, $danger 100%);
+        @include variable.linear-gradient (to right, variable.$orange 0%, variable.$danger 100%);
         
     }
     &.active, &:active, &:focus{
@@ -1152,11 +1152,11 @@ Buttons
 }
 
 .btn-info-gradiant{
-    @include linear-gradient (to right, $info 0%, $primary 100%);
+    @include variable.linear-gradient (to right, variable.$info 0%, variable.$primary 100%);
     border:0px;
     
     &:hover{
-        @include linear-gradient (to right, $primary 0%, $info 100%);
+        @include variable.linear-gradient (to right, variable.$primary 0%, variable.$info 100%);
         
     }
     &.active, &:active, &:focus{
@@ -1166,8 +1166,8 @@ Buttons
 }
 
 .btn-outline-secondary {
-    background-color: $white;
-    color: $secondary;
+    background-color: variable.$white;
+    color: variable.$secondary;
     transition: 0.2s ease-in;
     &:hover,
     &:focus,
@@ -1175,133 +1175,133 @@ Buttons
         
     }
     &.active, &:active, &:focus{
-        background: $dark;
+        background: variable.$dark;
     }
 }
 
 .btn-outline-primary {
-    color: $primary;
-    background-color: $white;
-    border-color:$primary;
+    color: variable.$primary;
+    background-color: variable.$white;
+    border-color:variable.$primary;
     transition: 0.2s ease-in;
     &:hover,
     &:focus,
     &.focus {
-        background: $primary;
-        color: $white;
-        border-color:$primary;
+        background: variable.$primary;
+        color: variable.$white;
+        border-color:variable.$primary;
     }
     &.active, &:active, &:focus{
-        background: $primary-dark;
+        background: variable.$primary-dark;
     }
 }
 
 .btn-outline-success, a.btn-outline-success {
     color: white;
-    background-color: $success;
-    border-color:$success;
+    background-color: variable.$success;
+    border-color:variable.$success;
     
     transition: 0.2s ease-in;
     &:hover,
     &:focus,
     &.focus {
         background: transparent;
-        border-color:$success;
-        color: $success;
+        border-color:variable.$success;
+        color: variable.$success;
         
     }
     &.active, &:active, &:focus{
-        background: $success;
+        background: variable.$success;
         color: white;
     }
 }
 
 .btn-outline-info {
-    color: $info;
+    color: variable.$info;
     background-color: transparent;
-    border-color:$info;
+    border-color:variable.$info;
     
     transition: 0.2s ease-in;
     &:hover,
     &:focus,
     &.focus {
-        background: $info;
-        border-color:$info;
-        color: $white;
+        background: variable.$info;
+        border-color:variable.$info;
+        color: variable.$white;
         
     }
     &.active, &:active, &:focus{
-        background: $info-dark;
+        background: variable.$info-dark;
     }
 }
 
 .btn-outline-warning {
-    color: $warning;
+    color: variable.$warning;
     background-color: transparent;
-    border-color:$warning;
+    border-color:variable.$warning;
     
     transition: 0.2s ease-in;
     &:hover,
     &:focus,
     &.focus {
-        background: $warning;
-        border-color:$warning;
-        color: $white;
+        background: variable.$warning;
+        border-color:variable.$warning;
+        color: variable.$white;
         
     }
     &.active, &:active, &:focus{
-        background: $warning-dark;
+        background: variable.$warning-dark;
     }
 }
 
 .btn-outline-danger {
-    color: $danger;
+    color: variable.$danger;
     background-color: transparent;
-    border-color:$danger;
+    border-color:variable.$danger;
     
     transition: 0.2s ease-in;
     &:hover,
     &:focus,
     &.focus {
-        background: $danger;
-        border-color:$danger;
-        color: $white;
+        background: variable.$danger;
+        border-color:variable.$danger;
+        color: variable.$white;
         
     }
     &.active, &:active, &:focus{
-        background: $danger-dark;
+        background: variable.$danger-dark;
     }
 }
 .btn-outline-red {
-    color: $red;
+    color: variable.$red;
     background-color: transparent;
-    border-color:$red;
+    border-color:variable.$red;
     &:hover,
     &:focus,
     &.focus {
-        background: $red;
-        border-color:$red;
-        color: $white;
+        background: variable.$red;
+        border-color:variable.$red;
+        color: variable.$white;
         
     }
     &.active, &:active, &:focus{
-        background: $danger-dark;
+        background: variable.$danger-dark;
     }
 }
 .btn-outline-inverse {
-    color: $inverse;
+    color: variable.$inverse;
     background-color: transparent;
-    border-color:$inverse;
+    border-color:variable.$inverse;
     &:hover,
     &:focus,
     &.focus {
-        background: $inverse;
-        border-color:$inverse;
-        color: $white;
+        background: variable.$inverse;
+        border-color:variable.$inverse;
+        color: variable.$white;
     }
 }
 .btn-outline-light:hover{
-        color:$dark!important;
+        color:variable.$dark!important;
     }
 .btn-primary.active.focus,
 .btn-primary.active:focus,
@@ -1314,8 +1314,8 @@ Buttons
 .open > .dropdown-toggle.btn-primary:hover,
 .btn-primary.focus,
 .btn-primary:focus {
-    background-color: $primary-dark ;
-    border: 1px solid $primary-dark;
+    background-color: variable.$primary-dark ;
+    border: 1px solid variable.$primary-dark;
 }
 
 .btn-success.active.focus,
@@ -1329,8 +1329,8 @@ Buttons
 .open > .dropdown-toggle.btn-success:hover,
 .btn-success.focus,
 .btn-success:focus {
-    background-color: $success-dark;
-    border: 1px solid $success-dark;
+    background-color: variable.$success-dark;
+    border: 1px solid variable.$success-dark;
 }
 
 .btn-info.active.focus,
@@ -1344,8 +1344,8 @@ Buttons
 .open > .dropdown-toggle.btn-info:hover,
 .btn-info.focus,
 .btn-info:focus {
-    background-color: $info-dark;
-    border: 1px solid $info-dark;
+    background-color: variable.$info-dark;
+    border: 1px solid variable.$info-dark;
 }
 
 .btn-warning.active.focus,
@@ -1359,8 +1359,8 @@ Buttons
 .open > .dropdown-toggle.btn-warning:hover,
 .btn-warning.focus,
 .btn-warning:focus {
-    background-color: $warning-dark;
-    border: 1px solid $warning-dark;
+    background-color: variable.$warning-dark;
+    border: 1px solid variable.$warning-dark;
 }
 
 .btn-danger.active.focus,
@@ -1374,8 +1374,8 @@ Buttons
 .open > .dropdown-toggle.btn-danger:hover,
 .btn-danger.focus,
 .btn-danger:focus {
-    background-color: $danger-dark;
-    border: 1px solid $danger-dark;
+    background-color: variable.$danger-dark;
+    border: 1px solid variable.$danger-dark;
 }
 
 .btn-inverse:hover,
@@ -1387,8 +1387,8 @@ Buttons
 .btn-inverse:focus,
 .btn-inverse:hover,
 .open > .dropdown-toggle.btn-inverse {
-    background-color: $inverse-dark;
-    border: 1px solid $inverse-dark;
+    background-color: variable.$inverse-dark;
+    border: 1px solid variable.$inverse-dark;
    
 }
 
@@ -1401,9 +1401,9 @@ Buttons
 .btn-red:focus,
 .btn-red:hover,
 .open > .dropdown-toggle.btn-red {
-    background-color: $red-dark;
-    border: 1px solid $red-dark;
-    color: $white;
+    background-color: variable.$red-dark;
+    border: 1px solid variable.$red-dark;
+    color: variable.$white;
 }
 .btn{
     span.btn-devider{
@@ -1457,13 +1457,13 @@ Buttons
     &:before {
         content: "";
         padding-right: 27px;
-        background-color: $success;
+        background-color: variable.$success;
         color: #FFFFFF;
     }
     &:after {
         content: "";
         padding-right: 24px;
-        background-color: $inverse;
+        background-color: variable.$inverse;
         color: #999999;
         text-align: right;
     }

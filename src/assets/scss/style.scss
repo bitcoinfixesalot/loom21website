@@ -17,14 +17,15 @@ File: scss
  *	7. Widgets
  *	8. Custom Templates
  */
- @import 'variable';
+ @use "sass:meta";
+@use 'variable';
  //@import 'bootstrap/scss/bootstrap.scss';
 
 @import '../css/animate.css';  
 @import '../scss/icons/font-awesome/css/font-awesome.min.css'; 
 @import '../scss/icons/simple-line-icons/css/simple-line-icons.css';
 @import '../scss/icons/themify-icons/themify-icons.css'; 
-@import 'app.scss'; 
-@import 'common.scss'; 
-@import 'responsive.scss';     
+@include meta.load-css('app.scss'); 
+@include meta.load-css('common.scss'); 
+@include meta.load-css('responsive.scss');     
 @import '../scss/index-landingpage/landing-page.css';
