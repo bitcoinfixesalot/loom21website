@@ -308,6 +308,888 @@
           <context context-type="linenumber">45</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="privacyPolicyTitle" datatype="html">
+        <source>Privacy Policy for Loom21</source>
+        <target>Политика за поверителност на Loom21</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">Privacy policy title</note>
+      </trans-unit>
+      <trans-unit id="privacyPolicyLastUpdated" datatype="html">
+        <source>Last Updated: May 30, 2025</source>
+        <target>Последно актуализирана: 30 май 2025 г.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Last updated</note>
+      </trans-unit>
+      <trans-unit id="privacyPolicyIntro1" datatype="html">
+        <source>Loom21 LTD ("we," "us," or "our") operates Loom21 (the "Service"), a web application that allows users to create accounts, manage products, clients, suppliers, and invoices. We are committed to protecting your privacy and ensuring the security of your personal data. This Privacy Policy explains how we collect, use, disclose, and protect your personal information in compliance with the General Data Protection Regulation (GDPR) and other applicable data protection laws.</source>
+        <target>Loom21 LTD („ние“, „нас“ или „нашето“) управлява Loom21 („Услугата“), уеб приложение, което позволява на потребителите да създават акаунти, да управляват продукти, клиенти, доставчици и фактури. Ние сме ангажирани с опазването на вашата поверителност и осигуряването на сигурността на вашите лични данни. Тази Политика за поверителност обяснява как събираме, използваме, разкриваме и защитаваме вашата лична информация в съответствие с Общия регламент за защита на данните (GDPR) и други приложими закони за защита на данните.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">Intro paragraph 1</note>
+      </trans-unit>
+      <trans-unit id="privacyPolicyIntro2" datatype="html">
+        <source>By using our Service, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree, please do not use the Service.</source>
+        <target>С използването на нашата Услуга вие се съгласявате със събирането и използването на информация в съответствие с тази Политика за поверителност. Ако не сте съгласни, моля, не използвайте Услугата.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Intro paragraph 2</note>
+      </trans-unit>
+      <trans-unit id="section1Title" datatype="html">
+        <source>1. Who We Are</source>
+        <target>1. Кои сме ние</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">Section 1 title</note>
+      </trans-unit>
+      <trans-unit id="section1Content1" datatype="html">
+        <source>We are Loom21 LTD, located at Tvarditsa, Aleko Konstantinov 11 str. For the purposes of GDPR, we are the "Data Controller" responsible for the personal data we collect and process through the Service.</source>
+        <target>Ние сме Loom21 LTD, намиращи се на ул. Алеко Константинов 11, Твърдица. За целите на GDPR ние сме „Администратор на данни“, отговорен за личните данни, които събираме и обработваме чрез Услугата.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Section 1 content</note>
+      </trans-unit>
+      <trans-unit id="section1ContactInfo" datatype="html">
+        <source>Contact Information:</source>
+        <target>Контактна информация:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Section 1 contact info</note>
+      </trans-unit>
+      <trans-unit id="section1ContactForm" datatype="html">
+        <source>Submit an inquiry</source>
+        <target>Изпратете запитване</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">Section 1 contact form</note>
+      </trans-unit>
+      <trans-unit id="section1Address" datatype="html">
+        <source>Address: Tvarditsa, Aleko Konstantinov 11 str.</source>
+        <target>Адрес: ул. Алеко Константинов 11, Твърдица</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Section 1 address</note>
+      </trans-unit>
+      <trans-unit id="section2Title" datatype="html">
+        <source>2. Information We Collect</source>
+        <target>2. Информация, която събираме</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">Section 2 title</note>
+      </trans-unit>
+      <trans-unit id="section2Intro" datatype="html">
+        <source>We collect and process the following types of personal data when you use our Service:</source>
+        <target>Събираме и обработваме следните видове лични данни, когато използвате нашата Услуга:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">Section 2 intro</note>
+      </trans-unit>
+      <trans-unit id="section2aTitle" datatype="html">
+        <source>a. Information You Provide Directly</source>
+        <target>a. Информация, която предоставяте директно</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">Section 2a title</note>
+      </trans-unit>
+      <trans-unit id="section2aItem1" datatype="html">
+        <source>Account Information: When you create an account, we collect your name, email address, username, password, and any other information you provide (e.g., phone number, company details).</source>
+        <target>Информация за акаунта: Когато създавате акаунт, ние събираме вашето име, имейл адрес, потребителско име, парола и всяка друга информация, която предоставите (напр. телефонен номер, фирмени данни).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Section 2a item 1</note>
+      </trans-unit>
+      <trans-unit id="section2aItem2" datatype="html">
+        <source>Business Data: Information about your products, clients, suppliers, and invoices, which may include personal data such as names, contact details, or financial information (e.g., billing addresses).</source>
+        <target>Бизнес данни: Информация за вашите продукти, клиенти, доставчици и фактури, която може да включва лични данни като имена, данни за контакт или финансова информация (напр. адреси за фактуриране).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">Section 2a item 2</note>
+      </trans-unit>
+      <trans-unit id="section2aItem3" datatype="html">
+        <source>Communications: Any information you provide (e.g., name, email, message) when contacting us via our contact form, which we process to respond to your inquiries or requests.</source>
+        <target>Комуникации: Всяка информация, която предоставяте (напр. име, имейл, съобщение), когато се свързвате с нас чрез нашия формуляр за контакт, която обработваме, за да отговорим на вашите запитвания или искания.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">Section 2a item 3</note>
+      </trans-unit>
+      <trans-unit id="section2bTitle" datatype="html">
+        <source>b. Information Collected Automatically</source>
+        <target>b. Информация, събирана автоматично</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">Section 2b title</note>
+      </trans-unit>
+      <trans-unit id="section2bItem1" datatype="html">
+        <source>Usage Data: Information about how you interact with the Service, such as IP address, browser type, device information, pages visited, and timestamps.</source>
+        <target>Данни за употреба: Информация за това как взаимодействате с Услугата, като IP адрес, тип браузър, информация за устройството, посетени страници и времеви марки.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description">Section 2b item 1</note>
+      </trans-unit>
+      <trans-unit id="section2cTitle" datatype="html">
+        <source>c. Information from Third Parties</source>
+        <target>c. Информация от трети страни</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">Section 2c title</note>
+      </trans-unit>
+      <trans-unit id="section2cItem1" datatype="html">
+        <source>If you integrate third-party services (e.g., payment processors like Stripe), we may receive limited data from these providers, subject to their privacy policies.</source>
+        <target>Ако интегрирате услуги на трети страни (напр. процесори за плащания като Stripe), можем да получим ограничени данни от тези доставчици, съгласно техните политики за поверителност.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">Section 2c item 1</note>
+      </trans-unit>
+      <trans-unit id="section3Title" datatype="html">
+        <source>3. Legal Basis for Processing (GDPR)</source>
+        <target>3. Правно основание за обработка (GDPR)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">Section 3 title</note>
+      </trans-unit>
+      <trans-unit id="section3Intro" datatype="html">
+        <source>Under GDPR, we process personal data based on the following legal grounds:</source>
+        <target>Съгласно GDPR обработваме лични данни въз основа на следните правни основания:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <note priority="1" from="description">Section 3 intro</note>
+      </trans-unit>
+      <trans-unit id="section3Item1" datatype="html">
+        <source>Consent: Where you have given explicit consent (e.g., for marketing emails).</source>
+        <target>Съгласие: Когато сте дали изрично съгласие (напр. за маркетингови имейли).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">Section 3 item 1</note>
+      </trans-unit>
+      <trans-unit id="section3Item2" datatype="html">
+        <source>Contract: To fulfill our obligations under the Service agreement (e.g., providing access to your account and managing your inventory data).</source>
+        <target>Договор: За изпълнение на задълженията ни по споразумението за Услугата (напр. предоставяне на достъп до вашия акаунт и управление на вашите данни за инвентар).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">Section 3 item 2</note>
+      </trans-unit>
+      <trans-unit id="section3Item3" datatype="html">
+        <source>Legitimate Interests: For purposes such as improving the Service, ensuring security, or preventing fraud, where our interests do not override your rights.</source>
+        <target>Легитимни интереси: За цели като подобряване на Услугата, осигуряване на сигурност или предотвратяване на измами, когато нашите интереси не надделяват над вашите права.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="description">Section 3 item 3</note>
+      </trans-unit>
+      <trans-unit id="section3Item4" datatype="html">
+        <source>Legal Obligation: To comply with applicable laws, such as tax or reporting requirements.</source>
+        <target>Законово задължение: За спазване на приложимите закони, като данъчни или отчетни изисквания.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note priority="1" from="description">Section 3 item 4</note>
+      </trans-unit>
+      <trans-unit id="section4Title" datatype="html">
+        <source>4. How We Use Your Information</source>
+        <target>4. Как използваме вашата информация</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="description">Section 4 title</note>
+      </trans-unit>
+      <trans-unit id="section4Intro" datatype="html">
+        <source>We use your personal data for the following purposes:</source>
+        <target>Използваме вашите лични данни за следните цели:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">Section 4 intro</note>
+      </trans-unit>
+      <trans-unit id="section4Item1" datatype="html">
+        <source>To Provide and Operate the Service:</source>
+        <target>За предоставяне и управление на Услугата:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description">Section 4 item 1</note>
+      </trans-unit>
+      <trans-unit id="section4Item1a" datatype="html">
+        <source>Create and manage your account.</source>
+        <target>Създаване и управление на вашия акаунт.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <note priority="1" from="description">Section 4 item 1a</note>
+      </trans-unit>
+      <trans-unit id="section4Item1b" datatype="html">
+        <source>Process and store your inventory, client, supplier, and invoice data.</source>
+        <target>Обработка и съхранение на вашите данни за инвентар, клиенти, доставчици и фактури.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note priority="1" from="description">Section 4 item 1b</note>
+      </trans-unit>
+      <trans-unit id="section4Item1c" datatype="html">
+        <source>Facilitate invoicing and related functionalities.</source>
+        <target>Улесняване на фактурирането и свързаните функции.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">Section 4 item 1c</note>
+      </trans-unit>
+      <trans-unit id="section4Item2" datatype="html">
+        <source>To Improve and Personalize the Service:</source>
+        <target>За подобряване и персонализиране на Услугата:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description">Section 4 item 2</note>
+      </trans-unit>
+      <trans-unit id="section4Item2a" datatype="html">
+        <source>Analyze usage patterns to enhance functionality and user experience.</source>
+        <target>Анализиране на моделите на употреба за подобряване на функционалността и потребителското изживяване.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note priority="1" from="description">Section 4 item 2a</note>
+      </trans-unit>
+      <trans-unit id="section4Item2b" datatype="html">
+        <source>Tailor content or features to your preferences (where permitted).</source>
+        <target>Персонализиране на съдържание или функции според вашите предпочитания (когато е разрешено).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <note priority="1" from="description">Section 4 item 2b</note>
+      </trans-unit>
+      <trans-unit id="section4Item3" datatype="html">
+        <source>To Communicate:</source>
+        <target>За комуникация:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <note priority="1" from="description">Section 4 item 3</note>
+      </trans-unit>
+      <trans-unit id="section4Item3a" datatype="html">
+        <source>Send you transactional emails (e.g., account confirmations, password resets).</source>
+        <target>Изпращане на транзакционни имейли (напр. потвърждения на акаунт, нулиране на парола).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <note priority="1" from="description">Section 4 item 3a</note>
+      </trans-unit>
+      <trans-unit id="section4Item3b" datatype="html">
+        <source>Respond to your inquiries or support requests submitted via our contact form.</source>
+        <target>Отговаряне на вашите запитвания или заявки за поддръжка, подадени чрез нашия формуляр за контакт.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <note priority="1" from="description">Section 4 item 3b</note>
+      </trans-unit>
+      <trans-unit id="section4Item3c" datatype="html">
+        <source>Send marketing communications (with your consent, where required).</source>
+        <target>Изпращане на маркетингови съобщения (с ваше съгласие, когато е необходимо).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <note priority="1" from="description">Section 4 item 3c</note>
+      </trans-unit>
+      <trans-unit id="section4Item4" datatype="html">
+        <source>To Ensure Security:</source>
+        <target>За осигуряване на сигурност:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <note priority="1" from="description">Section 4 item 4</note>
+      </trans-unit>
+      <trans-unit id="section4Item4a" datatype="html">
+        <source>Detect and prevent fraud, unauthorized access, or other illegal activities.</source>
+        <target>Откриване и предотвратяване на измами, неупълномошен достъп или други незаконни дейности.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <note priority="1" from="description">Section 4 item 4a</note>
+      </trans-unit>
+      <trans-unit id="section4Item4b" datatype="html">
+        <source>Maintain the integrity of the Service.</source>
+        <target>Поддържане на целостта на Услугата.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <note priority="1" from="description">Section 4 item 4b</note>
+      </trans-unit>
+      <trans-unit id="section4Item5" datatype="html">
+        <source>To Comply with Legal Obligations:</source>
+        <target>За спазване на законови задължения:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <note priority="1" from="description">Section 4 item 5</note>
+      </trans-unit>
+      <trans-unit id="section4Item5a" datatype="html">
+        <source>Meet regulatory requirements, such as tax reporting or data protection laws.</source>
+        <target>Изпълнение на регулаторни изисквания, като данъчно отчитане или закони за защита на данните.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <note priority="1" from="description">Section 4 item 5a</note>
+      </trans-unit>
+      <trans-unit id="section5Title" datatype="html">
+        <source>5. How We Share Your Information</source>
+        <target>5. Как споделяме вашата информация</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <note priority="1" from="description">Section 5 title</note>
+      </trans-unit>
+      <trans-unit id="section5Intro" datatype="html">
+        <source>We do not sell your personal data. We may share your data in the following circumstances:</source>
+        <target>Ние не продаваме вашите лични данни. Можем да споделяме вашите данни при следните обстоятелства:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <note priority="1" from="description">Section 5 intro</note>
+      </trans-unit>
+      <trans-unit id="section5Item1" datatype="html">
+        <source>Service Providers: With trusted third-party providers who assist us in operating the Service, such as hosting providers and payment processors. For example, we use Stripe, Inc. to process payments, and Stripe may collect and process payment-related data (e.g., billing information) in accordance with its Privacy Policy. All service providers are contractually obligated to protect your data and comply with applicable data protection laws, including GDPR.</source>
+        <target>Доставчици на услуги: С доверени доставчици на трети страни, които ни помагат в управлението на Услугата, като хостинг доставчици и процесори за плащания. Например, използваме Stripe, Inc. за обработка на плащания, и Stripe може да събира и обработва данни, свързани с плащанията (напр. информация за фактуриране), в съответствие с неговата Политика за поверителност. Всички доставчици на услуги са договорно задължени да защитават вашите данни и да спазват приложимите закони за защита на данните, включително GDPR.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <note priority="1" from="description">Section 5 item 1</note>
+      </trans-unit>
+      <trans-unit id="section5Item2" datatype="html">
+        <source>Business Transfers: In the event of a merger, acquisition, or sale of assets, your data may be transferred to the new entity, subject to applicable data protection laws.</source>
+        <target>Бизнес трансфери: В случай на сливане, придобиване или продажба на активи, вашите данни могат да бъдат прехвърлени на новото лице, при спазване на приложимите закони за защита на данните.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <note priority="1" from="description">Section 5 item 2</note>
+      </trans-unit>
+      <trans-unit id="section5Item3" datatype="html">
+        <source>Legal Requirements: If required by law, regulation, or legal process (e.g., court orders, subpoenas), we may disclose your data to authorities.</source>
+        <target>Законови изисквания: Ако се изисква от закона, регулация или правен процес (напр. съдебни заповеди, призовки), можем да разкрием вашите данни на властите.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <note priority="1" from="description">Section 5 item 3</note>
+      </trans-unit>
+      <trans-unit id="section5Item4" datatype="html">
+        <source>With Your Consent: Where you explicitly agree to the sharing of your data.</source>
+        <target>С ваше съгласие: Когато изрично се съгласите със споделянето на вашите данни.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <note priority="1" from="description">Section 5 item 4</note>
+      </trans-unit>
+      <trans-unit id="section6Title" datatype="html">
+        <source>6. International Data Transfers</source>
+        <target>6. Международни трансфери на данни</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <note priority="1" from="description">Section 6 title</note>
+      </trans-unit>
+      <trans-unit id="section6Intro" datatype="html">
+        <source>Our Service is accessible globally, and your data may be processed or stored in countries outside your region, including the United States (e.g., by Stripe for payment processing) and the European Union. We ensure that any international data transfers comply with GDPR and other applicable laws, using mechanisms such as:</source>
+        <target>Нашата Услуга е достъпна в световен мащаб и вашите данни могат да бъдат обработвани или съхранявани в страни извън вашия регион, включително Съединените щати (напр. от Stripe за обработка на плащания) и Европейския съюз. Ние гарантираме, че всички международни трансфери на данни отговарят на GDPR и други приложими закони, като използваме механизми като:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <note priority="1" from="description">Section 6 intro</note>
+      </trans-unit>
+      <trans-unit id="section6Item1" datatype="html">
+        <source>Standard Contractual Clauses (SCCs): For transfers outside the European Economic Area (EEA).</source>
+        <target>Стандартни договорни клаузи (SCCs): За трансфери извън Европейското икономическо пространство (ЕИП).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+        <note priority="1" from="description">Section 6 item 1</note>
+      </trans-unit>
+      <trans-unit id="section6Item2" datatype="html">
+        <source>Adequacy Decisions: Where the recipient country is deemed to have adequate data protection by the European Commission.</source>
+        <target>Решения за адекватност: Когато страната получател е призната за имаща адекватна защита на данните от Европейската комисия.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <note priority="1" from="description">Section 6 item 2</note>
+      </trans-unit>
+      <trans-unit id="section6Item3" datatype="html">
+        <source>Other Safeguards: As required by local laws (e.g., Binding Corporate Rules for intra-group transfers).</source>
+        <target>Други предпазни мерки: Както се изисква от местните закони (напр. Задължителни корпоративни правила за вътрешногрупови трансфери).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <note priority="1" from="description">Section 6 item 3</note>
+      </trans-unit>
+      <trans-unit id="section7Title" datatype="html">
+        <source>7. Data Retention</source>
+        <target>7. Съхранение на данни</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+        <note priority="1" from="description">Section 7 title</note>
+      </trans-unit>
+      <trans-unit id="section7Intro" datatype="html">
+        <source>We retain your personal data only for as long as necessary to fulfill the purposes outlined in this Privacy Policy or as required by law. For example:</source>
+        <target>Ние съхраняваме вашите лични данни само толкова дълго, колкото е необходимо за изпълнение на целите, описани в тази Политика за поверителност, или както се изисква от закона. Например:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+        <note priority="1" from="description">Section 7 intro</note>
+      </trans-unit>
+      <trans-unit id="section7Item1" datatype="html">
+        <source>Account data is retained while your account is active and for 7 years after account deletion to comply with legal obligations (e.g., tax laws).</source>
+        <target>Данните за акаунта се съхраняват, докато акаунтът ви е активен и 7 години след изтриването на акаунта, за да се спазят законовите задължения (напр. данъчни закони).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <note priority="1" from="description">Section 7 item 1</note>
+      </trans-unit>
+      <trans-unit id="section7Item2" datatype="html">
+        <source>Usage data may be retained for 2 years for analytics or security purposes.</source>
+        <target>Данните за употреба могат да се съхраняват за 2 години за аналитични или защитни цели.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <note priority="1" from="description">Section 7 item 2</note>
+      </trans-unit>
+      <trans-unit id="section7Item3" datatype="html">
+        <source>You may request deletion of your data (see Section 8).</source>
+        <target>Можете да поискате изтриване на вашите данни (вижте Раздел 8).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <note priority="1" from="description">Section 7 item 3</note>
+      </trans-unit>
+      <trans-unit id="section8Title" datatype="html">
+        <source>8. Your Data Protection Rights</source>
+        <target>8. Вашите права за защита на данните</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <note priority="1" from="description">Section 8 title</note>
+      </trans-unit>
+      <trans-unit id="section8Intro" datatype="html">
+        <source>Depending on your location, you may have the following rights under GDPR and other applicable laws:</source>
+        <target>В зависимост от вашето местоположение, вие може да имате следните права съгласно GDPR и други приложими закони:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+        <note priority="1" from="description">Section 8 intro</note>
+      </trans-unit>
+      <trans-unit id="section8Item1" datatype="html">
+        <source>Access: Request a copy of the personal data we hold about you.</source>
+        <target>Достъп: Поискване на копие от личните данни, които държим за вас.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <note priority="1" from="description">Section 8 item 1</note>
+      </trans-unit>
+      <trans-unit id="section8Item2" datatype="html">
+        <source>Rectification: Correct inaccurate or incomplete data.</source>
+        <target>Корекция: Коригиране на неточни или непълни данни.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <note priority="1" from="description">Section 8 item 2</note>
+      </trans-unit>
+      <trans-unit id="section8Item3" datatype="html">
+        <source>Erasure: Request deletion of your data (subject to legal obligations).</source>
+        <target>Изтриване: Поискване на изтриване на вашите данни (при спазване на законови задължения).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <note priority="1" from="description">Section 8 item 3</note>
+      </trans-unit>
+      <trans-unit id="section8Item4" datatype="html">
+        <source>Restriction: Restrict processing of your data in certain circumstances.</source>
+        <target>Ограничаване: Ограничаване на обработката на вашите данни при определени обстоятелства.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+        <note priority="1" from="description">Section 8 item 4</note>
+      </trans-unit>
+      <trans-unit id="section8Item5" datatype="html">
+        <source>Portability: Receive your data in a structured, machine-readable format.</source>
+        <target>Преносимост: Получаване на вашите данни в структуриран, машинно четим формат.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+        <note priority="1" from="description">Section 8 item 5</note>
+      </trans-unit>
+      <trans-unit id="section8Item6" datatype="html">
+        <source>Object: Object to processing based on legitimate interests (e.g., marketing).</source>
+        <target>Възражение: Възражение срещу обработката въз основа на легитимни интереси (напр. маркетинг).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+        <note priority="1" from="description">Section 8 item 6</note>
+      </trans-unit>
+      <trans-unit id="section8Item7" datatype="html">
+        <source>Withdraw Consent: Withdraw consent at any time, where processing is based on consent.</source>
+        <target>Оттегляне на съгласие: Оттегляне на съгласието по всяко време, когато обработката се основава на съгласие.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <note priority="1" from="description">Section 8 item 7</note>
+      </trans-unit>
+      <trans-unit id="section8Item8" datatype="html">
+        <source>Lodge a Complaint: Contact a supervisory authority (e.g., in the EU, your local Data Protection Authority) if you believe we have violated your rights.</source>
+        <target>Подаване на жалба: Свържете се с надзорен орган (напр. в ЕС, местния орган за защита на данните), ако смятате, че сме нарушили вашите права.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+        <note priority="1" from="description">Section 8 item 8</note>
+      </trans-unit>
+      <trans-unit id="section8Contact" datatype="html">
+        <source>To exercise these rights, use our contact form. We will respond within 30 days for GDPR, or as required by local law.</source>
+        <target>За да упражните тези права, използвайте нашия формуляр за контакт. Ще отговорим в рамките на 30 дни за GDPR или както се изисква от местния закон.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <note priority="1" from="description">Section 8 contact</note>
+      </trans-unit>
+      <trans-unit id="section8ContactForm" datatype="html">
+        <source>contact form</source>
+        <target>формуляр за контакт</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <note priority="1" from="description">Section 8 contact form</note>
+      </trans-unit>
+      <trans-unit id="section9Title" datatype="html">
+        <source>9. Data Security</source>
+        <target>9. Сигурност на данните</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <note priority="1" from="description">Section 9 title</note>
+      </trans-unit>
+      <trans-unit id="section9Intro" datatype="html">
+        <source>We implement appropriate technical and organizational measures to protect your data, including:</source>
+        <target>Прилагаме подходящи технически и организационни мерки за защита на вашите данни, включително:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+        <note priority="1" from="description">Section 9 intro</note>
+      </trans-unit>
+      <trans-unit id="section9Item1" datatype="html">
+        <source>Encryption of data in transit and at rest.</source>
+        <target>Криптиране на данните при предаване и в покой.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+        <note priority="1" from="description">Section 9 item 1</note>
+      </trans-unit>
+      <trans-unit id="section9Item2" datatype="html">
+        <source>Secure authentication mechanisms.</source>
+        <target>Сигурни механизми за удостоверяване.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+        <note priority="1" from="description">Section 9 item 2</note>
+      </trans-unit>
+      <trans-unit id="section9Item3" datatype="html">
+        <source>Regular security assessments and updates.</source>
+        <target>Редовни оценки и актуализации на сигурността.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <note priority="1" from="description">Section 9 item 3</note>
+      </trans-unit>
+      <trans-unit id="section9Warning" datatype="html">
+        <source>However, no system is completely secure, and we cannot guarantee absolute security. Please notify us immediately via our contact form if you suspect unauthorized access to your account.</source>
+        <target>Въпреки това, нито една система не е напълно сигурна и не можем да гарантираме абсолютна сигурност. Моля, уведомете ни незабавно чрез нашия формуляр за контакт, ако подозирате неупълномошен достъп до вашия акаунт.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <note priority="1" from="description">Section 9 warning</note>
+      </trans-unit>
+      <trans-unit id="section9ContactForm" datatype="html">
+        <source>contact form</source>
+        <target>формуляр за контакт</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+        <note priority="1" from="description">Section 9 contact form</note>
+      </trans-unit>
+      <trans-unit id="section10Title" datatype="html">
+        <source>10. Third-Party Links</source>
+        <target>10. Връзки към трети страни</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+        <note priority="1" from="description">Section 10 title</note>
+      </trans-unit>
+      <trans-unit id="section10Content" datatype="html">
+        <source>Our Service may contain links to third-party websites or services (e.g., payment processors like Stripe). We are not responsible for their privacy practices. Please review their privacy policies before providing personal data.</source>
+        <target>Нашата Услуга може да съдържа връзки към уебсайтове или услуги на трети страни (напр. процесори за плащания като Stripe). Ние не носим отговорност за техните практики за поверителност. Моля, прегледайте техните политики за поверителност, преди да предоставите лични данни.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+        <note priority="1" from="description">Section 10 content</note>
+      </trans-unit>
+      <trans-unit id="section11Title" datatype="html">
+        <source>11. Children’s Privacy</source>
+        <target>11. Поверителност на децата</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+        <note priority="1" from="description">Section 11 title</note>
+      </trans-unit>
+      <trans-unit id="section11Content" datatype="html">
+        <source>Our Service is not intended for individuals under 16. We do not knowingly collect personal data from children. If you believe we have collected such data, please use our contact form to request deletion.</source>
+        <target>Нашата Услуга не е предназначена за лица под 16 години. Ние не събираме съзнателно лични данни от деца. Ако смятате, че сме събрали такива данни, моля, използвайте нашия формуляр за контакт, за да поискате изтриване.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+        <note priority="1" from="description">Section 11 content</note>
+      </trans-unit>
+      <trans-unit id="section11ContactForm" datatype="html">
+        <source>contact form</source>
+        <target>формуляр за контакт</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+        <note priority="1" from="description">Section 11 contact form</note>
+      </trans-unit>
+      <trans-unit id="section12Title" datatype="html">
+        <source>12. Compliance with Other Laws</source>
+        <target>12. Спазване на други закони</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+        <note priority="1" from="description">Section 12 title</note>
+      </trans-unit>
+      <trans-unit id="section12Intro" datatype="html">
+        <source>In addition to GDPR, we strive to comply with other applicable data protection laws, such as:</source>
+        <target>В допълнение към GDPR, ние се стремим да спазваме други приложими закони за защита на данните, като:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+        <note priority="1" from="description">Section 12 intro</note>
+      </trans-unit>
+      <trans-unit id="section12Item1" datatype="html">
+        <source>CCPA (California, USA): If you are a California resident, you may have rights to access, delete, or opt out of the sale of your data. We do not sell data, but you can exercise other rights by contacting us.</source>
+        <target>CCPA (Калифорния, САЩ): Ако сте жител на Калифорния, може да имате права за достъп, изтриване или отказ от продажба на вашите данни. Ние не продаваме данни, но можете да упражните други права, като се свържете с нас.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+        <note priority="1" from="description">Section 12 item 1</note>
+      </trans-unit>
+      <trans-unit id="section12Item2" datatype="html">
+        <source>PIPEDA (Canada): We ensure fair information practices for Canadian users.</source>
+        <target>PIPEDA (Канада): Ние осигуряваме справедливи практики за информация за канадските потребители.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+        <note priority="1" from="description">Section 12 item 2</note>
+      </trans-unit>
+      <trans-unit id="section12Item3" datatype="html">
+        <source>LGPD (Brazil): We comply with Brazil’s data protection requirements.</source>
+        <target>LGPD (Бразилия): Ние спазваме изискванията за защита на данните в Бразилия.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+        <note priority="1" from="description">Section 12 item 3</note>
+      </trans-unit>
+      <trans-unit id="section12Contact" datatype="html">
+        <source>Contact us via our contact form for details on how we comply with your local laws.</source>
+        <target>Свържете се с нас чрез нашия формуляр за контакт за подробности относно спазването на местните закони.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+        <note priority="1" from="description">Section 12 contact</note>
+      </trans-unit>
+      <trans-unit id="section12ContactForm" datatype="html">
+        <source>contact form</source>
+        <target>формуляр за контакт</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+        <note priority="1" from="description">Section 12 contact form</note>
+      </trans-unit>
+      <trans-unit id="section13Title" datatype="html">
+        <source>13. Changes to This Privacy Policy</source>
+        <target>13. Промени в тази Политика за поверителност</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+        <note priority="1" from="description">Section 13 title</note>
+      </trans-unit>
+      <trans-unit id="section13Content" datatype="html">
+        <source>We may update this Privacy Policy to reflect changes in our practices or legal requirements. We will notify you of significant changes via email or a notice on the Service. The updated policy will be effective as of the "Last Updated" date.</source>
+        <target>Можем да актуализираме тази Политика за поверителност, за да отразим промените в нашите практики или законови изисквания. Ще ви уведомим за значителни промени чрез имейл или известие в Услугата. Актуализираната политика влиза в сила от датата на „Последно актуализирана“.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+        <note priority="1" from="description">Section 13 content</note>
+      </trans-unit>
+      <trans-unit id="section14Title" datatype="html">
+        <source>14. Contact Us</source>
+        <target>14. Свържете се с нас</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+        <note priority="1" from="description">Section 14 title</note>
+      </trans-unit>
+      <trans-unit id="section14Intro" datatype="html">
+        <source>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:</source>
+        <target>Ако имате въпроси, притеснения или искания относно тази Политика за поверителност или нашите практики за данни, моля, свържете се с нас на:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+        <note priority="1" from="description">Section 14 intro</note>
+      </trans-unit>
+      <trans-unit id="section14Contact" datatype="html">
+        <source>Contact Form:</source>
+        <target>Формуляр за контакт:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+        <note priority="1" from="description">Section 14 contact</note>
+      </trans-unit>
+      <trans-unit id="section14ContactForm" datatype="html">
+        <source>Submit an inquiry</source>
+        <target>Изпратете запитване</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+        <note priority="1" from="description">Section 14 contact form</note>
+      </trans-unit>
+      <trans-unit id="section14Address" datatype="html">
+        <source>Address: Tvarditsa, Aleko Konstantinov 11 str.</source>
+        <target>Адрес: ул. Алеко Константинов 11, Твърдица</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+        <note priority="1" from="description">Section 14 address</note>
+      </trans-unit>
+      <trans-unit id="section14Complaint" datatype="html">
+        <source>For GDPR complaints, you may also contact your local Data Protection Authority.</source>
+        <target>За жалби относно GDPR можете също да се свържете с местния орган за защита на данните.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
+        <note priority="1" from="description">Section 14 complaint</note>
+      </trans-unit>
       <trans-unit id="contactUs" datatype="html">
         <source>Contact Us</source>
         <target>Пишете ни</target>
@@ -462,7 +1344,7 @@
         <note priority="1" from="description">Road map</note>
       </trans-unit>
       <trans-unit id="privacy" datatype="html">
-        <source>Privacy</source>
+        <source>Privacy Policy</source>
         <target>Поверителност</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
@@ -618,7 +1500,7 @@
         <target>Присъединете се към Loom 21 отново на </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="homepage" datatype="html">
@@ -626,7 +1508,7 @@
         <target>началната страница</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">13</context>
+          <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="errorMessagePart2" datatype="html">
@@ -634,7 +1516,7 @@
         <target> или се </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">14</context>
+          <context context-type="linenumber">13</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contactUsPart" datatype="html">
@@ -642,7 +1524,7 @@
         <target>свържете с нас</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">15</context>
+          <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="errorMessagePart3" datatype="html">
@@ -650,7 +1532,7 @@
         <target> за помощ.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="linenumber">15</context>
         </context-group>
       </trans-unit>
       <trans-unit id="loading" datatype="html">
@@ -775,7 +1657,7 @@
         <target>за месец (годишно плащане)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="linenumber">51</context>
         </context-group>
         <note priority="1" from="description">Billed annually</note>
       </trans-unit>
@@ -784,7 +1666,7 @@
         <target>за месец</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">54</context>
+          <context context-type="linenumber">53</context>
         </context-group>
         <note priority="1" from="description">Per month</note>
       </trans-unit>
@@ -793,7 +1675,7 @@
         <target>Предприемач</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">91</context>
+          <context context-type="linenumber">90</context>
         </context-group>
         <note priority="1" from="description">Entrepreneur</note>
       </trans-unit>
@@ -802,7 +1684,7 @@
         <target>1 потребител</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">92</context>
+          <context context-type="linenumber">91</context>
         </context-group>
         <note priority="1" from="description">One User</note>
       </trans-unit>
@@ -811,7 +1693,7 @@
         <target>8 000 поръчки/година</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">93</context>
+          <context context-type="linenumber">92</context>
         </context-group>
         <note priority="1" from="description">Basic Orders</note>
       </trans-unit>
@@ -820,7 +1702,7 @@
         <target>1 местоположение на магазин</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">94</context>
+          <context context-type="linenumber">93</context>
         </context-group>
         <note priority="1" from="description">One Store Location</note>
       </trans-unit>
@@ -829,7 +1711,7 @@
         <target>Пълен достъп</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">95</context>
+          <context context-type="linenumber">94</context>
         </context-group>
         <note priority="1" from="description">One User Access</note>
       </trans-unit>
@@ -838,7 +1720,7 @@
         <target>Без API достъп</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">96</context>
+          <context context-type="linenumber">95</context>
         </context-group>
         <note priority="1" from="description">No Access to API</note>
       </trans-unit>
@@ -847,7 +1729,7 @@
         <target>Малък Бизнес</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">98</context>
+          <context context-type="linenumber">97</context>
         </context-group>
         <note priority="1" from="description">Small Business</note>
       </trans-unit>
@@ -856,7 +1738,7 @@
         <target>5 потребителя</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">99</context>
+          <context context-type="linenumber">98</context>
         </context-group>
         <note priority="1" from="description">Five Users</note>
       </trans-unit>
@@ -865,7 +1747,7 @@
         <target>60 000 поръчки/година</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">100</context>
+          <context context-type="linenumber">99</context>
         </context-group>
         <note priority="1" from="description">Small Orders</note>
       </trans-unit>
@@ -874,7 +1756,7 @@
         <target>5 местоположения на магазин</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">101</context>
+          <context context-type="linenumber">100</context>
         </context-group>
         <note priority="1" from="description">Five Store Location</note>
       </trans-unit>
@@ -883,11 +1765,11 @@
         <target>Права за достъп на потребители</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">102</context>
+          <context context-type="linenumber">101</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">109</context>
+          <context context-type="linenumber">108</context>
         </context-group>
         <note priority="1" from="description">User Access Rights</note>
       </trans-unit>
@@ -896,7 +1778,7 @@
         <target>Ограничен достъп до API</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">103</context>
+          <context context-type="linenumber">102</context>
         </context-group>
         <note priority="1" from="description">Limited Access to API</note>
       </trans-unit>
@@ -905,7 +1787,7 @@
         <target>Среден Бизнес</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">105</context>
+          <context context-type="linenumber">104</context>
         </context-group>
         <note priority="1" from="description">Mid-size</note>
       </trans-unit>
@@ -914,7 +1796,7 @@
         <target>10 потребителя</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">106</context>
+          <context context-type="linenumber">105</context>
         </context-group>
         <note priority="1" from="description">Ten User</note>
       </trans-unit>
@@ -923,7 +1805,7 @@
         <target>300 000 поръчки/година</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">107</context>
+          <context context-type="linenumber">106</context>
         </context-group>
         <note priority="1" from="description">Mid Orders</note>
       </trans-unit>
@@ -932,7 +1814,7 @@
         <target>50 местоположения на магазин</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">108</context>
+          <context context-type="linenumber">107</context>
         </context-group>
         <note priority="1" from="description">Mid Store Location</note>
       </trans-unit>
@@ -941,7 +1823,7 @@
         <target> Пълен API достъп</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">110</context>
+          <context context-type="linenumber">109</context>
         </context-group>
         <note priority="1" from="description">Full Access to API</note>
       </trans-unit>
