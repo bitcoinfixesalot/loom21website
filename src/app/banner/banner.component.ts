@@ -1,19 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { Component, Inject, isDevMode, LOCALE_ID } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
+import { LanguageService } from '../services/language.service';
 
 @Component({
-    selector: 'app-banner',
-    imports: [CommonModule, RouterModule],
-    templateUrl: './banner.component.html',
-    styleUrl: './banner.component.scss'
+  selector: 'app-banner',
+  imports: [CommonModule, RouterModule],
+  templateUrl: './banner.component.html',
+  styleUrl: './banner.component.scss'
 })
 export class BannerComponent {
   appUrl: string;
-    currentLocale: string;
+  currentLocale: string;
 
-  constructor(@Inject(LOCALE_ID) protected localeId: string) {
-        this.currentLocale = localeId; // Get the current locale from Angular
+  constructor(@Inject(LOCALE_ID) protected localeId: string, private languageService: LanguageService) {
+    this.currentLocale = localeId; // Get the current locale from Angular
 
     this.appUrl = 'https://app.loom21.com/';
     if (isDevMode()) {
@@ -25,8 +26,10 @@ export class BannerComponent {
   }
 
   switchLocale(locale: string) {
+    this.languageService.switchLocale(locale);
+
     // Option 1: Redirect to a locale-specific route (if your app uses locale-based routing)
-    window.location.href = `/${locale}`;
+    //window.location.href = `/${locale}`;
 
     // Option 2: Use query parameter to reload with new locale
     // window.location.href = `${window.location.pathname}?lang=${locale}`;
