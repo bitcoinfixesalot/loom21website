@@ -4,6 +4,7 @@ import { ContactComponent } from './contact/contact.component';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -12,5 +13,6 @@ export const routes: Routes = [
     { path: 'contact', component: ContactComponent },
     { path: 'pricing', component: PricingComponent },
     { path: '404', component : NotFoundComponent},
+    { path: 'privacy-policy', component: PrivacyComponent },
     { path: '**', redirectTo: '/404', pathMatch: 'full'}
 ];
