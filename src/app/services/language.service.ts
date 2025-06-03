@@ -17,18 +17,15 @@ export class LanguageService {
 
     // Get the current URL from the router
     let currentUrl = this.router.url;
-    console.log('Current URL (router):', currentUrl);
 
     // Fallback to location.path() if router.url is empty
     if (!currentUrl || currentUrl === '/') {
       currentUrl = this.location.path();
-      console.log('Current URL (location):', currentUrl);
     }
 
     // If still empty, default to root
     if (!currentUrl || currentUrl === '') {
       currentUrl = '/';
-      console.log('Defaulting to root URL');
     }
 
     // Extract the path after the locale (if any)
@@ -40,12 +37,8 @@ export class LanguageService {
       pathWithoutLocale = currentUrl === '/' ? '' : currentUrl;
     }
 
-    console.log('Path without locale:', pathWithoutLocale);
-
     // Construct the new URL with the selected locale
     const newPath = `/${locale}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`;
-
-    console.log('New path:', newPath);
 
     // If using separate builds, perform a full redirect
     // This is necessary for @angular/localize with separate builds
