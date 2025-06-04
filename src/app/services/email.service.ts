@@ -15,16 +15,4 @@ export class EmailService {
     const headers = new HttpHeaders().set('apiKey', 'YES_YOU_ARE_CONTACTING_THE_MAXIS'); // Set your API key here
     return this.http.post<any>(this.apiUrl, {email: email, subject: subject, body: content}, { headers });
   }
-
-
-  // sendEmail(to: string, subject: string, content: string): Promise<any> {
-  //   const msg = {
-  //     to,
-  //     from: 'info@loom21.com',
-  //     subject,
-  //     html: content
-  //   };
-    
-  //   return sgMail.send(msg);
-  // }
 }
