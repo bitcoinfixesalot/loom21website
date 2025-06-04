@@ -1,31 +1,33 @@
 import { Component, Inject, isDevMode, LOCALE_ID, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
-import { BITCOIN_PAYMENTS, 
-  CUSTOMER_MANAGEMENT, 
-  DELIVERY_MANAGEMENT, 
-  DESCRIPTIONS, 
-  INVENTORY_ANALYTICS, 
-  INVENTORY_MANAGEMENT, 
-  INVOICE_PROCESSING, 
-  LD_JSON, 
-  ORDER_FULFILLMENT, 
-  PAYMENT_PROCESSING, 
-  PRODUCT_MANAGEMENT, 
-  REAL_TIME_INVENTORY_TRACKING, 
-  SALES_TRACKING, 
-  SERVICE_MANAGEMENT, 
-  STOCK_CONTROL, 
-  SUPPLIER_MANAGEMENT, 
-  TITLES, 
-  USER_ROLES_PERMISSIONS, 
-  VENDOR_MANAGEMENT, 
-  WAREHOUSE_MANAGEMENT } from '../constants/localized-const';
+import {
+  BITCOIN_PAYMENTS,
+  CUSTOMER_MANAGEMENT,
+  DELIVERY_MANAGEMENT,
+  DESCRIPTIONS,
+  INVENTORY_ANALYTICS,
+  INVENTORY_MANAGEMENT,
+  INVOICE_PROCESSING,
+  LD_JSON,
+  ORDER_FULFILLMENT,
+  PAYMENT_PROCESSING,
+  PRODUCT_MANAGEMENT,
+  REAL_TIME_INVENTORY_TRACKING,
+  SALES_TRACKING,
+  SERVICE_MANAGEMENT,
+  STOCK_CONTROL,
+  SUPPLIER_MANAGEMENT,
+  TITLES,
+  USER_ROLES_PERMISSIONS,
+  VENDOR_MANAGEMENT,
+  WAREHOUSE_MANAGEMENT
+} from '../constants/localized-const';
 
 @Component({
-    selector: 'app-home',
-    imports: [],
-    templateUrl: './home.component.html',
-    styleUrl: './home.component.scss'
+  selector: 'app-home',
+  imports: [],
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.scss'
 })
 export class HomeComponent implements OnInit {
   appUrl: string;
