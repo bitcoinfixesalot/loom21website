@@ -27,15 +27,5 @@ export class BannerComponent {
 
   switchLocale(locale: string) {
     this.languageService.switchLocale(locale);
-
-    // Option 1: Redirect to a locale-specific route (if your app uses locale-based routing)
-    //window.location.href = `/${locale}`;
-
-    // Option 2: Use query parameter to reload with new locale
-    // window.location.href = `${window.location.pathname}?lang=${locale}`;
-
-    // Option 3: Store in localStorage and reload (if server handles locale)
-    // localStorage.setItem('locale', locale);
-    // window.location.reload();
   }
 }
