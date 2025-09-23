@@ -1,11 +1,13 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, Inject, OnDestroy, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterModule, RouterOutlet } from '@angular/router';
 import { DESCRIPTIONS, TAGS } from './constants/localized-const';
 import { BannerComponent } from './banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DOCUMENT } from '@angular/common';
 import { AnchorService } from './services/anchor.service';
+import { CanonicalService } from './services/canonical.service';
+import { filter, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +15,7 @@ import { AnchorService } from './services/anchor.service';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit, OnDestroy{
   title = 'loom21website';
 
   @HostListener('document:click', ['$event'])
@@ -21,7 +23,11 @@ export class AppComponent {
     this.anchorService.interceptClick(event);
   }
 
-  constructor(private titleService: Title, private meta: Meta, private anchorService: AnchorService) {
+  private routerSubscription!: Subscription;
+
+  constructor(@Inject(DOCUMENT) private dom: Document,
+  private router: Router,
+  private titleService: Title, private meta: Meta, private anchorService: AnchorService, private canonicalService: CanonicalService) {
     this.meta.addTags([
       { name: "description", content: DESCRIPTIONS.home_description },
       { name: "keywords", content: TAGS.home_keywords },
@@ -29,5 +35,20 @@ export class AppComponent {
     ]);
 
     this.titleService.setTitle("Loom 21");
+  }
+
+  ngOnInit() {
+    this.routerSubscription = this.router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe(() => {
+        this.canonicalService.setCanonicalURL();
+        this.canonicalService.setHreflangTags();
+      });
+  }
+
+  ngOnDestroy() {
+    if (this.routerSubscription) {
+      this.routerSubscription.unsubscribe();
+    }
   }
 }
