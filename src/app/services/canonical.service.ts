@@ -19,6 +19,11 @@ export class CanonicalService {
   ) {}
 
   setCanonicalURL(url?: string) {
+    // Debug logging
+    console.log('setCanonicalURL - Router URL:', this.router.url);
+    console.log('setCanonicalURL - Document Location:', this.dom.location.href);
+    console.log('setCanonicalURL - Platform:', isPlatformServer(this.platformId) ? 'Server' : 'Client');
+
     // Remove existing canonical tag
     const existingLink = this.dom.querySelector('link[rel="canonical"]');
     if (existingLink) {
@@ -29,29 +34,41 @@ export class CanonicalService {
     const link: HTMLLinkElement = this.dom.createElement('link');
     link.setAttribute('rel', 'canonical');
 
-    // Determine base domain based on hostname or environment
+    // Determine base domain
     const isLocal = this.dom.location.hostname.includes('localhost');
     const isAppSubdomain = !isLocal && this.dom.location.hostname.includes('app.loom21.com');
     const baseDomain = isLocal ? 'https://loom21.com' : isAppSubdomain ? 'https://app.loom21.com' : 'https://loom21.com';
 
-    // Use provided URL or construct from current route, ensuring trailing slash
-    const currentPath = this.router.url.endsWith('/') || this.router.url === '' ? this.router.url : `${this.router.url}/`;
+    // Ensure currentPath includes language prefix and trailing slash
+    let currentPath = this.router.url;
+    if (!currentPath.startsWith('/en/') && !currentPath.startsWith('/bg/') && !isAppSubdomain) {
+      // Fallback to /en/ if no language prefix is detected
+      currentPath = `/en${currentPath === '/' ? '' : currentPath}`;
+    }
+    currentPath = currentPath.endsWith('/') || currentPath === '' ? currentPath : `${currentPath}/`;
+
+    // Construct canonical URL
     const canonicalUrl = url || `${baseDomain}${currentPath}`;
+    console.log('setCanonicalURL - Generated Canonical URL:', canonicalUrl);
     link.setAttribute('href', canonicalUrl);
     this.dom.head.appendChild(link);
   }
 
   setHreflangTags() {
+    // Debug logging
+    console.log('setHreflangTags - Router URL:', this.router.url);
+    console.log('setHreflangTags - Document Location:', this.dom.location.href);
+
     // Remove existing hreflang tags
     const existingLinks = this.dom.querySelectorAll('link[rel="alternate"][hreflang]');
     existingLinks.forEach((link) => link.remove());
 
-    // Get current path without language prefix, ensuring trailing slash
+    // Get current path without language prefix
     const currentPath = (this.router.url.replace(/^\/(en|bg)(\/|$)/, '/') || '/').replace(/\/$/, '') || '/';
     const isLocal = this.dom.location.hostname.includes('localhost');
     const isAppSubdomain = !isLocal && this.dom.location.hostname.includes('app.loom21.com');
 
-    // Generate hreflang tags for each language
+    // Generate hreflang tags
     this.languages.forEach(({ lang, baseUrl, appBaseUrl }) => {
       const url = `${isLocal ? baseUrl : isAppSubdomain ? appBaseUrl : baseUrl}${currentPath}`;
       const link: HTMLLinkElement = this.dom.createElement('link');
@@ -60,7 +77,6 @@ export class CanonicalService {
       link.setAttribute('href', url);
       this.dom.head.appendChild(link);
 
-      // Add x-default for the default language
       if (lang === this.defaultLang) {
         const defaultLink: HTMLLinkElement = this.dom.createElement('link');
         defaultLink.setAttribute('rel', 'alternate');
