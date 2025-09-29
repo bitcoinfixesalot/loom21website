@@ -19,39 +19,48 @@ export class CanonicalService {
   ) {}
 
   setCanonicalURL(url?: string) {
+    // Remove existing canonical tag
     const existingLink = this.dom.querySelector('link[rel="canonical"]');
     if (existingLink) {
       existingLink.remove();
     }
 
+    // Create new canonical tag
     const link: HTMLLinkElement = this.dom.createElement('link');
     link.setAttribute('rel', 'canonical');
 
-    const isAppSubdomain = this.dom.location.hostname.includes('app.loom21.com');
-    const baseDomain = isAppSubdomain ? 'https://app.loom21.com' : 'https://loom21.com';
+    // Determine base domain based on hostname or environment
+    const isLocal = this.dom.location.hostname.includes('localhost');
+    const isAppSubdomain = !isLocal && this.dom.location.hostname.includes('app.loom21.com');
+    const baseDomain = isLocal ? 'https://loom21.com' : isAppSubdomain ? 'https://app.loom21.com' : 'https://loom21.com';
 
-    // Ensure trailing slash for consistency
-    const currentPath = this.router.url.endsWith('/') ? this.router.url : `${this.router.url}/`;
+    // Use provided URL or construct from current route, ensuring trailing slash
+    const currentPath = this.router.url.endsWith('/') || this.router.url === '' ? this.router.url : `${this.router.url}/`;
     const canonicalUrl = url || `${baseDomain}${currentPath}`;
     link.setAttribute('href', canonicalUrl);
     this.dom.head.appendChild(link);
   }
 
   setHreflangTags() {
+    // Remove existing hreflang tags
     const existingLinks = this.dom.querySelectorAll('link[rel="alternate"][hreflang]');
     existingLinks.forEach((link) => link.remove());
 
-    const currentPath = this.router.url.replace(/^\/(en|bg)(\/|$)/, '/').replace(/\/$/, '') || '/';
-    const isAppSubdomain = this.dom.location.hostname.includes('app.loom21.com');
+    // Get current path without language prefix, ensuring trailing slash
+    const currentPath = (this.router.url.replace(/^\/(en|bg)(\/|$)/, '/') || '/').replace(/\/$/, '') || '/';
+    const isLocal = this.dom.location.hostname.includes('localhost');
+    const isAppSubdomain = !isLocal && this.dom.location.hostname.includes('app.loom21.com');
 
+    // Generate hreflang tags for each language
     this.languages.forEach(({ lang, baseUrl, appBaseUrl }) => {
-      const url = `${isAppSubdomain ? appBaseUrl : baseUrl}${currentPath}`;
+      const url = `${isLocal ? baseUrl : isAppSubdomain ? appBaseUrl : baseUrl}${currentPath}`;
       const link: HTMLLinkElement = this.dom.createElement('link');
       link.setAttribute('rel', 'alternate');
       link.setAttribute('hreflang', lang);
       link.setAttribute('href', url);
       this.dom.head.appendChild(link);
 
+      // Add x-default for the default language
       if (lang === this.defaultLang) {
         const defaultLink: HTMLLinkElement = this.dom.createElement('link');
         defaultLink.setAttribute('rel', 'alternate');
