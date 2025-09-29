@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://loom21.com/en/</loc>
-        <lastmod>2025-09-19</lastmod>
+        <lastmod>2025-09-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/" />
@@ -10,62 +10,62 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/" />
     </url>
     <url>
-        <loc>https://loom21.com/en/docs</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://loom21.com/en/docs/</loc>
+        <lastmod>2025-09-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/docs" />
-        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/docs" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/docs" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/docs/" />
+        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/docs/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/docs/" />
     </url>
     <url>
-        <loc>https://loom21.com/en/pricing</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://loom21.com/en/pricing/</loc>
+        <lastmod>2025-09-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/pricing" />
-        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/pricing" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/pricing" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/pricing/" />
+        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/pricing/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/pricing/" />
     </url>
     <url>
-        <loc>https://loom21.com/en/contact</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://loom21.com/en/contact/</loc>
+        <lastmod>2025-09-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/contact" />
-        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/contact" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/contact" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/contact/" />
+        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/contact/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/contact/" />
     </url>
     <url>
-        <loc>https://loom21.com/en/privacy-policy</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://loom21.com/en/privacy-policy/</loc>
+        <lastmod>2025-09-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/privacy-policy" />
-        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/privacy-policy" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/privacy-policy" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/privacy-policy/" />
+        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/privacy-policy/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/privacy-policy/" />
     </url>
     <url>
-        <loc>https://app.loom21.com/en/login</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://app.loom21.com/en-US/login/</loc>
+        <lastmod>2025-09-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://app.loom21.com/en/login" />
-        <xhtml:link rel="alternate" hreflang="bg" href="https://app.loom21.com/bg/login" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://app.loom21.com/en/login" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://app.loom21.com/en-US/login/" />
+        <xhtml:link rel="alternate" hreflang="bg" href="https://app.loom21.com/bg/login/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://app.loom21.com/en-US/login/" />
     </url>
     <url>
-        <loc>https://app.loom21.com/en/signup</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://app.loom21.com/en-US/signup/</loc>
+        <lastmod>2025-09-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://app.loom21.com/en/signup" />
-        <xhtml:link rel="alternate" hreflang="bg" href="https://app.loom21.com/bg/signup" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://app.loom21.com/en/signup" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://app.loom21.com/en-US/signup/" />
+        <xhtml:link rel="alternate" hreflang="bg" href="https://app.loom21.com/bg/signup/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://app.loom21.com/en-US/signup/" />
     </url>
     <url>
         <loc>https://loom21.com/bg/</loc>
-        <lastmod>2025-09-19</lastmod>
+        <lastmod>2025-09-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/" />
@@ -73,57 +73,57 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/" />
     </url>
     <url>
-        <loc>https://loom21.com/bg/docs</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://loom21.com/bg/docs/</loc>
+        <lastmod>2025-09-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/docs" />
-        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/docs" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/docs" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/docs/" />
+        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/docs/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/docs/" />
     </url>
     <url>
-        <loc>https://loom21.com/bg/pricing</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://loom21.com/bg/pricing/</loc>
+        <lastmod>2025-09-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/pricing" />
-        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/pricing" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/pricing" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/pricing/" />
+        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/pricing/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/pricing/" />
     </url>
     <url>
-        <loc>https://loom21.com/bg/contact</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://loom21.com/bg/contact/</loc>
+        <lastmod>2025-09-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/contact" />
-        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/contact" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/contact" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/contact/" />
+        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/contact/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/contact/" />
     </url>
     <url>
-        <loc>https://loom21.com/bg/privacy-policy</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://loom21.com/bg/privacy-policy/</loc>
+        <lastmod>2025-09-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/privacy-policy" />
-        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/privacy-policy" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/privacy-policy" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/privacy-policy/" />
+        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/privacy-policy/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/privacy-policy/" />
     </url>
     <url>
-        <loc>https://app.loom21.com/bg/login</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://app.loom21.com/bg/login/</loc>
+        <lastmod>2025-09-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://app.loom21.com/en/login" />
-        <xhtml:link rel="alternate" hreflang="bg" href="https://app.loom21.com/bg/login" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://app.loom21.com/en/login" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://app.loom21.com/en-US/login/" />
+        <xhtml:link rel="alternate" hreflang="bg" href="https://app.loom21.com/bg/login/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://app.loom21.com/en-US/login/" />
     </url>
     <url>
-        <loc>https://app.loom21.com/bg/signup</loc>
-        <lastmod>2025-09-19</lastmod>
+        <loc>https://app.loom21.com/bg/signup/</loc>
+        <lastmod>2025-09-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://app.loom21.com/en/signup" />
-        <xhtml:link rel="alternate" hreflang="bg" href="https://app.loom21.com/bg/signup" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://app.loom21.com/en/signup" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://app.loom21.com/en-US/signup/" />
+        <xhtml:link rel="alternate" hreflang="bg" href="https://app.loom21.com/bg/signup/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://app.loom21.com/en-US/signup/" />
     </url>
 </urlset>
