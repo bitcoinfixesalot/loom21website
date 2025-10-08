@@ -19,11 +19,7 @@ export class CanonicalService {
   ) {}
 
   setCanonicalURL(url?: string) {
-    // Debug logging
-    console.log('setCanonicalURL - Router URL:', this.router.url);
-    console.log('setCanonicalURL - Document Location:', this.dom.location.href);
-    console.log('setCanonicalURL - Platform:', isPlatformServer(this.platformId) ? 'Server' : 'Client');
-
+ 
     // Remove existing canonical tag
     const existingLink = this.dom.querySelector('link[rel="canonical"]');
     if (existingLink) {
@@ -49,15 +45,11 @@ export class CanonicalService {
 
     // Construct canonical URL
     const canonicalUrl = url || `${baseDomain}${currentPath}`;
-    console.log('setCanonicalURL - Generated Canonical URL:', canonicalUrl);
     link.setAttribute('href', canonicalUrl);
     this.dom.head.appendChild(link);
   }
 
   setHreflangTags() {
-    // Debug logging
-    console.log('setHreflangTags - Router URL:', this.router.url);
-    console.log('setHreflangTags - Document Location:', this.dom.location.href);
 
     // Remove existing hreflang tags
     const existingLinks = this.dom.querySelectorAll('link[rel="alternate"][hreflang]');
