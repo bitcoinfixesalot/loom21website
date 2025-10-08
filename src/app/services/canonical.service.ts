@@ -35,9 +35,9 @@ export class CanonicalService {
     link.setAttribute('rel', 'canonical');
 
     // Determine base domain
-    const isLocal = this.dom.location.hostname.includes('localhost');
-    const isAppSubdomain = !isLocal && this.dom.location.hostname.includes('app.loom21.com');
-    const baseDomain = isLocal ? 'https://loom21.com' : isAppSubdomain ? 'https://app.loom21.com' : 'https://loom21.com';
+    //const isLocal = this.dom.location.hostname.includes('localhost');
+    const isAppSubdomain = this.dom.location.hostname.includes('app.loom21.com');
+    const baseDomain = isAppSubdomain ? 'https://app.loom21.com' : 'https://loom21.com';
 
     // Ensure currentPath includes language prefix and trailing slash
     let currentPath = this.router.url;
@@ -65,12 +65,12 @@ export class CanonicalService {
 
     // Get current path without language prefix
     const currentPath = (this.router.url.replace(/^\/(en|bg)(\/|$)/, '/') || '/').replace(/\/$/, '') || '/';
-    const isLocal = this.dom.location.hostname.includes('localhost');
-    const isAppSubdomain = !isLocal && this.dom.location.hostname.includes('app.loom21.com');
+    //const isLocal = this.dom.location.hostname.includes('localhost');
+    const isAppSubdomain = this.dom.location.hostname.includes('app.loom21.com');
 
     // Generate hreflang tags
     this.languages.forEach(({ lang, baseUrl, appBaseUrl }) => {
-      const url = `${isLocal ? baseUrl : isAppSubdomain ? appBaseUrl : baseUrl}${currentPath}`;
+      const url = `${isAppSubdomain ? appBaseUrl : baseUrl}${currentPath}`;
       const link: HTMLLinkElement = this.dom.createElement('link');
       link.setAttribute('rel', 'alternate');
       link.setAttribute('hreflang', lang);
