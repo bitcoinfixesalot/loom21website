@@ -17,6 +17,9 @@ export class ContactComponent implements OnInit {
   showSuccess: boolean = false;
   successMessage = SUCCESS_MESSAGE;//"Thank You! Your message has been received. We'll get back to you soon." 
   form: UntypedFormGroup;
+  private formStart = Date.now();
+  private minSubmitDelayMs = 3000; // require at least N ms before accepting submission
+
   constructor(private formBuilder: UntypedFormBuilder, private titleService: Title, private metaService: Meta,
     private emailService: EmailService) {
 
@@ -24,15 +27,19 @@ export class ContactComponent implements OnInit {
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       business: [''],
-      message: ['', Validators.required]
+      message: ['', Validators.required],
+      hp: [''] // honeypot field (hidden in template)
     });
+
+    this.formStart = Date.now();
   }
 
   get name() { return this.form.get('name'); }
   get email() { return this.form.get('email'); }
   get message() { return this.form.get('message'); }
   get business() { return this.form.get('business'); }
-
+  get hp() { return this.form.get('hp'); }
+  
 
   ngOnInit(): void {
 
@@ -57,10 +64,21 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit() {
+    // Basic bot checks: honeypot or too-fast submit
+    if (this.hp?.value && this.hp.value.trim() !== '') {
+      console.warn('Honeypot triggered — likely bot.');
+      return;
+    }
+    if (Date.now() - this.formStart < this.minSubmitDelayMs) {
+      console.warn('Form submitted too quickly — likely bot.');
+      return;
+    }
+
     if (this.form.invalid) {
       console.log("form invalid");
       return;
     }
+
     const subject = 'loom21 contacted';
     const content = `
       <html>
