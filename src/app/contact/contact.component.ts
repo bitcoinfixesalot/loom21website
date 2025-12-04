@@ -75,7 +75,6 @@ export class ContactComponent implements OnInit {
       next: (response) => {
         this.showSuccess = true;
         this.form.disable();
-        console.log('Email sent', response);
       },
       error: (error) => console.error('There was an error!', error),
       complete: () => console.log('Email sending completed.')
