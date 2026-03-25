@@ -1,5 +1,5 @@
-import { DOCUMENT, isPlatformServer } from '@angular/common';
-import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Inject, Injectable, LOCALE_ID } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Injectable({
@@ -14,7 +14,7 @@ export class CanonicalService {
 
   constructor(
     @Inject(DOCUMENT) private dom: Document,
-    @Inject(PLATFORM_ID) private platformId: Object,
+    @Inject(LOCALE_ID) private localeId: string,
     private router: Router
   ) {}
 
@@ -35,16 +35,12 @@ export class CanonicalService {
     const isAppSubdomain = this.dom.location.hostname.includes('app.loom21.com');
     const baseDomain = isAppSubdomain ? 'https://app.loom21.com' : 'https://loom21.com';
 
-    // Ensure currentPath includes language prefix and trailing slash
+    // router.url is relative to APP_BASE_HREF (language prefix already stripped)
     let currentPath = this.router.url;
-    if (!currentPath.startsWith('/en/') && !currentPath.startsWith('/bg/') && !isAppSubdomain) {
-      // Fallback to /en/ if no language prefix is detected
-      currentPath = `/en${currentPath === '/' ? '' : currentPath}`;
-    }
-    currentPath = currentPath.endsWith('/') || currentPath === '' ? currentPath : `${currentPath}/`;
+    currentPath = currentPath.endsWith('/') ? currentPath : `${currentPath}/`;
 
-    // Construct canonical URL
-    const canonicalUrl = url || `${baseDomain}${currentPath}`;
+    // Construct canonical URL using LOCALE_ID to get the correct language prefix
+    const canonicalUrl = url || `${baseDomain}/${this.localeId}${currentPath}`;
     link.setAttribute('href', canonicalUrl);
     this.dom.head.appendChild(link);
   }
