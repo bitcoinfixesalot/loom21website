@@ -56,7 +56,7 @@ export class CanonicalService {
     existingLinks.forEach((link) => link.remove());
 
     // Get current path without language prefix
-    const currentPath = (this.router.url.replace(/^\/(en|bg)(\/|$)/, '/') || '/').replace(/\/$/, '') || '/';
+    const currentPath = this.router.url.replace(/^\/(en|bg)/, '') || '/';
     //const isLocal = this.dom.location.hostname.includes('localhost');
     const isAppSubdomain = this.dom.location.hostname.includes('app.loom21.com');
 
