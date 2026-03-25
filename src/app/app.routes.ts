@@ -9,7 +9,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
 export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'docs', component: DocumentationComponent },
-    { path: 'blog', component: HomeComponent },
+    // { path: 'blog', component: HomeComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'pricing', component: PricingComponent },
     { path: '404', component : NotFoundComponent},
