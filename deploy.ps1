@@ -15,7 +15,7 @@ catch {
 
 # Login to Azure Container Registry
 Write-Host "Logging into Azure Container Registry..."
-az acr login --name loomapplicationacr
+az acr login --name loom21acr
 if ($LASTEXITCODE -ne 0) {
     Write-Host "Error: ACR login failed. Please check your registry name and permissions."
     exit 1
@@ -27,10 +27,10 @@ docker build -t loom21website .
 
 # Tag the image for Azure Container Registry
 Write-Host "Tagging image..."
-docker tag loom21website loomapplicationacr.azurecr.io/loom21website
+docker tag loom21website loom21acr.azurecr.io/loom21website
 
 # Push the image to Azure Container Registry
 Write-Host "Pushing image to ACR..."
-docker push loomapplicationacr.azurecr.io/loom21website
+docker push loom21acr.azurecr.io/loom21website
 
 Write-Host "Deployment complete!"
