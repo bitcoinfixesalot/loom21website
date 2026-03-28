@@ -7,6 +7,7 @@ export const TITLES = {
     documentation: $localize`:Documentation title@@documentationTitle:Documentation - Loom 21`,
     contact: $localize`:Contact title@@contactTitle:Contact - Loom 21`,
     pricing: $localize`:Pricing title@@PricingTitle:Pricing - Loom 21`,
+    privacy: $localize`:Privacy title@@privacyTitle:Privacy - Loom 21`,
 }
 
 export const DESCRIPTIONS = {
@@ -14,6 +15,7 @@ export const DESCRIPTIONS = {
     documentation_description: $localize`:Documentation description tag@@docDescription:App for inventory management, stock control, customer & supplier tools, invoice & Bitcoin payments, order fulfilment, and real-time tracking with analytics`,
     contact_description: $localize`:Contact description tag@@contactDescription:Questions on sales, deliveries, or payments? Contact us for expert support to grow your business!`,
     pricing_description: $localize`:Pricing description tag@@pricingDescription:Explore our subscription plans with flexible pricing options. Choose from monthly or yearly billing, with custom plans available. Contact us for details!`,
+    privacy_description: $localize`:Privacy description tag@@privacyDescription:Learn about our privacy practices and how we protect your data.`,
 }
 
 export const LD_JSON = {
@@ -21,6 +23,7 @@ export const LD_JSON = {
     documentation_description: $localize`:Documentation description ld_json tag@@docDescription_ld_json:Learn to optimize sales, deliveries, and payments. Guides on inventory, user roles, and real-time tracking.`,
     contact_description: $localize`:Contact description ld_json tag@@contactDescription_ld_json:Questions on sales, deliveries, or payments? Contact us for expert support to grow your business.`,
     pricing_description: $localize`:Pricing description ld_json tag@@pricingDescription_ld_json:Subscription plans for Loom21 with various features and pricing options.`,
+    privacy_description: $localize`:Privacy description ld_json tag@@privacyDescription_ld_json:Learn about our privacy practices and how we protect your data.`,
 }
 
 export const INVENTORY_MANAGEMENT = $localize`:@@inventoryManagement:Inventory Management`;
