@@ -2,6 +2,24 @@
     width: 52px; height: 52px;
 }
 
+.footer-links {
+    li {
+        margin-bottom: 8px;
+    }
+
+    a {
+        color: inherit;
+        opacity: 0.75;
+        text-decoration: none;
+        font-size: smaller;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
 .material-icons{
     font-size: 32px;
     color: white;
