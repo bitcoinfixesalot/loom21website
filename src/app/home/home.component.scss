@@ -1,32 +1,86 @@
-.test{
+.test {
     transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
     -webkit-box-shadow: 0px 5px 20px rgba(0,0,0,.05)!important;
-
-
 }
 
-// .card-heading p {
-//     display: inline-block;
-//   }
-    
-//   .card-heading .icon-holder {
-//     display: inline-block;
-//     vertical-align: middle;
-//   }
-
-   /* Removing the list style of list gfg */
-.gfg{
-    list-style-type:none;
+/* Removing the list style of list gfg */
+.gfg {
+    list-style-type: none;
     margin-left: 0;
     padding-left: 0;
 }
-  
-/* Adding icon before each list icon */
-.gfg > li:before{
+
+/* Adding icon before each list item */
+.gfg > li:before {
     content: 'check';
     font-family: 'Material Icons';
     font-size: 24px;
     vertical-align: -16%;
     margin-right: 8px;
+}
+
+/* Payment processor logos strip */
+.processors-strip {
+    background-color: white;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 40px 0;
+}
+
+.processor-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+
+    img {
+        height: 36px;
+        width: auto;
+        object-fit: contain;
+        opacity: 0.75;
+        transition: opacity 0.2s ease;
+        flex: 1 1 auto;
+        max-width: 140px;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: 576px) {
+        justify-content: center;
+    }
+}
+
+/* Why Loom21 cards */
+.why-card {
+    background: white;
+    border-radius: 8px;
+    padding: 32px 24px;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: box-shadow 0.2s ease;
+
+    &:hover {
+        box-shadow: 0 4px 16px rgba(0,0,0,0.14);
+    }
+
+    h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    p {
+        color: #555;
+        margin: 0;
+    }
+}
+
+.why-icon {
+    font-size: 28px;
+    color: #1976d2;
+    margin-bottom: 16px;
 }
