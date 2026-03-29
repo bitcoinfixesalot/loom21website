@@ -1,84 +1,124 @@
 <div class="bg-light">
-    <section>
-      <div id="banner1" style="background-color: white;" class="banner spacer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-7 col-lg-5 align-self-center" data-aos="fade-right" data-aos-duration="1500">
-              <h2 class="title font-bold" i18n="Home top title@@homeH2TopTitle">Inventory & Payment Management Made Simple</h2>
-              <p class="m-t-40 m-b-30" i18n="Home top sub title@@homeTopSubTitle">Easily create payment links for Bitcoin or fiat and manage products, inventory, sales, deliveries, and customers with Loom21—all in one platform. Try free today!</p>
-              <div class="m-t-40">
-                <button type="button" class="btn waves-effect waves-light btn-primary m-r-20"
-                  style="min-width: 238px;"><span i18n="Demo account button@@demoButton">Demo Account</span><span class="badge rounded-pill bg-secondary">soon</span></button>
-                <a [href]="appUrl" target="_blank" type="button" class="btn waves-effect waves-light btn-success" style="min-width: 238px;" i18n="Try for free button@@tryForFreeButton">Try
-                  loom21 for free</a>
-              </div>
+  <section>
+    <div style="background-color: white;" class="banner spacer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-lg-5 align-self-center" data-aos="fade-right" data-aos-duration="1500">
+            <h2 class="title font-bold" i18n="Home top title@@homeH2TopTitle">Inventory & Payment Management Made Simple</h2>
+            <p class="m-t-40 m-b-30" i18n="Home top sub title@@homeTopSubTitle">Easily create payment links for Bitcoin or fiat and manage products, inventory, sales, deliveries, and customers with Loom21—all in one platform. Try free today!</p>
+            <div class="m-t-40 d-flex flex-wrap gap-3">
+              <a [href]="appUrl" target="_blank" type="button" class="btn waves-effect waves-light btn-success" style="min-width: 200px;" i18n="Try for free button@@tryForFreeButton">Try loom21 for free</a>
+              <a routerLink="/contact" type="button" class="btn waves-effect waves-light btn-outline-primary" style="min-width: 200px;" i18n="Contact us button@@contactUsButton">Contact Us</a>
             </div>
-            <div class="col-md-5 col-lg-6 align-self-center ms-auto test" data-aos="fade-left" data-aos-duration="1500">
-              <img src="assets/images/form-banners/sale-order-edit.PNG" alt="new sale order" class="img-fluid " />
-            </div>
+          </div>
+          <div class="col-md-5 col-lg-6 align-self-center ms-auto test" data-aos="fade-left" data-aos-duration="1500">
+            <img src="assets/images/form-banners/sale-order-edit.PNG" alt="new sale order" class="img-fluid" />
           </div>
         </div>
       </div>
-    </section>
-  </div>
-  <div class="bg-light">
-    <section>
-      <div id="banner1" style="background-color: #e3f2fd;" class="banner spacer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-7 col-lg-5 align-self-center" data-aos="fade-right" data-aos-duration="1500">
-              <h2 class="title font-bold" i18n="Features title@@featuresTitle">Features</h2>
-              <h4 i18n="Benefits and features@@benefitsAndFeatures">Key benefits and platform features …</h4>
-              <div class="m-t-10 m-b-30">
-  
-                <ul class="gfg">
-                  <li i18n="Track inventory@@trackInventory">Track products inventory</li>
-                  <li i18n="Manage clients and suppliers@@manageClientsSuppliers">Manage clients and suppliers</li>
-                  <li i18n="Control your own data@@controlData">Control your own data - Import and Export</li>
-                  <li i18n="Send payment links@@sendPaymentLinks">You can create payment links to take payments</li>
-                  <li i18n="Accept Payments@@acceptPayments">Accept Bitcoin, Lightning, and credit/debit card payments</li>
-                  <li i18n="Get notified@@getInvoiceNotification">Get notified when invoices are paid</li>
-                </ul>
-  
-                <!-- <div class="icon-holder">
-                  <i class="material-icons">check</i>
-                </div> -->
-                <span>
-                </span>
-              </div>
-            </div>
-            <div class="col-md-5 col-lg-6 align-self-center ms-auto" data-aos="fade-left" data-aos-duration="1500">
-              <img src="assets/images/form-banners/loom-app-laptop-mobile.png" alt="desktop and mobile application" class="img-fluid " />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-  
-  <div class="bg-light">
-    <section>
-      <div id="banner1" style="background-color: white;" class="banner spacer">
-        <div class="container">
-          <div class="row">
-  
-            <div class="col-md-7 col-lg-5 align-self-center" data-aos="fade-left" data-aos-duration="1500">
-              <img src="assets/images/form-banners/bitcoin-lightning2.png" alt="bitcoin lightning"
-                class="img-fluid " />
-            </div>
-            <div class="col-md-5 col-lg-6 align-self-center ms-auto" data-aos="fade-right" data-aos-duration="1500">
-             <h2 class="title font-bold" i18n="Payments made simple@@paymentsMadeSimple">Payments Made Simple</h2>
-<p class="m-t-40 m-b-30" i18n="Send payment links and@@sendPaymentLinksAnd">Send payment links for Bitcoin, Lightning, or fiat card payments. Effortless invoicing for everyone.</p>
-<div class="m-t-40">
-  <a href="#" [href]="appUrl" target="_blank" type="button" class="btn waves-effect waves-light btn-success" i18n="Get started@@getStarted">Get Started</a>
+    </div>
+  </section>
 </div>
-              <div class="m-t-40">
-                <!-- <button type="button" class="btn waves-effect waves-light btn-outline-primary" i18n="Features title@@featuresTitle">Features</button> -->
-              </div>
+
+<!-- Features -->
+<div class="bg-light">
+  <section>
+    <div style="background-color: #e3f2fd;" class="banner spacer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-lg-5 align-self-center" data-aos="fade-right" data-aos-duration="1500">
+            <h2 class="title font-bold" i18n="Features title@@featuresTitle">Features</h2>
+            <h4 i18n="Benefits and features@@benefitsAndFeatures">Key benefits and platform features …</h4>
+            <div class="m-t-10 m-b-30">
+              <ul class="gfg">
+                <li i18n="Track inventory@@trackInventory">Track product inventory across multiple stores</li>
+                <li i18n="Manage clients and suppliers@@manageClientsSuppliers">Manage clients and suppliers</li>
+                <li i18n="Control your own data@@controlData">Control your own data — Import and Export</li>
+                <li i18n="Send payment links@@sendPaymentLinks">Create and share payment links instantly</li>
+                <li i18n="Accept Payments@@acceptPayments">Accept Bitcoin (Lightning & on-chain) and credit/debit card payments</li>
+                <li i18n="Document generation@@documentGeneration">Generate quotes, invoices, receipts, and pickup lists</li>
+                <li i18n="Order history@@orderHistory">View customer order history and reorder with one click</li>
+                <li i18n="Barcode QR@@barcodeQr">Generate barcodes and QR codes for products</li>
+                <li i18n="Get notified@@getInvoiceNotification">Get notified when invoices are paid</li>
+                <li i18n="Multi language@@multiLanguage">Available in English and Bulgarian</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-6 align-self-center ms-auto" data-aos="fade-left" data-aos-duration="1500">
+            <img src="assets/images/form-banners/loom-app-laptop-mobile.png" alt="desktop and mobile application" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Payments Made Simple -->
+<div class="bg-light">
+  <section>
+    <div style="background-color: white;" class="banner spacer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-lg-5 align-self-center" data-aos="fade-left" data-aos-duration="1500">
+            <img src="assets/images/form-banners/bitcoin-lightning2.png" alt="bitcoin lightning" class="img-fluid" />
+          </div>
+          <div class="col-md-5 col-lg-6 align-self-center ms-auto" data-aos="fade-right" data-aos-duration="1500">
+            <h2 class="title font-bold" i18n="Payments made simple@@paymentsMadeSimple">Payments Made Simple</h2>
+            <p class="m-t-40 m-b-30" i18n="Send payment links and@@sendPaymentLinksAnd">Send payment links for Bitcoin Lightning, on-chain Bitcoin, or fiat card payments — powered by Stripe, BTCPay Server, Misty Breez, Speed Wallet, LNBits, and more. Effortless invoicing for everyone.</p>
+            <div class="m-t-40">
+              <a [href]="appUrl" target="_blank" type="button" class="btn waves-effect waves-light btn-success" i18n="Get started@@getStarted">Get Started</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+</div>
+
+<!-- Payment Processor Logos Strip -->
+<div class="processors-strip">
+  <div class="container">
+    <p class="text-center text-muted mb-4" i18n="Supported processors label@@supportedProcessors">Supported Payment Processors</p>
+    <div class="processor-logos">
+      <img src="assets/images/logos/stripe-logo.png" alt="Stripe" />
+      <img src="assets/images/logos/btcpay-logo.png" alt="BTCPay Server" />
+      <img src="assets/images/logos/misty-breez-logo.png" alt="Misty Breez" />
+      <img src="assets/images/logos/speedwallet-logo.png" alt="Speed Wallet" />
+      <img src="assets/images/logos/lnbits-logo.png" alt="LNBits" />
+    </div>
   </div>
-  
+</div>
+
+<!-- Why Loom21 -->
+<div style="background-color: #e3f2fd;">
+  <section>
+    <div class="banner spacer">
+      <div class="container text-center">
+        <h2 class="title font-bold m-b-30" i18n="Why loom21@@whyLoom21">Why Loom21?</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-6 m-b-30" data-aos="fade-up" data-aos-duration="1000">
+            <div class="why-card">
+              <div class="why-icon"><i class="fa fa-bolt"></i></div>
+              <h3 i18n="Stat free@@statFree">Free to Start</h3>
+              <p i18n="Stat free desc@@statFreeDesc">No credit card required. Get started immediately with a free account.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 m-b-30" data-aos="fade-up" data-aos-duration="1200">
+            <div class="why-card">
+              <div class="why-icon"><i class="fa fa-lock"></i></div>
+              <h3 i18n="Stat ownership@@statOwnership">Your Data, Your Control</h3>
+              <p i18n="Stat ownership desc@@statOwnershipDesc">Import and export your data at any time. No lock-in.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 m-b-30" data-aos="fade-up" data-aos-duration="1400">
+            <div class="why-card">
+              <div class="why-icon"><i class="fa fa-bitcoin"></i></div>
+              <h3 i18n="Stat bitcoin@@statBitcoin">Bitcoin Native</h3>
+              <p i18n="Stat bitcoin desc@@statBitcoinDesc">Accept Lightning and on-chain Bitcoin payments alongside traditional card payments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
