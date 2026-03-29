@@ -28,6 +28,16 @@
     padding: 40px 0;
 }
 
+.processors-label {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #999;
+    margin-bottom: 28px;
+}
+
 .processor-logos {
     display: flex;
     flex-wrap: wrap;
@@ -47,6 +57,12 @@
         &:hover {
             opacity: 1;
         }
+    }
+
+    img[alt="BTCPay Server"] {
+        background-color: #1a1a2e;
+        border-radius: 6px;
+        padding: 4px 10px;
     }
 
     @media (max-width: 576px) {
