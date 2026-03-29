@@ -1,4 +1,5 @@
 import { Component, Inject, isDevMode, LOCALE_ID, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import {
   BITCOIN_PAYMENTS,
@@ -25,7 +26,7 @@ import {
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
