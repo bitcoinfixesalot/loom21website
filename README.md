@@ -61,10 +61,16 @@
 <!-- GETTING STARTED -->
 ## Getting Started<a id="getting-started"></a>
 
-In order to start using the loom21 app you need to create an account.
+In order to start using the loom21 app you need to create an account. Here is the recommended setup flow:
+
+1. **Create an account** and confirm your email.
+2. Configure **[General Settings](#general-settings)** — set your language, currency, VAT, and address.
+3. Configure at least one **[payment processor](#settings)** (Stripe, BTCPay Server, etc.) so it appears at checkout.
+4. Add your **[Products and Services](#products-services)**.
+5. Create your first **[Sale](#sales)**.
 
 ### Create Account<a id="create-account"></a><a id="sign-in"></a>
-After you sign up you will receive a confirmation email to confirm you account and then you can sign in.
+After you sign up you will receive a confirmation email to confirm your account and then you can sign in.
 ![Sign Up to app.loom21.com](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sign-up-and-in-light.PNG)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -73,7 +79,7 @@ After you sign up you will receive a confirmation email to confirm you account a
 ## Payment Links <a id="payment-links"></a>
 - A payment link is a unique URL that you can share with customers to accept payments for a product, service, or donation. Creators can configure the link with details like the price, currency, and available payment options. Buyers use the link to complete their purchase securely.
 - Set the product name, price, currency (e.g., USD, EUR), and whether tax applies.
-- Choose payment methods and add optional promo codes.
+- Choose payment methods and add optional promo codes. Payment processors must first be configured in [Settings](#settings).
 
 #### Supported Payment Processors
 
@@ -115,20 +121,8 @@ After you sign up you will receive a confirmation email to confirm you account a
 
 ![Saved sale order](https://raw.githubusercontent.com/loom21/loom21doc/main/images/sale-order-payments-light.gif)
 
-- Payments can be made using your local currency (via Stripe) or Bitcoin — Lightning and on-chain — depending on the processor configured in your settings.
+- Payments can be made via any of the configured payment processors — credit/debit card (Stripe), Bitcoin Lightning, or on-chain Bitcoin. See [Supported Payment Processors](#payment-links) for the full list.
 - You can also generate and share or print documents such as quotes, invoices, receipts, or pickup lists.
-
-#### Supported Payment Processors
-
-| Processor | Payment Type |
-|-----------|-------------|
-| Stripe | Credit / Debit Card |
-| BTCPay Server | Bitcoin Lightning & On-chain |
-| Misty Breez | Bitcoin Lightning & On-chain |
-| Speed Wallet | Bitcoin Lightning & On-chain |
-| LNBits | Bitcoin Lightning |
-
-> :bell: More payment processors are coming soon.
 
 ![Pay with bitcoin](https://raw.githubusercontent.com/loom21/loom21doc/main/images/pay-with-bitcoin-light.PNG)
 
@@ -142,7 +136,7 @@ After you sign up you will receive a confirmation email to confirm you account a
 
 ## Settings<a id="settings"></a>
 
-Setting up your organization.
+Configure your organization's preferences and payment processors here. Payment processors must be set up in this section before they become available as options at checkout or in payment links.
 
 ### General settings <a id="general-settings"></a>
 - On this page, you can update your default store, language, currency, VAT settings, toggle Bitcoin prices on or off, and switch between light and dark mode.
