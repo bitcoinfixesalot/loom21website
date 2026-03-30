@@ -15,6 +15,7 @@ import { Meta, Title } from '@angular/platform-browser';
 export class ContactComponent implements OnInit {
 
   showSuccess: boolean = false;
+  isSubmitting: boolean = false;
   successMessage = SUCCESS_MESSAGE;//"Thank You! Your message has been received. We'll get back to you soon." 
   form: UntypedFormGroup;
   private formStart = Date.now();
@@ -89,12 +90,17 @@ export class ContactComponent implements OnInit {
       </html>
     `
 
+    this.isSubmitting = true;
     this.emailService.sendEmail(this.email?.value, subject, content).subscribe({
       next: (response) => {
         this.showSuccess = true;
+        this.isSubmitting = false;
         this.form.disable();
       },
-      error: (error) => console.error('There was an error!', error),
+      error: (error) => {
+        console.error('There was an error!', error);
+        this.isSubmitting = false;
+      },
       complete: () => console.log('Email sending completed.')
     });
 
