@@ -65,9 +65,10 @@ Header 1
   color: #5e35b1;
 }
 .h1-nav .navbar-nav .nav-item.active .nav-link {
-  color: #673ab7;
+  color: #5e35b1;
   font-weight: 600;
-  border-bottom: 2px solid #673ab7;
+  border-bottom: 2px solid #5e35b1;
+  padding-bottom: 0px;
 }
 .h1-nav .navbar-nav .nav-item:last-child {
   margin-right: 0px;
