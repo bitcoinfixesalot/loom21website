@@ -64,6 +64,11 @@ Header 1
 .h1-nav .navbar-nav .nav-item .nav-link:hover {
   color: #5e35b1;
 }
+.h1-nav .navbar-nav .nav-item.active .nav-link {
+  color: #673ab7;
+  font-weight: 600;
+  border-bottom: 2px solid #673ab7;
+}
 .h1-nav .navbar-nav .nav-item:last-child {
   margin-right: 0px;
 }

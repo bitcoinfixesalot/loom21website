@@ -12,16 +12,16 @@
 
                 <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
 
-                    <li class="nav-item active">
+                    <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                         <a class="nav-link" routerLink="/" i18n="Home menu@@home">Home</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item" routerLinkActive="active">
                         <a class="nav-link" routerLink="/docs" i18n="Docs menu@@documentation">Documentation</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item" routerLinkActive="active">
                         <a class="nav-link" routerLink="/pricing" i18n="Pricing menu@@pricing">Pricing</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" routerLinkActive="active">
                         <a class="nav-link" routerLink="/contact" i18n="contact menu@@contact">Contact</a>
                     </li>
                     <!-- Distinct Locale Switcher (Before Launch App) -->

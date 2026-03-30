@@ -52,6 +52,12 @@ Header 1
             }
         }
 
+        &.active .nav-link {
+            color: $success;
+            font-weight: 600;
+            border-bottom: 2px solid $success;
+        }
+
         &:last-child {
             margin-right: 0px;
         }
