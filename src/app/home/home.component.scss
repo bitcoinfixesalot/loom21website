@@ -66,6 +66,12 @@
 
     @media (max-width: 576px) {
         justify-content: center;
+        gap: 16px;
+
+        img {
+            width: 90px;
+            height: 36px;
+        }
     }
 }
 
@@ -98,4 +104,21 @@
     font-size: 28px;
     color: #1976d2;
     margin-bottom: 16px;
+}
+
+.hero-buttons {
+    @media (min-width: 576px) {
+        .btn {
+            min-width: 180px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .m-t-40 {
+        margin-top: 16px;
+    }
+    .m-b-30 {
+        margin-bottom: 12px;
+    }
 }
