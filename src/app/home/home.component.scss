@@ -46,13 +46,12 @@
     gap: 24px;
 
     img {
-        height: 36px;
-        width: auto;
+        width: 120px;
+        height: 48px;
         object-fit: contain;
         opacity: 0.75;
         transition: opacity 0.2s ease;
         flex: 1 1 auto;
-        max-width: 140px;
 
         &:hover {
             opacity: 1;
