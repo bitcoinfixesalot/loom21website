@@ -94,7 +94,7 @@
       </trans-unit>
       <trans-unit id="privacyTitle" datatype="html">
         <source>Privacy - Loom 21</source>
-        <target>notranslation</target>
+        <target>Поверителност - Loom 21</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">10</context>
@@ -139,7 +139,7 @@
       </trans-unit>
       <trans-unit id="privacyDescription" datatype="html">
         <source>Learn about our privacy practices and how we protect your data.</source>
-        <target>notranslation</target>
+        <target>Научете се за нашите практики за поверителност и как защитаваме вашите данни.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">18</context>
@@ -184,7 +184,7 @@
       </trans-unit>
       <trans-unit id="privacyDescription_ld_json" datatype="html">
         <source>Learn about our privacy practices and how we protect your data.</source>
-        <target>notranslation</target>
+        <target>Научете се за нашите практики за поверителност и как защитаваме вашите данни.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">26</context>
@@ -1336,7 +1336,7 @@
       </trans-unit>
       <trans-unit id="contactDetailTitle" datatype="html">
         <source>We'd love to hear from you</source>
-        <target>notranslation</target>
+        <target>Ще се радваме да чуем от вас</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
           <context context-type="linenumber">82,83</context>
@@ -1345,7 +1345,7 @@
       </trans-unit>
       <trans-unit id="contactDetailResponse" datatype="html">
         <source>We typically respond within one business day.</source>
-        <target>notranslation</target>
+        <target>Обикновено отговаряме в рамките на един работен ден.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
           <context context-type="linenumber">83,85</context>
@@ -1354,7 +1354,7 @@
       </trans-unit>
       <trans-unit id="contactCommunity" datatype="html">
         <source>Community</source>
-        <target>notranslation</target>
+        <target>Общност</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
           <context context-type="linenumber">85,86</context>
@@ -1363,7 +1363,7 @@
       </trans-unit>
       <trans-unit id="joinTelegram" datatype="html">
         <source>Join our Telegram</source>
-        <target>notranslation</target>
+        <target>Присъединете се към нашия Telegram</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
           <context context-type="linenumber">90,91</context>
@@ -1372,7 +1372,7 @@
       </trans-unit>
       <trans-unit id="followTwitter" datatype="html">
         <source>Follow on X</source>
-        <target>notranslation</target>
+        <target>Последвайте ни в X</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
           <context context-type="linenumber">96,97</context>
@@ -1381,7 +1381,7 @@
       </trans-unit>
       <trans-unit id="githubDocs" datatype="html">
         <source>Docs on GitHub</source>
-        <target>notranslation</target>
+        <target>Документация в GitHub</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
           <context context-type="linenumber">102,103</context>
@@ -1399,7 +1399,7 @@
       </trans-unit>
       <trans-unit id="footerQuickLinks" datatype="html">
         <source>Quick Links</source>
-        <target>notranslation</target>
+        <target>Бързи връзки</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">9,10</context>
@@ -1408,7 +1408,7 @@
       </trans-unit>
       <trans-unit id="homeNav" datatype="html">
         <source>Home</source>
-        <target>notranslation</target>
+        <target>Начало</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">11,12</context>
@@ -1417,7 +1417,7 @@
       </trans-unit>
       <trans-unit id="docsNav" datatype="html">
         <source>Documentation</source>
-        <target>notranslation</target>
+        <target>Документация</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">12,13</context>
@@ -1426,7 +1426,7 @@
       </trans-unit>
       <trans-unit id="pricingNav" datatype="html">
         <source>Pricing</source>
-        <target>notranslation</target>
+        <target>Цени</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">13,14</context>
@@ -1435,7 +1435,7 @@
       </trans-unit>
       <trans-unit id="contactNav" datatype="html">
         <source>Contact</source>
-        <target>notranslation</target>
+        <target>Контакти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">14,16</context>
@@ -1444,7 +1444,7 @@
       </trans-unit>
       <trans-unit id="footerLegal" datatype="html">
         <source>Legal &amp; Community</source>
-        <target>notranslation</target>
+        <target>Правна информация и общност</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">18,19</context>
@@ -1466,7 +1466,7 @@
       </trans-unit>
       <trans-unit id="footerGithub" datatype="html">
         <source>GitHub</source>
-        <target>notranslation</target>
+        <target>GitHub</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">21,22</context>
@@ -1475,7 +1475,7 @@
       </trans-unit>
       <trans-unit id="footerTelegram" datatype="html">
         <source>Telegram Community</source>
-        <target>notranslation</target>
+        <target>Общност в Telegram</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">22,24</context>
@@ -1520,7 +1520,7 @@
       </trans-unit>
       <trans-unit id="contactUsButton" datatype="html">
         <source>Contact Us</source>
-        <target>notranslation</target>
+        <target>Свържете се с нас</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">11,14</context>
@@ -1592,7 +1592,7 @@
       </trans-unit>
       <trans-unit id="documentGeneration" datatype="html">
         <source>Generate quotes, invoices, receipts, and pickup lists</source>
-        <target>notranslation</target>
+        <target>Генерирайте оферти, фактури, разписки и списъци за вземане</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">39,40</context>
@@ -1601,7 +1601,7 @@
       </trans-unit>
       <trans-unit id="orderHistory" datatype="html">
         <source>View customer order history and reorder with one click</source>
-        <target>notranslation</target>
+        <target>Вижте историята на поръчките на клиентите и направете повторна поръчка с едно кликване</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">40,41</context>
@@ -1610,7 +1610,7 @@
       </trans-unit>
       <trans-unit id="barcodeQr" datatype="html">
         <source>Generate barcodes and QR codes for products</source>
-        <target>notranslation</target>
+        <target>Генерирайте баркодове и QR кодове за продукти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">41,42</context>
@@ -1628,7 +1628,7 @@
       </trans-unit>
       <trans-unit id="multiLanguage" datatype="html">
         <source>Available in multiple languages</source>
-        <target>notranslation</target>
+        <target>Налично на множество езици</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">43,45</context>
@@ -1664,7 +1664,7 @@
       </trans-unit>
       <trans-unit id="supportedProcessors" datatype="html">
         <source>Supported Payment Processors</source>
-        <target>notranslation</target>
+        <target>Поддържани платежни процесори</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">81,83</context>
@@ -1673,7 +1673,7 @@
       </trans-unit>
       <trans-unit id="whyLoom21" datatype="html">
         <source>Why Loom21?</source>
-        <target>notranslation</target>
+        <target>Защо Loom21?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">97,98</context>
@@ -1682,7 +1682,7 @@
       </trans-unit>
       <trans-unit id="statFree" datatype="html">
         <source>Free to Start</source>
-        <target>notranslation</target>
+        <target>Безплатен старт</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">102,103</context>
@@ -1691,7 +1691,7 @@
       </trans-unit>
       <trans-unit id="statFreeDesc" datatype="html">
         <source>No credit card required. Get started immediately with a free account.</source>
-        <target>notranslation</target>
+        <target>Не е необходима кредитна карта. Започнете веднага с безплатен акаунт.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">103,106</context>
@@ -1700,7 +1700,7 @@
       </trans-unit>
       <trans-unit id="statOwnership" datatype="html">
         <source>Your Data, Your Control</source>
-        <target>notranslation</target>
+        <target>Вашите данни, вашият контрол</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">109,110</context>
@@ -1709,7 +1709,7 @@
       </trans-unit>
       <trans-unit id="statOwnershipDesc" datatype="html">
         <source>Import and export your data at any time. No lock-in.</source>
-        <target>notranslation</target>
+        <target>Импортирайте и експортирайте данните си по всяко време. Без обвързване.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">110,113</context>
@@ -1718,7 +1718,7 @@
       </trans-unit>
       <trans-unit id="statBitcoin" datatype="html">
         <source>Bitcoin Native</source>
-        <target>notranslation</target>
+        <target>Биткойн нативно</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">116,117</context>
@@ -1727,7 +1727,7 @@
       </trans-unit>
       <trans-unit id="statBitcoinDesc" datatype="html">
         <source>Accept Lightning and on-chain Bitcoin payments alongside traditional card payments.</source>
-        <target>notranslation</target>
+        <target>Приемайте плащания с Lightning и Bitcoin on-chain заедно с традиционни плащания с карти.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">117,120</context>
