@@ -8,11 +8,11 @@ export class SubscriptionPlanService {
   private apiUrl: string;
   constructor(private http: HttpClient) { 
     if (isDevMode()) {
-      this.apiUrl =  'https://localhost:7284/api/payments';
+      this.apiUrl =  'https://localhost:7284/api/subscriptions';
 
     }
     else {
-      this.apiUrl =  'https://app.loom21.com/api/payments';
+      this.apiUrl =  'https://app.loom21.com/api/subscriptions';
     }
   }
 
