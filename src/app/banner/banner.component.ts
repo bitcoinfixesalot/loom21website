@@ -1,13 +1,14 @@
-import { CommonModule } from '@angular/common';
-import { Component, Inject, isDevMode, LOCALE_ID } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { UpperCasePipe } from '@angular/common';
+import { ChangeDetectionStrategy, Component, Inject, isDevMode, LOCALE_ID } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'app-banner',
-  imports: [CommonModule, RouterModule],
+  imports: [UpperCasePipe, RouterModule],
   templateUrl: './banner.component.html',
-  styleUrl: './banner.component.scss'
+  styleUrl: './banner.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BannerComponent {
   appUrl: string;

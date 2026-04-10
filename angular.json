@@ -30,7 +30,6 @@
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js",
               "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.app.json",
@@ -49,8 +48,6 @@
             ],
             "scripts": [
               "node_modules/emoji-toolkit/lib/js/joypixels.min.js",
-              "node_modules/marked/marked.min.js",
-              "node_modules/prismjs/prism.js",
               "node_modules/marked/marked.min.js",
               "node_modules/prismjs/prism.js",
 

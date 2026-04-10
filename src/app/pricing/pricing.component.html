@@ -1,6 +1,6 @@
 <div class="container min-hight">
   <!-- Loading Indicator -->
-  @if (loading) {
+  @if (loading()) {
     <div class="loading-overlay text-center">
       <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
         <span class="visually-hidden" i18n="Loading label@@loading">Loading...</span>
@@ -9,13 +9,15 @@
         </p>
     </div>
   }
-  @if (loading == false) {
+  @if (!loading()) {
     <div class="btn-group d-flex justify-content-center mb-4" role="group"
       aria-label="Subscription period selection">
-      <input type="radio" class="btn-check" name="selectedPlan" id="month" value="month" [(ngModel)]="selectedPlan"
+      <input type="radio" class="btn-check" name="selectedPlan" id="month" value="month"
+        [ngModel]="selectedPlan()" (ngModelChange)="selectedPlan.set($event)"
         autocomplete="off">
         <label class="btn btn-outline-primary" for="month" i18n="Monthly button@@monthly">MONTHLY</label>
-        <input type="radio" class="btn-check" name="selectedPlan" id="year" value="year" [(ngModel)]="selectedPlan"
+        <input type="radio" class="btn-check" name="selectedPlan" id="year" value="year"
+          [ngModel]="selectedPlan()" (ngModelChange)="selectedPlan.set($event)"
           autocomplete="off">
           <label class="btn btn-outline-primary" for="year"><ng-container
           i18n="Annual button@@annual">ANNUAL</ng-container>
@@ -23,7 +25,8 @@
             -10%
           </span>
         </label>
-        <input type="radio" class="btn-check" name="selectedPlan" id="bitcoin" value="bitcoin" [(ngModel)]="selectedPlan"
+        <input type="radio" class="btn-check" name="selectedPlan" id="bitcoin" value="bitcoin"
+          [ngModel]="selectedPlan()" (ngModelChange)="selectedPlan.set($event)"
           autocomplete="off">
           <label class="btn btn-outline-primary" for="bitcoin"><ng-container
           i18n="Bitcoin button@@bitcoin">BITCOIN</ng-container>
@@ -34,12 +37,12 @@
       </div>
     }
 
-    @if (loading == false) {
+    @if (!loading()) {
       <div class="container pricing-box">
         <div class="row justify-content-center">
           <div class="col-12">
             <div class="card-group text-center">
-              @for (plan of activePlans; track plan) {
+              @for (plan of activePlans(); track plan) {
                 <div class="card pricing-plan">
                   <div class="card-body">
                     <h5 class="card-title">{{plan.productName}}</h5>
@@ -69,10 +72,10 @@
     }
 
     <!-- Updated onboarding fee information with 3 cards -->
-    @if (loading == false) {
+    @if (!loading()) {
       <div class="container onboarding-section">
         <div class="row justify-content-center">
-          @for (plan of activePlans; track plan; let i = $index) {
+          @for (plan of activePlans(); track plan; let i = $index) {
             <div class="col-md-4 col-lg-4">
               <div class="card h-100">
                 <div class="card-body text-center">
@@ -88,12 +91,12 @@
                                 </ng-container>
                       @if (plan.type === 'small') {
                         <span class="fw-bold">
-                          {{onboardingFeeSmall / 100}}{{plan.currency}}
+                          {{onboardingFeeSmall() / 100}}{{plan.currency}}
                         </span>
                       }
                       @if (plan.type === 'mid') {
                         <span class="fw-bold">
-                          {{onboardingFeeMid / 100}}{{plan.currency}}
+                          {{onboardingFeeMid() / 100}}{{plan.currency}}
                         </span>
                       }
                     }
@@ -113,7 +116,7 @@
     }
 
     <!-- New Custom Plan Section -->
-    @if (!loading) {
+    @if (!loading()) {
       <div class="container custom-plan-section">
         <div class="row justify-content-center">
           <div class="col-md-6">

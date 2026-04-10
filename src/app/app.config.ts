@@ -1,4 +1,4 @@
-import { ApplicationConfig, SecurityContext } from '@angular/core';
+import { ApplicationConfig, provideExperimentalZonelessChangeDetection, SecurityContext } from '@angular/core';
 import { provideRouter, withInMemoryScrolling } from '@angular/router';
 
 import { routes } from './app.routes';
@@ -9,7 +9,8 @@ import { markedOptionsFactory } from './marked-options-factory';
 import { AnchorService } from './services/anchor.service';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes, withInMemoryScrolling({anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled'}))
+  providers: [provideExperimentalZonelessChangeDetection()
+    ,provideRouter(routes, withInMemoryScrolling({anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled'}))
     ,provideHttpClient(withFetch())
     , provideClientHydration()
     ,provideMarkdown({

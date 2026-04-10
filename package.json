@@ -27,8 +27,7 @@
     "marked": "^15.0.12",
     "ngx-markdown": "^20.1.0",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
-    "zone.js": "^0.15.1"
+    "tslib": "^2.3.0"
   },
   "devDependencies": {
     "@angular/build": "^21.2.7",
@@ -44,9 +43,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "less": "^4.2.0",
-    "typescript": "~5.9.3",
-    "webpack-bundle-analyzer": "^4.10.2"
+    "typescript": "~5.9.3"
   },
   "browser": {
     "crypto": false,

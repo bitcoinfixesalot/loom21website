@@ -1,4 +1,4 @@
-import { Component, Inject, isDevMode, LOCALE_ID, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject, isDevMode, LOCALE_ID, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import {
@@ -28,7 +28,8 @@ import {
   selector: 'app-home',
   imports: [RouterLink],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomeComponent implements OnInit {
   appUrl: string;

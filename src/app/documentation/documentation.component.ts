@@ -1,4 +1,4 @@
-import { Component, ElementRef, Inject, LOCALE_ID, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Inject, LOCALE_ID, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { MarkdownComponent } from 'ngx-markdown';
 import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
@@ -7,7 +7,8 @@ import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
   selector: 'app-documentation',
   imports: [MarkdownComponent],
   templateUrl: './documentation.component.html',
-  styleUrl: './documentation.component.scss'
+  styleUrl: './documentation.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DocumentationComponent implements OnInit {
   headings: Element[] | undefined;
