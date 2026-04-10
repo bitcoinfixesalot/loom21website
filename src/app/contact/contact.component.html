@@ -1,113 +1,129 @@
 <div class="contact1">
-    <div class="row">
-        <!-- <div class="col-md-12">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1619902.0054433027!2d-122.68851282163044!3d37.534535608111824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1507725785789" width="100%" height="450" frameborder="0" style="border:0"></iframe>
-                        </div> -->
-        <div class="spacer">
-            <div class="container">
-                <div class="row m-0">
-                    <div class="col-lg-8">
-                        <div class="contact-box p-r-40">
-                            <h2 class="title" i18n="Contact us title@@contactUs">Contact Us</h2>
-                            <form [formGroup]="form" (ngSubmit)="onSubmit()" data-aos="fade-left"
-                                data-aos-duration="1200">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="form-group m-t-15">
-                                            <label for="name" class="mb-2" i18n="Name label@@name">Name</label>
-                                            <input formControlName="name" id="name" class="form-control" type="text"
-                                            i18n-placeholder="Enter your name placeholder@@namePlaceholder" placeholder="Enter your name..." required>
-                                            <div *ngIf="name!.invalid && (name!.dirty || name!.touched)"
-                                                class="alert alert-danger">
-                                                <div i18n="Name requred@@nameRequred" *ngIf="name!.errors?.['required']">
+  <div class="row">
+    <!-- <div class="col-md-12">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1619902.0054433027!2d-122.68851282163044!3d37.534535608111824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1507725785789" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+  </div> -->
+  <div class="spacer">
+    <div class="container">
+      <div class="row m-0">
+        <div class="col-lg-8">
+          <div class="contact-box p-r-40">
+            <h2 class="title" i18n="Contact us title@@contactUs">Contact Us</h2>
+            <form [formGroup]="form" (ngSubmit)="onSubmit()" data-aos="fade-left"
+              data-aos-duration="1200">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group m-t-15">
+                    <label for="name" class="mb-2" i18n="Name label@@name">Name</label>
+                    <input formControlName="name" id="name" class="form-control" type="text"
+                      i18n-placeholder="Enter your name placeholder@@namePlaceholder" placeholder="Enter your name..." required>
+                      @if (name!.invalid && (name!.dirty || name!.touched)) {
+                        <div
+                          class="alert alert-danger">
+                          @if (name!.errors?.['required']) {
+                            <div i18n="Name requred@@nameRequred">
                                                     Name is required.
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group m-t-15">
-                                            <label i18n="Email label@@email" for="inputEmail" class="mb-2">Email Address</label>
-                                            <input formControlName="email" id="inputEmail" class="form-control"
-                                                i18n-placeholder="Enter your email placeholder@@emailPlaceholder" type="text" placeholder="Enter your email...">
-                                            <div *ngIf="email!.invalid && (email!.dirty || email!.touched)" class="alert alert-danger">
-                                                <div i18n="Email requred@@emailRequred" *ngIf="email!.errors?.['required'] || email!.errors?.['email']">
+                          }
+                        </div>
+                      }
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group m-t-15">
+                      <label i18n="Email label@@email" for="inputEmail" class="mb-2">Email Address</label>
+                      <input formControlName="email" id="inputEmail" class="form-control"
+                        i18n-placeholder="Enter your email placeholder@@emailPlaceholder" type="text" placeholder="Enter your email...">
+                        @if (email!.invalid && (email!.dirty || email!.touched)) {
+                          <div class="alert alert-danger">
+                            @if (email!.errors?.['required'] || email!.errors?.['email']) {
+                              <div i18n="Email requred@@emailRequred">
                                                     Valid email is required.
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group m-t-15">
-                                            <label i18n="Business label@@businessOptional" for="inputBusiness" class="mb-2">Business (optional)</label>
-                                            <input formControlName="business" id="inputBusiness" class="form-control"
-                                                i18n-placeholder="Enter your business placeholder@@businessPlaceholder" type="text" placeholder="Enter your business...">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-group m-t-15">
-                                            <label i18n="Message label@@inputMessage" for="inputMessage" class="mb-2">Message</label>
-                                            <textarea formControlName="message" rows="8" id="inputMessage"
-                                                class="form-control" rows="3"
-                                                i18n-placeholder="Enter your message placeholder@@messagePlaceholder" placeholder="Enter your message..."></textarea>
-                                            <div *ngIf="message!.invalid && (message!.dirty || message!.touched)"
-                                                class="alert alert-danger">
-                                                <div i18n="Message requred@@messageRequred" *ngIf="message!.errors?.['required']">
+                            }
+                          </div>
+                        }
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group m-t-15">
+                        <label i18n="Business label@@businessOptional" for="inputBusiness" class="mb-2">Business (optional)</label>
+                        <input formControlName="business" id="inputBusiness" class="form-control"
+                          i18n-placeholder="Enter your business placeholder@@businessPlaceholder" type="text" placeholder="Enter your business...">
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group m-t-15">
+                          <label i18n="Message label@@inputMessage" for="inputMessage" class="mb-2">Message</label>
+                          <textarea formControlName="message" rows="8" id="inputMessage"
+                            class="form-control" rows="3"
+                          i18n-placeholder="Enter your message placeholder@@messagePlaceholder" placeholder="Enter your message..."></textarea>
+                          @if (message!.invalid && (message!.dirty || message!.touched)) {
+                            <div
+                              class="alert alert-danger">
+                              @if (message!.errors?.['required']) {
+                                <div i18n="Message requred@@messageRequred">
                                                     Message is required.
                                                 </div>
-                                            </div>
-                                            <div *ngIf="showSuccess"
-                                                class="alert alert-success">
-                                                <div>
-                                                    {{successMessage}}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <button [disabled]="showSuccess || isSubmitting" type="submit" class="btn waves-effect waves-light btn-primary m-r-20 m-t-5">
-                                            <span *ngIf="isSubmitting" class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span>
-                                            <span i18n="Submit button@@submitButton"> Submit </span></button>
-                                    </div>
-                                </div>
-                                <!-- honeypot: kept out of sight for users, but present for bots -->
-                                <div style="position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;" aria-hidden="true">
-                                  <label for="hp">Leave this field empty</label>
-                                  <input id="hp" name="hp" formControlName="hp" autocomplete="nope" tabindex="-1" />
-                                </div>
-                            </form>
+                              }
+                            </div>
+                          }
+                          @if (showSuccess) {
+                            <div
+                              class="alert alert-success">
+                              <div>
+                                {{successMessage}}
+                              </div>
+                            </div>
+                          }
                         </div>
-                    </div>
-                    <div class="col-lg-4" data-aos="fade-right" data-aos-duration="1200">
-                        <div class="contact-detail-box">
-                            <h4 i18n="Contact detail title@@contactDetailTitle">We'd love to hear from you</h4>
-                            <p i18n="Contact detail response@@contactDetailResponse">We typically respond within one business day.</p>
-                            <hr />
-                            <h6 i18n="Contact community@@contactCommunity">Community</h6>
-                            <ul class="list-unstyled contact-links">
-                                <li>
-                                    <a href="https://t.me/+kcFe6QiEau0yNTVk" target="_blank">
-                                        <i class="fa fa-telegram"></i>
-                                        <span i18n="Join telegram@@joinTelegram">Join our Telegram</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://x.com/loom21app" target="_blank">
-                                        <i class="fa fa-twitter"></i>
-                                        <span i18n="Follow twitter@@followTwitter">Follow on X</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/loom21/loom21doc" target="_blank">
-                                        <i class="fa fa-github"></i>
-                                        <span i18n="Github docs@@githubDocs">Docs on GitHub</span>
-                                    </a>
-                                </li>
-                            </ul>
+                      </div>
+                      <div class="col-lg-12">
+                        <button [disabled]="showSuccess || isSubmitting" type="submit" class="btn waves-effect waves-light btn-primary m-r-20 m-t-5">
+                          @if (isSubmitting) {
+                            <span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span>
+                          }
+                          <span i18n="Submit button@@submitButton"> Submit </span></button>
                         </div>
-                    </div>
+                      </div>
+                      <!-- honeypot: kept out of sight for users, but present for bots -->
+                      <div style="position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;" aria-hidden="true">
+                        <label for="hp">Leave this field empty</label>
+                        <input id="hp" name="hp" formControlName="hp" autocomplete="nope" tabindex="-1" />
+                      </div>
+                    </form>
+                  </div>
                 </div>
+                <div class="col-lg-4" data-aos="fade-right" data-aos-duration="1200">
+                  <div class="contact-detail-box">
+                    <h4 i18n="Contact detail title@@contactDetailTitle">We'd love to hear from you</h4>
+                    <p i18n="Contact detail response@@contactDetailResponse">We typically respond within one business day.</p>
+                    <hr />
+                    <h6 i18n="Contact community@@contactCommunity">Community</h6>
+                    <ul class="list-unstyled contact-links">
+                      <li>
+                        <a href="https://t.me/+kcFe6QiEau0yNTVk" target="_blank">
+                          <i class="fa fa-telegram"></i>
+                          <span i18n="Join telegram@@joinTelegram">Join our Telegram</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://x.com/loom21app" target="_blank">
+                          <i class="fa fa-twitter"></i>
+                          <span i18n="Follow twitter@@followTwitter">Follow on X</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/loom21/loom21doc" target="_blank">
+                          <i class="fa fa-github"></i>
+                          <span i18n="Github docs@@githubDocs">Docs on GitHub</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>

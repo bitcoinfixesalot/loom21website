@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, Inject, isDevMode, LOCALE_ID, OnInit } from '@angular/core';
 import { SubscriptionPlanService, SubscriptionType } from '../services/subscription-plan.service';
 import { first } from 'rxjs';
@@ -9,7 +9,7 @@ import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
 
 @Component({
     selector: 'app-pricing',
-    imports: [CommonModule, FormsModule],
+    imports: [FormsModule],
     templateUrl: './pricing.component.html',
     styleUrl: './pricing.component.scss'
 })

@@ -1,17 +1,17 @@
-import { Component, HostListener, Inject, OnDestroy, OnInit } from '@angular/core';
+import { Component, HostListener, Inject, OnDestroy, OnInit, DOCUMENT } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { NavigationEnd, Router, RouterModule, RouterOutlet } from '@angular/router';
 import { DESCRIPTIONS, TAGS } from './constants/localized-const';
 import { BannerComponent } from './banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
-import { CommonModule, DOCUMENT } from '@angular/common';
+
 import { AnchorService } from './services/anchor.service';
 import { CanonicalService } from './services/canonical.service';
 import { filter, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, BannerComponent, FooterComponent, CommonModule, RouterModule],
+  imports: [RouterOutlet, BannerComponent, FooterComponent, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

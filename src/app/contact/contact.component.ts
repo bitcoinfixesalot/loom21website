@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, OnInit } from '@angular/core';
 import { FormsModule, ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
@@ -8,7 +8,7 @@ import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-contact',
-    imports: [CommonModule, ReactiveFormsModule, FormsModule],
+    imports: [ReactiveFormsModule, FormsModule],
     templateUrl: './contact.component.html',
     styleUrl: './contact.component.scss'
 })

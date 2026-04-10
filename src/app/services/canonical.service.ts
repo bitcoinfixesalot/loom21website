@@ -1,5 +1,5 @@
-import { DOCUMENT } from '@angular/common';
-import { Inject, Injectable, LOCALE_ID } from '@angular/core';
+
+import { Inject, Injectable, LOCALE_ID, DOCUMENT } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Injectable({
