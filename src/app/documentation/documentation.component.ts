@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ElementRef, Inject, LOCALE_ID, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject, LOCALE_ID, OnInit, signal } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { MarkdownComponent } from 'ngx-markdown';
 import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
@@ -13,8 +13,13 @@ import { OgMetaService } from '../services/og-meta.service';
 })
 export class DocumentationComponent implements OnInit {
   headings: Element[] | undefined;
+  isLoading = signal(true);
 
   constructor(@Inject(LOCALE_ID) protected localeId: string, private titleService: Title, private metaService: Meta, private ogMetaService: OgMetaService) {
+  }
+
+  onMarkdownLoad(): void {
+    this.isLoading.set(false);
   }
 
   ngOnInit(): void {
@@ -29,6 +34,17 @@ export class DocumentationComponent implements OnInit {
       content: DESCRIPTIONS.documentation_description
     });
     this.ogMetaService.setOgTags({ title: TITLES.documentation, description: DESCRIPTIONS.documentation_description });
+    this.metaService.addTag({
+      name: 'application/ld+json',
+      content: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `https://loom21.com/${this.localeId}/` },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Documentation', 'item': `https://loom21.com/${this.localeId}/docs/` }
+        ]
+      })
+    });
     
     this.metaService.addTag({
       name: 'application/ld+json',

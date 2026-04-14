@@ -1,4 +1,3 @@
-    <!-- <markdown src="https://raw.githubusercontent.com/loom21/loom21doc/main/README.md" (load)="onLoad()" [lineNumbers]="false"></markdown> -->
     <div class="bg-light">
       <div class="container">
         <div class="row">
@@ -6,7 +5,27 @@
           </div>
 
         <div class="col-lg-8 col-md-12 col-sm-12">
-        <markdown [src]="srcPath" katex emoji></markdown>
+
+          @if (isLoading()) {
+            <div class="docs-skeleton" aria-busy="true" aria-label="Loading documentation">
+              <div class="skeleton-line skeleton-title"></div>
+              <div class="skeleton-line"></div>
+              <div class="skeleton-line"></div>
+              <div class="skeleton-line skeleton-short"></div>
+              <div class="skeleton-line skeleton-title skeleton-gap"></div>
+              <div class="skeleton-line"></div>
+              <div class="skeleton-line"></div>
+              <div class="skeleton-line skeleton-short"></div>
+              <div class="skeleton-line skeleton-title skeleton-gap"></div>
+              <div class="skeleton-line"></div>
+              <div class="skeleton-line skeleton-medium"></div>
+            </div>
+          }
+
+          <div [class.d-none]="isLoading()">
+            <markdown [src]="srcPath" katex emoji (load)="onMarkdownLoad()"></markdown>
+          </div>
+
       </div>
       </div>
       </div>

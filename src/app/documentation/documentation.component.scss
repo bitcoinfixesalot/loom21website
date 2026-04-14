@@ -1,6 +1,41 @@
 :host {
     display: block;
   }
+
+.docs-skeleton {
+  padding: 32px 0;
+
+  .skeleton-line {
+    height: 14px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    background: linear-gradient(90deg, #e8e8e8 25%, #f4f4f4 50%, #e8e8e8 75%);
+    background-size: 200% 100%;
+    animation: skeleton-shimmer 1.4s ease-in-out infinite;
+  }
+
+  .skeleton-title {
+    height: 22px;
+    width: 55%;
+  }
+
+  .skeleton-short {
+    width: 40%;
+  }
+
+  .skeleton-medium {
+    width: 70%;
+  }
+
+  .skeleton-gap {
+    margin-top: 32px;
+  }
+}
+
+@keyframes skeleton-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
   ::ng-deep markdown img {
     max-width: 100%;
     height: auto;

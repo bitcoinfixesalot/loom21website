@@ -39,6 +39,17 @@ export class PricingComponent implements OnInit {
     this.titleService.setTitle(TITLES.pricing);
     this.setMetaTags();
     this.ogMetaService.setOgTags({ title: TITLES.pricing, description: DESCRIPTIONS.pricing_description });
+    this.metaService.addTag({
+      name: 'application/ld+json',
+      content: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `https://loom21.com/${this.localeId}/` },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Pricing', 'item': `https://loom21.com/${this.localeId}/pricing/` }
+        ]
+      })
+    });
 
     this.loading.set(true);
 
