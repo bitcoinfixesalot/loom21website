@@ -1,28 +1,31 @@
-import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+
+import { ChangeDetectionStrategy, Component, OnInit, signal } from '@angular/core';
 import { FormsModule, ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+import { first } from 'rxjs';
 import { EmailService } from '../services/email.service';
 import { DESCRIPTIONS, LD_JSON, SUCCESS_MESSAGE, TITLES } from '../constants/localized-const';
 import { Meta, Title } from '@angular/platform-browser';
+import { OgMetaService } from '../services/og-meta.service';
 
 @Component({
     selector: 'app-contact',
-    imports: [CommonModule, ReactiveFormsModule, FormsModule],
+    imports: [ReactiveFormsModule, FormsModule],
     templateUrl: './contact.component.html',
-    styleUrl: './contact.component.scss'
+    styleUrl: './contact.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ContactComponent implements OnInit {
 
-  showSuccess: boolean = false;
-  isSubmitting: boolean = false;
-  successMessage = SUCCESS_MESSAGE;//"Thank You! Your message has been received. We'll get back to you soon." 
+  showSuccess = signal(false);
+  isSubmitting = signal(false);
+  successMessage = SUCCESS_MESSAGE;
   form: UntypedFormGroup;
   private formStart = Date.now();
-  private minSubmitDelayMs = 3000; // require at least N ms before accepting submission
+  private minSubmitDelayMs = 3000;
 
   constructor(private formBuilder: UntypedFormBuilder, private titleService: Title, private metaService: Meta,
-    private emailService: EmailService) {
+    private emailService: EmailService, private ogMetaService: OgMetaService) {
 
     this.form = this.formBuilder.group({
       name: ['', Validators.required],
@@ -40,15 +43,16 @@ export class ContactComponent implements OnInit {
   get message() { return this.form.get('message'); }
   get business() { return this.form.get('business'); }
   get hp() { return this.form.get('hp'); }
-  
+
 
   ngOnInit(): void {
 
     this.titleService.setTitle(TITLES.contact);
     this.metaService.updateTag({
       name: 'description',
-      content: DESCRIPTIONS.contact_description//'Reset your password to manage inventory, payments, and Bitcoin conversions.'
+      content: DESCRIPTIONS.contact_description
     });
+    this.ogMetaService.setOgTags({ title: TITLES.contact, description: DESCRIPTIONS.contact_description });
     this.metaService.addTag({
       name: 'application/ld+json',
       content: JSON.stringify({
@@ -90,16 +94,16 @@ export class ContactComponent implements OnInit {
       </html>
     `
 
-    this.isSubmitting = true;
-    this.emailService.sendEmail(this.email?.value, subject, content).subscribe({
+    this.isSubmitting.set(true);
+    this.emailService.sendEmail(this.email?.value, subject, content).pipe(first()).subscribe({
       next: (response) => {
-        this.showSuccess = true;
-        this.isSubmitting = false;
+        this.showSuccess.set(true);
+        this.isSubmitting.set(false);
         this.form.disable();
       },
       error: (error) => {
         console.error('There was an error!', error);
-        this.isSubmitting = false;
+        this.isSubmitting.set(false);
       },
       complete: () => console.log('Email sending completed.')
     });

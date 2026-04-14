@@ -1,29 +1,30 @@
-import { Component, HostListener, Inject, OnDestroy, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostListener, Inject } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { DOCUMENT } from '@angular/common';
 import { Meta, Title } from '@angular/platform-browser';
 import { NavigationEnd, Router, RouterModule, RouterOutlet } from '@angular/router';
 import { DESCRIPTIONS, TAGS } from './constants/localized-const';
 import { BannerComponent } from './banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
-import { CommonModule, DOCUMENT } from '@angular/common';
+
 import { AnchorService } from './services/anchor.service';
 import { CanonicalService } from './services/canonical.service';
-import { filter, Subscription } from 'rxjs';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, BannerComponent, FooterComponent, CommonModule, RouterModule],
+  imports: [RouterOutlet, BannerComponent, FooterComponent, RouterModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AppComponent implements OnInit, OnDestroy{
+export class AppComponent {
   title = 'loom21website';
 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: Event) {
     this.anchorService.interceptClick(event);
   }
-
-  private routerSubscription!: Subscription;
 
   constructor(@Inject(DOCUMENT) private dom: Document,
   private router: Router,
@@ -35,20 +36,15 @@ export class AppComponent implements OnInit, OnDestroy{
     ]);
 
     this.titleService.setTitle("Loom 21");
-  }
 
-  ngOnInit() {
-    this.routerSubscription = this.router.events
-      .pipe(filter((event) => event instanceof NavigationEnd))
+    this.router.events
+      .pipe(
+        filter((event) => event instanceof NavigationEnd),
+        takeUntilDestroyed()
+      )
       .subscribe(() => {
         this.canonicalService.setCanonicalURL();
         this.canonicalService.setHreflangTags();
       });
-  }
-
-  ngOnDestroy() {
-    if (this.routerSubscription) {
-      this.routerSubscription.unsubscribe();
-    }
   }
 }

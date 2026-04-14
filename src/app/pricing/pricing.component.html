@@ -1,122 +1,141 @@
 <div class="container min-hight">
-    <!-- Loading Indicator -->
-    <div *ngIf="loading" class="loading-overlay text-center">
-        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
-            <span class="visually-hidden" i18n="Loading label@@loading">Loading...</span>
-        </div>
-        <p class="mt-2" i18n="Loading subscription plans label@@loadingSubsciptionPlans">Loading subscription plans...
+  <!-- Loading Indicator -->
+  @if (loading()) {
+    <div class="loading-overlay text-center">
+      <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
+        <span class="visually-hidden" i18n="Loading label@@loading">Loading...</span>
+      </div>
+      <p class="mt-2" i18n="Loading subscription plans label@@loadingSubsciptionPlans">Loading subscription plans...
         </p>
     </div>
-    <div *ngIf="loading == false" class="btn-group d-flex justify-content-center mb-4" role="group"
-        aria-label="Subscription period selection">
-        <input type="radio" class="btn-check" name="selectedPlan" id="month" value="month" [(ngModel)]="selectedPlan"
-            autocomplete="off">
+  }
+  @if (!loading()) {
+    <div class="btn-group d-flex justify-content-center mb-4" role="group"
+      aria-label="Subscription period selection">
+      <input type="radio" class="btn-check" name="selectedPlan" id="month" value="month"
+        [ngModel]="selectedPlan()" (ngModelChange)="selectedPlan.set($event)"
+        autocomplete="off">
         <label class="btn btn-outline-primary" for="month" i18n="Monthly button@@monthly">MONTHLY</label>
-
-        <input type="radio" class="btn-check" name="selectedPlan" id="year" value="year" [(ngModel)]="selectedPlan"
-            autocomplete="off">
-        <label class="btn btn-outline-primary" for="year"><ng-container
-                i18n="Annual button@@annual">ANNUAL</ng-container>
-            <span class="badge bg-success position-absolute top-0 start-100 translate-middle-x rounded-pill">
-                -10%
-            </span>
+        <input type="radio" class="btn-check" name="selectedPlan" id="year" value="year"
+          [ngModel]="selectedPlan()" (ngModelChange)="selectedPlan.set($event)"
+          autocomplete="off">
+          <label class="btn btn-outline-primary" for="year"><ng-container
+          i18n="Annual button@@annual">ANNUAL</ng-container>
+          <span class="badge bg-success position-absolute top-0 start-100 translate-middle-x rounded-pill">
+            -10%
+          </span>
         </label>
-
-        <input type="radio" class="btn-check" name="selectedPlan" id="bitcoin" value="bitcoin" [(ngModel)]="selectedPlan"
-            autocomplete="off">
-        <label class="btn btn-outline-primary" for="bitcoin"><ng-container
-                i18n="Bitcoin button@@bitcoin">BITCOIN</ng-container>
-            <span class="badge bg-success position-absolute top-0 start-100 translate-middle-x rounded-pill">
-                -15%
-            </span>
+        <input type="radio" class="btn-check" name="selectedPlan" id="bitcoin" value="bitcoin"
+          [ngModel]="selectedPlan()" (ngModelChange)="selectedPlan.set($event)"
+          autocomplete="off">
+          <label class="btn btn-outline-primary" for="bitcoin"><ng-container
+          i18n="Bitcoin button@@bitcoin">BITCOIN</ng-container>
+          <span class="badge bg-success position-absolute top-0 start-100 translate-middle-x rounded-pill">
+            -15%
+          </span>
         </label>
-    </div>
+      </div>
+    }
 
-    <div *ngIf="loading == false" class="container pricing-box">
+    @if (!loading()) {
+      <div class="container pricing-box">
         <div class="row justify-content-center">
-            <div class="col-12">
-                <div class="card-group text-center">
-                    <div *ngFor="let plan of activePlans" class="card pricing-plan">
-                        <div class="card-body">
-                            <h5 class="card-title">{{plan.productName}}</h5>
-                            <h1 class="display-4">
-                                {{plan.amount / 100}}
-                                <sup>{{plan.currency}}</sup>
-                            </h1>
-                            <h6 class="card-subtitle mb-3 text-primary">{{plan.perMonthText}}</h6>
-                            <ul class="list-group list-group-flush price-listing mb-3">
-                                <li class="list-group-item">{{plan.usersText}}</li>
-                                <li class="list-group-item">{{plan.ordersText}}</li>
-                                <li class="list-group-item">{{plan.storesText}}</li>
-                                <li class="list-group-item">{{plan.userAccessText}}</li>
-                                <li class="list-group-item">{{plan.apiText}}</li>
-                            </ul>
-                            <button class="btn btn-primary" i18n="Choose plan button@@choosePlan"
-                                (click)="onCreateOrder(plan)">
+          <div class="col-12">
+            <div class="card-group text-center">
+              @for (plan of activePlans(); track plan) {
+                <div class="card pricing-plan">
+                  <div class="card-body">
+                    <h5 class="card-title">{{plan.productName}}</h5>
+                    <h1 class="display-4">
+                      {{plan.amount / 100}}
+                      <sup>{{plan.currency}}</sup>
+                    </h1>
+                    <h6 class="card-subtitle mb-3 text-primary">{{plan.perMonthText}}</h6>
+                    <ul class="list-group list-group-flush price-listing mb-3">
+                      <li class="list-group-item">{{plan.usersText}}</li>
+                      <li class="list-group-item">{{plan.ordersText}}</li>
+                      <li class="list-group-item">{{plan.storesText}}</li>
+                      <li class="list-group-item">{{plan.userAccessText}}</li>
+                      <li class="list-group-item">{{plan.apiText}}</li>
+                    </ul>
+                    <button class="btn btn-primary" i18n="Choose plan button@@choosePlan"
+                      (click)="onCreateOrder(plan)">
                                 Choose Plan
                             </button>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+              }
             </div>
+          </div>
         </div>
-    </div>
+      </div>
+    }
 
     <!-- Updated onboarding fee information with 3 cards -->
-    <div *ngIf="loading == false" class="container onboarding-section">
+    @if (!loading()) {
+      <div class="container onboarding-section">
         <div class="row justify-content-center">
-            <div *ngFor="let plan of activePlans; let i = index" class="col-md-4 col-lg-4">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">{{plan.productName}}<ng-container
-                                i18n="Onboarding after plan@@onboarding_space"> Onboarding</ng-container></h5>
-                        <p class="card-text">
-                            <ng-container *ngIf="plan.type === 'basic'; else onboardingFeeBlock">
-                                <span class="text-success fw-bold" i18n="No onboarding fee@@noOnboardingFee">No
+          @for (plan of activePlans(); track plan; let i = $index) {
+            <div class="col-md-4 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body text-center">
+                  <h5 class="card-title">{{plan.productName}}<ng-container
+                  i18n="Onboarding after plan@@onboarding_space"> Onboarding</ng-container></h5>
+                  <p class="card-text">
+                    @if (plan.type === 'basic') {
+                      <span class="text-success fw-bold" i18n="No onboarding fee@@noOnboardingFee">No
                                     onboarding fee</span>
-                            </ng-container>
-                            <ng-template #onboardingFeeBlock>
-                                <ng-container i18n="One-time onboarding fee@@oneTimeOnboardingFee">
+                    } @else {
+                      <ng-container i18n="One-time onboarding fee@@oneTimeOnboardingFee">
                                     One-time onboarding fee:
                                 </ng-container>
-                                <span class="fw-bold" *ngIf="plan.type === 'small'">
-                                    {{onboardingFeeSmall / 100}}{{plan.currency}}
-                                </span>
-
-                                <span class="fw-bold" *ngIf="plan.type === 'mid'">
-                                    {{onboardingFeeMid / 100}}{{plan.currency}}
-                                </span>
-                            </ng-template>
-                        </p>
-                        <p class="text-muted small" *ngIf="i > 0"
-                            i18n="Required one-time payment@@reqieredOneTimePayment">
+                      @if (plan.type === 'small') {
+                        <span class="fw-bold">
+                          {{onboardingFeeSmall() / 100}}{{plan.currency}}
+                        </span>
+                      }
+                      @if (plan.type === 'mid') {
+                        <span class="fw-bold">
+                          {{onboardingFeeMid() / 100}}{{plan.currency}}
+                        </span>
+                      }
+                    }
+                  </p>
+                  @if (i > 0) {
+                    <p class="text-muted small"
+                      i18n="Required one-time payment@@reqieredOneTimePayment">
                             Required one-time payment in addition to subscription
                         </p>
-                    </div>
+                  }
                 </div>
+              </div>
             </div>
+          }
         </div>
-    </div>
+      </div>
+    }
 
     <!-- New Custom Plan Section -->
-    <div *ngIf="!loading" class="container custom-plan-section">
+    @if (!loading()) {
+      <div class="container custom-plan-section">
         <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card text-center bg-light border-primary">
-                    <div class="card-body">
-                        <h3 class="card-title text-primary" i18n="Need custom plan@@needAcustomPlan">Need a Custom Plan?
+          <div class="col-md-6">
+            <div class="card text-center bg-light border-primary">
+              <div class="card-body">
+                <h3 class="card-title text-primary" i18n="Need custom plan@@needAcustomPlan">Need a Custom Plan?
                         </h3>
-                        <p class="card-text" i18n="Personalized quote@@personalizedQuote">
+                <p class="card-text" i18n="Personalized quote@@personalizedQuote">
                             Looking for a tailored solution? Contact us to discuss your specific needs and get a
                             personalized quote.
                         </p>
-                        <button class="btn btn-primary btn-lg" (click)="onContactUs()"
-                            i18n="Contact us button@@contactUsPricing">
+                <button class="btn btn-primary btn-lg" (click)="onContactUs()"
+                  i18n="Contact us button@@contactUsPricing">
                             Contact Us
                         </button>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+    }
+  </div>

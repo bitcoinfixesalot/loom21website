@@ -1,15 +1,16 @@
-import { ApplicationConfig, SecurityContext } from '@angular/core';
+import { ApplicationConfig, provideZonelessChangeDetection, SecurityContext } from '@angular/core';
 import { provideRouter, withInMemoryScrolling } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { HttpClient, provideHttpClient, withFetch } from '@angular/common/http';
-import { MARKED_OPTIONS, provideMarkdown } from 'ngx-markdown';
+import { MARKED_OPTIONS, provideMarkdown, SANITIZE } from 'ngx-markdown';
 import { markedOptionsFactory } from './marked-options-factory';
 import { AnchorService } from './services/anchor.service';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes, withInMemoryScrolling({anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled'}))
+  providers: [provideZonelessChangeDetection()
+    ,provideRouter(routes, withInMemoryScrolling({anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled'}))
     ,provideHttpClient(withFetch())
     , provideClientHydration()
     ,provideMarkdown({
@@ -19,5 +20,5 @@ export const appConfig: ApplicationConfig = {
       useFactory: markedOptionsFactory,
       deps: [AnchorService],
     },
-    sanitize: SecurityContext.NONE,}) ]
+    sanitize: { provide: SANITIZE, useValue: SecurityContext.NONE },}) ]
 };

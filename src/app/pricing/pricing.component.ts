@@ -1,51 +1,50 @@
-import { CommonModule } from '@angular/common';
-import { Component, Inject, isDevMode, LOCALE_ID, OnInit } from '@angular/core';
+
+import { ChangeDetectionStrategy, Component, computed, Inject, isDevMode, LOCALE_ID, OnInit, signal } from '@angular/core';
 import { SubscriptionPlanService, SubscriptionType } from '../services/subscription-plan.service';
 import { first } from 'rxjs';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
+import { OgMetaService } from '../services/og-meta.service';
 
 @Component({
     selector: 'app-pricing',
-    imports: [CommonModule, FormsModule],
+    imports: [FormsModule],
     templateUrl: './pricing.component.html',
-    styleUrl: './pricing.component.scss'
+    styleUrl: './pricing.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PricingComponent implements OnInit {
-  loading = true;
-  selectedPlan = 'year'; // Default selection
+  loading = signal(true);
+  selectedPlan = signal('year');
 
-  public plans: SubscriptionType[] = [];
-  onboardingFeeSmall: number = 0; // Example: $99.00 - adjust as needed
-  onboardingFeeMid: number = 0;
+  plans = signal<SubscriptionType[]>([]);
+  onboardingFeeSmall = signal(0);
+  onboardingFeeMid = signal(0);
 
+  activePlans = computed(() => this.plans().filter(plan => plan.interval === this.selectedPlan()));
 
   constructor(@Inject(LOCALE_ID) protected localeId: string,
     private route: ActivatedRoute,
     private router: Router,
     private subscriptionPlan: SubscriptionPlanService,
     private titleService: Title,
-    private metaService: Meta) {
+    private metaService: Meta,
+    private ogMetaService: OgMetaService) {
 
-  }
-
-  get activePlans() {
-    return this.plans.filter(plan => plan.interval === this.selectedPlan);
   }
 
   ngOnInit(): void {
     this.titleService.setTitle(TITLES.pricing);
     this.setMetaTags();
+    this.ogMetaService.setOgTags({ title: TITLES.pricing, description: DESCRIPTIONS.pricing_description });
 
-    this.loading = true;
+    this.loading.set(true);
 
     this.subscriptionPlan.getAvailablePlans().pipe(first()).subscribe({
       next: (types: SubscriptionType[]) => {
-        this.plans = types;
-        this.plans.forEach((plan: SubscriptionType) => {
-
+        types.forEach((plan: SubscriptionType) => {
           this.setTexts(plan);
           if (plan.interval == 'year' || plan.priceId == 'bitcoin') {
             plan.perMonthText = $localize`:Billed annually@@billedAnnually:per month (billed annually)`;
@@ -53,33 +52,28 @@ export class PricingComponent implements OnInit {
             plan.perMonthText = $localize`:Per month@@perMonth:per month`;
           }
         });
-        this.loading = false;
+        this.plans.set(types);
+        this.loading.set(false);
         this.setOnboardingPrices();
         this.updateStructuredData();
-
       },
       error: (e) => {
         console.log(e);
-        this.loading = false;
+        this.loading.set(false);
       }
     });
   }
+
   setOnboardingPrices() {
-     const small = this.plans.find(a=> {
-      return a.interval === 'single' && a.type ==='small';
-     });
+    const small = this.plans().find(a => a.interval === 'single' && a.type === 'small');
+    if (small) {
+      this.onboardingFeeSmall.set(small.amount);
+    }
 
-     if(small){
-        this.onboardingFeeSmall = small.amount;
-     }
-
-     const mid = this.plans.find(a=> {
-      return a.interval === 'single' && a.type ==='mid';
-     });
-
-     if(mid){
-      this.onboardingFeeMid = mid.amount;
-   }
+    const mid = this.plans().find(a => a.interval === 'single' && a.type === 'mid');
+    if (mid) {
+      this.onboardingFeeMid.set(mid.amount);
+    }
   }
 
   setTexts(plan: SubscriptionType) {//TODO: refactor this
@@ -119,10 +113,10 @@ export class PricingComponent implements OnInit {
       window.open(`${appUrl}bg/plans/${licenseType.id}`);
     } else {
       if(isDevMode()){
-        window.open(`${appUrl}plans/${licenseType.id}`);  
+        window.open(`${appUrl}plans/${licenseType.id}`);
       }
       else{
-      window.open(`${appUrl}en-US/plans/${licenseType.id}`);
+        window.open(`${appUrl}en-US/plans/${licenseType.id}`);
       }
     }
   }
@@ -131,9 +125,7 @@ export class PricingComponent implements OnInit {
     this.router.navigate(['/contact'], { relativeTo: this.route });
   }
 
-
   setMetaTags() {
-    // Add description meta tag
     this.metaService.updateTag({
       name: 'description',
       content: DESCRIPTIONS.pricing_description
@@ -141,12 +133,11 @@ export class PricingComponent implements OnInit {
   }
 
   updateStructuredData() {
-    // Structured data for pricing plans
     const structuredData = {
       '@context': 'https://schema.org',
       '@type': 'Product',
       name: 'Loom 21 app',
-      offers: this.activePlans.map((plan, index) => ({
+      offers: this.activePlans().map((plan, index) => ({
         '@type': 'Offer',
         name: plan.productName,
         price: (plan.amount / 100).toFixed(2),
@@ -158,7 +149,6 @@ export class PricingComponent implements OnInit {
       description: LD_JSON.pricing_description
     };
 
-    // Add or update the JSON-LD script tag
     this.metaService.updateTag({
       name: 'application/ld+json',
       content: JSON.stringify(structuredData)
