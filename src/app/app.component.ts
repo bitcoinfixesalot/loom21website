@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, HostListener, Inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostListener, Inject, LOCALE_ID } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { DOCUMENT } from '@angular/common';
 import { Meta, Title } from '@angular/platform-browser';
@@ -27,8 +27,11 @@ export class AppComponent {
   }
 
   constructor(@Inject(DOCUMENT) private dom: Document,
+  @Inject(LOCALE_ID) private localeId: string,
   private router: Router,
   private titleService: Title, private meta: Meta, private anchorService: AnchorService, private canonicalService: CanonicalService) {
+    this.dom.documentElement.setAttribute('lang', localeId);
+
     this.meta.addTags([
       { name: "description", content: DESCRIPTIONS.home_description },
       { name: "keywords", content: TAGS.home_keywords },

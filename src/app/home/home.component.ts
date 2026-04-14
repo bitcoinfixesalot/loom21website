@@ -72,7 +72,7 @@ export class HomeComponent implements OnInit {
           "name": "Loom 21"
         },
         "datePublished": "2025-03-17",
-        "inLanguage": "en-US"
+        "inLanguage": this.localeId === 'bg' ? 'bg-BG' : 'en-US'
       })
     });
   }

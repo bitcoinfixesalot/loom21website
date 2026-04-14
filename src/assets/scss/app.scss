@@ -20,8 +20,13 @@ This is the font import from the google api
 Global Styles 
 *******************/
 
-* {
-    outline: none;  
+/* Hide focus ring for mouse/touch users; preserve it for keyboard navigation */
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+*:focus-visible {
+    outline: 2px solid variable.$themecolor;
+    outline-offset: 2px;
 }
  
 body {
