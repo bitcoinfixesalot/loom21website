@@ -6,6 +6,7 @@ import { first } from 'rxjs';
 import { EmailService } from '../services/email.service';
 import { DESCRIPTIONS, LD_JSON, SUCCESS_MESSAGE, TITLES } from '../constants/localized-const';
 import { Meta, Title } from '@angular/platform-browser';
+import { OgMetaService } from '../services/og-meta.service';
 
 @Component({
     selector: 'app-contact',
@@ -24,7 +25,7 @@ export class ContactComponent implements OnInit {
   private minSubmitDelayMs = 3000;
 
   constructor(private formBuilder: UntypedFormBuilder, private titleService: Title, private metaService: Meta,
-    private emailService: EmailService) {
+    private emailService: EmailService, private ogMetaService: OgMetaService) {
 
     this.form = this.formBuilder.group({
       name: ['', Validators.required],
@@ -51,6 +52,7 @@ export class ContactComponent implements OnInit {
       name: 'description',
       content: DESCRIPTIONS.contact_description
     });
+    this.ogMetaService.setOgTags({ title: TITLES.contact, description: DESCRIPTIONS.contact_description });
     this.metaService.addTag({
       name: 'application/ld+json',
       content: JSON.stringify({

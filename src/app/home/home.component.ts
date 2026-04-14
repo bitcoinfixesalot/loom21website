@@ -23,6 +23,7 @@ import {
   VENDOR_MANAGEMENT,
   WAREHOUSE_MANAGEMENT
 } from '../constants/localized-const';
+import { OgMetaService } from '../services/og-meta.service';
 
 @Component({
   selector: 'app-home',
@@ -34,7 +35,7 @@ import {
 export class HomeComponent implements OnInit {
   appUrl: string;
 
-  constructor(@Inject(LOCALE_ID) protected localeId: string, private titleService: Title, private metaService: Meta) {
+  constructor(@Inject(LOCALE_ID) protected localeId: string, private titleService: Title, private metaService: Meta, private ogMetaService: OgMetaService) {
     this.appUrl = 'https://app.loom21.com/';
     if (isDevMode()) {
       this.appUrl = 'https://localhost:44412/'
@@ -50,6 +51,7 @@ export class HomeComponent implements OnInit {
       name: 'description',
       content: DESCRIPTIONS.home_description
     });
+    this.ogMetaService.setOgTags({ title: TITLES.home_title, description: DESCRIPTIONS.home_description });
 
     this.metaService.addTag({
       name: "application/ld+json",

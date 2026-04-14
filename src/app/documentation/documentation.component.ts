@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, ElementRef, Inject, LOCALE_ID, OnIn
 import { Meta, Title } from '@angular/platform-browser';
 import { MarkdownComponent } from 'ngx-markdown';
 import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
+import { OgMetaService } from '../services/og-meta.service';
 
 @Component({
   selector: 'app-documentation',
@@ -13,8 +14,7 @@ import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
 export class DocumentationComponent implements OnInit {
   headings: Element[] | undefined;
 
-  constructor(@Inject(LOCALE_ID) protected localeId: string, private titleService: Title, private metaService: Meta
-  ) {
+  constructor(@Inject(LOCALE_ID) protected localeId: string, private titleService: Title, private metaService: Meta, private ogMetaService: OgMetaService) {
   }
 
   ngOnInit(): void {
@@ -26,8 +26,9 @@ export class DocumentationComponent implements OnInit {
 
     this.metaService.updateTag({
       name: 'description',
-      content: DESCRIPTIONS.documentation_description//'Reset your password to manage inventory, payments, and Bitcoin conversions.'
+      content: DESCRIPTIONS.documentation_description
     });
+    this.ogMetaService.setOgTags({ title: TITLES.documentation, description: DESCRIPTIONS.documentation_description });
     
     this.metaService.addTag({
       name: 'application/ld+json',

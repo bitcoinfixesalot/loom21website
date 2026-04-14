@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
+import { OgMetaService } from '../services/og-meta.service';
 
 @Component({
     selector: 'app-pricing',
@@ -29,13 +30,15 @@ export class PricingComponent implements OnInit {
     private router: Router,
     private subscriptionPlan: SubscriptionPlanService,
     private titleService: Title,
-    private metaService: Meta) {
+    private metaService: Meta,
+    private ogMetaService: OgMetaService) {
 
   }
 
   ngOnInit(): void {
     this.titleService.setTitle(TITLES.pricing);
     this.setMetaTags();
+    this.ogMetaService.setOgTags({ title: TITLES.pricing, description: DESCRIPTIONS.pricing_description });
 
     this.loading.set(true);
 
