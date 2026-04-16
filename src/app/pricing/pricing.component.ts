@@ -65,7 +65,7 @@ export class PricingComponent implements OnInit {
         });
         this.plans.set(types);
         this.loading.set(false);
-        this.setOnboardingPrices();
+        // this.setOnboardingPrices();
         this.updateStructuredData();
       },
       error: (e) => {
@@ -75,17 +75,17 @@ export class PricingComponent implements OnInit {
     });
   }
 
-  setOnboardingPrices() {
-    const small = this.plans().find(a => a.interval === 'single' && a.type === 'small');
-    if (small) {
-      this.onboardingFeeSmall.set(small.amount);
-    }
+  // setOnboardingPrices() {
+  //   const small = this.plans().find(a => a.interval === 'single' && a.type === 'small');
+  //   if (small) {
+  //     this.onboardingFeeSmall.set(small.amount);
+  //   }
 
-    const mid = this.plans().find(a => a.interval === 'single' && a.type === 'mid');
-    if (mid) {
-      this.onboardingFeeMid.set(mid.amount);
-    }
-  }
+  //   const mid = this.plans().find(a => a.interval === 'single' && a.type === 'mid');
+  //   if (mid) {
+  //     this.onboardingFeeMid.set(mid.amount);
+  //   }
+  // }
 
   setTexts(plan: SubscriptionType) {//TODO: refactor this
     if(plan.currency == 'bgn' && this.localeId == 'bg'){
