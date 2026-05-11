@@ -81,7 +81,7 @@ Main & Page wrapper
 }
 
 #main-wrapper {
-    overflow: hidden;
+    overflow: clip; /* clip prevents horiz bleed without creating a scroll container (sticky-safe) */
 }
 
 

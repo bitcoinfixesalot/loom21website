@@ -33,7 +33,8 @@ body {
     background: variable.$bodycolor;
     font-family: variable.$bodyfont;
     margin: 0; 
-    overflow-x: hidden;
+    overflow-x: hidden; /* fallback for Safari < 16 */
+    overflow-x: clip;   /* doesn't create a scroll container, so position:sticky works */
     color: variable.$bodytext;
     font-weight: 300; 
 }
