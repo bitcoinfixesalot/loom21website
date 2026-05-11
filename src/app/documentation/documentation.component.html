@@ -1,32 +1,51 @@
-    <div class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-2">
+<div class="bg-light docs-page">
+  <div class="container">
+    <div class="row">
+
+      <!-- Sticky sidebar — desktop only -->
+      <aside class="col-lg-3 d-none d-lg-block">
+        @if (!isLoading() && headings().length) {
+          <nav class="docs-nav" aria-label="Documentation sections">
+            <p class="docs-nav-title">On this page</p>
+            <ul class="docs-nav-list">
+              @for (item of headings(); track item.id) {
+                <li [class.level-3]="item.level === 3">
+                  <a href="#{{ item.id }}"
+                     [class.active]="activeId() === item.id"
+                     (click)="scrollTo(item.id, $event)">
+                    {{ item.text }}
+                  </a>
+                </li>
+              }
+            </ul>
+          </nav>
+        }
+      </aside>
+
+      <!-- Main content -->
+      <div class="col-lg-9 col-md-12 col-sm-12">
+
+        @if (isLoading()) {
+          <div class="docs-skeleton" aria-busy="true" aria-label="Loading documentation">
+            <div class="skeleton-line skeleton-title"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line skeleton-short"></div>
+            <div class="skeleton-line skeleton-title skeleton-gap"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line skeleton-short"></div>
+            <div class="skeleton-line skeleton-title skeleton-gap"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line skeleton-medium"></div>
           </div>
+        }
 
-        <div class="col-lg-8 col-md-12 col-sm-12">
+        <div [class.d-none]="isLoading()">
+          <markdown [src]="srcPath" katex emoji (load)="onMarkdownLoad()"></markdown>
+        </div>
 
-          @if (isLoading()) {
-            <div class="docs-skeleton" aria-busy="true" aria-label="Loading documentation">
-              <div class="skeleton-line skeleton-title"></div>
-              <div class="skeleton-line"></div>
-              <div class="skeleton-line"></div>
-              <div class="skeleton-line skeleton-short"></div>
-              <div class="skeleton-line skeleton-title skeleton-gap"></div>
-              <div class="skeleton-line"></div>
-              <div class="skeleton-line"></div>
-              <div class="skeleton-line skeleton-short"></div>
-              <div class="skeleton-line skeleton-title skeleton-gap"></div>
-              <div class="skeleton-line"></div>
-              <div class="skeleton-line skeleton-medium"></div>
-            </div>
-          }
-
-          <div [class.d-none]="isLoading()">
-            <markdown [src]="srcPath" katex emoji (load)="onMarkdownLoad()"></markdown>
-          </div>
-
-      </div>
-      </div>
       </div>
     </div>
+  </div>
+</div>

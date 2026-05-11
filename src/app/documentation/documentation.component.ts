@@ -1,8 +1,14 @@
-import { ChangeDetectionStrategy, Component, Inject, LOCALE_ID, OnInit, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Inject, LOCALE_ID, OnInit, signal } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { MarkdownComponent } from 'ngx-markdown';
 import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
 import { OgMetaService } from '../services/og-meta.service';
+
+interface NavHeading {
+  id: string;
+  text: string;
+  level: number;
+}
 
 @Component({
   selector: 'app-documentation',
@@ -12,28 +18,28 @@ import { OgMetaService } from '../services/og-meta.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DocumentationComponent implements OnInit {
-  headings: Element[] | undefined;
   isLoading = signal(true);
+  headings = signal<NavHeading[]>([]);
+  activeId = signal('');
+  srcPath = 'https://raw.githubusercontent.com/loom21/loom21doc/main/README.md';
 
-  constructor(@Inject(LOCALE_ID) protected localeId: string, private titleService: Title, private metaService: Meta, private ogMetaService: OgMetaService) {
-  }
-
-  onMarkdownLoad(): void {
-    this.isLoading.set(false);
-  }
+  constructor(
+    @Inject(LOCALE_ID) protected localeId: string,
+    private titleService: Title,
+    private metaService: Meta,
+    private ogMetaService: OgMetaService,
+    private elementRef: ElementRef
+  ) {}
 
   ngOnInit(): void {
-    if (this.localeId !== "en")
+    if (this.localeId !== 'en') {
       this.srcPath = 'https://raw.githubusercontent.com/loom21/loom21doc/main/README-bg.md';
-
+    }
 
     this.titleService.setTitle(TITLES.documentation);
-
-    this.metaService.updateTag({
-      name: 'description',
-      content: DESCRIPTIONS.documentation_description
-    });
+    this.metaService.updateTag({ name: 'description', content: DESCRIPTIONS.documentation_description });
     this.ogMetaService.setOgTags({ title: TITLES.documentation, description: DESCRIPTIONS.documentation_description });
+
     this.metaService.addTag({
       name: 'application/ld+json',
       content: JSON.stringify({
@@ -45,7 +51,7 @@ export class DocumentationComponent implements OnInit {
         ]
       })
     });
-    
+
     this.metaService.addTag({
       name: 'application/ld+json',
       content: JSON.stringify({
@@ -53,32 +59,36 @@ export class DocumentationComponent implements OnInit {
         '@type': 'WebPage',
         'name': 'Documentation - Loom 21',
         'description': LD_JSON.documentation_description,
-        'isPartOf': {
-          '@type': 'WebSite',
-          'name': 'Loom 21'
-        }
+        'isPartOf': { '@type': 'WebSite', 'name': 'Loom 21' }
       })
     });
   }
 
-  srcPath = "https://raw.githubusercontent.com/loom21/loom21doc/main/README.md";
-  // onLoad(): void {
-  //   this.stripContent();
-  //   this.setHeadings();
-  // }
+  onMarkdownLoad(): void {
+    this.isLoading.set(false);
+    this.extractHeadings();
+  }
 
-  // private setHeadings(): void {
-  //   const headings: Element[] = [];
-  //   this.elementRef.nativeElement
-  //     .querySelectorAll('h2')
-  //     .forEach(x => headings.push(x));
-  //   this.headings = headings;
-  // }
+  scrollTo(id: string, event: Event): void {
+    event.preventDefault();
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    this.activeId.set(id);
+  }
 
-  // private stripContent(): void {
-  //   this.elementRef.nativeElement
-  //     .querySelector('markdown')!
-  //     .querySelectorAll('markdown > p:nth-child(-n + 2), #ngx-markdown, #table-of-contents + ul, #table-of-contents')
-  //     .forEach(x => x.remove());
-  // }
+  private extractHeadings(): void {
+    const markdownEl: HTMLElement | null = this.elementRef.nativeElement.querySelector('markdown');
+    if (!markdownEl) return;
+
+    const items: NavHeading[] = [];
+    markdownEl.querySelectorAll('h2, h3').forEach((el: Element) => {
+      // README anchors are <a id="section-name"> children of the heading
+      const anchor = el.querySelector('a[id]');
+      const id = anchor?.getAttribute('id') || el.getAttribute('id') || '';
+      const text = el.textContent?.trim() || '';
+      const level = parseInt(el.tagName.charAt(1));
+      if (id && text) items.push({ id, text, level });
+    });
+
+    this.headings.set(items);
+  }
 }
