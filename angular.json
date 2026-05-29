@@ -39,24 +39,24 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/prismjs/themes/prism-okaidia.css",
-              "node_modules/katex/dist/katex.min.css",
-              "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css",
-              "node_modules/prismjs/plugins/line-highlight/prism-line-highlight.css",
+              "prismjs/themes/prism-okaidia.css",
+              "katex/dist/katex.min.css",
+              "prismjs/plugins/line-numbers/prism-line-numbers.css",
+              "prismjs/plugins/line-highlight/prism-line-highlight.css",
               "src/styles.scss",
               "src/assets/scss/style.scss"
             ],
             "scripts": [
-              "node_modules/emoji-toolkit/lib/js/joypixels.min.js",
-              "node_modules/prismjs/prism.js",
+              "emoji-toolkit/lib/js/joypixels.min.js",
+              "prismjs/prism.js",
 
-              "node_modules/prismjs/components/prism-bash.min.js",
-              "node_modules/prismjs/components/prism-diff.min.js",
-              "node_modules/prismjs/components/prism-javascript.min.js",
-              "node_modules/prismjs/components/prism-typescript.min.js",
-              "node_modules/emoji-toolkit/lib/js/joypixels.js",
-              "node_modules/katex/dist/katex.min.js",
-              "node_modules/katex/dist/contrib/auto-render.min.js"
+              "prismjs/components/prism-bash.min.js",
+              "prismjs/components/prism-diff.min.js",
+              "prismjs/components/prism-javascript.min.js",
+              "prismjs/components/prism-typescript.min.js",
+              "emoji-toolkit/lib/js/joypixels.js",
+              "katex/dist/katex.min.js",
+              "katex/dist/contrib/auto-render.min.js"
             ],
             "server": "src/main.server.ts",
             "prerender": true,
