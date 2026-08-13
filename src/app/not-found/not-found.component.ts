@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { RESPONSE } from '../../express.tokens';
 
 @Component({
     selector: 'app-not-found',
@@ -9,6 +10,11 @@ import { RouterLink } from '@angular/router';
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NotFoundComponent {
+  constructor() {
+    // RESPONSE is only provided during SSR (see server.ts); absent in the browser.
+    inject(RESPONSE, { optional: true })?.status(404);
+  }
+
   part1 = $localize`:@@errorMessagePart1:Join Loom 21 back at the `;
   homepage = $localize`:@@homepage:homepage`;
   part2 = $localize`:@@errorMessagePart2: or `;
