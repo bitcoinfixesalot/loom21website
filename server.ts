@@ -29,7 +29,9 @@ export function app(): express.Express {
   const browserDistFolder = resolve(serverDistFolder, `../../browser/${lang}`);
   const indexHtml = join(serverDistFolder, 'index.server.html');
 
-  const commonEngine = new CommonEngine();
+  const commonEngine = new CommonEngine({
+    allowedHosts: ['loom21.com', 'localhost'],
+  });
 
   server.set('view engine', 'html');
   server.set('views', browserDistFolder);
