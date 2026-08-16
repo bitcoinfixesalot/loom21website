@@ -36,6 +36,16 @@ export function app(): express.Express {
   server.set('view engine', 'html');
   server.set('views', browserDistFolder);
 
+  // Enforce a trailing slash on every route so there is exactly one canonical
+  // URL per page (avoids "Alternate page with proper canonical tag" in GSC).
+  server.use((req, res, next) => {
+    if (req.method !== 'GET' || req.path.endsWith('/') || req.path.includes('.')) {
+      return next();
+    }
+    const [path, query] = req.originalUrl.split('?');
+    res.redirect(301, query ? `${path}/?${query}` : `${path}/`);
+  });
+
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
   // Serve static files from /browser
