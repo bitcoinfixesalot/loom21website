@@ -7,10 +7,11 @@ export const PRIVACY_CONSTANTS = {
 
   // Section 1: Who We Are
   section1Title: $localize`:Section 1 title@@section1Title:1. Who We Are`,
-  section1Content1: $localize`:Section 1 content@@section1Content1:We are Loom21 LTD, located at Tvarditsa, Aleko Konstantinov 11 str. For the purposes of GDPR, we are the "Data Controller" responsible for the personal data we collect and process through the Service.`,
+  //section1Content1: $localize`:Section 1 content@@section1Content1:We are Loom21 LTD, located at Tvarditsa, Aleko Konstantinov 11 str. For the purposes of GDPR, we are the "Data Controller" responsible for the personal data we collect and process through the Service.`,
+  section1Content1: $localize`:Section 1 content@@section1Content1:We are Loom21 LTD. For the purposes of GDPR, we are the "Data Controller" responsible for the personal data we collect and process through the Service.`,
   section1ContactInfo: $localize`:Section 1 contact info@@section1ContactInfo:Contact Information:`,
   section1ContactForm: $localize`:Section 1 contact form@@section1ContactForm:Submit an inquiry`,
-  section1Address: $localize`:Section 1 address@@section1Address:Address: Tvarditsa, Aleko Konstantinov 11 str.`,
+  //section1Address: $localize`:Section 1 address@@section1Address:Address: Tvarditsa, Aleko Konstantinov 11 str.`,
 
   // Section 2: Information We Collect
   section2Title: $localize`:Section 2 title@@section2Title:2. Information We Collect`,
@@ -124,6 +125,6 @@ export const PRIVACY_CONSTANTS = {
   section14Intro: $localize`:Section 14 intro@@section14Intro:If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:`,
   section14Contact: $localize`:Section 14 contact@@section14Contact:Contact Form:`,
   section14ContactForm: $localize`:Section 14 contact form@@section14ContactForm:Submit an inquiry`,
-  section14Address: $localize`:Section 14 address@@section14Address:Address: Tvarditsa, Aleko Konstantinov 11 str.`,
+  //section14Address: $localize`:Section 14 address@@section14Address:Address: Tvarditsa, Aleko Konstantinov 11 str.`,
   section14Complaint: $localize`:Section 14 complaint@@section14Complaint:For GDPR complaints, you may also contact your local Data Protection Authority.`
 };

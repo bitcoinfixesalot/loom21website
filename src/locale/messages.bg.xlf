@@ -381,8 +381,8 @@
         <note priority="1" from="description">Section 1 title</note>
       </trans-unit>
       <trans-unit id="section1Content1" datatype="html">
-        <source>We are Loom21 LTD, located at Tvarditsa, Aleko Konstantinov 11 str. For the purposes of GDPR, we are the "Data Controller" responsible for the personal data we collect and process through the Service.</source>
-        <target>Ние сме Loom21 LTD, намиращи се на ул. Алеко Константинов 11, Твърдица. За целите на GDPR ние сме „Администратор на данни“, отговорен за личните данни, които събираме и обработваме чрез Услугата.</target>
+        <source>We are Loom21 LTD. For the purposes of GDPR, we are the "Data Controller" responsible for the personal data we collect and process through the Service.</source>
+        <target>Ние сме Loom21 LTD. За целите на GDPR ние сме „Администратор на данни“, отговорен за личните данни, които събираме и обработваме чрез Услугата.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">10</context>
