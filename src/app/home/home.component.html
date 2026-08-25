@@ -11,31 +11,18 @@
               <a routerLink="/contact" type="button" class="btn waves-effect waves-light btn-outline-primary" i18n="Contact us button@@contactUsButton">Contact Us</a>
             </div>
           </div>
-          <div class="col-md-5 col-lg-6 align-self-center ms-auto mt-4 mt-md-0 test" data-aos="fade-left" data-aos-duration="1500">
-            <img src="assets/images/form-banners/sale-order-edit.PNG" alt="new sale order" class="img-fluid" />
+          <div class="col-md-5 col-lg-6 align-self-center ms-auto mt-4 mt-md-0" data-aos="fade-left" data-aos-duration="1500">
+            <div class="video-wrapper hero-video" [class.playing]="isVideoPlaying">
+              @if (!isVideoPlaying) {
+                <button type="button" class="video-play-facade" style="background-image: linear-gradient(rgba(15,15,30,0.25), rgba(15,15,30,0.45)), url('assets/images/form-banners/sale-order-edit.PNG')" (click)="playPromoVideo()" i18n-aria-label="Play promo video button@@playPromoVideoButton" aria-label="Play promo video">
+                  <span class="video-play-btn"><i class="fa fa-play"></i></span>
+                  <span class="video-play-text" i18n="Watch demo label@@watchDemoLabel">Watch Demo</span>
+                </button>
+              } @else {
+                <iframe [src]="promoVideoUrl" title="Loom21 promo video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+              }
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- Promo Video -->
-<div class="bg-light">
-  <section>
-    <div style="background-color: white;" class="banner spacer">
-      <div class="container text-center">
-        <h2 class="title font-bold m-b-30" i18n="See it in action title@@seeItInAction">See Loom21 in Action</h2>
-        <p class="m-b-30" i18n="See it in action sub title@@seeItInActionSub">Watch a quick walkthrough of payment links, pricing, and inventory management in Loom21.</p>
-        <div class="video-wrapper mx-auto" [class.playing]="isVideoPlaying">
-          @if (!isVideoPlaying) {
-            <button type="button" class="video-play-facade" (click)="playPromoVideo()" i18n-aria-label="Play promo video button@@playPromoVideoButton" aria-label="Play promo video">
-              <span class="video-play-btn"><i class="fa fa-play"></i></span>
-              <span class="video-play-text" i18n="Watch demo label@@watchDemoLabel">Watch Demo</span>
-            </button>
-          } @else {
-            <iframe [src]="promoVideoUrl" title="Loom21 promo video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          }
         </div>
       </div>
     </div>
