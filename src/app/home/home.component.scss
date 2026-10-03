@@ -1,9 +1,3 @@
-.test {
-    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 2px 1px -1px #0003, 0 1px 1px #00000024, 0 1px 3px #0000001f;
-    -webkit-box-shadow: 0px 5px 20px rgba(0,0,0,.05)!important;
-}
-
 /* Removing the list style of list gfg */
 .gfg {
     list-style-type: none;
@@ -104,6 +98,67 @@
     font-size: 28px;
     color: #1976d2;
     margin-bottom: 16px;
+}
+
+/* Promo video facade */
+.video-wrapper {
+    position: relative;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}
+
+.video-wrapper.hero-video {
+    max-width: 100%;
+}
+
+.video-play-facade {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background: linear-gradient(135deg, #1976d2, #1a1a2e);
+    background-size: cover;
+    background-position: top center;
+    cursor: pointer;
+}
+
+.video-play-btn {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #1976d2;
+    transition: transform 0.2s ease, background 0.2s ease;
+
+    .video-play-facade:hover & {
+        transform: scale(1.08);
+        background: white;
+    }
+}
+
+.video-play-text {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
 }
 
 .hero-buttons {

@@ -1,8 +1,9 @@
 import { ChangeDetectionStrategy, Component, Inject, isDevMode, LOCALE_ID, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { Meta, Title } from '@angular/platform-browser';
+import { DomSanitizer, Meta, SafeResourceUrl, Title } from '@angular/platform-browser';
 import {
   BITCOIN_PAYMENTS,
+  CUSTOM_FIELDS_MANAGEMENT,
   CUSTOMER_MANAGEMENT,
   DELIVERY_MANAGEMENT,
   DESCRIPTIONS,
@@ -12,6 +13,7 @@ import {
   LD_JSON,
   ORDER_FULFILLMENT,
   PAYMENT_PROCESSING,
+  PRICE_LIST_MANAGEMENT,
   PRODUCT_MANAGEMENT,
   REAL_TIME_INVENTORY_TRACKING,
   SALES_TRACKING,
@@ -25,6 +27,9 @@ import {
 } from '../constants/localized-const';
 import { OgMetaService } from '../services/og-meta.service';
 
+// TODO: replace with the real Loom21 promo video ID once available (see https://youtube.com/watch?v=<id>)
+const PROMO_VIDEO_ID = 'REPLACE_WITH_YOUTUBE_ID';
+
 @Component({
   selector: 'app-home',
   imports: [RouterLink],
@@ -34,8 +39,10 @@ import { OgMetaService } from '../services/og-meta.service';
 })
 export class HomeComponent implements OnInit {
   appUrl: string;
+  isVideoPlaying = false;
+  promoVideoUrl: SafeResourceUrl;
 
-  constructor(@Inject(LOCALE_ID) protected localeId: string, private titleService: Title, private metaService: Meta, private ogMetaService: OgMetaService) {
+  constructor(@Inject(LOCALE_ID) protected localeId: string, private titleService: Title, private metaService: Meta, private ogMetaService: OgMetaService, private sanitizer: DomSanitizer) {
     this.appUrl = 'https://app.loom21.com/';
     if (isDevMode()) {
       this.appUrl = 'https://localhost:44412/'
@@ -43,6 +50,11 @@ export class HomeComponent implements OnInit {
     if (this.localeId == 'bg') {
       this.appUrl = 'https://app.loom21.com/bg/'
     }
+    this.promoVideoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube-nocookie.com/embed/${PROMO_VIDEO_ID}?autoplay=1`);
+  }
+
+  playPromoVideo(): void {
+    this.isVideoPlaying = true;
   }
 
   ngOnInit() {
@@ -63,7 +75,7 @@ export class HomeComponent implements OnInit {
         "applicationCategory": "BusinessApplication",
         "featureList": [INVENTORY_MANAGEMENT, STOCK_CONTROL, PRODUCT_MANAGEMENT, INVOICE_PROCESSING, CUSTOMER_MANAGEMENT, SUPPLIER_MANAGEMENT,
           VENDOR_MANAGEMENT, ORDER_FULFILLMENT, PAYMENT_PROCESSING, BITCOIN_PAYMENTS, SALES_TRACKING, SERVICE_MANAGEMENT, DELIVERY_MANAGEMENT,
-          USER_ROLES_PERMISSIONS, INVENTORY_ANALYTICS, WAREHOUSE_MANAGEMENT, REAL_TIME_INVENTORY_TRACKING
+          USER_ROLES_PERMISSIONS, INVENTORY_ANALYTICS, WAREHOUSE_MANAGEMENT, REAL_TIME_INVENTORY_TRACKING, PRICE_LIST_MANAGEMENT, CUSTOM_FIELDS_MANAGEMENT
         ],
         "operatingSystem": "Web, iOS, Android",
         "url": `https://loom21.com/${this.localeId}`,

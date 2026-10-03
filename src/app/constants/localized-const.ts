@@ -1,5 +1,5 @@
 export const TAGS = {
-    home_keywords: $localize`:Home keywords tag@@homeKeywords:inventory management, stock control, product management, invoice processing, customer management, supplier management, vendor management, order fulfillment, payment processing, bitcoin payments, sales tracking, service management, delivery management, user roles and permissions, inventory analytics, warehouse management, real-time inventory tracking`,
+    home_keywords: $localize`:Home keywords tag@@homeKeywords:inventory management, stock control, product management, invoice processing, customer management, supplier management, vendor management, order fulfillment, payment processing, bitcoin payments, sales tracking, service management, delivery management, user roles and permissions, inventory analytics, warehouse management, real-time inventory tracking, price lists, custom fields`,
 }
 
 export const TITLES = {
@@ -43,6 +43,8 @@ export const USER_ROLES_PERMISSIONS = $localize`:@@userRolesPermissions:User Rol
 export const INVENTORY_ANALYTICS = $localize`:@@inventoryAnalytics:Inventory Analytics`;
 export const WAREHOUSE_MANAGEMENT = $localize`:@@warehouseManagement:Warehouse Management`;
 export const REAL_TIME_INVENTORY_TRACKING = $localize`:@@realTimeInventoryTracking:Real-Time Inventory Tracking`;
+export const PRICE_LIST_MANAGEMENT = $localize`:@@priceListManagement:Price List Management`;
+export const CUSTOM_FIELDS_MANAGEMENT = $localize`:@@customFieldsManagement:Custom Fields Management`;
 
 
 export const SUCCESS_MESSAGE = $localize`:@@successMessage:Thank You! Your message has been received. We'll get back to you soon.`
