@@ -1,0 +1,28 @@
+.faq {
+    padding: 60px 0;
+
+    .intro {
+        color: #555;
+        max-width: 700px;
+    }
+}
+
+.faq-category {
+    margin-top: 40px;
+
+    .category-title {
+        font-weight: 600;
+        margin-bottom: 16px;
+        color: #1976d2;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    color: #1976d2;
+    background-color: #e3f2fd;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(25, 118, 210, 0.25);
+}
