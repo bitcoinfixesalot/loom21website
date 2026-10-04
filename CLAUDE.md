@@ -23,11 +23,15 @@ src/app/
 ├── documentation/   # Markdown-based docs (loaded from GitHub at runtime)
 ├── pricing/         # Pricing page (fetches plans from API)
 ├── privacy/         # Privacy policy
+├── faq/             # FAQ page (FAQPage structured data)
+├── roadmap/         # Roadmap page (Shipped / In Progress / Planned)
 ├── not-found/       # 404 page
 ├── services/        # Shared services (see below)
 └── constants/       # Localized content (en/bg)
     ├── localized-const.ts   # TITLES, DESCRIPTIONS, TAGS, LD_JSON constants
-    └── privacy-policy-const.ts
+    ├── privacy-policy-const.ts
+    ├── faq-const.ts
+    └── roadmap-const.ts
 scripts/
 └── generate-sitemap.js  # Auto-generates src/sitemap.xml (run via prebuild)
 ```
@@ -70,7 +74,7 @@ All SEO meta is set dynamically in each page component's `ngOnInit`:
 2. **Description** — via `Meta.updateTag({ name: 'description', ... })`
 3. **Open Graph + Twitter Cards** — via `OgMetaService.setOgTags({ title, description })`
 4. **LD-JSON structured data** — via `Meta.addTag({ name: 'application/ld+json', ... })`
-5. **BreadcrumbList** — second LD-JSON block on all inner pages (contact, pricing, docs, privacy)
+5. **BreadcrumbList** — second LD-JSON block on all inner pages (contact, pricing, docs, privacy, faq, roadmap)
 6. **Canonical URL + hreflang** — via `CanonicalService` (triggered on every `NavigationEnd` in `AppComponent`)
 7. **`html[lang]`** — set in `AppComponent` constructor from `LOCALE_ID` (en → `lang="en"`, bg → `lang="bg"`)
 
@@ -83,6 +87,8 @@ All SEO meta is set dynamically in each page component's `ngOnInit`:
 | Contact | `ContactPage`, `BreadcrumbList` |
 | Documentation | `WebPage`, `BreadcrumbList` |
 | Privacy | `WebPage`, `BreadcrumbList` |
+| FAQ | `FAQPage`, `BreadcrumbList` |
+| Roadmap | `WebPage`, `BreadcrumbList` |
 
 ### OG image
 
@@ -96,6 +102,7 @@ Default: `https://loom21.com/assets/images/form-banners/loom-app-laptop-mobile.p
 - Documentation markdown is fetched at runtime from `https://raw.githubusercontent.com/loom21/loom21doc/main/README.md` (BG: `README-bg.md`). A shimmer skeleton is shown while loading; `(error)` is not yet handled
 - Focus outlines use `:focus-visible` — keyboard users see a blue ring, mouse users do not
 - Bootstrap 5 bundle (includes Popper v2) is used — jQuery is not loaded
+- Roadmap page content (`roadmap-const.ts`) is draft copy inferred from existing product signals, not confirmed business commitments — review with the team before treating "In Progress"/"Planned" items as accurate
 
 ## Remaining Improvements
 
