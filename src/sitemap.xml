@@ -73,6 +73,42 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/contact/" />
     </url>
     <url>
+        <loc>https://loom21.com/en/faq/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/faq/" />
+        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/faq/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/faq/" />
+    </url>
+    <url>
+        <loc>https://loom21.com/bg/faq/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/faq/" />
+        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/faq/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/faq/" />
+    </url>
+    <url>
+        <loc>https://loom21.com/en/roadmap/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/roadmap/" />
+        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/roadmap/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/roadmap/" />
+    </url>
+    <url>
+        <loc>https://loom21.com/bg/roadmap/</loc>
+        <lastmod>2026-10-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://loom21.com/en/roadmap/" />
+        <xhtml:link rel="alternate" hreflang="bg" href="https://loom21.com/bg/roadmap/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://loom21.com/en/roadmap/" />
+    </url>
+    <url>
         <loc>https://loom21.com/en/privacy-policy/</loc>
         <lastmod>2026-10-03</lastmod>
         <changefreq>monthly</changefreq>
