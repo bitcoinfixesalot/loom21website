@@ -28,7 +28,7 @@ import {
 import { OgMetaService } from '../services/og-meta.service';
 
 // TODO: replace with the real Loom21 promo video ID once available (see https://youtube.com/watch?v=<id>)
-const PROMO_VIDEO_ID = 'REPLACE_WITH_YOUTUBE_ID';
+const PROMO_VIDEO_ID = 'IlMuVoSU0Po';
 
 @Component({
   selector: 'app-home',
