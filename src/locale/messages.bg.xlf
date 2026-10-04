@@ -2162,6 +2162,834 @@
         </context-group>
         <note priority="1" from="description">Full Access to API</note>
       </trans-unit>
+      <trans-unit id="faqTitle" datatype="html">
+        <source>FAQ - Loom 21</source>
+        <target>ЧЗВ - Loom 21</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ title</note>
+      </trans-unit>
+      <trans-unit id="faqDescription" datatype="html">
+        <source>Answers to common questions about Loom21 — payments, Bitcoin, pricing, price lists, inventory, custom fields, and more.</source>
+        <target>Отговори на често задавани въпроси за Loom21 — плащания, Биткойн, цени, ценови листи, инвентар, персонализирани полета и още.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ description tag</note>
+      </trans-unit>
+      <trans-unit id="faqDescription_ld_json" datatype="html">
+        <source>Answers to common questions about Loom21's payments, Bitcoin support, pricing, price lists, inventory, and custom fields.</source>
+        <target>Отговори на често задавани въпроси за плащанията на Loom21, поддръжката на Биткойн, цените, ценовите листи, инвентара и персонализираните полета.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ description ld_json tag</note>
+      </trans-unit>
+      <trans-unit id="faqMenu" datatype="html">
+        <source>FAQ</source>
+        <target>ЧЗВ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/banner/banner.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ menu</note>
+      </trans-unit>
+      <trans-unit id="faqNav" datatype="html">
+        <source>FAQ</source>
+        <target>ЧЗВ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ nav</note>
+      </trans-unit>
+      <trans-unit id="faqPageTitle" datatype="html">
+        <source>Frequently Asked Questions</source>
+        <target>Често задавани въпроси</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ page title</note>
+      </trans-unit>
+      <trans-unit id="faqPageIntro" datatype="html">
+        <source>Everything you need to know about payments, pricing, inventory, and more. Can't find what you're looking for? Reach out to us.</source>
+        <target>Всичко, което трябва да знаете за плащанията, цените, инвентара и още. Не намирате това, което търсите? Свържете се с нас.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ page intro</note>
+      </trans-unit>
+      <trans-unit id="faqCtaTitle" datatype="html">
+        <source>Still Have Questions?</source>
+        <target>Все още имате въпроси?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ CTA title</note>
+      </trans-unit>
+      <trans-unit id="faqCtaDesc" datatype="html">
+        <source>Can't find the answer you're looking for? Our team is happy to help.</source>
+        <target>Не намирате отговора, който търсите? Нашият екип с удоволствие ще ви помогне.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ CTA description</note>
+      </trans-unit>
+      <trans-unit id="faqCategory1Title" datatype="html">
+        <source>Getting Started</source>
+        <target>Първи стъпки</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ category 1 title</note>
+      </trans-unit>
+      <trans-unit id="faqQ1_1" datatype="html">
+        <source>How do I create a Loom21 account?</source>
+        <target>Как да създам акаунт в Loom21?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 1.1</note>
+      </trans-unit>
+      <trans-unit id="faqA1_1" datatype="html">
+        <source>Sign up on the Loom21 website and confirm your email from the confirmation message you receive. Once confirmed, you can sign in and start setting up your organization.</source>
+        <target>Регистрирайте се на сайта на Loom21 и потвърдете имейла си от съобщението за потвърждение, което получавате. След потвърждението можете да влезете и да започнете да настройвате организацията си.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 1.1</note>
+      </trans-unit>
+      <trans-unit id="faqQ1_2" datatype="html">
+        <source>Is there a free plan?</source>
+        <target>Има ли безплатен план?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 1.2</note>
+      </trans-unit>
+      <trans-unit id="faqA1_2" datatype="html">
+        <source>Yes. You can create a free account with no credit card required and start right away. Visit our Pricing page if you need a paid plan with additional features.</source>
+        <target>Да. Можете да създадете безплатен акаунт без нужда от кредитна карта и да започнете веднага. Посетете страницата ни с цени, ако имате нужда от платен план с допълнителни функции.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 1.2</note>
+      </trans-unit>
+      <trans-unit id="faqQ1_3" datatype="html">
+        <source>What should I set up first?</source>
+        <target>Какво трябва да настроя първо?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 1.3</note>
+      </trans-unit>
+      <trans-unit id="faqA1_3" datatype="html">
+        <source>We recommend configuring General Settings (language, currency, VAT, and address), connecting at least one payment processor, adding your products and services, and then creating your first sale order.</source>
+        <target>Препоръчваме да конфигурирате общите настройки (език, валута, ДДС и адрес), да свържете поне един платежен процесор, да добавите вашите продукти и услуги и след това да създадете първата си поръчка за продажба.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 1.3</note>
+      </trans-unit>
+      <trans-unit id="faqCategory2Title" datatype="html">
+        <source>Payments &amp; Bitcoin</source>
+        <target>Плащания и Биткойн</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ category 2 title</note>
+      </trans-unit>
+      <trans-unit id="faqQ2_1" datatype="html">
+        <source>What payment methods does Loom21 support?</source>
+        <target>Какви методи на плащане поддържа Loom21?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 2.1</note>
+      </trans-unit>
+      <trans-unit id="faqA2_1" datatype="html">
+        <source>Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Misty Breez, Speed Wallet, LNBits, and Glow Wallet — covering both Lightning and on-chain Bitcoin.</source>
+        <target>Stripe за кредитни и дебитни карти, и Биткойн чрез BTCPay Server, Misty Breez, Speed Wallet, LNBits и Glow Wallet — покриващи както Lightning, така и он-чейн Биткойн.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 2.1</note>
+      </trans-unit>
+      <trans-unit id="faqQ2_2" datatype="html">
+        <source>Can I accept both Bitcoin Lightning and on-chain payments?</source>
+        <target>Мога ли да приемам както Lightning, така и он-чейн плащания с Биткойн?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 2.2</note>
+      </trans-unit>
+      <trans-unit id="faqA2_2" datatype="html">
+        <source>Yes. Most of our Bitcoin processors support Lightning and on-chain payments side by side with card payments, so you can offer whichever methods suit your customers.</source>
+        <target>Да. Повечето от нашите Биткойн процесори поддържат Lightning и он-чейн плащания успоредно с картови плащания, така че можете да предложите методите, които подхождат на вашите клиенти.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 2.2</note>
+      </trans-unit>
+      <trans-unit id="faqQ2_3" datatype="html">
+        <source>Do I need my own Bitcoin wallet or node to use Loom21?</source>
+        <target>Трябва ли да имам собствен Биткойн портфейл или нод, за да използвам Loom21?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 2.3</note>
+      </trans-unit>
+      <trans-unit id="faqA2_3" datatype="html">
+        <source>You need an account with one of our supported Bitcoin processors — for example a BTCPay Server instance, or a wallet such as Misty Breez, Speed Wallet, LNBits, or Glow Wallet. Loom21 connects to it using the API key or URL you enter in Settings.</source>
+        <target>Нужен ви е акаунт при един от поддържаните от нас Биткойн процесори — например инстанция на BTCPay Server, или портфейл като Misty Breez, Speed Wallet, LNBits или Glow Wallet. Loom21 се свързва с него чрез API ключа или URL адреса, които въвеждате в Настройки.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 2.3</note>
+      </trans-unit>
+      <trans-unit id="faqQ2_4" datatype="html">
+        <source>How are Bitcoin payments confirmed?</source>
+        <target>Как се потвърждават плащанията с Биткойн?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 2.4</note>
+      </trans-unit>
+      <trans-unit id="faqA2_4" datatype="html">
+        <source>In real time. Once a Lightning or on-chain payment is settled, the order status updates automatically without needing to refresh the page.</source>
+        <target>В реално време. След като Lightning или он-чейн плащане бъде уредено, статусът на поръчката се актуализира автоматично, без да е необходимо презареждане на страницата.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 2.4</note>
+      </trans-unit>
+      <trans-unit id="faqCategory3Title" datatype="html">
+        <source>Pricing &amp; Price Lists</source>
+        <target>Цени и ценови листи</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ category 3 title</note>
+      </trans-unit>
+      <trans-unit id="faqQ3_1" datatype="html">
+        <source>How does Loom21's own pricing work?</source>
+        <target>Как работи собственото ценообразуване на Loom21?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 3.1</note>
+      </trans-unit>
+      <trans-unit id="faqA3_1" datatype="html">
+        <source>Loom21 offers flexible subscription plans billed monthly or yearly, with custom plans available for larger teams. Visit our Pricing page for current plans, or contact us for details.</source>
+        <target>Loom21 предлага гъвкави абонаментни планове с месечно или годишно таксуване, с налични персонализирани планове за по-големи екипи. Посетете страницата ни с цени за актуалните планове или се свържете с нас за подробности.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 3.1</note>
+      </trans-unit>
+      <trans-unit id="faqQ3_2" datatype="html">
+        <source>Can I set different prices for different customers?</source>
+        <target>Мога ли да задавам различни цени за различни клиенти?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 3.2</note>
+      </trans-unit>
+      <trans-unit id="faqA3_2" datatype="html">
+        <source>Yes. You can create multiple price lists — such as wholesale, retail, or seasonal — and set customer-specific price overrides that always take priority over any price list.</source>
+        <target>Да. Можете да създавате множество ценови листи — например на едро, на дребно или сезонни — и да задавате индивидуални цени за конкретни клиенти, които винаги имат предимство пред ценовата листа.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 3.2</note>
+      </trans-unit>
+      <trans-unit id="faqQ3_3" datatype="html">
+        <source>Can I offer quantity-based discounts?</source>
+        <target>Мога ли да предлагам отстъпки според количеството?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 3.3</note>
+      </trans-unit>
+      <trans-unit id="faqA3_3" datatype="html">
+        <source>Yes. Each price list supports quantity tiers, percentage discounts, or custom formulas, so prices can automatically drop at higher order volumes.</source>
+        <target>Да. Всяка ценова листа поддържа нива според количеството, процентни отстъпки или персонализирани формули, така че цените могат автоматично да намаляват при по-големи поръчки.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 3.3</note>
+      </trans-unit>
+      <trans-unit id="faqQ3_4" datatype="html">
+        <source>What price is used if a product isn't on any price list?</source>
+        <target>Каква цена се използва, ако продукт не е включен в нито една ценова листа?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 3.4</note>
+      </trans-unit>
+      <trans-unit id="faqA3_4" datatype="html">
+        <source>Loom21 falls back to the product's base Sale Price configured on the product itself.</source>
+        <target>Loom21 използва базовата продажна цена, зададена на самия продукт.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 3.4</note>
+      </trans-unit>
+      <trans-unit id="faqCategory4Title" datatype="html">
+        <source>Products, Inventory &amp; Custom Fields</source>
+        <target>Продукти, инвентар и персонализирани полета</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ category 4 title</note>
+      </trans-unit>
+      <trans-unit id="faqQ4_1" datatype="html">
+        <source>Can I track stock across multiple store locations?</source>
+        <target>Мога ли да проследявам наличностите в множество складове?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 4.1</note>
+      </trans-unit>
+      <trans-unit id="faqA4_1" datatype="html">
+        <source>Yes. Inventory is tracked per store, and every sale or delivery order is linked to a specific store, so stock levels stay accurate everywhere.</source>
+        <target>Да. Инвентарът се проследява по магазин/склад, а всяка поръчка за продажба или доставка е свързана с конкретен склад, така че наличностите остават точни навсякъде.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 4.1</note>
+      </trans-unit>
+      <trans-unit id="faqQ4_2" datatype="html">
+        <source>What are Custom Fields and what can I use them for?</source>
+        <target>Какво представляват персонализираните полета и за какво мога да ги използвам?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 4.2</note>
+      </trans-unit>
+      <trans-unit id="faqA4_2" datatype="html">
+        <source>Custom Fields let you add your own data fields to every product — like a warranty expiry date, a certification flag, or a supplier reference number — beyond the standard name, price, and category fields.</source>
+        <target>Персонализираните полета ви позволяват да добавяте свои собствени полета за данни към всеки продукт — например дата на изтичане на гаранция, сертификат или референтен номер на доставчик — освен стандартните полета за име, цена и категория.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 4.2</note>
+      </trans-unit>
+      <trans-unit id="faqQ4_3" datatype="html">
+        <source>Can I import my existing product or customer list?</source>
+        <target>Мога ли да импортирам съществуващия си списък с продукти или клиенти?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 4.3</note>
+      </trans-unit>
+      <trans-unit id="faqA4_3" datatype="html">
+        <source>Yes. Loom21 accepts CSV imports for products, services, customers, and suppliers, with downloadable templates to help you format your data correctly.</source>
+        <target>Да. Loom21 приема CSV импорти за продукти, услуги, клиенти и доставчици, с шаблони за изтегляне, които да ви помогнат да форматирате данните си правилно.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 4.3</note>
+      </trans-unit>
+      <trans-unit id="faqQ4_4" datatype="html">
+        <source>Does Loom21 support barcodes and QR codes?</source>
+        <target>Поддържа ли Loom21 баркодове и QR кодове?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 4.4</note>
+      </trans-unit>
+      <trans-unit id="faqA4_4" datatype="html">
+        <source>Yes. You can enter or scan barcodes for products, and QR codes are generated automatically.</source>
+        <target>Да. Можете да въведете или сканирате баркодове за продукти, а QR кодовете се генерират автоматично.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 4.4</note>
+      </trans-unit>
+      <trans-unit id="faqCategory5Title" datatype="html">
+        <source>Orders &amp; Invoicing</source>
+        <target>Поръчки и фактуриране</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ category 5 title</note>
+      </trans-unit>
+      <trans-unit id="faqQ5_1" datatype="html">
+        <source>What documents can I generate from a sale order?</source>
+        <target>Какви документи мога да генерирам от поръчка за продажба?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 5.1</note>
+      </trans-unit>
+      <trans-unit id="faqA5_1" datatype="html">
+        <source>Quotes, invoices, receipts, and pickup lists — all as downloadable PDFs. Invoices and receipts become available once an order is marked as paid.</source>
+        <target>Оферти, фактури, разписки и списъци за вземане — всички като PDF файлове за изтегляне. Фактурите и разписките стават достъпни, след като поръчката бъде маркирана като платена.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 5.1</note>
+      </trans-unit>
+      <trans-unit id="faqQ5_2" datatype="html">
+        <source>Can customers pay without creating a Loom21 account?</source>
+        <target>Могат ли клиентите да платят, без да създават акаунт в Loom21?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 5.2</note>
+      </trans-unit>
+      <trans-unit id="faqA5_2" datatype="html">
+        <source>Yes. Payment links give customers a unique URL to pay for a product, service, or donation with no login required on their side.</source>
+        <target>Да. Връзките за плащане дават на клиентите уникален URL адрес, за да платят за продукт, услуга или дарение, без да е необходим вход от тяхна страна.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 5.2</note>
+      </trans-unit>
+      <trans-unit id="faqQ5_3" datatype="html">
+        <source>Can I reorder from a customer's past purchases in one click?</source>
+        <target>Мога ли да направя повторна поръчка от минали покупки на клиент с едно кликване?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 5.3</note>
+      </trans-unit>
+      <trans-unit id="faqA5_3" datatype="html">
+        <source>Yes. Once you select a customer on a new sale order, you can open their Order History and re-add items from any previous order instantly.</source>
+        <target>Да. След като изберете клиент в нова поръчка за продажба, можете да отворите историята на поръчките му и да добавите отново артикули от всяка предишна поръчка моментално.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 5.3</note>
+      </trans-unit>
+      <trans-unit id="faqCategory6Title" datatype="html">
+        <source>Data, Team &amp; Security</source>
+        <target>Данни, екип и сигурност</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ category 6 title</note>
+      </trans-unit>
+      <trans-unit id="faqQ6_1" datatype="html">
+        <source>Can I export my data?</source>
+        <target>Мога ли да експортирам данните си?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 6.1</note>
+      </trans-unit>
+      <trans-unit id="faqA6_1" datatype="html">
+        <source>Yes. You can export your products, customers, suppliers, and reports as CSV or JSON at any time — your data is never locked in.</source>
+        <target>Да. Можете да експортирате вашите продукти, клиенти, доставчици и справки като CSV или JSON по всяко време — данните ви никога не са заключени.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 6.1</note>
+      </trans-unit>
+      <trans-unit id="faqQ6_2" datatype="html">
+        <source>How many team members can I invite?</source>
+        <target>Колко членове на екипа мога да поканя?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 6.2</note>
+      </trans-unit>
+      <trans-unit id="faqA6_2" datatype="html">
+        <source>You can invite an unlimited number of users to your organization and assign each one specific roles to control what they can access.</source>
+        <target>Можете да поканите неограничен брой потребители във вашата организация и да зададете на всеки конкретни роли, за да контролирате до какво имат достъп.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 6.2</note>
+      </trans-unit>
+      <trans-unit id="faqQ6_3" datatype="html">
+        <source>What languages is Loom21 available in?</source>
+        <target>На какви езици е достъпен Loom21?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 6.3</note>
+      </trans-unit>
+      <trans-unit id="faqA6_3" datatype="html">
+        <source>Loom21 is currently available in English and Bulgarian, with more languages planned.</source>
+        <target>Loom21 в момента е достъпен на английски и български език, като се планират още езици.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 6.3</note>
+      </trans-unit>
+      <trans-unit id="roadmapTitle" datatype="html">
+        <source>Roadmap - Loom 21</source>
+        <target>Пътна карта - Loom 21</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap title</note>
+      </trans-unit>
+      <trans-unit id="roadmapDescription" datatype="html">
+        <source>See what's shipped, in progress, and planned for Loom21 — payments, pricing, inventory, and more.</source>
+        <target>Вижте какво е пуснато, в процес на разработка и предстои за Loom21 — плащания, цени, инвентар и още.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap description tag</note>
+      </trans-unit>
+      <trans-unit id="roadmapDescription_ld_json" datatype="html">
+        <source>Loom21's product roadmap — shipped features, work in progress, and planned improvements.</source>
+        <target>Пътната карта на продукта Loom21 — пуснати функции, в процес на разработка и планирани подобрения.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap description ld_json tag</note>
+      </trans-unit>
+      <trans-unit id="roadmapNav" datatype="html">
+        <source>Roadmap</source>
+        <target>Пътна карта</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap nav</note>
+      </trans-unit>
+      <trans-unit id="roadmapPageTitle" datatype="html">
+        <source>Loom21 Roadmap</source>
+        <target>Пътна карта на Loom21</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap page title</note>
+      </trans-unit>
+      <trans-unit id="roadmapPageIntro" datatype="html">
+        <source>A look at what we've shipped, what we're working on now, and what's coming next.</source>
+        <target>Поглед към това, което вече пуснахме, върху какво работим в момента и какво предстои.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap page intro</note>
+      </trans-unit>
+      <trans-unit id="roadmapCtaTitle" datatype="html">
+        <source>Have a Feature Request?</source>
+        <target>Имате предложение за функция?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap CTA title</note>
+      </trans-unit>
+      <trans-unit id="roadmapCtaDesc" datatype="html">
+        <source>We'd love to hear what would make Loom21 more useful for your business.</source>
+        <target>С удоволствие ще чуем какво би направило Loom21 по-полезен за вашия бизнес.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap CTA description</note>
+      </trans-unit>
+      <trans-unit id="roadmapShippedTitle" datatype="html">
+        <source>Shipped</source>
+        <target>Пуснато</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped section title</note>
+      </trans-unit>
+      <trans-unit id="roadmapInProgressTitle" datatype="html">
+        <source>In Progress</source>
+        <target>В процес на разработка</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap in progress section title</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlannedTitle" datatype="html">
+        <source>Planned</source>
+        <target>Предстои</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned section title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped1Title" datatype="html">
+        <source>Bitcoin &amp; Card Payments</source>
+        <target>Плащания с Биткойн и карта</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 1 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped1Desc" datatype="html">
+        <source>Accept payments via Stripe, BTCPay Server, Misty Breez, Speed Wallet, LNBits, and Glow Wallet.</source>
+        <target>Приемайте плащания чрез Stripe, BTCPay Server, Misty Breez, Speed Wallet, LNBits и Glow Wallet.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 1 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped2Title" datatype="html">
+        <source>Flexible Price Lists</source>
+        <target>Гъвкави ценови листи</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 2 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped2Desc" datatype="html">
+        <source>Quantity tiers, percentage discounts, custom formulas, and customer-specific price overrides.</source>
+        <target>Нива според количеството, процентни отстъпки, персонализирани формули и индивидуални цени за клиенти.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 2 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped3Title" datatype="html">
+        <source>Custom Fields</source>
+        <target>Персонализирани полета</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 3 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped3Desc" datatype="html">
+        <source>Add your own data fields to any product, beyond the standard name, price, and category.</source>
+        <target>Добавяйте свои собствени полета за данни към всеки продукт, освен стандартните име, цена и категория.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 3 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped4Title" datatype="html">
+        <source>CSV Import</source>
+        <target>CSV импорт</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 4 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped4Desc" datatype="html">
+        <source>Bulk import products, services, customers, and suppliers from a spreadsheet.</source>
+        <target>Масово импортиране на продукти, услуги, клиенти и доставчици от таблица.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 4 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped5Title" datatype="html">
+        <source>Multi-Store Inventory</source>
+        <target>Инвентар в множество складове</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 5 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped5Desc" datatype="html">
+        <source>Track stock levels per store location across sales and delivery orders.</source>
+        <target>Проследявайте наличностите по локация на склад чрез поръчки за продажби и доставки.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 5 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped6Title" datatype="html">
+        <source>Sales &amp; Deliveries Reports</source>
+        <target>Справки за продажби и доставки</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 6 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped6Desc" datatype="html">
+        <source>Searchable, filterable reports with CSV and JSON export.</source>
+        <target>Търсими и филтрируеми справки с експорт в CSV и JSON.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 6 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapInProgress1Title" datatype="html">
+        <source>More Payment Processors</source>
+        <target>Още платежни процесори</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap in progress item 1 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapInProgress1Desc" datatype="html">
+        <source>Expanding the list of supported Bitcoin and fiat payment processors.</source>
+        <target>Разширяваме списъка с поддържани Биткойн и фиатни платежни процесори.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap in progress item 1 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapInProgress2Title" datatype="html">
+        <source>Expanded Reporting &amp; Analytics</source>
+        <target>Разширени справки и анализи</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap in progress item 2 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapInProgress2Desc" datatype="html">
+        <source>Deeper insight into sales trends and performance across your stores.</source>
+        <target>По-задълбочена информация за тенденциите в продажбите и представянето на вашите магазини.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap in progress item 2 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapInProgress3Title" datatype="html">
+        <source>Installable, Mobile-Friendly App</source>
+        <target>Инсталируемо, удобно за мобилни устройства приложение</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap in progress item 3 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapInProgress3Desc" datatype="html">
+        <source>A smoother, installable experience for managing your business on the go.</source>
+        <target>По-плавно, инсталируемо изживяване за управление на бизнеса ви в движение.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap in progress item 3 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlanned1Title" datatype="html">
+        <source>Public API &amp; Webhooks</source>
+        <target>Публично API и webhooks</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned item 1 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlanned1Desc" datatype="html">
+        <source>Connect Loom21 to your other tools with a public API and event webhooks.</source>
+        <target>Свържете Loom21 с другите си инструменти чрез публично API и събития webhooks.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned item 1 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlanned2Title" datatype="html">
+        <source>More Languages</source>
+        <target>Още езици</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned item 2 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlanned2Desc" datatype="html">
+        <source>Expanding beyond English and Bulgarian to support more of our users.</source>
+        <target>Разширяване отвъд английски и български, за да обслужим повече от нашите потребители.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned item 2 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlanned3Title" datatype="html">
+        <source>Native Mobile Apps</source>
+        <target>Нативни мобилни приложения</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned item 3 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlanned3Desc" datatype="html">
+        <source>Dedicated iOS and Android apps for managing your business from anywhere.</source>
+        <target>Специализирани приложения за iOS и Android за управление на бизнеса ви отвсякъде.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned item 3 description</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>
