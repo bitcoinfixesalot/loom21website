@@ -1,0 +1,62 @@
+<div class="bg-light roadmap">
+  <div class="container">
+    <div class="row">
+      <h1 class="title font-bold">{{ CONSTANTS.pageTitle }}</h1>
+      <p class="intro m-b-30">{{ CONSTANTS.pageIntro }}</p>
+
+      <div class="roadmap-section roadmap-shipped">
+        <h2 class="section-title">{{ CONSTANTS.shippedTitle }}</h2>
+        <div class="row">
+          @for (item of shippedItems; track item.title) {
+            <div class="col-md-6 col-lg-4 m-b-30">
+              <div class="roadmap-card">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+
+      <div class="roadmap-section roadmap-in-progress">
+        <h2 class="section-title">{{ CONSTANTS.inProgressTitle }}</h2>
+        <div class="row">
+          @for (item of inProgressItems; track item.title) {
+            <div class="col-md-6 col-lg-4 m-b-30">
+              <div class="roadmap-card">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+
+      <div class="roadmap-section roadmap-planned">
+        <h2 class="section-title">{{ CONSTANTS.plannedTitle }}</h2>
+        <div class="row">
+          @for (item of plannedItems; track item.title) {
+            <div class="col-md-6 col-lg-4 m-b-30">
+              <div class="roadmap-card">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="background-color: #e3f2fd;">
+  <section>
+    <div class="banner spacer">
+      <div class="container text-center">
+        <h2 class="title font-bold m-b-20">{{ CONSTANTS.ctaTitle }}</h2>
+        <p class="m-b-30">{{ CONSTANTS.ctaDesc }}</p>
+        <a routerLink="/contact" type="button" class="btn waves-effect waves-light btn-success" i18n="Contact us button@@contactUsButton">Contact Us</a>
+      </div>
+    </div>
+  </section>
+</div>

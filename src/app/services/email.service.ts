@@ -20,7 +20,6 @@ export class EmailService {
    }
 
   sendEmail(email: string, subject: string, content: string): Observable<any> {
-    const headers = new HttpHeaders().set('apiKey', 'YES_YOU_ARE_CONTACTING_THE_MAXIS'); // Set your API key here
-    return this.http.post<any>(this.apiUrl, {email: email, subject: subject, body: content}, { headers });
+    return this.http.post<any>(this.apiUrl, {email: email, subject: subject, body: content});
   }
 }

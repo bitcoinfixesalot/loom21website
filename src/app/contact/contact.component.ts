@@ -7,6 +7,7 @@ import { EmailService } from '../services/email.service';
 import { DESCRIPTIONS, LD_JSON, SUCCESS_MESSAGE, TITLES } from '../constants/localized-const';
 import { Meta, Title } from '@angular/platform-browser';
 import { OgMetaService } from '../services/og-meta.service';
+import { StructuredDataService } from '../services/structured-data.service';
 
 @Component({
     selector: 'app-contact',
@@ -25,7 +26,7 @@ export class ContactComponent implements OnInit {
   private minSubmitDelayMs = 3000;
 
   constructor(private formBuilder: UntypedFormBuilder, private titleService: Title, private metaService: Meta,
-    private emailService: EmailService, private ogMetaService: OgMetaService,
+    private emailService: EmailService, private ogMetaService: OgMetaService, private structuredDataService: StructuredDataService,
     @Inject(LOCALE_ID) private localeId: string) {
 
     this.form = this.formBuilder.group({
@@ -54,9 +55,8 @@ export class ContactComponent implements OnInit {
       content: DESCRIPTIONS.contact_description
     });
     this.ogMetaService.setOgTags({ title: TITLES.contact, description: DESCRIPTIONS.contact_description });
-    this.metaService.addTag({
-      name: 'application/ld+json',
-      content: JSON.stringify({
+    this.structuredDataService.setJsonLd([
+      {
         '@context': 'https://schema.org',
         '@type': 'ContactPage',
         'name': 'Contact - Loom 21',
@@ -65,19 +65,16 @@ export class ContactComponent implements OnInit {
           '@type': 'WebSite',
           'name': 'Loom 21'
         }
-      })
-    });
-    this.metaService.addTag({
-      name: 'application/ld+json',
-      content: JSON.stringify({
+      },
+      {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         'itemListElement': [
           { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `https://loom21.com/${this.localeId}/` },
           { '@type': 'ListItem', 'position': 2, 'name': 'Contact', 'item': `https://loom21.com/${this.localeId}/contact/` }
         ]
-      })
-    });
+      }
+    ]);
   }
 
   onSubmit() {

@@ -9,7 +9,16 @@
         </p>
     </div>
   }
-  @if (!loading()) {
+  @if (!loading() && hasError()) {
+    <div class="container text-center py-5">
+      <p class="text-danger mb-3" i18n="Pricing load error@@pricingLoadError">We couldn't load pricing plans right now. Please try again, or contact us and we'll help directly.</p>
+      <div class="d-flex justify-content-center gap-3">
+        <button class="btn btn-outline-primary" (click)="retryLoadPlans()" i18n="Retry button@@retryButton">Try Again</button>
+        <button class="btn btn-primary" (click)="onContactUs()" i18n="Contact us button@@contactUsPricing">Contact Us</button>
+      </div>
+    </div>
+  }
+  @if (!loading() && !hasError()) {
     <div class="btn-group d-flex justify-content-center mb-4" role="group"
       aria-label="Subscription period selection">
       <input type="radio" class="btn-check" name="selectedPlan" id="month" value="month"
@@ -37,7 +46,7 @@
       </div>
     }
 
-    @if (!loading()) {
+    @if (!loading() && !hasError()) {
       <div class="container pricing-box">
         <div class="row justify-content-center">
           <div class="col-12">

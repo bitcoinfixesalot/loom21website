@@ -112,6 +112,12 @@
   100% { background-position: -200% 0; }
 }
 
+/* ── Error state ────────────────────────────────────────── */
+
+.docs-error {
+  padding: 64px 0;
+}
+
 /* ── Markdown content ───────────────────────────────────── */
 
 ::ng-deep markdown {

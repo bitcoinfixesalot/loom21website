@@ -17,8 +17,8 @@ export class SubscriptionPlanService {
   }
 
   getAvailablePlans() {
-    const headers = new HttpHeaders().set('apiKey', 'GET_AVAILABLE_PLANS_FOR_THE_MAXIS'); // Set your API key here
-    return this.http.get<SubscriptionType[]>(`${this.apiUrl}/available-plans/`, { headers });
+    //const headers = new HttpHeaders().set('apiKey', 'GET_AVAILABLE_PLANS_FOR_THE_MAXIS'); // Set your API key here
+    return this.http.get<SubscriptionType[]>(`${this.apiUrl}/available-plans/`, { /*headers*/ });
   }
 }
 

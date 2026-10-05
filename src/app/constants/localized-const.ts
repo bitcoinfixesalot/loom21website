@@ -8,6 +8,8 @@ export const TITLES = {
     contact: $localize`:Contact title@@contactTitle:Contact - Loom 21`,
     pricing: $localize`:Pricing title@@PricingTitle:Pricing - Loom 21`,
     privacy: $localize`:Privacy title@@privacyTitle:Privacy - Loom 21`,
+    faq: $localize`:FAQ title@@faqTitle:FAQ - Loom 21`,
+    roadmap: $localize`:Roadmap title@@roadmapTitle:Roadmap - Loom 21`,
 }
 
 export const DESCRIPTIONS = {
@@ -16,6 +18,8 @@ export const DESCRIPTIONS = {
     contact_description: $localize`:Contact description tag@@contactDescription:Questions on sales, deliveries, or payments? Contact us for expert support to grow your business!`,
     pricing_description: $localize`:Pricing description tag@@pricingDescription:Explore our subscription plans with flexible pricing options. Choose from monthly or yearly billing, with custom plans available. Contact us for details!`,
     privacy_description: $localize`:Privacy description tag@@privacyDescription:Learn about our privacy practices and how we protect your data.`,
+    faq_description: $localize`:FAQ description tag@@faqDescription:Answers to common questions about Loom21 — payments, Bitcoin, pricing, price lists, inventory, custom fields, and more.`,
+    roadmap_description: $localize`:Roadmap description tag@@roadmapDescription:See what's shipped, in progress, and planned for Loom21 — payments, pricing, inventory, and more.`,
 }
 
 export const LD_JSON = {
@@ -24,6 +28,8 @@ export const LD_JSON = {
     contact_description: $localize`:Contact description ld_json tag@@contactDescription_ld_json:Questions on sales, deliveries, or payments? Contact us for expert support to grow your business.`,
     pricing_description: $localize`:Pricing description ld_json tag@@pricingDescription_ld_json:Subscription plans for Loom21 with various features and pricing options.`,
     privacy_description: $localize`:Privacy description ld_json tag@@privacyDescription_ld_json:Learn about our privacy practices and how we protect your data.`,
+    faq_description: $localize`:FAQ description ld_json tag@@faqDescription_ld_json:Answers to common questions about Loom21's payments, Bitcoin support, pricing, price lists, inventory, and custom fields.`,
+    roadmap_description: $localize`:Roadmap description ld_json tag@@roadmapDescription_ld_json:Loom21's product roadmap — shipped features, work in progress, and planned improvements.`,
 }
 
 export const INVENTORY_MANAGEMENT = $localize`:@@inventoryManagement:Inventory Management`;

@@ -7,6 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
 import { OgMetaService } from '../services/og-meta.service';
+import { StructuredDataService } from '../services/structured-data.service';
 
 @Component({
     selector: 'app-pricing',
@@ -17,6 +18,7 @@ import { OgMetaService } from '../services/og-meta.service';
 })
 export class PricingComponent implements OnInit {
   loading = signal(true);
+  hasError = signal(false);
   selectedPlan = signal('year');
 
   plans = signal<SubscriptionType[]>([]);
@@ -31,7 +33,8 @@ export class PricingComponent implements OnInit {
     private subscriptionPlan: SubscriptionPlanService,
     private titleService: Title,
     private metaService: Meta,
-    private ogMetaService: OgMetaService) {
+    private ogMetaService: OgMetaService,
+    private structuredDataService: StructuredDataService) {
 
   }
 
@@ -39,19 +42,13 @@ export class PricingComponent implements OnInit {
     this.titleService.setTitle(TITLES.pricing);
     this.setMetaTags();
     this.ogMetaService.setOgTags({ title: TITLES.pricing, description: DESCRIPTIONS.pricing_description });
-    this.metaService.addTag({
-      name: 'application/ld+json',
-      content: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'BreadcrumbList',
-        'itemListElement': [
-          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `https://loom21.com/${this.localeId}/` },
-          { '@type': 'ListItem', 'position': 2, 'name': 'Pricing', 'item': `https://loom21.com/${this.localeId}/pricing/` }
-        ]
-      })
-    });
+    this.structuredDataService.setJsonLd([this.buildBreadcrumbSchema()]);
 
-    this.loading.set(true);
+    this.loadPlans();
+  }
+
+  private loadPlans(): void {
+    this.hasError.set(false);
 
     this.subscriptionPlan.getAvailablePlans().pipe(first()).subscribe({
       next: (types: SubscriptionType[]) => {
@@ -68,11 +65,16 @@ export class PricingComponent implements OnInit {
         // this.setOnboardingPrices();
         this.updateStructuredData();
       },
-      error: (e) => {
-        console.log(e);
+      error: () => {
+        this.hasError.set(true);
         this.loading.set(false);
       }
     });
+  }
+
+  retryLoadPlans(): void {
+    this.loading.set(true);
+    this.loadPlans();
   }
 
   // setOnboardingPrices() {
@@ -143,6 +145,17 @@ export class PricingComponent implements OnInit {
     });
   }
 
+  private buildBreadcrumbSchema() {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      'itemListElement': [
+        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `https://loom21.com/${this.localeId}/` },
+        { '@type': 'ListItem', 'position': 2, 'name': 'Pricing', 'item': `https://loom21.com/${this.localeId}/pricing/` }
+      ]
+    };
+  }
+
   updateStructuredData() {
     const structuredData = {
       '@context': 'https://schema.org',
@@ -160,9 +173,6 @@ export class PricingComponent implements OnInit {
       description: LD_JSON.pricing_description
     };
 
-    this.metaService.updateTag({
-      name: 'application/ld+json',
-      content: JSON.stringify(structuredData)
-    });
+    this.structuredDataService.setJsonLd([this.buildBreadcrumbSchema(), structuredData]);
   }
 }
