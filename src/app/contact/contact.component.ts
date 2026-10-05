@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup,
 import { ActivatedRoute } from '@angular/router';
 import { first } from 'rxjs';
 import { EmailService } from '../services/email.service';
-import { DESCRIPTIONS, LD_JSON, SUCCESS_MESSAGE, TITLES } from '../constants/localized-const';
+import { DESCRIPTIONS, ERROR_MESSAGE, LD_JSON, SUCCESS_MESSAGE, TITLES } from '../constants/localized-const';
 import { Meta, Title } from '@angular/platform-browser';
 import { OgMetaService } from '../services/og-meta.service';
 import { StructuredDataService } from '../services/structured-data.service';
@@ -19,8 +19,10 @@ import { StructuredDataService } from '../services/structured-data.service';
 export class ContactComponent implements OnInit {
 
   showSuccess = signal(false);
+  hasError = signal(false);
   isSubmitting = signal(false);
   successMessage = SUCCESS_MESSAGE;
+  errorMessage = ERROR_MESSAGE;
   form: UntypedFormGroup;
   private formStart = Date.now();
   private minSubmitDelayMs = 3000;
@@ -80,16 +82,13 @@ export class ContactComponent implements OnInit {
   onSubmit() {
     // Basic bot checks: honeypot or too-fast submit
     if (this.hp?.value && this.hp.value.trim() !== '') {
-      console.warn('Honeypot triggered — likely bot.');
       return;
     }
     if (Date.now() - this.formStart < this.minSubmitDelayMs) {
-      console.warn('Form submitted too quickly — likely bot.');
       return;
     }
 
     if (this.form.invalid) {
-      console.log("form invalid");
       return;
     }
 
@@ -103,6 +102,7 @@ export class ContactComponent implements OnInit {
       </html>
     `
 
+    this.hasError.set(false);
     this.isSubmitting.set(true);
     this.emailService.sendEmail(this.email?.value, subject, content).pipe(first()).subscribe({
       next: (response) => {
@@ -110,11 +110,10 @@ export class ContactComponent implements OnInit {
         this.isSubmitting.set(false);
         this.form.disable();
       },
-      error: (error) => {
-        console.error('There was an error!', error);
+      error: () => {
+        this.hasError.set(true);
         this.isSubmitting.set(false);
-      },
-      complete: () => console.log('Email sending completed.')
+      }
     });
 
   }

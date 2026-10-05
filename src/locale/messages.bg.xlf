@@ -351,6 +351,14 @@
           <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="errorMessage" datatype="html">
+        <source>Something went wrong and your message wasn't sent. Please try again, or email us directly.</source>
+        <target>Нещо се обърка и вашето съобщение не беше изпратено. Моля, опитайте отново или ни пишете директно.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="privacyPolicyTitle" datatype="html">
         <source>Privacy Policy for Loom21</source>
         <target>Политика за поверителност на Loom21</target>

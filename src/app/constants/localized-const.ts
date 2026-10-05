@@ -54,3 +54,4 @@ export const CUSTOM_FIELDS_MANAGEMENT = $localize`:@@customFieldsManagement:Cust
 
 
 export const SUCCESS_MESSAGE = $localize`:@@successMessage:Thank You! Your message has been received. We'll get back to you soon.`
+export const ERROR_MESSAGE = $localize`:@@errorMessage:Something went wrong and your message wasn't sent. Please try again, or email us directly.`
