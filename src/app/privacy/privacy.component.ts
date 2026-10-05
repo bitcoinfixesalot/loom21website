@@ -4,6 +4,7 @@ import { RouterLink } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { TITLES, DESCRIPTIONS, LD_JSON } from '../constants/localized-const';
 import { OgMetaService } from '../services/og-meta.service';
+import { StructuredDataService } from '../services/structured-data.service';
 
 @Component({
   selector: 'app-privacy',
@@ -18,6 +19,7 @@ export class PrivacyComponent implements OnInit{
  constructor(private titleService: Title,
     private metaService: Meta,
     private ogMetaService: OgMetaService,
+    private structuredDataService: StructuredDataService,
     @Inject(LOCALE_ID) private localeId: string) {
  }
 
@@ -32,9 +34,8 @@ export class PrivacyComponent implements OnInit{
       content: DESCRIPTIONS.privacy_description
     });
     this.ogMetaService.setOgTags({ title: TITLES.privacy, description: DESCRIPTIONS.privacy_description });
-    this.metaService.addTag({
-      name: 'application/ld+json',
-      content: JSON.stringify({
+    this.structuredDataService.setJsonLd([
+      {
         '@context': 'https://schema.org',
         '@type': 'WebPage',
         'name': TITLES.privacy,
@@ -44,18 +45,15 @@ export class PrivacyComponent implements OnInit{
           'name': 'Loom 21',
           'url': 'https://loom21.com'
         }
-      })
-    });
-    this.metaService.addTag({
-      name: 'application/ld+json',
-      content: JSON.stringify({
+      },
+      {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         'itemListElement': [
           { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `https://loom21.com/${this.localeId}/` },
           { '@type': 'ListItem', 'position': 2, 'name': 'Privacy Policy', 'item': `https://loom21.com/${this.localeId}/privacy-policy/` }
         ]
-      })
-    });
+      }
+    ]);
   }
 }

@@ -42,6 +42,7 @@ scripts/
 |---|---|
 | `canonical.service.ts` | Sets canonical URL and hreflang link tags on each `NavigationEnd` |
 | `og-meta.service.ts` | Sets Open Graph and Twitter Card meta tags per page |
+| `structured-data.service.ts` | Injects `<script type="application/ld+json">` elements into `<head>` (remove-then-create, like `canonical.service.ts`) |
 | `anchor.service.ts` | Intercepts anchor clicks for smooth in-page scrolling |
 | `email.service.ts` | Sends contact form emails |
 | `subscription-plan.service.ts` | Fetches pricing plans from the app API |
@@ -73,7 +74,7 @@ All SEO meta is set dynamically in each page component's `ngOnInit`:
 1. **Title** — via `Title` service
 2. **Description** — via `Meta.updateTag({ name: 'description', ... })`
 3. **Open Graph + Twitter Cards** — via `OgMetaService.setOgTags({ title, description })`
-4. **LD-JSON structured data** — via `Meta.addTag({ name: 'application/ld+json', ... })`
+4. **LD-JSON structured data** — via `StructuredDataService.setJsonLd([...])` (injects real `<script type="application/ld+json">` elements into `<head>`; **do not** use `Meta.addTag`/`updateTag` with `name: 'application/ld+json'` — Angular's `Meta` service only ever creates `<meta>` tags, which search engines do not parse as structured data)
 5. **BreadcrumbList** — second LD-JSON block on all inner pages (contact, pricing, docs, privacy, faq, roadmap)
 6. **Canonical URL + hreflang** — via `CanonicalService` (triggered on every `NavigationEnd` in `AppComponent`)
 7. **`html[lang]`** — set in `AppComponent` constructor from `LOCALE_ID` (en → `lang="en"`, bg → `lang="bg"`)

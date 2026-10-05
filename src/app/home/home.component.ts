@@ -26,6 +26,7 @@ import {
   WAREHOUSE_MANAGEMENT
 } from '../constants/localized-const';
 import { OgMetaService } from '../services/og-meta.service';
+import { StructuredDataService } from '../services/structured-data.service';
 
 // TODO: replace with the real Loom21 promo video ID once available (see https://youtube.com/watch?v=<id>)
 const PROMO_VIDEO_ID = 'IlMuVoSU0Po';
@@ -42,7 +43,7 @@ export class HomeComponent implements OnInit {
   isVideoPlaying = false;
   promoVideoUrl: SafeResourceUrl;
 
-  constructor(@Inject(LOCALE_ID) protected localeId: string, private titleService: Title, private metaService: Meta, private ogMetaService: OgMetaService, private sanitizer: DomSanitizer) {
+  constructor(@Inject(LOCALE_ID) protected localeId: string, private titleService: Title, private metaService: Meta, private ogMetaService: OgMetaService, private structuredDataService: StructuredDataService, private sanitizer: DomSanitizer) {
     this.appUrl = 'https://app.loom21.com/';
     if (isDevMode()) {
       this.appUrl = 'https://localhost:44412/'
@@ -65,27 +66,24 @@ export class HomeComponent implements OnInit {
     });
     this.ogMetaService.setOgTags({ title: TITLES.home_title, description: DESCRIPTIONS.home_description });
 
-    this.metaService.addTag({
-      name: "application/ld+json",
-      content: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Loom 21",
-        "description": LD_JSON.home_description,
-        "applicationCategory": "BusinessApplication",
-        "featureList": [INVENTORY_MANAGEMENT, STOCK_CONTROL, PRODUCT_MANAGEMENT, INVOICE_PROCESSING, CUSTOMER_MANAGEMENT, SUPPLIER_MANAGEMENT,
-          VENDOR_MANAGEMENT, ORDER_FULFILLMENT, PAYMENT_PROCESSING, BITCOIN_PAYMENTS, SALES_TRACKING, SERVICE_MANAGEMENT, DELIVERY_MANAGEMENT,
-          USER_ROLES_PERMISSIONS, INVENTORY_ANALYTICS, WAREHOUSE_MANAGEMENT, REAL_TIME_INVENTORY_TRACKING, PRICE_LIST_MANAGEMENT, CUSTOM_FIELDS_MANAGEMENT
-        ],
-        "operatingSystem": "Web, iOS, Android",
-        "url": `https://loom21.com/${this.localeId}`,
-        "publisher": {
-          "@type": "Organization",
-          "name": "Loom 21"
-        },
-        "datePublished": "2025-03-17",
-        "inLanguage": this.localeId === 'bg' ? 'bg-BG' : 'en-US'
-      })
-    });
+    this.structuredDataService.setJsonLd([{
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Loom 21",
+      "description": LD_JSON.home_description,
+      "applicationCategory": "BusinessApplication",
+      "featureList": [INVENTORY_MANAGEMENT, STOCK_CONTROL, PRODUCT_MANAGEMENT, INVOICE_PROCESSING, CUSTOMER_MANAGEMENT, SUPPLIER_MANAGEMENT,
+        VENDOR_MANAGEMENT, ORDER_FULFILLMENT, PAYMENT_PROCESSING, BITCOIN_PAYMENTS, SALES_TRACKING, SERVICE_MANAGEMENT, DELIVERY_MANAGEMENT,
+        USER_ROLES_PERMISSIONS, INVENTORY_ANALYTICS, WAREHOUSE_MANAGEMENT, REAL_TIME_INVENTORY_TRACKING, PRICE_LIST_MANAGEMENT, CUSTOM_FIELDS_MANAGEMENT
+      ],
+      "operatingSystem": "Web, iOS, Android",
+      "url": `https://loom21.com/${this.localeId}`,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Loom 21"
+      },
+      "datePublished": "2025-03-17",
+      "inLanguage": this.localeId === 'bg' ? 'bg-BG' : 'en-US'
+    }]);
   }
 }

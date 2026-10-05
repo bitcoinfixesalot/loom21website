@@ -4,6 +4,7 @@ import { Meta, Title } from '@angular/platform-browser';
 import { DESCRIPTIONS, TITLES } from '../constants/localized-const';
 import { FAQ_CATEGORIES, FAQ_CONSTANTS } from '../constants/faq-const';
 import { OgMetaService } from '../services/og-meta.service';
+import { StructuredDataService } from '../services/structured-data.service';
 
 @Component({
   selector: 'app-faq',
@@ -16,7 +17,7 @@ export class FaqComponent implements OnInit {
   categories = FAQ_CATEGORIES;
   FAQ_CONSTANTS = FAQ_CONSTANTS;
 
-  constructor(private titleService: Title, private metaService: Meta, private ogMetaService: OgMetaService, @Inject(LOCALE_ID) private localeId: string) {
+  constructor(private titleService: Title, private metaService: Meta, private ogMetaService: OgMetaService, private structuredDataService: StructuredDataService, @Inject(LOCALE_ID) private localeId: string) {
   }
 
   ngOnInit(): void {
@@ -28,9 +29,8 @@ export class FaqComponent implements OnInit {
     this.metaService.updateTag({ name: 'description', content: DESCRIPTIONS.faq_description });
     this.ogMetaService.setOgTags({ title: TITLES.faq, description: DESCRIPTIONS.faq_description });
 
-    this.metaService.addTag({
-      name: 'application/ld+json',
-      content: JSON.stringify({
+    this.structuredDataService.setJsonLd([
+      {
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
         'mainEntity': this.categories.flatMap(category => category.items).map(item => ({
@@ -41,19 +41,15 @@ export class FaqComponent implements OnInit {
             'text': item.answer
           }
         }))
-      })
-    });
-
-    this.metaService.addTag({
-      name: 'application/ld+json',
-      content: JSON.stringify({
+      },
+      {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         'itemListElement': [
           { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `https://loom21.com/${this.localeId}/` },
           { '@type': 'ListItem', 'position': 2, 'name': 'FAQ', 'item': `https://loom21.com/${this.localeId}/faq/` }
         ]
-      })
-    });
+      }
+    ]);
   }
 }

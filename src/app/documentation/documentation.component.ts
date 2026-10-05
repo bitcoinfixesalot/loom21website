@@ -3,6 +3,7 @@ import { Meta, Title } from '@angular/platform-browser';
 import { MarkdownComponent } from 'ngx-markdown';
 import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
 import { OgMetaService } from '../services/og-meta.service';
+import { StructuredDataService } from '../services/structured-data.service';
 
 interface NavHeading {
   id: string;
@@ -28,6 +29,7 @@ export class DocumentationComponent implements OnInit {
     private titleService: Title,
     private metaService: Meta,
     private ogMetaService: OgMetaService,
+    private structuredDataService: StructuredDataService,
     private elementRef: ElementRef
   ) {}
 
@@ -40,28 +42,23 @@ export class DocumentationComponent implements OnInit {
     this.metaService.updateTag({ name: 'description', content: DESCRIPTIONS.documentation_description });
     this.ogMetaService.setOgTags({ title: TITLES.documentation, description: DESCRIPTIONS.documentation_description });
 
-    this.metaService.addTag({
-      name: 'application/ld+json',
-      content: JSON.stringify({
+    this.structuredDataService.setJsonLd([
+      {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         'itemListElement': [
           { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `https://loom21.com/${this.localeId}/` },
           { '@type': 'ListItem', 'position': 2, 'name': 'Documentation', 'item': `https://loom21.com/${this.localeId}/docs/` }
         ]
-      })
-    });
-
-    this.metaService.addTag({
-      name: 'application/ld+json',
-      content: JSON.stringify({
+      },
+      {
         '@context': 'https://schema.org',
         '@type': 'WebPage',
         'name': 'Documentation - Loom 21',
         'description': LD_JSON.documentation_description,
         'isPartOf': { '@type': 'WebSite', 'name': 'Loom 21' }
-      })
-    });
+      }
+    ]);
   }
 
   onMarkdownLoad(): void {
