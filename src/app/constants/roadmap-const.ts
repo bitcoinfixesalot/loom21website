@@ -12,7 +12,7 @@ export const ROADMAP_CONSTANTS = {
 
   // Shipped
   shipped1Title: $localize`:Roadmap shipped item 1 title@@roadmapShipped1Title:Bitcoin & Card Payments`,
-  shipped1Desc: $localize`:Roadmap shipped item 1 description@@roadmapShipped1Desc:Accept payments via Stripe, BTCPay Server, Misty Breez, Speed Wallet, LNBits, and Glow Wallet.`,
+  shipped1Desc: $localize`:Roadmap shipped item 1 description@@roadmapShipped1Desc:Accept payments via Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNBits.`,
   shipped2Title: $localize`:Roadmap shipped item 2 title@@roadmapShipped2Title:Flexible Price Lists`,
   shipped2Desc: $localize`:Roadmap shipped item 2 description@@roadmapShipped2Desc:Quantity tiers, percentage discounts, custom formulas, and customer-specific price overrides.`,
   shipped3Title: $localize`:Roadmap shipped item 3 title@@roadmapShipped3Title:Custom Fields`,
