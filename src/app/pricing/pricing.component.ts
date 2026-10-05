@@ -18,6 +18,7 @@ import { StructuredDataService } from '../services/structured-data.service';
 })
 export class PricingComponent implements OnInit {
   loading = signal(true);
+  hasError = signal(false);
   selectedPlan = signal('year');
 
   plans = signal<SubscriptionType[]>([]);
@@ -43,7 +44,11 @@ export class PricingComponent implements OnInit {
     this.ogMetaService.setOgTags({ title: TITLES.pricing, description: DESCRIPTIONS.pricing_description });
     this.structuredDataService.setJsonLd([this.buildBreadcrumbSchema()]);
 
-    this.loading.set(true);
+    this.loadPlans();
+  }
+
+  private loadPlans(): void {
+    this.hasError.set(false);
 
     this.subscriptionPlan.getAvailablePlans().pipe(first()).subscribe({
       next: (types: SubscriptionType[]) => {
@@ -60,11 +65,16 @@ export class PricingComponent implements OnInit {
         // this.setOnboardingPrices();
         this.updateStructuredData();
       },
-      error: (e) => {
-        console.log(e);
+      error: () => {
+        this.hasError.set(true);
         this.loading.set(false);
       }
     });
+  }
+
+  retryLoadPlans(): void {
+    this.loading.set(true);
+    this.loadPlans();
   }
 
   // setOnboardingPrices() {
