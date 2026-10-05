@@ -26,11 +26,19 @@
         </context-group>
         <note priority="1" from="description">Pricing menu</note>
       </trans-unit>
+      <trans-unit id="faqMenu" datatype="html">
+        <source>FAQ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/banner/banner.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">FAQ menu</note>
+      </trans-unit>
       <trans-unit id="contact" datatype="html">
         <source>Contact</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">25,27</context>
+          <context context-type="linenumber">28,30</context>
         </context-group>
         <note priority="1" from="description">contact menu</note>
       </trans-unit>
@@ -38,12 +46,428 @@
         <source>Launch App</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">49,51</context>
+          <context context-type="linenumber">52,54</context>
         </context-group>
         <note priority="1" from="description">Launch app button</note>
       </trans-unit>
+      <trans-unit id="faqPageTitle" datatype="html">
+        <source>Frequently Asked Questions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">FAQ page title</note>
+      </trans-unit>
+      <trans-unit id="faqPageIntro" datatype="html">
+        <source>Everything you need to know about payments, pricing, inventory, and more. Can&apos;t find what you&apos;re looking for? Reach out to us.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">FAQ page intro</note>
+      </trans-unit>
+      <trans-unit id="faqCtaTitle" datatype="html">
+        <source>Still Have Questions?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">FAQ CTA title</note>
+      </trans-unit>
+      <trans-unit id="faqCtaDesc" datatype="html">
+        <source>Can&apos;t find the answer you&apos;re looking for? Our team is happy to help.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">FAQ CTA description</note>
+      </trans-unit>
+      <trans-unit id="faqCategory1Title" datatype="html">
+        <source>Getting Started</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">FAQ category 1 title</note>
+      </trans-unit>
+      <trans-unit id="faqQ1_1" datatype="html">
+        <source>How do I create a Loom21 account?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 1.1</note>
+      </trans-unit>
+      <trans-unit id="faqA1_1" datatype="html">
+        <source>Sign up on the Loom21 website and confirm your email from the confirmation message you receive. Once confirmed, you can sign in and start setting up your organization.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 1.1</note>
+      </trans-unit>
+      <trans-unit id="faqQ1_2" datatype="html">
+        <source>Is there a free plan?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 1.2</note>
+      </trans-unit>
+      <trans-unit id="faqA1_2" datatype="html">
+        <source>Yes. You can create a free account with no credit card required and start right away. Visit our Pricing page if you need a paid plan with additional features.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 1.2</note>
+      </trans-unit>
+      <trans-unit id="faqQ1_3" datatype="html">
+        <source>What should I set up first?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 1.3</note>
+      </trans-unit>
+      <trans-unit id="faqA1_3" datatype="html">
+        <source>We recommend configuring General Settings (language, currency, VAT, and address), connecting at least one payment processor, adding your products and services, and then creating your first sale order.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 1.3</note>
+      </trans-unit>
+      <trans-unit id="faqCategory2Title" datatype="html">
+        <source>Payments &amp; Bitcoin</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">FAQ category 2 title</note>
+      </trans-unit>
+      <trans-unit id="faqQ2_1" datatype="html">
+        <source>What payment methods does Loom21 support?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 2.1</note>
+      </trans-unit>
+      <trans-unit id="faqA2_1" datatype="html">
+        <source>Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNBits — covering both Lightning and on-chain Bitcoin.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 2.1</note>
+      </trans-unit>
+      <trans-unit id="faqQ2_2" datatype="html">
+        <source>Can I accept both Bitcoin Lightning and on-chain payments?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 2.2</note>
+      </trans-unit>
+      <trans-unit id="faqA2_2" datatype="html">
+        <source>Yes. Most of our Bitcoin processors support Lightning and on-chain payments side by side with card payments, so you can offer whichever methods suit your customers.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 2.2</note>
+      </trans-unit>
+      <trans-unit id="faqQ2_3" datatype="html">
+        <source>Do I need my own Bitcoin wallet or node to use Loom21?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 2.3</note>
+      </trans-unit>
+      <trans-unit id="faqA2_3" datatype="html">
+        <source>It depends on the method. BTCPay Server, Speed Wallet, and LNBits connect using an API key or URL you enter in Settings. Lightning Wallet (Glow) works differently — just enter any LNURL-compatible Lightning Address (Glow&apos;s own address works out of the box), then use the Test Connection button to verify it.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 2.3</note>
+      </trans-unit>
+      <trans-unit id="faqQ2_4" datatype="html">
+        <source>How are Bitcoin payments confirmed?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 2.4</note>
+      </trans-unit>
+      <trans-unit id="faqA2_4" datatype="html">
+        <source>For BTCPay Server, Speed Wallet, and LNBits, confirmation is real-time — the order status updates automatically the moment the payment settles. For Lightning Wallet (Glow) and other Lightning Address wallets, real-time confirmation depends on your wallet provider supporting it; use the Test Connection button in Settings to check your specific address.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 2.4</note>
+      </trans-unit>
+      <trans-unit id="faqCategory3Title" datatype="html">
+        <source>Pricing &amp; Price Lists</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">FAQ category 3 title</note>
+      </trans-unit>
+      <trans-unit id="faqQ3_1" datatype="html">
+        <source>How does Loom21&apos;s own pricing work?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 3.1</note>
+      </trans-unit>
+      <trans-unit id="faqA3_1" datatype="html">
+        <source>Loom21 offers flexible subscription plans billed monthly or yearly, with custom plans available for larger teams. Visit our Pricing page for current plans, or contact us for details.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 3.1</note>
+      </trans-unit>
+      <trans-unit id="faqQ3_2" datatype="html">
+        <source>Can I set different prices for different customers?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 3.2</note>
+      </trans-unit>
+      <trans-unit id="faqA3_2" datatype="html">
+        <source>Yes. You can create multiple price lists — such as wholesale, retail, or seasonal — and set customer-specific price overrides that always take priority over any price list.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 3.2</note>
+      </trans-unit>
+      <trans-unit id="faqQ3_3" datatype="html">
+        <source>Can I offer quantity-based discounts?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 3.3</note>
+      </trans-unit>
+      <trans-unit id="faqA3_3" datatype="html">
+        <source>Yes. Each price list supports quantity tiers, percentage discounts, or custom formulas, so prices can automatically drop at higher order volumes.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 3.3</note>
+      </trans-unit>
+      <trans-unit id="faqQ3_4" datatype="html">
+        <source>What price is used if a product isn&apos;t on any price list?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 3.4</note>
+      </trans-unit>
+      <trans-unit id="faqA3_4" datatype="html">
+        <source>Loom21 falls back to the product&apos;s base Sale Price configured on the product itself.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 3.4</note>
+      </trans-unit>
+      <trans-unit id="faqCategory4Title" datatype="html">
+        <source>Products, Inventory &amp; Custom Fields</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <note priority="1" from="description">FAQ category 4 title</note>
+      </trans-unit>
+      <trans-unit id="faqQ4_1" datatype="html">
+        <source>Can I track stock across multiple store locations?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 4.1</note>
+      </trans-unit>
+      <trans-unit id="faqA4_1" datatype="html">
+        <source>Yes. Inventory is tracked per store, and every sale or delivery order is linked to a specific store, so stock levels stay accurate everywhere.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 4.1</note>
+      </trans-unit>
+      <trans-unit id="faqQ4_2" datatype="html">
+        <source>What are Custom Fields and what can I use them for?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 4.2</note>
+      </trans-unit>
+      <trans-unit id="faqA4_2" datatype="html">
+        <source>Custom Fields let you add your own data fields to every product — like a warranty expiry date, a certification flag, or a supplier reference number — beyond the standard name, price, and category fields.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 4.2</note>
+      </trans-unit>
+      <trans-unit id="faqQ4_3" datatype="html">
+        <source>Can I import my existing product or customer list?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 4.3</note>
+      </trans-unit>
+      <trans-unit id="faqA4_3" datatype="html">
+        <source>Yes. Loom21 accepts CSV imports for products, services, customers, and suppliers, with downloadable templates to help you format your data correctly.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 4.3</note>
+      </trans-unit>
+      <trans-unit id="faqQ4_4" datatype="html">
+        <source>Does Loom21 support barcodes and QR codes?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 4.4</note>
+      </trans-unit>
+      <trans-unit id="faqA4_4" datatype="html">
+        <source>Yes. You can enter or scan barcodes for products, and QR codes are generated automatically.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 4.4</note>
+      </trans-unit>
+      <trans-unit id="faqCategory5Title" datatype="html">
+        <source>Orders &amp; Invoicing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <note priority="1" from="description">FAQ category 5 title</note>
+      </trans-unit>
+      <trans-unit id="faqQ5_1" datatype="html">
+        <source>What documents can I generate from a sale order?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 5.1</note>
+      </trans-unit>
+      <trans-unit id="faqA5_1" datatype="html">
+        <source>Quotes, invoices, receipts, and pickup lists — all as downloadable PDFs. Invoices and receipts become available once an order is marked as paid.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 5.1</note>
+      </trans-unit>
+      <trans-unit id="faqQ5_2" datatype="html">
+        <source>Can customers pay without creating a Loom21 account?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 5.2</note>
+      </trans-unit>
+      <trans-unit id="faqA5_2" datatype="html">
+        <source>Yes. Payment links give customers a unique URL to pay for a product, service, or donation with no login required on their side.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 5.2</note>
+      </trans-unit>
+      <trans-unit id="faqQ5_3" datatype="html">
+        <source>Can I reorder from a customer&apos;s past purchases in one click?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 5.3</note>
+      </trans-unit>
+      <trans-unit id="faqA5_3" datatype="html">
+        <source>Yes. Once you select a customer on a new sale order, you can open their Order History and re-add items from any previous order instantly.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 5.3</note>
+      </trans-unit>
+      <trans-unit id="faqCategory6Title" datatype="html">
+        <source>Data, Team &amp; Security</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <note priority="1" from="description">FAQ category 6 title</note>
+      </trans-unit>
+      <trans-unit id="faqQ6_1" datatype="html">
+        <source>Can I export my data?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 6.1</note>
+      </trans-unit>
+      <trans-unit id="faqA6_1" datatype="html">
+        <source>Yes. You can export your products, customers, suppliers, and reports as CSV or JSON at any time — your data is never locked in.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 6.1</note>
+      </trans-unit>
+      <trans-unit id="faqQ6_2" datatype="html">
+        <source>How many team members can I invite?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 6.2</note>
+      </trans-unit>
+      <trans-unit id="faqA6_2" datatype="html">
+        <source>You can invite an unlimited number of users to your organization and assign each one specific roles to control what they can access.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 6.2</note>
+      </trans-unit>
+      <trans-unit id="faqQ6_3" datatype="html">
+        <source>What languages is Loom21 available in?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 6.3</note>
+      </trans-unit>
+      <trans-unit id="faqA6_3" datatype="html">
+        <source>Loom21 is currently available in English and Bulgarian, with more languages planned.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 6.3</note>
+      </trans-unit>
       <trans-unit id="homeKeywords" datatype="html">
-        <source>inventory management, stock control, product management, invoice processing, customer management, supplier management, vendor management, order fulfillment, payment processing, bitcoin payments, sales tracking, service management, delivery management, user roles and permissions, inventory analytics, warehouse management, real-time inventory tracking</source>
+        <source>inventory management, stock control, product management, invoice processing, customer management, supplier management, vendor management, order fulfillment, payment processing, bitcoin payments, sales tracking, service management, delivery management, user roles and permissions, inventory analytics, warehouse management, real-time inventory tracking, price lists, custom fields</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">2</context>
@@ -90,11 +514,27 @@
         </context-group>
         <note priority="1" from="description">Privacy title</note>
       </trans-unit>
+      <trans-unit id="faqTitle" datatype="html">
+        <source>FAQ - Loom 21</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">FAQ title</note>
+      </trans-unit>
+      <trans-unit id="roadmapTitle" datatype="html">
+        <source>Roadmap - Loom 21</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap title</note>
+      </trans-unit>
       <trans-unit id="homeDescription" datatype="html">
         <source>Simplify inventory tracking and payment links with Loom21. Accept Bitcoin or fiat, manage sales and customers. Try free!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">14</context>
+          <context context-type="linenumber">16</context>
         </context-group>
         <note priority="1" from="description">Home description tag</note>
       </trans-unit>
@@ -102,7 +542,7 @@
         <source>App for inventory management, stock control, customer &amp; supplier tools, invoice &amp; Bitcoin payments, order fulfilment, and real-time tracking with analytics</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">15</context>
+          <context context-type="linenumber">17</context>
         </context-group>
         <note priority="1" from="description">Documentation description tag</note>
       </trans-unit>
@@ -110,7 +550,7 @@
         <source>Questions on sales, deliveries, or payments? Contact us for expert support to grow your business!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="linenumber">18</context>
         </context-group>
         <note priority="1" from="description">Contact description tag</note>
       </trans-unit>
@@ -118,7 +558,7 @@
         <source>Explore our subscription plans with flexible pricing options. Choose from monthly or yearly billing, with custom plans available. Contact us for details!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">19</context>
         </context-group>
         <note priority="1" from="description">Pricing description tag</note>
       </trans-unit>
@@ -126,15 +566,31 @@
         <source>Learn about our privacy practices and how we protect your data.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">20</context>
         </context-group>
         <note priority="1" from="description">Privacy description tag</note>
+      </trans-unit>
+      <trans-unit id="faqDescription" datatype="html">
+        <source>Answers to common questions about Loom21 — payments, Bitcoin, pricing, price lists, inventory, custom fields, and more.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">FAQ description tag</note>
+      </trans-unit>
+      <trans-unit id="roadmapDescription" datatype="html">
+        <source>See what&apos;s shipped, in progress, and planned for Loom21 — payments, pricing, inventory, and more.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap description tag</note>
       </trans-unit>
       <trans-unit id="homeDescription_ld_json" datatype="html">
         <source>Manage sales, deliveries, and payments with ease. Track inventory, process invoices, and accept bitcoin in real-time.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">26</context>
         </context-group>
         <note priority="1" from="description">Home description ld_json tag</note>
       </trans-unit>
@@ -142,7 +598,7 @@
         <source>Learn to optimize sales, deliveries, and payments. Guides on inventory, user roles, and real-time tracking.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">23</context>
+          <context context-type="linenumber">27</context>
         </context-group>
         <note priority="1" from="description">Documentation description ld_json tag</note>
       </trans-unit>
@@ -150,7 +606,7 @@
         <source>Questions on sales, deliveries, or payments? Contact us for expert support to grow your business.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">28</context>
         </context-group>
         <note priority="1" from="description">Contact description ld_json tag</note>
       </trans-unit>
@@ -158,7 +614,7 @@
         <source>Subscription plans for Loom21 with various features and pricing options.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="linenumber">29</context>
         </context-group>
         <note priority="1" from="description">Pricing description ld_json tag</note>
       </trans-unit>
@@ -166,134 +622,164 @@
         <source>Learn about our privacy practices and how we protect your data.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">26</context>
+          <context context-type="linenumber">30</context>
         </context-group>
         <note priority="1" from="description">Privacy description ld_json tag</note>
+      </trans-unit>
+      <trans-unit id="faqDescription_ld_json" datatype="html">
+        <source>Answers to common questions about Loom21&apos;s payments, Bitcoin support, pricing, price lists, inventory, and custom fields.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">FAQ description ld_json tag</note>
+      </trans-unit>
+      <trans-unit id="roadmapDescription_ld_json" datatype="html">
+        <source>Loom21&apos;s product roadmap — shipped features, work in progress, and planned improvements.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap description ld_json tag</note>
       </trans-unit>
       <trans-unit id="inventoryManagement" datatype="html">
         <source>Inventory Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">29</context>
+          <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="stockControl" datatype="html">
         <source>Stock Control</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="productManagement" datatype="html">
         <source>Product Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">31</context>
+          <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="invoiceProcessing" datatype="html">
         <source>Invoice Processing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="customerManagement" datatype="html">
         <source>Customer Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="supplierManagement" datatype="html">
         <source>Supplier Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">34</context>
+          <context context-type="linenumber">40</context>
         </context-group>
       </trans-unit>
       <trans-unit id="vendorManagement" datatype="html">
         <source>Vendor Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="orderFulfillment" datatype="html">
         <source>Order Fulfillment</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">36</context>
+          <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="paymentProcessing" datatype="html">
         <source>Payment Processing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="bitcoinPayments" datatype="html">
         <source>Bitcoin Payments</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">38</context>
+          <context context-type="linenumber">44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="salesTracking" datatype="html">
         <source>Sales Tracking</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">45</context>
         </context-group>
       </trans-unit>
       <trans-unit id="serviceManagement" datatype="html">
         <source>Service Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">40</context>
+          <context context-type="linenumber">46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="deliveryManagement" datatype="html">
         <source>Delivery Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="userRolesPermissions" datatype="html">
         <source>User Roles and Permissions</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">42</context>
+          <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inventoryAnalytics" datatype="html">
         <source>Inventory Analytics</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="warehouseManagement" datatype="html">
         <source>Warehouse Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">44</context>
+          <context context-type="linenumber">50</context>
         </context-group>
       </trans-unit>
       <trans-unit id="realTimeInventoryTracking" datatype="html">
         <source>Real-Time Inventory Tracking</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">45</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="priceListManagement" datatype="html">
+        <source>Price List Management</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="customFieldsManagement" datatype="html">
+        <source>Custom Fields Management</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="successMessage" datatype="html">
         <source>Thank You! Your message has been received. We&apos;ll get back to you soon.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">48</context>
+          <context context-type="linenumber">56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="privacyPolicyTitle" datatype="html">
@@ -337,10 +823,10 @@
         <note priority="1" from="description">Section 1 title</note>
       </trans-unit>
       <trans-unit id="section1Content1" datatype="html">
-        <source>We are Loom21 LTD, located at Tvarditsa, Aleko Konstantinov 11 str. For the purposes of GDPR, we are the &quot;Data Controller&quot; responsible for the personal data we collect and process through the Service.</source>
+        <source>We are Loom21 LTD. For the purposes of GDPR, we are the &quot;Data Controller&quot; responsible for the personal data we collect and process through the Service.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">10</context>
+          <context context-type="linenumber">11</context>
         </context-group>
         <note priority="1" from="description">Section 1 content</note>
       </trans-unit>
@@ -348,7 +834,7 @@
         <source>Contact Information:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">11</context>
+          <context context-type="linenumber">12</context>
         </context-group>
         <note priority="1" from="description">Section 1 contact info</note>
       </trans-unit>
@@ -356,23 +842,15 @@
         <source>Submit an inquiry</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">12</context>
-        </context-group>
-        <note priority="1" from="description">Section 1 contact form</note>
-      </trans-unit>
-      <trans-unit id="section1Address" datatype="html">
-        <source>Address: Tvarditsa, Aleko Konstantinov 11 str.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">13</context>
         </context-group>
-        <note priority="1" from="description">Section 1 address</note>
+        <note priority="1" from="description">Section 1 contact form</note>
       </trans-unit>
       <trans-unit id="section2Title" datatype="html">
         <source>2. Information We Collect</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="linenumber">17</context>
         </context-group>
         <note priority="1" from="description">Section 2 title</note>
       </trans-unit>
@@ -380,7 +858,7 @@
         <source>We collect and process the following types of personal data when you use our Service:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">18</context>
         </context-group>
         <note priority="1" from="description">Section 2 intro</note>
       </trans-unit>
@@ -388,7 +866,7 @@
         <source>a. Information You Provide Directly</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">19</context>
         </context-group>
         <note priority="1" from="description">Section 2a title</note>
       </trans-unit>
@@ -396,7 +874,7 @@
         <source>Account Information: When you create an account, we collect your name, email address, username, password, and any other information you provide (e.g., phone number, company details).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">20</context>
         </context-group>
         <note priority="1" from="description">Section 2a item 1</note>
       </trans-unit>
@@ -404,7 +882,7 @@
         <source>Business Data: Information about your products, clients, suppliers, and invoices, which may include personal data such as names, contact details, or financial information (e.g., billing addresses).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">20</context>
+          <context context-type="linenumber">21</context>
         </context-group>
         <note priority="1" from="description">Section 2a item 2</note>
       </trans-unit>
@@ -412,7 +890,7 @@
         <source>Communications: Any information you provide (e.g., name, email, message) when contacting us via our contact form, which we process to respond to your inquiries or requests.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="linenumber">22</context>
         </context-group>
         <note priority="1" from="description">Section 2a item 3</note>
       </trans-unit>
@@ -420,7 +898,7 @@
         <source>b. Information Collected Automatically</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">23</context>
         </context-group>
         <note priority="1" from="description">Section 2b title</note>
       </trans-unit>
@@ -428,7 +906,7 @@
         <source>Usage Data: Information about how you interact with the Service, such as IP address, browser type, device information, pages visited, and timestamps.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">23</context>
+          <context context-type="linenumber">24</context>
         </context-group>
         <note priority="1" from="description">Section 2b item 1</note>
       </trans-unit>
@@ -436,7 +914,7 @@
         <source>c. Information from Third Parties</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">25</context>
         </context-group>
         <note priority="1" from="description">Section 2c title</note>
       </trans-unit>
@@ -444,7 +922,7 @@
         <source>If you integrate third-party services (e.g., payment processors like Stripe), we may receive limited data from these providers, subject to their privacy policies.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="linenumber">26</context>
         </context-group>
         <note priority="1" from="description">Section 2c item 1</note>
       </trans-unit>
@@ -452,7 +930,7 @@
         <source>3. Legal Basis for Processing (GDPR)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">28</context>
+          <context context-type="linenumber">29</context>
         </context-group>
         <note priority="1" from="description">Section 3 title</note>
       </trans-unit>
@@ -460,7 +938,7 @@
         <source>Under GDPR, we process personal data based on the following legal grounds:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">29</context>
+          <context context-type="linenumber">30</context>
         </context-group>
         <note priority="1" from="description">Section 3 intro</note>
       </trans-unit>
@@ -468,7 +946,7 @@
         <source>Consent: Where you have given explicit consent (e.g., for marketing emails).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="linenumber">31</context>
         </context-group>
         <note priority="1" from="description">Section 3 item 1</note>
       </trans-unit>
@@ -476,7 +954,7 @@
         <source>Contract: To fulfill our obligations under the Service agreement (e.g., providing access to your account and managing your inventory data).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">31</context>
+          <context context-type="linenumber">32</context>
         </context-group>
         <note priority="1" from="description">Section 3 item 2</note>
       </trans-unit>
@@ -484,7 +962,7 @@
         <source>Legitimate Interests: For purposes such as improving the Service, ensuring security, or preventing fraud, where our interests do not override your rights.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="linenumber">33</context>
         </context-group>
         <note priority="1" from="description">Section 3 item 3</note>
       </trans-unit>
@@ -492,7 +970,7 @@
         <source>Legal Obligation: To comply with applicable laws, such as tax or reporting requirements.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">34</context>
         </context-group>
         <note priority="1" from="description">Section 3 item 4</note>
       </trans-unit>
@@ -500,7 +978,7 @@
         <source>4. How We Use Your Information</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">36</context>
+          <context context-type="linenumber">37</context>
         </context-group>
         <note priority="1" from="description">Section 4 title</note>
       </trans-unit>
@@ -508,7 +986,7 @@
         <source>We use your personal data for the following purposes:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">38</context>
         </context-group>
         <note priority="1" from="description">Section 4 intro</note>
       </trans-unit>
@@ -516,7 +994,7 @@
         <source>To Provide and Operate the Service:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">38</context>
+          <context context-type="linenumber">39</context>
         </context-group>
         <note priority="1" from="description">Section 4 item 1</note>
       </trans-unit>
@@ -524,7 +1002,7 @@
         <source>Create and manage your account.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">40</context>
         </context-group>
         <note priority="1" from="description">Section 4 item 1a</note>
       </trans-unit>
@@ -532,7 +1010,7 @@
         <source>Process and store your inventory, client, supplier, and invoice data.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">40</context>
+          <context context-type="linenumber">41</context>
         </context-group>
         <note priority="1" from="description">Section 4 item 1b</note>
       </trans-unit>
@@ -540,7 +1018,7 @@
         <source>Facilitate invoicing and related functionalities.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">42</context>
         </context-group>
         <note priority="1" from="description">Section 4 item 1c</note>
       </trans-unit>
@@ -548,7 +1026,7 @@
         <source>To Improve and Personalize the Service:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">42</context>
+          <context context-type="linenumber">43</context>
         </context-group>
         <note priority="1" from="description">Section 4 item 2</note>
       </trans-unit>
@@ -556,7 +1034,7 @@
         <source>Analyze usage patterns to enhance functionality and user experience.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">44</context>
         </context-group>
         <note priority="1" from="description">Section 4 item 2a</note>
       </trans-unit>
@@ -564,7 +1042,7 @@
         <source>Tailor content or features to your preferences (where permitted).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">44</context>
+          <context context-type="linenumber">45</context>
         </context-group>
         <note priority="1" from="description">Section 4 item 2b</note>
       </trans-unit>
@@ -572,7 +1050,7 @@
         <source>To Communicate:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">45</context>
+          <context context-type="linenumber">46</context>
         </context-group>
         <note priority="1" from="description">Section 4 item 3</note>
       </trans-unit>
@@ -580,7 +1058,7 @@
         <source>Send you transactional emails (e.g., account confirmations, password resets).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">47</context>
         </context-group>
         <note priority="1" from="description">Section 4 item 3a</note>
       </trans-unit>
@@ -588,7 +1066,7 @@
         <source>Respond to your inquiries or support requests submitted via our contact form.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="linenumber">48</context>
         </context-group>
         <note priority="1" from="description">Section 4 item 3b</note>
       </trans-unit>
@@ -596,7 +1074,7 @@
         <source>Send marketing communications (with your consent, where required).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">48</context>
+          <context context-type="linenumber">49</context>
         </context-group>
         <note priority="1" from="description">Section 4 item 3c</note>
       </trans-unit>
@@ -604,7 +1082,7 @@
         <source>To Ensure Security:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">49</context>
+          <context context-type="linenumber">50</context>
         </context-group>
         <note priority="1" from="description">Section 4 item 4</note>
       </trans-unit>
@@ -612,7 +1090,7 @@
         <source>Detect and prevent fraud, unauthorized access, or other illegal activities.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">51</context>
         </context-group>
         <note priority="1" from="description">Section 4 item 4a</note>
       </trans-unit>
@@ -620,7 +1098,7 @@
         <source>Maintain the integrity of the Service.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">52</context>
         </context-group>
         <note priority="1" from="description">Section 4 item 4b</note>
       </trans-unit>
@@ -628,7 +1106,7 @@
         <source>To Comply with Legal Obligations:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="linenumber">53</context>
         </context-group>
         <note priority="1" from="description">Section 4 item 5</note>
       </trans-unit>
@@ -636,7 +1114,7 @@
         <source>Meet regulatory requirements, such as tax reporting or data protection laws.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">54</context>
         </context-group>
         <note priority="1" from="description">Section 4 item 5a</note>
       </trans-unit>
@@ -644,7 +1122,7 @@
         <source>5. How We Share Your Information</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">56</context>
+          <context context-type="linenumber">57</context>
         </context-group>
         <note priority="1" from="description">Section 5 title</note>
       </trans-unit>
@@ -652,7 +1130,7 @@
         <source>We do not sell your personal data. We may share your data in the following circumstances:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">57</context>
+          <context context-type="linenumber">58</context>
         </context-group>
         <note priority="1" from="description">Section 5 intro</note>
       </trans-unit>
@@ -660,7 +1138,7 @@
         <source>Service Providers: With trusted third-party providers who assist us in operating the Service, such as hosting providers and payment processors. For example, we use Stripe, Inc. to process payments, and Stripe may collect and process payment-related data (e.g., billing information) in accordance with its Privacy Policy. All service providers are contractually obligated to protect your data and comply with applicable data protection laws, including GDPR.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">58</context>
+          <context context-type="linenumber">59</context>
         </context-group>
         <note priority="1" from="description">Section 5 item 1</note>
       </trans-unit>
@@ -668,7 +1146,7 @@
         <source>Business Transfers: In the event of a merger, acquisition, or sale of assets, your data may be transferred to the new entity, subject to applicable data protection laws.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">59</context>
+          <context context-type="linenumber">60</context>
         </context-group>
         <note priority="1" from="description">Section 5 item 2</note>
       </trans-unit>
@@ -676,7 +1154,7 @@
         <source>Legal Requirements: If required by law, regulation, or legal process (e.g., court orders, subpoenas), we may disclose your data to authorities.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">60</context>
+          <context context-type="linenumber">61</context>
         </context-group>
         <note priority="1" from="description">Section 5 item 3</note>
       </trans-unit>
@@ -684,7 +1162,7 @@
         <source>With Your Consent: Where you explicitly agree to the sharing of your data.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">61</context>
+          <context context-type="linenumber">62</context>
         </context-group>
         <note priority="1" from="description">Section 5 item 4</note>
       </trans-unit>
@@ -692,7 +1170,7 @@
         <source>6. International Data Transfers</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">64</context>
+          <context context-type="linenumber">65</context>
         </context-group>
         <note priority="1" from="description">Section 6 title</note>
       </trans-unit>
@@ -700,7 +1178,7 @@
         <source>Our Service is accessible globally, and your data may be processed or stored in countries outside your region, including the United States (e.g., by Stripe for payment processing) and the European Union. We ensure that any international data transfers comply with GDPR and other applicable laws, using mechanisms such as:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">65</context>
+          <context context-type="linenumber">66</context>
         </context-group>
         <note priority="1" from="description">Section 6 intro</note>
       </trans-unit>
@@ -708,7 +1186,7 @@
         <source>Standard Contractual Clauses (SCCs): For transfers outside the European Economic Area (EEA).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">66</context>
+          <context context-type="linenumber">67</context>
         </context-group>
         <note priority="1" from="description">Section 6 item 1</note>
       </trans-unit>
@@ -716,7 +1194,7 @@
         <source>Adequacy Decisions: Where the recipient country is deemed to have adequate data protection by the European Commission.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">67</context>
+          <context context-type="linenumber">68</context>
         </context-group>
         <note priority="1" from="description">Section 6 item 2</note>
       </trans-unit>
@@ -724,7 +1202,7 @@
         <source>Other Safeguards: As required by local laws (e.g., Binding Corporate Rules for intra-group transfers).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">68</context>
+          <context context-type="linenumber">69</context>
         </context-group>
         <note priority="1" from="description">Section 6 item 3</note>
       </trans-unit>
@@ -732,7 +1210,7 @@
         <source>7. Data Retention</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">71</context>
+          <context context-type="linenumber">72</context>
         </context-group>
         <note priority="1" from="description">Section 7 title</note>
       </trans-unit>
@@ -740,7 +1218,7 @@
         <source>We retain your personal data only for as long as necessary to fulfill the purposes outlined in this Privacy Policy or as required by law. For example:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">72</context>
+          <context context-type="linenumber">73</context>
         </context-group>
         <note priority="1" from="description">Section 7 intro</note>
       </trans-unit>
@@ -748,7 +1226,7 @@
         <source>Account data is retained while your account is active and for 7 years after account deletion to comply with legal obligations (e.g., tax laws).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">73</context>
+          <context context-type="linenumber">74</context>
         </context-group>
         <note priority="1" from="description">Section 7 item 1</note>
       </trans-unit>
@@ -756,7 +1234,7 @@
         <source>Usage data may be retained for 2 years for analytics or security purposes.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">74</context>
+          <context context-type="linenumber">75</context>
         </context-group>
         <note priority="1" from="description">Section 7 item 2</note>
       </trans-unit>
@@ -764,7 +1242,7 @@
         <source>You may request deletion of your data (see Section 8).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">75</context>
+          <context context-type="linenumber">76</context>
         </context-group>
         <note priority="1" from="description">Section 7 item 3</note>
       </trans-unit>
@@ -772,7 +1250,7 @@
         <source>8. Your Data Protection Rights</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">78</context>
+          <context context-type="linenumber">79</context>
         </context-group>
         <note priority="1" from="description">Section 8 title</note>
       </trans-unit>
@@ -780,7 +1258,7 @@
         <source>Depending on your location, you may have the following rights under GDPR and other applicable laws:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">79</context>
+          <context context-type="linenumber">80</context>
         </context-group>
         <note priority="1" from="description">Section 8 intro</note>
       </trans-unit>
@@ -788,7 +1266,7 @@
         <source>Access: Request a copy of the personal data we hold about you.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">80</context>
+          <context context-type="linenumber">81</context>
         </context-group>
         <note priority="1" from="description">Section 8 item 1</note>
       </trans-unit>
@@ -796,7 +1274,7 @@
         <source>Rectification: Correct inaccurate or incomplete data.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">81</context>
+          <context context-type="linenumber">82</context>
         </context-group>
         <note priority="1" from="description">Section 8 item 2</note>
       </trans-unit>
@@ -804,7 +1282,7 @@
         <source>Erasure: Request deletion of your data (subject to legal obligations).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">82</context>
+          <context context-type="linenumber">83</context>
         </context-group>
         <note priority="1" from="description">Section 8 item 3</note>
       </trans-unit>
@@ -812,7 +1290,7 @@
         <source>Restriction: Restrict processing of your data in certain circumstances.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">83</context>
+          <context context-type="linenumber">84</context>
         </context-group>
         <note priority="1" from="description">Section 8 item 4</note>
       </trans-unit>
@@ -820,7 +1298,7 @@
         <source>Portability: Receive your data in a structured, machine-readable format.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">84</context>
+          <context context-type="linenumber">85</context>
         </context-group>
         <note priority="1" from="description">Section 8 item 5</note>
       </trans-unit>
@@ -828,7 +1306,7 @@
         <source>Object: Object to processing based on legitimate interests (e.g., marketing).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">85</context>
+          <context context-type="linenumber">86</context>
         </context-group>
         <note priority="1" from="description">Section 8 item 6</note>
       </trans-unit>
@@ -836,7 +1314,7 @@
         <source>Withdraw Consent: Withdraw consent at any time, where processing is based on consent.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">86</context>
+          <context context-type="linenumber">87</context>
         </context-group>
         <note priority="1" from="description">Section 8 item 7</note>
       </trans-unit>
@@ -844,7 +1322,7 @@
         <source>Lodge a Complaint: Contact a supervisory authority (e.g., in the EU, your local Data Protection Authority) if you believe we have violated your rights.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">87</context>
+          <context context-type="linenumber">88</context>
         </context-group>
         <note priority="1" from="description">Section 8 item 8</note>
       </trans-unit>
@@ -852,7 +1330,7 @@
         <source>To exercise these rights, use our contact form. We will respond within 30 days for GDPR, or as required by local law.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">88</context>
+          <context context-type="linenumber">89</context>
         </context-group>
         <note priority="1" from="description">Section 8 contact</note>
       </trans-unit>
@@ -860,7 +1338,7 @@
         <source>contact form</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">89</context>
+          <context context-type="linenumber">90</context>
         </context-group>
         <note priority="1" from="description">Section 8 contact form</note>
       </trans-unit>
@@ -868,7 +1346,7 @@
         <source>9. Data Security</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">92</context>
+          <context context-type="linenumber">93</context>
         </context-group>
         <note priority="1" from="description">Section 9 title</note>
       </trans-unit>
@@ -876,7 +1354,7 @@
         <source>We implement appropriate technical and organizational measures to protect your data, including:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">93</context>
+          <context context-type="linenumber">94</context>
         </context-group>
         <note priority="1" from="description">Section 9 intro</note>
       </trans-unit>
@@ -884,7 +1362,7 @@
         <source>Encryption of data in transit and at rest.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">94</context>
+          <context context-type="linenumber">95</context>
         </context-group>
         <note priority="1" from="description">Section 9 item 1</note>
       </trans-unit>
@@ -892,7 +1370,7 @@
         <source>Secure authentication mechanisms.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">95</context>
+          <context context-type="linenumber">96</context>
         </context-group>
         <note priority="1" from="description">Section 9 item 2</note>
       </trans-unit>
@@ -900,7 +1378,7 @@
         <source>Regular security assessments and updates.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">96</context>
+          <context context-type="linenumber">97</context>
         </context-group>
         <note priority="1" from="description">Section 9 item 3</note>
       </trans-unit>
@@ -908,7 +1386,7 @@
         <source>However, no system is completely secure, and we cannot guarantee absolute security. Please notify us immediately via our contact form if you suspect unauthorized access to your account.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">97</context>
+          <context context-type="linenumber">98</context>
         </context-group>
         <note priority="1" from="description">Section 9 warning</note>
       </trans-unit>
@@ -916,7 +1394,7 @@
         <source>contact form</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">98</context>
+          <context context-type="linenumber">99</context>
         </context-group>
         <note priority="1" from="description">Section 9 contact form</note>
       </trans-unit>
@@ -924,7 +1402,7 @@
         <source>10. Third-Party Links</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">101</context>
+          <context context-type="linenumber">102</context>
         </context-group>
         <note priority="1" from="description">Section 10 title</note>
       </trans-unit>
@@ -932,7 +1410,7 @@
         <source>Our Service may contain links to third-party websites or services (e.g., payment processors like Stripe). We are not responsible for their privacy practices. Please review their privacy policies before providing personal data.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">102</context>
+          <context context-type="linenumber">103</context>
         </context-group>
         <note priority="1" from="description">Section 10 content</note>
       </trans-unit>
@@ -940,7 +1418,7 @@
         <source>11. Children’s Privacy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">105</context>
+          <context context-type="linenumber">106</context>
         </context-group>
         <note priority="1" from="description">Section 11 title</note>
       </trans-unit>
@@ -948,7 +1426,7 @@
         <source>Our Service is not intended for individuals under 16. We do not knowingly collect personal data from children. If you believe we have collected such data, please use our contact form to request deletion.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">106</context>
+          <context context-type="linenumber">107</context>
         </context-group>
         <note priority="1" from="description">Section 11 content</note>
       </trans-unit>
@@ -956,7 +1434,7 @@
         <source>contact form</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">107</context>
+          <context context-type="linenumber">108</context>
         </context-group>
         <note priority="1" from="description">Section 11 contact form</note>
       </trans-unit>
@@ -964,7 +1442,7 @@
         <source>12. Compliance with Other Laws</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">110</context>
+          <context context-type="linenumber">111</context>
         </context-group>
         <note priority="1" from="description">Section 12 title</note>
       </trans-unit>
@@ -972,7 +1450,7 @@
         <source>In addition to GDPR, we strive to comply with other applicable data protection laws, such as:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">111</context>
+          <context context-type="linenumber">112</context>
         </context-group>
         <note priority="1" from="description">Section 12 intro</note>
       </trans-unit>
@@ -980,7 +1458,7 @@
         <source>CCPA (California, USA): If you are a California resident, you may have rights to access, delete, or opt out of the sale of your data. We do not sell data, but you can exercise other rights by contacting us.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">112</context>
+          <context context-type="linenumber">113</context>
         </context-group>
         <note priority="1" from="description">Section 12 item 1</note>
       </trans-unit>
@@ -988,7 +1466,7 @@
         <source>PIPEDA (Canada): We ensure fair information practices for Canadian users.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">113</context>
+          <context context-type="linenumber">114</context>
         </context-group>
         <note priority="1" from="description">Section 12 item 2</note>
       </trans-unit>
@@ -996,7 +1474,7 @@
         <source>LGPD (Brazil): We comply with Brazil’s data protection requirements.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">114</context>
+          <context context-type="linenumber">115</context>
         </context-group>
         <note priority="1" from="description">Section 12 item 3</note>
       </trans-unit>
@@ -1004,7 +1482,7 @@
         <source>Contact us via our contact form for details on how we comply with your local laws.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">115</context>
+          <context context-type="linenumber">116</context>
         </context-group>
         <note priority="1" from="description">Section 12 contact</note>
       </trans-unit>
@@ -1012,7 +1490,7 @@
         <source>contact form</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">116</context>
+          <context context-type="linenumber">117</context>
         </context-group>
         <note priority="1" from="description">Section 12 contact form</note>
       </trans-unit>
@@ -1020,7 +1498,7 @@
         <source>13. Changes to This Privacy Policy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">119</context>
+          <context context-type="linenumber">120</context>
         </context-group>
         <note priority="1" from="description">Section 13 title</note>
       </trans-unit>
@@ -1028,7 +1506,7 @@
         <source>We may update this Privacy Policy to reflect changes in our practices or legal requirements. We will notify you of significant changes via email or a notice on the Service. The updated policy will be effective as of the &quot;Last Updated&quot; date.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">120</context>
+          <context context-type="linenumber">121</context>
         </context-group>
         <note priority="1" from="description">Section 13 content</note>
       </trans-unit>
@@ -1036,7 +1514,7 @@
         <source>14. Contact Us</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">123</context>
+          <context context-type="linenumber">124</context>
         </context-group>
         <note priority="1" from="description">Section 14 title</note>
       </trans-unit>
@@ -1044,7 +1522,7 @@
         <source>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">124</context>
+          <context context-type="linenumber">125</context>
         </context-group>
         <note priority="1" from="description">Section 14 intro</note>
       </trans-unit>
@@ -1052,7 +1530,7 @@
         <source>Contact Form:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">125</context>
+          <context context-type="linenumber">126</context>
         </context-group>
         <note priority="1" from="description">Section 14 contact</note>
       </trans-unit>
@@ -1060,25 +1538,265 @@
         <source>Submit an inquiry</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">126</context>
-        </context-group>
-        <note priority="1" from="description">Section 14 contact form</note>
-      </trans-unit>
-      <trans-unit id="section14Address" datatype="html">
-        <source>Address: Tvarditsa, Aleko Konstantinov 11 str.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">127</context>
         </context-group>
-        <note priority="1" from="description">Section 14 address</note>
+        <note priority="1" from="description">Section 14 contact form</note>
       </trans-unit>
       <trans-unit id="section14Complaint" datatype="html">
         <source>For GDPR complaints, you may also contact your local Data Protection Authority.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">128</context>
+          <context context-type="linenumber">129</context>
         </context-group>
         <note priority="1" from="description">Section 14 complaint</note>
+      </trans-unit>
+      <trans-unit id="roadmapPageTitle" datatype="html">
+        <source>Loom21 Roadmap</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap page title</note>
+      </trans-unit>
+      <trans-unit id="roadmapPageIntro" datatype="html">
+        <source>A look at what we&apos;ve shipped, what we&apos;re working on now, and what&apos;s coming next.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap page intro</note>
+      </trans-unit>
+      <trans-unit id="roadmapCtaTitle" datatype="html">
+        <source>Have a Feature Request?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap CTA title</note>
+      </trans-unit>
+      <trans-unit id="roadmapCtaDesc" datatype="html">
+        <source>We&apos;d love to hear what would make Loom21 more useful for your business.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap CTA description</note>
+      </trans-unit>
+      <trans-unit id="roadmapShippedTitle" datatype="html">
+        <source>Shipped</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped section title</note>
+      </trans-unit>
+      <trans-unit id="roadmapInProgressTitle" datatype="html">
+        <source>In Progress</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap in progress section title</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlannedTitle" datatype="html">
+        <source>Planned</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned section title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped1Title" datatype="html">
+        <source>Bitcoin &amp; Card Payments</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 1 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped1Desc" datatype="html">
+        <source>Accept payments via Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNBits.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 1 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped2Title" datatype="html">
+        <source>Flexible Price Lists</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 2 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped2Desc" datatype="html">
+        <source>Quantity tiers, percentage discounts, custom formulas, and customer-specific price overrides.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 2 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped3Title" datatype="html">
+        <source>Custom Fields</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 3 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped3Desc" datatype="html">
+        <source>Add your own data fields to any product, beyond the standard name, price, and category.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 3 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped4Title" datatype="html">
+        <source>CSV Import</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 4 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped4Desc" datatype="html">
+        <source>Bulk import products, services, customers, and suppliers from a spreadsheet.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 4 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped5Title" datatype="html">
+        <source>Multi-Store Inventory</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 5 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped5Desc" datatype="html">
+        <source>Track stock levels per store location across sales and delivery orders.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 5 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped6Title" datatype="html">
+        <source>Sales &amp; Deliveries Reports</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 6 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped6Desc" datatype="html">
+        <source>Searchable, filterable reports with CSV and JSON export.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 6 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapInProgress1Title" datatype="html">
+        <source>More Payment Processors</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap in progress item 1 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapInProgress1Desc" datatype="html">
+        <source>Expanding the list of supported Bitcoin and fiat payment processors.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap in progress item 1 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapInProgress2Title" datatype="html">
+        <source>Expanded Reporting &amp; Analytics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap in progress item 2 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapInProgress2Desc" datatype="html">
+        <source>Deeper insight into sales trends and performance across your stores.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap in progress item 2 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapInProgress3Title" datatype="html">
+        <source>Installable, Mobile-Friendly App</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap in progress item 3 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapInProgress3Desc" datatype="html">
+        <source>A smoother, installable experience for managing your business on the go.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap in progress item 3 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlanned1Title" datatype="html">
+        <source>Public API &amp; Webhooks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned item 1 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlanned1Desc" datatype="html">
+        <source>Connect Loom21 to your other tools with a public API and event webhooks.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned item 1 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlanned2Title" datatype="html">
+        <source>More Languages</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned item 2 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlanned2Desc" datatype="html">
+        <source>Expanding beyond English and Bulgarian to support more of our users.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned item 2 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlanned3Title" datatype="html">
+        <source>Native Mobile Apps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned item 3 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlanned3Desc" datatype="html">
+        <source>Dedicated iOS and Android apps for managing your business from anywhere.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned item 3 description</note>
       </trans-unit>
       <trans-unit id="contactUs" datatype="html">
         <source>Contact Us</source>
@@ -1108,7 +1826,7 @@
         <source> Name is required. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">23</context>
+          <context context-type="linenumber">25</context>
         </context-group>
         <note priority="1" from="description">Name requred</note>
       </trans-unit>
@@ -1116,7 +1834,7 @@
         <source>Email Address</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">30,31</context>
+          <context context-type="linenumber">34,35</context>
         </context-group>
         <note priority="1" from="description">Email label</note>
       </trans-unit>
@@ -1124,7 +1842,7 @@
         <source>Enter your email...</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">32,33</context>
+          <context context-type="linenumber">36,37</context>
         </context-group>
         <note priority="1" from="description">Enter your email placeholder</note>
       </trans-unit>
@@ -1132,7 +1850,7 @@
         <source> Valid email is required. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">41</context>
         </context-group>
         <note priority="1" from="description">Email requred</note>
       </trans-unit>
@@ -1140,7 +1858,7 @@
         <source>Business (optional)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">42,43</context>
+          <context context-type="linenumber">50,51</context>
         </context-group>
         <note priority="1" from="description">Business label</note>
       </trans-unit>
@@ -1148,7 +1866,7 @@
         <source>Enter your business...</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">44,46</context>
+          <context context-type="linenumber">52,54</context>
         </context-group>
         <note priority="1" from="description">Enter your business placeholder</note>
       </trans-unit>
@@ -1156,7 +1874,7 @@
         <source>Message</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">49,50</context>
+          <context context-type="linenumber">57,58</context>
         </context-group>
         <note priority="1" from="description">Message label</note>
       </trans-unit>
@@ -1164,7 +1882,7 @@
         <source>Enter your message...</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">52,53</context>
+          <context context-type="linenumber">60,61</context>
         </context-group>
         <note priority="1" from="description">Enter your message placeholder</note>
       </trans-unit>
@@ -1172,7 +1890,7 @@
         <source> Message is required. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">56</context>
+          <context context-type="linenumber">66</context>
         </context-group>
         <note priority="1" from="description">Message requred</note>
       </trans-unit>
@@ -1180,7 +1898,7 @@
         <source> Submit </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">69,70</context>
+          <context context-type="linenumber">86,87</context>
         </context-group>
         <note priority="1" from="description">Submit button</note>
       </trans-unit>
@@ -1188,7 +1906,7 @@
         <source>We&apos;d love to hear from you</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">82,83</context>
+          <context context-type="linenumber">99,100</context>
         </context-group>
         <note priority="1" from="description">Contact detail title</note>
       </trans-unit>
@@ -1196,7 +1914,7 @@
         <source>We typically respond within one business day.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">83,85</context>
+          <context context-type="linenumber">100,102</context>
         </context-group>
         <note priority="1" from="description">Contact detail response</note>
       </trans-unit>
@@ -1204,7 +1922,7 @@
         <source>Community</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">85,86</context>
+          <context context-type="linenumber">102,103</context>
         </context-group>
         <note priority="1" from="description">Contact community</note>
       </trans-unit>
@@ -1212,7 +1930,7 @@
         <source>Join our Telegram</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">90,91</context>
+          <context context-type="linenumber">107,109</context>
         </context-group>
         <note priority="1" from="description">Join telegram</note>
       </trans-unit>
@@ -1220,7 +1938,7 @@
         <source>Follow on X</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">96,97</context>
+          <context context-type="linenumber">113,115</context>
         </context-group>
         <note priority="1" from="description">Follow twitter</note>
       </trans-unit>
@@ -1228,9 +1946,25 @@
         <source>Docs on GitHub</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">102,103</context>
+          <context context-type="linenumber">119,120</context>
         </context-group>
         <note priority="1" from="description">Github docs</note>
+      </trans-unit>
+      <trans-unit id="contactUsButton" datatype="html">
+        <source>Contact Us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/faq/faq.component.html</context>
+          <context context-type="linenumber">39,43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">11,14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/roadmap/roadmap.component.html</context>
+          <context context-type="linenumber">58,62</context>
+        </context-group>
+        <note priority="1" from="description">Contact us button</note>
       </trans-unit>
       <trans-unit id="loom21footer" datatype="html">
         <source>Loom21: Simplify inventory tracking and payment links for Bitcoin or fiat, plus manage sales and customers. Start now!</source>
@@ -1272,11 +2006,27 @@
         </context-group>
         <note priority="1" from="description">Pricing nav</note>
       </trans-unit>
+      <trans-unit id="faqNav" datatype="html">
+        <source>FAQ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+        <note priority="1" from="description">FAQ nav</note>
+      </trans-unit>
+      <trans-unit id="roadmapNav" datatype="html">
+        <source>Roadmap</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap nav</note>
+      </trans-unit>
       <trans-unit id="contactNav" datatype="html">
         <source>Contact</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">14,16</context>
+          <context context-type="linenumber">16,18</context>
         </context-group>
         <note priority="1" from="description">Contact nav</note>
       </trans-unit>
@@ -1284,7 +2034,7 @@
         <source>Legal &amp; Community</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">18,19</context>
+          <context context-type="linenumber">20,21</context>
         </context-group>
         <note priority="1" from="description">Footer legal</note>
       </trans-unit>
@@ -1292,11 +2042,11 @@
         <source>Privacy Policy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">20,21</context>
+          <context context-type="linenumber">22,23</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">49,50</context>
+          <context context-type="linenumber">51,52</context>
         </context-group>
         <note priority="1" from="description">Privacy</note>
       </trans-unit>
@@ -1304,7 +2054,7 @@
         <source>GitHub</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">21,22</context>
+          <context context-type="linenumber">23,24</context>
         </context-group>
         <note priority="1" from="description">Footer github</note>
       </trans-unit>
@@ -1312,7 +2062,7 @@
         <source>Telegram Community</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">22,24</context>
+          <context context-type="linenumber">24,26</context>
         </context-group>
         <note priority="1" from="description">Footer telegram</note>
       </trans-unit>
@@ -1320,7 +2070,7 @@
         <source>Get in touch</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">27,28</context>
+          <context context-type="linenumber">29,30</context>
         </context-group>
         <note priority="1" from="description">Get in touch</note>
       </trans-unit>
@@ -1333,7 +2083,7 @@
         <note priority="1" from="description">Home top title</note>
       </trans-unit>
       <trans-unit id="homeTopSubTitle" datatype="html">
-        <source>Easily create payment links for Bitcoin or fiat and manage products, inventory, sales, deliveries, and customers with Loom21—all in one platform. Try free today!</source>
+        <source>Easily create payment links for Bitcoin or fiat, set flexible pricing, and manage inventory, sales, deliveries, and customers with Loom21—all in one platform. Try free today!</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">8,9</context>
@@ -1346,21 +2096,33 @@
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">10,11</context>
         </context-group>
-        <note priority="1" from="description">Try for free button</note>
-      </trans-unit>
-      <trans-unit id="contactUsButton" datatype="html">
-        <source>Contact Us</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">11,14</context>
+          <context context-type="linenumber">99,102</context>
         </context-group>
-        <note priority="1" from="description">Contact us button</note>
+        <note priority="1" from="description">Try for free button</note>
+      </trans-unit>
+      <trans-unit id="playPromoVideoButton" datatype="html">
+        <source>Play promo video</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+        <note priority="1" from="description">Play promo video button</note>
+      </trans-unit>
+      <trans-unit id="watchDemoLabel" datatype="html">
+        <source>Watch Demo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">19,21</context>
+        </context-group>
+        <note priority="1" from="description">Watch demo label</note>
       </trans-unit>
       <trans-unit id="featuresTitle" datatype="html">
         <source>Features</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">30,31</context>
+          <context context-type="linenumber">39,40</context>
         </context-group>
         <note priority="1" from="description">Features title</note>
       </trans-unit>
@@ -1368,39 +2130,15 @@
         <source>Key benefits and platform features …</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">31,33</context>
+          <context context-type="linenumber">40,42</context>
         </context-group>
         <note priority="1" from="description">Benefits and features</note>
       </trans-unit>
-      <trans-unit id="trackInventory" datatype="html">
-        <source>Track product inventory across multiple stores</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">34,35</context>
-        </context-group>
-        <note priority="1" from="description">Track inventory</note>
-      </trans-unit>
-      <trans-unit id="manageClientsSuppliers" datatype="html">
-        <source>Manage clients and suppliers</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">35,36</context>
-        </context-group>
-        <note priority="1" from="description">Manage clients and suppliers</note>
-      </trans-unit>
-      <trans-unit id="controlData" datatype="html">
-        <source>Control your own data — Import and Export</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">36,37</context>
-        </context-group>
-        <note priority="1" from="description">Control your own data</note>
-      </trans-unit>
       <trans-unit id="sendPaymentLinks" datatype="html">
-        <source>Create and share payment links instantly</source>
+        <source>Create and share payment links and sale orders instantly</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">37,38</context>
+          <context context-type="linenumber">43,44</context>
         </context-group>
         <note priority="1" from="description">Send payment links</note>
       </trans-unit>
@@ -1408,15 +2146,55 @@
         <source>Accept Bitcoin (Lightning &amp; on-chain) and credit/debit card payments</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">38,39</context>
+          <context context-type="linenumber">44,45</context>
         </context-group>
         <note priority="1" from="description">Accept Payments</note>
+      </trans-unit>
+      <trans-unit id="trackInventory" datatype="html">
+        <source>Track product inventory across multiple stores</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+        <note priority="1" from="description">Track inventory</note>
+      </trans-unit>
+      <trans-unit id="flexiblePriceLists" datatype="html">
+        <source>Set up wholesale, retail, or tiered price lists with customer-specific pricing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+        <note priority="1" from="description">Flexible price lists</note>
+      </trans-unit>
+      <trans-unit id="customFieldsFeature" datatype="html">
+        <source>Add custom fields to track exactly what matters for your products</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+        <note priority="1" from="description">Custom fields feature</note>
+      </trans-unit>
+      <trans-unit id="manageClientsSuppliers" datatype="html">
+        <source>Manage clients and suppliers</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+        <note priority="1" from="description">Manage clients and suppliers</note>
+      </trans-unit>
+      <trans-unit id="controlData" datatype="html">
+        <source>Control your own data — Import and Export</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+        <note priority="1" from="description">Control your own data</note>
       </trans-unit>
       <trans-unit id="documentGeneration" datatype="html">
         <source>Generate quotes, invoices, receipts, and pickup lists</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">39,40</context>
+          <context context-type="linenumber">50,51</context>
         </context-group>
         <note priority="1" from="description">Document generation</note>
       </trans-unit>
@@ -1424,7 +2202,7 @@
         <source>View customer order history and reorder with one click</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">40,41</context>
+          <context context-type="linenumber">51,52</context>
         </context-group>
         <note priority="1" from="description">Order history</note>
       </trans-unit>
@@ -1432,7 +2210,7 @@
         <source>Generate barcodes and QR codes for products</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">41,42</context>
+          <context context-type="linenumber">52,53</context>
         </context-group>
         <note priority="1" from="description">Barcode QR</note>
       </trans-unit>
@@ -1440,7 +2218,7 @@
         <source>Get notified when invoices are paid</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">42,43</context>
+          <context context-type="linenumber">53,54</context>
         </context-group>
         <note priority="1" from="description">Get notified</note>
       </trans-unit>
@@ -1448,7 +2226,7 @@
         <source>Available in multiple languages</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">43,45</context>
+          <context context-type="linenumber">54,56</context>
         </context-group>
         <note priority="1" from="description">Multi language</note>
       </trans-unit>
@@ -1456,15 +2234,15 @@
         <source>Payments Made Simple</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">66,67</context>
+          <context context-type="linenumber">77,78</context>
         </context-group>
         <note priority="1" from="description">Payments made simple</note>
       </trans-unit>
       <trans-unit id="sendPaymentLinksAnd" datatype="html">
-        <source>Send payment links for Bitcoin Lightning, on-chain Bitcoin, or fiat card payments — powered by Stripe, BTCPay Server, Misty Breez, Speed Wallet, LNBits, and more. Effortless invoicing for everyone.</source>
+        <source>Send payment links for Bitcoin Lightning, on-chain Bitcoin, or fiat card payments — powered by Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, LNBits, and more. Effortless invoicing for everyone.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">67,69</context>
+          <context context-type="linenumber">78,80</context>
         </context-group>
         <note priority="1" from="description">Send payment links and</note>
       </trans-unit>
@@ -1472,15 +2250,51 @@
         <source>Get Started</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">69,71</context>
+          <context context-type="linenumber">80,82</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">124,126</context>
         </context-group>
         <note priority="1" from="description">Get started</note>
+      </trans-unit>
+      <trans-unit id="priceListsTitle" datatype="html">
+        <source>Pricing That Adapts to Your Business</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">96,97</context>
+        </context-group>
+        <note priority="1" from="description">Price lists title</note>
+      </trans-unit>
+      <trans-unit id="priceListsDesc" datatype="html">
+        <source>Create wholesale, retail, or seasonal price lists with quantity-based tiers, percentage discounts, or custom formulas. Add customer-specific overrides so your best clients always get the right price — resolved automatically at checkout.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">97,99</context>
+        </context-group>
+        <note priority="1" from="description">Price lists description</note>
+      </trans-unit>
+      <trans-unit id="customFieldsTitle" datatype="html">
+        <source>Track What Matters to You</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">121,122</context>
+        </context-group>
+        <note priority="1" from="description">Custom fields title</note>
+      </trans-unit>
+      <trans-unit id="customFieldsDesc" datatype="html">
+        <source>Go beyond name, price, and category. Add your own fields — warranty dates, certifications, supplier references, and more — to every product, and fill them in right from the product page.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">122,124</context>
+        </context-group>
+        <note priority="1" from="description">Custom fields description</note>
       </trans-unit>
       <trans-unit id="supportedProcessors" datatype="html">
         <source>Supported Payment Processors</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">81,83</context>
+          <context context-type="linenumber">136,138</context>
         </context-group>
         <note priority="1" from="description">Supported processors label</note>
       </trans-unit>
@@ -1488,7 +2302,7 @@
         <source>Why Loom21?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">97,98</context>
+          <context context-type="linenumber">152,153</context>
         </context-group>
         <note priority="1" from="description">Why loom21</note>
       </trans-unit>
@@ -1496,7 +2310,7 @@
         <source>Free to Start</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">102,103</context>
+          <context context-type="linenumber">157,158</context>
         </context-group>
         <note priority="1" from="description">Stat free</note>
       </trans-unit>
@@ -1504,7 +2318,7 @@
         <source>No credit card required. Get started immediately with a free account.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">103,106</context>
+          <context context-type="linenumber">158,160</context>
         </context-group>
         <note priority="1" from="description">Stat free desc</note>
       </trans-unit>
@@ -1512,7 +2326,7 @@
         <source>Your Data, Your Control</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">109,110</context>
+          <context context-type="linenumber">164,165</context>
         </context-group>
         <note priority="1" from="description">Stat ownership</note>
       </trans-unit>
@@ -1520,7 +2334,7 @@
         <source>Import and export your data at any time. No lock-in.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">110,113</context>
+          <context context-type="linenumber">165,168</context>
         </context-group>
         <note priority="1" from="description">Stat ownership desc</note>
       </trans-unit>
@@ -1528,7 +2342,7 @@
         <source>Bitcoin Native</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">116,117</context>
+          <context context-type="linenumber">171,172</context>
         </context-group>
         <note priority="1" from="description">Stat bitcoin</note>
       </trans-unit>
@@ -1536,7 +2350,7 @@
         <source>Accept Lightning and on-chain Bitcoin payments alongside traditional card payments.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">117,120</context>
+          <context context-type="linenumber">172,175</context>
         </context-group>
         <note priority="1" from="description">Stat bitcoin desc</note>
       </trans-unit>
@@ -1551,42 +2365,42 @@
         <source>Join Loom 21 back at the </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">11</context>
+          <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="homepage" datatype="html">
         <source>homepage</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="errorMessagePart2" datatype="html">
         <source> or </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">13</context>
+          <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="contactUsPart" datatype="html">
         <source>contact us</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">14</context>
+          <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="errorMessagePart3" datatype="html">
         <source> for help.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">15</context>
+          <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
       <trans-unit id="loading" datatype="html">
         <source>Loading...</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">5,7</context>
+          <context context-type="linenumber">6,8</context>
         </context-group>
         <note priority="1" from="description">Loading label</note>
       </trans-unit>
@@ -1594,7 +2408,7 @@
         <source>Loading subscription plans... </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">7,10</context>
+          <context context-type="linenumber">8,13</context>
         </context-group>
         <note priority="1" from="description">Loading subscription plans label</note>
       </trans-unit>
@@ -1602,7 +2416,7 @@
         <source>MONTHLY</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">14,16</context>
+          <context context-type="linenumber">18,19</context>
         </context-group>
         <note priority="1" from="description">Monthly button</note>
       </trans-unit>
@@ -1610,7 +2424,7 @@
         <source>ANNUAL</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">19,20</context>
+          <context context-type="linenumber">23,24</context>
         </context-group>
         <note priority="1" from="description">Annual button</note>
       </trans-unit>
@@ -1618,7 +2432,7 @@
         <source>BITCOIN</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">28,29</context>
+          <context context-type="linenumber">32,33</context>
         </context-group>
         <note priority="1" from="description">Bitcoin button</note>
       </trans-unit>
@@ -1626,47 +2440,15 @@
         <source> Choose Plan </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">56,57</context>
+          <context context-type="linenumber">63,64</context>
         </context-group>
         <note priority="1" from="description">Choose plan button</note>
-      </trans-unit>
-      <trans-unit id="onboarding_space" datatype="html">
-        <source> Onboarding</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">72,73</context>
-        </context-group>
-        <note priority="1" from="description">Onboarding after plan</note>
-      </trans-unit>
-      <trans-unit id="noOnboardingFee" datatype="html">
-        <source>No onboarding fee</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">76,77</context>
-        </context-group>
-        <note priority="1" from="description">No onboarding fee</note>
-      </trans-unit>
-      <trans-unit id="oneTimeOnboardingFee" datatype="html">
-        <source> One-time onboarding fee: </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">80,81</context>
-        </context-group>
-        <note priority="1" from="description">One-time onboarding fee</note>
-      </trans-unit>
-      <trans-unit id="reqieredOneTimePayment" datatype="html">
-        <source> Required one-time payment in addition to subscription </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">93,95</context>
-        </context-group>
-        <note priority="1" from="description">Required one-time payment</note>
       </trans-unit>
       <trans-unit id="needAcustomPlan" datatype="html">
         <source>Need a Custom Plan? </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">107,109</context>
+          <context context-type="linenumber">125,127</context>
         </context-group>
         <note priority="1" from="description">Need custom plan</note>
       </trans-unit>
@@ -1674,7 +2456,7 @@
         <source> Looking for a tailored solution? Contact us to discuss your specific needs and get a personalized quote. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">110,111</context>
+          <context context-type="linenumber">128,129</context>
         </context-group>
         <note priority="1" from="description">Personalized quote</note>
       </trans-unit>
@@ -1682,7 +2464,7 @@
         <source> Contact Us </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">115,116</context>
+          <context context-type="linenumber">133,134</context>
         </context-group>
         <note priority="1" from="description">Contact us button</note>
       </trans-unit>
@@ -1690,7 +2472,7 @@
         <source>per month (billed annually)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">61</context>
         </context-group>
         <note priority="1" from="description">Billed annually</note>
       </trans-unit>
@@ -1698,7 +2480,7 @@
         <source>per month</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">63</context>
         </context-group>
         <note priority="1" from="description">Per month</note>
       </trans-unit>
@@ -1706,7 +2488,7 @@
         <source>Entrepreneur</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">90</context>
+          <context context-type="linenumber">95</context>
         </context-group>
         <note priority="1" from="description">Entrepreneur</note>
       </trans-unit>
@@ -1714,7 +2496,7 @@
         <source>1 user</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">91</context>
+          <context context-type="linenumber">96</context>
         </context-group>
         <note priority="1" from="description">One User</note>
       </trans-unit>
@@ -1722,7 +2504,7 @@
         <source>8 000 orders/year</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">92</context>
+          <context context-type="linenumber">97</context>
         </context-group>
         <note priority="1" from="description">Basic Orders</note>
       </trans-unit>
@@ -1730,7 +2512,7 @@
         <source>1 store location</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">93</context>
+          <context context-type="linenumber">98</context>
         </context-group>
         <note priority="1" from="description">One Store Location</note>
       </trans-unit>
@@ -1738,7 +2520,7 @@
         <source>Full access</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">94</context>
+          <context context-type="linenumber">99</context>
         </context-group>
         <note priority="1" from="description">One User Access</note>
       </trans-unit>
@@ -1746,7 +2528,7 @@
         <source>No API Access</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">95</context>
+          <context context-type="linenumber">100</context>
         </context-group>
         <note priority="1" from="description">No Access to API</note>
       </trans-unit>
@@ -1754,7 +2536,7 @@
         <source>Small Business</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">97</context>
+          <context context-type="linenumber">102</context>
         </context-group>
         <note priority="1" from="description">Small Business</note>
       </trans-unit>
@@ -1762,7 +2544,7 @@
         <source>5 users</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">98</context>
+          <context context-type="linenumber">103</context>
         </context-group>
         <note priority="1" from="description">Five Users</note>
       </trans-unit>
@@ -1770,7 +2552,7 @@
         <source>60 000 orders/year</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">99</context>
+          <context context-type="linenumber">104</context>
         </context-group>
         <note priority="1" from="description">Small Orders</note>
       </trans-unit>
@@ -1778,7 +2560,7 @@
         <source>5 store locations</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">100</context>
+          <context context-type="linenumber">105</context>
         </context-group>
         <note priority="1" from="description">Five Store Location</note>
       </trans-unit>
@@ -1786,11 +2568,11 @@
         <source>User Access Rights</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">101</context>
+          <context context-type="linenumber">106</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">108</context>
+          <context context-type="linenumber">113</context>
         </context-group>
         <note priority="1" from="description">User Access Rights</note>
       </trans-unit>
@@ -1798,7 +2580,7 @@
         <source>Limited Access to API</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">102</context>
+          <context context-type="linenumber">107</context>
         </context-group>
         <note priority="1" from="description">Limited Access to API</note>
       </trans-unit>
@@ -1806,7 +2588,7 @@
         <source>Mid-size</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">104</context>
+          <context context-type="linenumber">109</context>
         </context-group>
         <note priority="1" from="description">Mid-size</note>
       </trans-unit>
@@ -1814,7 +2596,7 @@
         <source>10 users</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">105</context>
+          <context context-type="linenumber">110</context>
         </context-group>
         <note priority="1" from="description">Ten User</note>
       </trans-unit>
@@ -1822,7 +2604,7 @@
         <source>300 000 orders/year</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">106</context>
+          <context context-type="linenumber">111</context>
         </context-group>
         <note priority="1" from="description">Mid Orders</note>
       </trans-unit>
@@ -1830,7 +2612,7 @@
         <source>50 store location</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">107</context>
+          <context context-type="linenumber">112</context>
         </context-group>
         <note priority="1" from="description">Mid Store Location</note>
       </trans-unit>
@@ -1838,7 +2620,7 @@
         <source> Full API Access</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">109</context>
+          <context context-type="linenumber">114</context>
         </context-group>
         <note priority="1" from="description">Full Access to API</note>
       </trans-unit>

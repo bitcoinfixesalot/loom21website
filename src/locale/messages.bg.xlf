@@ -1697,7 +1697,7 @@
         <note priority="1" from="description">Payments made simple</note>
       </trans-unit>
       <trans-unit id="sendPaymentLinksAnd" datatype="html">
-        <source>Send payment links for Bitcoin Lightning, on-chain Bitcoin, or fiat card payments — powered by Stripe, BTCPay Server, Misty Breez, Speed Wallet, LNBits, Glow Wallet, and more. Effortless invoicing for everyone.</source>
+        <source>Send payment links for Bitcoin Lightning, on-chain Bitcoin, or fiat card payments — powered by Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, LNBits, and more. Effortless invoicing for everyone.</source>
         <target>Изпращайте връзки за плащане с Биткойн, Lightning или карти. Лесно фактуриране за всеки.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -2325,8 +2325,8 @@
         <note priority="1" from="description">FAQ question 2.1</note>
       </trans-unit>
       <trans-unit id="faqA2_1" datatype="html">
-        <source>Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Misty Breez, Speed Wallet, LNBits, and Glow Wallet — covering both Lightning and on-chain Bitcoin.</source>
-        <target>Stripe за кредитни и дебитни карти, и Биткойн чрез BTCPay Server, Misty Breez, Speed Wallet, LNBits и Glow Wallet — покриващи както Lightning, така и он-чейн Биткойн.</target>
+        <source>Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNBits — covering both Lightning and on-chain Bitcoin.</source>
+        <target>Stripe за кредитни и дебитни карти, и Биткойн чрез BTCPay Server, Lightning Wallet (Glow), Speed Wallet и LNBits — покриващи както Lightning, така и он-чейн Биткойн.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2361,8 +2361,8 @@
         <note priority="1" from="description">FAQ question 2.3</note>
       </trans-unit>
       <trans-unit id="faqA2_3" datatype="html">
-        <source>You need an account with one of our supported Bitcoin processors — for example a BTCPay Server instance, or a wallet such as Misty Breez, Speed Wallet, LNBits, or Glow Wallet. Loom21 connects to it using the API key or URL you enter in Settings.</source>
-        <target>Нужен ви е акаунт при един от поддържаните от нас Биткойн процесори — например инстанция на BTCPay Server, или портфейл като Misty Breez, Speed Wallet, LNBits или Glow Wallet. Loom21 се свързва с него чрез API ключа или URL адреса, които въвеждате в Настройки.</target>
+        <source>It depends on the method. BTCPay Server, Speed Wallet, and LNBits connect using an API key or URL you enter in Settings. Lightning Wallet (Glow) works differently — just enter any LNURL-compatible Lightning Address (Glow's own address works out of the box), then use the Test Connection button to verify it.</source>
+        <target>Зависи от метода. BTCPay Server, Speed Wallet и LNBits се свързват чрез API ключ или URL адрес, които въвеждате в Настройки. Lightning Wallet (Glow) работи по различен начин — просто въведете произволен LNURL-съвместим Lightning адрес (собственият адрес на Glow работи директно), след което използвайте бутона Test Connection, за да го проверите.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2379,8 +2379,8 @@
         <note priority="1" from="description">FAQ question 2.4</note>
       </trans-unit>
       <trans-unit id="faqA2_4" datatype="html">
-        <source>In real time. Once a Lightning or on-chain payment is settled, the order status updates automatically without needing to refresh the page.</source>
-        <target>В реално време. След като Lightning или он-чейн плащане бъде уредено, статусът на поръчката се актуализира автоматично, без да е необходимо презареждане на страницата.</target>
+        <source>For BTCPay Server, Speed Wallet, and LNBits, confirmation is real-time — the order status updates automatically the moment the payment settles. For Lightning Wallet (Glow) and other Lightning Address wallets, real-time confirmation depends on your wallet provider supporting it; use the Test Connection button in Settings to check your specific address.</source>
+        <target>За BTCPay Server, Speed Wallet и LNBits потвърждението е в реално време — статусът на поръчката се актуализира автоматично в момента на уреждане на плащането. За Lightning Wallet (Glow) и други портфейли с Lightning адрес, потвърждението в реално време зависи от това дали доставчикът на портфейла го поддържа; използвайте бутона Test Connection в Настройки, за да проверите своя конкретен адрес.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2784,8 +2784,8 @@
         <note priority="1" from="description">Roadmap shipped item 1 title</note>
       </trans-unit>
       <trans-unit id="roadmapShipped1Desc" datatype="html">
-        <source>Accept payments via Stripe, BTCPay Server, Misty Breez, Speed Wallet, LNBits, and Glow Wallet.</source>
-        <target>Приемайте плащания чрез Stripe, BTCPay Server, Misty Breez, Speed Wallet, LNBits и Glow Wallet.</target>
+        <source>Accept payments via Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNBits.</source>
+        <target>Приемайте плащания чрез Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet и LNBits.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">1</context>
