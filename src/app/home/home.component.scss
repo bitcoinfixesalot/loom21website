@@ -58,6 +58,38 @@
         padding: 4px 10px;
     }
 
+    .glow-logo-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        height: 48px;
+        opacity: 0.75;
+        transition: opacity 0.2s ease;
+        flex: 1 1 1;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        img {
+            width: 64px;
+            height: 64px;
+            opacity: 1;
+        }
+
+        .glow-wordmark {
+            font-weight: 800;
+            font-size: 1.4rem;
+            letter-spacing: -0.025em;
+            color: #a8762f;
+            background: linear-gradient(135deg, #a8762f 0%, #d4a574 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
     @media (max-width: 576px) {
         justify-content: center;
         gap: 16px;
@@ -65,6 +97,10 @@
         img {
             width: 90px;
             height: 36px;
+        }
+
+        .glow-logo-item .glow-wordmark {
+            font-size: 1rem;
         }
     }
 }
