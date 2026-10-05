@@ -23,7 +23,7 @@
   <!-- Main content -->
   <div class="docs-main">
 
-    @if (isLoading()) {
+    @if (isLoading() && !hasError()) {
       <div class="docs-skeleton" aria-busy="true" aria-label="Loading documentation">
         <div class="skeleton-line skeleton-title"></div>
         <div class="skeleton-line"></div>
@@ -39,8 +39,18 @@
       </div>
     }
 
-    <div [class.d-none]="isLoading()">
-      <markdown [src]="srcPath" katex emoji (load)="onMarkdownLoad()"></markdown>
+    @if (hasError()) {
+      <div class="docs-error text-center">
+        <p class="text-danger mb-3" i18n="Docs load error@@docsLoadError">We couldn't load the documentation right now. Please try again, or read it directly on GitHub.</p>
+        <div class="d-flex justify-content-center gap-3">
+          <button class="btn btn-outline-primary" (click)="retryLoad()" i18n="Retry button@@retryButton">Try Again</button>
+          <a class="btn btn-primary" href="https://github.com/loom21/loom21doc" target="_blank" rel="noopener" i18n="View on GitHub button@@viewOnGithub">View on GitHub</a>
+        </div>
+      </div>
+    }
+
+    <div [class.d-none]="isLoading() || hasError()">
+      <markdown [src]="srcPath" katex emoji (load)="onMarkdownLoad()" (error)="onMarkdownError()"></markdown>
     </div>
 
   </div>

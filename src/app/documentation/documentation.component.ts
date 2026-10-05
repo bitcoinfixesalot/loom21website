@@ -20,9 +20,11 @@ interface NavHeading {
 })
 export class DocumentationComponent implements OnInit {
   isLoading = signal(true);
+  hasError = signal(false);
   headings = signal<NavHeading[]>([]);
   activeId = signal('');
   srcPath = 'https://raw.githubusercontent.com/loom21/loom21doc/main/README.md';
+  private baseSrcPath = '';
 
   constructor(
     @Inject(LOCALE_ID) protected localeId: string,
@@ -37,6 +39,7 @@ export class DocumentationComponent implements OnInit {
     if (this.localeId !== 'en') {
       this.srcPath = 'https://raw.githubusercontent.com/loom21/loom21doc/main/README-bg.md';
     }
+    this.baseSrcPath = this.srcPath;
 
     this.titleService.setTitle(TITLES.documentation);
     this.metaService.updateTag({ name: 'description', content: DESCRIPTIONS.documentation_description });
@@ -63,7 +66,19 @@ export class DocumentationComponent implements OnInit {
 
   onMarkdownLoad(): void {
     this.isLoading.set(false);
+    this.hasError.set(false);
     this.extractHeadings();
+  }
+
+  onMarkdownError(): void {
+    this.isLoading.set(false);
+    this.hasError.set(true);
+  }
+
+  retryLoad(): void {
+    this.isLoading.set(true);
+    this.hasError.set(false);
+    this.srcPath = `${this.baseSrcPath}?retry=${Date.now()}`;
   }
 
   scrollTo(id: string, event: Event): void {
