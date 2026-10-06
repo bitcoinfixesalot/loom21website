@@ -4,12 +4,13 @@
       <div class="container">
         <div class="row">
           <div class="col-md-7 col-lg-5 align-self-center" data-aos="fade-right" data-aos-duration="1500">
-            <h2 class="title font-bold" i18n="Home top title@@homeH2TopTitle">Inventory & Payment Management Made Simple</h2>
-            <p class="m-t-40 m-b-30" i18n="Home top sub title@@homeTopSubTitle">Easily create payment links for Bitcoin or fiat, set flexible pricing, and manage inventory, sales, deliveries, and customers with Loom21—all in one platform. Try free today!</p>
+            <h1 class="title font-bold" i18n="Home top title@@homeH2TopTitle">Own your money. Own your data. Own your integrations.</h1>
+            <p class="m-t-40 m-b-30" i18n="Home top sub title@@homeTopSubTitle">Accept Bitcoin (Lightning &amp; on-chain) and cards in one dashboard, keep stock in sync with every sale, and export everything, anytime. 0% Loom21 transaction fees. Free to start.</p>
             <div class="m-t-40 d-grid d-sm-flex gap-3 hero-buttons">
-              <a [href]="appUrl" target="_blank" type="button" class="btn waves-effect waves-light btn-success" i18n="Try for free button@@tryForFreeButton">Try loom21 for free</a>
+              <a [href]="appUrl" target="_blank" type="button" class="btn waves-effect waves-light btn-success" i18n="Try for free button@@tryForFreeButton">Start free</a>
               <a routerLink="/contact" type="button" class="btn waves-effect waves-light btn-outline-primary" i18n="Contact us button@@contactUsButton">Contact Us</a>
             </div>
+            <p class="hero-trust small text-muted" i18n="Hero trust line@@heroTrustLine">No credit card · Funds go straight to your wallet · Cancel anytime</p>
           </div>
           <div class="col-md-5 col-lg-6 align-self-center ms-auto mt-4 mt-md-0" data-aos="fade-left" data-aos-duration="1500">
             <div class="video-wrapper hero-video" [class.playing]="isVideoPlaying">
@@ -37,7 +38,7 @@
         <div class="row">
           <div class="col-md-7 col-lg-5 align-self-center" data-aos="fade-right" data-aos-duration="1500">
             <h2 class="title font-bold" i18n="Features title@@featuresTitle">Features</h2>
-            <h4 i18n="Benefits and features@@benefitsAndFeatures">Key benefits and platform features …</h4>
+            <h4 i18n="Benefits and features@@benefitsAndFeatures">Everything you need to sell, get paid and stay in stock</h4>
             <div class="m-t-10 m-b-30">
               <ul class="gfg">
                 <li i18n="Send payment links@@sendPaymentLinks">Create and share payment links and sale orders instantly</li>
@@ -50,7 +51,7 @@
                 <li i18n="Document generation@@documentGeneration">Generate quotes, invoices, receipts, and pickup lists</li>
                 <li i18n="Order history@@orderHistory">View customer order history and reorder with one click</li>
                 <li i18n="Barcode QR@@barcodeQr">Generate barcodes and QR codes for products</li>
-                <li i18n="Get notified@@getInvoiceNotification">Get notified when invoices are paid</li>
+                <li i18n="Get notified@@getInvoiceNotification">See instantly when an invoice is paid</li>
                 <li i18n="Multi language@@multiLanguage">Available in multiple languages</li>
               </ul>
             </div>
@@ -75,7 +76,7 @@
           </div>
           <div class="col-md-5 col-lg-6 align-self-center ms-auto order-1 order-md-2" data-aos="fade-right" data-aos-duration="1500">
             <h2 class="title font-bold" i18n="Payments made simple@@paymentsMadeSimple">Payments Made Simple</h2>
-            <p class="m-t-40 m-b-30" i18n="Send payment links and@@sendPaymentLinksAnd">Send payment links for Bitcoin Lightning, on-chain Bitcoin, or fiat card payments — powered by Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, LNBits, and more. Effortless invoicing for everyone.</p>
+            <p class="m-t-40 m-b-30" i18n="Send payment links and@@sendPaymentLinksAnd">Send payment links for Bitcoin Lightning, on-chain Bitcoin, or fiat card payments — powered by Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, LNbits, and more. Effortless invoicing for everyone — with 0% Loom21 fees.</p>
             <div class="m-t-40">
               <a [href]="appUrl" target="_blank" type="button" class="btn waves-effect waves-light btn-success" i18n="Get started@@getStarted">Get Started</a>
             </div>
@@ -83,6 +84,24 @@
         </div>
       </div>
     </div>
+  </section>
+</div>
+
+<!-- Integrations -->
+<div class="processors-strip">
+  <section class="container text-center">
+    <h2 class="title font-bold" i18n="Integrations title@@integrationsTitle">Works with the tools you already use</h2>
+    <p class="integrations-desc" i18n="Integrations description@@integrationsDesc">Connect Stripe for cards and BTCPay Server, Glow, Speed Wallet or LNbits for Bitcoin. Move data in and out with CSV and JSON.</p>
+    <div class="processor-logos">
+      <img src="assets/images/logos/stripe-logo.png" alt="Stripe" loading="lazy" />
+      <img src="assets/images/logos/btcpay-logo.png" alt="BTCPay Server" loading="lazy" />
+      <img src="assets/images/logos/speedwallet-logo.png" alt="Speed Wallet" loading="lazy" />
+      <img src="assets/images/logos/lnbits-logo.png" alt="LNbits" loading="lazy" />
+      <img src="assets/images/logos/glow-wallet-logo.png" alt="Glow" loading="lazy" />
+    </div>
+    @if (apiStatus !== 'live') {
+      <p class="integrations-api small"><a routerLink="/contact" i18n="Open API coming soon@@integrationsApiSoon">Open API coming soon — tell us what you'd connect.</a></p>
+    }
   </section>
 </div>
 
@@ -96,7 +115,7 @@
             <h2 class="title font-bold" i18n="Price lists title@@priceListsTitle">Pricing That Adapts to Your Business</h2>
             <p class="m-t-40 m-b-30" i18n="Price lists description@@priceListsDesc">Create wholesale, retail, or seasonal price lists with quantity-based tiers, percentage discounts, or custom formulas. Add customer-specific overrides so your best clients always get the right price — resolved automatically at checkout.</p>
             <div class="m-t-40">
-              <a [href]="appUrl" target="_blank" type="button" class="btn waves-effect waves-light btn-success" i18n="Try for free button@@tryForFreeButton">Try loom21 for free</a>
+              <a [href]="appUrl" target="_blank" type="button" class="btn waves-effect waves-light btn-success" i18n="Try for free button@@tryForFreeButton">Start free</a>
             </div>
           </div>
           <div class="col-md-5 col-lg-6 align-self-center ms-auto mt-4 mt-md-0" data-aos="fade-left" data-aos-duration="1500">
@@ -130,23 +149,6 @@
   </section>
 </div>
 
-<!-- Payment Processor Logos Strip -->
-<div class="processors-strip">
-  <div class="container">
-    <p class="processors-label" i18n="Supported processors label@@supportedProcessors">Supported Payment Processors</p>
-    <div class="processor-logos">
-      <img src="assets/images/logos/stripe-logo.png" alt="Stripe" loading="lazy" />
-      <img src="assets/images/logos/btcpay-logo.png" alt="BTCPay Server" loading="lazy" />
-      <img src="assets/images/logos/speedwallet-logo.png" alt="Speed Wallet" loading="lazy" />
-      <img src="assets/images/logos/lnbits-logo.png" alt="LNBits" loading="lazy" />
-      <div class="glow-logo-item" role="img" aria-label="Lightning Wallet (Glow)">
-        <img src="assets/images/logos/glow-wallet-logo.png" alt="" loading="lazy" />
-        <span class="glow-wordmark">Glow</span>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- Why Loom21 -->
 <div style="background-color: #e3f2fd;">
   <section>
@@ -154,25 +156,46 @@
       <div class="container text-center">
         <h2 class="title font-bold m-b-30" i18n="Why loom21@@whyLoom21">Why Loom21?</h2>
         <div class="row justify-content-center">
-          <div class="col-md-4 col-sm-6 m-b-30" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col-lg-4 col-md-6 m-b-30" data-aos="fade-up" data-aos-duration="1000">
             <div class="why-card">
-              <div class="why-icon"><i class="fa fa-bolt"></i></div>
+              <div class="why-icon"><i class="fa fa-bitcoin" aria-hidden="true"></i></div>
+              <h3 i18n="Stat bitcoin@@statBitcoin">Own your money</h3>
+              <p i18n="Stat bitcoin desc@@statBitcoinDesc">Payments go straight to the wallet or Stripe account you connect. Loom21 never holds your funds.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 m-b-30" data-aos="fade-up" data-aos-duration="1100">
+            <div class="why-card">
+              <div class="why-icon"><i class="fa fa-lock" aria-hidden="true"></i></div>
+              <h3 i18n="Stat ownership@@statOwnership">Own your data</h3>
+              <p i18n="Stat ownership desc@@statOwnershipDesc">Import and export products, customers, suppliers and reports as CSV or JSON — any time. No lock-in.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 m-b-30" data-aos="fade-up" data-aos-duration="1200">
+            <div class="why-card">
+              <div class="why-icon"><i class="fa fa-plug" aria-hidden="true"></i></div>
+              <h3 i18n="Stat integrations@@statIntegrations">Own your integrations</h3>
+              <p>{{ integrationsCardText }}</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 m-b-30" data-aos="fade-up" data-aos-duration="1300">
+            <div class="why-card">
+              <div class="why-icon"><i class="fa fa-percent" aria-hidden="true"></i></div>
+              <h3 i18n="Stat zero fee@@statZeroFee">0% transaction fees</h3>
+              <p i18n="Stat zero fee desc@@statZeroFeeDesc">You pay your plan. We take nothing from your sales — on Bitcoin or card.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 m-b-30" data-aos="fade-up" data-aos-duration="1400">
+            <div class="why-card">
+              <div class="why-icon"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+              <h3 i18n="Stat instant@@statInstant">Instant, final payments</h3>
+              <p i18n="Stat instant desc@@statInstantDesc">Lightning payments settle in seconds and can't be charged back.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 m-b-30" data-aos="fade-up" data-aos-duration="1500">
+            <div class="why-card">
+              <div class="why-icon"><i class="fa fa-gift" aria-hidden="true"></i></div>
               <h3 i18n="Stat free@@statFree">Free to Start</h3>
               <p i18n="Stat free desc@@statFreeDesc">No credit card required. Get started immediately with a free account.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 m-b-30" data-aos="fade-up" data-aos-duration="1200">
-            <div class="why-card">
-              <div class="why-icon"><i class="fa fa-lock"></i></div>
-              <h3 i18n="Stat ownership@@statOwnership">Your Data, Your Control</h3>
-              <p i18n="Stat ownership desc@@statOwnershipDesc">Import and export your data at any time. No lock-in.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 m-b-30" data-aos="fade-up" data-aos-duration="1400">
-            <div class="why-card">
-              <div class="why-icon"><i class="fa fa-bitcoin"></i></div>
-              <h3 i18n="Stat bitcoin@@statBitcoin">Bitcoin Native</h3>
-              <p i18n="Stat bitcoin desc@@statBitcoinDesc">Accept Lightning and on-chain Bitcoin payments alongside traditional card payments.</p>
             </div>
           </div>
         </div>

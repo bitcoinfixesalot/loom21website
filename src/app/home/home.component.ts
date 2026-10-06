@@ -25,6 +25,7 @@ import {
   VENDOR_MANAGEMENT,
   WAREHOUSE_MANAGEMENT
 } from '../constants/localized-const';
+import { API_STATUS } from '../constants/product-const';
 import { OgMetaService } from '../services/og-meta.service';
 import { StructuredDataService } from '../services/structured-data.service';
 
@@ -42,6 +43,10 @@ export class HomeComponent implements OnInit {
   appUrl: string;
   isVideoPlaying = false;
   promoVideoUrl: SafeResourceUrl;
+  readonly apiStatus = API_STATUS;
+  readonly integrationsCardText = API_STATUS === 'live'
+    ? $localize`:Stat integrations desc (API live)@@statIntegrationsDescLive:Connect your ERP, CRM or custom apps through the Loom21 API.`
+    : $localize`:Stat integrations desc (API soon)@@statIntegrationsDescSoon:Stripe, BTCPay Server, Glow, Speed Wallet and LNbits today; open API coming soon.`;
 
   constructor(@Inject(LOCALE_ID) protected localeId: string, private titleService: Title, private metaService: Meta, private ogMetaService: OgMetaService, private structuredDataService: StructuredDataService, private sanitizer: DomSanitizer) {
     this.appUrl = 'https://app.loom21.com/';
@@ -69,18 +74,20 @@ export class HomeComponent implements OnInit {
     this.structuredDataService.setJsonLd([{
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "Loom 21",
+      "name": "Loom21",
       "description": LD_JSON.home_description,
       "applicationCategory": "BusinessApplication",
       "featureList": [INVENTORY_MANAGEMENT, STOCK_CONTROL, PRODUCT_MANAGEMENT, INVOICE_PROCESSING, CUSTOMER_MANAGEMENT, SUPPLIER_MANAGEMENT,
         VENDOR_MANAGEMENT, ORDER_FULFILLMENT, PAYMENT_PROCESSING, BITCOIN_PAYMENTS, SALES_TRACKING, SERVICE_MANAGEMENT, DELIVERY_MANAGEMENT,
         USER_ROLES_PERMISSIONS, INVENTORY_ANALYTICS, WAREHOUSE_MANAGEMENT, REAL_TIME_INVENTORY_TRACKING, PRICE_LIST_MANAGEMENT, CUSTOM_FIELDS_MANAGEMENT
       ],
-      "operatingSystem": "Web, iOS, Android",
+      "operatingSystem": "Web",
       "url": `https://loom21.com/${this.localeId}`,
       "publisher": {
         "@type": "Organization",
-        "name": "Loom 21"
+        "name": "Loom21",
+        "url": "https://loom21.com",
+        "sameAs": ["https://x.com/loom21app", "https://github.com/loom21/loom21doc"]
       },
       "datePublished": "2025-03-17",
       "inLanguage": this.localeId === 'bg' ? 'bg-BG' : 'en-US'

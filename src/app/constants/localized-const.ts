@@ -3,7 +3,7 @@ export const TAGS = {
 }
 
 export const TITLES = {
-    home_title: $localize`:Home title@@homeTitle:Loom21: Inventory & Payment Management Software`,
+    home_title: $localize`:Home title@@homeTitle:Loom21 — Bitcoin & Card Payments with Real-Time Inventory`,
     documentation: $localize`:Documentation title@@documentationTitle:Documentation - Loom 21`,
     contact: $localize`:Contact title@@contactTitle:Contact - Loom 21`,
     pricing: $localize`:Pricing title@@PricingTitle:Pricing - Loom 21`,
@@ -13,7 +13,7 @@ export const TITLES = {
 }
 
 export const DESCRIPTIONS = {
-    home_description: $localize`:Home description tag@@homeDescription:Simplify inventory tracking and payment links with Loom21. Accept Bitcoin or fiat, manage sales and customers. Try free!`,
+    home_description: $localize`:Home description tag@@homeDescription:Accept Bitcoin (Lightning & on-chain) and cards with 0% Loom21 fees, keep inventory in sync with every sale, and export your data any time. Free to start.`,
     documentation_description: $localize`:Documentation description tag@@docDescription:App for inventory management, stock control, customer & supplier tools, invoice & Bitcoin payments, order fulfilment, and real-time tracking with analytics`,
     contact_description: $localize`:Contact description tag@@contactDescription:Questions on sales, deliveries, or payments? Contact us for expert support to grow your business!`,
     pricing_description: $localize`:Pricing description tag@@pricingDescription:Explore our subscription plans with flexible pricing options. Choose from monthly or yearly billing, with custom plans available. Contact us for details!`,
@@ -23,7 +23,7 @@ export const DESCRIPTIONS = {
 }
 
 export const LD_JSON = {
-    home_description: $localize`:Home description ld_json tag@@homeDescription_ld_json:Manage sales, deliveries, and payments with ease. Track inventory, process invoices, and accept bitcoin in real-time.`,
+    home_description: $localize`:Home description ld_json tag@@homeDescription_ld_json:Accept Bitcoin and card payments with 0% Loom21 fees, track inventory in real time and export your data any time.`,
     documentation_description: $localize`:Documentation description ld_json tag@@docDescription_ld_json:Learn to optimize sales, deliveries, and payments. Guides on inventory, user roles, and real-time tracking.`,
     contact_description: $localize`:Contact description ld_json tag@@contactDescription_ld_json:Questions on sales, deliveries, or payments? Contact us for expert support to grow your business.`,
     pricing_description: $localize`:Pricing description ld_json tag@@pricingDescription_ld_json:Subscription plans for Loom21 with various features and pricing options.`,

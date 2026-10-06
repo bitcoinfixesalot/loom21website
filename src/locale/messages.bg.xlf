@@ -57,8 +57,8 @@
         <note priority="1" from="description">Home keywords tag</note>
       </trans-unit>
       <trans-unit id="homeTitle" datatype="html">
-        <source>Loom21: Inventory &amp; Payment Management Software</source>
-        <target>Loom21: Софтуер за управление на инвентар и плащания</target>
+        <source>Loom21 — Bitcoin &amp; Card Payments with Real-Time Inventory</source>
+        <target>Loom21 — Биткойн и плащания с карти с инвентар в реално време</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">6</context>
@@ -102,11 +102,11 @@
         <note priority="1" from="description">Privacy title</note>
       </trans-unit>
       <trans-unit id="homeDescription" datatype="html">
-        <source>Simplify inventory tracking and payment links with Loom21. Accept Bitcoin or fiat, manage sales and customers. Try free!</source>
-        <target>Опростете проследяването на инвентара и връзките за плащане с Loom21. Приемайте Биткойн или фиат, управлявайте продажби и клиенти. Изпробвайте безплатно!</target>
+        <source>Accept Bitcoin (Lightning &amp; on-chain) and cards with 0% Loom21 fees, keep inventory in sync with every sale, and export your data any time. Free to start.</source>
+        <target>Приемайте Биткойн (Lightning и он-чейн) и карти с 0% такси от Loom21, поддържайте инвентара синхронизиран с всяка продажба и експортирайте данните си по всяко време. Безплатен старт.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">14</context>
+          <context context-type="linenumber">16</context>
         </context-group>
         <note priority="1" from="description">Home description tag</note>
       </trans-unit>
@@ -147,11 +147,11 @@
         <note priority="1" from="description">Privacy description tag</note>
       </trans-unit>
       <trans-unit id="homeDescription_ld_json" datatype="html">
-        <source>Manage sales, deliveries, and payments with ease. Track inventory, process invoices, and accept bitcoin in real-time.</source>
-        <target>Управлявайте продажби, доставки и плащания с лекота. Следете инвентара, обработвайте фактури и приемайте биткойн в реално време.</target>
+        <source>Accept Bitcoin and card payments with 0% Loom21 fees, track inventory in real time and export your data any time.</source>
+        <target>Приемайте плащания с Биткойн и карти с 0% такси от Loom21, следете инвентара в реално време и експортирайте данните си по всяко време.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">26</context>
         </context-group>
         <note priority="1" from="description">Home description ld_json tag</note>
       </trans-unit>
@@ -1516,8 +1516,8 @@
         <note priority="1" from="description">Get in touch</note>
       </trans-unit>
       <trans-unit id="homeH2TopTitle" datatype="html">
-        <source>Inventory &amp; Payment Management Made Simple</source>
-        <target>Управление на инвентара и плащанията – лесно и удобно</target>
+        <source>Own your money. Own your data. Own your integrations.</source>
+        <target>Вашите пари. Вашите данни. Вашите интеграции.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">7,8</context>
@@ -1525,8 +1525,8 @@
         <note priority="1" from="description">Home top title</note>
       </trans-unit>
       <trans-unit id="homeTopSubTitle" datatype="html">
-        <source>Easily create payment links for Bitcoin or fiat, set flexible pricing, and manage inventory, sales, deliveries, and customers with Loom21—all in one platform. Try free today!</source>
-        <target>Лесно създавайте връзки за плащане с Биткойн или фиат, задавайте гъвкаво ценообразуване и управлявайте инвентар, продажби, доставки и клиенти с Loom21 — всичко в една платформа. Изпробвайте безплатно днес!</target>
+        <source>Accept Bitcoin (Lightning &amp; on-chain) and cards in one dashboard, keep stock in sync with every sale, and export everything, anytime. 0% Loom21 transaction fees. Free to start.</source>
+        <target>Приемайте Биткойн (Lightning и он-чейн) и карти в едно табло, поддържайте наличностите синхронизирани с всяка продажба и експортирайте всичко по всяко време. 0% такса от Loom21. Безплатен старт.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">8,9</context>
@@ -1552,11 +1552,15 @@
         <note priority="1" from="description">Watch demo label</note>
       </trans-unit>
       <trans-unit id="tryForFreeButton" datatype="html">
-        <source>Try loom21 for free</source>
-        <target>Опитайте безплатно</target>
+        <source>Start free</source>
+        <target>Започнете безплатно</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">10,11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">118,121</context>
         </context-group>
         <note priority="1" from="description">Try for free button</note>
       </trans-unit>
@@ -1579,11 +1583,11 @@
         <note priority="1" from="description">Features title</note>
       </trans-unit>
       <trans-unit id="benefitsAndFeatures" datatype="html">
-        <source>Key benefits and platform features …</source>
-        <target>Основни предимства и характеристики на платформата...</target>
+        <source>Everything you need to sell, get paid and stay in stock</source>
+        <target>Всичко необходимо, за да продавате, да получавате плащания и да имате наличност</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">31,33</context>
+          <context context-type="linenumber">41,43</context>
         </context-group>
         <note priority="1" from="description">Benefits and features</note>
       </trans-unit>
@@ -1678,11 +1682,11 @@
         <note priority="1" from="description">Barcode QR</note>
       </trans-unit>
       <trans-unit id="getInvoiceNotification" datatype="html">
-        <source>Get notified when invoices are paid</source>
-        <target>Получавайте известия, когато фактурите са платени</target>
+        <source>See instantly when an invoice is paid</source>
+        <target>Виждайте веднага, когато фактура е платена</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">42,43</context>
+          <context context-type="linenumber">54,55</context>
         </context-group>
         <note priority="1" from="description">Get notified</note>
       </trans-unit>
@@ -1705,11 +1709,11 @@
         <note priority="1" from="description">Payments made simple</note>
       </trans-unit>
       <trans-unit id="sendPaymentLinksAnd" datatype="html">
-        <source>Send payment links for Bitcoin Lightning, on-chain Bitcoin, or fiat card payments — powered by Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, LNBits, and more. Effortless invoicing for everyone.</source>
-        <target>Изпращайте връзки за плащане с Биткойн, Lightning или карти. Лесно фактуриране за всеки.</target>
+        <source>Send payment links for Bitcoin Lightning, on-chain Bitcoin, or fiat card payments — powered by Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, LNbits, and more. Effortless invoicing for everyone — with 0% Loom21 fees.</source>
+        <target>Изпращайте връзки за плащане с Биткойн Lightning, он-чейн Биткойн или карти — чрез Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, LNbits и други — с 0% такса от Loom21.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">67,69</context>
+          <context context-type="linenumber">79,81</context>
         </context-group>
         <note priority="1" from="description">Send payment links and</note>
       </trans-unit>
@@ -1758,15 +1762,6 @@
         </context-group>
         <note priority="1" from="description">Custom fields description</note>
       </trans-unit>
-      <trans-unit id="supportedProcessors" datatype="html">
-        <source>Supported Payment Processors</source>
-        <target>Поддържани платежни процесори</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">81,83</context>
-        </context-group>
-        <note priority="1" from="description">Supported processors label</note>
-      </trans-unit>
       <trans-unit id="whyLoom21" datatype="html">
         <source>Why Loom21?</source>
         <target>Защо Loom21?</target>
@@ -1795,38 +1790,38 @@
         <note priority="1" from="description">Stat free desc</note>
       </trans-unit>
       <trans-unit id="statOwnership" datatype="html">
-        <source>Your Data, Your Control</source>
-        <target>Вашите данни, вашият контрол</target>
+        <source>Own your data</source>
+        <target>Вашите данни</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">109,110</context>
+          <context context-type="linenumber">169,170</context>
         </context-group>
         <note priority="1" from="description">Stat ownership</note>
       </trans-unit>
       <trans-unit id="statOwnershipDesc" datatype="html">
-        <source>Import and export your data at any time. No lock-in.</source>
-        <target>Импортирайте и експортирайте данните си по всяко време. Без обвързване.</target>
+        <source>Import and export products, customers, suppliers and reports as CSV or JSON — any time. No lock-in.</source>
+        <target>Импортирайте и експортирайте продукти, клиенти, доставчици и отчети в CSV или JSON по всяко време. Без обвързване.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">110,113</context>
+          <context context-type="linenumber">170,173</context>
         </context-group>
         <note priority="1" from="description">Stat ownership desc</note>
       </trans-unit>
       <trans-unit id="statBitcoin" datatype="html">
-        <source>Bitcoin Native</source>
-        <target>Биткойн нативно</target>
+        <source>Own your money</source>
+        <target>Вашите пари</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">116,117</context>
+          <context context-type="linenumber">162,163</context>
         </context-group>
         <note priority="1" from="description">Stat bitcoin</note>
       </trans-unit>
       <trans-unit id="statBitcoinDesc" datatype="html">
-        <source>Accept Lightning and on-chain Bitcoin payments alongside traditional card payments.</source>
-        <target>Приемайте плащания с Lightning и Bitcoin on-chain заедно с традиционни плащания с карти.</target>
+        <source>Payments go straight to the wallet or Stripe account you connect. Loom21 never holds your funds.</source>
+        <target>Плащанията отиват директно в портфейла или Stripe акаунта, който свържете. Loom21 никога не държи средствата ви.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">117,120</context>
+          <context context-type="linenumber">163,166</context>
         </context-group>
         <note priority="1" from="description">Stat bitcoin desc</note>
       </trans-unit>
@@ -2997,6 +2992,105 @@
           <context context-type="linenumber">1</context>
         </context-group>
         <note priority="1" from="description">View on GitHub button</note>
+      </trans-unit>
+      <trans-unit id="heroTrustLine" datatype="html">
+        <source>No credit card · Funds go straight to your wallet · Cancel anytime</source>
+        <target>Без кредитна карта · Средствата отиват директно във вашия портфейл · Без обвързване</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+        <note priority="1" from="description">Hero trust line</note>
+      </trans-unit>
+      <trans-unit id="integrationsTitle" datatype="html">
+        <source>Works with the tools you already use</source>
+        <target>Работи с инструментите, които вече използвате</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">93,94</context>
+        </context-group>
+        <note priority="1" from="description">Integrations title</note>
+      </trans-unit>
+      <trans-unit id="integrationsDesc" datatype="html">
+        <source>Connect Stripe for cards and BTCPay Server, Glow, Speed Wallet or LNbits for Bitcoin. Move data in and out with CSV and JSON.</source>
+        <target>Свържете Stripe за карти и BTCPay Server, Glow, Speed Wallet или LNbits за Биткойн. Пренасяйте данни с CSV и JSON.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">94,96</context>
+        </context-group>
+        <note priority="1" from="description">Integrations description</note>
+      </trans-unit>
+      <trans-unit id="integrationsApiSoon" datatype="html">
+        <source>Open API coming soon — tell us what you&apos;d connect.</source>
+        <target>Отворен API скоро — кажете ни какво бихте свързали.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">103,108</context>
+        </context-group>
+        <note priority="1" from="description">Open API coming soon</note>
+      </trans-unit>
+      <trans-unit id="statIntegrations" datatype="html">
+        <source>Own your integrations</source>
+        <target>Вашите интеграции</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">176,177</context>
+        </context-group>
+        <note priority="1" from="description">Stat integrations</note>
+      </trans-unit>
+      <trans-unit id="statIntegrationsDescLive" datatype="html">
+        <source>Connect your ERP, CRM or custom apps through the Loom21 API.</source>
+        <target>Свържете вашата ERP, CRM или собствени приложения чрез API на Loom21.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <note priority="1" from="description">Stat integrations desc (API live)</note>
+      </trans-unit>
+      <trans-unit id="statIntegrationsDescSoon" datatype="html">
+        <source>Stripe, BTCPay Server, Glow, Speed Wallet and LNbits today; open API coming soon.</source>
+        <target>Stripe, BTCPay Server, Glow, Speed Wallet и LNbits още днес; отворен API скоро.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <note priority="1" from="description">Stat integrations desc (API soon)</note>
+      </trans-unit>
+      <trans-unit id="statZeroFee" datatype="html">
+        <source>0% transaction fees</source>
+        <target>0% такси за транзакции</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">183,184</context>
+        </context-group>
+        <note priority="1" from="description">Stat zero fee</note>
+      </trans-unit>
+      <trans-unit id="statZeroFeeDesc" datatype="html">
+        <source>You pay your plan. We take nothing from your sales — on Bitcoin or card.</source>
+        <target>Плащате абонамента си. Не взимаме нищо от продажбите ви — нито при Биткойн, нито при карти.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">184,187</context>
+        </context-group>
+        <note priority="1" from="description">Stat zero fee desc</note>
+      </trans-unit>
+      <trans-unit id="statInstant" datatype="html">
+        <source>Instant, final payments</source>
+        <target>Мигновени и окончателни плащания</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">190,191</context>
+        </context-group>
+        <note priority="1" from="description">Stat instant</note>
+      </trans-unit>
+      <trans-unit id="statInstantDesc" datatype="html">
+        <source>Lightning payments settle in seconds and can&apos;t be charged back.</source>
+        <target>Lightning плащанията се уреждат за секунди и не подлежат на оспорване.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">191,194</context>
+        </context-group>
+        <note priority="1" from="description">Stat instant desc</note>
       </trans-unit>
     </body>
   </file>

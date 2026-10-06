@@ -475,7 +475,7 @@
         <note priority="1" from="description">Home keywords tag</note>
       </trans-unit>
       <trans-unit id="homeTitle" datatype="html">
-        <source>Loom21: Inventory &amp; Payment Management Software</source>
+        <source>Loom21 — Bitcoin &amp; Card Payments with Real-Time Inventory</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">6</context>
@@ -531,7 +531,7 @@
         <note priority="1" from="description">Roadmap title</note>
       </trans-unit>
       <trans-unit id="homeDescription" datatype="html">
-        <source>Simplify inventory tracking and payment links with Loom21. Accept Bitcoin or fiat, manage sales and customers. Try free!</source>
+        <source>Accept Bitcoin (Lightning &amp; on-chain) and cards with 0% Loom21 fees, keep inventory in sync with every sale, and export your data any time. Free to start.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">16</context>
@@ -587,7 +587,7 @@
         <note priority="1" from="description">Roadmap description tag</note>
       </trans-unit>
       <trans-unit id="homeDescription_ld_json" datatype="html">
-        <source>Manage sales, deliveries, and payments with ease. Track inventory, process invoices, and accept bitcoin in real-time.</source>
+        <source>Accept Bitcoin and card payments with 0% Loom21 fees, track inventory in real time and export your data any time.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">26</context>
@@ -1993,7 +1993,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">11,14</context>
+          <context context-type="linenumber">11,13</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/roadmap/roadmap.component.html</context>
@@ -2110,7 +2110,7 @@
         <note priority="1" from="description">Get in touch</note>
       </trans-unit>
       <trans-unit id="homeH2TopTitle" datatype="html">
-        <source>Inventory &amp; Payment Management Made Simple</source>
+        <source>Own your money. Own your data. Own your integrations.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">7,8</context>
@@ -2118,7 +2118,7 @@
         <note priority="1" from="description">Home top title</note>
       </trans-unit>
       <trans-unit id="homeTopSubTitle" datatype="html">
-        <source>Easily create payment links for Bitcoin or fiat, set flexible pricing, and manage inventory, sales, deliveries, and customers with Loom21—all in one platform. Try free today!</source>
+        <source>Accept Bitcoin (Lightning &amp; on-chain) and cards in one dashboard, keep stock in sync with every sale, and export everything, anytime. 0% Loom21 transaction fees. Free to start.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">8,9</context>
@@ -2126,22 +2126,30 @@
         <note priority="1" from="description">Home top sub title</note>
       </trans-unit>
       <trans-unit id="tryForFreeButton" datatype="html">
-        <source>Try loom21 for free</source>
+        <source>Start free</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">10,11</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">99,102</context>
+          <context context-type="linenumber">118,121</context>
         </context-group>
         <note priority="1" from="description">Try for free button</note>
+      </trans-unit>
+      <trans-unit id="heroTrustLine" datatype="html">
+        <source>No credit card · Funds go straight to your wallet · Cancel anytime</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+        <note priority="1" from="description">Hero trust line</note>
       </trans-unit>
       <trans-unit id="playPromoVideoButton" datatype="html">
         <source>Play promo video</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">17,18</context>
+          <context context-type="linenumber">18,19</context>
         </context-group>
         <note priority="1" from="description">Play promo video button</note>
       </trans-unit>
@@ -2149,7 +2157,7 @@
         <source>Watch Demo</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">19,21</context>
+          <context context-type="linenumber">20,22</context>
         </context-group>
         <note priority="1" from="description">Watch demo label</note>
       </trans-unit>
@@ -2157,15 +2165,15 @@
         <source>Features</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">39,40</context>
+          <context context-type="linenumber">40,41</context>
         </context-group>
         <note priority="1" from="description">Features title</note>
       </trans-unit>
       <trans-unit id="benefitsAndFeatures" datatype="html">
-        <source>Key benefits and platform features …</source>
+        <source>Everything you need to sell, get paid and stay in stock</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">40,42</context>
+          <context context-type="linenumber">41,43</context>
         </context-group>
         <note priority="1" from="description">Benefits and features</note>
       </trans-unit>
@@ -2173,7 +2181,7 @@
         <source>Create and share payment links and sale orders instantly</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">43,44</context>
+          <context context-type="linenumber">44,45</context>
         </context-group>
         <note priority="1" from="description">Send payment links</note>
       </trans-unit>
@@ -2181,7 +2189,7 @@
         <source>Accept Bitcoin (Lightning &amp; on-chain) and credit/debit card payments</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">44,45</context>
+          <context context-type="linenumber">45,46</context>
         </context-group>
         <note priority="1" from="description">Accept Payments</note>
       </trans-unit>
@@ -2189,7 +2197,7 @@
         <source>Track product inventory across multiple stores</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">45,46</context>
+          <context context-type="linenumber">46,47</context>
         </context-group>
         <note priority="1" from="description">Track inventory</note>
       </trans-unit>
@@ -2197,7 +2205,7 @@
         <source>Set up wholesale, retail, or tiered price lists with customer-specific pricing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">46,47</context>
+          <context context-type="linenumber">47,48</context>
         </context-group>
         <note priority="1" from="description">Flexible price lists</note>
       </trans-unit>
@@ -2205,7 +2213,7 @@
         <source>Add custom fields to track exactly what matters for your products</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">47,48</context>
+          <context context-type="linenumber">48,49</context>
         </context-group>
         <note priority="1" from="description">Custom fields feature</note>
       </trans-unit>
@@ -2213,7 +2221,7 @@
         <source>Manage clients and suppliers</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">48,49</context>
+          <context context-type="linenumber">49,50</context>
         </context-group>
         <note priority="1" from="description">Manage clients and suppliers</note>
       </trans-unit>
@@ -2221,7 +2229,7 @@
         <source>Control your own data — Import and Export</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">49,50</context>
+          <context context-type="linenumber">50,51</context>
         </context-group>
         <note priority="1" from="description">Control your own data</note>
       </trans-unit>
@@ -2229,7 +2237,7 @@
         <source>Generate quotes, invoices, receipts, and pickup lists</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">50,51</context>
+          <context context-type="linenumber">51,52</context>
         </context-group>
         <note priority="1" from="description">Document generation</note>
       </trans-unit>
@@ -2237,7 +2245,7 @@
         <source>View customer order history and reorder with one click</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">51,52</context>
+          <context context-type="linenumber">52,53</context>
         </context-group>
         <note priority="1" from="description">Order history</note>
       </trans-unit>
@@ -2245,15 +2253,15 @@
         <source>Generate barcodes and QR codes for products</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">52,53</context>
+          <context context-type="linenumber">53,54</context>
         </context-group>
         <note priority="1" from="description">Barcode QR</note>
       </trans-unit>
       <trans-unit id="getInvoiceNotification" datatype="html">
-        <source>Get notified when invoices are paid</source>
+        <source>See instantly when an invoice is paid</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">53,54</context>
+          <context context-type="linenumber">54,55</context>
         </context-group>
         <note priority="1" from="description">Get notified</note>
       </trans-unit>
@@ -2261,7 +2269,7 @@
         <source>Available in multiple languages</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">54,56</context>
+          <context context-type="linenumber">55,57</context>
         </context-group>
         <note priority="1" from="description">Multi language</note>
       </trans-unit>
@@ -2269,15 +2277,15 @@
         <source>Payments Made Simple</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">77,78</context>
+          <context context-type="linenumber">78,79</context>
         </context-group>
         <note priority="1" from="description">Payments made simple</note>
       </trans-unit>
       <trans-unit id="sendPaymentLinksAnd" datatype="html">
-        <source>Send payment links for Bitcoin Lightning, on-chain Bitcoin, or fiat card payments — powered by Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, LNBits, and more. Effortless invoicing for everyone.</source>
+        <source>Send payment links for Bitcoin Lightning, on-chain Bitcoin, or fiat card payments — powered by Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, LNbits, and more. Effortless invoicing for everyone — with 0% Loom21 fees.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">78,80</context>
+          <context context-type="linenumber">79,81</context>
         </context-group>
         <note priority="1" from="description">Send payment links and</note>
       </trans-unit>
@@ -2285,19 +2293,43 @@
         <source>Get Started</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">80,82</context>
+          <context context-type="linenumber">81,83</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">124,126</context>
+          <context context-type="linenumber">143,145</context>
         </context-group>
         <note priority="1" from="description">Get started</note>
+      </trans-unit>
+      <trans-unit id="integrationsTitle" datatype="html">
+        <source>Works with the tools you already use</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">93,94</context>
+        </context-group>
+        <note priority="1" from="description">Integrations title</note>
+      </trans-unit>
+      <trans-unit id="integrationsDesc" datatype="html">
+        <source>Connect Stripe for cards and BTCPay Server, Glow, Speed Wallet or LNbits for Bitcoin. Move data in and out with CSV and JSON.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">94,96</context>
+        </context-group>
+        <note priority="1" from="description">Integrations description</note>
+      </trans-unit>
+      <trans-unit id="integrationsApiSoon" datatype="html">
+        <source>Open API coming soon — tell us what you&apos;d connect.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">103,108</context>
+        </context-group>
+        <note priority="1" from="description">Open API coming soon</note>
       </trans-unit>
       <trans-unit id="priceListsTitle" datatype="html">
         <source>Pricing That Adapts to Your Business</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">96,97</context>
+          <context context-type="linenumber">115,116</context>
         </context-group>
         <note priority="1" from="description">Price lists title</note>
       </trans-unit>
@@ -2305,7 +2337,7 @@
         <source>Create wholesale, retail, or seasonal price lists with quantity-based tiers, percentage discounts, or custom formulas. Add customer-specific overrides so your best clients always get the right price — resolved automatically at checkout.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">97,99</context>
+          <context context-type="linenumber">116,118</context>
         </context-group>
         <note priority="1" from="description">Price lists description</note>
       </trans-unit>
@@ -2313,7 +2345,7 @@
         <source>Track What Matters to You</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">121,122</context>
+          <context context-type="linenumber">140,141</context>
         </context-group>
         <note priority="1" from="description">Custom fields title</note>
       </trans-unit>
@@ -2321,31 +2353,95 @@
         <source>Go beyond name, price, and category. Add your own fields — warranty dates, certifications, supplier references, and more — to every product, and fill them in right from the product page.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">122,124</context>
+          <context context-type="linenumber">141,143</context>
         </context-group>
         <note priority="1" from="description">Custom fields description</note>
-      </trans-unit>
-      <trans-unit id="supportedProcessors" datatype="html">
-        <source>Supported Payment Processors</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">136,138</context>
-        </context-group>
-        <note priority="1" from="description">Supported processors label</note>
       </trans-unit>
       <trans-unit id="whyLoom21" datatype="html">
         <source>Why Loom21?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">155,156</context>
+          <context context-type="linenumber">157,158</context>
         </context-group>
         <note priority="1" from="description">Why loom21</note>
+      </trans-unit>
+      <trans-unit id="statBitcoin" datatype="html">
+        <source>Own your money</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">162,163</context>
+        </context-group>
+        <note priority="1" from="description">Stat bitcoin</note>
+      </trans-unit>
+      <trans-unit id="statBitcoinDesc" datatype="html">
+        <source>Payments go straight to the wallet or Stripe account you connect. Loom21 never holds your funds.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">163,166</context>
+        </context-group>
+        <note priority="1" from="description">Stat bitcoin desc</note>
+      </trans-unit>
+      <trans-unit id="statOwnership" datatype="html">
+        <source>Own your data</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">169,170</context>
+        </context-group>
+        <note priority="1" from="description">Stat ownership</note>
+      </trans-unit>
+      <trans-unit id="statOwnershipDesc" datatype="html">
+        <source>Import and export products, customers, suppliers and reports as CSV or JSON — any time. No lock-in.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">170,173</context>
+        </context-group>
+        <note priority="1" from="description">Stat ownership desc</note>
+      </trans-unit>
+      <trans-unit id="statIntegrations" datatype="html">
+        <source>Own your integrations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">176,177</context>
+        </context-group>
+        <note priority="1" from="description">Stat integrations</note>
+      </trans-unit>
+      <trans-unit id="statZeroFee" datatype="html">
+        <source>0% transaction fees</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">183,184</context>
+        </context-group>
+        <note priority="1" from="description">Stat zero fee</note>
+      </trans-unit>
+      <trans-unit id="statZeroFeeDesc" datatype="html">
+        <source>You pay your plan. We take nothing from your sales — on Bitcoin or card.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">184,187</context>
+        </context-group>
+        <note priority="1" from="description">Stat zero fee desc</note>
+      </trans-unit>
+      <trans-unit id="statInstant" datatype="html">
+        <source>Instant, final payments</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">190,191</context>
+        </context-group>
+        <note priority="1" from="description">Stat instant</note>
+      </trans-unit>
+      <trans-unit id="statInstantDesc" datatype="html">
+        <source>Lightning payments settle in seconds and can&apos;t be charged back.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">191,194</context>
+        </context-group>
+        <note priority="1" from="description">Stat instant desc</note>
       </trans-unit>
       <trans-unit id="statFree" datatype="html">
         <source>Free to Start</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">160,161</context>
+          <context context-type="linenumber">197,198</context>
         </context-group>
         <note priority="1" from="description">Stat free</note>
       </trans-unit>
@@ -2353,41 +2449,25 @@
         <source>No credit card required. Get started immediately with a free account.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">161,163</context>
+          <context context-type="linenumber">198,200</context>
         </context-group>
         <note priority="1" from="description">Stat free desc</note>
       </trans-unit>
-      <trans-unit id="statOwnership" datatype="html">
-        <source>Your Data, Your Control</source>
+      <trans-unit id="statIntegrationsDescLive" datatype="html">
+        <source>Connect your ERP, CRM or custom apps through the Loom21 API.</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">167,168</context>
+          <context context-type="sourcefile">src/app/home/home.component.ts</context>
+          <context context-type="linenumber">48</context>
         </context-group>
-        <note priority="1" from="description">Stat ownership</note>
+        <note priority="1" from="description">Stat integrations desc (API live)</note>
       </trans-unit>
-      <trans-unit id="statOwnershipDesc" datatype="html">
-        <source>Import and export your data at any time. No lock-in.</source>
+      <trans-unit id="statIntegrationsDescSoon" datatype="html">
+        <source>Stripe, BTCPay Server, Glow, Speed Wallet and LNbits today; open API coming soon.</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">168,171</context>
+          <context context-type="sourcefile">src/app/home/home.component.ts</context>
+          <context context-type="linenumber">49</context>
         </context-group>
-        <note priority="1" from="description">Stat ownership desc</note>
-      </trans-unit>
-      <trans-unit id="statBitcoin" datatype="html">
-        <source>Bitcoin Native</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">174,175</context>
-        </context-group>
-        <note priority="1" from="description">Stat bitcoin</note>
-      </trans-unit>
-      <trans-unit id="statBitcoinDesc" datatype="html">
-        <source>Accept Lightning and on-chain Bitcoin payments alongside traditional card payments.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">175,178</context>
-        </context-group>
-        <note priority="1" from="description">Stat bitcoin desc</note>
+        <note priority="1" from="description">Stat integrations desc (API soon)</note>
       </trans-unit>
       <trans-unit id="imAfraidIcantDoThat" datatype="html">
         <source>I&apos;m afraid I can&apos;t do that.</source>
