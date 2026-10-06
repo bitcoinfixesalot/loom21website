@@ -29,8 +29,14 @@ export function app(): express.Express {
   const browserDistFolder = resolve(serverDistFolder, `../../browser/${lang}`);
   const indexHtml = join(serverDistFolder, 'index.server.html');
 
+  // Extra hosts can be supplied at runtime via NG_ALLOWED_HOSTS (comma-separated).
+  const envHosts = (process.env['NG_ALLOWED_HOSTS'] ?? '')
+    .split(',')
+    .map((h) => h.trim())
+    .filter(Boolean);
+
   const commonEngine = new CommonEngine({
-    allowedHosts: ['loom21.com', 'localhost'],
+    allowedHosts: ['loom21.com', 'www.loom21.com', 'localhost', ...envHosts],
   });
 
   server.set('view engine', 'html');
