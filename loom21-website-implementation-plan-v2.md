@@ -57,6 +57,22 @@ Ask all of these in **one message**, then record the answers here. Where a defau
 | O8 | How are "invoice paid" notifications delivered (in-app / email)? | In-app | Phase 3 copy |
 | O9 | Cancellation and refund rule for the pricing FAQ | Cancel anytime; the plan runs to the end of the paid period; no partial refunds | Phase 1 |
 
+### Answers (Svetlan, 2026-10-07)
+
+| ID | Answer |
+|----|--------|
+| O1 | Default: `soon` |
+| O2 | Default: grandfather 12 months, then move to the nearest new tier |
+| O3 | No. Confirmed: the live `available-plans` still returns `basic`/`small`/`mid` |
+| O4 | Default: `info@loom21.com`; address and ЕИК TODO |
+| O5 | Default: TODO placeholder |
+| O6 | Default: keep the current video ID and its TODO |
+| O7 | **Loom21 doesn't collect processor rates; they depend on the provider.** Drop the calculator; replace it with a static "What you pay" block (plan + your processor's own fees; Loom21 fee €0). No assumed rates on the site |
+| O8 | Default: in-app |
+| O9 | Default: cancel anytime; runs to the end of the paid period; no partial refunds |
+| O10 | Contact-form email provider (sent via the app backend `api/Users/ContactUs`): TODO placeholder |
+| Deploy | **Option (b):** Phase 1 + §2.1 + §2.3 live on branch `pricing-v2` until the backend Free plan is live. Phases 3–7 ship first on `website-v2-pricing-positioning` with "Free to start" wording; anything quoting new tier names or prices is held on `pricing-v2` |
+
 ---
 
 ## Guardrails (every phase)
