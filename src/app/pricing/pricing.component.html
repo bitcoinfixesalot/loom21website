@@ -1,150 +1,146 @@
-<div class="container min-hight">
-  <!-- Loading Indicator -->
-  @if (loading()) {
-    <div class="loading-overlay text-center">
-      <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
-        <span class="visually-hidden" i18n="Loading label@@loading">Loading...</span>
-      </div>
-      <p class="mt-2" i18n="Loading subscription plans label@@loadingSubsciptionPlans">Loading subscription plans...
-        </p>
-    </div>
-  }
-  @if (!loading() && hasError()) {
-    <div class="container text-center py-5">
-      <p class="text-danger mb-3" i18n="Pricing load error@@pricingLoadError">We couldn't load pricing plans right now. Please try again, or contact us and we'll help directly.</p>
-      <div class="d-flex justify-content-center gap-3">
-        <button class="btn btn-outline-primary" (click)="retryLoadPlans()" i18n="Retry button@@retryButton">Try Again</button>
-        <button class="btn btn-primary" (click)="onContactUs()" i18n="Contact us button@@contactUsPricing">Contact Us</button>
-      </div>
-    </div>
-  }
-  @if (!loading() && !hasError()) {
-    <div class="btn-group d-flex justify-content-center mb-4" role="group"
-      aria-label="Subscription period selection">
-      <input type="radio" class="btn-check" name="selectedPlan" id="month" value="month"
-        [ngModel]="selectedPlan()" (ngModelChange)="selectedPlan.set($event)"
-        autocomplete="off">
-        <label class="btn btn-outline-primary" for="month" i18n="Monthly button@@monthly">MONTHLY</label>
-        <input type="radio" class="btn-check" name="selectedPlan" id="year" value="year"
-          [ngModel]="selectedPlan()" (ngModelChange)="selectedPlan.set($event)"
-          autocomplete="off">
-          <label class="btn btn-outline-primary" for="year"><ng-container
-          i18n="Annual button@@annual">ANNUAL</ng-container>
-          <span class="badge bg-success position-absolute top-0 start-100 translate-middle-x rounded-pill">
-            -10%
-          </span>
-        </label>
-        <input type="radio" class="btn-check" name="selectedPlan" id="bitcoin" value="bitcoin"
-          [ngModel]="selectedPlan()" (ngModelChange)="selectedPlan.set($event)"
-          autocomplete="off">
-          <label class="btn btn-outline-primary" for="bitcoin"><ng-container
-          i18n="Bitcoin button@@bitcoin">BITCOIN</ng-container>
-          <span class="badge bg-success position-absolute top-0 start-100 translate-middle-x rounded-pill">
-            -15%
-          </span>
-        </label>
-      </div>
-    }
+<div class="container pricing-page">
+  <header class="pricing-header text-center">
+    <h1 class="title font-bold" i18n="Pricing H1@@pricingH1">Simple pricing. 0% of your sales.</h1>
+    <p class="pricing-sub" i18n="Pricing subhead@@pricingSub">Start free forever. Upgrade when you grow. Loom21 never takes a cut of your Bitcoin or card payments.</p>
+  </header>
 
-    @if (!loading() && !hasError()) {
-      <div class="container pricing-box">
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <div class="card-group text-center">
-              @for (plan of activePlans(); track plan) {
-                <div class="card pricing-plan">
-                  <div class="card-body">
-                    <h5 class="card-title">{{plan.productName}}</h5>
-                    <h1 class="display-4">
-                      {{plan.amount / 100}}
-                      <sup>{{plan.currency}}</sup>
-                    </h1>
-                    <h6 class="card-subtitle mb-3 text-primary">{{plan.perMonthText}}</h6>
-                    <ul class="list-group list-group-flush price-listing mb-3">
-                      <li class="list-group-item">{{plan.usersText}}</li>
-                      <li class="list-group-item">{{plan.ordersText}}</li>
-                      <li class="list-group-item">{{plan.storesText}}</li>
-                      <li class="list-group-item">{{plan.userAccessText}}</li>
-                      <li class="list-group-item">{{plan.apiText}}</li>
-                    </ul>
-                    <button class="btn btn-primary" i18n="Choose plan button@@choosePlan"
-                      (click)="onCreateOrder(plan)">
-                                Choose Plan
-                            </button>
-                  </div>
-                </div>
-              }
-            </div>
-          </div>
-        </div>
-      </div>
-    }
+  <!-- Billing toggle -->
+  <div class="btn-group d-flex justify-content-center" role="group" i18n-aria-label="Billing period selection@@pricingBillingToggle" aria-label="Billing period selection">
+    <input type="radio" class="btn-check" name="billing" id="month" value="month"
+      [ngModel]="billing()" (ngModelChange)="billing.set($event)" autocomplete="off">
+    <label class="btn btn-outline-primary" for="month" i18n="Monthly button@@monthly">MONTHLY</label>
 
-    <!-- Updated onboarding fee information with 3 cards -->
-    <!-- @if (!loading()) {
-      <div class="container onboarding-section">
-        <div class="row justify-content-center">
-          @for (plan of activePlans(); track plan; let i = $index) {
-            <div class="col-md-4 col-lg-4">
-              <div class="card h-100">
-                <div class="card-body text-center">
-                  <h5 class="card-title">{{plan.productName}}<ng-container
-                  i18n="Onboarding after plan@@onboarding_space"> Onboarding</ng-container></h5>
-                  <p class="card-text">
-                    @if (plan.type === 'basic') {
-                      <span class="text-success fw-bold" i18n="No onboarding fee@@noOnboardingFee">No
-                                    onboarding fee</span>
-                    } @else {
-                      <ng-container i18n="One-time onboarding fee@@oneTimeOnboardingFee">
-                                    One-time onboarding fee:
-                                </ng-container>
-                      @if (plan.type === 'small') {
-                        <span class="fw-bold">
-                          {{onboardingFeeSmall() / 100}}{{plan.currency}}
-                        </span>
-                      }
-                      @if (plan.type === 'mid') {
-                        <span class="fw-bold">
-                          {{onboardingFeeMid() / 100}}{{plan.currency}}
-                        </span>
-                      }
-                    }
-                  </p>
-                  @if (i > 0) {
-                    <p class="text-muted small"
-                      i18n="Required one-time payment@@reqieredOneTimePayment">
-                            Required one-time payment in addition to subscription
-                        </p>
-                  }
-                </div>
-              </div>
-            </div>
+    <input type="radio" class="btn-check" name="billing" id="year" value="year"
+      [ngModel]="billing()" (ngModelChange)="billing.set($event)" autocomplete="off">
+    <label class="btn btn-outline-primary" for="year">
+      <ng-container i18n="Annual button@@annual">ANNUAL</ng-container>
+      <span class="badge bg-success rounded-pill billing-badge">{{ ANNUAL_BADGE }}</span>
+    </label>
+
+    <input type="radio" class="btn-check" name="billing" id="bitcoin" value="bitcoin"
+      [ngModel]="billing()" (ngModelChange)="billing.set($event)" autocomplete="off">
+    <label class="btn btn-outline-primary" for="bitcoin">
+      <i class="fa fa-bitcoin" aria-hidden="true"></i>
+      <ng-container i18n="Bitcoin button@@bitcoin">BITCOIN</ng-container>
+      <span class="badge bg-success rounded-pill billing-badge">{{ BITCOIN_BADGE }}</span>
+    </label>
+  </div>
+
+  @if (checkoutUnavailable()) {
+    <p class="checkout-notice text-center small" role="status" i18n="Checkout unavailable notice@@pricingCheckoutUnavailable">Checkout is temporarily unavailable — start free and upgrade from Settings.</p>
+  }
+
+  <!-- Plan cards -->
+  <div class="pricing-grid">
+    @for (card of cards(); track card.key) {
+      <div class="card pricing-plan text-center" [class.pricing-plan--highlight]="card.highlight" [id]="'plan-' + card.key">
+        @if (card.highlight) {
+          <span class="pricing-ribbon" i18n="Most popular ribbon@@pricingMostPopular">Most popular</span>
+        }
+        <div class="card-body">
+          <h2 class="card-title">{{ card.name }}</h2>
+          <p class="plan-tagline">{{ card.tagline }}</p>
+          <p class="plan-price">{{ formatPrice(card.price) }}</p>
+          <p class="plan-period text-primary">{{ periodLabel(card.key) }}</p>
+          @if (billing() === 'month' && card.key !== 'free') {
+            <p class="plan-btc-hint small text-muted" i18n="Bitcoin price hint@@pricingBtcHint">or {{ formatPrice(card.btcPrice) }}/mo paying in Bitcoin</p>
           }
-        </div>
-      </div>
-    } -->
-
-    <!-- New Custom Plan Section -->
-    @if (!loading()) {
-      <div class="container custom-plan-section">
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="card text-center bg-light border-primary">
-              <div class="card-body">
-                <h3 class="card-title text-primary" i18n="Need custom plan@@needAcustomPlan">Need a Custom Plan?
-                        </h3>
-                <p class="card-text" i18n="Personalized quote@@personalizedQuote">
-                            Looking for a tailored solution? Contact us to discuss your specific needs and get a
-                            personalized quote.
-                        </p>
-                <button class="btn btn-primary btn-lg" (click)="onContactUs()"
-                  i18n="Contact us button@@contactUsPricing">
-                            Contact Us
-                        </button>
-              </div>
-            </div>
-          </div>
+          <ul class="list-group list-group-flush price-listing">
+            @for (bullet of card.bullets; track bullet) {
+              <li class="list-group-item">{{ bullet }}</li>
+            }
+          </ul>
+          <button type="button" class="btn" [class.btn-primary]="card.key !== 'free'" [class.btn-success]="card.key === 'free'" (click)="onSelect(card)">{{ card.cta }}</button>
         </div>
       </div>
     }
   </div>
+
+  <!-- Custom plan -->
+  <div class="custom-plan-section">
+    <div class="card text-center bg-light border-primary">
+      <div class="card-body">
+        <h2 class="card-title text-primary" i18n="Need custom plan@@needAcustomPlan">Need a Custom Plan?</h2>
+        <p class="card-text" i18n="Personalized quote@@personalizedQuote">Need more stores, orders or an SLA? Custom plans with unlimited users and dedicated support.</p>
+        <a routerLink="/contact" class="btn btn-primary btn-lg" i18n="Contact us button@@contactUsPricing">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comparison table -->
+  <section class="compare-section">
+    <h2 class="section-title text-center" i18n="Compare plans title@@pricingCompareTitle">Compare plans</h2>
+    <div class="table-responsive">
+      <table class="table compare-table">
+        <thead>
+          <tr>
+            <th scope="col"><span class="visually-hidden" i18n="Compare feature column@@cmpFeature">Feature</span></th>
+            @for (tier of TIERS; track tier.key) {
+              <th scope="col" [class.is-highlight]="tier.highlight">{{ tier.name }}</th>
+            }
+          </tr>
+        </thead>
+        <tbody>
+          @for (row of COMPARE_ROWS; track row.label) {
+            <tr>
+              <th scope="row">{{ row.label }}</th>
+              @for (value of row.values; track $index) {
+                <td>
+                  @if (value === true) {
+                    <i class="fa fa-check text-success" aria-hidden="true"></i><span class="visually-hidden" i18n="Compare yes@@cmpYes">Yes</span>
+                  } @else if (value === false) {
+                    <span aria-hidden="true">—</span><span class="visually-hidden" i18n="Compare no@@cmpNo">No</span>
+                  } @else {
+                    {{ compareValue(value) }}
+                  }
+                </td>
+              }
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- What you really pay (no assumed processor rates — they depend on the provider) -->
+  <section class="pay-section">
+    <h2 class="section-title text-center" i18n="What you pay title@@pricingWhatYouPayTitle">What you really pay</h2>
+    <div class="pay-grid">
+      <div class="pay-item">
+        <h3 i18n="What you pay plan@@pricingPayPlanTitle">Your Loom21 plan</h3>
+        <p i18n="What you pay plan desc@@pricingPayPlanDesc">A fixed monthly or annual price — the same no matter how much you sell.</p>
+      </div>
+      <div class="pay-item">
+        <h3 i18n="What you pay processor@@pricingPayProcessorTitle">Your payment processor's fees</h3>
+        <p i18n="What you pay processor desc@@pricingPayProcessorDesc">Set by the provider you connect — Stripe for cards, or your Bitcoin wallet or server — and paid to them, not to us.</p>
+      </div>
+      <div class="pay-item pay-item--zero">
+        <h3 i18n="What you pay loom21 fee@@pricingPayFeeTitle">Loom21 fee on your sales</h3>
+        <p class="pay-zero">{{ formatPrice(0) }}</p>
+      </div>
+    </div>
+    <p class="pay-disclaimer small text-muted text-center" i18n="What you pay disclaimer@@pricingPayDisclaimer">Loom21 doesn't set or collect processor fees. Check your provider's pricing for card and Lightning rates.</p>
+  </section>
+
+  <!-- Pricing FAQ -->
+  <section class="pricing-faq">
+    <h2 class="section-title text-center" i18n="Pricing FAQ title@@pricingFaqTitle">Pricing questions</h2>
+    <div class="accordion" id="pricing-faq">
+      @for (item of PRICING_FAQ; track item.q; let i = $index) {
+        <div class="accordion-item">
+          <h3 class="accordion-header" [id]="'pfaq-heading-' + i">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              [attr.data-bs-target]="'#pfaq-collapse-' + i" aria-expanded="false"
+              [attr.aria-controls]="'pfaq-collapse-' + i">
+              {{ item.q }}
+            </button>
+          </h3>
+          <div [id]="'pfaq-collapse-' + i" class="accordion-collapse collapse"
+            [attr.aria-labelledby]="'pfaq-heading-' + i" data-bs-parent="#pricing-faq">
+            <div class="accordion-body">{{ item.a }}</div>
+          </div>
+        </div>
+      }
+    </div>
+  </section>
+</div>

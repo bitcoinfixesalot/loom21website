@@ -82,6 +82,7 @@ export class HomeComponent implements OnInit {
         USER_ROLES_PERMISSIONS, INVENTORY_ANALYTICS, WAREHOUSE_MANAGEMENT, REAL_TIME_INVENTORY_TRACKING, PRICE_LIST_MANAGEMENT, CUSTOM_FIELDS_MANAGEMENT
       ],
       "operatingSystem": "Web",
+      "offers": { "@type": "AggregateOffer", "lowPrice": "0", "highPrice": "179", "priceCurrency": "EUR", "offerCount": 4 },
       "url": `https://loom21.com/${this.localeId}`,
       "publisher": {
         "@type": "Organization",

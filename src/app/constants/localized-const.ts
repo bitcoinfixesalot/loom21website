@@ -2,7 +2,7 @@ export const TITLES = {
     home_title: $localize`:Home title@@homeTitle:Loom21 — Bitcoin & Card Payments with Real-Time Inventory`,
     documentation: $localize`:Documentation title@@documentationTitle:Documentation | Loom21`,
     contact: $localize`:Contact title@@contactTitle:Contact | Loom21`,
-    pricing: $localize`:Pricing title@@PricingTitle:Pricing | Loom21`,
+    pricing: $localize`:Pricing title@@PricingTitle:Pricing — Free plan, 0% transaction fees | Loom21`,
     privacy: $localize`:Privacy title@@privacyTitle:Privacy | Loom21`,
     faq: $localize`:FAQ title@@faqTitle:FAQ | Loom21`,
     roadmap: $localize`:Roadmap title@@roadmapTitle:Roadmap | Loom21`,
@@ -10,10 +10,10 @@ export const TITLES = {
 }
 
 export const DESCRIPTIONS = {
-    home_description: $localize`:Home description tag@@homeDescription:Accept Bitcoin (Lightning & on-chain) and cards with 0% Loom21 fees, keep inventory in sync with every sale, and export your data any time. Free to start.`,
+    home_description: $localize`:Home description tag@@homeDescription:Accept Bitcoin (Lightning & on-chain) and cards with 0% Loom21 fees, keep inventory in sync with every sale, and export your data any time. Free forever plan.`,
     documentation_description: $localize`:Documentation description tag@@docDescription:App for inventory management, stock control, customer & supplier tools, invoice & Bitcoin payments, order fulfilment, and real-time tracking with analytics`,
     contact_description: $localize`:Contact description tag@@contactDescription:Questions on sales, deliveries, or payments? Contact us for expert support to grow your business!`,
-    pricing_description: $localize`:Pricing description tag@@pricingDescription:Explore our subscription plans with flexible pricing options. Choose from monthly or yearly billing, with custom plans available. Contact us for details!`,
+    pricing_description: $localize`:Pricing description tag@@pricingDescription:Free forever plan, then from €24/month. Accept Bitcoin and cards with 0% Loom21 transaction fees, unlimited users from Growth, and full data export.`,
     privacy_description: $localize`:Privacy description tag@@privacyDescription:Learn about our privacy practices and how we protect your data.`,
     faq_description: $localize`:FAQ description tag@@faqDescription:Answers to common questions about Loom21 — payments, Bitcoin, pricing, price lists, inventory, custom fields, and more.`,
     roadmap_description: $localize`:Roadmap description tag@@roadmapDescription:See what's shipped, in progress, and planned for Loom21 — payments, pricing, inventory, and more.`,
@@ -24,7 +24,7 @@ export const LD_JSON = {
     home_description: $localize`:Home description ld_json tag@@homeDescription_ld_json:Accept Bitcoin and card payments with 0% Loom21 fees, track inventory in real time and export your data any time.`,
     documentation_description: $localize`:Documentation description ld_json tag@@docDescription_ld_json:Learn to optimize sales, deliveries, and payments. Guides on inventory, user roles, and real-time tracking.`,
     contact_description: $localize`:Contact description ld_json tag@@contactDescription_ld_json:Questions on sales, deliveries, or payments? Contact us for expert support to grow your business.`,
-    pricing_description: $localize`:Pricing description ld_json tag@@pricingDescription_ld_json:Subscription plans for Loom21 with various features and pricing options.`,
+    pricing_description: $localize`:Pricing description ld_json tag@@pricingDescription_ld_json:Loom21 plans: Free, Starter, Growth and Pro — Bitcoin and card payments with 0% platform fees.`,
     privacy_description: $localize`:Privacy description ld_json tag@@privacyDescription_ld_json:Learn about our privacy practices and how we protect your data.`,
     faq_description: $localize`:FAQ description ld_json tag@@faqDescription_ld_json:Answers to common questions about Loom21's payments, Bitcoin support, pricing, price lists, inventory, and custom fields.`,
     roadmap_description: $localize`:Roadmap description ld_json tag@@roadmapDescription_ld_json:Loom21's product roadmap — shipped features, work in progress, and planned improvements.`,

@@ -115,7 +115,7 @@
         <note priority="1" from="description">FAQ question 1.2</note>
       </trans-unit>
       <trans-unit id="faqA1_2" datatype="html">
-        <source>Yes. You can create a free account with no credit card required and start right away. Visit our Pricing page if you need a paid plan with additional features.</source>
+        <source>Yes. The Free plan is free forever — no credit card required. It includes Bitcoin and card payments, inventory for one store and up to 50 orders a month. Upgrade any time from the Pricing page.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">12</context>
@@ -146,11 +146,27 @@
         </context-group>
         <note priority="1" from="description">FAQ category 2 title</note>
       </trans-unit>
+      <trans-unit id="faqQ2_0" datatype="html">
+        <source>Does Loom21 ever hold my money?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 2.0</note>
+      </trans-unit>
+      <trans-unit id="faqA2_0" datatype="html">
+        <source>No. Loom21 never takes custody of your funds. Bitcoin payments go straight to the wallet or server you connect — your BTCPay Server, Lightning Address (e.g. Glow), Speed Wallet account or LNbits wallet — and card payments go to your own Stripe account. Loom21 creates the invoice and tracks its status.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 2.0</note>
+      </trans-unit>
       <trans-unit id="faqQ2_1" datatype="html">
         <source>What payment methods does Loom21 support?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">21</context>
         </context-group>
         <note priority="1" from="description">FAQ question 2.1</note>
       </trans-unit>
@@ -158,7 +174,7 @@
         <source>Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNbits — covering both Lightning and on-chain Bitcoin.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">22</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 2.1</note>
       </trans-unit>
@@ -166,7 +182,7 @@
         <source>Can I accept both Bitcoin Lightning and on-chain payments?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">20</context>
+          <context context-type="linenumber">23</context>
         </context-group>
         <note priority="1" from="description">FAQ question 2.2</note>
       </trans-unit>
@@ -174,7 +190,7 @@
         <source>Yes. Most of our Bitcoin processors support Lightning and on-chain payments side by side with card payments, so you can offer whichever methods suit your customers.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="linenumber">24</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 2.2</note>
       </trans-unit>
@@ -182,7 +198,7 @@
         <source>Do I need my own Bitcoin wallet or node to use Loom21?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">25</context>
         </context-group>
         <note priority="1" from="description">FAQ question 2.3</note>
       </trans-unit>
@@ -190,7 +206,7 @@
         <source>It depends on the method. BTCPay Server, Speed Wallet, and LNbits connect using an API key or URL you enter in Settings. Lightning Wallet (Glow) works differently — just enter any LNURL-compatible Lightning Address (Glow&apos;s own address works out of the box), then use the Test Connection button to verify it.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">23</context>
+          <context context-type="linenumber">26</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 2.3</note>
       </trans-unit>
@@ -198,7 +214,7 @@
         <source>How are Bitcoin payments confirmed?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">27</context>
         </context-group>
         <note priority="1" from="description">FAQ question 2.4</note>
       </trans-unit>
@@ -206,7 +222,7 @@
         <source>For BTCPay Server, Speed Wallet, and LNbits, confirmation is real-time — the order status updates automatically the moment the payment settles. For Lightning Wallet (Glow) and other Lightning Address wallets, real-time confirmation depends on your wallet provider supporting it; use the Test Connection button in Settings to check your specific address.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="linenumber">28</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 2.4</note>
       </trans-unit>
@@ -214,7 +230,7 @@
         <source>Pricing &amp; Price Lists</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">28</context>
+          <context context-type="linenumber">31</context>
         </context-group>
         <note priority="1" from="description">FAQ category 3 title</note>
       </trans-unit>
@@ -222,15 +238,15 @@
         <source>How does Loom21&apos;s own pricing work?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">29</context>
+          <context context-type="linenumber">32</context>
         </context-group>
         <note priority="1" from="description">FAQ question 3.1</note>
       </trans-unit>
       <trans-unit id="faqA3_1" datatype="html">
-        <source>Loom21 offers flexible subscription plans billed monthly or yearly, with custom plans available for larger teams. Visit our Pricing page for current plans, or contact us for details.</source>
+        <source>Start on the Free plan, then upgrade to Starter, Growth or Pro as you grow. Pay monthly, annually (2 months free) or in Bitcoin (about 25% off). Loom21 never takes a percentage of your sales.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="linenumber">33</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 3.1</note>
       </trans-unit>
@@ -238,7 +254,7 @@
         <source>Can I set different prices for different customers?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">31</context>
+          <context context-type="linenumber">34</context>
         </context-group>
         <note priority="1" from="description">FAQ question 3.2</note>
       </trans-unit>
@@ -246,7 +262,7 @@
         <source>Yes. You can create multiple price lists — such as wholesale, retail, or seasonal — and set customer-specific price overrides that always take priority over any price list.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="linenumber">35</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 3.2</note>
       </trans-unit>
@@ -254,7 +270,7 @@
         <source>Can I offer quantity-based discounts?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">36</context>
         </context-group>
         <note priority="1" from="description">FAQ question 3.3</note>
       </trans-unit>
@@ -262,7 +278,7 @@
         <source>Yes. Each price list supports quantity tiers, percentage discounts, or custom formulas, so prices can automatically drop at higher order volumes.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">34</context>
+          <context context-type="linenumber">37</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 3.3</note>
       </trans-unit>
@@ -270,7 +286,7 @@
         <source>What price is used if a product isn&apos;t on any price list?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">38</context>
         </context-group>
         <note priority="1" from="description">FAQ question 3.4</note>
       </trans-unit>
@@ -278,15 +294,31 @@
         <source>Loom21 falls back to the product&apos;s base Sale Price configured on the product itself.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">36</context>
+          <context context-type="linenumber">39</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 3.4</note>
+      </trans-unit>
+      <trans-unit id="faqQ3_5" datatype="html">
+        <source>Does Loom21 charge transaction fees?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 3.5</note>
+      </trans-unit>
+      <trans-unit id="faqA3_5" datatype="html">
+        <source>No — 0% on every payment method, including card payments through Stripe. You only pay your plan and your payment processor&apos;s own fees.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 3.5</note>
       </trans-unit>
       <trans-unit id="faqCategory4Title" datatype="html">
         <source>Products, Inventory &amp; Custom Fields</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">44</context>
         </context-group>
         <note priority="1" from="description">FAQ category 4 title</note>
       </trans-unit>
@@ -294,7 +326,7 @@
         <source>Can I track stock across multiple store locations?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">40</context>
+          <context context-type="linenumber">45</context>
         </context-group>
         <note priority="1" from="description">FAQ question 4.1</note>
       </trans-unit>
@@ -302,7 +334,7 @@
         <source>Yes. Inventory is tracked per store, and every sale or delivery order is linked to a specific store, so stock levels stay accurate everywhere.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">46</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 4.1</note>
       </trans-unit>
@@ -310,7 +342,7 @@
         <source>What are Custom Fields and what can I use them for?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">42</context>
+          <context context-type="linenumber">47</context>
         </context-group>
         <note priority="1" from="description">FAQ question 4.2</note>
       </trans-unit>
@@ -318,7 +350,7 @@
         <source>Custom Fields let you add your own data fields to every product — like a warranty expiry date, a certification flag, or a supplier reference number — beyond the standard name, price, and category fields.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">48</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 4.2</note>
       </trans-unit>
@@ -326,7 +358,7 @@
         <source>Can I import my existing product or customer list?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">44</context>
+          <context context-type="linenumber">49</context>
         </context-group>
         <note priority="1" from="description">FAQ question 4.3</note>
       </trans-unit>
@@ -334,7 +366,7 @@
         <source>Yes. Loom21 accepts CSV imports for products, services, customers, and suppliers, with downloadable templates to help you format your data correctly.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">45</context>
+          <context context-type="linenumber">50</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 4.3</note>
       </trans-unit>
@@ -342,7 +374,7 @@
         <source>Does Loom21 support barcodes and QR codes?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">51</context>
         </context-group>
         <note priority="1" from="description">FAQ question 4.4</note>
       </trans-unit>
@@ -350,7 +382,7 @@
         <source>Yes. You can enter or scan barcodes for products, and QR codes are generated automatically.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="linenumber">52</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 4.4</note>
       </trans-unit>
@@ -358,7 +390,7 @@
         <source>Orders &amp; Invoicing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">55</context>
         </context-group>
         <note priority="1" from="description">FAQ category 5 title</note>
       </trans-unit>
@@ -366,7 +398,7 @@
         <source>What documents can I generate from a sale order?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">56</context>
         </context-group>
         <note priority="1" from="description">FAQ question 5.1</note>
       </trans-unit>
@@ -374,7 +406,7 @@
         <source>Quotes, invoices, receipts, and pickup lists — all as downloadable PDFs. Invoices and receipts become available once an order is marked as paid.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="linenumber">57</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 5.1</note>
       </trans-unit>
@@ -382,7 +414,7 @@
         <source>Can customers pay without creating a Loom21 account?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">58</context>
         </context-group>
         <note priority="1" from="description">FAQ question 5.2</note>
       </trans-unit>
@@ -390,7 +422,7 @@
         <source>Yes. Payment links give customers a unique URL to pay for a product, service, or donation with no login required on their side.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">54</context>
+          <context context-type="linenumber">59</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 5.2</note>
       </trans-unit>
@@ -398,7 +430,7 @@
         <source>Can I reorder from a customer&apos;s past purchases in one click?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">60</context>
         </context-group>
         <note priority="1" from="description">FAQ question 5.3</note>
       </trans-unit>
@@ -406,7 +438,7 @@
         <source>Yes. Once you select a customer on a new sale order, you can open their Order History and re-add items from any previous order instantly.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">56</context>
+          <context context-type="linenumber">61</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 5.3</note>
       </trans-unit>
@@ -414,7 +446,7 @@
         <source>Data, Team &amp; Security</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">59</context>
+          <context context-type="linenumber">64</context>
         </context-group>
         <note priority="1" from="description">FAQ category 6 title</note>
       </trans-unit>
@@ -422,7 +454,7 @@
         <source>Can I export my data?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">60</context>
+          <context context-type="linenumber">65</context>
         </context-group>
         <note priority="1" from="description">FAQ question 6.1</note>
       </trans-unit>
@@ -430,7 +462,7 @@
         <source>Yes. You can export your products, customers, suppliers, and reports as CSV or JSON at any time — your data is never locked in.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">61</context>
+          <context context-type="linenumber">66</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 6.1</note>
       </trans-unit>
@@ -438,15 +470,15 @@
         <source>How many team members can I invite?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">62</context>
+          <context context-type="linenumber">67</context>
         </context-group>
         <note priority="1" from="description">FAQ question 6.2</note>
       </trans-unit>
       <trans-unit id="faqA6_2" datatype="html">
-        <source>You can invite an unlimited number of users to your organization and assign each one specific roles to control what they can access.</source>
+        <source>It depends on your plan: 1 user on Free, 3 on Starter, and unlimited users on Growth and Pro — each with role-based access on Growth and above.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">63</context>
+          <context context-type="linenumber">68</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 6.2</note>
       </trans-unit>
@@ -454,7 +486,7 @@
         <source>What languages is Loom21 available in?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">64</context>
+          <context context-type="linenumber">69</context>
         </context-group>
         <note priority="1" from="description">FAQ question 6.3</note>
       </trans-unit>
@@ -462,7 +494,7 @@
         <source>Loom21 is currently available in English and Bulgarian, with more languages planned.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">65</context>
+          <context context-type="linenumber">70</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 6.3</note>
       </trans-unit>
@@ -491,7 +523,7 @@
         <note priority="1" from="description">Contact title</note>
       </trans-unit>
       <trans-unit id="PricingTitle" datatype="html">
-        <source>Pricing | Loom21</source>
+        <source>Pricing — Free plan, 0% transaction fees | Loom21</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">5</context>
@@ -531,7 +563,7 @@
         <note priority="1" from="description">Terms title tag</note>
       </trans-unit>
       <trans-unit id="homeDescription" datatype="html">
-        <source>Accept Bitcoin (Lightning &amp; on-chain) and cards with 0% Loom21 fees, keep inventory in sync with every sale, and export your data any time. Free to start.</source>
+        <source>Accept Bitcoin (Lightning &amp; on-chain) and cards with 0% Loom21 fees, keep inventory in sync with every sale, and export your data any time. Free forever plan.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">13</context>
@@ -555,7 +587,7 @@
         <note priority="1" from="description">Contact description tag</note>
       </trans-unit>
       <trans-unit id="pricingDescription" datatype="html">
-        <source>Explore our subscription plans with flexible pricing options. Choose from monthly or yearly billing, with custom plans available. Contact us for details!</source>
+        <source>Free forever plan, then from €24/month. Accept Bitcoin and cards with 0% Loom21 transaction fees, unlimited users from Growth, and full data export.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">16</context>
@@ -619,7 +651,7 @@
         <note priority="1" from="description">Contact description ld_json tag</note>
       </trans-unit>
       <trans-unit id="pricingDescription_ld_json" datatype="html">
-        <source>Subscription plans for Loom21 with various features and pricing options.</source>
+        <source>Loom21 plans: Free, Starter, Growth and Pro — Bitcoin and card payments with 0% platform fees.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">27</context>
@@ -804,6 +836,494 @@
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">56</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="pricingAnnualBadge" datatype="html">
+        <source>2 months free</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">Annual billing badge</note>
+      </trans-unit>
+      <trans-unit id="pricingBitcoinBadge" datatype="html">
+        <source>Save 25%</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description">Bitcoin billing badge</note>
+      </trans-unit>
+      <trans-unit id="pricingApiReadOnly" datatype="html">
+        <source>Read-only API</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">API read-only</note>
+      </trans-unit>
+      <trans-unit id="pricingApiFull" datatype="html">
+        <source>Full API + webhooks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">API full live</note>
+      </trans-unit>
+      <trans-unit id="pricingApiFullSoon" datatype="html">
+        <source>Full API + webhooks (coming soon)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description">API full soon</note>
+      </trans-unit>
+      <trans-unit id="pricingChoosePlan" datatype="html">
+        <source>Choose plan</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">Choose plan button</note>
+      </trans-unit>
+      <trans-unit id="planAllRails" datatype="html">
+        <source>Bitcoin (Lightning &amp; on-chain) + cards</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description">All payment rails</note>
+      </trans-unit>
+      <trans-unit id="planZeroFee" datatype="html">
+        <source>0% Loom21 transaction fee</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note priority="1" from="description">Zero fee bullet</note>
+      </trans-unit>
+      <trans-unit id="planUnlimitedUsers" datatype="html">
+        <source>Unlimited users</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <note priority="1" from="description">Unlimited users</note>
+      </trans-unit>
+      <trans-unit id="planUserAccessRights" datatype="html">
+        <source>User roles &amp; access rights</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <note priority="1" from="description">User access rights</note>
+      </trans-unit>
+      <trans-unit id="planFreeName" datatype="html">
+        <source>Free</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <note priority="1" from="description">Free plan name</note>
+      </trans-unit>
+      <trans-unit id="planFreeTagline" datatype="html">
+        <source>Get paid in Bitcoin today. Free forever.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <note priority="1" from="description">Free plan tagline</note>
+      </trans-unit>
+      <trans-unit id="planFreeUsers" datatype="html">
+        <source>1 user</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <note priority="1" from="description">Free users</note>
+      </trans-unit>
+      <trans-unit id="planFreeStores" datatype="html">
+        <source>1 store location</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <note priority="1" from="description">Free stores</note>
+      </trans-unit>
+      <trans-unit id="planFreeOrders" datatype="html">
+        <source>50 orders / month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <note priority="1" from="description">Free orders</note>
+      </trans-unit>
+      <trans-unit id="planFreeCta" datatype="html">
+        <source>Start free</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <note priority="1" from="description">Free plan CTA</note>
+      </trans-unit>
+      <trans-unit id="planStarterName" datatype="html">
+        <source>Starter</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <note priority="1" from="description">Starter plan name</note>
+      </trans-unit>
+      <trans-unit id="planStarterTagline" datatype="html">
+        <source>For a single shop with a small team.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <note priority="1" from="description">Starter plan tagline</note>
+      </trans-unit>
+      <trans-unit id="planStarterUsers" datatype="html">
+        <source>3 users</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <note priority="1" from="description">Starter users</note>
+      </trans-unit>
+      <trans-unit id="planStarterStores" datatype="html">
+        <source>2 store locations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <note priority="1" from="description">Starter stores</note>
+      </trans-unit>
+      <trans-unit id="planStarterOrders" datatype="html">
+        <source>1,000 orders / month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <note priority="1" from="description">Starter orders</note>
+      </trans-unit>
+      <trans-unit id="planGrowthName" datatype="html">
+        <source>Growth</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <note priority="1" from="description">Growth plan name</note>
+      </trans-unit>
+      <trans-unit id="planGrowthTagline" datatype="html">
+        <source>Multi-store teams. No per-seat fees.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+        <note priority="1" from="description">Growth plan tagline</note>
+      </trans-unit>
+      <trans-unit id="planGrowthStores" datatype="html">
+        <source>5 store locations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+        <note priority="1" from="description">Growth stores</note>
+      </trans-unit>
+      <trans-unit id="planGrowthOrders" datatype="html">
+        <source>5,000 orders / month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+        <note priority="1" from="description">Growth orders</note>
+      </trans-unit>
+      <trans-unit id="planProName" datatype="html">
+        <source>Pro</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+        <note priority="1" from="description">Pro plan name</note>
+      </trans-unit>
+      <trans-unit id="planProTagline" datatype="html">
+        <source>High volume, many locations.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+        <note priority="1" from="description">Pro plan tagline</note>
+      </trans-unit>
+      <trans-unit id="planProStores" datatype="html">
+        <source>25 store locations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <note priority="1" from="description">Pro stores</note>
+      </trans-unit>
+      <trans-unit id="planProOrders" datatype="html">
+        <source>25,000 orders / month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+        <note priority="1" from="description">Pro orders</note>
+      </trans-unit>
+      <trans-unit id="planOnboardingCall" datatype="html">
+        <source>Priority support + onboarding call</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+        <note priority="1" from="description">Onboarding call</note>
+      </trans-unit>
+      <trans-unit id="unlimitedShort" datatype="html">
+        <source>Unlimited</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+        <note priority="1" from="description">Unlimited short</note>
+      </trans-unit>
+      <trans-unit id="cmpApiRo" datatype="html">
+        <source>Read-only</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+        <note priority="1" from="description">Cmp api ro</note>
+      </trans-unit>
+      <trans-unit id="cmpApiFull" datatype="html">
+        <source>Full + webhooks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+        <note priority="1" from="description">Cmp api full</note>
+      </trans-unit>
+      <trans-unit id="cmpApiFullSoon" datatype="html">
+        <source>Full + webhooks (soon)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+        <note priority="1" from="description">Cmp api full soon</note>
+      </trans-unit>
+      <trans-unit id="cmpUsers" datatype="html">
+        <source>Users</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+        <note priority="1" from="description">Cmp users</note>
+      </trans-unit>
+      <trans-unit id="cmpStores" datatype="html">
+        <source>Store locations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+        <note priority="1" from="description">Cmp stores</note>
+      </trans-unit>
+      <trans-unit id="cmpOrders" datatype="html">
+        <source>Orders / month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+        <note priority="1" from="description">Cmp orders</note>
+      </trans-unit>
+      <trans-unit id="cmpLinks" datatype="html">
+        <source>Payment links</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+        <note priority="1" from="description">Cmp links</note>
+      </trans-unit>
+      <trans-unit id="cmpBitcoin" datatype="html">
+        <source>Bitcoin — Lightning &amp; on-chain</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+        <note priority="1" from="description">Cmp btc</note>
+      </trans-unit>
+      <trans-unit id="cmpCards" datatype="html">
+        <source>Card payments (Stripe)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+        <note priority="1" from="description">Cmp cards</note>
+      </trans-unit>
+      <trans-unit id="cmpFee" datatype="html">
+        <source>Loom21 transaction fee</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+        <note priority="1" from="description">Cmp fee</note>
+      </trans-unit>
+      <trans-unit id="cmpExport" datatype="html">
+        <source>CSV / JSON import &amp; export</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+        <note priority="1" from="description">Cmp export</note>
+      </trans-unit>
+      <trans-unit id="cmpPriceLists" datatype="html">
+        <source>Price lists, tiers &amp; custom fields</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+        <note priority="1" from="description">Cmp pricing</note>
+      </trans-unit>
+      <trans-unit id="cmpBarcodes" datatype="html">
+        <source>Barcodes, QR codes &amp; PDF documents</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+        <note priority="1" from="description">Cmp barcodes</note>
+      </trans-unit>
+      <trans-unit id="cmpRoles" datatype="html">
+        <source>User roles &amp; access rights</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+        <note priority="1" from="description">Cmp roles</note>
+      </trans-unit>
+      <trans-unit id="cmpApi" datatype="html">
+        <source>API</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
+        <note priority="1" from="description">Cmp api</note>
+      </trans-unit>
+      <trans-unit id="cmpSupport" datatype="html">
+        <source>Support</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+        <note priority="1" from="description">Cmp support</note>
+      </trans-unit>
+      <trans-unit id="supCommunity" datatype="html">
+        <source>Community</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+        <note priority="1" from="description">Sup community</note>
+      </trans-unit>
+      <trans-unit id="supEmail" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+        <note priority="1" from="description">Sup email</note>
+      </trans-unit>
+      <trans-unit id="supPriority" datatype="html">
+        <source>Priority email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+        <note priority="1" from="description">Sup priority</note>
+      </trans-unit>
+      <trans-unit id="supOnboarding" datatype="html">
+        <source>Priority + onboarding</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+        <note priority="1" from="description">Sup onboarding</note>
+      </trans-unit>
+      <trans-unit id="pfaqQ1" datatype="html">
+        <source>Do you take a cut of my sales?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+        <note priority="1" from="description">Pricing FAQ q1</note>
+      </trans-unit>
+      <trans-unit id="pfaqA1" datatype="html">
+        <source>No. Loom21 charges 0% on every payment — Bitcoin and card. You only pay your plan, plus your payment processor&apos;s own fees (for example Stripe&apos;s card fees, or Lightning network fees).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+        <note priority="1" from="description">Pricing FAQ a1</note>
+      </trans-unit>
+      <trans-unit id="pfaqQ2" datatype="html">
+        <source>What happens if I go over my monthly orders?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+        <note priority="1" from="description">Pricing FAQ q2</note>
+      </trans-unit>
+      <trans-unit id="pfaqA2" datatype="html">
+        <source>Nothing breaks and you can always get paid. We notify you at 80% and 100% of your limit and give you a one-month grace period before suggesting an upgrade.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+        <note priority="1" from="description">Pricing FAQ a2</note>
+      </trans-unit>
+      <trans-unit id="pfaqQ3" datatype="html">
+        <source>How does paying for Loom21 in Bitcoin work?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+        <note priority="1" from="description">Pricing FAQ q3</note>
+      </trans-unit>
+      <trans-unit id="pfaqA3" datatype="html">
+        <source>Choose the Bitcoin option and pay for a year upfront over Lightning or on-chain. You save about 25% compared with monthly card billing.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+        <note priority="1" from="description">Pricing FAQ a3</note>
+      </trans-unit>
+      <trans-unit id="pfaqQ4" datatype="html">
+        <source>Can I switch plans or cancel anytime?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+        <note priority="1" from="description">Pricing FAQ q4</note>
+      </trans-unit>
+      <trans-unit id="pfaqA4" datatype="html">
+        <source>Yes. Upgrade or downgrade from Settings → Subscription. If you cancel, your plan stays active until the end of the period you paid for; partial periods are not refunded. You can export all your data at any time.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+        <note priority="1" from="description">Pricing FAQ a4</note>
+      </trans-unit>
+      <trans-unit id="pfaqQ5" datatype="html">
+        <source>Is the Free plan really free forever?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+        <note priority="1" from="description">Pricing FAQ q5</note>
+      </trans-unit>
+      <trans-unit id="pfaqA5" datatype="html">
+        <source>Yes — no credit card and no time limit. It includes Bitcoin and card payments, inventory for one store and up to 50 orders a month.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">145</context>
+        </context-group>
+        <note priority="1" from="description">Pricing FAQ a5</note>
       </trans-unit>
       <trans-unit id="privacyPolicyTitle" datatype="html">
         <source>Privacy Policy for Loom21</source>
@@ -1782,7 +2302,7 @@
         <note priority="1" from="description">Roadmap in progress item 3 description</note>
       </trans-unit>
       <trans-unit id="roadmapPlanned1Title" datatype="html">
-        <source>Public API &amp; Webhooks</source>
+        <source>Full API &amp; Webhooks</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">37</context>
@@ -1790,7 +2310,7 @@
         <note priority="1" from="description">Roadmap planned item 1 title</note>
       </trans-unit>
       <trans-unit id="roadmapPlanned1Desc" datatype="html">
-        <source>Connect Loom21 to your other tools with a public API and event webhooks.</source>
+        <source>Read and write access to your Loom21 data, plus event webhooks — included on Growth and Pro.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">38</context>
@@ -2115,10 +2635,6 @@
           <context context-type="sourcefile">src/app/documentation/documentation.component.html</context>
           <context context-type="linenumber">46,47</context>
         </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">16,17</context>
-        </context-group>
         <note priority="1" from="description">Retry button</note>
       </trans-unit>
       <trans-unit id="viewOnGithub" datatype="html">
@@ -2262,7 +2778,7 @@
         <note priority="1" from="description">Home top title</note>
       </trans-unit>
       <trans-unit id="homeTopSubTitle" datatype="html">
-        <source>Accept Bitcoin (Lightning &amp; on-chain) and cards in one dashboard, keep stock in sync with every sale, and export everything, anytime. 0% Loom21 transaction fees. Free to start.</source>
+        <source>Accept Bitcoin (Lightning &amp; on-chain) and cards in one dashboard, keep stock in sync with every sale, and export everything, anytime. 0% Loom21 transaction fees. Free forever plan.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">8,9</context>
@@ -2582,7 +3098,7 @@
         <note priority="1" from="description">Stat instant desc</note>
       </trans-unit>
       <trans-unit id="statFree" datatype="html">
-        <source>Free to Start</source>
+        <source>Free forever plan</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">197,198</context>
@@ -2590,7 +3106,7 @@
         <note priority="1" from="description">Stat free</note>
       </trans-unit>
       <trans-unit id="statFreeDesc" datatype="html">
-        <source>No credit card required. Get started immediately with a free account.</source>
+        <source>Start with 50 orders a month at no cost. No credit card required.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">198,200</context>
@@ -2655,47 +3171,35 @@
           <context context-type="linenumber">22</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="loading" datatype="html">
-        <source>Loading...</source>
+      <trans-unit id="pricingH1" datatype="html">
+        <source>Simple pricing. 0% of your sales.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">6,8</context>
+          <context context-type="linenumber">3,4</context>
         </context-group>
-        <note priority="1" from="description">Loading label</note>
+        <note priority="1" from="description">Pricing H1</note>
       </trans-unit>
-      <trans-unit id="loadingSubsciptionPlans" datatype="html">
-        <source>Loading subscription plans... </source>
+      <trans-unit id="pricingSub" datatype="html">
+        <source>Start free forever. Upgrade when you grow. Loom21 never takes a cut of your Bitcoin or card payments.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">8,13</context>
+          <context context-type="linenumber">4,7</context>
         </context-group>
-        <note priority="1" from="description">Loading subscription plans label</note>
+        <note priority="1" from="description">Pricing subhead</note>
       </trans-unit>
-      <trans-unit id="pricingLoadError" datatype="html">
-        <source>We couldn&apos;t load pricing plans right now. Please try again, or contact us and we&apos;ll help directly.</source>
+      <trans-unit id="pricingBillingToggle" datatype="html">
+        <source>Billing period selection</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">14,15</context>
+          <context context-type="linenumber">8,9</context>
         </context-group>
-        <note priority="1" from="description">Pricing load error</note>
-      </trans-unit>
-      <trans-unit id="contactUsPricing" datatype="html">
-        <source>Contact Us</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">17,21</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">142,143</context>
-        </context-group>
-        <note priority="1" from="description">Contact us button</note>
+        <note priority="1" from="description">Billing period selection</note>
       </trans-unit>
       <trans-unit id="monthly" datatype="html">
         <source>MONTHLY</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">27,28</context>
+          <context context-type="linenumber">11,13</context>
         </context-group>
         <note priority="1" from="description">Monthly button</note>
       </trans-unit>
@@ -2703,7 +3207,7 @@
         <source>ANNUAL</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">32,33</context>
+          <context context-type="linenumber">16,17</context>
         </context-group>
         <note priority="1" from="description">Annual button</note>
       </trans-unit>
@@ -2711,189 +3215,177 @@
         <source>BITCOIN</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">41,42</context>
+          <context context-type="linenumber">24,25</context>
         </context-group>
         <note priority="1" from="description">Bitcoin button</note>
       </trans-unit>
-      <trans-unit id="choosePlan" datatype="html">
-        <source> Choose Plan </source>
+      <trans-unit id="pricingCheckoutUnavailable" datatype="html">
+        <source>Checkout is temporarily unavailable — start free and upgrade from Settings.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">72,73</context>
+          <context context-type="linenumber">30,35</context>
         </context-group>
-        <note priority="1" from="description">Choose plan button</note>
+        <note priority="1" from="description">Checkout unavailable notice</note>
+      </trans-unit>
+      <trans-unit id="pricingMostPopular" datatype="html">
+        <source>Most popular</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">38,41</context>
+        </context-group>
+        <note priority="1" from="description">Most popular ribbon</note>
+      </trans-unit>
+      <trans-unit id="pricingBtcHint" datatype="html">
+        <source>or <x id="INTERPOLATION" equiv-text="{{ formatPrice(card.btcPrice) }}"/>/mo paying in Bitcoin</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+        <note priority="1" from="description">Bitcoin price hint</note>
       </trans-unit>
       <trans-unit id="needAcustomPlan" datatype="html">
-        <source>Need a Custom Plan? </source>
+        <source>Need a Custom Plan?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">134,136</context>
+          <context context-type="linenumber">63,64</context>
         </context-group>
         <note priority="1" from="description">Need custom plan</note>
       </trans-unit>
       <trans-unit id="personalizedQuote" datatype="html">
-        <source> Looking for a tailored solution? Contact us to discuss your specific needs and get a personalized quote. </source>
+        <source>Need more stores, orders or an SLA? Custom plans with unlimited users and dedicated support.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">137,138</context>
+          <context context-type="linenumber">64,65</context>
         </context-group>
         <note priority="1" from="description">Personalized quote</note>
       </trans-unit>
-      <trans-unit id="billedAnnually" datatype="html">
-        <source>per month (billed annually)</source>
+      <trans-unit id="contactUsPricing" datatype="html">
+        <source>Contact Us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">65,70</context>
+        </context-group>
+        <note priority="1" from="description">Contact us button</note>
+      </trans-unit>
+      <trans-unit id="pricingCompareTitle" datatype="html">
+        <source>Compare plans</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">72,74</context>
+        </context-group>
+        <note priority="1" from="description">Compare plans title</note>
+      </trans-unit>
+      <trans-unit id="cmpFeature" datatype="html">
+        <source>Feature</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+        <note priority="1" from="description">Compare feature column</note>
+      </trans-unit>
+      <trans-unit id="cmpYes" datatype="html">
+        <source>Yes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">90,91</context>
+        </context-group>
+        <note priority="1" from="description">Compare yes</note>
+      </trans-unit>
+      <trans-unit id="cmpNo" datatype="html">
+        <source>No</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">92,93</context>
+        </context-group>
+        <note priority="1" from="description">Compare no</note>
+      </trans-unit>
+      <trans-unit id="pricingWhatYouPayTitle" datatype="html">
+        <source>What you really pay</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">107,109</context>
+        </context-group>
+        <note priority="1" from="description">What you pay title</note>
+      </trans-unit>
+      <trans-unit id="pricingPayPlanTitle" datatype="html">
+        <source>Your Loom21 plan</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">110,111</context>
+        </context-group>
+        <note priority="1" from="description">What you pay plan</note>
+      </trans-unit>
+      <trans-unit id="pricingPayPlanDesc" datatype="html">
+        <source>A fixed monthly or annual price — the same no matter how much you sell.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">111,114</context>
+        </context-group>
+        <note priority="1" from="description">What you pay plan desc</note>
+      </trans-unit>
+      <trans-unit id="pricingPayProcessorTitle" datatype="html">
+        <source>Your payment processor&apos;s fees</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">114,115</context>
+        </context-group>
+        <note priority="1" from="description">What you pay processor</note>
+      </trans-unit>
+      <trans-unit id="pricingPayProcessorDesc" datatype="html">
+        <source>Set by the provider you connect — Stripe for cards, or your Bitcoin wallet or server — and paid to them, not to us.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">115,118</context>
+        </context-group>
+        <note priority="1" from="description">What you pay processor desc</note>
+      </trans-unit>
+      <trans-unit id="pricingPayFeeTitle" datatype="html">
+        <source>Loom21 fee on your sales</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">118,119</context>
+        </context-group>
+        <note priority="1" from="description">What you pay loom21 fee</note>
+      </trans-unit>
+      <trans-unit id="pricingPayDisclaimer" datatype="html">
+        <source>Loom21 doesn&apos;t set or collect processor fees. Check your provider&apos;s pricing for card and Lightning rates.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">122,126</context>
+        </context-group>
+        <note priority="1" from="description">What you pay disclaimer</note>
+      </trans-unit>
+      <trans-unit id="pricingFaqTitle" datatype="html">
+        <source>Pricing questions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">127,128</context>
+        </context-group>
+        <note priority="1" from="description">Pricing FAQ title</note>
+      </trans-unit>
+      <trans-unit id="pricingForever" datatype="html">
+        <source>forever</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">58</context>
+          <context context-type="linenumber">104</context>
         </context-group>
-        <note priority="1" from="description">Billed annually</note>
+        <note priority="1" from="description">Forever</note>
       </trans-unit>
       <trans-unit id="perMonth" datatype="html">
         <source>per month</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">60</context>
+          <context context-type="linenumber">106</context>
         </context-group>
         <note priority="1" from="description">Per month</note>
       </trans-unit>
-      <trans-unit id="entrepreneur" datatype="html">
-        <source>Entrepreneur</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">97</context>
-        </context-group>
-        <note priority="1" from="description">Entrepreneur</note>
-      </trans-unit>
-      <trans-unit id="oneUser" datatype="html">
-        <source>1 user</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">98</context>
-        </context-group>
-        <note priority="1" from="description">One User</note>
-      </trans-unit>
-      <trans-unit id="basicOrders" datatype="html">
-        <source>8 000 orders/year</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">99</context>
-        </context-group>
-        <note priority="1" from="description">Basic Orders</note>
-      </trans-unit>
-      <trans-unit id="oneStoreLocation" datatype="html">
-        <source>1 store location</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">100</context>
-        </context-group>
-        <note priority="1" from="description">One Store Location</note>
-      </trans-unit>
-      <trans-unit id="oneUserAccess" datatype="html">
-        <source>Full access</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">101</context>
-        </context-group>
-        <note priority="1" from="description">One User Access</note>
-      </trans-unit>
-      <trans-unit id="noAccessToAPI" datatype="html">
-        <source>No API Access</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">102</context>
-        </context-group>
-        <note priority="1" from="description">No Access to API</note>
-      </trans-unit>
-      <trans-unit id="smallBusiness" datatype="html">
-        <source>Small Business</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">104</context>
-        </context-group>
-        <note priority="1" from="description">Small Business</note>
-      </trans-unit>
-      <trans-unit id="fiveUsers" datatype="html">
-        <source>5 users</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">105</context>
-        </context-group>
-        <note priority="1" from="description">Five Users</note>
-      </trans-unit>
-      <trans-unit id="smallOrders" datatype="html">
-        <source>60 000 orders/year</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">106</context>
-        </context-group>
-        <note priority="1" from="description">Small Orders</note>
-      </trans-unit>
-      <trans-unit id="fiveStoreLocation" datatype="html">
-        <source>5 store locations</source>
+      <trans-unit id="billedAnnually" datatype="html">
+        <source>per month (billed annually)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
           <context context-type="linenumber">107</context>
         </context-group>
-        <note priority="1" from="description">Five Store Location</note>
-      </trans-unit>
-      <trans-unit id="userAccessRights" datatype="html">
-        <source>User Access Rights</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">108</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">115</context>
-        </context-group>
-        <note priority="1" from="description">User Access Rights</note>
-      </trans-unit>
-      <trans-unit id="limitedAccessToAPI" datatype="html">
-        <source>Limited Access to API</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">109</context>
-        </context-group>
-        <note priority="1" from="description">Limited Access to API</note>
-      </trans-unit>
-      <trans-unit id="midSize" datatype="html">
-        <source>Mid-size</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">111</context>
-        </context-group>
-        <note priority="1" from="description">Mid-size</note>
-      </trans-unit>
-      <trans-unit id="tenUsers" datatype="html">
-        <source>10 users</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">112</context>
-        </context-group>
-        <note priority="1" from="description">Ten User</note>
-      </trans-unit>
-      <trans-unit id="midOrders" datatype="html">
-        <source>300 000 orders/year</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">113</context>
-        </context-group>
-        <note priority="1" from="description">Mid Orders</note>
-      </trans-unit>
-      <trans-unit id="fiftyStoreLocation" datatype="html">
-        <source>50 store location</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">114</context>
-        </context-group>
-        <note priority="1" from="description">Mid Store Location</note>
-      </trans-unit>
-      <trans-unit id="fullAccessToAPI" datatype="html">
-        <source> Full API Access</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">116</context>
-        </context-group>
-        <note priority="1" from="description">Full Access to API</note>
+        <note priority="1" from="description">Billed annually</note>
       </trans-unit>
     </body>
   </file>

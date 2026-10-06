@@ -34,8 +34,8 @@ export const ROADMAP_CONSTANTS = {
   inProgress3Desc: $localize`:Roadmap in progress item 3 description@@roadmapInProgress3Desc:A smoother, installable experience for managing your business on the go.`,
 
   // Planned
-  planned1Title: $localize`:Roadmap planned item 1 title@@roadmapPlanned1Title:Public API & Webhooks`,
-  planned1Desc: $localize`:Roadmap planned item 1 description@@roadmapPlanned1Desc:Connect Loom21 to your other tools with a public API and event webhooks.`,
+  planned1Title: $localize`:Roadmap planned item 1 title@@roadmapPlanned1Title:Full API & Webhooks`,
+  planned1Desc: $localize`:Roadmap planned item 1 description@@roadmapPlanned1Desc:Read and write access to your Loom21 data, plus event webhooks — included on Growth and Pro.`,
   planned2Title: $localize`:Roadmap planned item 2 title@@roadmapPlanned2Title:More Languages`,
   planned2Desc: $localize`:Roadmap planned item 2 description@@roadmapPlanned2Desc:Expanding beyond English and Bulgarian to support more of our users.`,
   planned3Title: $localize`:Roadmap planned item 3 title@@roadmapPlanned3Title:Native Mobile Apps`,

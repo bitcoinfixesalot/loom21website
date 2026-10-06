@@ -9,12 +9,15 @@ export const FAQ_CONSTANTS = {
   q1_1: $localize`:FAQ question 1.1@@faqQ1_1:How do I create a Loom21 account?`,
   a1_1: $localize`:FAQ answer 1.1@@faqA1_1:Sign up on the Loom21 website and confirm your email from the confirmation message you receive. Once confirmed, you can sign in and start setting up your organization.`,
   q1_2: $localize`:FAQ question 1.2@@faqQ1_2:Is there a free plan?`,
-  a1_2: $localize`:FAQ answer 1.2@@faqA1_2:Yes. You can create a free account with no credit card required and start right away. Visit our Pricing page if you need a paid plan with additional features.`,
+  a1_2: $localize`:FAQ answer 1.2@@faqA1_2:Yes. The Free plan is free forever — no credit card required. It includes Bitcoin and card payments, inventory for one store and up to 50 orders a month. Upgrade any time from the Pricing page.`,
   q1_3: $localize`:FAQ question 1.3@@faqQ1_3:What should I set up first?`,
   a1_3: $localize`:FAQ answer 1.3@@faqA1_3:We recommend configuring General Settings (language, currency, VAT, and address), connecting at least one payment processor, adding your products and services, and then creating your first sale order.`,
 
   // Category 2: Payments & Bitcoin
   category2Title: $localize`:FAQ category 2 title@@faqCategory2Title:Payments & Bitcoin`,
+  // Speed Wallet and third-party-hosted LNbits are custodial services: the claim is that *Loom21* never holds funds.
+  q2_0: $localize`:FAQ question 2.0@@faqQ2_0:Does Loom21 ever hold my money?`,
+  a2_0: $localize`:FAQ answer 2.0@@faqA2_0:No. Loom21 never takes custody of your funds. Bitcoin payments go straight to the wallet or server you connect — your BTCPay Server, Lightning Address (e.g. Glow), Speed Wallet account or LNbits wallet — and card payments go to your own Stripe account. Loom21 creates the invoice and tracks its status.`,
   q2_1: $localize`:FAQ question 2.1@@faqQ2_1:What payment methods does Loom21 support?`,
   a2_1: $localize`:FAQ answer 2.1@@faqA2_1:Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNbits — covering both Lightning and on-chain Bitcoin.`,
   q2_2: $localize`:FAQ question 2.2@@faqQ2_2:Can I accept both Bitcoin Lightning and on-chain payments?`,
@@ -27,13 +30,15 @@ export const FAQ_CONSTANTS = {
   // Category 3: Pricing & Price Lists
   category3Title: $localize`:FAQ category 3 title@@faqCategory3Title:Pricing & Price Lists`,
   q3_1: $localize`:FAQ question 3.1@@faqQ3_1:How does Loom21's own pricing work?`,
-  a3_1: $localize`:FAQ answer 3.1@@faqA3_1:Loom21 offers flexible subscription plans billed monthly or yearly, with custom plans available for larger teams. Visit our Pricing page for current plans, or contact us for details.`,
+  a3_1: $localize`:FAQ answer 3.1@@faqA3_1:Start on the Free plan, then upgrade to Starter, Growth or Pro as you grow. Pay monthly, annually (2 months free) or in Bitcoin (about 25% off). Loom21 never takes a percentage of your sales.`,
   q3_2: $localize`:FAQ question 3.2@@faqQ3_2:Can I set different prices for different customers?`,
   a3_2: $localize`:FAQ answer 3.2@@faqA3_2:Yes. You can create multiple price lists — such as wholesale, retail, or seasonal — and set customer-specific price overrides that always take priority over any price list.`,
   q3_3: $localize`:FAQ question 3.3@@faqQ3_3:Can I offer quantity-based discounts?`,
   a3_3: $localize`:FAQ answer 3.3@@faqA3_3:Yes. Each price list supports quantity tiers, percentage discounts, or custom formulas, so prices can automatically drop at higher order volumes.`,
   q3_4: $localize`:FAQ question 3.4@@faqQ3_4:What price is used if a product isn't on any price list?`,
   a3_4: $localize`:FAQ answer 3.4@@faqA3_4:Loom21 falls back to the product's base Sale Price configured on the product itself.`,
+  q3_5: $localize`:FAQ question 3.5@@faqQ3_5:Does Loom21 charge transaction fees?`,
+  a3_5: $localize`:FAQ answer 3.5@@faqA3_5:No — 0% on every payment method, including card payments through Stripe. You only pay your plan and your payment processor's own fees.`,
 
   // Category 4: Products, Inventory & Custom Fields
   category4Title: $localize`:FAQ category 4 title@@faqCategory4Title:Products, Inventory & Custom Fields`,
@@ -60,7 +65,7 @@ export const FAQ_CONSTANTS = {
   q6_1: $localize`:FAQ question 6.1@@faqQ6_1:Can I export my data?`,
   a6_1: $localize`:FAQ answer 6.1@@faqA6_1:Yes. You can export your products, customers, suppliers, and reports as CSV or JSON at any time — your data is never locked in.`,
   q6_2: $localize`:FAQ question 6.2@@faqQ6_2:How many team members can I invite?`,
-  a6_2: $localize`:FAQ answer 6.2@@faqA6_2:You can invite an unlimited number of users to your organization and assign each one specific roles to control what they can access.`,
+  a6_2: $localize`:FAQ answer 6.2@@faqA6_2:It depends on your plan: 1 user on Free, 3 on Starter, and unlimited users on Growth and Pro — each with role-based access on Growth and above.`,
   q6_3: $localize`:FAQ question 6.3@@faqQ6_3:What languages is Loom21 available in?`,
   a6_3: $localize`:FAQ answer 6.3@@faqA6_3:Loom21 is currently available in English and Bulgarian, with more languages planned.`
 };
@@ -87,6 +92,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
   {
     title: FAQ_CONSTANTS.category2Title,
     items: [
+      { question: FAQ_CONSTANTS.q2_0, answer: FAQ_CONSTANTS.a2_0 },
       { question: FAQ_CONSTANTS.q2_1, answer: FAQ_CONSTANTS.a2_1 },
       { question: FAQ_CONSTANTS.q2_2, answer: FAQ_CONSTANTS.a2_2 },
       { question: FAQ_CONSTANTS.q2_3, answer: FAQ_CONSTANTS.a2_3 },
@@ -99,7 +105,8 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       { question: FAQ_CONSTANTS.q3_1, answer: FAQ_CONSTANTS.a3_1 },
       { question: FAQ_CONSTANTS.q3_2, answer: FAQ_CONSTANTS.a3_2 },
       { question: FAQ_CONSTANTS.q3_3, answer: FAQ_CONSTANTS.a3_3 },
-      { question: FAQ_CONSTANTS.q3_4, answer: FAQ_CONSTANTS.a3_4 }
+      { question: FAQ_CONSTANTS.q3_4, answer: FAQ_CONSTANTS.a3_4 },
+      { question: FAQ_CONSTANTS.q3_5, answer: FAQ_CONSTANTS.a3_5 }
     ]
   },
   {

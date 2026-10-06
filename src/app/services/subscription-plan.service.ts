@@ -1,4 +1,4 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable, isDevMode } from '@angular/core';
 
 @Injectable({
@@ -6,37 +6,28 @@ import { Injectable, isDevMode } from '@angular/core';
 })
 export class SubscriptionPlanService {
   private apiUrl: string;
-  constructor(private http: HttpClient) { 
+  constructor(private http: HttpClient) {
     if (isDevMode()) {
-      this.apiUrl =  'https://localhost:7284/api/subscriptions';
-
+      this.apiUrl = 'https://localhost:7284/api/subscriptions';
     }
     else {
-      this.apiUrl =  'https://app.loom21.com/api/subscriptions';
+      this.apiUrl = 'https://app.loom21.com/api/subscriptions';
     }
   }
 
   getAvailablePlans() {
-    //const headers = new HttpHeaders().set('apiKey', 'GET_AVAILABLE_PLANS_FOR_THE_MAXIS'); // Set your API key here
-    return this.http.get<SubscriptionType[]>(`${this.apiUrl}/available-plans/`, { /*headers*/ });
+    return this.http.get<SubscriptionType[]>(`${this.apiUrl}/available-plans/`);
   }
 }
 
-
-export interface SubscriptionType{
+/** A checkout-able plan from the app API. Display text lives in constants/pricing-const.ts. */
+export interface SubscriptionType {
   id: number;
   productId: string;
   productName: string;
   priceId: string;
-  interval: string;
-  amount: number; // Amount in cents
-  currency: string;
-  perMonthText: string;
-
-  type: string;
-  usersText: string;
-  ordersText: string;
-  storesText: string;
-  userAccessText: string;
-  apiText: string;
+  interval: 'month' | 'year' | 'bitcoin' | 'single' | string;
+  amount: number;   // cents
+  currency: string; // 'eur'
+  type: string;     // 'starter' | 'growth' | 'pro' (new) — old codes are ignored
 }
