@@ -1589,7 +1589,7 @@
       </trans-unit>
       <trans-unit id="trackInventory" datatype="html">
         <source>Track product inventory across multiple stores</source>
-        <target>Проследяване складовите наличности на продукти</target>
+        <target>Удобно проследяване на складови наличности и продукти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">34,35</context>
@@ -1598,7 +1598,7 @@
       </trans-unit>
       <trans-unit id="flexiblePriceLists" datatype="html">
         <source>Set up wholesale, retail, or tiered price lists with customer-specific pricing</source>
-        <target>Създавайте ценови листи на едро, дребно или на нива с индивидуални цени за клиенти</target>
+        <target>Управление на персонализирани ценови листи - лесно създаване на комбинация от цени на едно, дребно, както и сезонни промоции дефинирани чрез предварително зададени формули</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">1</context>
@@ -1607,7 +1607,7 @@
       </trans-unit>
       <trans-unit id="customFieldsFeature" datatype="html">
         <source>Add custom fields to track exactly what matters for your products</source>
-        <target>Добавяйте персонализирани полета, за да проследявате точно това, което е важно за вашите продукти</target>
+        <target>В полетата за персонализирани данни можете да добавите допълнителна информация за вашите продукти (например срок на годност, гаранционен срок и други)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">1</context>
@@ -1616,7 +1616,7 @@
       </trans-unit>
       <trans-unit id="manageClientsSuppliers" datatype="html">
         <source>Manage clients and suppliers</source>
-        <target>Управлявайте клиенти и доставчици</target>
+        <target>Спестява време при управлявление на клиенти и доставчици</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">35,36</context>
@@ -1625,7 +1625,7 @@
       </trans-unit>
       <trans-unit id="controlData" datatype="html">
         <source>Control your own data — Import and Export</source>
-        <target>Контролирайте вашите собствени данни - импортиране и експортиране</target>
+        <target>Контролирайте вашите собствени данни - импортиране и експортиране в различни видове формати</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">36,37</context>
@@ -1634,7 +1634,7 @@
       </trans-unit>
       <trans-unit id="sendPaymentLinks" datatype="html">
         <source>Create and share payment links instantly</source>
-        <target>Можете да създавате връзки за плащане, за да приемате плащания.</target>
+        <target>Създаване на връзки за приемане на плащания бързо и лесно</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">37,38</context>
@@ -1643,7 +1643,7 @@
       </trans-unit>
       <trans-unit id="acceptPayments" datatype="html">
         <source>Accept Bitcoin (Lightning &amp; on-chain) and credit/debit card payments</source>
-        <target>Приемайте плащания с Bitcoin, Lightning и кредитни/дебитни карти</target>
+        <target>Приемане на плащания с Bitcoin, Lightning, както и кредитни/дебитни карти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">38,39</context>
@@ -1652,7 +1652,7 @@
       </trans-unit>
       <trans-unit id="documentGeneration" datatype="html">
         <source>Generate quotes, invoices, receipts, and pickup lists</source>
-        <target>Генерирайте оферти, фактури, разписки и списъци за вземане</target>
+        <target>Генерира оферти, фактури, разписки и списъци при получаване на стока на едно място</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">39,40</context>
@@ -1661,7 +1661,7 @@
       </trans-unit>
       <trans-unit id="orderHistory" datatype="html">
         <source>View customer order history and reorder with one click</source>
-        <target>Вижте историята на поръчките на клиентите и направете повторна поръчка с едно кликване</target>
+        <target>Копиране на съществуващи поръчки с един клик от история на клиентите</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">40,41</context>
@@ -1670,7 +1670,7 @@
       </trans-unit>
       <trans-unit id="barcodeQr" datatype="html">
         <source>Generate barcodes and QR codes for products</source>
-        <target>Генерирайте баркодове и QR кодове за продукти</target>
+        <target>Моментално генериране на баркодове и QR кодове за продукти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">41,42</context>
@@ -1688,7 +1688,7 @@
       </trans-unit>
       <trans-unit id="multiLanguage" datatype="html">
         <source>Available in multiple languages</source>
-        <target>Налично на множество езици</target>
+        <target>Налично на различни езици</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">43,45</context>
