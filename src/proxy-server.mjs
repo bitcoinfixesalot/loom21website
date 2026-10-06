@@ -12,6 +12,14 @@ function run() {
   const port = process.env.PORT || 80;
   const server = express();
 
+  // Redirect www.loom21.com → loom21.com (single canonical host)
+  server.use((req, res, next) => {
+    if (req.hostname === 'www.loom21.com') {
+      return res.redirect(301, `https://loom21.com${req.originalUrl}`);
+    }
+    next();
+  });
+
   server.use(express.static(__dirname));
 
   // Redirect root URL to /en/ with 301 status
