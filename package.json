@@ -9,8 +9,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:loom21website": "node dist/loom21website/proxy-server.mjs",
-    "dev-bg:ssr": "env LANGUAGE=bg ng run loom21website:serve-ssr --o",
-    "dev-en:ssr": "env LANGUAGE=en ng run loom21website:serve-ssr --o"
+    "dev-bg:ssr": "ng serve --configuration bg -o",
+    "dev-en:ssr": "ng serve --configuration development -o"
   },
   "private": true,
   "dependencies": {

@@ -97,6 +97,15 @@
                 "en"
               ],
               "baseHref": "/en/"
+            },
+            "bg": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "localize": [
+                "bg"
+              ],
+              "baseHref": "/bg/"
             }
           },
           "defaultConfiguration": "production"
