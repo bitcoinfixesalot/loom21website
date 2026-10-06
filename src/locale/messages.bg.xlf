@@ -1950,42 +1950,6 @@
         </context-group>
         <note priority="1" from="description">Choose plan button</note>
       </trans-unit>
-      <trans-unit id="onboarding_space" datatype="html">
-        <source> Onboarding</source>
-        <target> Стартова такса</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">72,73</context>
-        </context-group>
-        <note priority="1" from="description">Onboarding after plan</note>
-      </trans-unit>
-      <trans-unit id="noOnboardingFee" datatype="html">
-        <source>No onboarding fee</source>
-        <target>Без стартова такса</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">76,77</context>
-        </context-group>
-        <note priority="1" from="description">No onboarding fee</note>
-      </trans-unit>
-      <trans-unit id="oneTimeOnboardingFee" datatype="html">
-        <source> One-time onboarding fee: </source>
-        <target> Еднократна стартова такса:</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">80,81</context>
-        </context-group>
-        <note priority="1" from="description">One-time onboarding fee</note>
-      </trans-unit>
-      <trans-unit id="reqieredOneTimePayment" datatype="html">
-        <source> Required one-time payment in addition to subscription </source>
-        <target> Изисква се еднократно плащане в допълнение към абонамента </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">93,95</context>
-        </context-group>
-        <note priority="1" from="description">Required one-time payment</note>
-      </trans-unit>
       <trans-unit id="needAcustomPlan" datatype="html">
         <source>Need a Custom Plan? </source>
         <target>Нуждаете се от персонализиран план?</target>

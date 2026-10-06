@@ -782,6 +782,13 @@
           <context context-type="linenumber">56</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="errorMessage" datatype="html">
+        <source>Something went wrong and your message wasn&apos;t sent. Please try again, or email us directly.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="privacyPolicyTitle" datatype="html">
         <source>Privacy Policy for Loom21</source>
         <context-group purpose="location">
@@ -1898,7 +1905,7 @@
         <source> Submit </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">86,87</context>
+          <context context-type="linenumber">94,95</context>
         </context-group>
         <note priority="1" from="description">Submit button</note>
       </trans-unit>
@@ -1906,7 +1913,7 @@
         <source>We&apos;d love to hear from you</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">99,100</context>
+          <context context-type="linenumber">107,108</context>
         </context-group>
         <note priority="1" from="description">Contact detail title</note>
       </trans-unit>
@@ -1914,7 +1921,7 @@
         <source>We typically respond within one business day.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">100,102</context>
+          <context context-type="linenumber">108,110</context>
         </context-group>
         <note priority="1" from="description">Contact detail response</note>
       </trans-unit>
@@ -1922,7 +1929,7 @@
         <source>Community</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">102,103</context>
+          <context context-type="linenumber">110,111</context>
         </context-group>
         <note priority="1" from="description">Contact community</note>
       </trans-unit>
@@ -1930,7 +1937,7 @@
         <source>Join our Telegram</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">107,109</context>
+          <context context-type="linenumber">115,117</context>
         </context-group>
         <note priority="1" from="description">Join telegram</note>
       </trans-unit>
@@ -1938,7 +1945,7 @@
         <source>Follow on X</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">113,115</context>
+          <context context-type="linenumber">121,123</context>
         </context-group>
         <note priority="1" from="description">Follow twitter</note>
       </trans-unit>
@@ -1946,9 +1953,37 @@
         <source>Docs on GitHub</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">119,120</context>
+          <context context-type="linenumber">127,128</context>
         </context-group>
         <note priority="1" from="description">Github docs</note>
+      </trans-unit>
+      <trans-unit id="docsLoadError" datatype="html">
+        <source>We couldn&apos;t load the documentation right now. Please try again, or read it directly on GitHub.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/documentation/documentation.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+        <note priority="1" from="description">Docs load error</note>
+      </trans-unit>
+      <trans-unit id="retryButton" datatype="html">
+        <source>Try Again</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/documentation/documentation.component.html</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+        <note priority="1" from="description">Retry button</note>
+      </trans-unit>
+      <trans-unit id="viewOnGithub" datatype="html">
+        <source>View on GitHub</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/documentation/documentation.component.html</context>
+          <context context-type="linenumber">47,52</context>
+        </context-group>
+        <note priority="1" from="description">View on GitHub button</note>
       </trans-unit>
       <trans-unit id="contactUsButton" datatype="html">
         <source>Contact Us</source>
@@ -2302,7 +2337,7 @@
         <source>Why Loom21?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">152,153</context>
+          <context context-type="linenumber">155,156</context>
         </context-group>
         <note priority="1" from="description">Why loom21</note>
       </trans-unit>
@@ -2310,7 +2345,7 @@
         <source>Free to Start</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">157,158</context>
+          <context context-type="linenumber">160,161</context>
         </context-group>
         <note priority="1" from="description">Stat free</note>
       </trans-unit>
@@ -2318,7 +2353,7 @@
         <source>No credit card required. Get started immediately with a free account.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">158,160</context>
+          <context context-type="linenumber">161,163</context>
         </context-group>
         <note priority="1" from="description">Stat free desc</note>
       </trans-unit>
@@ -2326,7 +2361,7 @@
         <source>Your Data, Your Control</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">164,165</context>
+          <context context-type="linenumber">167,168</context>
         </context-group>
         <note priority="1" from="description">Stat ownership</note>
       </trans-unit>
@@ -2334,7 +2369,7 @@
         <source>Import and export your data at any time. No lock-in.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">165,168</context>
+          <context context-type="linenumber">168,171</context>
         </context-group>
         <note priority="1" from="description">Stat ownership desc</note>
       </trans-unit>
@@ -2342,7 +2377,7 @@
         <source>Bitcoin Native</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">171,172</context>
+          <context context-type="linenumber">174,175</context>
         </context-group>
         <note priority="1" from="description">Stat bitcoin</note>
       </trans-unit>
@@ -2350,7 +2385,7 @@
         <source>Accept Lightning and on-chain Bitcoin payments alongside traditional card payments.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">172,175</context>
+          <context context-type="linenumber">175,178</context>
         </context-group>
         <note priority="1" from="description">Stat bitcoin desc</note>
       </trans-unit>
@@ -2412,11 +2447,31 @@
         </context-group>
         <note priority="1" from="description">Loading subscription plans label</note>
       </trans-unit>
+      <trans-unit id="pricingLoadError" datatype="html">
+        <source>We couldn&apos;t load pricing plans right now. Please try again, or contact us and we&apos;ll help directly.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+        <note priority="1" from="description">Pricing load error</note>
+      </trans-unit>
+      <trans-unit id="contactUsPricing" datatype="html">
+        <source>Contact Us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">17,21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">142,143</context>
+        </context-group>
+        <note priority="1" from="description">Contact us button</note>
+      </trans-unit>
       <trans-unit id="monthly" datatype="html">
         <source>MONTHLY</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">18,19</context>
+          <context context-type="linenumber">27,28</context>
         </context-group>
         <note priority="1" from="description">Monthly button</note>
       </trans-unit>
@@ -2424,7 +2479,7 @@
         <source>ANNUAL</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">23,24</context>
+          <context context-type="linenumber">32,33</context>
         </context-group>
         <note priority="1" from="description">Annual button</note>
       </trans-unit>
@@ -2432,7 +2487,7 @@
         <source>BITCOIN</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">32,33</context>
+          <context context-type="linenumber">41,42</context>
         </context-group>
         <note priority="1" from="description">Bitcoin button</note>
       </trans-unit>
@@ -2440,7 +2495,7 @@
         <source> Choose Plan </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">63,64</context>
+          <context context-type="linenumber">72,73</context>
         </context-group>
         <note priority="1" from="description">Choose plan button</note>
       </trans-unit>
@@ -2448,7 +2503,7 @@
         <source>Need a Custom Plan? </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">125,127</context>
+          <context context-type="linenumber">134,136</context>
         </context-group>
         <note priority="1" from="description">Need custom plan</note>
       </trans-unit>
@@ -2456,23 +2511,15 @@
         <source> Looking for a tailored solution? Contact us to discuss your specific needs and get a personalized quote. </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">128,129</context>
+          <context context-type="linenumber">137,138</context>
         </context-group>
         <note priority="1" from="description">Personalized quote</note>
-      </trans-unit>
-      <trans-unit id="contactUsPricing" datatype="html">
-        <source> Contact Us </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">133,134</context>
-        </context-group>
-        <note priority="1" from="description">Contact us button</note>
       </trans-unit>
       <trans-unit id="billedAnnually" datatype="html">
         <source>per month (billed annually)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">61</context>
+          <context context-type="linenumber">58</context>
         </context-group>
         <note priority="1" from="description">Billed annually</note>
       </trans-unit>
@@ -2480,7 +2527,7 @@
         <source>per month</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">63</context>
+          <context context-type="linenumber">60</context>
         </context-group>
         <note priority="1" from="description">Per month</note>
       </trans-unit>
@@ -2488,7 +2535,7 @@
         <source>Entrepreneur</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">95</context>
+          <context context-type="linenumber">97</context>
         </context-group>
         <note priority="1" from="description">Entrepreneur</note>
       </trans-unit>
@@ -2496,7 +2543,7 @@
         <source>1 user</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">96</context>
+          <context context-type="linenumber">98</context>
         </context-group>
         <note priority="1" from="description">One User</note>
       </trans-unit>
@@ -2504,7 +2551,7 @@
         <source>8 000 orders/year</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">97</context>
+          <context context-type="linenumber">99</context>
         </context-group>
         <note priority="1" from="description">Basic Orders</note>
       </trans-unit>
@@ -2512,7 +2559,7 @@
         <source>1 store location</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">98</context>
+          <context context-type="linenumber">100</context>
         </context-group>
         <note priority="1" from="description">One Store Location</note>
       </trans-unit>
@@ -2520,7 +2567,7 @@
         <source>Full access</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">99</context>
+          <context context-type="linenumber">101</context>
         </context-group>
         <note priority="1" from="description">One User Access</note>
       </trans-unit>
@@ -2528,7 +2575,7 @@
         <source>No API Access</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">100</context>
+          <context context-type="linenumber">102</context>
         </context-group>
         <note priority="1" from="description">No Access to API</note>
       </trans-unit>
@@ -2536,7 +2583,7 @@
         <source>Small Business</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">102</context>
+          <context context-type="linenumber">104</context>
         </context-group>
         <note priority="1" from="description">Small Business</note>
       </trans-unit>
@@ -2544,7 +2591,7 @@
         <source>5 users</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">103</context>
+          <context context-type="linenumber">105</context>
         </context-group>
         <note priority="1" from="description">Five Users</note>
       </trans-unit>
@@ -2552,7 +2599,7 @@
         <source>60 000 orders/year</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">104</context>
+          <context context-type="linenumber">106</context>
         </context-group>
         <note priority="1" from="description">Small Orders</note>
       </trans-unit>
@@ -2560,7 +2607,7 @@
         <source>5 store locations</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">105</context>
+          <context context-type="linenumber">107</context>
         </context-group>
         <note priority="1" from="description">Five Store Location</note>
       </trans-unit>
@@ -2568,11 +2615,11 @@
         <source>User Access Rights</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">106</context>
+          <context context-type="linenumber">108</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">113</context>
+          <context context-type="linenumber">115</context>
         </context-group>
         <note priority="1" from="description">User Access Rights</note>
       </trans-unit>
@@ -2580,7 +2627,7 @@
         <source>Limited Access to API</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">107</context>
+          <context context-type="linenumber">109</context>
         </context-group>
         <note priority="1" from="description">Limited Access to API</note>
       </trans-unit>
@@ -2588,7 +2635,7 @@
         <source>Mid-size</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">109</context>
+          <context context-type="linenumber">111</context>
         </context-group>
         <note priority="1" from="description">Mid-size</note>
       </trans-unit>
@@ -2596,7 +2643,7 @@
         <source>10 users</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">110</context>
+          <context context-type="linenumber">112</context>
         </context-group>
         <note priority="1" from="description">Ten User</note>
       </trans-unit>
@@ -2604,7 +2651,7 @@
         <source>300 000 orders/year</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">111</context>
+          <context context-type="linenumber">113</context>
         </context-group>
         <note priority="1" from="description">Mid Orders</note>
       </trans-unit>
@@ -2612,7 +2659,7 @@
         <source>50 store location</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">112</context>
+          <context context-type="linenumber">114</context>
         </context-group>
         <note priority="1" from="description">Mid Store Location</note>
       </trans-unit>
@@ -2620,7 +2667,7 @@
         <source> Full API Access</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">114</context>
+          <context context-type="linenumber">116</context>
         </context-group>
         <note priority="1" from="description">Full Access to API</note>
       </trans-unit>
