@@ -66,8 +66,8 @@
         <note priority="1" from="description">Home title</note>
       </trans-unit>
       <trans-unit id="documentationTitle" datatype="html">
-        <source>Documentation - Loom 21</source>
-        <target>Документация - Loom 21 </target>
+        <source>Documentation | Loom21</source>
+        <target>Документация | Loom21</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">7</context>
@@ -75,8 +75,8 @@
         <note priority="1" from="description">Documentation title</note>
       </trans-unit>
       <trans-unit id="contactTitle" datatype="html">
-        <source>Contact - Loom 21</source>
-        <target>Контакти - Loom 21 </target>
+        <source>Contact | Loom21</source>
+        <target>Контакти | Loom21</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">8</context>
@@ -84,8 +84,8 @@
         <note priority="1" from="description">Contact title</note>
       </trans-unit>
       <trans-unit id="PricingTitle" datatype="html">
-        <source>Pricing - Loom 21</source>
-        <target>Цени - Loom 21 </target>
+        <source>Pricing | Loom21</source>
+        <target>Цени | Loom21</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">9</context>
@@ -93,8 +93,8 @@
         <note priority="1" from="description">Pricing title</note>
       </trans-unit>
       <trans-unit id="privacyTitle" datatype="html">
-        <source>Privacy - Loom 21</source>
-        <target>Поверителност - Loom 21</target>
+        <source>Privacy | Loom21</source>
+        <target>Поверителност | Loom21</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">10</context>
@@ -1575,7 +1575,7 @@
       </trans-unit>
       <trans-unit id="featuresTitle" datatype="html">
         <source>Features</source>
-        <target>Особености</target>
+        <target>Функционалности</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">30,31</context>
@@ -1602,7 +1602,7 @@
       </trans-unit>
       <trans-unit id="flexiblePriceLists" datatype="html">
         <source>Set up wholesale, retail, or tiered price lists with customer-specific pricing</source>
-        <target>Управление на персонализирани ценови листи - лесно създаване на комбинация от цени на едно, дребно, както и сезонни промоции дефинирани чрез предварително зададени формули</target>
+        <target>Управление на персонализирани ценови листи - лесно създаване на комбинация от цени на едро, дребно, както и сезонни промоции дефинирани чрез предварително зададени формули</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">1</context>
@@ -1620,7 +1620,7 @@
       </trans-unit>
       <trans-unit id="manageClientsSuppliers" datatype="html">
         <source>Manage clients and suppliers</source>
-        <target>Спестява време при управлявление на клиенти и доставчици</target>
+        <target>Спестява време при управление на клиенти и доставчици</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">35,36</context>
@@ -1637,17 +1637,17 @@
         <note priority="1" from="description">Control your own data</note>
       </trans-unit>
       <trans-unit id="sendPaymentLinks" datatype="html">
-        <source>Create and share payment links instantly</source>
-        <target>Създаване на връзки за приемане на плащания бързо и лесно</target>
+        <source>Create and share payment links and sale orders instantly</source>
+        <target>Създавайте и споделяйте връзки за плащане и поръчки за продажба мигновено</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">37,38</context>
+          <context context-type="linenumber">44,45</context>
         </context-group>
         <note priority="1" from="description">Send payment links</note>
       </trans-unit>
       <trans-unit id="acceptPayments" datatype="html">
         <source>Accept Bitcoin (Lightning &amp; on-chain) and credit/debit card payments</source>
-        <target>Приемане на плащания с Bitcoin, Lightning, както и кредитни/дебитни карти</target>
+        <target>Приемане на плащания с Биткойн (Lightning и он-чейн), както и с кредитни/дебитни карти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">38,39</context>
@@ -1834,8 +1834,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="errorMessagePart1" datatype="html">
-        <source>Join Loom 21 back at the </source>
-        <target>Присъединете се към Loom 21 отново на </target>
+        <source>Join Loom21 back at the </source>
+        <target>Присъединете се към Loom21 отново на </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
           <context context-type="linenumber">11</context>
@@ -2148,8 +2148,8 @@
         <note priority="1" from="description">Full Access to API</note>
       </trans-unit>
       <trans-unit id="faqTitle" datatype="html">
-        <source>FAQ - Loom 21</source>
-        <target>ЧЗВ - Loom 21</target>
+        <source>FAQ | Loom21</source>
+        <target>ЧЗВ | Loom21</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2310,8 +2310,8 @@
         <note priority="1" from="description">FAQ question 2.1</note>
       </trans-unit>
       <trans-unit id="faqA2_1" datatype="html">
-        <source>Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNBits — covering both Lightning and on-chain Bitcoin.</source>
-        <target>Stripe за кредитни и дебитни карти, и Биткойн чрез BTCPay Server, Lightning Wallet (Glow), Speed Wallet и LNBits — покриващи както Lightning, така и он-чейн Биткойн.</target>
+        <source>Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNbits — covering both Lightning and on-chain Bitcoin.</source>
+        <target>Stripe за кредитни и дебитни карти, и Биткойн чрез BTCPay Server, Lightning Wallet (Glow), Speed Wallet и LNbits — покриващи както Lightning, така и он-чейн Биткойн.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2346,8 +2346,8 @@
         <note priority="1" from="description">FAQ question 2.3</note>
       </trans-unit>
       <trans-unit id="faqA2_3" datatype="html">
-        <source>It depends on the method. BTCPay Server, Speed Wallet, and LNBits connect using an API key or URL you enter in Settings. Lightning Wallet (Glow) works differently — just enter any LNURL-compatible Lightning Address (Glow's own address works out of the box), then use the Test Connection button to verify it.</source>
-        <target>Зависи от метода. BTCPay Server, Speed Wallet и LNBits се свързват чрез API ключ или URL адрес, които въвеждате в Настройки. Lightning Wallet (Glow) работи по различен начин — просто въведете произволен LNURL-съвместим Lightning адрес (собственият адрес на Glow работи директно), след което използвайте бутона Test Connection, за да го проверите.</target>
+        <source>It depends on the method. BTCPay Server, Speed Wallet, and LNbits connect using an API key or URL you enter in Settings. Lightning Wallet (Glow) works differently — just enter any LNURL-compatible Lightning Address (Glow's own address works out of the box), then use the Test Connection button to verify it.</source>
+        <target>Зависи от метода. BTCPay Server, Speed Wallet и LNbits се свързват чрез API ключ или URL адрес, които въвеждате в Настройки. Lightning Wallet (Glow) работи по различен начин — просто въведете произволен LNURL-съвместим Lightning адрес (собственият адрес на Glow работи директно), след което използвайте бутона Test Connection, за да го проверите.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2364,8 +2364,8 @@
         <note priority="1" from="description">FAQ question 2.4</note>
       </trans-unit>
       <trans-unit id="faqA2_4" datatype="html">
-        <source>For BTCPay Server, Speed Wallet, and LNBits, confirmation is real-time — the order status updates automatically the moment the payment settles. For Lightning Wallet (Glow) and other Lightning Address wallets, real-time confirmation depends on your wallet provider supporting it; use the Test Connection button in Settings to check your specific address.</source>
-        <target>За BTCPay Server, Speed Wallet и LNBits потвърждението е в реално време — статусът на поръчката се актуализира автоматично в момента на уреждане на плащането. За Lightning Wallet (Glow) и други портфейли с Lightning адрес, потвърждението в реално време зависи от това дали доставчикът на портфейла го поддържа; използвайте бутона Test Connection в Настройки, за да проверите своя конкретен адрес.</target>
+        <source>For BTCPay Server, Speed Wallet, and LNbits, confirmation is real-time — the order status updates automatically the moment the payment settles. For Lightning Wallet (Glow) and other Lightning Address wallets, real-time confirmation depends on your wallet provider supporting it; use the Test Connection button in Settings to check your specific address.</source>
+        <target>За BTCPay Server, Speed Wallet и LNbits потвърждението е в реално време — статусът на поръчката се актуализира автоматично в момента на уреждане на плащането. За Lightning Wallet (Glow) и други портфейли с Lightning адрес, потвърждението в реално време зависи от това дали доставчикът на портфейла го поддържа; използвайте бутона Test Connection в Настройки, за да проверите своя конкретен адрес.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2661,8 +2661,8 @@
         <note priority="1" from="description">FAQ answer 6.3</note>
       </trans-unit>
       <trans-unit id="roadmapTitle" datatype="html">
-        <source>Roadmap - Loom 21</source>
-        <target>Пътна карта - Loom 21</target>
+        <source>Roadmap | Loom21</source>
+        <target>Пътна карта | Loom21</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2769,8 +2769,8 @@
         <note priority="1" from="description">Roadmap shipped item 1 title</note>
       </trans-unit>
       <trans-unit id="roadmapShipped1Desc" datatype="html">
-        <source>Accept payments via Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNBits.</source>
-        <target>Приемайте плащания чрез Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet и LNBits.</target>
+        <source>Accept payments via Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNbits.</source>
+        <target>Приемайте плащания чрез Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet и LNbits.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -3091,6 +3091,15 @@
           <context context-type="linenumber">191,194</context>
         </context-group>
         <note priority="1" from="description">Stat instant desc</note>
+      </trans-unit>
+      <trans-unit id="contactEmailLabel" datatype="html">
+        <source>Or email us:</source>
+        <target>Или ни пишете:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+        <note priority="1" from="description">Contact email label</note>
       </trans-unit>
     </body>
   </file>

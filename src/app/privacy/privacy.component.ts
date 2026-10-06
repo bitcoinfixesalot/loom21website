@@ -42,7 +42,7 @@ export class PrivacyComponent implements OnInit{
         'description': LD_JSON.privacy_description,
         'isPartOf': {
           '@type': 'WebSite',
-          'name': 'Loom 21',
+          'name': 'Loom21',
           'url': 'https://loom21.com'
         }
       },

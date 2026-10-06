@@ -14,7 +14,7 @@ export interface OgMetaData {
 })
 export class OgMetaService {
   private readonly defaultImage = 'https://loom21.com/assets/images/form-banners/loom-app-laptop-mobile.png';
-  private readonly siteName = 'Loom 21';
+  private readonly siteName = 'Loom21';
   private readonly baseDomain = 'https://loom21.com';
 
   constructor(

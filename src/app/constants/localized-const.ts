@@ -4,12 +4,12 @@ export const TAGS = {
 
 export const TITLES = {
     home_title: $localize`:Home title@@homeTitle:Loom21 — Bitcoin & Card Payments with Real-Time Inventory`,
-    documentation: $localize`:Documentation title@@documentationTitle:Documentation - Loom 21`,
-    contact: $localize`:Contact title@@contactTitle:Contact - Loom 21`,
-    pricing: $localize`:Pricing title@@PricingTitle:Pricing - Loom 21`,
-    privacy: $localize`:Privacy title@@privacyTitle:Privacy - Loom 21`,
-    faq: $localize`:FAQ title@@faqTitle:FAQ - Loom 21`,
-    roadmap: $localize`:Roadmap title@@roadmapTitle:Roadmap - Loom 21`,
+    documentation: $localize`:Documentation title@@documentationTitle:Documentation | Loom21`,
+    contact: $localize`:Contact title@@contactTitle:Contact | Loom21`,
+    pricing: $localize`:Pricing title@@PricingTitle:Pricing | Loom21`,
+    privacy: $localize`:Privacy title@@privacyTitle:Privacy | Loom21`,
+    faq: $localize`:FAQ title@@faqTitle:FAQ | Loom21`,
+    roadmap: $localize`:Roadmap title@@roadmapTitle:Roadmap | Loom21`,
 }
 
 export const DESCRIPTIONS = {

@@ -61,11 +61,11 @@ export class ContactComponent implements OnInit {
       {
         '@context': 'https://schema.org',
         '@type': 'ContactPage',
-        'name': 'Contact - Loom 21',
+        'name': 'Contact | Loom21',
         'description': LD_JSON.contact_description,
         'isPartOf': {
           '@type': 'WebSite',
-          'name': 'Loom 21'
+          'name': 'Loom21'
         }
       },
       {

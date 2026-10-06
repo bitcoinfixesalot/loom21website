@@ -38,7 +38,7 @@ export class AppComponent {
       { name: "author", content: "loom 21" },
     ]);
 
-    this.titleService.setTitle("Loom 21");
+    this.titleService.setTitle("Loom21");
 
     this.router.events
       .pipe(

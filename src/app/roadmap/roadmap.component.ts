@@ -37,7 +37,7 @@ export class RoadmapComponent implements OnInit {
         '@type': 'WebPage',
         'name': TITLES.roadmap,
         'description': LD_JSON.roadmap_description,
-        'isPartOf': { '@type': 'WebSite', 'name': 'Loom 21', 'url': 'https://loom21.com' }
+        'isPartOf': { '@type': 'WebSite', 'name': 'Loom21', 'url': 'https://loom21.com' }
       },
       {
         '@context': 'https://schema.org',

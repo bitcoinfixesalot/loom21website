@@ -16,13 +16,13 @@ export const FAQ_CONSTANTS = {
   // Category 2: Payments & Bitcoin
   category2Title: $localize`:FAQ category 2 title@@faqCategory2Title:Payments & Bitcoin`,
   q2_1: $localize`:FAQ question 2.1@@faqQ2_1:What payment methods does Loom21 support?`,
-  a2_1: $localize`:FAQ answer 2.1@@faqA2_1:Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNBits — covering both Lightning and on-chain Bitcoin.`,
+  a2_1: $localize`:FAQ answer 2.1@@faqA2_1:Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNbits — covering both Lightning and on-chain Bitcoin.`,
   q2_2: $localize`:FAQ question 2.2@@faqQ2_2:Can I accept both Bitcoin Lightning and on-chain payments?`,
   a2_2: $localize`:FAQ answer 2.2@@faqA2_2:Yes. Most of our Bitcoin processors support Lightning and on-chain payments side by side with card payments, so you can offer whichever methods suit your customers.`,
   q2_3: $localize`:FAQ question 2.3@@faqQ2_3:Do I need my own Bitcoin wallet or node to use Loom21?`,
-  a2_3: $localize`:FAQ answer 2.3@@faqA2_3:It depends on the method. BTCPay Server, Speed Wallet, and LNBits connect using an API key or URL you enter in Settings. Lightning Wallet (Glow) works differently — just enter any LNURL-compatible Lightning Address (Glow's own address works out of the box), then use the Test Connection button to verify it.`,
+  a2_3: $localize`:FAQ answer 2.3@@faqA2_3:It depends on the method. BTCPay Server, Speed Wallet, and LNbits connect using an API key or URL you enter in Settings. Lightning Wallet (Glow) works differently — just enter any LNURL-compatible Lightning Address (Glow's own address works out of the box), then use the Test Connection button to verify it.`,
   q2_4: $localize`:FAQ question 2.4@@faqQ2_4:How are Bitcoin payments confirmed?`,
-  a2_4: $localize`:FAQ answer 2.4@@faqA2_4:For BTCPay Server, Speed Wallet, and LNBits, confirmation is real-time — the order status updates automatically the moment the payment settles. For Lightning Wallet (Glow) and other Lightning Address wallets, real-time confirmation depends on your wallet provider supporting it; use the Test Connection button in Settings to check your specific address.`,
+  a2_4: $localize`:FAQ answer 2.4@@faqA2_4:For BTCPay Server, Speed Wallet, and LNbits, confirmation is real-time — the order status updates automatically the moment the payment settles. For Lightning Wallet (Glow) and other Lightning Address wallets, real-time confirmation depends on your wallet provider supporting it; use the Test Connection button in Settings to check your specific address.`,
 
   // Category 3: Pricing & Price Lists
   category3Title: $localize`:FAQ category 3 title@@faqCategory3Title:Pricing & Price Lists`,

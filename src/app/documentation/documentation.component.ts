@@ -57,9 +57,9 @@ export class DocumentationComponent implements OnInit {
       {
         '@context': 'https://schema.org',
         '@type': 'WebPage',
-        'name': 'Documentation - Loom 21',
+        'name': 'Documentation | Loom21',
         'description': LD_JSON.documentation_description,
-        'isPartOf': { '@type': 'WebSite', 'name': 'Loom 21' }
+        'isPartOf': { '@type': 'WebSite', 'name': 'Loom21' }
       }
     ]);
   }

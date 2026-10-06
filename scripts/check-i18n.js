@@ -14,7 +14,13 @@ const missing = [...en.keys()].filter(id => !bg.has(id));
 const stale = [...bg.keys()].filter(id => !en.has(id));
 const noTarget = [...bg].filter(([id, body]) => en.has(id) && !/<target[^>]*>[\s\S]*?\S[\s\S]*?<\/target>/.test(body)).map(([id]) => id);
 
+// Source text changed in code but the BG unit still carries the old source → its target is probably outdated.
+const source = body => ((body.match(/<source>([\s\S]*?)<\/source>/) || [])[1] || '')
+  .replace(/&apos;/g, "'").replace(/&quot;/g, '"').replace(/\s+/g, ' ').trim();
+const outdated = [...bg].filter(([id, body]) => en.has(id) && source(body) !== source(en.get(id))).map(([id]) => id);
+
 console.log('Missing in BG:', missing.length, missing);
 console.log('Stale in BG:', stale.length, stale);
 console.log('BG units without a target:', noTarget.length, noTarget);
-process.exit(missing.length || noTarget.length ? 1 : 0);
+console.log('BG units with outdated source text:', outdated.length, outdated);
+process.exit(missing.length || noTarget.length || outdated.length ? 1 : 0);

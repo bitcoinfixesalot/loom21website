@@ -6,7 +6,7 @@
         <source>Home</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">16,17</context>
+          <context context-type="linenumber">17</context>
         </context-group>
         <note priority="1" from="description">Home menu</note>
       </trans-unit>
@@ -155,7 +155,7 @@
         <note priority="1" from="description">FAQ question 2.1</note>
       </trans-unit>
       <trans-unit id="faqA2_1" datatype="html">
-        <source>Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNBits — covering both Lightning and on-chain Bitcoin.</source>
+        <source>Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNbits — covering both Lightning and on-chain Bitcoin.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">19</context>
@@ -187,7 +187,7 @@
         <note priority="1" from="description">FAQ question 2.3</note>
       </trans-unit>
       <trans-unit id="faqA2_3" datatype="html">
-        <source>It depends on the method. BTCPay Server, Speed Wallet, and LNBits connect using an API key or URL you enter in Settings. Lightning Wallet (Glow) works differently — just enter any LNURL-compatible Lightning Address (Glow&apos;s own address works out of the box), then use the Test Connection button to verify it.</source>
+        <source>It depends on the method. BTCPay Server, Speed Wallet, and LNbits connect using an API key or URL you enter in Settings. Lightning Wallet (Glow) works differently — just enter any LNURL-compatible Lightning Address (Glow&apos;s own address works out of the box), then use the Test Connection button to verify it.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">23</context>
@@ -203,7 +203,7 @@
         <note priority="1" from="description">FAQ question 2.4</note>
       </trans-unit>
       <trans-unit id="faqA2_4" datatype="html">
-        <source>For BTCPay Server, Speed Wallet, and LNBits, confirmation is real-time — the order status updates automatically the moment the payment settles. For Lightning Wallet (Glow) and other Lightning Address wallets, real-time confirmation depends on your wallet provider supporting it; use the Test Connection button in Settings to check your specific address.</source>
+        <source>For BTCPay Server, Speed Wallet, and LNbits, confirmation is real-time — the order status updates automatically the moment the payment settles. For Lightning Wallet (Glow) and other Lightning Address wallets, real-time confirmation depends on your wallet provider supporting it; use the Test Connection button in Settings to check your specific address.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">25</context>
@@ -483,7 +483,7 @@
         <note priority="1" from="description">Home title</note>
       </trans-unit>
       <trans-unit id="documentationTitle" datatype="html">
-        <source>Documentation - Loom 21</source>
+        <source>Documentation | Loom21</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">7</context>
@@ -491,7 +491,7 @@
         <note priority="1" from="description">Documentation title</note>
       </trans-unit>
       <trans-unit id="contactTitle" datatype="html">
-        <source>Contact - Loom 21</source>
+        <source>Contact | Loom21</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">8</context>
@@ -499,7 +499,7 @@
         <note priority="1" from="description">Contact title</note>
       </trans-unit>
       <trans-unit id="PricingTitle" datatype="html">
-        <source>Pricing - Loom 21</source>
+        <source>Pricing | Loom21</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">9</context>
@@ -507,7 +507,7 @@
         <note priority="1" from="description">Pricing title</note>
       </trans-unit>
       <trans-unit id="privacyTitle" datatype="html">
-        <source>Privacy - Loom 21</source>
+        <source>Privacy | Loom21</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">10</context>
@@ -515,7 +515,7 @@
         <note priority="1" from="description">Privacy title</note>
       </trans-unit>
       <trans-unit id="faqTitle" datatype="html">
-        <source>FAQ - Loom 21</source>
+        <source>FAQ | Loom21</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">11</context>
@@ -523,7 +523,7 @@
         <note priority="1" from="description">FAQ title</note>
       </trans-unit>
       <trans-unit id="roadmapTitle" datatype="html">
-        <source>Roadmap - Loom 21</source>
+        <source>Roadmap | Loom21</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">12</context>
@@ -1622,7 +1622,7 @@
         <note priority="1" from="description">Roadmap shipped item 1 title</note>
       </trans-unit>
       <trans-unit id="roadmapShipped1Desc" datatype="html">
-        <source>Accept payments via Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNBits.</source>
+        <source>Accept payments via Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNbits.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">15</context>
@@ -1873,7 +1873,7 @@
         <source>Enter your business...</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">52,54</context>
+          <context context-type="linenumber">52,55</context>
         </context-group>
         <note priority="1" from="description">Enter your business placeholder</note>
       </trans-unit>
@@ -1921,15 +1921,23 @@
         <source>We typically respond within one business day.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">108,110</context>
+          <context context-type="linenumber">108,109</context>
         </context-group>
         <note priority="1" from="description">Contact detail response</note>
+      </trans-unit>
+      <trans-unit id="contactEmailLabel" datatype="html">
+        <source>Or email us:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+        <note priority="1" from="description">Contact email label</note>
       </trans-unit>
       <trans-unit id="contactCommunity" datatype="html">
         <source>Community</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">110,111</context>
+          <context context-type="linenumber">111,112</context>
         </context-group>
         <note priority="1" from="description">Contact community</note>
       </trans-unit>
@@ -1937,7 +1945,7 @@
         <source>Join our Telegram</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">115,117</context>
+          <context context-type="linenumber">116,118</context>
         </context-group>
         <note priority="1" from="description">Join telegram</note>
       </trans-unit>
@@ -1945,7 +1953,7 @@
         <source>Follow on X</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">121,123</context>
+          <context context-type="linenumber">122,124</context>
         </context-group>
         <note priority="1" from="description">Follow twitter</note>
       </trans-unit>
@@ -1953,7 +1961,7 @@
         <source>Docs on GitHub</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">127,128</context>
+          <context context-type="linenumber">128,129</context>
         </context-group>
         <note priority="1" from="description">Github docs</note>
       </trans-unit>
@@ -2477,7 +2485,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="errorMessagePart1" datatype="html">
-        <source>Join Loom 21 back at the </source>
+        <source>Join Loom21 back at the </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
           <context context-type="linenumber">18</context>

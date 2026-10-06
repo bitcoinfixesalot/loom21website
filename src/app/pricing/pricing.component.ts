@@ -160,7 +160,7 @@ export class PricingComponent implements OnInit {
     const structuredData = {
       '@context': 'https://schema.org',
       '@type': 'Product',
-      name: 'Loom 21 app',
+      name: 'Loom21',
       offers: this.activePlans().map((plan, index) => ({
         '@type': 'Offer',
         name: plan.productName,

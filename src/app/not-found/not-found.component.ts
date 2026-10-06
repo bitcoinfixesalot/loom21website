@@ -15,7 +15,7 @@ export class NotFoundComponent {
     inject(RESPONSE, { optional: true })?.status(404);
   }
 
-  part1 = $localize`:@@errorMessagePart1:Join Loom 21 back at the `;
+  part1 = $localize`:@@errorMessagePart1:Join Loom21 back at the `;
   homepage = $localize`:@@homepage:homepage`;
   part2 = $localize`:@@errorMessagePart2: or `;
   contactUs = $localize`:@@contactUsPart:contact us`;
