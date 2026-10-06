@@ -3,7 +3,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { DOCUMENT } from '@angular/common';
 import { Meta, Title } from '@angular/platform-browser';
 import { NavigationEnd, Router, RouterModule, RouterOutlet } from '@angular/router';
-import { DESCRIPTIONS, TAGS } from './constants/localized-const';
+import { DESCRIPTIONS } from './constants/localized-const';
 import { BannerComponent } from './banner/banner.component';
 import { FooterComponent } from './footer/footer.component';
 
@@ -34,8 +34,7 @@ export class AppComponent {
 
     this.meta.addTags([
       { name: "description", content: DESCRIPTIONS.home_description },
-      { name: "keywords", content: TAGS.home_keywords },
-      { name: "author", content: "loom 21" },
+      { name: "author", content: "Loom21" },
     ]);
 
     this.titleService.setTitle("Loom21");

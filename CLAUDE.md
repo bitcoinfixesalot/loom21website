@@ -93,7 +93,7 @@ All SEO meta is set dynamically in each page component's `ngOnInit`:
 
 ### OG image
 
-Default: `https://loom21.com/assets/images/form-banners/loom-app-laptop-mobile.png`
+Default: `https://loom21.com/en/assets/images/form-banners/loom-app-laptop-mobile.png`
 
 ## Notes
 

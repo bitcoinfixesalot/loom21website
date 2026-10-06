@@ -47,15 +47,6 @@
         </context-group>
         <note priority="1" from="description">Launch app button</note>
       </trans-unit>
-      <trans-unit id="homeKeywords" datatype="html">
-        <source>inventory management, stock control, product management, invoice processing, customer management, supplier management, vendor management, order fulfillment, payment processing, bitcoin payments, sales tracking, service management, delivery management, user roles and permissions, inventory analytics, warehouse management, real-time inventory tracking, price lists, custom fields</source>
-        <target>управление на инвентара, контрол на стоките, управление на продуктите, обработка на фактури, управление на клиентите, управление на доставчиците, управление на доставчиците, изпълнение на поръчки, обработка на плащания, плащания с биткойн, проследяване на продажбите, управление на услугите, управление на доставките, роли и разрешения на потребителите, аналитика на инвентара, управление на склад, проследяване на инвентара в реално време, ценови листи, персонализирани полета</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-        <note priority="1" from="description">Home keywords tag</note>
-      </trans-unit>
       <trans-unit id="homeTitle" datatype="html">
         <source>Loom21 — Bitcoin &amp; Card Payments with Real-Time Inventory</source>
         <target>Loom21 — Биткойн и плащания с карти с инвентар в реално време</target>
