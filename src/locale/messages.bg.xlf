@@ -3101,6 +3101,159 @@
         </context-group>
         <note priority="1" from="description">Contact email label</note>
       </trans-unit>
+      <trans-unit id="termsSectionPending" datatype="html">
+        <source>This section is being drafted and will be published after legal review.</source>
+        <target>Този раздел е в процес на изготвяне и ще бъде публикуван след правен преглед.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Terms section pending</note>
+      </trans-unit>
+      <trans-unit id="termsTitle" datatype="html">
+        <source>Terms of Service</source>
+        <target>Общи условия</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Terms title</note>
+      </trans-unit>
+      <trans-unit id="termsDraftNotice" datatype="html">
+        <source>Draft — not yet in effect.</source>
+        <target>Чернова — все още не е в сила.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Terms draft notice</note>
+      </trans-unit>
+      <trans-unit id="termsS1Title" datatype="html">
+        <source>1. Service</source>
+        <target>1. Услуга</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Terms section 1 title</note>
+      </trans-unit>
+      <trans-unit id="termsS2Title" datatype="html">
+        <source>2. Accounts</source>
+        <target>2. Акаунти</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Terms section 2 title</note>
+      </trans-unit>
+      <trans-unit id="termsS3Title" datatype="html">
+        <source>3. Plans, billing &amp; Bitcoin payments</source>
+        <target>3. Планове, плащане и плащания с Биткойн</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">Terms section 3 title</note>
+      </trans-unit>
+      <trans-unit id="termsS4Title" datatype="html">
+        <source>4. Acceptable use</source>
+        <target>4. Допустима употреба</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Terms section 4 title</note>
+      </trans-unit>
+      <trans-unit id="termsS5Title" datatype="html">
+        <source>5. Your data &amp; export</source>
+        <target>5. Вашите данни и експорт</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">Terms section 5 title</note>
+      </trans-unit>
+      <trans-unit id="termsS6Title" datatype="html">
+        <source>6. Third-party payment processors</source>
+        <target>6. Доставчици на платежни услуги</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">Terms section 6 title</note>
+      </trans-unit>
+      <trans-unit id="termsS7Title" datatype="html">
+        <source>7. Fees</source>
+        <target>7. Такси</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">Terms section 7 title</note>
+      </trans-unit>
+      <trans-unit id="termsS8Title" datatype="html">
+        <source>8. Liability</source>
+        <target>8. Отговорност</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">Terms section 8 title</note>
+      </trans-unit>
+      <trans-unit id="termsS9Title" datatype="html">
+        <source>9. Termination</source>
+        <target>9. Прекратяване</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">Terms section 9 title</note>
+      </trans-unit>
+      <trans-unit id="termsS10Title" datatype="html">
+        <source>10. Governing law</source>
+        <target>10. Приложимо право</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Terms section 10 title</note>
+      </trans-unit>
+      <trans-unit id="termsS11Title" datatype="html">
+        <source>11. Contact</source>
+        <target>11. Контакт</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">Terms section 11 title</note>
+      </trans-unit>
+      <trans-unit id="termsPageTitle" datatype="html">
+        <source>Terms of Service | Loom21</source>
+        <target>Общи условия | Loom21</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Terms title tag</note>
+      </trans-unit>
+      <trans-unit id="termsDescription" datatype="html">
+        <source>Terms of Service for Loom21 (draft).</source>
+        <target>Общи условия за ползване на Loom21 (чернова).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">Terms description tag</note>
+      </trans-unit>
+      <trans-unit id="termsDescription_ld_json" datatype="html">
+        <source>Terms of Service for Loom21 (draft).</source>
+        <target>Общи условия за ползване на Loom21 (чернова).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">Terms description ld_json tag</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

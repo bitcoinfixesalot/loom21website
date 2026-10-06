@@ -7,6 +7,7 @@ import { PricingComponent } from './pricing/pricing.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { FaqComponent } from './faq/faq.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
+import { TermsComponent } from './terms/terms.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -18,5 +19,6 @@ export const routes: Routes = [
     { path: 'roadmap', component: RoadmapComponent },
     { path: '404', component : NotFoundComponent},
     { path: 'privacy-policy', component: PrivacyComponent },
+    { path: 'terms', component: TermsComponent }, // draft, noindex, not linked yet
     { path: '**', redirectTo: '/404', pathMatch: 'full'}
 ];
