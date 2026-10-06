@@ -3,6 +3,7 @@
 export const ROADMAP_CONSTANTS = {
   pageTitle: $localize`:Roadmap page title@@roadmapPageTitle:Loom21 Roadmap`,
   pageIntro: $localize`:Roadmap page intro@@roadmapPageIntro:A look at what we've shipped, what we're working on now, and what's coming next.`,
+  lastUpdated: $localize`:Roadmap last updated@@roadmapLastUpdated:Last updated: October 2026`,
   ctaTitle: $localize`:Roadmap CTA title@@roadmapCtaTitle:Have a Feature Request?`,
   ctaDesc: $localize`:Roadmap CTA description@@roadmapCtaDesc:We'd love to hear what would make Loom21 more useful for your business.`,
 

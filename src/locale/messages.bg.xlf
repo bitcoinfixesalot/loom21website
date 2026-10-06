@@ -3245,6 +3245,15 @@
         </context-group>
         <note priority="1" from="description">Terms description ld_json tag</note>
       </trans-unit>
+      <trans-unit id="roadmapLastUpdated" datatype="html">
+        <source>Last updated: October 2026</source>
+        <target>Последна актуализация: октомври 2026</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap last updated</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>
