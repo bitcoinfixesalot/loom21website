@@ -1,12 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
 import { AnchorService } from './anchor.service';
+import { provideRouter } from '@angular/router';
 
 describe('AnchorService', () => {
   let service: AnchorService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({ providers: [provideRouter([])] });
     service = TestBed.inject(AnchorService);
   });
 

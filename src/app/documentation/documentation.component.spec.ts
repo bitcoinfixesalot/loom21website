@@ -1,3 +1,8 @@
+import { provideZonelessChangeDetection } from '@angular/core';
+import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClientTesting } from '@angular/common/http/testing';
+import { provideRouter } from '@angular/router';
+import { provideMarkdown } from 'ngx-markdown';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DocumentationComponent } from './documentation.component';
@@ -8,7 +13,8 @@ describe('DocumentationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DocumentationComponent]
+      imports: [DocumentationComponent],
+      providers: [provideZonelessChangeDetection(), provideRouter([]), provideHttpClient(), provideHttpClientTesting(), provideMarkdown()]
     })
     .compileComponents();
 
