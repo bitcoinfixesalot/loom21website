@@ -62,7 +62,7 @@ Ask all of these in **one message**, then record the answers here. Where a defau
 | ID | Answer |
 |----|--------|
 | O1 | Default: `soon` |
-| O2 | Default: grandfather 12 months, then move to the nearest new tier |
+| O2 | **No existing subscribers** on Entrepreneur / Small Business / Mid-size. No grandfathering or migration; retire the old plans (backend confirms in the DB first) |
 | O3 | No. Confirmed: the live `available-plans` still returns `basic`/`small`/`mid` |
 | O4 | Default: `info@loom21.com`; address and ЕИК TODO |
 | O5 | Default: TODO placeholder |
@@ -443,7 +443,9 @@ Claude Code writes this checklist into the PR description; it doesn't implement 
   - notify at 80% and 100%
   - 1-month grace period
   - **never block payment links or checkout**
-- [ ] Migrate existing subscribers per O2. Keep the old Stripe prices active for grandfathered accounts.
+- [ ] Retire the old plans (`basic`/`small`/`mid`): there are no subscribers on them (O2). Confirm that in the DB, stop returning them from `available-plans`, and archive their Stripe prices.
+- [ ] Fix `currency` padding on Bitcoin rows (`"eur       "` → `"eur"`).
+- [ ] Confirm the `signup/` route exists for `en-US` and `bg` (Free card and paid-plan fallback link there).
 - [ ] The app's Settings → Subscription plan picker shows the same matrix.
 - [ ] `plans/{id}` route works for the new ids.
 
