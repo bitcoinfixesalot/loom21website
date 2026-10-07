@@ -1081,7 +1081,7 @@
         <source>Unlimited</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">110</context>
+          <context context-type="linenumber">111</context>
         </context-group>
         <note priority="1" from="description">Unlimited short</note>
       </trans-unit>
@@ -1089,7 +1089,7 @@
         <source>Read-only</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">111</context>
+          <context context-type="linenumber">112</context>
         </context-group>
         <note priority="1" from="description">Cmp api ro</note>
       </trans-unit>
@@ -1097,7 +1097,7 @@
         <source>Full + webhooks</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">113</context>
+          <context context-type="linenumber">114</context>
         </context-group>
         <note priority="1" from="description">Cmp api full</note>
       </trans-unit>
@@ -1105,7 +1105,7 @@
         <source>Full + webhooks (soon)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">114</context>
+          <context context-type="linenumber">115</context>
         </context-group>
         <note priority="1" from="description">Cmp api full soon</note>
       </trans-unit>
@@ -1113,7 +1113,7 @@
         <source>Users</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">117</context>
+          <context context-type="linenumber">118</context>
         </context-group>
         <note priority="1" from="description">Cmp users</note>
       </trans-unit>
@@ -1121,7 +1121,7 @@
         <source>Store locations</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">118</context>
+          <context context-type="linenumber">119</context>
         </context-group>
         <note priority="1" from="description">Cmp stores</note>
       </trans-unit>
@@ -1129,7 +1129,7 @@
         <source>Orders / month</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">119</context>
+          <context context-type="linenumber">120</context>
         </context-group>
         <note priority="1" from="description">Cmp orders</note>
       </trans-unit>
@@ -1137,7 +1137,7 @@
         <source>Payment links</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">120</context>
+          <context context-type="linenumber">121</context>
         </context-group>
         <note priority="1" from="description">Cmp links</note>
       </trans-unit>
@@ -1145,7 +1145,7 @@
         <source>Bitcoin — Lightning &amp; on-chain</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">121</context>
+          <context context-type="linenumber">122</context>
         </context-group>
         <note priority="1" from="description">Cmp btc</note>
       </trans-unit>
@@ -1153,7 +1153,7 @@
         <source>Card payments (Stripe)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">122</context>
+          <context context-type="linenumber">123</context>
         </context-group>
         <note priority="1" from="description">Cmp cards</note>
       </trans-unit>
@@ -1161,7 +1161,7 @@
         <source>Loom21 transaction fee</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">123</context>
+          <context context-type="linenumber">124</context>
         </context-group>
         <note priority="1" from="description">Cmp fee</note>
       </trans-unit>
@@ -1169,7 +1169,7 @@
         <source>CSV / JSON import &amp; export</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">124</context>
+          <context context-type="linenumber">125</context>
         </context-group>
         <note priority="1" from="description">Cmp export</note>
       </trans-unit>
@@ -1177,7 +1177,7 @@
         <source>Price lists, tiers &amp; custom fields</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">125</context>
+          <context context-type="linenumber">126</context>
         </context-group>
         <note priority="1" from="description">Cmp pricing</note>
       </trans-unit>
@@ -1185,7 +1185,7 @@
         <source>Barcodes, QR codes &amp; PDF documents</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">126</context>
+          <context context-type="linenumber">127</context>
         </context-group>
         <note priority="1" from="description">Cmp barcodes</note>
       </trans-unit>
@@ -1193,7 +1193,7 @@
         <source>User roles &amp; access rights</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">127</context>
+          <context context-type="linenumber">128</context>
         </context-group>
         <note priority="1" from="description">Cmp roles</note>
       </trans-unit>
@@ -1201,7 +1201,7 @@
         <source>API</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">128</context>
+          <context context-type="linenumber">129</context>
         </context-group>
         <note priority="1" from="description">Cmp api</note>
       </trans-unit>
@@ -1209,7 +1209,7 @@
         <source>Support</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">129</context>
+          <context context-type="linenumber">130</context>
         </context-group>
         <note priority="1" from="description">Cmp support</note>
       </trans-unit>
@@ -1217,7 +1217,7 @@
         <source>Community</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">130</context>
+          <context context-type="linenumber">131</context>
         </context-group>
         <note priority="1" from="description">Sup community</note>
       </trans-unit>
@@ -1225,7 +1225,7 @@
         <source>Email</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">130</context>
+          <context context-type="linenumber">131</context>
         </context-group>
         <note priority="1" from="description">Sup email</note>
       </trans-unit>
@@ -1233,7 +1233,7 @@
         <source>Priority email</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">131</context>
+          <context context-type="linenumber">132</context>
         </context-group>
         <note priority="1" from="description">Sup priority</note>
       </trans-unit>
@@ -1241,7 +1241,7 @@
         <source>Priority + onboarding</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">131</context>
+          <context context-type="linenumber">132</context>
         </context-group>
         <note priority="1" from="description">Sup onboarding</note>
       </trans-unit>
@@ -1249,7 +1249,7 @@
         <source>Do you take a cut of my sales?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">135</context>
+          <context context-type="linenumber">136</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ q1</note>
       </trans-unit>
@@ -1257,7 +1257,7 @@
         <source>No. Loom21 charges 0% on every payment — Bitcoin and card. You only pay your plan, plus your payment processor&apos;s own fees (for example Stripe&apos;s card fees, or Lightning network fees).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">136</context>
+          <context context-type="linenumber">137</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ a1</note>
       </trans-unit>
@@ -1265,7 +1265,7 @@
         <source>What happens if I go over my monthly orders?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">137</context>
+          <context context-type="linenumber">138</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ q2</note>
       </trans-unit>
@@ -1273,7 +1273,7 @@
         <source>Nothing breaks and you can always get paid. We notify you at 80% and 100% of your limit and give you a one-month grace period before suggesting an upgrade.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">138</context>
+          <context context-type="linenumber">139</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ a2</note>
       </trans-unit>
@@ -1281,7 +1281,7 @@
         <source>How does paying for Loom21 in Bitcoin work?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">139</context>
+          <context context-type="linenumber">140</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ q3</note>
       </trans-unit>
@@ -1289,7 +1289,7 @@
         <source>Choose the Bitcoin option and pay for a year upfront over Lightning or on-chain. You save about 25% compared with monthly card billing.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">140</context>
+          <context context-type="linenumber">141</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ a3</note>
       </trans-unit>
@@ -1297,7 +1297,7 @@
         <source>Can I switch plans or cancel anytime?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">142</context>
+          <context context-type="linenumber">143</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ q4</note>
       </trans-unit>
@@ -1305,7 +1305,7 @@
         <source>Yes. Upgrade or downgrade from Settings → Subscription. If you cancel, your plan stays active until the end of the period you paid for; partial periods are not refunded. You can export all your data at any time.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">143</context>
+          <context context-type="linenumber">144</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ a4</note>
       </trans-unit>
@@ -1313,7 +1313,7 @@
         <source>Is the Free plan really free forever?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">144</context>
+          <context context-type="linenumber">145</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ q5</note>
       </trans-unit>
@@ -1321,7 +1321,7 @@
         <source>Yes — no credit card and no time limit. It includes Bitcoin and card payments, inventory for one store and up to 50 orders a month.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">145</context>
+          <context context-type="linenumber">146</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ a5</note>
       </trans-unit>
@@ -2253,11 +2253,27 @@
         </context-group>
         <note priority="1" from="description">Roadmap shipped item 6 description</note>
       </trans-unit>
+      <trans-unit id="roadmapShipped7Title" datatype="html">
+        <source>Free Forever Plan</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 7 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped7Desc" datatype="html">
+        <source>Start selling with Bitcoin and card payments at no cost — 50 orders a month, no credit card.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 7 description</note>
+      </trans-unit>
       <trans-unit id="roadmapInProgress1Title" datatype="html">
         <source>More Payment Processors</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
-          <context context-type="linenumber">29</context>
+          <context context-type="linenumber">31</context>
         </context-group>
         <note priority="1" from="description">Roadmap in progress item 1 title</note>
       </trans-unit>
@@ -2265,7 +2281,7 @@
         <source>Expanding the list of supported Bitcoin and fiat payment processors.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="linenumber">32</context>
         </context-group>
         <note priority="1" from="description">Roadmap in progress item 1 description</note>
       </trans-unit>
@@ -2273,7 +2289,7 @@
         <source>Expanded Reporting &amp; Analytics</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
-          <context context-type="linenumber">31</context>
+          <context context-type="linenumber">33</context>
         </context-group>
         <note priority="1" from="description">Roadmap in progress item 2 title</note>
       </trans-unit>
@@ -2281,7 +2297,7 @@
         <source>Deeper insight into sales trends and performance across your stores.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="linenumber">34</context>
         </context-group>
         <note priority="1" from="description">Roadmap in progress item 2 description</note>
       </trans-unit>
@@ -2289,7 +2305,7 @@
         <source>Installable, Mobile-Friendly App</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">35</context>
         </context-group>
         <note priority="1" from="description">Roadmap in progress item 3 title</note>
       </trans-unit>
@@ -2297,7 +2313,7 @@
         <source>A smoother, installable experience for managing your business on the go.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
-          <context context-type="linenumber">34</context>
+          <context context-type="linenumber">36</context>
         </context-group>
         <note priority="1" from="description">Roadmap in progress item 3 description</note>
       </trans-unit>
@@ -2305,7 +2321,7 @@
         <source>Full API &amp; Webhooks</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">39</context>
         </context-group>
         <note priority="1" from="description">Roadmap planned item 1 title</note>
       </trans-unit>
@@ -2313,7 +2329,7 @@
         <source>Read and write access to your Loom21 data, plus event webhooks — included on Growth and Pro.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
-          <context context-type="linenumber">38</context>
+          <context context-type="linenumber">40</context>
         </context-group>
         <note priority="1" from="description">Roadmap planned item 1 description</note>
       </trans-unit>
@@ -2321,7 +2337,7 @@
         <source>More Languages</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">41</context>
         </context-group>
         <note priority="1" from="description">Roadmap planned item 2 title</note>
       </trans-unit>
@@ -2329,7 +2345,7 @@
         <source>Expanding beyond English and Bulgarian to support more of our users.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
-          <context context-type="linenumber">40</context>
+          <context context-type="linenumber">42</context>
         </context-group>
         <note priority="1" from="description">Roadmap planned item 2 description</note>
       </trans-unit>
@@ -2337,7 +2353,7 @@
         <source>Native Mobile Apps</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">43</context>
         </context-group>
         <note priority="1" from="description">Roadmap planned item 3 title</note>
       </trans-unit>
@@ -2345,7 +2361,7 @@
         <source>Dedicated iOS and Android apps for managing your business from anywhere.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
-          <context context-type="linenumber">42</context>
+          <context context-type="linenumber">44</context>
         </context-group>
         <note priority="1" from="description">Roadmap planned item 3 description</note>
       </trans-unit>
@@ -3231,7 +3247,7 @@
         <source>Most popular</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">38,41</context>
+          <context context-type="linenumber">38,40</context>
         </context-group>
         <note priority="1" from="description">Most popular ribbon</note>
       </trans-unit>
@@ -3239,7 +3255,7 @@
         <source>or <x id="INTERPOLATION" equiv-text="{{ formatPrice(card.btcPrice) }}"/>/mo paying in Bitcoin</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">46,48</context>
+          <context context-type="linenumber">46,47</context>
         </context-group>
         <note priority="1" from="description">Bitcoin price hint</note>
       </trans-unit>

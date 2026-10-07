@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, computed, Inject, isDevMode, LOCALE_ID, OnInit, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, Inject, isDevMode, LOCALE_ID, OnInit, PLATFORM_ID, signal } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
@@ -54,6 +55,7 @@ export class PricingComponent implements OnInit {
 
   // TODO(design): pass a 1200×630 pricing card as `image` to setOgTags once it exists.
   constructor(@Inject(LOCALE_ID) protected localeId: string,
+    @Inject(PLATFORM_ID) private platformId: object,
     private subscriptionPlan: SubscriptionPlanService,
     private titleService: Title,
     private metaService: Meta,
@@ -66,7 +68,11 @@ export class PricingComponent implements OnInit {
     this.metaService.updateTag({ name: 'description', content: DESCRIPTIONS.pricing_description });
     this.ogMetaService.setOgTags({ title: TITLES.pricing, description: DESCRIPTIONS.pricing_description });
     this.updateStructuredData();
-    this.loadPlans();
+    // Browser only: the ids matter only on click, and a failed fetch during prerender/SSR would
+    // bake the 'checkout unavailable' notice into the static HTML (and into the hydration cache).
+    if (isPlatformBrowser(this.platformId)) {
+      this.loadPlans();
+    }
   }
 
   /** The page renders from constants; the API only supplies checkout ids. */

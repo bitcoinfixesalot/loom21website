@@ -24,6 +24,8 @@ export const ROADMAP_CONSTANTS = {
   shipped5Desc: $localize`:Roadmap shipped item 5 description@@roadmapShipped5Desc:Track stock levels per store location across sales and delivery orders.`,
   shipped6Title: $localize`:Roadmap shipped item 6 title@@roadmapShipped6Title:Sales & Deliveries Reports`,
   shipped6Desc: $localize`:Roadmap shipped item 6 description@@roadmapShipped6Desc:Searchable, filterable reports with CSV and JSON export.`,
+  shipped7Title: $localize`:Roadmap shipped item 7 title@@roadmapShipped7Title:Free Forever Plan`,
+  shipped7Desc: $localize`:Roadmap shipped item 7 description@@roadmapShipped7Desc:Start selling with Bitcoin and card payments at no cost — 50 orders a month, no credit card.`,
 
   // In Progress
   inProgress1Title: $localize`:Roadmap in progress item 1 title@@roadmapInProgress1Title:More Payment Processors`,
@@ -53,7 +55,8 @@ export const SHIPPED_ITEMS: RoadmapItem[] = [
   { title: ROADMAP_CONSTANTS.shipped3Title, description: ROADMAP_CONSTANTS.shipped3Desc },
   { title: ROADMAP_CONSTANTS.shipped4Title, description: ROADMAP_CONSTANTS.shipped4Desc },
   { title: ROADMAP_CONSTANTS.shipped5Title, description: ROADMAP_CONSTANTS.shipped5Desc },
-  { title: ROADMAP_CONSTANTS.shipped6Title, description: ROADMAP_CONSTANTS.shipped6Desc }
+  { title: ROADMAP_CONSTANTS.shipped6Title, description: ROADMAP_CONSTANTS.shipped6Desc },
+  { title: ROADMAP_CONSTANTS.shipped7Title, description: ROADMAP_CONSTANTS.shipped7Desc }
 ];
 
 export const IN_PROGRESS_ITEMS: RoadmapItem[] = [

@@ -3817,6 +3817,24 @@
         </context-group>
         <note priority="1" from="description">Forever</note>
       </trans-unit>
+      <trans-unit id="roadmapShipped7Title" datatype="html">
+        <source>Free Forever Plan</source>
+        <target>Безплатен план завинаги</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 7 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped7Desc" datatype="html">
+        <source>Start selling with Bitcoin and card payments at no cost — 50 orders a month, no credit card.</source>
+        <target>Започнете да продавате с плащания с Биткойн и карти без разходи — 50 поръчки на месец, без кредитна карта.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 7 description</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>
