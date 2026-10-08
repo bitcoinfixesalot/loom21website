@@ -2,6 +2,7 @@ import { provideZonelessChangeDetection } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 
 import { ProtectedEmailComponent } from './protected-email.component';
+import { emailAddress } from '../../constants/contact-const';
 
 describe('ProtectedEmailComponent', () => {
   beforeEach(async () => {
@@ -20,6 +21,6 @@ describe('ProtectedEmailComponent', () => {
     el.querySelector('button')!.click();
     await fixture.whenStable();
     const link = el.querySelector('a')!;
-    expect(link.getAttribute('href')).toBe('mailto:info@loom21.com');
+    expect(link.getAttribute('href')).toBe('mailto:' + emailAddress());
   });
 });

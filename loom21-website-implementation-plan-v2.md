@@ -50,7 +50,7 @@ Ask all of these in **one message**, then record the answers here. Where a defau
 | O1 | `API_STATUS` today: `live`, `early`, or `soon`? | `soon` | Phase 1, 3 |
 | O2 | Existing subscribers on Entrepreneur / Small Business / Mid-size: keep their current price (grandfather) for how long? | Grandfather 12 months, then move each to the nearest new tier | Phase 1 backend checklist |
 | O3 | Is the backend (app repo) ready to return the new plan codes (`starter`/`growth`/`pro`)? | No. Ship with static prices (see §1.3) and route "Choose plan" to signup | Phase 1 |
-| O4 | Legal entity for Privacy/Terms: registered address, ЕИК, contact email | email `info@loom21.com`; others TODO | Phase 5 |
+| O4 | Legal entity for Privacy/Terms: registered address, ЕИК, contact email | email `info [at] loom21 [dot] com`; others TODO | Phase 5 |
 | O5 | Hosting provider(s) to list as processors (Azure? Hetzner?) | TODO placeholder | Phase 5 |
 | O6 | Real promo video ID for `PROMO_VIDEO_ID` in `home.component.ts`? | Keep the current one but leave the TODO in place | Phase 3 |
 | O7 | Rates for the "What you really pay" calculator: card rate and Lightning rate | Card 2.9% + €0.30; Lightning 1.0% (conservative hosted-wallet figure) | Phase 1 |
@@ -64,7 +64,7 @@ Ask all of these in **one message**, then record the answers here. Where a defau
 | O1 | Default: `soon` |
 | O2 | **No existing subscribers** on Entrepreneur / Small Business / Mid-size. No grandfathering or migration; retire the old plans (backend confirms in the DB first) |
 | O3 | No. Confirmed: the live `available-plans` still returns `basic`/`small`/`mid` |
-| O4 | Default: `info@loom21.com`; address and ЕИК TODO |
+| O4 | Default: `info [at] loom21 [dot] com`; address and ЕИК TODO |
 | O5 | Default: TODO placeholder |
 | O6 | Default: keep the current video ID and its TODO |
 | O7 | **Loom21 doesn't collect processor rates; they depend on the provider.** Drop the calculator; replace it with a static "What you pay" block (plan + your processor's own fees; Loom21 fee €0). No assumed rates on the site |
@@ -632,7 +632,7 @@ Change visible text only: FAQ, roadmap, home, and the logo `alt` text. Keep file
 
 ### 4.5 Contact page — `contact.component.html`
 
-- Under "We typically respond within one business day.", add `info@loom21.com` as a `mailto:` link (`@@contactEmailLabel`: "Or email us:" / "Или ни пишете:"), per O4.
+- Under "We typically respond within one business day.", add `info [at] loom21 [dot] com` as a `mailto:` link (`@@contactEmailLabel`: "Or email us:" / "Или ни пишете:"), per O4.
 - The honeypot is already correct (off-screen + `aria-hidden` + `tabindex=-1`). **No change.**
 - Add `aria-hidden="true"` to the three `<i class="fa …">` icons in the community list.
 
@@ -692,7 +692,7 @@ Commit: `docs(site): terms scaffold (noindex) + privacy policy updates for revie
 
 Propose these as a diff; don't publish without approval.
 
-- `section1Content1`: restore the entity identity using O4 (there is a commented-out address line in this file — confirm it's still correct). Add ЕИК and `info@loom21.com`.
+- `section1Content1`: restore the entity identity using O4 (there is a commented-out address line in this file — confirm it's still correct). Add ЕИК and `info [at] loom21 [dot] com`.
 - Section 5 (sharing): list the processors:
   - hosting (O5)
   - Stripe (card billing and merchants' card payments)

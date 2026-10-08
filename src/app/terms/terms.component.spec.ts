@@ -3,6 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { provideMarkdown } from 'ngx-markdown';
 
 import { TermsComponent } from './terms.component';
+import { emailAddress } from '../constants/contact-const';
 
 describe('TermsComponent', () => {
   const create = (platform: 'browser' | 'server') => {
@@ -16,7 +17,7 @@ describe('TermsComponent', () => {
   it('uses mailto links in the browser', () => {
     const content = create('browser').content;
     expect(content).not.toContain('[[EMAIL]]');
-    expect(content.match(/\(mailto:info@loom21\.com\)/g)?.length).toBe(5);
+    expect(content.split(`(mailto:${emailAddress()})`).length - 1).toBe(5);
   });
 
   it('never puts the plain address in server-rendered content', () => {
