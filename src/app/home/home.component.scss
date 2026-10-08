@@ -36,6 +36,12 @@
 h1.title {
     font-size: 30px;
     line-height: 36px;
+
+    // Keep the hero H1 to at most 4 lines at 375px (the BG text is ~15% longer than EN).
+    @media (max-width: 575.98px) {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
 }
 
 .hero-trust {

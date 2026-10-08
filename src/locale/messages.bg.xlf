@@ -1498,20 +1498,20 @@
         <note priority="1" from="description">Get in touch</note>
       </trans-unit>
       <trans-unit id="homeH2TopTitle" datatype="html">
-        <source>Own your money. Own your data. Own your integrations.</source>
-        <target>Вашите пари. Вашите данни. Вашите интеграции.</target>
+        <source>Inventory, invoices and payment links — get paid in Bitcoin or by card</source>
+        <target>Склад, фактури и връзки за плащане — получавайте плащания в Биткойн или с карта</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">7,8</context>
+          <context context-type="linenumber">8,9</context>
         </context-group>
         <note priority="1" from="description">Home top title</note>
       </trans-unit>
       <trans-unit id="homeTopSubTitle" datatype="html">
-        <source>Accept Bitcoin (Lightning &amp; on-chain) and cards in one dashboard, keep stock in sync with every sale, and export everything, anytime. 0% Loom21 transaction fees. Free forever plan.</source>
-        <target>Приемайте Биткойн (Lightning и он-чейн) и карти в едно табло, поддържайте наличностите синхронизирани с всяка продажба и експортирайте всичко по всяко време. 0% такса от Loom21. Безплатен план завинаги.</target>
+        <source>Loom21 keeps your stock, sales orders and customers in one place, and lets you get paid over Lightning, on-chain Bitcoin or card. 0% Loom21 fees, a free forever plan, and you can export all your data at any time.</source>
+        <target>Loom21 събира наличностите, поръчките и клиентите ви на едно място и ви позволява да получавате плащания през Lightning, он-чейн Биткойн или с карта. 0% такси от Loom21, безплатен план завинаги и пълен експорт на данните по всяко време.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">8,9</context>
+          <context context-type="linenumber">9,10</context>
         </context-group>
         <note priority="1" from="description">Home top sub title</note>
       </trans-unit>
@@ -3856,6 +3856,15 @@
           <context context-type="linenumber">164</context>
         </context-group>
         <note priority="1" from="description">Subprocessor sa location</note>
+      </trans-unit>
+      <trans-unit id="heroEyebrow" datatype="html">
+        <source>Own your money · Own your data · Own your integrations</source>
+        <target>Вашите пари · Вашите данни · Вашите интеграции</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <note priority="1" from="description">Hero eyebrow</note>
       </trans-unit>
     </body>
   </file>
