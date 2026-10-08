@@ -30,7 +30,7 @@ import { OgMetaService } from '../services/og-meta.service';
 import { StructuredDataService } from '../services/structured-data.service';
 
 // TODO: replace with the real Loom21 promo video ID once available (see https://youtube.com/watch?v=<id>)
-const PROMO_VIDEO_ID = 'IlMuVoSU0Po';
+const PROMO_VIDEO_ID = 'LIJDHgo9nKo';
 
 @Component({
   selector: 'app-home',
