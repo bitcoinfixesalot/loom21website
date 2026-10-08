@@ -15,7 +15,7 @@
   <p>
     <strong>{{ CONSTANTS.section1ContactInfo }}</strong><br>
     <a routerLink="/contact">{{ CONSTANTS.section1ContactForm }}</a><br>
-    <!-- {{ CONSTANTS.section1Address }} -->
+    <span>{{ CONSTANTS.privacyEmailLabel }}</span> <app-protected-email />
   </p>
 </div>
 
@@ -31,6 +31,7 @@
   <h3>{{ CONSTANTS.section2bTitle }}</h3>
   <ul>
     <li><strong>{{ CONSTANTS.section2bItem1 }}</strong></li>
+    <li><strong>{{ CONSTANTS.section2bItem2 }}</strong></li>
   </ul>
   <h3>{{ CONSTANTS.section2cTitle }}</h3>
   <ul>
@@ -98,7 +99,27 @@
   <ul>
     <li>
       <strong>{{ CONSTANTS.section5Item1 }}</strong>
-      <a href="https://stripe.com/privacy" target="_blank">Privacy Policy</a>
+      <div class="table-responsive mt-2">
+        <table class="table table-sm">
+          <thead>
+            <tr>
+              <th>{{ CONSTANTS.section5TableProvider }}</th>
+              <th>{{ CONSTANTS.section5TablePurpose }}</th>
+              <th>{{ CONSTANTS.section5TableLocation }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (sp of subProcessors; track sp.name) {
+              <tr>
+                <td><a [href]="sp.privacyUrl" target="_blank" rel="noopener">{{ sp.name }}</a></td>
+                <td>{{ sp.purpose }}</td>
+                <td>{{ sp.location }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+      <p class="small">{{ CONSTANTS.section5NotSubprocessors }}</p>
     </li>
     <li><strong>{{ CONSTANTS.section5Item2 }}</strong></li>
     <li><strong>{{ CONSTANTS.section5Item3 }}</strong></li>

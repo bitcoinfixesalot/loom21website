@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
-import { PRIVACY_CONSTANTS } from '../constants/privacy-policy-const';
+import { PRIVACY_CONSTANTS, PRIVACY_SUBPROCESSORS } from '../constants/privacy-policy-const';
+import { ProtectedEmailComponent } from '../shared/protected-email/protected-email.component';
 import { RouterLink } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { TITLES, DESCRIPTIONS, LD_JSON } from '../constants/localized-const';
@@ -8,13 +9,14 @@ import { StructuredDataService } from '../services/structured-data.service';
 
 @Component({
   selector: 'app-privacy',
-  imports: [RouterLink],
+  imports: [RouterLink, ProtectedEmailComponent],
   templateUrl: './privacy.component.html',
   styleUrl: './privacy.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PrivacyComponent implements OnInit{
  CONSTANTS = PRIVACY_CONSTANTS;
+ subProcessors = PRIVACY_SUBPROCESSORS;
 
  constructor(private titleService: Title,
     private metaService: Meta,

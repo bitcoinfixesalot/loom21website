@@ -1,17 +1,16 @@
 export const PRIVACY_CONSTANTS = {
   // Main Title and Intro
   privacyPolicyTitle: $localize`:Privacy policy title@@privacyPolicyTitle:Privacy Policy for Loom21`,
-  privacyPolicyLastUpdated: $localize`:Last updated@@privacyPolicyLastUpdated:Last Updated: May 30, 2025`,
+  privacyPolicyLastUpdated: $localize`:Last updated@@privacyPolicyLastUpdated:Last Updated: October 8, 2026`,
   privacyPolicyIntro1: $localize`:Intro paragraph 1@@privacyPolicyIntro1:Loom21 LTD ("we," "us," or "our") operates Loom21 (the "Service"), a web application that allows users to create accounts, manage products, clients, suppliers, and invoices. We are committed to protecting your privacy and ensuring the security of your personal data. This Privacy Policy explains how we collect, use, disclose, and protect your personal information in compliance with the General Data Protection Regulation (GDPR) and other applicable data protection laws.`,
   privacyPolicyIntro2: $localize`:Intro paragraph 2@@privacyPolicyIntro2:By using our Service, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree, please do not use the Service.`,
 
   // Section 1: Who We Are
   section1Title: $localize`:Section 1 title@@section1Title:1. Who We Are`,
-  //section1Content1: $localize`:Section 1 content@@section1Content1:We are Loom21 LTD, located at Tvarditsa, Aleko Konstantinov 11 str. For the purposes of GDPR, we are the "Data Controller" responsible for the personal data we collect and process through the Service.`,
-  section1Content1: $localize`:Section 1 content@@section1Content1:We are Loom21 LTD. For the purposes of GDPR, we are the "Data Controller" responsible for the personal data we collect and process through the Service.`,
+  section1Content1: $localize`:Section 1 content@@section1Content1:We are Loom21 LTD, a company registered in Bulgaria (UIC/ЕИК 208142174), with its registered address at Aleko Konstantinov 11 str., Tvarditsa, Bulgaria. For the purposes of GDPR, we are the "Data Controller" for the personal data described in this policy, such as your account details. For the business data you store in Loom21 about your own customers and suppliers, you are the controller and we act as your processor, as set out in Section 10.2a of our Terms of Service.`,
   section1ContactInfo: $localize`:Section 1 contact info@@section1ContactInfo:Contact Information:`,
   section1ContactForm: $localize`:Section 1 contact form@@section1ContactForm:Submit an inquiry`,
-  //section1Address: $localize`:Section 1 address@@section1Address:Address: Tvarditsa, Aleko Konstantinov 11 str.`,
+  privacyEmailLabel: $localize`:Privacy email label@@privacyEmailLabel:Email:`,
 
   // Section 2: Information We Collect
   section2Title: $localize`:Section 2 title@@section2Title:2. Information We Collect`,
@@ -22,6 +21,7 @@ export const PRIVACY_CONSTANTS = {
   section2aItem3: $localize`:Section 2a item 3@@section2aItem3:Communications: Any information you provide (e.g., name, email, message) when contacting us via our contact form, which we process to respond to your inquiries or requests.`,
   section2bTitle: $localize`:Section 2b title@@section2bTitle:b. Information Collected Automatically`,
   section2bItem1: $localize`:Section 2b item 1@@section2bItem1:Usage Data: Information about how you interact with the Service, such as IP address, browser type, device information, pages visited, and timestamps.`,
+  section2bItem2: $localize`:Section 2b item 2@@section2bItem2:Cookies: The loom21.com website does not use tracking or advertising cookies, and our website analytics (Simple Analytics) are cookieless. The Loom21 application uses only the cookies or local storage strictly needed to keep you signed in and remember your settings.`,
   section2cTitle: $localize`:Section 2c title@@section2cTitle:c. Information from Third Parties`,
   section2cItem1: $localize`:Section 2c item 1@@section2cItem1:If you integrate third-party services (e.g., payment processors like Stripe), we may receive limited data from these providers, subject to their privacy policies.`,
 
@@ -56,14 +56,18 @@ export const PRIVACY_CONSTANTS = {
   // Section 5: How We Share Your Information
   section5Title: $localize`:Section 5 title@@section5Title:5. How We Share Your Information`,
   section5Intro: $localize`:Section 5 intro@@section5Intro:We do not sell your personal data. We may share your data in the following circumstances:`,
-  section5Item1: $localize`:Section 5 item 1@@section5Item1:Service Providers: With trusted third-party providers who assist us in operating the Service, such as hosting providers and payment processors. For example, we use Stripe, Inc. to process payments, and Stripe may collect and process payment-related data (e.g., billing information) in accordance with its Privacy Policy. All service providers are contractually obligated to protect your data and comply with applicable data protection laws, including GDPR.`,
+  section5Item1: $localize`:Section 5 item 1@@section5Item1:Service providers (sub-processors): We use the providers below to run the Service. Each one processes personal data only on our instructions and under a data processing agreement that meets GDPR requirements. We will update this list at least 30 days before adding or replacing a provider.`,
+  section5TableProvider: $localize`:Subprocessor table provider@@section5TableProvider:Provider`,
+  section5TablePurpose: $localize`:Subprocessor table purpose@@section5TablePurpose:Purpose`,
+  section5TableLocation: $localize`:Subprocessor table location@@section5TableLocation:Data location`,
+  section5NotSubprocessors: $localize`:Not subprocessors note@@section5NotSubprocessors:Payment processors that you connect to receive payments from your own customers — such as Stripe (your own account), BTCPay Server, Glow or other Lightning Address wallets, Speed Wallet and LNbits — are not our sub-processors. You choose them, your customers pay them directly, and their own terms and privacy policies apply. Loom21 never holds your funds.`,
   section5Item2: $localize`:Section 5 item 2@@section5Item2:Business Transfers: In the event of a merger, acquisition, or sale of assets, your data may be transferred to the new entity, subject to applicable data protection laws.`,
   section5Item3: $localize`:Section 5 item 3@@section5Item3:Legal Requirements: If required by law, regulation, or legal process (e.g., court orders, subpoenas), we may disclose your data to authorities.`,
   section5Item4: $localize`:Section 5 item 4@@section5Item4:With Your Consent: Where you explicitly agree to the sharing of your data.`,
 
   // Section 6: International Data Transfers
   section6Title: $localize`:Section 6 title@@section6Title:6. International Data Transfers`,
-  section6Intro: $localize`:Section 6 intro@@section6Intro:Our Service is accessible globally, and your data may be processed or stored in countries outside your region, including the United States (e.g., by Stripe for payment processing) and the European Union. We ensure that any international data transfers comply with GDPR and other applicable laws, using mechanisms such as:`,
+  section6Intro: $localize`:Section 6 intro@@section6Intro:We host the Service with Microsoft Azure. Our database is stored in the EU (North Europe, Ireland), but the application servers run in the United States (West US 2), so personal data is processed there. Account emails are sent through Azure Email Communication Services, whose data is stored in the United States. Stripe is also headquartered in the United States and may transfer limited data there. Where personal data leaves the European Economic Area (EEA), we rely on safeguards such as:`,
   section6Item1: $localize`:Section 6 item 1@@section6Item1:Standard Contractual Clauses (SCCs): For transfers outside the European Economic Area (EEA).`,
   section6Item2: $localize`:Section 6 item 2@@section6Item2:Adequacy Decisions: Where the recipient country is deemed to have adequate data protection by the European Commission.`,
   section6Item3: $localize`:Section 6 item 3@@section6Item3:Other Safeguards: As required by local laws (e.g., Binding Corporate Rules for intra-group transfers).`,
@@ -71,7 +75,7 @@ export const PRIVACY_CONSTANTS = {
   // Section 7: Data Retention
   section7Title: $localize`:Section 7 title@@section7Title:7. Data Retention`,
   section7Intro: $localize`:Section 7 intro@@section7Intro:We retain your personal data only for as long as necessary to fulfill the purposes outlined in this Privacy Policy or as required by law. For example:`,
-  section7Item1: $localize`:Section 7 item 1@@section7Item1:Account data is retained while your account is active and for 7 years after account deletion to comply with legal obligations (e.g., tax laws).`,
+  section7Item1: $localize`:Section 7 item 1@@section7Item1:Account and business data is kept while your account is active. After you close your account, you can still export your data for 30 days; after that we delete it. Invoices and records we are legally required to keep (for example our own invoices to you, for tax purposes) are kept for up to 10 years.`,
   section7Item2: $localize`:Section 7 item 2@@section7Item2:Usage data may be retained for 2 years for analytics or security purposes.`,
   section7Item3: $localize`:Section 7 item 3@@section7Item3:You may request deletion of your data (see Section 8).`,
 
@@ -130,3 +134,34 @@ export const PRIVACY_CONSTANTS = {
   section14TermsLink: $localize`:Section 14 terms link@@section14TermsLink:Terms of Service`,
   section14Complaint: $localize`:Section 14 complaint@@section14Complaint:For GDPR complaints, you may also contact your local Data Protection Authority.`
 };
+
+export interface SubProcessor { name: string; purpose: string; location: string; privacyUrl: string; }
+
+// Locations verified 2026-10-08: app.loom21.com / loom21.com → Azure Container Apps westus2;
+// SQL server → northeurope; Communication Services endpoint → unitedstates. Update if resources move.
+export const PRIVACY_SUBPROCESSORS: SubProcessor[] = [
+  {
+    name: 'Microsoft Ireland Operations Ltd (Microsoft Azure)',
+    purpose: $localize`:Subprocessor azure purpose@@spAzurePurpose:Hosting of the Loom21 application, website and database`,
+    location: $localize`:Subprocessor azure location@@spAzureLocation:Application servers: United States (West US 2). Database: EU (North Europe, Ireland)`,
+    privacyUrl: 'https://privacy.microsoft.com/privacystatement',
+  },
+  {
+    name: 'Microsoft Ireland Operations Ltd (Azure Email Communication Services)',
+    purpose: $localize`:Subprocessor acs purpose@@spAcsPurpose:Sending account emails (sign-up confirmation, password reset, notifications) and replies to contact-form messages`,
+    location: $localize`:Subprocessor acs location@@spAcsLocation:United States`,
+    privacyUrl: 'https://privacy.microsoft.com/privacystatement',
+  },
+  {
+    name: 'Stripe Payments Europe, Ltd.',
+    purpose: $localize`:Subprocessor stripe purpose@@spStripePurpose:Card payments for Loom21 subscriptions`,
+    location: $localize`:Subprocessor stripe location@@spStripeLocation:EU (Ireland); some data transferred to the United States under Standard Contractual Clauses`,
+    privacyUrl: 'https://stripe.com/privacy',
+  },
+  {
+    name: 'Simple Analytics B.V.',
+    purpose: $localize`:Subprocessor sa purpose@@spSaPurpose:Cookieless, anonymous visit statistics for loom21.com (no personal data, no cookies)`,
+    location: $localize`:Subprocessor sa location@@spSaLocation:EU (Netherlands)`,
+    privacyUrl: 'https://simpleanalytics.com/privacy',
+  },
+];

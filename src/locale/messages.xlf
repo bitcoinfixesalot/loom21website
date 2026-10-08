@@ -1326,7 +1326,7 @@
         <note priority="1" from="description">Privacy policy title</note>
       </trans-unit>
       <trans-unit id="privacyPolicyLastUpdated" datatype="html">
-        <source>Last Updated: May 30, 2025</source>
+        <source>Last Updated: October 8, 2026</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">4</context>
@@ -1358,10 +1358,10 @@
         <note priority="1" from="description">Section 1 title</note>
       </trans-unit>
       <trans-unit id="section1Content1" datatype="html">
-        <source>We are Loom21 LTD. For the purposes of GDPR, we are the &quot;Data Controller&quot; responsible for the personal data we collect and process through the Service.</source>
+        <source>We are Loom21 LTD, a company registered in Bulgaria (UIC/ЕИК 208142174), with its registered address at Aleko Konstantinov 11 str., Tvarditsa, Bulgaria. For the purposes of GDPR, we are the &quot;Data Controller&quot; for the personal data described in this policy, such as your account details. For the business data you store in Loom21 about your own customers and suppliers, you are the controller and we act as your processor, as set out in Section 10.2a of our Terms of Service.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">11</context>
+          <context context-type="linenumber">10</context>
         </context-group>
         <note priority="1" from="description">Section 1 content</note>
       </trans-unit>
@@ -1369,7 +1369,7 @@
         <source>Contact Information:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">11</context>
         </context-group>
         <note priority="1" from="description">Section 1 contact info</note>
       </trans-unit>
@@ -1377,15 +1377,23 @@
         <source>Submit an inquiry</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">13</context>
+          <context context-type="linenumber">12</context>
         </context-group>
         <note priority="1" from="description">Section 1 contact form</note>
+      </trans-unit>
+      <trans-unit id="privacyEmailLabel" datatype="html">
+        <source>Email:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Privacy email label</note>
       </trans-unit>
       <trans-unit id="section2Title" datatype="html">
         <source>2. Information We Collect</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">16</context>
         </context-group>
         <note priority="1" from="description">Section 2 title</note>
       </trans-unit>
@@ -1393,7 +1401,7 @@
         <source>We collect and process the following types of personal data when you use our Service:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">17</context>
         </context-group>
         <note priority="1" from="description">Section 2 intro</note>
       </trans-unit>
@@ -1401,7 +1409,7 @@
         <source>a. Information You Provide Directly</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">18</context>
         </context-group>
         <note priority="1" from="description">Section 2a title</note>
       </trans-unit>
@@ -1409,7 +1417,7 @@
         <source>Account Information: When you create an account, we collect your name, email address, username, password, and any other information you provide (e.g., phone number, company details).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">20</context>
+          <context context-type="linenumber">19</context>
         </context-group>
         <note priority="1" from="description">Section 2a item 1</note>
       </trans-unit>
@@ -1417,7 +1425,7 @@
         <source>Business Data: Information about your products, clients, suppliers, and invoices, which may include personal data such as names, contact details, or financial information (e.g., billing addresses).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="linenumber">20</context>
         </context-group>
         <note priority="1" from="description">Section 2a item 2</note>
       </trans-unit>
@@ -1425,7 +1433,7 @@
         <source>Communications: Any information you provide (e.g., name, email, message) when contacting us via our contact form, which we process to respond to your inquiries or requests.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">21</context>
         </context-group>
         <note priority="1" from="description">Section 2a item 3</note>
       </trans-unit>
@@ -1433,7 +1441,7 @@
         <source>b. Information Collected Automatically</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">23</context>
+          <context context-type="linenumber">22</context>
         </context-group>
         <note priority="1" from="description">Section 2b title</note>
       </trans-unit>
@@ -1441,9 +1449,17 @@
         <source>Usage Data: Information about how you interact with the Service, such as IP address, browser type, device information, pages visited, and timestamps.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">23</context>
         </context-group>
         <note priority="1" from="description">Section 2b item 1</note>
+      </trans-unit>
+      <trans-unit id="section2bItem2" datatype="html">
+        <source>Cookies: The loom21.com website does not use tracking or advertising cookies, and our website analytics (Simple Analytics) are cookieless. The Loom21 application uses only the cookies or local storage strictly needed to keep you signed in and remember your settings.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">Section 2b item 2</note>
       </trans-unit>
       <trans-unit id="section2cTitle" datatype="html">
         <source>c. Information from Third Parties</source>
@@ -1670,18 +1686,50 @@
         <note priority="1" from="description">Section 5 intro</note>
       </trans-unit>
       <trans-unit id="section5Item1" datatype="html">
-        <source>Service Providers: With trusted third-party providers who assist us in operating the Service, such as hosting providers and payment processors. For example, we use Stripe, Inc. to process payments, and Stripe may collect and process payment-related data (e.g., billing information) in accordance with its Privacy Policy. All service providers are contractually obligated to protect your data and comply with applicable data protection laws, including GDPR.</source>
+        <source>Service providers (sub-processors): We use the providers below to run the Service. Each one processes personal data only on our instructions and under a data processing agreement that meets GDPR requirements. We will update this list at least 30 days before adding or replacing a provider.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">59</context>
         </context-group>
         <note priority="1" from="description">Section 5 item 1</note>
       </trans-unit>
+      <trans-unit id="section5TableProvider" datatype="html">
+        <source>Provider</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor table provider</note>
+      </trans-unit>
+      <trans-unit id="section5TablePurpose" datatype="html">
+        <source>Purpose</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor table purpose</note>
+      </trans-unit>
+      <trans-unit id="section5TableLocation" datatype="html">
+        <source>Data location</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor table location</note>
+      </trans-unit>
+      <trans-unit id="section5NotSubprocessors" datatype="html">
+        <source>Payment processors that you connect to receive payments from your own customers — such as Stripe (your own account), BTCPay Server, Glow or other Lightning Address wallets, Speed Wallet and LNbits — are not our sub-processors. You choose them, your customers pay them directly, and their own terms and privacy policies apply. Loom21 never holds your funds.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <note priority="1" from="description">Not subprocessors note</note>
+      </trans-unit>
       <trans-unit id="section5Item2" datatype="html">
         <source>Business Transfers: In the event of a merger, acquisition, or sale of assets, your data may be transferred to the new entity, subject to applicable data protection laws.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">60</context>
+          <context context-type="linenumber">64</context>
         </context-group>
         <note priority="1" from="description">Section 5 item 2</note>
       </trans-unit>
@@ -1689,7 +1737,7 @@
         <source>Legal Requirements: If required by law, regulation, or legal process (e.g., court orders, subpoenas), we may disclose your data to authorities.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">61</context>
+          <context context-type="linenumber">65</context>
         </context-group>
         <note priority="1" from="description">Section 5 item 3</note>
       </trans-unit>
@@ -1697,7 +1745,7 @@
         <source>With Your Consent: Where you explicitly agree to the sharing of your data.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">62</context>
+          <context context-type="linenumber">66</context>
         </context-group>
         <note priority="1" from="description">Section 5 item 4</note>
       </trans-unit>
@@ -1705,15 +1753,15 @@
         <source>6. International Data Transfers</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">65</context>
+          <context context-type="linenumber">69</context>
         </context-group>
         <note priority="1" from="description">Section 6 title</note>
       </trans-unit>
       <trans-unit id="section6Intro" datatype="html">
-        <source>Our Service is accessible globally, and your data may be processed or stored in countries outside your region, including the United States (e.g., by Stripe for payment processing) and the European Union. We ensure that any international data transfers comply with GDPR and other applicable laws, using mechanisms such as:</source>
+        <source>We host the Service with Microsoft Azure. Our database is stored in the EU (North Europe, Ireland), but the application servers run in the United States (West US 2), so personal data is processed there. Account emails are sent through Azure Email Communication Services, whose data is stored in the United States. Stripe is also headquartered in the United States and may transfer limited data there. Where personal data leaves the European Economic Area (EEA), we rely on safeguards such as:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">66</context>
+          <context context-type="linenumber">70</context>
         </context-group>
         <note priority="1" from="description">Section 6 intro</note>
       </trans-unit>
@@ -1721,7 +1769,7 @@
         <source>Standard Contractual Clauses (SCCs): For transfers outside the European Economic Area (EEA).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">67</context>
+          <context context-type="linenumber">71</context>
         </context-group>
         <note priority="1" from="description">Section 6 item 1</note>
       </trans-unit>
@@ -1729,7 +1777,7 @@
         <source>Adequacy Decisions: Where the recipient country is deemed to have adequate data protection by the European Commission.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">68</context>
+          <context context-type="linenumber">72</context>
         </context-group>
         <note priority="1" from="description">Section 6 item 2</note>
       </trans-unit>
@@ -1737,7 +1785,7 @@
         <source>Other Safeguards: As required by local laws (e.g., Binding Corporate Rules for intra-group transfers).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">69</context>
+          <context context-type="linenumber">73</context>
         </context-group>
         <note priority="1" from="description">Section 6 item 3</note>
       </trans-unit>
@@ -1745,7 +1793,7 @@
         <source>7. Data Retention</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">72</context>
+          <context context-type="linenumber">76</context>
         </context-group>
         <note priority="1" from="description">Section 7 title</note>
       </trans-unit>
@@ -1753,15 +1801,15 @@
         <source>We retain your personal data only for as long as necessary to fulfill the purposes outlined in this Privacy Policy or as required by law. For example:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">73</context>
+          <context context-type="linenumber">77</context>
         </context-group>
         <note priority="1" from="description">Section 7 intro</note>
       </trans-unit>
       <trans-unit id="section7Item1" datatype="html">
-        <source>Account data is retained while your account is active and for 7 years after account deletion to comply with legal obligations (e.g., tax laws).</source>
+        <source>Account and business data is kept while your account is active. After you close your account, you can still export your data for 30 days; after that we delete it. Invoices and records we are legally required to keep (for example our own invoices to you, for tax purposes) are kept for up to 10 years.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">74</context>
+          <context context-type="linenumber">78</context>
         </context-group>
         <note priority="1" from="description">Section 7 item 1</note>
       </trans-unit>
@@ -1769,7 +1817,7 @@
         <source>Usage data may be retained for 2 years for analytics or security purposes.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">75</context>
+          <context context-type="linenumber">79</context>
         </context-group>
         <note priority="1" from="description">Section 7 item 2</note>
       </trans-unit>
@@ -1777,7 +1825,7 @@
         <source>You may request deletion of your data (see Section 8).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">76</context>
+          <context context-type="linenumber">80</context>
         </context-group>
         <note priority="1" from="description">Section 7 item 3</note>
       </trans-unit>
@@ -1785,7 +1833,7 @@
         <source>8. Your Data Protection Rights</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">79</context>
+          <context context-type="linenumber">83</context>
         </context-group>
         <note priority="1" from="description">Section 8 title</note>
       </trans-unit>
@@ -1793,7 +1841,7 @@
         <source>Depending on your location, you may have the following rights under GDPR and other applicable laws:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">80</context>
+          <context context-type="linenumber">84</context>
         </context-group>
         <note priority="1" from="description">Section 8 intro</note>
       </trans-unit>
@@ -1801,7 +1849,7 @@
         <source>Access: Request a copy of the personal data we hold about you.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">81</context>
+          <context context-type="linenumber">85</context>
         </context-group>
         <note priority="1" from="description">Section 8 item 1</note>
       </trans-unit>
@@ -1809,7 +1857,7 @@
         <source>Rectification: Correct inaccurate or incomplete data.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">82</context>
+          <context context-type="linenumber">86</context>
         </context-group>
         <note priority="1" from="description">Section 8 item 2</note>
       </trans-unit>
@@ -1817,7 +1865,7 @@
         <source>Erasure: Request deletion of your data (subject to legal obligations).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">83</context>
+          <context context-type="linenumber">87</context>
         </context-group>
         <note priority="1" from="description">Section 8 item 3</note>
       </trans-unit>
@@ -1825,7 +1873,7 @@
         <source>Restriction: Restrict processing of your data in certain circumstances.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">84</context>
+          <context context-type="linenumber">88</context>
         </context-group>
         <note priority="1" from="description">Section 8 item 4</note>
       </trans-unit>
@@ -1833,7 +1881,7 @@
         <source>Portability: Receive your data in a structured, machine-readable format.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">85</context>
+          <context context-type="linenumber">89</context>
         </context-group>
         <note priority="1" from="description">Section 8 item 5</note>
       </trans-unit>
@@ -1841,7 +1889,7 @@
         <source>Object: Object to processing based on legitimate interests (e.g., marketing).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">86</context>
+          <context context-type="linenumber">90</context>
         </context-group>
         <note priority="1" from="description">Section 8 item 6</note>
       </trans-unit>
@@ -1849,7 +1897,7 @@
         <source>Withdraw Consent: Withdraw consent at any time, where processing is based on consent.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">87</context>
+          <context context-type="linenumber">91</context>
         </context-group>
         <note priority="1" from="description">Section 8 item 7</note>
       </trans-unit>
@@ -1857,7 +1905,7 @@
         <source>Lodge a Complaint: Contact a supervisory authority (e.g., in the EU, your local Data Protection Authority) if you believe we have violated your rights.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">88</context>
+          <context context-type="linenumber">92</context>
         </context-group>
         <note priority="1" from="description">Section 8 item 8</note>
       </trans-unit>
@@ -1865,7 +1913,7 @@
         <source>To exercise these rights, use our contact form. We will respond within 30 days for GDPR, or as required by local law.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">89</context>
+          <context context-type="linenumber">93</context>
         </context-group>
         <note priority="1" from="description">Section 8 contact</note>
       </trans-unit>
@@ -1873,7 +1921,7 @@
         <source>contact form</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">90</context>
+          <context context-type="linenumber">94</context>
         </context-group>
         <note priority="1" from="description">Section 8 contact form</note>
       </trans-unit>
@@ -1881,7 +1929,7 @@
         <source>9. Data Security</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">93</context>
+          <context context-type="linenumber">97</context>
         </context-group>
         <note priority="1" from="description">Section 9 title</note>
       </trans-unit>
@@ -1889,7 +1937,7 @@
         <source>We implement appropriate technical and organizational measures to protect your data, including:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">94</context>
+          <context context-type="linenumber">98</context>
         </context-group>
         <note priority="1" from="description">Section 9 intro</note>
       </trans-unit>
@@ -1897,7 +1945,7 @@
         <source>Encryption of data in transit and at rest.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">95</context>
+          <context context-type="linenumber">99</context>
         </context-group>
         <note priority="1" from="description">Section 9 item 1</note>
       </trans-unit>
@@ -1905,7 +1953,7 @@
         <source>Secure authentication mechanisms.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">96</context>
+          <context context-type="linenumber">100</context>
         </context-group>
         <note priority="1" from="description">Section 9 item 2</note>
       </trans-unit>
@@ -1913,7 +1961,7 @@
         <source>Regular security assessments and updates.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">97</context>
+          <context context-type="linenumber">101</context>
         </context-group>
         <note priority="1" from="description">Section 9 item 3</note>
       </trans-unit>
@@ -1921,7 +1969,7 @@
         <source>However, no system is completely secure, and we cannot guarantee absolute security. Please notify us immediately via our contact form if you suspect unauthorized access to your account.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">98</context>
+          <context context-type="linenumber">102</context>
         </context-group>
         <note priority="1" from="description">Section 9 warning</note>
       </trans-unit>
@@ -1929,7 +1977,7 @@
         <source>contact form</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">99</context>
+          <context context-type="linenumber">103</context>
         </context-group>
         <note priority="1" from="description">Section 9 contact form</note>
       </trans-unit>
@@ -1937,7 +1985,7 @@
         <source>10. Third-Party Links</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">102</context>
+          <context context-type="linenumber">106</context>
         </context-group>
         <note priority="1" from="description">Section 10 title</note>
       </trans-unit>
@@ -1945,7 +1993,7 @@
         <source>Our Service may contain links to third-party websites or services (e.g., payment processors like Stripe). We are not responsible for their privacy practices. Please review their privacy policies before providing personal data.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">103</context>
+          <context context-type="linenumber">107</context>
         </context-group>
         <note priority="1" from="description">Section 10 content</note>
       </trans-unit>
@@ -1953,7 +2001,7 @@
         <source>11. Children’s Privacy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">106</context>
+          <context context-type="linenumber">110</context>
         </context-group>
         <note priority="1" from="description">Section 11 title</note>
       </trans-unit>
@@ -1961,7 +2009,7 @@
         <source>Our Service is not intended for individuals under 16. We do not knowingly collect personal data from children. If you believe we have collected such data, please use our contact form to request deletion.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">107</context>
+          <context context-type="linenumber">111</context>
         </context-group>
         <note priority="1" from="description">Section 11 content</note>
       </trans-unit>
@@ -1969,7 +2017,7 @@
         <source>contact form</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">108</context>
+          <context context-type="linenumber">112</context>
         </context-group>
         <note priority="1" from="description">Section 11 contact form</note>
       </trans-unit>
@@ -1977,7 +2025,7 @@
         <source>12. Compliance with Other Laws</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">111</context>
+          <context context-type="linenumber">115</context>
         </context-group>
         <note priority="1" from="description">Section 12 title</note>
       </trans-unit>
@@ -1985,7 +2033,7 @@
         <source>In addition to GDPR, we strive to comply with other applicable data protection laws, such as:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">112</context>
+          <context context-type="linenumber">116</context>
         </context-group>
         <note priority="1" from="description">Section 12 intro</note>
       </trans-unit>
@@ -1993,7 +2041,7 @@
         <source>CCPA (California, USA): If you are a California resident, you may have rights to access, delete, or opt out of the sale of your data. We do not sell data, but you can exercise other rights by contacting us.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">113</context>
+          <context context-type="linenumber">117</context>
         </context-group>
         <note priority="1" from="description">Section 12 item 1</note>
       </trans-unit>
@@ -2001,7 +2049,7 @@
         <source>PIPEDA (Canada): We ensure fair information practices for Canadian users.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">114</context>
+          <context context-type="linenumber">118</context>
         </context-group>
         <note priority="1" from="description">Section 12 item 2</note>
       </trans-unit>
@@ -2009,7 +2057,7 @@
         <source>LGPD (Brazil): We comply with Brazil’s data protection requirements.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">115</context>
+          <context context-type="linenumber">119</context>
         </context-group>
         <note priority="1" from="description">Section 12 item 3</note>
       </trans-unit>
@@ -2017,7 +2065,7 @@
         <source>Contact us via our contact form for details on how we comply with your local laws.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">116</context>
+          <context context-type="linenumber">120</context>
         </context-group>
         <note priority="1" from="description">Section 12 contact</note>
       </trans-unit>
@@ -2025,7 +2073,7 @@
         <source>contact form</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">117</context>
+          <context context-type="linenumber">121</context>
         </context-group>
         <note priority="1" from="description">Section 12 contact form</note>
       </trans-unit>
@@ -2033,7 +2081,7 @@
         <source>13. Changes to This Privacy Policy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">120</context>
+          <context context-type="linenumber">124</context>
         </context-group>
         <note priority="1" from="description">Section 13 title</note>
       </trans-unit>
@@ -2041,7 +2089,7 @@
         <source>We may update this Privacy Policy to reflect changes in our practices or legal requirements. We will notify you of significant changes via email or a notice on the Service. The updated policy will be effective as of the &quot;Last Updated&quot; date.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">121</context>
+          <context context-type="linenumber">125</context>
         </context-group>
         <note priority="1" from="description">Section 13 content</note>
       </trans-unit>
@@ -2049,7 +2097,7 @@
         <source>14. Contact Us</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">124</context>
+          <context context-type="linenumber">128</context>
         </context-group>
         <note priority="1" from="description">Section 14 title</note>
       </trans-unit>
@@ -2057,7 +2105,7 @@
         <source>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">125</context>
+          <context context-type="linenumber">129</context>
         </context-group>
         <note priority="1" from="description">Section 14 intro</note>
       </trans-unit>
@@ -2065,7 +2113,7 @@
         <source>Contact Form:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">126</context>
+          <context context-type="linenumber">130</context>
         </context-group>
         <note priority="1" from="description">Section 14 contact</note>
       </trans-unit>
@@ -2073,7 +2121,7 @@
         <source>Submit an inquiry</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">127</context>
+          <context context-type="linenumber">131</context>
         </context-group>
         <note priority="1" from="description">Section 14 contact form</note>
       </trans-unit>
@@ -2081,7 +2129,7 @@
         <source>See also our</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">129</context>
+          <context context-type="linenumber">133</context>
         </context-group>
         <note priority="1" from="description">Section 14 see also</note>
       </trans-unit>
@@ -2089,7 +2137,7 @@
         <source>Terms of Service</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">130</context>
+          <context context-type="linenumber">134</context>
         </context-group>
         <note priority="1" from="description">Section 14 terms link</note>
       </trans-unit>
@@ -2097,9 +2145,73 @@
         <source>For GDPR complaints, you may also contact your local Data Protection Authority.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">131</context>
+          <context context-type="linenumber">135</context>
         </context-group>
         <note priority="1" from="description">Section 14 complaint</note>
+      </trans-unit>
+      <trans-unit id="spAzurePurpose" datatype="html">
+        <source>Hosting of the Loom21 application, website and database</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">145</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor azure purpose</note>
+      </trans-unit>
+      <trans-unit id="spAzureLocation" datatype="html">
+        <source>Application servers: United States (West US 2). Database: EU (North Europe, Ireland)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor azure location</note>
+      </trans-unit>
+      <trans-unit id="spAcsPurpose" datatype="html">
+        <source>Sending account emails (sign-up confirmation, password reset, notifications) and replies to contact-form messages</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor acs purpose</note>
+      </trans-unit>
+      <trans-unit id="spAcsLocation" datatype="html">
+        <source>United States</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor acs location</note>
+      </trans-unit>
+      <trans-unit id="spStripePurpose" datatype="html">
+        <source>Card payments for Loom21 subscriptions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">157</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor stripe purpose</note>
+      </trans-unit>
+      <trans-unit id="spStripeLocation" datatype="html">
+        <source>EU (Ireland); some data transferred to the United States under Standard Contractual Clauses</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor stripe location</note>
+      </trans-unit>
+      <trans-unit id="spSaPurpose" datatype="html">
+        <source>Cookieless, anonymous visit statistics for loom21.com (no personal data, no cookies)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">163</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor sa purpose</note>
+      </trans-unit>
+      <trans-unit id="spSaLocation" datatype="html">
+        <source>EU (Netherlands)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor sa location</note>
       </trans-unit>
       <trans-unit id="roadmapPageTitle" datatype="html">
         <source>Loom21 Roadmap</source>

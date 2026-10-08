@@ -360,8 +360,8 @@
         <note priority="1" from="description">Privacy policy title</note>
       </trans-unit>
       <trans-unit id="privacyPolicyLastUpdated" datatype="html">
-        <source>Last Updated: May 30, 2025</source>
-        <target>Последно актуализирана: 30 май 2025 г.</target>
+        <source>Last Updated: October 8, 2026</source>
+        <target>Последна актуализация: 8 октомври 2026 г.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">4</context>
@@ -396,8 +396,8 @@
         <note priority="1" from="description">Section 1 title</note>
       </trans-unit>
       <trans-unit id="section1Content1" datatype="html">
-        <source>We are Loom21 LTD. For the purposes of GDPR, we are the "Data Controller" responsible for the personal data we collect and process through the Service.</source>
-        <target>Ние сме Loom21 LTD. За целите на GDPR ние сме „Администратор на данни“, отговорен за личните данни, които събираме и обработваме чрез Услугата.</target>
+        <source>We are Loom21 LTD, a company registered in Bulgaria (UIC/ЕИК 208142174), with its registered address at Aleko Konstantinov 11 str., Tvarditsa, Bulgaria. For the purposes of GDPR, we are the &quot;Data Controller&quot; for the personal data described in this policy, such as your account details. For the business data you store in Loom21 about your own customers and suppliers, you are the controller and we act as your processor, as set out in Section 10.2a of our Terms of Service.</source>
+        <target>Ние сме Loom21 LTD, дружество, регистрирано в България (ЕИК 208142174), със седалище и адрес на управление ул. „Алеко Константинов“ 11, гр. Твърдица, България. По смисъла на GDPR ние сме „администратор“ на личните данни, описани в тази политика, като например данните за вашия акаунт. За бизнес данните, които съхранявате в Loom21 за вашите клиенти и доставчици, вие сте администратор, а ние действаме като ваш обработващ данните, както е посочено в раздел 10.2a от нашите Общи условия.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">10</context>
@@ -421,15 +421,6 @@
           <context context-type="linenumber">12</context>
         </context-group>
         <note priority="1" from="description">Section 1 contact form</note>
-      </trans-unit>
-      <trans-unit id="section1Address" datatype="html">
-        <source>Address: Tvarditsa, Aleko Konstantinov 11 str.</source>
-        <target>Адрес: ул. Алеко Константинов 11, Твърдица</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">13</context>
-        </context-group>
-        <note priority="1" from="description">Section 1 address</note>
       </trans-unit>
       <trans-unit id="section2Title" datatype="html">
         <source>2. Information We Collect</source>
@@ -756,11 +747,11 @@
         <note priority="1" from="description">Section 5 intro</note>
       </trans-unit>
       <trans-unit id="section5Item1" datatype="html">
-        <source>Service Providers: With trusted third-party providers who assist us in operating the Service, such as hosting providers and payment processors. For example, we use Stripe, Inc. to process payments, and Stripe may collect and process payment-related data (e.g., billing information) in accordance with its Privacy Policy. All service providers are contractually obligated to protect your data and comply with applicable data protection laws, including GDPR.</source>
-        <target>Доставчици на услуги: С доверени доставчици на трети страни, които ни помагат в управлението на Услугата, като хостинг доставчици и процесори за плащания. Например, използваме Stripe, Inc. за обработка на плащания, и Stripe може да събира и обработва данни, свързани с плащанията (напр. информация за фактуриране), в съответствие с неговата Политика за поверителност. Всички доставчици на услуги са договорно задължени да защитават вашите данни и да спазват приложимите закони за защита на данните, включително GDPR.</target>
+        <source>Service providers (sub-processors): We use the providers below to run the Service. Each one processes personal data only on our instructions and under a data processing agreement that meets GDPR requirements. We will update this list at least 30 days before adding or replacing a provider.</source>
+        <target>Доставчици на услуги (подизпълнители по обработването): Използваме изброените по-долу доставчици, за да предоставяме Услугата. Всеки от тях обработва лични данни само по наши указания и въз основа на споразумение за обработване на данни в съответствие с GDPR. Ще актуализираме този списък поне 30 дни преди добавяне или замяна на доставчик.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">58</context>
+          <context context-type="linenumber">59</context>
         </context-group>
         <note priority="1" from="description">Section 5 item 1</note>
       </trans-unit>
@@ -801,11 +792,11 @@
         <note priority="1" from="description">Section 6 title</note>
       </trans-unit>
       <trans-unit id="section6Intro" datatype="html">
-        <source>Our Service is accessible globally, and your data may be processed or stored in countries outside your region, including the United States (e.g., by Stripe for payment processing) and the European Union. We ensure that any international data transfers comply with GDPR and other applicable laws, using mechanisms such as:</source>
-        <target>Нашата Услуга е достъпна в световен мащаб и вашите данни могат да бъдат обработвани или съхранявани в страни извън вашия регион, включително Съединените щати (напр. от Stripe за обработка на плащания) и Европейския съюз. Ние гарантираме, че всички международни трансфери на данни отговарят на GDPR и други приложими закони, като използваме механизми като:</target>
+        <source>We host the Service with Microsoft Azure. Our database is stored in the EU (North Europe, Ireland), but the application servers run in the United States (West US 2), so personal data is processed there. Account emails are sent through Azure Email Communication Services, whose data is stored in the United States. Stripe is also headquartered in the United States and may transfer limited data there. Where personal data leaves the European Economic Area (EEA), we rely on safeguards such as:</source>
+        <target>Хостваме Услугата в Microsoft Azure. Базата ни данни се съхранява в ЕС (North Europe, Ирландия), но сървърите на приложението работят в САЩ (West US 2), поради което личните данни се обработват там. Имейлите за акаунта се изпращат чрез Azure Email Communication Services, чиито данни се съхраняват в САЩ. Stripe също е със седалище в САЩ и може да предава ограничени данни там. Когато лични данни напускат Европейското икономическо пространство (ЕИП), разчитаме на гаранции като:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">65</context>
+          <context context-type="linenumber">70</context>
         </context-group>
         <note priority="1" from="description">Section 6 intro</note>
       </trans-unit>
@@ -855,11 +846,11 @@
         <note priority="1" from="description">Section 7 intro</note>
       </trans-unit>
       <trans-unit id="section7Item1" datatype="html">
-        <source>Account data is retained while your account is active and for 7 years after account deletion to comply with legal obligations (e.g., tax laws).</source>
-        <target>Данните за акаунта се съхраняват, докато акаунтът ви е активен и 7 години след изтриването на акаунта, за да се спазят законовите задължения (напр. данъчни закони).</target>
+        <source>Account and business data is kept while your account is active. After you close your account, you can still export your data for 30 days; after that we delete it. Invoices and records we are legally required to keep (for example our own invoices to you, for tax purposes) are kept for up to 10 years.</source>
+        <target>Данните за акаунта и бизнес данните се съхраняват, докато акаунтът ви е активен. След закриване на акаунта можете да експортирате данните си още 30 дни, след което ги изтриваме. Фактури и записи, които сме длъжни да пазим по закон (например нашите фактури към вас за данъчни цели), се съхраняват до 10 години.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">73</context>
+          <context context-type="linenumber">78</context>
         </context-group>
         <note priority="1" from="description">Section 7 item 1</note>
       </trans-unit>
@@ -3739,6 +3730,132 @@
           <context context-type="linenumber">130</context>
         </context-group>
         <note priority="1" from="description">Section 14 terms link</note>
+      </trans-unit>
+      <trans-unit id="privacyEmailLabel" datatype="html">
+        <source>Email:</source>
+        <target>Имейл:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Privacy email label</note>
+      </trans-unit>
+      <trans-unit id="section2bItem2" datatype="html">
+        <source>Cookies: The loom21.com website does not use tracking or advertising cookies, and our website analytics (Simple Analytics) are cookieless. The Loom21 application uses only the cookies or local storage strictly needed to keep you signed in and remember your settings.</source>
+        <target>Бисквитки: Уебсайтът loom21.com не използва проследяващи или рекламни бисквитки, а статистиката на сайта (Simple Analytics) работи без бисквитки. Приложението Loom21 използва само бисквитките или локалното хранилище, които са строго необходими, за да останете влезли в профила си и да се запазят настройките ви.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">Section 2b item 2</note>
+      </trans-unit>
+      <trans-unit id="section5TableProvider" datatype="html">
+        <source>Provider</source>
+        <target>Доставчик</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor table provider</note>
+      </trans-unit>
+      <trans-unit id="section5TablePurpose" datatype="html">
+        <source>Purpose</source>
+        <target>Цел</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor table purpose</note>
+      </trans-unit>
+      <trans-unit id="section5TableLocation" datatype="html">
+        <source>Data location</source>
+        <target>Местоположение на данните</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor table location</note>
+      </trans-unit>
+      <trans-unit id="section5NotSubprocessors" datatype="html">
+        <source>Payment processors that you connect to receive payments from your own customers — such as Stripe (your own account), BTCPay Server, Glow or other Lightning Address wallets, Speed Wallet and LNbits — are not our sub-processors. You choose them, your customers pay them directly, and their own terms and privacy policies apply. Loom21 never holds your funds.</source>
+        <target>Платежните процесори, които свързвате, за да получавате плащания от вашите клиенти — като Stripe (вашият собствен акаунт), BTCPay Server, Glow или други Lightning Address портфейли, Speed Wallet и LNbits — не са наши подизпълнители. Вие ги избирате, клиентите ви плащат директно на тях и важат техните собствени условия и политики за поверителност. Loom21 никога не държи вашите средства.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <note priority="1" from="description">Not subprocessors note</note>
+      </trans-unit>
+      <trans-unit id="spAzurePurpose" datatype="html">
+        <source>Hosting of the Loom21 application, website and database</source>
+        <target>Хостинг на приложението Loom21, уебсайта и базата данни</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">145</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor azure purpose</note>
+      </trans-unit>
+      <trans-unit id="spAzureLocation" datatype="html">
+        <source>Application servers: United States (West US 2). Database: EU (North Europe, Ireland)</source>
+        <target>Сървъри на приложението: САЩ (West US 2). База данни: ЕС (North Europe, Ирландия)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor azure location</note>
+      </trans-unit>
+      <trans-unit id="spAcsPurpose" datatype="html">
+        <source>Sending account emails (sign-up confirmation, password reset, notifications) and replies to contact-form messages</source>
+        <target>Изпращане на имейли за акаунта (потвърждение на регистрация, смяна на парола, известия) и отговори на съобщения от формата за контакт</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor acs purpose</note>
+      </trans-unit>
+      <trans-unit id="spAcsLocation" datatype="html">
+        <source>United States</source>
+        <target>САЩ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor acs location</note>
+      </trans-unit>
+      <trans-unit id="spStripePurpose" datatype="html">
+        <source>Card payments for Loom21 subscriptions</source>
+        <target>Плащания с карти за абонаменти в Loom21</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">157</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor stripe purpose</note>
+      </trans-unit>
+      <trans-unit id="spStripeLocation" datatype="html">
+        <source>EU (Ireland); some data transferred to the United States under Standard Contractual Clauses</source>
+        <target>ЕС (Ирландия); някои данни се предават в САЩ въз основа на стандартни договорни клаузи</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor stripe location</note>
+      </trans-unit>
+      <trans-unit id="spSaPurpose" datatype="html">
+        <source>Cookieless, anonymous visit statistics for loom21.com (no personal data, no cookies)</source>
+        <target>Анонимна статистика за посещенията на loom21.com без бисквитки (без лични данни)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">163</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor sa purpose</note>
+      </trans-unit>
+      <trans-unit id="spSaLocation" datatype="html">
+        <source>EU (Netherlands)</source>
+        <target>ЕС (Нидерландия)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+        <note priority="1" from="description">Subprocessor sa location</note>
       </trans-unit>
     </body>
   </file>
