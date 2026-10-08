@@ -1,33 +1,53 @@
+/* Typography matches privacy.component.scss so the two legal pages look the same. */
 .terms {
   line-height: 1.6;
   color: #333;
-  max-width: 1024px;
-  margin: 0 auto;
-  padding: 20px;
 }
-h1, h2 {
-  color: #3e4555;
+.container {
+  max-width: 820px;
 }
-h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-h2 {
-  font-size: 1.5em;
-  margin-top: 30px;
-}
-.section {
-  margin-bottom: 30px;
-}
-.draft-notice {
-  font-style: italic;
-  color: #555;
-}
-@media (max-width: 600px) {
+:host ::ng-deep {
+  h1, h2, h3 {
+    color: #3e4555;
+  }
   h1 {
-    font-size: 1.5em;
+    font-size: 2em;
+    margin-bottom: 20px;
   }
   h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
+    margin-top: 30px;
+  }
+  p, ul {
+    margin-bottom: 15px;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  blockquote {
+    border-left: 4px solid #1e88e5;
+    background: #e3f2fd;
+    padding: 10px 16px;
+    margin: 0 0 20px;
+  }
+  blockquote p {
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
+  :host ::ng-deep {
+    h1 {
+      font-size: 1.5em;
+    }
+    h2 {
+      font-size: 1.2em;
+    }
   }
 }

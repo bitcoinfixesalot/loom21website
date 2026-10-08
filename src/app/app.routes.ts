@@ -19,6 +19,6 @@ export const routes: Routes = [
     { path: 'roadmap', component: RoadmapComponent },
     { path: '404', component : NotFoundComponent},
     { path: 'privacy-policy', component: PrivacyComponent },
-    { path: 'terms', component: TermsComponent }, // draft, noindex, not linked yet
+    { path: 'terms', component: TermsComponent },
     { path: '**', redirectTo: '/404', pathMatch: 'full'}
 ];

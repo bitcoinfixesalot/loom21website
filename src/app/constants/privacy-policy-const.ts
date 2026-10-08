@@ -126,5 +126,7 @@ export const PRIVACY_CONSTANTS = {
   section14Contact: $localize`:Section 14 contact@@section14Contact:Contact Form:`,
   section14ContactForm: $localize`:Section 14 contact form@@section14ContactForm:Submit an inquiry`,
   //section14Address: $localize`:Section 14 address@@section14Address:Address: Tvarditsa, Aleko Konstantinov 11 str.`,
+  section14SeeAlso: $localize`:Section 14 see also@@section14SeeAlso:See also our`,
+  section14TermsLink: $localize`:Section 14 terms link@@section14TermsLink:Terms of Service`,
   section14Complaint: $localize`:Section 14 complaint@@section14Complaint:For GDPR complaints, you may also contact your local Data Protection Authority.`
 };

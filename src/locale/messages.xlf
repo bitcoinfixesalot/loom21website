@@ -619,7 +619,7 @@
         <note priority="1" from="description">Roadmap description tag</note>
       </trans-unit>
       <trans-unit id="termsDescription" datatype="html">
-        <source>Terms of Service for Loom21 (draft).</source>
+        <source>The terms for using Loom21: plans and billing, Bitcoin payments, 0% transaction fees, your data and export rights.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">20</context>
@@ -682,159 +682,151 @@
         </context-group>
         <note priority="1" from="description">Roadmap description ld_json tag</note>
       </trans-unit>
-      <trans-unit id="termsDescription_ld_json" datatype="html">
-        <source>Terms of Service for Loom21 (draft).</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">31</context>
-        </context-group>
-        <note priority="1" from="description">Terms description ld_json tag</note>
-      </trans-unit>
       <trans-unit id="inventoryManagement" datatype="html">
         <source>Inventory Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">34</context>
+          <context context-type="linenumber">33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="stockControl" datatype="html">
         <source>Stock Control</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="productManagement" datatype="html">
         <source>Product Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">36</context>
+          <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="invoiceProcessing" datatype="html">
         <source>Invoice Processing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="customerManagement" datatype="html">
         <source>Customer Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">38</context>
+          <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="supplierManagement" datatype="html">
         <source>Supplier Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="vendorManagement" datatype="html">
         <source>Vendor Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">40</context>
+          <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="orderFulfillment" datatype="html">
         <source>Order Fulfillment</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">40</context>
         </context-group>
       </trans-unit>
       <trans-unit id="paymentProcessing" datatype="html">
         <source>Payment Processing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">42</context>
+          <context context-type="linenumber">41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="bitcoinPayments" datatype="html">
         <source>Bitcoin Payments</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">43</context>
+          <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="salesTracking" datatype="html">
         <source>Sales Tracking</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">44</context>
+          <context context-type="linenumber">43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="serviceManagement" datatype="html">
         <source>Service Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">45</context>
+          <context context-type="linenumber">44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="deliveryManagement" datatype="html">
         <source>Delivery Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">45</context>
         </context-group>
       </trans-unit>
       <trans-unit id="userRolesPermissions" datatype="html">
         <source>User Roles and Permissions</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="linenumber">46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inventoryAnalytics" datatype="html">
         <source>Inventory Analytics</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">48</context>
+          <context context-type="linenumber">47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="warehouseManagement" datatype="html">
         <source>Warehouse Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">49</context>
+          <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="realTimeInventoryTracking" datatype="html">
         <source>Real-Time Inventory Tracking</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="priceListManagement" datatype="html">
         <source>Price List Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">50</context>
         </context-group>
       </trans-unit>
       <trans-unit id="customFieldsManagement" datatype="html">
         <source>Custom Fields Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="linenumber">51</context>
         </context-group>
       </trans-unit>
       <trans-unit id="successMessage" datatype="html">
         <source>Thank You! Your message has been received. We&apos;ll get back to you soon.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="errorMessage" datatype="html">
         <source>Something went wrong and your message wasn&apos;t sent. Please try again, or email us directly.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">56</context>
+          <context context-type="linenumber">55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="pricingAnnualBadge" datatype="html">
@@ -2085,11 +2077,27 @@
         </context-group>
         <note priority="1" from="description">Section 14 contact form</note>
       </trans-unit>
+      <trans-unit id="section14SeeAlso" datatype="html">
+        <source>See also our</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+        <note priority="1" from="description">Section 14 see also</note>
+      </trans-unit>
+      <trans-unit id="section14TermsLink" datatype="html">
+        <source>Terms of Service</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+        <note priority="1" from="description">Section 14 terms link</note>
+      </trans-unit>
       <trans-unit id="section14Complaint" datatype="html">
         <source>For GDPR complaints, you may also contact your local Data Protection Authority.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">129</context>
+          <context context-type="linenumber">131</context>
         </context-group>
         <note priority="1" from="description">Section 14 complaint</note>
       </trans-unit>
@@ -2365,118 +2373,6 @@
         </context-group>
         <note priority="1" from="description">Roadmap planned item 3 description</note>
       </trans-unit>
-      <trans-unit id="termsSectionPending" datatype="html">
-        <source>This section is being drafted and will be published after legal review.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
-          <context context-type="linenumber">4</context>
-        </context-group>
-        <note priority="1" from="description">Terms section pending</note>
-      </trans-unit>
-      <trans-unit id="termsTitle" datatype="html">
-        <source>Terms of Service</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
-          <context context-type="linenumber">7</context>
-        </context-group>
-        <note priority="1" from="description">Terms title</note>
-      </trans-unit>
-      <trans-unit id="termsDraftNotice" datatype="html">
-        <source>Draft — not yet in effect.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
-          <context context-type="linenumber">8</context>
-        </context-group>
-        <note priority="1" from="description">Terms draft notice</note>
-      </trans-unit>
-      <trans-unit id="termsS1Title" datatype="html">
-        <source>1. Service</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
-          <context context-type="linenumber">10</context>
-        </context-group>
-        <note priority="1" from="description">Terms section 1 title</note>
-      </trans-unit>
-      <trans-unit id="termsS2Title" datatype="html">
-        <source>2. Accounts</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
-          <context context-type="linenumber">11</context>
-        </context-group>
-        <note priority="1" from="description">Terms section 2 title</note>
-      </trans-unit>
-      <trans-unit id="termsS3Title" datatype="html">
-        <source>3. Plans, billing &amp; Bitcoin payments</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
-          <context context-type="linenumber">12</context>
-        </context-group>
-        <note priority="1" from="description">Terms section 3 title</note>
-      </trans-unit>
-      <trans-unit id="termsS4Title" datatype="html">
-        <source>4. Acceptable use</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
-          <context context-type="linenumber">13</context>
-        </context-group>
-        <note priority="1" from="description">Terms section 4 title</note>
-      </trans-unit>
-      <trans-unit id="termsS5Title" datatype="html">
-        <source>5. Your data &amp; export</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
-          <context context-type="linenumber">14</context>
-        </context-group>
-        <note priority="1" from="description">Terms section 5 title</note>
-      </trans-unit>
-      <trans-unit id="termsS6Title" datatype="html">
-        <source>6. Third-party payment processors</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
-          <context context-type="linenumber">15</context>
-        </context-group>
-        <note priority="1" from="description">Terms section 6 title</note>
-      </trans-unit>
-      <trans-unit id="termsS7Title" datatype="html">
-        <source>7. Fees</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
-          <context context-type="linenumber">16</context>
-        </context-group>
-        <note priority="1" from="description">Terms section 7 title</note>
-      </trans-unit>
-      <trans-unit id="termsS8Title" datatype="html">
-        <source>8. Liability</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-        <note priority="1" from="description">Terms section 8 title</note>
-      </trans-unit>
-      <trans-unit id="termsS9Title" datatype="html">
-        <source>9. Termination</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
-          <context context-type="linenumber">18</context>
-        </context-group>
-        <note priority="1" from="description">Terms section 9 title</note>
-      </trans-unit>
-      <trans-unit id="termsS10Title" datatype="html">
-        <source>10. Governing law</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
-          <context context-type="linenumber">19</context>
-        </context-group>
-        <note priority="1" from="description">Terms section 10 title</note>
-      </trans-unit>
-      <trans-unit id="termsS11Title" datatype="html">
-        <source>11. Contact</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/terms-const.ts</context>
-          <context context-type="linenumber">20</context>
-        </context-group>
-        <note priority="1" from="description">Terms section 11 title</note>
-      </trans-unit>
       <trans-unit id="contactUs" datatype="html">
         <source>Contact Us</source>
         <context-group purpose="location">
@@ -2601,7 +2497,7 @@
         <source>Or email us:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">109</context>
+          <context context-type="linenumber">109,110</context>
         </context-group>
         <note priority="1" from="description">Contact email label</note>
       </trans-unit>
@@ -2757,15 +2653,27 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">51,52</context>
+          <context context-type="linenumber">52,53</context>
         </context-group>
         <note priority="1" from="description">Privacy</note>
+      </trans-unit>
+      <trans-unit id="termsLink" datatype="html">
+        <source>Terms of Service</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+        <note priority="1" from="description">Terms link</note>
       </trans-unit>
       <trans-unit id="footerGithub" datatype="html">
         <source>GitHub</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">23,24</context>
+          <context context-type="linenumber">24,25</context>
         </context-group>
         <note priority="1" from="description">Footer github</note>
       </trans-unit>
@@ -2773,7 +2681,7 @@
         <source>Telegram Community</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">24,26</context>
+          <context context-type="linenumber">25,27</context>
         </context-group>
         <note priority="1" from="description">Footer telegram</note>
       </trans-unit>
@@ -2781,7 +2689,7 @@
         <source>Get in touch</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">29,30</context>
+          <context context-type="linenumber">30,31</context>
         </context-group>
         <note priority="1" from="description">Get in touch</note>
       </trans-unit>
@@ -3383,7 +3291,7 @@
         <source>forever</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">104</context>
+          <context context-type="linenumber">110</context>
         </context-group>
         <note priority="1" from="description">Forever</note>
       </trans-unit>
@@ -3391,7 +3299,7 @@
         <source>per month</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">106</context>
+          <context context-type="linenumber">112</context>
         </context-group>
         <note priority="1" from="description">Per month</note>
       </trans-unit>
@@ -3399,9 +3307,17 @@
         <source>per month (billed annually)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.ts</context>
-          <context context-type="linenumber">107</context>
+          <context context-type="linenumber">113</context>
         </context-group>
         <note priority="1" from="description">Billed annually</note>
+      </trans-unit>
+      <trans-unit id="showEmail" datatype="html">
+        <source>Show email address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/protected-email/protected-email.component.ts</context>
+          <context context-type="linenumber">13,17</context>
+        </context-group>
+        <note priority="1" from="description">Show email button</note>
       </trans-unit>
     </body>
   </file>

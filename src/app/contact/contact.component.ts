@@ -8,10 +8,11 @@ import { DESCRIPTIONS, ERROR_MESSAGE, LD_JSON, SUCCESS_MESSAGE, TITLES } from '.
 import { Meta, Title } from '@angular/platform-browser';
 import { OgMetaService } from '../services/og-meta.service';
 import { StructuredDataService } from '../services/structured-data.service';
+import { ProtectedEmailComponent } from '../shared/protected-email/protected-email.component';
 
 @Component({
     selector: 'app-contact',
-    imports: [ReactiveFormsModule, FormsModule],
+    imports: [ReactiveFormsModule, FormsModule, ProtectedEmailComponent],
     templateUrl: './contact.component.html',
     styleUrl: './contact.component.scss',
     changeDetection: ChangeDetectionStrategy.OnPush

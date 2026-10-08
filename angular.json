@@ -65,7 +65,10 @@
             },
             "localize": true,
             "i18nMissingTranslation": "warning",
-            "i18nDuplicateTranslation": "warning"
+            "i18nDuplicateTranslation": "warning",
+            "loader": {
+              ".md": "text"
+            }
             
 
           },
@@ -140,6 +143,9 @@
               "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.spec.json",
+            "loader": {
+              ".md": "text"
+            },
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",

@@ -17,7 +17,7 @@ export const DESCRIPTIONS = {
     privacy_description: $localize`:Privacy description tag@@privacyDescription:Learn about our privacy practices and how we protect your data.`,
     faq_description: $localize`:FAQ description tag@@faqDescription:Answers to common questions about Loom21 — payments, Bitcoin, pricing, price lists, inventory, custom fields, and more.`,
     roadmap_description: $localize`:Roadmap description tag@@roadmapDescription:See what's shipped, in progress, and planned for Loom21 — payments, pricing, inventory, and more.`,
-    terms_description: $localize`:Terms description tag@@termsDescription:Terms of Service for Loom21 (draft).`,
+    terms_description: $localize`:Terms description tag@@termsDescription:The terms for using Loom21: plans and billing, Bitcoin payments, 0% transaction fees, your data and export rights.`,
 }
 
 export const LD_JSON = {
@@ -28,7 +28,6 @@ export const LD_JSON = {
     privacy_description: $localize`:Privacy description ld_json tag@@privacyDescription_ld_json:Learn about our privacy practices and how we protect your data.`,
     faq_description: $localize`:FAQ description ld_json tag@@faqDescription_ld_json:Answers to common questions about Loom21's payments, Bitcoin support, pricing, price lists, inventory, and custom fields.`,
     roadmap_description: $localize`:Roadmap description ld_json tag@@roadmapDescription_ld_json:Loom21's product roadmap — shipped features, work in progress, and planned improvements.`,
-    terms_description: $localize`:Terms description ld_json tag@@termsDescription_ld_json:Terms of Service for Loom21 (draft).`,
 }
 
 export const INVENTORY_MANAGEMENT = $localize`:@@inventoryManagement:Inventory Management`;
