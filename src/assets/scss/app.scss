@@ -5,10 +5,7 @@ Email: niravjoshi87@gmail.com
 File: scss
 */
 @use 'variable';
-/******************* 
-This is the font import from the google api 
-*******************/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800');
+// Montserrat is loaded via <link> in src/index.html
 // @font-face {
 //   font-family: 'Calafia-Regular';
 //   src: url('../../assets/font/Calafia-Regular.eot?#iefix') format('embedded-opentype'),  url('../../assets/font/Calafia-Regular.otf')  format('opentype'),
@@ -1186,7 +1183,7 @@ Buttons
 }
 
 .btn-outline-primary {
-    color: variable.$primary;
+    color: #1976d2; // darker than $primary for WCAG AA text contrast on white
     background-color: variable.$white;
     border-color:variable.$primary;
     transition: 0.2s ease-in;

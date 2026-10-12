@@ -70,7 +70,7 @@ scripts/
 - `src/locale/` - Bulgarian translations (XLF format)
 - `src/sitemap.xml` - Auto-generated on build (do not edit manually)
 - `src/robots.txt` - Allows /en/ and /bg/, references sitemap
-- `src/index.html` - Bootstrap 5 bundle (includes Popper v2), Material Icons, Simple Analytics
+- `src/index.html` - Bootstrap 5 bundle (includes Popper v2), Montserrat font `<link>` (inlined at build), Simple Analytics. Material Icons is not loaded — use Font Awesome 4.7 (`fa fa-*`)
 
 ## SEO Architecture
 

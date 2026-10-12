@@ -3439,6 +3439,14 @@
         </context-group>
         <note priority="1" from="description">Show email button</note>
       </trans-unit>
+      <trans-unit id="languageSwitcherLabel" datatype="html">
+        <source>Language:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/banner/banner.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="description">Language switcher label</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

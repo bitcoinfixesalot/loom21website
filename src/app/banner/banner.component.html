@@ -2,7 +2,7 @@
     <div class="container">
         <!-- Header 1 code -->
         <nav class="navbar navbar-expand-lg h1-nav">
-            <a class="navbar-brand" routerLink="/"><img src="assets/images/logos/white-text.png" alt="Loom21" /></a>
+            <a class="navbar-brand" routerLink="/"><img src="assets/images/logos/white-text.png" alt="Loom21" width="175" height="32" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header1"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="ti-menu"></span>
@@ -31,16 +31,17 @@
                     <li class="nav-item" style="margin-right: 0;">
                         <div class="locale-switcher">
                             <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button"
-                                id="localeDropdown" data-bs-toggle="dropdown" aria-expanded="false"
-                                aria-label="Select language">
-                                <i class="fa fa-globe"></i> {{ currentLocale | uppercase }}
+                                id="localeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                <span class="visually-hidden" i18n="Language switcher label@@languageSwitcherLabel">Language:</span>
+                                {{ currentLocale | uppercase }}
                             </button>
                             <ul class="dropdown-menu locale-menu" aria-labelledby="localeDropdown">
                                 <li>
-                                    <a class="dropdown-item" (click)="switchLocale('en')">EN - English</a>
+                                    <button type="button" class="dropdown-item" lang="en" (click)="switchLocale('en')">EN - English</button>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" (click)="switchLocale('bg')">BG - Български</a>
+                                    <button type="button" class="dropdown-item" lang="bg" (click)="switchLocale('bg')">BG - Български</button>
                                 </li>
                                 <!-- Add more locales as needed -->
                             </ul>
