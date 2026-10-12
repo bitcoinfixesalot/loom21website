@@ -7,11 +7,11 @@
 
 /* Adding icon before each list item */
 .gfg > li:before {
-    content: 'check';
-    font-family: 'Material Icons';
-    font-size: 24px;
-    vertical-align: -16%;
-    margin-right: 8px;
+    content: '\f00c'; // Font Awesome 4.7 "check"
+    content: '\f00c' / ''; // same, with empty alt text so screen readers skip it
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    margin-right: 10px;
 }
 
 /* Payment processor logos strip */
