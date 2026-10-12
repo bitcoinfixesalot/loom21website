@@ -50,7 +50,7 @@
     }
 
     <div [class.d-none]="isLoading() || hasError()">
-      <markdown [src]="srcPath" katex emoji (load)="onMarkdownLoad()" (error)="onMarkdownError()"></markdown>
+      <markdown [src]="srcPath" (load)="onMarkdownLoad()" (error)="onMarkdownError()"></markdown>
     </div>
 
   </div>

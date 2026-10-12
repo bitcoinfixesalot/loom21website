@@ -6,8 +6,8 @@ Angular 21 marketing website with Server-Side Rendering (SSR) and multi-language
 
 - Angular 21.2.8 with TypeScript ~5.9.3
 - Express SSR server with prerendering enabled
-- ngx-markdown for documentation pages (loads from external GitHub repo at runtime)
-- PrismJS (syntax highlighting), KaTeX (math equations)
+- ngx-markdown for documentation and terms pages (docs load from external GitHub repo at runtime). Both routes are lazy (`loadChildren`) and get `markdownProviders` (`src/app/markdown-providers.ts`), so markdown code stays out of the main bundle
+- No PrismJS / KaTeX / emoji-toolkit: the docs use no code blocks or math. Emoji shortcodes (`:bell:`) are mapped in `src/app/marked-emoji-extension.ts` — add an entry there when the docs use a new one. If code highlighting or math is ever needed, load it only on the docs route (angular.json `"inject": false` + `bundleName`), never globally
 - SCSS styling, Bootstrap 5 (CDN), Font Awesome icons
 - Zoneless change detection (`provideZonelessChangeDetection()`)
 - `ChangeDetectionStrategy.OnPush` on all components

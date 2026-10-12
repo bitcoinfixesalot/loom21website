@@ -39,25 +39,10 @@
               "src/assets"
             ],
             "styles": [
-              "prismjs/themes/prism-okaidia.css",
-              "katex/dist/katex.min.css",
-              "prismjs/plugins/line-numbers/prism-line-numbers.css",
-              "prismjs/plugins/line-highlight/prism-line-highlight.css",
               "src/styles.scss",
               "src/assets/scss/style.scss"
             ],
-            "scripts": [
-              "emoji-toolkit/lib/js/joypixels.min.js",
-              "prismjs/prism.js",
-
-              "prismjs/components/prism-bash.min.js",
-              "prismjs/components/prism-diff.min.js",
-              "prismjs/components/prism-javascript.min.js",
-              "prismjs/components/prism-typescript.min.js",
-              "emoji-toolkit/lib/js/joypixels.js",
-              "katex/dist/katex.min.js",
-              "katex/dist/contrib/auto-render.min.js"
-            ],
+            "scripts": [],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
