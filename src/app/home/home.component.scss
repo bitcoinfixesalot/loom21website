@@ -7,11 +7,11 @@
 
 /* Adding icon before each list item */
 .gfg > li:before {
-    content: 'check';
-    font-family: 'Material Icons';
-    font-size: 24px;
-    vertical-align: -16%;
-    margin-right: 8px;
+    content: '\f00c'; // Font Awesome 4.7 "check"
+    content: '\f00c' / ''; // same, with empty alt text so screen readers skip it
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    margin-right: 10px;
 }
 
 /* Payment processor logos strip */
@@ -46,6 +46,16 @@ h1.title {
 
 .hero-trust {
     margin-top: 16px;
+}
+
+// Darker than $primary (#1e88e5, 3.7:1) to pass WCAG AA contrast on white
+.hero-eyebrow {
+    color: #1976d2;
+}
+
+// h3 for correct heading order, sized like the h4 it replaced
+.features-subtitle {
+    font-size: clamp(16px, 2.5vw, 21px);
 }
 
 .processor-logos {
@@ -137,18 +147,43 @@ h1.title {
 }
 
 .video-play-facade {
+    position: relative;
     width: 100%;
     height: 100%;
     border: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 16px;
     background: linear-gradient(135deg, #1976d2, #1a1a2e);
-    background-size: cover;
-    background-position: top center;
     cursor: pointer;
+
+    // Dark overlay on top of the poster image
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: linear-gradient(rgba(15,15,30,0.25), rgba(15,15,30,0.45));
+    }
+}
+
+// Real <img> (not a CSS background) so the browser can find and prioritise the LCP image early
+.video-play-poster {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.video-play-btn,
+.video-play-text {
+    position: relative;
+    z-index: 2;
 }
 
 .video-play-btn {

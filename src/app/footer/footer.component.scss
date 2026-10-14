@@ -2,6 +2,13 @@
     width: 52px; height: 52px;
 }
 
+// h2 for correct heading order, sized like the h5 it replaced
+.footer-heading {
+    font-size: clamp(15px, 2vw, 18px);
+    line-height: 1.4;
+    font-weight: 400;
+}
+
 .footer-links {
     li {
         margin-bottom: 8px;
@@ -20,7 +27,7 @@
     }
 }
 
-.material-icons{
+.top .fa{
     font-size: 32px;
     color: white;
     display: flex;
