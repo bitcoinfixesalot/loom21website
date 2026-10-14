@@ -8,7 +8,7 @@ RUN npm run build
 FROM node:24-slim
 WORKDIR /usr/app
 COPY --from=build /app/src/dist/loom21website ./
-RUN npm install express
+RUN npm install express compression
 
 EXPOSE 80
 

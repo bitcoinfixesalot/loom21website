@@ -2,6 +2,7 @@ import { app as serverEn } from './server/en/server.mjs';
 import { app as serverBg } from './server/bg/server.mjs';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+import compression from 'compression';
 
 const express = require('express');
 
@@ -11,6 +12,9 @@ const __dirname = dirname(__filename);
 function run() {
   const port = process.env.PORT || 80;
   const server = express();
+
+  // gzip/Brotli for HTML, CSS, JS, JSON, SVG (fonts and images are already compressed and are skipped)
+  server.use(compression());
 
   // Redirect www.loom21.com → loom21.com (single canonical host)
   server.use((req, res, next) => {

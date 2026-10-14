@@ -69,6 +69,7 @@ scripts/
 
 - `angular.json` - Angular CLI config, i18n locales (en/bg), prerender enabled
 - `server.ts` - Express SSR configuration for multi-language routing
+- `src/proxy-server.mjs` - Production entry (copied to `dist/` by `copy-proxy-server.js`, run by the Dockerfile): mounts `/en` and `/bg`, redirects, and gzip/Brotli via `compression`. Runtime packages are installed in the Dockerfile (`npm install express compression`), so add any new runtime import there too
 - `src/locale/` - Bulgarian translations (XLF format)
 - `src/sitemap.xml` - Auto-generated on build (do not edit manually)
 - `src/robots.txt` - Allows /en/ and /bg/, references sitemap

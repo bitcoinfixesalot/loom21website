@@ -21,10 +21,8 @@ File: scss
 @use 'variable';
  //@import 'bootstrap/scss/bootstrap.scss';
 
-@import '../css/animate.css';  
-@import '../scss/icons/font-awesome/css/font-awesome.min.css'; 
-@import '../scss/icons/simple-line-icons/css/simple-line-icons.css';
-@import '../scss/icons/themify-icons/themify-icons.css'; 
+// animate.css, simple-line-icons and themify-icons were removed (unused); use Font Awesome 4.7 for icons
+@import '../scss/icons/font-awesome/css/font-awesome.min.css';
 @include meta.load-css('app.scss'); 
 @include meta.load-css('common.scss'); 
 @include meta.load-css('responsive.scss');     
