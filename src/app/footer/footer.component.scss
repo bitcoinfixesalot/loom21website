@@ -16,15 +16,20 @@
 
     a {
         color: inherit;
-        opacity: 0.75;
+        opacity: 0.9;
         text-decoration: none;
-        font-size: smaller;
+        font-size: 15px;
         transition: opacity 0.2s ease;
 
         &:hover {
             opacity: 1;
         }
     }
+}
+
+.footer-about {
+    font-size: 15px;
+    margin-top: 8px;
 }
 
 .top .fa{

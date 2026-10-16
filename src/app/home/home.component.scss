@@ -5,13 +5,20 @@
     padding-left: 0;
 }
 
-/* Adding icon before each list item */
+/* Checkmark before each list item, with a hanging indent so wrapped lines align with the text */
+.gfg > li {
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 4px;
+}
+
 .gfg > li:before {
     content: '\f00c'; // Font Awesome 4.7 "check"
     content: '\f00c' / ''; // same, with empty alt text so screen readers skip it
     font-family: 'FontAwesome';
     font-size: 16px;
-    margin-right: 10px;
+    position: absolute;
+    left: 0;
 }
 
 /* Payment processor logos strip */
@@ -46,6 +53,8 @@ h1.title {
 
 .hero-trust {
     margin-top: 16px;
+    font-size: 15px;
+    text-wrap: balance; // when it wraps, split into two even lines instead of leaving one word alone
 }
 
 // Darker than $primary (#1e88e5, 3.7:1) to pass WCAG AA contrast on white
@@ -214,8 +223,12 @@ h1.title {
 
 .hero-buttons {
     @media (min-width: 576px) {
+        // Longer (BG) labels: keep each label on one line and move the second button below instead
+        flex-wrap: wrap;
+
         .btn {
             min-width: 180px;
+            white-space: nowrap;
         }
     }
 }

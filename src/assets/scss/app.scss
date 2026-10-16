@@ -33,7 +33,7 @@ body {
     overflow-x: hidden; /* fallback for Safari < 16 */
     overflow-x: clip;   /* doesn't create a scroll container, so position:sticky works */
     color: variable.$bodytext;
-    font-weight: 300; 
+    font-weight: 400; // was 300 (Montserrat Light), too thin for body text
 }
 
 html {
