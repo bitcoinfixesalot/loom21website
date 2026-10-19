@@ -67,7 +67,10 @@ export const FAQ_CONSTANTS = {
   q6_2: $localize`:FAQ question 6.2@@faqQ6_2:How many team members can I invite?`,
   a6_2: $localize`:FAQ answer 6.2@@faqA6_2:It depends on your plan: 1 user on Free, 3 on Starter, and unlimited users on Growth and Pro — each with role-based access on Growth and above.`,
   q6_3: $localize`:FAQ question 6.3@@faqQ6_3:What languages is Loom21 available in?`,
-  a6_3: $localize`:FAQ answer 6.3@@faqA6_3:Loom21 is currently available in English and Bulgarian, with more languages planned.`
+  a6_3: $localize`:FAQ answer 6.3@@faqA6_3:Loom21 is currently available in English and Bulgarian, with more languages planned.`,
+  // Keep in line with privacy-policy-const.ts section2bItem2: Simple Analytics still counts visits, so never claim "no tracking at all".
+  q6_4: $localize`:FAQ question 6.4@@faqQ6_4:Does Loom21 use cookies or track me?`,
+  a6_4: $localize`:FAQ answer 6.4@@faqA6_4:The loom21.com website uses no tracking or advertising cookies and no cross-site tracking. We count visits with Simple Analytics, which is cookieless and collects no personal data. The Loom21 app only uses the cookies or local storage it needs to keep you signed in and remember your settings. See our Privacy Policy for details.`
 };
 
 export interface FaqItem {
@@ -131,7 +134,8 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     items: [
       { question: FAQ_CONSTANTS.q6_1, answer: FAQ_CONSTANTS.a6_1 },
       { question: FAQ_CONSTANTS.q6_2, answer: FAQ_CONSTANTS.a6_2 },
-      { question: FAQ_CONSTANTS.q6_3, answer: FAQ_CONSTANTS.a6_3 }
+      { question: FAQ_CONSTANTS.q6_3, answer: FAQ_CONSTANTS.a6_3 },
+      { question: FAQ_CONSTANTS.q6_4, answer: FAQ_CONSTANTS.a6_4 }
     ]
   }
 ];

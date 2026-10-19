@@ -498,6 +498,22 @@
         </context-group>
         <note priority="1" from="description">FAQ answer 6.3</note>
       </trans-unit>
+      <trans-unit id="faqQ6_4" datatype="html">
+        <source>Does Loom21 use cookies or track me?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 6.4</note>
+      </trans-unit>
+      <trans-unit id="faqA6_4" datatype="html">
+        <source>The loom21.com website uses no tracking or advertising cookies and no cross-site tracking. We count visits with Simple Analytics, which is cookieless and collects no personal data. The Loom21 app only uses the cookies or local storage it needs to keep you signed in and remember your settings. See our Privacy Policy for details.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 6.4</note>
+      </trans-unit>
       <trans-unit id="homeTitle" datatype="html">
         <source>Loom21 — Bitcoin &amp; Card Payments with Real-Time Inventory</source>
         <context-group purpose="location">

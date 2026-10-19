@@ -2449,6 +2449,24 @@
         </context-group>
         <note priority="1" from="description">FAQ answer 6.3</note>
       </trans-unit>
+      <trans-unit id="faqQ6_4" datatype="html">
+        <source>Does Loom21 use cookies or track me?</source>
+        <target>Използва ли Loom21 бисквитки или проследяване?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 6.4</note>
+      </trans-unit>
+      <trans-unit id="faqA6_4" datatype="html">
+        <source>The loom21.com website uses no tracking or advertising cookies and no cross-site tracking. We count visits with Simple Analytics, which is cookieless and collects no personal data. The Loom21 app only uses the cookies or local storage it needs to keep you signed in and remember your settings. See our Privacy Policy for details.</source>
+        <target>Уебсайтът loom21.com не използва проследяващи или рекламни бисквитки, нито проследяване между сайтове. Броим посещенията със Simple Analytics, която работи без бисквитки и не събира лични данни. Приложението Loom21 използва само бисквитките или локалното хранилище, които са необходими, за да останете влезли в профила си и да се запазят настройките ви. Подробности ще намерите в нашата Политика за поверителност.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 6.4</note>
+      </trans-unit>
       <trans-unit id="roadmapTitle" datatype="html">
         <source>Roadmap | Loom21</source>
         <target>Пътна карта | Loom21</target>
