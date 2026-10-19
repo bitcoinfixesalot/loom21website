@@ -1781,8 +1781,8 @@
         <note priority="1" from="description">Stat ownership</note>
       </trans-unit>
       <trans-unit id="statOwnershipDesc" datatype="html">
-        <source>Import and export products, customers, suppliers and reports as CSV or JSON — any time. No lock-in.</source>
-        <target>Импортирайте и експортирайте продукти, клиенти, доставчици и отчети в CSV или JSON по всяко време. Без обвързване.</target>
+        <source>Import products, customers and suppliers from Excel or CSV, and export them and your reports as Excel, CSV or JSON - any time. No lock-in.</source>
+        <target>Импортирайте продукти, клиенти и доставчици от Excel или CSV и ги експортирайте заедно със справките си в Excel, CSV или JSON по всяко време. Без обвързване.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">170,173</context>
@@ -2297,8 +2297,8 @@
         <note priority="1" from="description">FAQ question 4.3</note>
       </trans-unit>
       <trans-unit id="faqA4_3" datatype="html">
-        <source>Yes. Loom21 accepts CSV imports for products, services, customers, and suppliers, with downloadable templates to help you format your data correctly.</source>
-        <target>Да. Loom21 приема CSV импорти за продукти, услуги, клиенти и доставчици, с шаблони за изтегляне, които да ви помогнат да форматирате данните си правилно.</target>
+        <source>Yes. You can import products, services, customers, and suppliers from an Excel (.xlsx) or CSV file, using the downloadable templates. To change many records at once, export them to Excel, edit the file and import it back — existing records are updated, not duplicated.</source>
+        <target>Да. Можете да импортирате продукти, услуги, клиенти и доставчици от файл в Excel (.xlsx) или CSV, като използвате шаблоните за изтегляне. За да промените много записи наведнъж, експортирайте ги в Excel, редактирайте файла и го импортирайте обратно — съществуващите записи се обновяват, без да се създават копия.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2405,8 +2405,8 @@
         <note priority="1" from="description">FAQ question 6.1</note>
       </trans-unit>
       <trans-unit id="faqA6_1" datatype="html">
-        <source>Yes. You can export your products, customers, suppliers, and reports as CSV or JSON at any time — your data is never locked in.</source>
-        <target>Да. Можете да експортирате вашите продукти, клиенти, доставчици и справки като CSV или JSON по всяко време — данните ви никога не са заключени.</target>
+        <source>Yes. You can export your products, services, customers, suppliers, and reports as Excel, CSV or JSON at any time — your data is never locked in.</source>
+        <target>Да. Можете да експортирате вашите продукти, услуги, клиенти, доставчици и справки като Excel, CSV или JSON по всяко време — данните ви никога не са заключени.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2621,8 +2621,8 @@
         <note priority="1" from="description">Roadmap shipped item 3 description</note>
       </trans-unit>
       <trans-unit id="roadmapShipped4Title" datatype="html">
-        <source>CSV Import</source>
-        <target>CSV импорт</target>
+        <source>Excel &amp; CSV Import and Export</source>
+        <target>Импорт и експорт в Excel и CSV</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2630,8 +2630,8 @@
         <note priority="1" from="description">Roadmap shipped item 4 title</note>
       </trans-unit>
       <trans-unit id="roadmapShipped4Desc" datatype="html">
-        <source>Bulk import products, services, customers, and suppliers from a spreadsheet.</source>
-        <target>Масово импортиране на продукти, услуги, клиенти и доставчици от таблица.</target>
+        <source>Bulk add or update products, services, customers, and suppliers from an Excel or CSV file.</source>
+        <target>Масово добавяне или обновяване на продукти, услуги, клиенти и доставчици от файл в Excel или CSV.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2666,8 +2666,8 @@
         <note priority="1" from="description">Roadmap shipped item 6 title</note>
       </trans-unit>
       <trans-unit id="roadmapShipped6Desc" datatype="html">
-        <source>Searchable, filterable reports with CSV and JSON export.</source>
-        <target>Търсими и филтрируеми справки с експорт в CSV и JSON.</target>
+        <source>Searchable, filterable reports with Excel, CSV and JSON export.</source>
+        <target>Търсими и филтрируеми справки с експорт в Excel, CSV и JSON.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2819,8 +2819,8 @@
         <note priority="1" from="description">Integrations title</note>
       </trans-unit>
       <trans-unit id="integrationsDesc" datatype="html">
-        <source>Connect Stripe for cards and BTCPay Server, Glow, Speed Wallet or LNbits for Bitcoin. Move data in and out with CSV and JSON.</source>
-        <target>Свържете Stripe за карти и BTCPay Server, Glow, Speed Wallet или LNbits за Биткойн. Пренасяйте данни с CSV и JSON.</target>
+        <source>Connect Stripe for cards and BTCPay Server, Glow, Speed Wallet or LNbits for Bitcoin. Move data in and out with Excel, CSV and JSON.</source>
+        <target>Свържете Stripe за карти и BTCPay Server, Glow, Speed Wallet или LNbits за Биткойн. Пренасяйте данни с Excel, CSV и JSON.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">94,96</context>
@@ -3341,8 +3341,8 @@
         <note priority="1" from="description">Cmp fee</note>
       </trans-unit>
       <trans-unit id="cmpExport" datatype="html">
-        <source>CSV / JSON import &amp; export</source>
-        <target>Импорт и експорт в CSV / JSON</target>
+        <source>Excel / CSV import &amp; export</source>
+        <target>Импорт и експорт в Excel / CSV</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
           <context context-type="linenumber">124</context>

@@ -122,7 +122,7 @@ export const COMPARE_ROWS: CompareRow[] = [
   { label: $localize`:Cmp btc@@cmpBitcoin:Bitcoin — Lightning & on-chain`, values: [true, true, true, true] },
   { label: $localize`:Cmp cards@@cmpCards:Card payments (Stripe)`, values: [true, true, true, true] },
   { label: $localize`:Cmp fee@@cmpFee:Loom21 transaction fee`, values: ['0%', '0%', '0%', '0%'] },
-  { label: $localize`:Cmp export@@cmpExport:CSV / JSON import & export`, values: [true, true, true, true] },
+  { label: $localize`:Cmp export@@cmpExport:Excel / CSV import & export`, values: [true, true, true, true] },
   { label: $localize`:Cmp pricing@@cmpPriceLists:Price lists, tiers & custom fields`, values: [true, true, true, true] },
   { label: $localize`:Cmp barcodes@@cmpBarcodes:Barcodes, QR codes & PDF documents`, values: [true, true, true, true] },
   { label: $localize`:Cmp roles@@cmpRoles:User roles & access rights`, values: [false, false, true, true] },

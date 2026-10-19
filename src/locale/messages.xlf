@@ -363,7 +363,7 @@
         <note priority="1" from="description">FAQ question 4.3</note>
       </trans-unit>
       <trans-unit id="faqA4_3" datatype="html">
-        <source>Yes. Loom21 accepts CSV imports for products, services, customers, and suppliers, with downloadable templates to help you format your data correctly.</source>
+        <source>Yes. You can import products, services, customers, and suppliers from an Excel (.xlsx) or CSV file, using the downloadable templates. To change many records at once, export them to Excel, edit the file and import it back — existing records are updated, not duplicated.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">50</context>
@@ -459,7 +459,7 @@
         <note priority="1" from="description">FAQ question 6.1</note>
       </trans-unit>
       <trans-unit id="faqA6_1" datatype="html">
-        <source>Yes. You can export your products, customers, suppliers, and reports as CSV or JSON at any time — your data is never locked in.</source>
+        <source>Yes. You can export your products, services, customers, suppliers, and reports as Excel, CSV or JSON at any time — your data is never locked in.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">66</context>
@@ -1174,7 +1174,7 @@
         <note priority="1" from="description">Cmp fee</note>
       </trans-unit>
       <trans-unit id="cmpExport" datatype="html">
-        <source>CSV / JSON import &amp; export</source>
+        <source>Excel / CSV import &amp; export</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
           <context context-type="linenumber">125</context>
@@ -2342,7 +2342,7 @@
         <note priority="1" from="description">Roadmap shipped item 3 description</note>
       </trans-unit>
       <trans-unit id="roadmapShipped4Title" datatype="html">
-        <source>CSV Import</source>
+        <source>Excel &amp; CSV Import and Export</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">21</context>
@@ -2350,7 +2350,7 @@
         <note priority="1" from="description">Roadmap shipped item 4 title</note>
       </trans-unit>
       <trans-unit id="roadmapShipped4Desc" datatype="html">
-        <source>Bulk import products, services, customers, and suppliers from a spreadsheet.</source>
+        <source>Bulk add or update products, services, customers, and suppliers from an Excel or CSV file.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">22</context>
@@ -2382,7 +2382,7 @@
         <note priority="1" from="description">Roadmap shipped item 6 title</note>
       </trans-unit>
       <trans-unit id="roadmapShipped6Desc" datatype="html">
-        <source>Searchable, filterable reports with CSV and JSON export.</source>
+        <source>Searchable, filterable reports with Excel, CSV and JSON export.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">26</context>
@@ -3030,7 +3030,7 @@
         <note priority="1" from="description">Integrations title</note>
       </trans-unit>
       <trans-unit id="integrationsDesc" datatype="html">
-        <source>Connect Stripe for cards and BTCPay Server, Glow, Speed Wallet or LNbits for Bitcoin. Move data in and out with CSV and JSON.</source>
+        <source>Connect Stripe for cards and BTCPay Server, Glow, Speed Wallet or LNbits for Bitcoin. Move data in and out with Excel, CSV and JSON.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">95,97</context>
@@ -3110,7 +3110,7 @@
         <note priority="1" from="description">Stat ownership</note>
       </trans-unit>
       <trans-unit id="statOwnershipDesc" datatype="html">
-        <source>Import and export products, customers, suppliers and reports as CSV or JSON — any time. No lock-in.</source>
+        <source>Import products, customers and suppliers from Excel or CSV, and export them and your reports as Excel, CSV or JSON - any time. No lock-in.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">171,174</context>

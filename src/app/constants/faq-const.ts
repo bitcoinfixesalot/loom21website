@@ -47,7 +47,7 @@ export const FAQ_CONSTANTS = {
   q4_2: $localize`:FAQ question 4.2@@faqQ4_2:What are Custom Fields and what can I use them for?`,
   a4_2: $localize`:FAQ answer 4.2@@faqA4_2:Custom Fields let you add your own data fields to every product — like a warranty expiry date, a certification flag, or a supplier reference number — beyond the standard name, price, and category fields.`,
   q4_3: $localize`:FAQ question 4.3@@faqQ4_3:Can I import my existing product or customer list?`,
-  a4_3: $localize`:FAQ answer 4.3@@faqA4_3:Yes. Loom21 accepts CSV imports for products, services, customers, and suppliers, with downloadable templates to help you format your data correctly.`,
+  a4_3: $localize`:FAQ answer 4.3@@faqA4_3:Yes. You can import products, services, customers, and suppliers from an Excel (.xlsx) or CSV file, using the downloadable templates. To change many records at once, export them to Excel, edit the file and import it back — existing records are updated, not duplicated.`,
   q4_4: $localize`:FAQ question 4.4@@faqQ4_4:Does Loom21 support barcodes and QR codes?`,
   a4_4: $localize`:FAQ answer 4.4@@faqA4_4:Yes. You can enter or scan barcodes for products, and QR codes are generated automatically.`,
 
@@ -63,7 +63,7 @@ export const FAQ_CONSTANTS = {
   // Category 6: Data, Team & Security
   category6Title: $localize`:FAQ category 6 title@@faqCategory6Title:Data, Team & Security`,
   q6_1: $localize`:FAQ question 6.1@@faqQ6_1:Can I export my data?`,
-  a6_1: $localize`:FAQ answer 6.1@@faqA6_1:Yes. You can export your products, customers, suppliers, and reports as CSV or JSON at any time — your data is never locked in.`,
+  a6_1: $localize`:FAQ answer 6.1@@faqA6_1:Yes. You can export your products, services, customers, suppliers, and reports as Excel, CSV or JSON at any time — your data is never locked in.`,
   q6_2: $localize`:FAQ question 6.2@@faqQ6_2:How many team members can I invite?`,
   a6_2: $localize`:FAQ answer 6.2@@faqA6_2:It depends on your plan: 1 user on Free, 3 on Starter, and unlimited users on Growth and Pro — each with role-based access on Growth and above.`,
   q6_3: $localize`:FAQ question 6.3@@faqQ6_3:What languages is Loom21 available in?`,
