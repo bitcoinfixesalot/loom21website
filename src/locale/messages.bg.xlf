@@ -3893,6 +3893,186 @@
         </context-group>
         <note priority="1" from="description">Language switcher label</note>
       </trans-unit>
+      <trans-unit id="invoicingTitle" datatype="html">
+        <source>Invoices Your Accountant Can Work With</source>
+        <target>Фактури, с които счетоводителят ви може да работи</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">175,176</context>
+        </context-group>
+        <note priority="1" from="description">Invoicing title</note>
+      </trans-unit>
+      <trans-unit id="invoicingDesc" datatype="html">
+        <source>Every invoice gets the next number in one continuous sequence and prints what VAT law asks for: the tax point, both companies&apos; IDs and VAT numbers, the tax base and, when no VAT is charged, the legal basis. Built to Bulgarian VAT rules, with PDFs in Bulgarian or English.</source>
+        <target>Всяка фактура получава следващия номер в една непрекъсната поредица и съдържа всичко, което изисква ЗДДС: датата на данъчното събитие, ЕИК и ДДС номерата на двете страни, данъчната основа и, когато не се начислява ДДС, основанието за това. Създадено по българските правила за ДДС, с PDF документи на български или английски.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">176,177</context>
+        </context-group>
+        <note priority="1" from="description">Invoicing description</note>
+      </trans-unit>
+      <trans-unit id="invoicingNote" datatype="html">
+        <source>Invoicing outside Bulgaria? Most of these rules are what EU VAT law asks of any invoice. Check the Bulgarian-only ones with your accountant.</source>
+        <target>Издавате фактури извън България? Повечето от тези правила са това, което европейското законодателство за ДДС изисква от всяка фактура. Проверете специфичните за България със своя счетоводител.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">177,178</context>
+        </context-group>
+        <note priority="1" from="description">Invoicing note</note>
+      </trans-unit>
+      <trans-unit id="invoicingDocsButton" datatype="html">
+        <source>How it works</source>
+        <target>Как работи</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">180,183</context>
+        </context-group>
+        <note priority="1" from="description">Invoicing docs button</note>
+      </trans-unit>
+      <trans-unit id="invoicingCreditNotesTitle" datatype="html">
+        <source>Credit notes</source>
+        <target>Кредитни известия</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">188,189</context>
+        </context-group>
+        <note priority="1" from="description">Invoicing credit notes title</note>
+      </trans-unit>
+      <trans-unit id="invoicingCreditNotesDesc" datatype="html">
+        <source>Correct an issued invoice for returned goods or a later discount. Stock and what the customer owes update automatically.</source>
+        <target>Коригирайте издадена фактура при върната стока или последваща отстъпка. Наличностите и дължимата от клиента сума се обновяват автоматично.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">189,192</context>
+        </context-group>
+        <note priority="1" from="description">Invoicing credit notes desc</note>
+      </trans-unit>
+      <trans-unit id="invoicingAnnulTitle" datatype="html">
+        <source>Annulment</source>
+        <target>Анулиране</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">195,196</context>
+        </context-group>
+        <note priority="1" from="description">Invoicing annulment title</note>
+      </trans-unit>
+      <trans-unit id="invoicingAnnulDesc" datatype="html">
+        <source>Annul an invoice issued by mistake, with the annulment protocol ready to sign with your customer.</source>
+        <target>Анулирайте фактура, издадена по грешка, с готов протокол за анулиране, който да подпишете с клиента.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">196,199</context>
+        </context-group>
+        <note priority="1" from="description">Invoicing annulment desc</note>
+      </trans-unit>
+      <trans-unit id="invoicingLedgerTitle" datatype="html">
+        <source>VAT sales ledger</source>
+        <target>Дневник за продажбите</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">202,203</context>
+        </context-group>
+        <note priority="1" from="description">Invoicing VAT ledger title</note>
+      </trans-unit>
+      <trans-unit id="invoicingLedgerDesc" datatype="html">
+        <source>Export the month&apos;s ledger as Excel or CSV for your accountant to import. Anything to fix is flagged first.</source>
+        <target>Експортирайте дневника за месеца в Excel или CSV, готов за импорт от вашия счетоводител. Всичко, което трябва да се поправи, се отбелязва предварително.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">203,206</context>
+        </context-group>
+        <note priority="1" from="description">Invoicing VAT ledger desc</note>
+      </trans-unit>
+      <trans-unit id="invoicingCurrenciesTitle" datatype="html">
+        <source>Any currency</source>
+        <target>Всяка валута</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">209,210</context>
+        </context-group>
+        <note priority="1" from="description">Invoicing currencies title</note>
+      </trans-unit>
+      <trans-unit id="invoicingCurrenciesDesc" datatype="html">
+        <source>Invoices in USD or other currencies print the ECB exchange rate and the EUR equivalent automatically.</source>
+        <target>Фактурите в USD или други валути съдържат курса на ЕЦБ и равностойността в евро автоматично.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">210,213</context>
+        </context-group>
+        <note priority="1" from="description">Invoicing currencies desc</note>
+      </trans-unit>
+      <trans-unit id="faqQ5_4" datatype="html">
+        <source>How do I correct an invoice I&apos;ve already issued?</source>
+        <target>Как да коригирам фактура, която вече съм издал?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 5.4</note>
+      </trans-unit>
+      <trans-unit id="faqA5_4" datatype="html">
+        <source>Issue a credit note from the invoice — for returned goods, or as an amount for a discount after the sale. Issued invoices are never edited or deleted, so your numbering stays continuous. An invoice issued by mistake can be annulled instead, as long as it is unpaid, has no credit notes and was issued this calendar month. Loom21 prepares the annulment protocol for you to sign with the customer.</source>
+        <target>Издайте кредитно известие от фактурата — за върната стока или като сума за отстъпка след продажбата. Издадените фактури никога не се редактират и не се изтриват, така че номерацията ви остава непрекъсната. Фактура, издадена по грешка, може вместо това да бъде анулирана, ако е неплатена, няма кредитни известия и е издадена през текущия календарен месец. Loom21 подготвя протокола за анулиране, който да подпишете с клиента.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 5.4</note>
+      </trans-unit>
+      <trans-unit id="faqQ5_5" datatype="html">
+        <source>Can Loom21 prepare the VAT sales ledger for my accountant?</source>
+        <target>Може ли Loom21 да подготви дневника за продажбите за моя счетоводител?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 5.5</note>
+      </trans-unit>
+      <trans-unit id="faqA5_5" datatype="html">
+        <source>Yes, if your company is registered for VAT. Reports → VAT sales ledger builds the month&apos;s ledger from your invoices, credit notes, annulled invoices and payment link sales, and exports it as Excel or CSV in the layout accounting software imports. Anything that needs fixing first is flagged. The ledger follows the Bulgarian format.</source>
+        <target>Да, ако фирмата ви е регистрирана по ДДС. Справки → Дневник за продажбите съставя дневника за месеца от вашите фактури, кредитни известия, анулирани фактури и продажби чрез линкове за плащане и го експортира в Excel или CSV във формата, който счетоводният софтуер импортира. Всичко, което трябва да се поправи преди това, се отбелязва. Дневникът следва българския формат.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 5.5</note>
+      </trans-unit>
+      <trans-unit id="faqQ5_6" datatype="html">
+        <source>Can I invoice in USD or other currencies?</source>
+        <target>Мога ли да издавам фактури в USD или други валути?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 5.6</note>
+      </trans-unit>
+      <trans-unit id="faqA5_6" datatype="html">
+        <source>Yes. An invoice in a currency other than EUR prints the European Central Bank exchange rate for its tax point, and the EUR equivalent of the tax base, the VAT and the total. Currencies the ECB doesn&apos;t publish a rate for, such as BTC, print no rate.</source>
+        <target>Да. Фактура във валута, различна от евро, съдържа курса на Европейската централна банка към датата на данъчното събитие и равностойността в евро на данъчната основа, ДДС и общата сума. За валути, за които ЕЦБ не публикува курс, като BTC, не се отпечатва курс.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 5.6</note>
+      </trans-unit>
+      <trans-unit id="faqQ5_7" datatype="html">
+        <source>Does Loom21 follow the invoicing rules of my country?</source>
+        <target>Следва ли Loom21 правилата за фактуриране в моята държава?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 5.7</note>
+      </trans-unit>
+      <trans-unit id="faqA5_7" datatype="html">
+        <source>Loom21&apos;s invoicing is built to Bulgarian VAT law, and today it applies the same rules to every account. Most of them — sequential numbers, the tax point, both VAT numbers, the tax base — are what EU VAT rules ask of any invoice. A few, such as annulment and the VAT sales ledger layout, are Bulgarian only, so if you invoice outside Bulgaria, check those with your accountant.</source>
+        <target>Фактурирането в Loom21 е създадено според българския ЗДДС и днес прилага едни и същи правила за всеки акаунт. Повечето от тях — поредни номера, дата на данъчното събитие, ДДС номерата на двете страни, данъчна основа — са това, което европейските правила за ДДС изискват от всяка фактура. Някои, като анулирането и формата на дневника за продажбите, са само български, така че ако издавате фактури извън България, ги проверете със своя счетоводител.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 5.7</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

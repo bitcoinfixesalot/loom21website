@@ -59,6 +59,15 @@ export const FAQ_CONSTANTS = {
   a5_2: $localize`:FAQ answer 5.2@@faqA5_2:Yes. Payment links give customers a unique URL to pay for a product, service, or donation with no login required on their side.`,
   q5_3: $localize`:FAQ question 5.3@@faqQ5_3:Can I reorder from a customer's past purchases in one click?`,
   a5_3: $localize`:FAQ answer 5.3@@faqA5_3:Yes. Once you select a customer on a new sale order, you can open their Order History and re-add items from any previous order instantly.`,
+  // 5.4–5.7 follow the docs' "Invoicing Rules and Your Country": built to Bulgarian VAT law, never claim "EU-compliant".
+  q5_4: $localize`:FAQ question 5.4@@faqQ5_4:How do I correct an invoice I've already issued?`,
+  a5_4: $localize`:FAQ answer 5.4@@faqA5_4:Issue a credit note from the invoice — for returned goods, or as an amount for a discount after the sale. Issued invoices are never edited or deleted, so your numbering stays continuous. An invoice issued by mistake can be annulled instead, as long as it is unpaid, has no credit notes and was issued this calendar month. Loom21 prepares the annulment protocol for you to sign with the customer.`,
+  q5_5: $localize`:FAQ question 5.5@@faqQ5_5:Can Loom21 prepare the VAT sales ledger for my accountant?`,
+  a5_5: $localize`:FAQ answer 5.5@@faqA5_5:Yes, if your company is registered for VAT. Reports → VAT sales ledger builds the month's ledger from your invoices, credit notes, annulled invoices and payment link sales, and exports it as Excel or CSV in the layout accounting software imports. Anything that needs fixing first is flagged. The ledger follows the Bulgarian format.`,
+  q5_6: $localize`:FAQ question 5.6@@faqQ5_6:Can I invoice in USD or other currencies?`,
+  a5_6: $localize`:FAQ answer 5.6@@faqA5_6:Yes. An invoice in a currency other than EUR prints the European Central Bank exchange rate for its tax point, and the EUR equivalent of the tax base, the VAT and the total. Currencies the ECB doesn't publish a rate for, such as BTC, print no rate.`,
+  q5_7: $localize`:FAQ question 5.7@@faqQ5_7:Does Loom21 follow the invoicing rules of my country?`,
+  a5_7: $localize`:FAQ answer 5.7@@faqA5_7:Loom21's invoicing is built to Bulgarian VAT law, and today it applies the same rules to every account. Most of them — sequential numbers, the tax point, both VAT numbers, the tax base — are what EU VAT rules ask of any invoice. A few, such as annulment and the VAT sales ledger layout, are Bulgarian only, so if you invoice outside Bulgaria, check those with your accountant.`,
 
   // Category 6: Data, Team & Security
   category6Title: $localize`:FAQ category 6 title@@faqCategory6Title:Data, Team & Security`,
@@ -126,7 +135,11 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     items: [
       { question: FAQ_CONSTANTS.q5_1, answer: FAQ_CONSTANTS.a5_1 },
       { question: FAQ_CONSTANTS.q5_2, answer: FAQ_CONSTANTS.a5_2 },
-      { question: FAQ_CONSTANTS.q5_3, answer: FAQ_CONSTANTS.a5_3 }
+      { question: FAQ_CONSTANTS.q5_3, answer: FAQ_CONSTANTS.a5_3 },
+      { question: FAQ_CONSTANTS.q5_4, answer: FAQ_CONSTANTS.a5_4 },
+      { question: FAQ_CONSTANTS.q5_5, answer: FAQ_CONSTANTS.a5_5 },
+      { question: FAQ_CONSTANTS.q5_6, answer: FAQ_CONSTANTS.a5_6 },
+      { question: FAQ_CONSTANTS.q5_7, answer: FAQ_CONSTANTS.a5_7 }
     ]
   },
   {
