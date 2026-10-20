@@ -4,6 +4,8 @@
 
 **Effective date:** 8 October 2026
 
+**Last updated:** 20 October 2026
+
 These Terms of Service (the "Terms") are a contract between you and Loom21 LTD. They govern your use of the Loom21 website at loom21.com, the Loom21 application at app.loom21.com, and any Loom21 API (together, the "Service"). Please read them carefully. By creating an account or using the Service, you agree to these Terms.
 
 ## 1. Who we are
@@ -72,11 +74,13 @@ In these Terms, "Loom21", "we", "us" and "our" mean Loom21 LTD.
 
 6.1. Each Plan has limits, such as the number of Users, store locations and Orders per month. The limits are shown on the Pricing page.
 
-6.2. **We never block your payments.** If you go over your monthly Order limit, your payment links and checkout keep working. We will tell you when you reach 80% and 100% of your limit.
+6.2. **Going over your limit doesn't stop you immediately.** If you go over your monthly Order limit, your payment links and checkout keep working, and we will tell you when you reach 80% and 100% of your limit.
 
-6.3. If you stay over your limit after a one-month grace period, we will ask you to move to a Plan that fits your use. If you do not upgrade within 30 days of that request, we may limit the creation of new Orders until the next month. We will not limit receiving payments on Orders and payment links that already exist.
+6.3. If you stay over your limit after a one-month grace period, we will ask you to move to a Plan that fits your use. If you do not upgrade within 30 days of that request, we may pause your payment links and the creation of new Orders until the start of the next month or until you upgrade. The grace period applies once in any 12 months; after that, reaching 100% of your limit may pause payment links and new Orders until the next month. Invoices your customers have already opened can always be paid.
 
 6.4. "Unlimited Users" means there is no fixed number of Users. It does not allow sharing one login between several people, or creating Users only to get around other limits.
+
+6.5. Payment pages on the Free Plan show a small "Powered by Loom21" line. Paid Plans do not show it.
 
 ## 7. No transaction fees from Loom21
 

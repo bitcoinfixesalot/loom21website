@@ -3367,6 +3367,21 @@
         </context-group>
         <note priority="1" from="description">Cmp api</note>
       </trans-unit>
+      <trans-unit id="cmpBranding" datatype="html">
+        <source>Loom21 branding on payment pages</source>
+        <target>Брандиране на Loom21 на страниците за плащане</target>
+        <note priority="1" from="description">Cmp branding</note>
+      </trans-unit>
+      <trans-unit id="cmpBrandingShown" datatype="html">
+        <source>Shown</source>
+        <target>Показва се</target>
+        <note priority="1" from="description">Cmp branding shown</note>
+      </trans-unit>
+      <trans-unit id="cmpBrandingRemoved" datatype="html">
+        <source>Removed</source>
+        <target>Премахнато</target>
+        <note priority="1" from="description">Cmp branding removed</note>
+      </trans-unit>
       <trans-unit id="cmpSupport" datatype="html">
         <source>Support</source>
         <target>Поддръжка</target>
@@ -3440,8 +3455,8 @@
         <note priority="1" from="description">Pricing FAQ q2</note>
       </trans-unit>
       <trans-unit id="pfaqA2" datatype="html">
-        <source>Nothing breaks and you can always get paid. We notify you at 80% and 100% of your limit and give you a one-month grace period before suggesting an upgrade.</source>
-        <target>Нищо не спира да работи и винаги можете да получавате плащания. Уведомяваме ви при 80% и 100% от лимита и ви даваме един месец гратисен период, преди да ви предложим по-висок план.</target>
+        <source>Nothing stops straight away. We notify you at 80% and 100% of your limit and give you a one-month grace period, once a year. If you&apos;re still over after that and don&apos;t upgrade within 30 days, payment links and new orders pause until the next month or until you upgrade. Invoices your customers have already opened can always be paid.</source>
+        <target>Нищо не спира веднага. Уведомяваме ви при 80% и 100% от лимита и ви даваме един месец гратисен период веднъж годишно. Ако и след това сте над лимита и не преминете към по-висок план в рамките на 30 дни, връзките за плащане и новите поръчки се спират до следващия месец или докато смените плана. Фактури, които клиентите ви вече са отворили, винаги могат да бъдат платени.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
           <context context-type="linenumber">138</context>
@@ -3508,8 +3523,8 @@
         <note priority="1" from="description">Pricing FAQ q6</note>
       </trans-unit>
       <trans-unit id="pfaqA6" datatype="html">
-        <source>No. Create as many payment links as you like on any plan, including Free. Each payment received through a link counts as one order toward your plan&apos;s monthly limit, and payments are never blocked.</source>
-        <target>Не. Създавайте колкото искате връзки за плащане на всеки план, включително безплатния. Всяко плащане, получено чрез връзка, се брои като една поръчка към месечния лимит на плана, а плащанията никога не се блокират.</target>
+        <source>No. Create as many payment links as you like on any plan, including Free. Each payment received through a link counts as one order toward your plan&apos;s monthly limit.</source>
+        <target>Не. Създавайте колкото искате връзки за плащане на всеки план, включително безплатния. Всяко плащане, получено чрез връзка, се брои като една поръчка към месечния лимит на плана.</target>
         <note priority="1" from="description">Pricing FAQ a6</note>
       </trans-unit>
       <trans-unit id="pricingH1" datatype="html">

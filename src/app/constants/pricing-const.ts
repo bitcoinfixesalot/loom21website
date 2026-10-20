@@ -113,6 +113,7 @@ const API_RO = $localize`:Cmp api ro@@cmpApiRo:Read-only`;
 const API_FULL = API_STATUS === 'live'
   ? $localize`:Cmp api full@@cmpApiFull:Full + webhooks`
   : $localize`:Cmp api full soon@@cmpApiFullSoon:Full + webhooks (soon)`;
+const BRANDING_REMOVED = $localize`:Cmp branding removed@@cmpBrandingRemoved:Removed`;
 
 export const COMPARE_ROWS: CompareRow[] = [
   { label: $localize`:Cmp users@@cmpUsers:Users`, values: [1, 3, UNL, UNL] },
@@ -127,6 +128,8 @@ export const COMPARE_ROWS: CompareRow[] = [
   { label: $localize`:Cmp barcodes@@cmpBarcodes:Barcodes, QR codes & PDF documents`, values: [true, true, true, true] },
   { label: $localize`:Cmp roles@@cmpRoles:User roles & access rights`, values: [false, false, true, true] },
   { label: $localize`:Cmp api@@cmpApi:API`, values: [API_RO, API_RO, API_FULL, API_FULL] },
+  { label: $localize`:Cmp branding@@cmpBranding:Loom21 branding on payment pages`, values: [
+      $localize`:Cmp branding shown@@cmpBrandingShown:Shown`, BRANDING_REMOVED, BRANDING_REMOVED, BRANDING_REMOVED] },
   { label: $localize`:Cmp support@@cmpSupport:Support`, values: [
       $localize`:Sup community@@supCommunity:Community`, $localize`:Sup email@@supEmail:Email`,
       $localize`:Sup priority@@supPriority:Priority email`, $localize`:Sup onboarding@@supOnboarding:Priority + onboarding`] },
@@ -136,9 +139,9 @@ export const PRICING_FAQ = [
   { q: $localize`:Pricing FAQ q1@@pfaqQ1:Do you take a cut of my sales?`,
     a: $localize`:Pricing FAQ a1@@pfaqA1:No. Loom21 charges 0% on every payment — Bitcoin and card. You only pay your plan, plus your payment processor's own fees (for example Stripe's card fees, or Lightning network fees).` },
   { q: $localize`:Pricing FAQ q2@@pfaqQ2:What happens if I go over my monthly orders?`,
-    a: $localize`:Pricing FAQ a2@@pfaqA2:Nothing breaks and you can always get paid. We notify you at 80% and 100% of your limit and give you a one-month grace period before suggesting an upgrade.` },
+    a: $localize`:Pricing FAQ a2@@pfaqA2:Nothing stops straight away. We notify you at 80% and 100% of your limit and give you a one-month grace period, once a year. If you're still over after that and don't upgrade within 30 days, payment links and new orders pause until the next month or until you upgrade. Invoices your customers have already opened can always be paid.` },
   { q: $localize`:Pricing FAQ q6@@pfaqQ6:Are payment links limited?`,
-    a: $localize`:Pricing FAQ a6@@pfaqA6:No. Create as many payment links as you like on any plan, including Free. Each payment received through a link counts as one order toward your plan's monthly limit, and payments are never blocked.` },
+    a: $localize`:Pricing FAQ a6@@pfaqA6:No. Create as many payment links as you like on any plan, including Free. Each payment received through a link counts as one order toward your plan's monthly limit.` },
   { q: $localize`:Pricing FAQ q3@@pfaqQ3:How does paying for Loom21 in Bitcoin work?`,
     a: $localize`:Pricing FAQ a3@@pfaqA3:Choose the Bitcoin option and pay for a year upfront over Lightning or on-chain. You save about 25% compared with monthly card billing.` },
   // O9: cancel anytime, runs to end of paid period, no partial refunds

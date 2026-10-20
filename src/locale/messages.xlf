@@ -1221,11 +1221,19 @@
         </context-group>
         <note priority="1" from="description">Cmp api full soon</note>
       </trans-unit>
+      <trans-unit id="cmpBrandingRemoved" datatype="html">
+        <source>Removed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+        <note priority="1" from="description">Cmp branding removed</note>
+      </trans-unit>
       <trans-unit id="cmpUsers" datatype="html">
         <source>Users</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">118</context>
+          <context context-type="linenumber">119</context>
         </context-group>
         <note priority="1" from="description">Cmp users</note>
       </trans-unit>
@@ -1233,7 +1241,7 @@
         <source>Store locations</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">119</context>
+          <context context-type="linenumber">120</context>
         </context-group>
         <note priority="1" from="description">Cmp stores</note>
       </trans-unit>
@@ -1241,7 +1249,7 @@
         <source>Orders / month</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">120</context>
+          <context context-type="linenumber">121</context>
         </context-group>
         <note priority="1" from="description">Cmp orders</note>
       </trans-unit>
@@ -1249,7 +1257,7 @@
         <source>Payment links (each payment counts as an order)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">121</context>
+          <context context-type="linenumber">122</context>
         </context-group>
         <note priority="1" from="description">Cmp links</note>
       </trans-unit>
@@ -1257,7 +1265,7 @@
         <source>Bitcoin — Lightning &amp; on-chain</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">122</context>
+          <context context-type="linenumber">123</context>
         </context-group>
         <note priority="1" from="description">Cmp btc</note>
       </trans-unit>
@@ -1265,7 +1273,7 @@
         <source>Card payments (Stripe)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">123</context>
+          <context context-type="linenumber">124</context>
         </context-group>
         <note priority="1" from="description">Cmp cards</note>
       </trans-unit>
@@ -1273,7 +1281,7 @@
         <source>Loom21 transaction fee</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">124</context>
+          <context context-type="linenumber">125</context>
         </context-group>
         <note priority="1" from="description">Cmp fee</note>
       </trans-unit>
@@ -1281,7 +1289,7 @@
         <source>Excel / CSV import &amp; export</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">125</context>
+          <context context-type="linenumber">126</context>
         </context-group>
         <note priority="1" from="description">Cmp export</note>
       </trans-unit>
@@ -1289,7 +1297,7 @@
         <source>Price lists, tiers &amp; custom fields</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">126</context>
+          <context context-type="linenumber">127</context>
         </context-group>
         <note priority="1" from="description">Cmp pricing</note>
       </trans-unit>
@@ -1297,7 +1305,7 @@
         <source>Barcodes, QR codes &amp; PDF documents</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">127</context>
+          <context context-type="linenumber">128</context>
         </context-group>
         <note priority="1" from="description">Cmp barcodes</note>
       </trans-unit>
@@ -1305,7 +1313,7 @@
         <source>User roles &amp; access rights</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">128</context>
+          <context context-type="linenumber">129</context>
         </context-group>
         <note priority="1" from="description">Cmp roles</note>
       </trans-unit>
@@ -1313,15 +1321,31 @@
         <source>API</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">129</context>
+          <context context-type="linenumber">130</context>
         </context-group>
         <note priority="1" from="description">Cmp api</note>
+      </trans-unit>
+      <trans-unit id="cmpBranding" datatype="html">
+        <source>Loom21 branding on payment pages</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+        <note priority="1" from="description">Cmp branding</note>
+      </trans-unit>
+      <trans-unit id="cmpBrandingShown" datatype="html">
+        <source>Shown</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+        <note priority="1" from="description">Cmp branding shown</note>
       </trans-unit>
       <trans-unit id="cmpSupport" datatype="html">
         <source>Support</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">130</context>
+          <context context-type="linenumber">133</context>
         </context-group>
         <note priority="1" from="description">Cmp support</note>
       </trans-unit>
@@ -1329,7 +1353,7 @@
         <source>Community</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">131</context>
+          <context context-type="linenumber">134</context>
         </context-group>
         <note priority="1" from="description">Sup community</note>
       </trans-unit>
@@ -1337,7 +1361,7 @@
         <source>Email</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">131</context>
+          <context context-type="linenumber">134</context>
         </context-group>
         <note priority="1" from="description">Sup email</note>
       </trans-unit>
@@ -1345,7 +1369,7 @@
         <source>Priority email</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">132</context>
+          <context context-type="linenumber">135</context>
         </context-group>
         <note priority="1" from="description">Sup priority</note>
       </trans-unit>
@@ -1353,7 +1377,7 @@
         <source>Priority + onboarding</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">132</context>
+          <context context-type="linenumber">135</context>
         </context-group>
         <note priority="1" from="description">Sup onboarding</note>
       </trans-unit>
@@ -1361,7 +1385,7 @@
         <source>Do you take a cut of my sales?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">136</context>
+          <context context-type="linenumber">139</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ q1</note>
       </trans-unit>
@@ -1369,7 +1393,7 @@
         <source>No. Loom21 charges 0% on every payment — Bitcoin and card. You only pay your plan, plus your payment processor&apos;s own fees (for example Stripe&apos;s card fees, or Lightning network fees).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">137</context>
+          <context context-type="linenumber">140</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ a1</note>
       </trans-unit>
@@ -1377,15 +1401,15 @@
         <source>What happens if I go over my monthly orders?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">138</context>
+          <context context-type="linenumber">141</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ q2</note>
       </trans-unit>
       <trans-unit id="pfaqA2" datatype="html">
-        <source>Nothing breaks and you can always get paid. We notify you at 80% and 100% of your limit and give you a one-month grace period before suggesting an upgrade.</source>
+        <source>Nothing stops straight away. We notify you at 80% and 100% of your limit and give you a one-month grace period, once a year. If you&apos;re still over after that and don&apos;t upgrade within 30 days, payment links and new orders pause until the next month or until you upgrade. Invoices your customers have already opened can always be paid.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">139</context>
+          <context context-type="linenumber">142</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ a2</note>
       </trans-unit>
@@ -1393,15 +1417,15 @@
         <source>Are payment links limited?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">140</context>
+          <context context-type="linenumber">143</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ q6</note>
       </trans-unit>
       <trans-unit id="pfaqA6" datatype="html">
-        <source>No. Create as many payment links as you like on any plan, including Free. Each payment received through a link counts as one order toward your plan&apos;s monthly limit, and payments are never blocked.</source>
+        <source>No. Create as many payment links as you like on any plan, including Free. Each payment received through a link counts as one order toward your plan&apos;s monthly limit.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">141</context>
+          <context context-type="linenumber">144</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ a6</note>
       </trans-unit>
@@ -1409,7 +1433,7 @@
         <source>How does paying for Loom21 in Bitcoin work?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">142</context>
+          <context context-type="linenumber">145</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ q3</note>
       </trans-unit>
@@ -1417,7 +1441,7 @@
         <source>Choose the Bitcoin option and pay for a year upfront over Lightning or on-chain. You save about 25% compared with monthly card billing.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">143</context>
+          <context context-type="linenumber">146</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ a3</note>
       </trans-unit>
@@ -1425,7 +1449,7 @@
         <source>Can I switch plans or cancel anytime?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">145</context>
+          <context context-type="linenumber">148</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ q4</note>
       </trans-unit>
@@ -1433,7 +1457,7 @@
         <source>Yes. Upgrade or downgrade from Settings → Subscription. If you cancel, your plan stays active until the end of the period you paid for; partial periods are not refunded. You can export all your data at any time.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">146</context>
+          <context context-type="linenumber">149</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ a4</note>
       </trans-unit>
@@ -1441,7 +1465,7 @@
         <source>Is the Free plan really free forever?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">147</context>
+          <context context-type="linenumber">150</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ q5</note>
       </trans-unit>
@@ -1449,7 +1473,7 @@
         <source>Yes — no credit card and no time limit. It includes Bitcoin and card payments, inventory for one store and up to 50 orders a month.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
-          <context context-type="linenumber">148</context>
+          <context context-type="linenumber">151</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ a5</note>
       </trans-unit>
