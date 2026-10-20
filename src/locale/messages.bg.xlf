@@ -48,7 +48,7 @@
         <note priority="1" from="description">Launch app button</note>
       </trans-unit>
       <trans-unit id="homeTitle" datatype="html">
-        <source>Loom21 — Bitcoin &amp; Card Payments with Real-Time Inventory</source>
+        <source>Loom21 - Bitcoin &amp; Card Payments with Real-Time Inventory</source>
         <target>Loom21 — Биткойн и плащания с карти с инвентар в реално време</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
@@ -75,7 +75,7 @@
         <note priority="1" from="description">Contact title</note>
       </trans-unit>
       <trans-unit id="PricingTitle" datatype="html">
-        <source>Pricing — Free plan, 0% transaction fees | Loom21</source>
+        <source>Pricing - Free plan, 0% transaction fees | Loom21</source>
         <target>Цени — безплатен план, 0% такси за транзакции | Loom21</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
@@ -165,7 +165,7 @@
         <note priority="1" from="description">Contact description ld_json tag</note>
       </trans-unit>
       <trans-unit id="pricingDescription_ld_json" datatype="html">
-        <source>Loom21 plans: Free, Starter, Growth and Pro — Bitcoin and card payments with 0% platform fees.</source>
+        <source>Loom21 plans: Free, Starter, Growth and Pro - Bitcoin and card payments with 0% platform fees.</source>
         <target>Планове на Loom21: Free, Starter, Growth и Pro — плащания с Биткойн и карти с 0% такси от платформата.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
@@ -1205,15 +1205,6 @@
         </context-group>
         <note priority="1" from="description">Section 14 contact form</note>
       </trans-unit>
-      <trans-unit id="section14Address" datatype="html">
-        <source>Address: Tvarditsa, Aleko Konstantinov 11 str.</source>
-        <target>Адрес: ул. Алеко Константинов 11, Твърдица</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
-          <context context-type="linenumber">127</context>
-        </context-group>
-        <note priority="1" from="description">Section 14 address</note>
-      </trans-unit>
       <trans-unit id="section14Complaint" datatype="html">
         <source>For GDPR complaints, you may also contact your local Data Protection Authority.</source>
         <target>За жалби относно GDPR можете също да се свържете с местния орган за защита на данните.</target>
@@ -1498,7 +1489,7 @@
         <note priority="1" from="description">Get in touch</note>
       </trans-unit>
       <trans-unit id="homeH2TopTitle" datatype="html">
-        <source>Inventory, invoices and payment links — get paid in Bitcoin or by card</source>
+        <source>Inventory, invoices and payment links - get paid in Bitcoin or by card</source>
         <target>Склад, фактури и връзки за плащане — получавайте плащания в Биткойн или с карта</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -1514,15 +1505,6 @@
           <context context-type="linenumber">9,10</context>
         </context-group>
         <note priority="1" from="description">Home top sub title</note>
-      </trans-unit>
-      <trans-unit id="playPromoVideoButton" datatype="html">
-        <source>Play promo video</source>
-        <target>Възпроизвеждане на промо видео</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">1</context>
-        </context-group>
-        <note priority="1" from="description">Play promo video button</note>
       </trans-unit>
       <trans-unit id="watchDemoLabel" datatype="html">
         <source>Watch Demo</source>
@@ -1610,7 +1592,7 @@
         <note priority="1" from="description">Manage clients and suppliers</note>
       </trans-unit>
       <trans-unit id="controlData" datatype="html">
-        <source>Control your own data — Import and Export</source>
+        <source>Control your own data - Import and Export</source>
         <target>Контролирайте вашите собствени данни - импортиране и експортиране в различни видове формати</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -1691,7 +1673,7 @@
         <note priority="1" from="description">Payments made simple</note>
       </trans-unit>
       <trans-unit id="sendPaymentLinksAnd" datatype="html">
-        <source>Send payment links for Bitcoin Lightning, on-chain Bitcoin, or fiat card payments — powered by Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, LNbits, and more. Effortless invoicing for everyone — with 0% Loom21 fees.</source>
+        <source>Send payment links for Bitcoin Lightning, on-chain Bitcoin, or fiat card payments - powered by Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, LNbits, and more. Effortless invoicing for everyone — with 0% Loom21 fees.</source>
         <target>Изпращайте връзки за плащане с Биткойн Lightning, он-чейн Биткойн или карти — чрез Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, LNbits и други — с 0% такса от Loom21.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -1718,7 +1700,7 @@
         <note priority="1" from="description">Price lists title</note>
       </trans-unit>
       <trans-unit id="priceListsDesc" datatype="html">
-        <source>Create wholesale, retail, or seasonal price lists with quantity-based tiers, percentage discounts, or custom formulas. Add customer-specific overrides so your best clients always get the right price — resolved automatically at checkout.</source>
+        <source>Create wholesale, retail, or seasonal price lists with quantity-based tiers, percentage discounts, or custom formulas. Add customer-specific overrides so your best clients always get the right price - resolved automatically at checkout.</source>
         <target>Създавайте ценови листи на едро, дребно или сезонни промоции с нива според количеството, процентни отстъпки или персонализирани формули. Добавете индивидуални цени за клиенти, така че най-добрите ви клиенти винаги получават правилната цена — изчислена автоматично при плащане.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -1736,7 +1718,7 @@
         <note priority="1" from="description">Custom fields title</note>
       </trans-unit>
       <trans-unit id="customFieldsDesc" datatype="html">
-        <source>Go beyond name, price, and category. Add your own fields — warranty dates, certifications, supplier references, and more — to every product, and fill them in right from the product page.</source>
+        <source>Go beyond name, price, and category. Add your own fields - warranty dates, certifications, supplier references, and more - to every product, and fill them in right from the product page.</source>
         <target>Излезте отвъд името, цената и категорията. Добавете свои собствени полета — гаранционни срокове, сертификати, референтни номера на доставчици и още — към всеки продукт, и ги попълвайте директно от страницата на продукта.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -1946,7 +1928,7 @@
         <note priority="1" from="description">FAQ title</note>
       </trans-unit>
       <trans-unit id="faqDescription" datatype="html">
-        <source>Answers to common questions about Loom21 — payments, Bitcoin, pricing, price lists, inventory, custom fields, and more.</source>
+        <source>Answers to common questions about Loom21 - payments, Bitcoin, pricing, price lists, inventory, custom fields, and more.</source>
         <target>Отговори на често задавани въпроси за Loom21 — плащания, Биткойн, цени, ценови листи, инвентар, персонализирани полета и още.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
@@ -2477,7 +2459,7 @@
         <note priority="1" from="description">Roadmap title</note>
       </trans-unit>
       <trans-unit id="roadmapDescription" datatype="html">
-        <source>See what's shipped, in progress, and planned for Loom21 — payments, pricing, inventory, and more.</source>
+        <source>See what's shipped, in progress, and planned for Loom21 - payments, pricing, inventory, and more.</source>
         <target>Вижте какво е пуснато, в процес на разработка и предстои за Loom21 — плащания, цени, инвентар и още.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
@@ -2486,7 +2468,7 @@
         <note priority="1" from="description">Roadmap description tag</note>
       </trans-unit>
       <trans-unit id="roadmapDescription_ld_json" datatype="html">
-        <source>Loom21's product roadmap — shipped features, work in progress, and planned improvements.</source>
+        <source>Loom21's product roadmap - shipped features, work in progress, and planned improvements.</source>
         <target>Пътната карта на продукта Loom21 — пуснати функции, в процес на разработка и планирани подобрения.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
@@ -2828,7 +2810,7 @@
         <note priority="1" from="description">Integrations description</note>
       </trans-unit>
       <trans-unit id="integrationsApiSoon" datatype="html">
-        <source>Open API coming soon — tell us what you&apos;d connect.</source>
+        <source>Open API coming soon - tell us what you&apos;d connect.</source>
         <target>Отворен API скоро — кажете ни какво бихте свързали.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -2873,7 +2855,7 @@
         <note priority="1" from="description">Stat zero fee</note>
       </trans-unit>
       <trans-unit id="statZeroFeeDesc" datatype="html">
-        <source>You pay your plan. We take nothing from your sales — on Bitcoin or card.</source>
+        <source>You pay your plan. We take nothing from your sales - on Bitcoin or card.</source>
         <target>Плащате абонамента си. Не взимаме нищо от продажбите ви — нито при Биткойн, нито при карти.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
