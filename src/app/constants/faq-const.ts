@@ -77,6 +77,9 @@ export const FAQ_CONSTANTS = {
   a6_1: $localize`:FAQ answer 6.1@@faqA6_1:Yes. You can export your products, services, customers, suppliers, and reports as Excel, CSV or JSON at any time — your data is never locked in.`,
   q6_2: $localize`:FAQ question 6.2@@faqQ6_2:How many team members can I invite?`,
   a6_2: $localize`:FAQ answer 6.2@@faqA6_2:It depends on your plan: 1 user on Free, 3 on Starter, and unlimited users on Growth and Pro — each with role-based access on Growth and above.`,
+  // Role names and rights follow the docs' "Accounts" section.
+  q6_5: $localize`:FAQ question 6.5@@faqQ6_5:Can I control what each team member can see and do?`,
+  a6_5: $localize`:FAQ answer 6.5@@faqA6_5:Yes, on Growth and Pro. Give each user one or more ready-made roles: Administrator, Cashier, Sales Manager, Warehouse, Purchasing, Catalog or Accountant. A cashier can sell and take payments but can't change prices, give discounts or issue credit notes. Warehouse staff don't see purchase prices or sales. An accountant sees sales, payments, reports and the VAT sales ledger but can't change anything. Each user sees only what their roles allow, and every action is checked on the server too. On Free and Starter, everyone you invite is an Administrator.`,
   q6_3: $localize`:FAQ question 6.3@@faqQ6_3:What languages is Loom21 available in?`,
   a6_3: $localize`:FAQ answer 6.3@@faqA6_3:Loom21 is currently available in English and Bulgarian, with more languages planned.`,
   // Keep in line with privacy-policy-const.ts section2bItem2: Simple Analytics still counts visits, so never claim "no tracking at all".
@@ -150,6 +153,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     items: [
       { question: FAQ_CONSTANTS.q6_1, answer: FAQ_CONSTANTS.a6_1 },
       { question: FAQ_CONSTANTS.q6_2, answer: FAQ_CONSTANTS.a6_2 },
+      { question: FAQ_CONSTANTS.q6_5, answer: FAQ_CONSTANTS.a6_5 },
       { question: FAQ_CONSTANTS.q6_3, answer: FAQ_CONSTANTS.a6_3 },
       { question: FAQ_CONSTANTS.q6_4, answer: FAQ_CONSTANTS.a6_4 }
     ]

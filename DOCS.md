@@ -846,19 +846,37 @@ In CSV, a customer or supplier has one address in the columns `AddressLine1`, `A
 
 The Accounts page shows all users who have access to your organization. Each row displays the user's email, first name, last name, company name, website, and phone number.
 
-**Inviting a new user:**
-1. Click the **Invite** button.
-2. Fill in the new user's **email address**, **password**, first name, last name, and phone.
-3. Assign one or more **Roles** using the checkboxes — roles control which parts of the app the user can access.
+**Inviting a new user** (administrators only):
+1. Click the **Invite User** button.
+2. Fill in the new user's **email address**, **password**, first name, last name, and phone. An email that already has a loom21 account can't be invited: use a different one.
+3. Choose one or more **Roles** with the checkboxes (Growth plan and up). On other plans everyone you invite is an Administrator.
 4. Save — the user can now sign in with the credentials you created.
 
 **Editing a user:**
-- Click the edit icon on any row to update their details or change their role assignments.
+- Click the edit icon on any row to update their details or change their roles. Only an administrator changes roles, and nobody changes their own: another administrator can.
+
+**Roles and what they allow** (Growth plan and up):
+
+| Role | What the user can do |
+|---|---|
+| Administrator | Everything, including users and roles, company and payment settings, stores and the subscription. |
+| Cashier | Creates sales, sends invoices and marks them paid, adds customers. Can't change prices, give discounts, issue credit notes or annul. |
+| Sales Manager | Everything a cashier does, plus prices and discounts, credit notes, annulment, refunds, invoice import, payment links, customer prices, revenue on the dashboard and reports. |
+| Warehouse | Adds and removes stock by hand and receives deliveries. Doesn't see purchase prices or sales. |
+| Purchasing | Deliveries and suppliers, with purchase prices. Doesn't adjust stock by hand or see sales. |
+| Catalog | Products and services, purchase prices, price lists, brands, categories, measures and custom fields. |
+| Accountant | Sees sales, credit notes, payments, purchase prices, revenue, reports and the VAT sales ledger. Changes nothing. |
+
+- A user with several roles can do everything any of them allows.
+- Each user sees only the menu items and buttons their roles allow, and loom21 checks every action on the server as well.
+- Without the right to change prices, a sale's prices are the customer's price, the price list's or the product's, with no discount.
+- Purchase prices are left out for roles that don't see them.
+- After a change to a plan below Growth, the roles already given keep applying, but they can't be changed until the plan has roles again.
 
 **Removing a user:**
 - Open the user's edit page and click **Delete** to remove their access.
 
-You can invite an unlimited number of users to your organization.
+How many users you can invite depends on your plan.
 
 ![Invite account](https://raw.githubusercontent.com/loom21/loom21doc/main/images/account-invite-light.PNG)
 
