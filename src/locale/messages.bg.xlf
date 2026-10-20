@@ -4073,6 +4073,33 @@
         </context-group>
         <note priority="1" from="description">FAQ answer 5.7</note>
       </trans-unit>
+      <trans-unit id="invoicingSwitch" datatype="html">
+        <source>Switching from another program? Import your past invoices and credit notes from Excel or CSV, and Loom21&apos;s numbering carries on after your last one.</source>
+        <target>Преминавате от друга програма? Импортирайте издадените си фактури и кредитни известия от Excel или CSV и номерацията в Loom21 продължава след последната ви фактура.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">177,178</context>
+        </context-group>
+        <note priority="1" from="description">Invoicing switch</note>
+      </trans-unit>
+      <trans-unit id="faqQ1_4" datatype="html">
+        <source>I already issue invoices with another program. Can I switch to Loom21?</source>
+        <target>Вече издавам фактури с друга програма. Мога ли да премина към Loom21?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 1.4</note>
+      </trans-unit>
+      <trans-unit id="faqA1_4" datatype="html">
+        <source>Yes. Before Loom21 issues its first invoice, import your past invoices and credit notes from an Excel or CSV file under Sales → Import invoices (import your products and services first, so the invoice lines can be matched to them). You can then collect, credit or annul them in Loom21, and the numbering continues after your last invoice. They count in the VAT sales ledger only from the first month you file from Loom21, so nothing is declared twice. If you&apos;d rather not import them, set the First invoice number in General Settings to the number after your last invoice.</source>
+        <target>Да. Преди Loom21 да издаде първата си фактура, импортирайте издадените си фактури и кредитни известия от файл в Excel или CSV от Продажби → Импорт на фактури (първо импортирайте продуктите и услугите си, за да могат редовете на фактурите да бъдат свързани с тях). След това можете да ги събирате, кредитирате или анулирате в Loom21, а номерацията продължава след последната ви фактура. Те влизат в дневника за продажбите едва от първия месец, за който подавате декларация от Loom21, така че нищо не се декларира два пъти. Ако предпочитате да не ги импортирате, задайте „Номер на първата фактура“ в Общи настройки на номера след последната ви фактура.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 1.4</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

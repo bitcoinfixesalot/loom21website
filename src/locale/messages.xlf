@@ -146,11 +146,27 @@
         </context-group>
         <note priority="1" from="description">FAQ answer 1.3</note>
       </trans-unit>
+      <trans-unit id="faqQ1_4" datatype="html">
+        <source>I already issue invoices with another program. Can I switch to Loom21?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 1.4</note>
+      </trans-unit>
+      <trans-unit id="faqA1_4" datatype="html">
+        <source>Yes. Before Loom21 issues its first invoice, import your past invoices and credit notes from an Excel or CSV file under Sales → Import invoices (import your products and services first, so the invoice lines can be matched to them). You can then collect, credit or annul them in Loom21, and the numbering continues after your last invoice. They count in the VAT sales ledger only from the first month you file from Loom21, so nothing is declared twice. If you&apos;d rather not import them, set the First invoice number in General Settings to the number after your last invoice.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 1.4</note>
+      </trans-unit>
       <trans-unit id="faqCategory2Title" datatype="html">
         <source>Payments &amp; Bitcoin</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">19</context>
         </context-group>
         <note priority="1" from="description">FAQ category 2 title</note>
       </trans-unit>
@@ -158,7 +174,7 @@
         <source>Does Loom21 ever hold my money?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">21</context>
         </context-group>
         <note priority="1" from="description">FAQ question 2.0</note>
       </trans-unit>
@@ -166,7 +182,7 @@
         <source>No. Loom21 never takes custody of your funds. Bitcoin payments go straight to the wallet or server you connect — your BTCPay Server, Lightning Address (e.g. Glow), Speed Wallet account or LNbits wallet — and card payments go to your own Stripe account. Loom21 creates the invoice and tracks its status.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">20</context>
+          <context context-type="linenumber">22</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 2.0</note>
       </trans-unit>
@@ -174,7 +190,7 @@
         <source>What payment methods does Loom21 support?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="linenumber">23</context>
         </context-group>
         <note priority="1" from="description">FAQ question 2.1</note>
       </trans-unit>
@@ -182,7 +198,7 @@
         <source>Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNbits — covering both Lightning and on-chain Bitcoin.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">24</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 2.1</note>
       </trans-unit>
@@ -190,7 +206,7 @@
         <source>Can I accept both Bitcoin Lightning and on-chain payments?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">23</context>
+          <context context-type="linenumber">25</context>
         </context-group>
         <note priority="1" from="description">FAQ question 2.2</note>
       </trans-unit>
@@ -198,7 +214,7 @@
         <source>Yes. Most of our Bitcoin processors support Lightning and on-chain payments side by side with card payments, so you can offer whichever methods suit your customers.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">26</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 2.2</note>
       </trans-unit>
@@ -206,7 +222,7 @@
         <source>Do I need my own Bitcoin wallet or node to use Loom21?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="linenumber">27</context>
         </context-group>
         <note priority="1" from="description">FAQ question 2.3</note>
       </trans-unit>
@@ -214,7 +230,7 @@
         <source>It depends on the method. BTCPay Server, Speed Wallet, and LNbits connect using an API key or URL you enter in Settings. Lightning Wallet (Glow) works differently — just enter any LNURL-compatible Lightning Address (Glow&apos;s own address works out of the box), then use the Test Connection button to verify it.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">26</context>
+          <context context-type="linenumber">28</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 2.3</note>
       </trans-unit>
@@ -222,7 +238,7 @@
         <source>How are Bitcoin payments confirmed?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">27</context>
+          <context context-type="linenumber">29</context>
         </context-group>
         <note priority="1" from="description">FAQ question 2.4</note>
       </trans-unit>
@@ -230,7 +246,7 @@
         <source>For BTCPay Server, Speed Wallet, and LNbits, confirmation is real-time — the order status updates automatically the moment the payment settles. For Lightning Wallet (Glow) and other Lightning Address wallets, real-time confirmation depends on your wallet provider supporting it; use the Test Connection button in Settings to check your specific address.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">28</context>
+          <context context-type="linenumber">30</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 2.4</note>
       </trans-unit>
@@ -238,7 +254,7 @@
         <source>Pricing &amp; Price Lists</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">31</context>
+          <context context-type="linenumber">33</context>
         </context-group>
         <note priority="1" from="description">FAQ category 3 title</note>
       </trans-unit>
@@ -246,7 +262,7 @@
         <source>How does Loom21&apos;s own pricing work?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="linenumber">34</context>
         </context-group>
         <note priority="1" from="description">FAQ question 3.1</note>
       </trans-unit>
@@ -254,7 +270,7 @@
         <source>Start on the Free plan, then upgrade to Starter, Growth or Pro as you grow. Pay monthly, annually (2 months free) or in Bitcoin (about 25% off). Loom21 never takes a percentage of your sales.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">35</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 3.1</note>
       </trans-unit>
@@ -262,7 +278,7 @@
         <source>Can I set different prices for different customers?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">34</context>
+          <context context-type="linenumber">36</context>
         </context-group>
         <note priority="1" from="description">FAQ question 3.2</note>
       </trans-unit>
@@ -270,7 +286,7 @@
         <source>Yes. You can create multiple price lists — such as wholesale, retail, or seasonal — and set customer-specific price overrides that always take priority over any price list.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">37</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 3.2</note>
       </trans-unit>
@@ -278,7 +294,7 @@
         <source>Can I offer quantity-based discounts?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">36</context>
+          <context context-type="linenumber">38</context>
         </context-group>
         <note priority="1" from="description">FAQ question 3.3</note>
       </trans-unit>
@@ -286,7 +302,7 @@
         <source>Yes. Each price list supports quantity tiers, percentage discounts, or custom formulas, so prices can automatically drop at higher order volumes.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">39</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 3.3</note>
       </trans-unit>
@@ -294,7 +310,7 @@
         <source>What price is used if a product isn&apos;t on any price list?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">38</context>
+          <context context-type="linenumber">40</context>
         </context-group>
         <note priority="1" from="description">FAQ question 3.4</note>
       </trans-unit>
@@ -302,7 +318,7 @@
         <source>Loom21 falls back to the product&apos;s base Sale Price configured on the product itself.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">41</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 3.4</note>
       </trans-unit>
@@ -310,7 +326,7 @@
         <source>Does Loom21 charge transaction fees?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">40</context>
+          <context context-type="linenumber">42</context>
         </context-group>
         <note priority="1" from="description">FAQ question 3.5</note>
       </trans-unit>
@@ -318,7 +334,7 @@
         <source>No — 0% on every payment method, including card payments through Stripe. You only pay your plan and your payment processor&apos;s own fees.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">43</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 3.5</note>
       </trans-unit>
@@ -326,7 +342,7 @@
         <source>Products, Inventory &amp; Custom Fields</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">44</context>
+          <context context-type="linenumber">46</context>
         </context-group>
         <note priority="1" from="description">FAQ category 4 title</note>
       </trans-unit>
@@ -334,7 +350,7 @@
         <source>Can I track stock across multiple store locations?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">45</context>
+          <context context-type="linenumber">47</context>
         </context-group>
         <note priority="1" from="description">FAQ question 4.1</note>
       </trans-unit>
@@ -342,7 +358,7 @@
         <source>Yes. Inventory is tracked per store, and every sale or delivery order is linked to a specific store, so stock levels stay accurate everywhere.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">48</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 4.1</note>
       </trans-unit>
@@ -350,7 +366,7 @@
         <source>What are Custom Fields and what can I use them for?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="linenumber">49</context>
         </context-group>
         <note priority="1" from="description">FAQ question 4.2</note>
       </trans-unit>
@@ -358,7 +374,7 @@
         <source>Custom Fields let you add your own data fields to every product — like a warranty expiry date, a certification flag, or a supplier reference number — beyond the standard name, price, and category fields.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">48</context>
+          <context context-type="linenumber">50</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 4.2</note>
       </trans-unit>
@@ -366,7 +382,7 @@
         <source>Can I import my existing product or customer list?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">49</context>
+          <context context-type="linenumber">51</context>
         </context-group>
         <note priority="1" from="description">FAQ question 4.3</note>
       </trans-unit>
@@ -374,7 +390,7 @@
         <source>Yes. You can import products, services, customers, and suppliers from an Excel (.xlsx) or CSV file, using the downloadable templates. To change many records at once, export them to Excel, edit the file and import it back — existing records are updated, not duplicated.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">52</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 4.3</note>
       </trans-unit>
@@ -382,7 +398,7 @@
         <source>Does Loom21 support barcodes and QR codes?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">53</context>
         </context-group>
         <note priority="1" from="description">FAQ question 4.4</note>
       </trans-unit>
@@ -390,7 +406,7 @@
         <source>Yes. You can enter or scan barcodes for products, and QR codes are generated automatically.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="linenumber">54</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 4.4</note>
       </trans-unit>
@@ -398,7 +414,7 @@
         <source>Orders &amp; Invoicing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">57</context>
         </context-group>
         <note priority="1" from="description">FAQ category 5 title</note>
       </trans-unit>
@@ -406,7 +422,7 @@
         <source>What documents can I generate from a sale order?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">56</context>
+          <context context-type="linenumber">58</context>
         </context-group>
         <note priority="1" from="description">FAQ question 5.1</note>
       </trans-unit>
@@ -414,7 +430,7 @@
         <source>Quotes, invoices, receipts, and pickup lists — all as downloadable PDFs. Invoices and receipts become available once an order is marked as paid.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">57</context>
+          <context context-type="linenumber">59</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 5.1</note>
       </trans-unit>
@@ -422,7 +438,7 @@
         <source>Can customers pay without creating a Loom21 account?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">58</context>
+          <context context-type="linenumber">60</context>
         </context-group>
         <note priority="1" from="description">FAQ question 5.2</note>
       </trans-unit>
@@ -430,7 +446,7 @@
         <source>Yes. Payment links give customers a unique URL to pay for a product, service, or donation with no login required on their side.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">59</context>
+          <context context-type="linenumber">61</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 5.2</note>
       </trans-unit>
@@ -438,7 +454,7 @@
         <source>Can I reorder from a customer&apos;s past purchases in one click?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">60</context>
+          <context context-type="linenumber">62</context>
         </context-group>
         <note priority="1" from="description">FAQ question 5.3</note>
       </trans-unit>
@@ -446,7 +462,7 @@
         <source>Yes. Once you select a customer on a new sale order, you can open their Order History and re-add items from any previous order instantly.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">61</context>
+          <context context-type="linenumber">63</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 5.3</note>
       </trans-unit>
@@ -454,7 +470,7 @@
         <source>How do I correct an invoice I&apos;ve already issued?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">63</context>
+          <context context-type="linenumber">65</context>
         </context-group>
         <note priority="1" from="description">FAQ question 5.4</note>
       </trans-unit>
@@ -462,7 +478,7 @@
         <source>Issue a credit note from the invoice — for returned goods, or as an amount for a discount after the sale. Issued invoices are never edited or deleted, so your numbering stays continuous. An invoice issued by mistake can be annulled instead, as long as it is unpaid, has no credit notes and was issued this calendar month. Loom21 prepares the annulment protocol for you to sign with the customer.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">64</context>
+          <context context-type="linenumber">66</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 5.4</note>
       </trans-unit>
@@ -470,7 +486,7 @@
         <source>Can Loom21 prepare the VAT sales ledger for my accountant?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">65</context>
+          <context context-type="linenumber">67</context>
         </context-group>
         <note priority="1" from="description">FAQ question 5.5</note>
       </trans-unit>
@@ -478,7 +494,7 @@
         <source>Yes, if your company is registered for VAT. Reports → VAT sales ledger builds the month&apos;s ledger from your invoices, credit notes, annulled invoices and payment link sales, and exports it as Excel or CSV in the layout accounting software imports. Anything that needs fixing first is flagged. The ledger follows the Bulgarian format.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">66</context>
+          <context context-type="linenumber">68</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 5.5</note>
       </trans-unit>
@@ -486,7 +502,7 @@
         <source>Can I invoice in USD or other currencies?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">67</context>
+          <context context-type="linenumber">69</context>
         </context-group>
         <note priority="1" from="description">FAQ question 5.6</note>
       </trans-unit>
@@ -494,7 +510,7 @@
         <source>Yes. An invoice in a currency other than EUR prints the European Central Bank exchange rate for its tax point, and the EUR equivalent of the tax base, the VAT and the total. Currencies the ECB doesn&apos;t publish a rate for, such as BTC, print no rate.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">68</context>
+          <context context-type="linenumber">70</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 5.6</note>
       </trans-unit>
@@ -502,7 +518,7 @@
         <source>Does Loom21 follow the invoicing rules of my country?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">69</context>
+          <context context-type="linenumber">71</context>
         </context-group>
         <note priority="1" from="description">FAQ question 5.7</note>
       </trans-unit>
@@ -510,7 +526,7 @@
         <source>Loom21&apos;s invoicing is built to Bulgarian VAT law, and today it applies the same rules to every account. Most of them — sequential numbers, the tax point, both VAT numbers, the tax base — are what EU VAT rules ask of any invoice. A few, such as annulment and the VAT sales ledger layout, are Bulgarian only, so if you invoice outside Bulgaria, check those with your accountant.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">70</context>
+          <context context-type="linenumber">72</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 5.7</note>
       </trans-unit>
@@ -518,7 +534,7 @@
         <source>Data, Team &amp; Security</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">73</context>
+          <context context-type="linenumber">75</context>
         </context-group>
         <note priority="1" from="description">FAQ category 6 title</note>
       </trans-unit>
@@ -526,7 +542,7 @@
         <source>Can I export my data?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">74</context>
+          <context context-type="linenumber">76</context>
         </context-group>
         <note priority="1" from="description">FAQ question 6.1</note>
       </trans-unit>
@@ -534,7 +550,7 @@
         <source>Yes. You can export your products, services, customers, suppliers, and reports as Excel, CSV or JSON at any time — your data is never locked in.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">75</context>
+          <context context-type="linenumber">77</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 6.1</note>
       </trans-unit>
@@ -542,7 +558,7 @@
         <source>How many team members can I invite?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">76</context>
+          <context context-type="linenumber">78</context>
         </context-group>
         <note priority="1" from="description">FAQ question 6.2</note>
       </trans-unit>
@@ -550,7 +566,7 @@
         <source>It depends on your plan: 1 user on Free, 3 on Starter, and unlimited users on Growth and Pro — each with role-based access on Growth and above.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">77</context>
+          <context context-type="linenumber">79</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 6.2</note>
       </trans-unit>
@@ -558,7 +574,7 @@
         <source>What languages is Loom21 available in?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">78</context>
+          <context context-type="linenumber">80</context>
         </context-group>
         <note priority="1" from="description">FAQ question 6.3</note>
       </trans-unit>
@@ -566,7 +582,7 @@
         <source>Loom21 is currently available in English and Bulgarian, with more languages planned.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">79</context>
+          <context context-type="linenumber">81</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 6.3</note>
       </trans-unit>
@@ -574,7 +590,7 @@
         <source>Does Loom21 use cookies or track me?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">81</context>
+          <context context-type="linenumber">83</context>
         </context-group>
         <note priority="1" from="description">FAQ question 6.4</note>
       </trans-unit>
@@ -582,7 +598,7 @@
         <source>The loom21.com website uses no tracking or advertising cookies and no cross-site tracking. We count visits with Simple Analytics, which is cookieless and collects no personal data. The Loom21 app only uses the cookies or local storage it needs to keep you signed in and remember your settings. See our Privacy Policy for details.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
-          <context context-type="linenumber">82</context>
+          <context context-type="linenumber">84</context>
         </context-group>
         <note priority="1" from="description">FAQ answer 6.4</note>
       </trans-unit>
@@ -2929,7 +2945,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">179,180</context>
+          <context context-type="linenumber">180,181</context>
         </context-group>
         <note priority="1" from="description">Try for free button</note>
       </trans-unit>
@@ -3161,11 +3177,19 @@
         </context-group>
         <note priority="1" from="description">Invoicing description</note>
       </trans-unit>
+      <trans-unit id="invoicingSwitch" datatype="html">
+        <source>Switching from another program? Import your past invoices and credit notes from Excel or CSV, and Loom21&apos;s numbering carries on after your last one.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">177,178</context>
+        </context-group>
+        <note priority="1" from="description">Invoicing switch</note>
+      </trans-unit>
       <trans-unit id="invoicingNote" datatype="html">
         <source>Invoicing outside Bulgaria? Most of these rules are what EU VAT law asks of any invoice. Check the Bulgarian-only ones with your accountant.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">177,178</context>
+          <context context-type="linenumber">178,179</context>
         </context-group>
         <note priority="1" from="description">Invoicing note</note>
       </trans-unit>
@@ -3173,7 +3197,7 @@
         <source>How it works</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">180,183</context>
+          <context context-type="linenumber">181,184</context>
         </context-group>
         <note priority="1" from="description">Invoicing docs button</note>
       </trans-unit>
@@ -3181,7 +3205,7 @@
         <source>Credit notes</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">188,189</context>
+          <context context-type="linenumber">189,190</context>
         </context-group>
         <note priority="1" from="description">Invoicing credit notes title</note>
       </trans-unit>
@@ -3189,7 +3213,7 @@
         <source>Correct an issued invoice for returned goods or a later discount. Stock and what the customer owes update automatically.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">189,192</context>
+          <context context-type="linenumber">190,193</context>
         </context-group>
         <note priority="1" from="description">Invoicing credit notes desc</note>
       </trans-unit>
@@ -3197,7 +3221,7 @@
         <source>Annulment</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">195,196</context>
+          <context context-type="linenumber">196,197</context>
         </context-group>
         <note priority="1" from="description">Invoicing annulment title</note>
       </trans-unit>
@@ -3205,7 +3229,7 @@
         <source>Annul an invoice issued by mistake, with the annulment protocol ready to sign with your customer.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">196,199</context>
+          <context context-type="linenumber">197,200</context>
         </context-group>
         <note priority="1" from="description">Invoicing annulment desc</note>
       </trans-unit>
@@ -3213,7 +3237,7 @@
         <source>VAT sales ledger</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">202,203</context>
+          <context context-type="linenumber">203,204</context>
         </context-group>
         <note priority="1" from="description">Invoicing VAT ledger title</note>
       </trans-unit>
@@ -3221,7 +3245,7 @@
         <source>Export the month&apos;s ledger as Excel or CSV for your accountant to import. Anything to fix is flagged first.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">203,206</context>
+          <context context-type="linenumber">204,207</context>
         </context-group>
         <note priority="1" from="description">Invoicing VAT ledger desc</note>
       </trans-unit>
@@ -3229,7 +3253,7 @@
         <source>Any currency</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">209,210</context>
+          <context context-type="linenumber">210,211</context>
         </context-group>
         <note priority="1" from="description">Invoicing currencies title</note>
       </trans-unit>
@@ -3237,7 +3261,7 @@
         <source>Invoices in USD or other currencies print the ECB exchange rate and the EUR equivalent automatically.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">210,213</context>
+          <context context-type="linenumber">211,214</context>
         </context-group>
         <note priority="1" from="description">Invoicing currencies desc</note>
       </trans-unit>
@@ -3245,7 +3269,7 @@
         <source>Why Loom21?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">226,227</context>
+          <context context-type="linenumber">227,228</context>
         </context-group>
         <note priority="1" from="description">Why loom21</note>
       </trans-unit>
@@ -3253,7 +3277,7 @@
         <source>Own your money</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">231,232</context>
+          <context context-type="linenumber">232,233</context>
         </context-group>
         <note priority="1" from="description">Stat bitcoin</note>
       </trans-unit>
@@ -3261,7 +3285,7 @@
         <source>Payments go straight to the wallet or Stripe account you connect. Loom21 never holds your funds.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">232,235</context>
+          <context context-type="linenumber">233,236</context>
         </context-group>
         <note priority="1" from="description">Stat bitcoin desc</note>
       </trans-unit>
@@ -3269,7 +3293,7 @@
         <source>Own your data</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">238,239</context>
+          <context context-type="linenumber">239,240</context>
         </context-group>
         <note priority="1" from="description">Stat ownership</note>
       </trans-unit>
@@ -3277,7 +3301,7 @@
         <source>Import products, customers and suppliers from Excel or CSV, and export them and your reports as Excel, CSV or JSON - any time. No lock-in.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">239,242</context>
+          <context context-type="linenumber">240,243</context>
         </context-group>
         <note priority="1" from="description">Stat ownership desc</note>
       </trans-unit>
@@ -3285,7 +3309,7 @@
         <source>Own your integrations</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">245,246</context>
+          <context context-type="linenumber">246,247</context>
         </context-group>
         <note priority="1" from="description">Stat integrations</note>
       </trans-unit>
@@ -3293,7 +3317,7 @@
         <source>0% transaction fees</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">252,253</context>
+          <context context-type="linenumber">253,254</context>
         </context-group>
         <note priority="1" from="description">Stat zero fee</note>
       </trans-unit>
@@ -3301,7 +3325,7 @@
         <source>You pay your plan. We take nothing from your sales - on Bitcoin or card.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">253,256</context>
+          <context context-type="linenumber">254,257</context>
         </context-group>
         <note priority="1" from="description">Stat zero fee desc</note>
       </trans-unit>
@@ -3309,7 +3333,7 @@
         <source>Instant, final payments</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">259,260</context>
+          <context context-type="linenumber">260,261</context>
         </context-group>
         <note priority="1" from="description">Stat instant</note>
       </trans-unit>
@@ -3317,7 +3341,7 @@
         <source>Lightning payments settle in seconds and can&apos;t be charged back.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">260,263</context>
+          <context context-type="linenumber">261,264</context>
         </context-group>
         <note priority="1" from="description">Stat instant desc</note>
       </trans-unit>
@@ -3325,7 +3349,7 @@
         <source>Free forever plan</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">266,267</context>
+          <context context-type="linenumber">267,268</context>
         </context-group>
         <note priority="1" from="description">Stat free</note>
       </trans-unit>
@@ -3333,7 +3357,7 @@
         <source>Start with 50 orders a month at no cost. No credit card required.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">267,270</context>
+          <context context-type="linenumber">268,271</context>
         </context-group>
         <note priority="1" from="description">Stat free desc</note>
       </trans-unit>

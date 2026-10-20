@@ -12,6 +12,8 @@ export const FAQ_CONSTANTS = {
   a1_2: $localize`:FAQ answer 1.2@@faqA1_2:Yes. The Free plan is free forever — no credit card required. It includes Bitcoin and card payments, inventory for one store and up to 50 orders a month. Upgrade any time from the Pricing page.`,
   q1_3: $localize`:FAQ question 1.3@@faqQ1_3:What should I set up first?`,
   a1_3: $localize`:FAQ answer 1.3@@faqA1_3:We recommend configuring General Settings (language, currency, VAT, and address), connecting at least one payment processor, adding your products and services, and then creating your first sale order.`,
+  q1_4: $localize`:FAQ question 1.4@@faqQ1_4:I already issue invoices with another program. Can I switch to Loom21?`,
+  a1_4: $localize`:FAQ answer 1.4@@faqA1_4:Yes. Before Loom21 issues its first invoice, import your past invoices and credit notes from an Excel or CSV file under Sales → Import invoices (import your products and services first, so the invoice lines can be matched to them). You can then collect, credit or annul them in Loom21, and the numbering continues after your last invoice. They count in the VAT sales ledger only from the first month you file from Loom21, so nothing is declared twice. If you'd rather not import them, set the First invoice number in General Settings to the number after your last invoice.`,
 
   // Category 2: Payments & Bitcoin
   category2Title: $localize`:FAQ category 2 title@@faqCategory2Title:Payments & Bitcoin`,
@@ -98,7 +100,8 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     items: [
       { question: FAQ_CONSTANTS.q1_1, answer: FAQ_CONSTANTS.a1_1 },
       { question: FAQ_CONSTANTS.q1_2, answer: FAQ_CONSTANTS.a1_2 },
-      { question: FAQ_CONSTANTS.q1_3, answer: FAQ_CONSTANTS.a1_3 }
+      { question: FAQ_CONSTANTS.q1_3, answer: FAQ_CONSTANTS.a1_3 },
+      { question: FAQ_CONSTANTS.q1_4, answer: FAQ_CONSTANTS.a1_4 }
     ]
   },
   {
