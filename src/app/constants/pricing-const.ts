@@ -118,7 +118,7 @@ export const COMPARE_ROWS: CompareRow[] = [
   { label: $localize`:Cmp users@@cmpUsers:Users`, values: [1, 3, UNL, UNL] },
   { label: $localize`:Cmp stores@@cmpStores:Store locations`, values: [1, 2, 5, 25] },
   { label: $localize`:Cmp orders@@cmpOrders:Orders / month`, values: [50, 1000, 5000, 25000] },
-  { label: $localize`:Cmp links@@cmpLinks:Payment links`, values: [UNL, UNL, UNL, UNL] },
+  { label: $localize`:Cmp links@@cmpLinks:Payment links (each payment counts as an order)`, values: [UNL, UNL, UNL, UNL] },
   { label: $localize`:Cmp btc@@cmpBitcoin:Bitcoin — Lightning & on-chain`, values: [true, true, true, true] },
   { label: $localize`:Cmp cards@@cmpCards:Card payments (Stripe)`, values: [true, true, true, true] },
   { label: $localize`:Cmp fee@@cmpFee:Loom21 transaction fee`, values: ['0%', '0%', '0%', '0%'] },
@@ -137,6 +137,8 @@ export const PRICING_FAQ = [
     a: $localize`:Pricing FAQ a1@@pfaqA1:No. Loom21 charges 0% on every payment — Bitcoin and card. You only pay your plan, plus your payment processor's own fees (for example Stripe's card fees, or Lightning network fees).` },
   { q: $localize`:Pricing FAQ q2@@pfaqQ2:What happens if I go over my monthly orders?`,
     a: $localize`:Pricing FAQ a2@@pfaqA2:Nothing breaks and you can always get paid. We notify you at 80% and 100% of your limit and give you a one-month grace period before suggesting an upgrade.` },
+  { q: $localize`:Pricing FAQ q6@@pfaqQ6:Are payment links limited?`,
+    a: $localize`:Pricing FAQ a6@@pfaqA6:No. Create as many payment links as you like on any plan, including Free. Each payment received through a link counts as one order toward your plan's monthly limit, and payments are never blocked.` },
   { q: $localize`:Pricing FAQ q3@@pfaqQ3:How does paying for Loom21 in Bitcoin work?`,
     a: $localize`:Pricing FAQ a3@@pfaqA3:Choose the Bitcoin option and pay for a year upfront over Lightning or on-chain. You save about 25% compared with monthly card billing.` },
   // O9: cancel anytime, runs to end of paid period, no partial refunds

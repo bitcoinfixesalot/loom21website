@@ -3305,8 +3305,8 @@
         <note priority="1" from="description">Cmp orders</note>
       </trans-unit>
       <trans-unit id="cmpLinks" datatype="html">
-        <source>Payment links</source>
-        <target>Връзки за плащане</target>
+        <source>Payment links (each payment counts as an order)</source>
+        <target>Връзки за плащане (всяко плащане се брои като поръчка)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
           <context context-type="linenumber">120</context>
@@ -3519,6 +3519,16 @@
           <context context-type="linenumber">145</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ a5</note>
+      </trans-unit>
+      <trans-unit id="pfaqQ6" datatype="html">
+        <source>Are payment links limited?</source>
+        <target>Ограничени ли са връзките за плащане?</target>
+        <note priority="1" from="description">Pricing FAQ q6</note>
+      </trans-unit>
+      <trans-unit id="pfaqA6" datatype="html">
+        <source>No. Create as many payment links as you like on any plan, including Free. Each payment received through a link counts as one order toward your plan&apos;s monthly limit, and payments are never blocked.</source>
+        <target>Не. Създавайте колкото искате връзки за плащане на всеки план, включително безплатния. Всяко плащане, получено чрез връзка, се брои като една поръчка към месечния лимит на плана, а плащанията никога не се блокират.</target>
+        <note priority="1" from="description">Pricing FAQ a6</note>
       </trans-unit>
       <trans-unit id="pricingH1" datatype="html">
         <source>Simple pricing. 0% of your sales.</source>
