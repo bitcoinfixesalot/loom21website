@@ -139,6 +139,8 @@ export class PricingComponent implements OnInit {
       '@type': 'Product',
       name: 'Loom21',
       description: LD_JSON.pricing_description,
+      // Required by Google for Product rich results.
+      image: 'https://loom21.com/en/assets/images/form-banners/loom-app-laptop-mobile.png',
       // Monthly list prices, so the offers don't depend on the selected billing toggle.
       offers: TIERS.map(t => ({
         '@type': 'Offer',
