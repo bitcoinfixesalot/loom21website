@@ -120,7 +120,7 @@ export const COMPARE_ROWS: CompareRow[] = [
   { label: $localize`:Cmp stores@@cmpStores:Store locations`, values: [1, 2, 5, 25] },
   { label: $localize`:Cmp orders@@cmpOrders:Orders / month`, values: [50, 1000, 5000, 25000] },
   { label: $localize`:Cmp links@@cmpLinks:Payment links (each payment counts as an order)`, values: [UNL, UNL, UNL, UNL] },
-  { label: $localize`:Cmp btc@@cmpBitcoin:Bitcoin — Lightning & on-chain`, values: [true, true, true, true] },
+  { label: $localize`:Cmp btc@@cmpBitcoin:Bitcoin (Lightning & on-chain)`, values: [true, true, true, true] },
   { label: $localize`:Cmp cards@@cmpCards:Card payments (Stripe)`, values: [true, true, true, true] },
   { label: $localize`:Cmp fee@@cmpFee:Loom21 transaction fee`, values: ['0%', '0%', '0%', '0%'] },
   { label: $localize`:Cmp export@@cmpExport:Excel / CSV import & export`, values: [true, true, true, true] },
@@ -137,7 +137,7 @@ export const COMPARE_ROWS: CompareRow[] = [
 
 export const PRICING_FAQ = [
   { q: $localize`:Pricing FAQ q1@@pfaqQ1:Do you take a cut of my sales?`,
-    a: $localize`:Pricing FAQ a1@@pfaqA1:No. Loom21 charges 0% on every payment — Bitcoin and card. You only pay your plan, plus your payment processor's own fees (for example Stripe's card fees, or Lightning network fees).` },
+    a: $localize`:Pricing FAQ a1@@pfaqA1:No. Loom21 charges 0% on every payment, whether Bitcoin or card. You only pay your plan, plus your payment processor's own fees (for example Stripe's card fees, or Lightning network fees).` },
   { q: $localize`:Pricing FAQ q2@@pfaqQ2:What happens if I go over my monthly orders?`,
     a: $localize`:Pricing FAQ a2@@pfaqA2:Nothing stops straight away. We notify you at 80% and 100% of your limit and give you a one-month grace period, once a year. If you're still over after that and don't upgrade within 30 days, payment links and new orders pause until the next month or until you upgrade. Invoices your customers have already opened can always be paid.` },
   { q: $localize`:Pricing FAQ q6@@pfaqQ6:Are payment links limited?`,
@@ -148,5 +148,5 @@ export const PRICING_FAQ = [
   { q: $localize`:Pricing FAQ q4@@pfaqQ4:Can I switch plans or cancel anytime?`,
     a: $localize`:Pricing FAQ a4@@pfaqA4:Yes. Upgrade or downgrade from Settings → Subscription. If you cancel, your plan stays active until the end of the period you paid for; partial periods are not refunded. You can export all your data at any time.` },
   { q: $localize`:Pricing FAQ q5@@pfaqQ5:Is the Free plan really free forever?`,
-    a: $localize`:Pricing FAQ a5@@pfaqA5:Yes — no credit card and no time limit. It includes Bitcoin and card payments, inventory for one store and up to 50 orders a month.` },
+    a: $localize`:Pricing FAQ a5@@pfaqA5:Yes. No credit card and no time limit. It includes Bitcoin and card payments, inventory for one store and up to 50 orders a month.` },
 ];

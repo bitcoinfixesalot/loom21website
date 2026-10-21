@@ -123,7 +123,7 @@
         <note priority="1" from="description">FAQ question 1.2</note>
       </trans-unit>
       <trans-unit id="faqA1_2" datatype="html">
-        <source>Yes. The Free plan is free forever — no credit card required. It includes Bitcoin and card payments, inventory for one store and up to 50 orders a month. Upgrade any time from the Pricing page.</source>
+        <source>Yes. The Free plan is free forever, with no credit card required. It includes Bitcoin and card payments, inventory for one store and up to 50 orders a month. Upgrade any time from the Pricing page.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">12</context>
@@ -179,7 +179,7 @@
         <note priority="1" from="description">FAQ question 2.0</note>
       </trans-unit>
       <trans-unit id="faqA2_0" datatype="html">
-        <source>No. Loom21 never takes custody of your funds. Bitcoin payments go straight to the wallet or server you connect — your BTCPay Server, Lightning Address (e.g. Glow), Speed Wallet account or LNbits wallet — and card payments go to your own Stripe account. Loom21 creates the invoice and tracks its status.</source>
+        <source>No. Loom21 never takes custody of your funds. Bitcoin payments go straight to the wallet or server you connect: your BTCPay Server, a Lightning Address such as Glow, your Speed Wallet account or your LNbits wallet. Card payments go to your own Stripe account. Loom21 creates the invoice and tracks its status.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">22</context>
@@ -195,7 +195,7 @@
         <note priority="1" from="description">FAQ question 2.1</note>
       </trans-unit>
       <trans-unit id="faqA2_1" datatype="html">
-        <source>Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNbits — covering both Lightning and on-chain Bitcoin.</source>
+        <source>Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNbits, covering both Lightning and on-chain Bitcoin.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">24</context>
@@ -227,7 +227,7 @@
         <note priority="1" from="description">FAQ question 2.3</note>
       </trans-unit>
       <trans-unit id="faqA2_3" datatype="html">
-        <source>It depends on the method. BTCPay Server, Speed Wallet, and LNbits connect using an API key or URL you enter in Settings. Lightning Wallet (Glow) works differently — just enter any LNURL-compatible Lightning Address (Glow&apos;s own address works out of the box), then use the Test Connection button to verify it.</source>
+        <source>It depends on the method. BTCPay Server, Speed Wallet, and LNbits connect using an API key or URL you enter in Settings. Lightning Wallet (Glow) works differently: just enter any LNURL-compatible Lightning Address (Glow&apos;s own address works out of the box), then use the Test Connection button to verify it.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">28</context>
@@ -243,7 +243,7 @@
         <note priority="1" from="description">FAQ question 2.4</note>
       </trans-unit>
       <trans-unit id="faqA2_4" datatype="html">
-        <source>For BTCPay Server, Speed Wallet, and LNbits, confirmation is real-time — the order status updates automatically the moment the payment settles. For Lightning Wallet (Glow) and other Lightning Address wallets, real-time confirmation depends on your wallet provider supporting it; use the Test Connection button in Settings to check your specific address.</source>
+        <source>For BTCPay Server, Speed Wallet, and LNbits, confirmation is real-time: the order status updates automatically the moment the payment settles. For Lightning Wallet (Glow) and other Lightning Address wallets, real-time confirmation depends on your wallet provider supporting it; use the Test Connection button in Settings to check your specific address.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">30</context>
@@ -283,7 +283,7 @@
         <note priority="1" from="description">FAQ question 3.2</note>
       </trans-unit>
       <trans-unit id="faqA3_2" datatype="html">
-        <source>Yes. You can create multiple price lists — such as wholesale, retail, or seasonal — and set customer-specific price overrides that always take priority over any price list.</source>
+        <source>Yes. You can create multiple price lists, such as wholesale, retail, or seasonal, and set customer-specific price overrides that always take priority over any price list.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">37</context>
@@ -331,7 +331,7 @@
         <note priority="1" from="description">FAQ question 3.5</note>
       </trans-unit>
       <trans-unit id="faqA3_5" datatype="html">
-        <source>No — 0% on every payment method, including card payments through Stripe. You only pay your plan and your payment processor&apos;s own fees.</source>
+        <source>No. Loom21 charges 0% on every payment method, including card payments through Stripe. You only pay your plan and your payment processor&apos;s own fees.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">43</context>
@@ -371,7 +371,7 @@
         <note priority="1" from="description">FAQ question 4.2</note>
       </trans-unit>
       <trans-unit id="faqA4_2" datatype="html">
-        <source>Custom Fields let you add your own data fields to every product — like a warranty expiry date, a certification flag, or a supplier reference number — beyond the standard name, price, and category fields.</source>
+        <source>Custom Fields let you add your own data fields to every product, like a warranty expiry date, a certification flag, or a supplier reference number, beyond the standard name, price, and category fields.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">50</context>
@@ -387,7 +387,7 @@
         <note priority="1" from="description">FAQ question 4.3</note>
       </trans-unit>
       <trans-unit id="faqA4_3" datatype="html">
-        <source>Yes. You can import products, services, customers, and suppliers from an Excel (.xlsx) or CSV file, using the downloadable templates. To change many records at once, export them to Excel, edit the file and import it back — existing records are updated, not duplicated.</source>
+        <source>Yes. You can import products, services, customers, and suppliers from an Excel (.xlsx) or CSV file, using the downloadable templates. To change many records at once, export them to Excel, edit the file and import it back. Existing records are updated, not duplicated.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">52</context>
@@ -427,7 +427,7 @@
         <note priority="1" from="description">FAQ question 5.1</note>
       </trans-unit>
       <trans-unit id="faqA5_1" datatype="html">
-        <source>Quotes, invoices, receipts, and pickup lists — all as downloadable PDFs. Invoices and receipts become available once an order is marked as paid.</source>
+        <source>Quotes, invoices, receipts, and pickup lists, all as downloadable PDFs. Invoices and receipts become available once an order is marked as paid.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">59</context>
@@ -475,7 +475,7 @@
         <note priority="1" from="description">FAQ question 5.4</note>
       </trans-unit>
       <trans-unit id="faqA5_4" datatype="html">
-        <source>Issue a credit note from the invoice — for returned goods, or as an amount for a discount after the sale. Issued invoices are never edited or deleted, so your numbering stays continuous. An invoice issued by mistake can be annulled instead, as long as it is unpaid, has no credit notes and was issued this calendar month. Loom21 prepares the annulment protocol for you to sign with the customer.</source>
+        <source>Issue a credit note from the invoice, for returned goods or as an amount for a discount after the sale. Issued invoices are never edited or deleted, so your numbering stays continuous. An invoice issued by mistake can be annulled instead, as long as it is unpaid, has no credit notes and was issued this calendar month. Loom21 prepares the annulment protocol for you to sign with the customer.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">66</context>
@@ -523,7 +523,7 @@
         <note priority="1" from="description">FAQ question 5.7</note>
       </trans-unit>
       <trans-unit id="faqA5_7" datatype="html">
-        <source>Loom21&apos;s invoicing is built to Bulgarian VAT law, and today it applies the same rules to every account. Most of them — sequential numbers, the tax point, both VAT numbers, the tax base — are what EU VAT rules ask of any invoice. A few, such as annulment and the VAT sales ledger layout, are Bulgarian only, so if you invoice outside Bulgaria, check those with your accountant.</source>
+        <source>Loom21&apos;s invoicing is built to Bulgarian VAT law, and today it applies the same rules to every account. Most of them (sequential numbers, the tax point, both VAT numbers, the tax base) are what EU VAT rules ask of any invoice. A few, such as annulment and the VAT sales ledger layout, are Bulgarian only, so if you invoice outside Bulgaria, check those with your accountant.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">72</context>
@@ -547,7 +547,7 @@
         <note priority="1" from="description">FAQ question 6.1</note>
       </trans-unit>
       <trans-unit id="faqA6_1" datatype="html">
-        <source>Yes. You can export your products, services, customers, suppliers, and reports as Excel, CSV or JSON at any time — your data is never locked in.</source>
+        <source>Yes. You can export your products, services, customers, suppliers, and reports as Excel, CSV or JSON at any time. Your data is never locked in.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">77</context>
@@ -563,7 +563,7 @@
         <note priority="1" from="description">FAQ question 6.2</note>
       </trans-unit>
       <trans-unit id="faqA6_2" datatype="html">
-        <source>It depends on your plan: 1 user on Free, 3 on Starter, and unlimited users on Growth and Pro — each with role-based access on Growth and above.</source>
+        <source>It depends on your plan: 1 user on Free, 3 on Starter, and unlimited users on Growth and Pro. Growth and Pro also include role-based access.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">79</context>
@@ -723,7 +723,7 @@
         <note priority="1" from="description">Privacy description tag</note>
       </trans-unit>
       <trans-unit id="faqDescription" datatype="html">
-        <source>Answers to common questions about Loom21 - payments, Bitcoin, pricing, price lists, inventory, custom fields, and more.</source>
+        <source>Answers to common questions about Loom21: payments, Bitcoin, pricing, price lists, inventory, custom fields, and more.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">18</context>
@@ -731,7 +731,7 @@
         <note priority="1" from="description">FAQ description tag</note>
       </trans-unit>
       <trans-unit id="roadmapDescription" datatype="html">
-        <source>See what&apos;s shipped, in progress, and planned for Loom21 - payments, pricing, inventory, and more.</source>
+        <source>See what&apos;s shipped, in progress, and planned for Loom21: payments, pricing, inventory, and more.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">19</context>
@@ -771,7 +771,7 @@
         <note priority="1" from="description">Contact description ld_json tag</note>
       </trans-unit>
       <trans-unit id="pricingDescription_ld_json" datatype="html">
-        <source>Loom21 plans: Free, Starter, Growth and Pro - Bitcoin and card payments with 0% platform fees.</source>
+        <source>Loom21 plans: Free, Starter, Growth and Pro. Bitcoin and card payments with 0% platform fees.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">27</context>
@@ -795,7 +795,7 @@
         <note priority="1" from="description">FAQ description ld_json tag</note>
       </trans-unit>
       <trans-unit id="roadmapDescription_ld_json" datatype="html">
-        <source>Loom21&apos;s product roadmap - shipped features, work in progress, and planned improvements.</source>
+        <source>Loom21&apos;s product roadmap: shipped features, work in progress, and planned improvements.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">30</context>
@@ -1262,7 +1262,7 @@
         <note priority="1" from="description">Cmp links</note>
       </trans-unit>
       <trans-unit id="cmpBitcoin" datatype="html">
-        <source>Bitcoin — Lightning &amp; on-chain</source>
+        <source>Bitcoin (Lightning &amp; on-chain)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
           <context context-type="linenumber">123</context>
@@ -1390,7 +1390,7 @@
         <note priority="1" from="description">Pricing FAQ q1</note>
       </trans-unit>
       <trans-unit id="pfaqA1" datatype="html">
-        <source>No. Loom21 charges 0% on every payment — Bitcoin and card. You only pay your plan, plus your payment processor&apos;s own fees (for example Stripe&apos;s card fees, or Lightning network fees).</source>
+        <source>No. Loom21 charges 0% on every payment, whether Bitcoin or card. You only pay your plan, plus your payment processor&apos;s own fees (for example Stripe&apos;s card fees, or Lightning network fees).</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
           <context context-type="linenumber">140</context>
@@ -1470,7 +1470,7 @@
         <note priority="1" from="description">Pricing FAQ q5</note>
       </trans-unit>
       <trans-unit id="pfaqA5" datatype="html">
-        <source>Yes — no credit card and no time limit. It includes Bitcoin and card payments, inventory for one store and up to 50 orders a month.</source>
+        <source>Yes. No credit card and no time limit. It includes Bitcoin and card payments, inventory for one store and up to 50 orders a month.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
           <context context-type="linenumber">151</context>
@@ -1878,7 +1878,7 @@
         <note priority="1" from="description">Subprocessor table location</note>
       </trans-unit>
       <trans-unit id="section5NotSubprocessors" datatype="html">
-        <source>Payment processors that you connect to receive payments from your own customers — such as Stripe (your own account), BTCPay Server, Glow or other Lightning Address wallets, Speed Wallet and LNbits — are not our sub-processors. You choose them, your customers pay them directly, and their own terms and privacy policies apply. Loom21 never holds your funds.</source>
+        <source>Payment processors that you connect to receive payments from your own customers, such as Stripe (your own account), BTCPay Server, Glow or other Lightning Address wallets, Speed Wallet and LNbits, are not our sub-processors. You choose them, your customers pay them directly, and their own terms and privacy policies apply. Loom21 never holds your funds.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">63</context>
@@ -2542,7 +2542,7 @@
         <note priority="1" from="description">Roadmap shipped item 7 title</note>
       </trans-unit>
       <trans-unit id="roadmapShipped7Desc" datatype="html">
-        <source>Start selling with Bitcoin and card payments at no cost — 50 orders a month, no credit card.</source>
+        <source>Start selling with Bitcoin and card payments at no cost: 50 orders a month, no credit card.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">28</context>
@@ -2606,7 +2606,7 @@
         <note priority="1" from="description">Roadmap planned item 1 title</note>
       </trans-unit>
       <trans-unit id="roadmapPlanned1Desc" datatype="html">
-        <source>Read and write access to your Loom21 data, plus event webhooks — included on Growth and Pro.</source>
+        <source>Read and write access to your Loom21 data, plus event webhooks. Included on Growth and Pro.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">40</context>
@@ -2974,7 +2974,7 @@
         <note priority="1" from="description">Hero eyebrow</note>
       </trans-unit>
       <trans-unit id="homeH2TopTitle" datatype="html">
-        <source>Inventory, invoices and payment links - get paid in Bitcoin or by card</source>
+        <source>Inventory, invoices and payment links: get paid in Bitcoin or by card</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">8,9</context>
@@ -3086,7 +3086,7 @@
         <note priority="1" from="description">Manage clients and suppliers</note>
       </trans-unit>
       <trans-unit id="teamRolesFeature" datatype="html">
-        <source>Give each team member only the access they need - from cashier to accountant</source>
+        <source>Give each team member only the access they need, from cashier to accountant</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">56,57</context>
@@ -3094,7 +3094,7 @@
         <note priority="1" from="description">Team roles feature</note>
       </trans-unit>
       <trans-unit id="controlData" datatype="html">
-        <source>Control your own data - Import and Export</source>
+        <source>Control your own data: import and export</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">57,58</context>
@@ -3150,7 +3150,7 @@
         <note priority="1" from="description">Payments made simple</note>
       </trans-unit>
       <trans-unit id="sendPaymentLinksAnd" datatype="html">
-        <source>Send payment links for Bitcoin Lightning, on-chain Bitcoin, or fiat card payments - powered by Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, LNbits, and more. Effortless invoicing for everyone — with 0% Loom21 fees.</source>
+        <source>Send payment links for Bitcoin Lightning, on-chain Bitcoin, or fiat card payments, powered by Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, LNbits, and more. Effortless invoicing for everyone, with 0% Loom21 fees.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">89,91</context>
@@ -3186,7 +3186,7 @@
         <note priority="1" from="description">Integrations description</note>
       </trans-unit>
       <trans-unit id="integrationsApiSoon" datatype="html">
-        <source>Open API coming soon - tell us what you&apos;d connect.</source>
+        <source>Open API coming soon. Tell us what you&apos;d connect.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">113,118</context>
@@ -3202,7 +3202,7 @@
         <note priority="1" from="description">Price lists title</note>
       </trans-unit>
       <trans-unit id="priceListsDesc" datatype="html">
-        <source>Create wholesale, retail, or seasonal price lists with quantity-based tiers, percentage discounts, or custom formulas. Add customer-specific overrides so your best clients always get the right price - resolved automatically at checkout.</source>
+        <source>Create wholesale, retail, or seasonal price lists with quantity-based tiers, percentage discounts, or custom formulas. Add customer-specific overrides so your best clients always get the right price, resolved automatically at checkout.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">126,128</context>
@@ -3218,7 +3218,7 @@
         <note priority="1" from="description">Custom fields title</note>
       </trans-unit>
       <trans-unit id="customFieldsDesc" datatype="html">
-        <source>Go beyond name, price, and category. Add your own fields - warranty dates, certifications, supplier references, and more - to every product, and fill them in right from the product page.</source>
+        <source>Go beyond name, price, and category. Add your own fields to every product, such as warranty dates, certifications and supplier references, and fill them in right from the product page.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">157,159</context>
@@ -3362,7 +3362,7 @@
         <note priority="1" from="description">Stat ownership</note>
       </trans-unit>
       <trans-unit id="statOwnershipDesc" datatype="html">
-        <source>Import products, customers and suppliers from Excel or CSV, and export them and your reports as Excel, CSV or JSON - any time. No lock-in.</source>
+        <source>Import products, customers and suppliers from Excel or CSV, and export them and your reports as Excel, CSV or JSON at any time. No lock-in.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">241,244</context>
@@ -3386,7 +3386,7 @@
         <note priority="1" from="description">Stat zero fee</note>
       </trans-unit>
       <trans-unit id="statZeroFeeDesc" datatype="html">
-        <source>You pay your plan. We take nothing from your sales - on Bitcoin or card.</source>
+        <source>You pay your plan. We take nothing from your sales, on Bitcoin or card.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">255,258</context>
@@ -3532,7 +3532,7 @@
         <note priority="1" from="description">Bitcoin button</note>
       </trans-unit>
       <trans-unit id="pricingCheckoutUnavailable" datatype="html">
-        <source>Checkout is temporarily unavailable — start free and upgrade from Settings.</source>
+        <source>Checkout is temporarily unavailable. Start free and upgrade from Settings.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
           <context context-type="linenumber">30,35</context>
@@ -3628,7 +3628,7 @@
         <note priority="1" from="description">What you pay plan</note>
       </trans-unit>
       <trans-unit id="pricingPayPlanDesc" datatype="html">
-        <source>A fixed monthly or annual price — the same no matter how much you sell.</source>
+        <source>A fixed monthly or annual price, the same no matter how much you sell.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
           <context context-type="linenumber">111,114</context>
@@ -3644,7 +3644,7 @@
         <note priority="1" from="description">What you pay processor</note>
       </trans-unit>
       <trans-unit id="pricingPayProcessorDesc" datatype="html">
-        <source>Set by the provider you connect — Stripe for cards, or your Bitcoin wallet or server — and paid to them, not to us.</source>
+        <source>Set by the provider you connect (Stripe for cards, or your Bitcoin wallet or server) and paid to them, not to us.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
           <context context-type="linenumber">115,118</context>

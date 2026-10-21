@@ -25,7 +25,7 @@ export const ROADMAP_CONSTANTS = {
   shipped6Title: $localize`:Roadmap shipped item 6 title@@roadmapShipped6Title:Sales & Deliveries Reports`,
   shipped6Desc: $localize`:Roadmap shipped item 6 description@@roadmapShipped6Desc:Searchable, filterable reports with Excel, CSV and JSON export.`,
   shipped7Title: $localize`:Roadmap shipped item 7 title@@roadmapShipped7Title:Free Forever Plan`,
-  shipped7Desc: $localize`:Roadmap shipped item 7 description@@roadmapShipped7Desc:Start selling with Bitcoin and card payments at no cost — 50 orders a month, no credit card.`,
+  shipped7Desc: $localize`:Roadmap shipped item 7 description@@roadmapShipped7Desc:Start selling with Bitcoin and card payments at no cost: 50 orders a month, no credit card.`,
 
   // In Progress
   inProgress1Title: $localize`:Roadmap in progress item 1 title@@roadmapInProgress1Title:More Payment Processors`,
@@ -37,7 +37,7 @@ export const ROADMAP_CONSTANTS = {
 
   // Planned
   planned1Title: $localize`:Roadmap planned item 1 title@@roadmapPlanned1Title:Full API & Webhooks`,
-  planned1Desc: $localize`:Roadmap planned item 1 description@@roadmapPlanned1Desc:Read and write access to your Loom21 data, plus event webhooks — included on Growth and Pro.`,
+  planned1Desc: $localize`:Roadmap planned item 1 description@@roadmapPlanned1Desc:Read and write access to your Loom21 data, plus event webhooks. Included on Growth and Pro.`,
   planned2Title: $localize`:Roadmap planned item 2 title@@roadmapPlanned2Title:More Languages`,
   planned2Desc: $localize`:Roadmap planned item 2 description@@roadmapPlanned2Desc:Expanding beyond English and Bulgarian to support more of our users.`,
   planned3Title: $localize`:Roadmap planned item 3 title@@roadmapPlanned3Title:Native Mobile Apps`,
