@@ -7,7 +7,6 @@ const path = require('path');
 const today = new Date().toISOString().split('T')[0];
 
 const mainDomain = 'https://loom21.com';
-const appDomain = 'https://app.loom21.com';
 
 // Pages on the main marketing site
 const mainPages = [
@@ -21,22 +20,12 @@ const mainPages = [
   { path: '/terms/',         changefreq: 'yearly',  priority: '0.3' },
 ];
 
-// Pages on the app subdomain (external — not built here, but included for search coverage)
-const appPages = [
-  { path: '/login/',  changefreq: 'monthly', priority: '0.8' },
-  { path: '/signup/', changefreq: 'monthly', priority: '0.8' },
-];
-
+// App subdomain pages (login, signup) are deliberately left out: they are noindex in the app,
+// and a sitemap should only list URLs on its own host.
 const langs = ['en', 'bg'];
-// The app subdomain uses 'en-US' as its English locale prefix
-const appLangPrefix = { en: 'en-US', bg: 'bg' };
 
 function mainUrl(lang, pagePath) {
   return `${mainDomain}/${lang}${pagePath}`;
-}
-
-function appUrl(lang, pagePath) {
-  return `${appDomain}/${appLangPrefix[lang]}${pagePath}`;
 }
 
 function buildEntry(loc, enHref, bgHref, changefreq, priority) {
@@ -59,18 +48,6 @@ for (const page of mainPages) {
       mainUrl(lang, page.path),
       mainUrl('en', page.path),
       mainUrl('bg', page.path),
-      page.changefreq,
-      page.priority
-    ));
-  }
-}
-
-for (const page of appPages) {
-  for (const lang of langs) {
-    entries.push(buildEntry(
-      appUrl(lang, page.path),
-      appUrl('en', page.path),
-      appUrl('bg', page.path),
       page.changefreq,
       page.priority
     ));
