@@ -13,7 +13,6 @@ import termsBg from './content/terms.bg.md';
   selector: 'app-terms',
   imports: [MarkdownComponent],
   templateUrl: './terms.component.html',
-  styleUrl: './terms.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TermsComponent implements OnInit {

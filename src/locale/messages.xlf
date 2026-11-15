@@ -16,6 +16,10 @@
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
           <context context-type="linenumber">19,21</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/documentation/documentation.component.html</context>
+          <context context-type="linenumber">25,27</context>
+        </context-group>
         <note priority="1" from="description">Docs menu</note>
       </trans-unit>
       <trans-unit id="pricing" datatype="html">
@@ -2821,7 +2825,7 @@
         <source>We couldn&apos;t load the documentation right now. Please try again, or read it directly on GitHub.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/documentation/documentation.component.html</context>
-          <context context-type="linenumber">44,45</context>
+          <context context-type="linenumber">45,46</context>
         </context-group>
         <note priority="1" from="description">Docs load error</note>
       </trans-unit>
@@ -2829,7 +2833,7 @@
         <source>Try Again</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/documentation/documentation.component.html</context>
-          <context context-type="linenumber">46,47</context>
+          <context context-type="linenumber">47,48</context>
         </context-group>
         <note priority="1" from="description">Retry button</note>
       </trans-unit>
@@ -2837,7 +2841,7 @@
         <source>View on GitHub</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/documentation/documentation.component.html</context>
-          <context context-type="linenumber">47,52</context>
+          <context context-type="linenumber">48,53</context>
         </context-group>
         <note priority="1" from="description">View on GitHub button</note>
       </trans-unit>

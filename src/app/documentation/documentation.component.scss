@@ -237,3 +237,22 @@
     border-radius: 12px;
   }
 }
+
+/* The page has its own h1, so the README's centred title is hidden and its intro is left-aligned */
+::ng-deep markdown {
+  h3[align='center'] {
+    display: none;
+  }
+
+  p[align='center'] {
+    text-align: left;
+    color: var(--text-muted);
+  }
+}
+
+/* The sidebar replaces the README's own table of contents where it is shown */
+@media (min-width: 992px) {
+  ::ng-deep markdown details {
+    display: none;
+  }
+}

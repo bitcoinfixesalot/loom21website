@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
 import { PRIVACY_CONSTANTS, PRIVACY_SUBPROCESSORS } from '../constants/privacy-policy-const';
 import { ProtectedEmailComponent } from '../shared/protected-email/protected-email.component';
+import { LeadInComponent } from '../shared/lead-in.component';
 import { RouterLink } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { TITLES, DESCRIPTIONS, LD_JSON } from '../constants/localized-const';
@@ -9,7 +10,7 @@ import { StructuredDataService } from '../services/structured-data.service';
 
 @Component({
   selector: 'app-privacy',
-  imports: [RouterLink, ProtectedEmailComponent],
+  imports: [RouterLink, ProtectedEmailComponent, LeadInComponent],
   templateUrl: './privacy.component.html',
   styleUrl: './privacy.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
