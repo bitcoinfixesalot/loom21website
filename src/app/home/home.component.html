@@ -30,43 +30,58 @@
 </section>
 
 <!-- Features -->
-<div class="bg-light">
-  <section>
-    <div class="banner spacer section-tint">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7 col-lg-5 align-self-center" data-aos="fade-right" data-aos-duration="1500">
-            <h2 class="title font-bold" i18n="Features title@@featuresTitle">Features</h2>
-            <h3 class="features-subtitle" i18n="Benefits and features@@benefitsAndFeatures">Everything you need to sell, get paid and stay in stock</h3>
-            <div class="m-t-10 m-b-30">
-              <ul class="gfg">
-                <li i18n="Send payment links@@sendPaymentLinks">Create and share payment links and sale orders instantly</li>
-                <li i18n="Accept Payments@@acceptPayments">Accept Bitcoin (Lightning & on-chain) and credit/debit card payments</li>
-                <li i18n="Track inventory@@trackInventory">Track product inventory across multiple stores</li>
-                <li i18n="Flexible price lists@@flexiblePriceLists">Set up wholesale, retail, or tiered price lists with customer-specific pricing</li>
-                <li i18n="Custom fields feature@@customFieldsFeature">Add custom fields to track exactly what matters for your products</li>
-                <li i18n="Manage clients and suppliers@@manageClientsSuppliers">Manage clients and suppliers</li>
-                <li i18n="Team roles feature@@teamRolesFeature">Give each team member only the access they need, from cashier to accountant</li>
-                <li i18n="Control your own data@@controlData">Control your own data: import and export</li>
-                <li i18n="Document generation@@documentGeneration">Generate quotes, invoices, receipts, and pickup lists</li>
-                <li i18n="Order history@@orderHistory">View customer order history and reorder with one click</li>
-                <li i18n="Barcode QR@@barcodeQr">Generate barcodes and QR codes for products</li>
-                <li i18n="Get notified@@getInvoiceNotification">See instantly when an invoice is paid</li>
-                <li i18n="Multi language@@multiLanguage">Available in multiple languages</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-5 col-lg-6 align-self-center ms-auto mt-4 mt-md-0" data-aos="fade-left" data-aos-duration="1500">
-            <img src="assets/images/form-banners/loom-app-laptop-mobile-1182.webp"
-              srcset="assets/images/form-banners/loom-app-laptop-mobile-640.webp 640w, assets/images/form-banners/loom-app-laptop-mobile-1182.webp 1182w"
-              sizes="(min-width: 1400px) 636px, (min-width: 1200px) 546px, (min-width: 992px) 456px, (min-width: 768px) 276px, (min-width: 576px) 516px, calc(100vw - 24px)"
-              alt="desktop and mobile application" class="img-fluid" width="1182" height="665" loading="lazy" />
-          </div>
+<!-- The 13 feature lines keep their original i18n ids; only the three group titles are new -->
+<section class="features section-tint">
+  <div class="container">
+    <div class="features-head">
+      <h2 class="features-title" i18n="Features title@@featuresTitle">Features</h2>
+      <h3 class="features-subtitle" i18n="Benefits and features@@benefitsAndFeatures">Everything you need to sell, get paid and stay in stock</h3>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa fa-credit-card" aria-hidden="true"></i></div>
+          <h3 i18n="Features group sales@@featuresGroupSales">Sales and payments</h3>
+          <ul class="gfg">
+            <li i18n="Send payment links@@sendPaymentLinks">Create and share payment links and sale orders instantly</li>
+            <li i18n="Accept Payments@@acceptPayments">Accept Bitcoin (Lightning & on-chain) and credit/debit card payments</li>
+            <li i18n="Get notified@@getInvoiceNotification">See instantly when an invoice is paid</li>
+            <li i18n="Document generation@@documentGeneration">Generate quotes, invoices, receipts, and pickup lists</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa fa-cubes" aria-hidden="true"></i></div>
+          <h3 i18n="Features group stock@@featuresGroupStock">Inventory and pricing</h3>
+          <ul class="gfg">
+            <li i18n="Track inventory@@trackInventory">Track product inventory across multiple stores</li>
+            <li i18n="Flexible price lists@@flexiblePriceLists">Set up wholesale, retail, or tiered price lists with customer-specific pricing</li>
+            <li i18n="Custom fields feature@@customFieldsFeature">Add custom fields to track exactly what matters for your products</li>
+            <li i18n="Barcode QR@@barcodeQr">Generate barcodes and QR codes for products</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+          <h3 i18n="Features group business@@featuresGroupBusiness">Customers, team and data</h3>
+          <ul class="gfg">
+            <li i18n="Manage clients and suppliers@@manageClientsSuppliers">Manage clients and suppliers</li>
+            <li i18n="Order history@@orderHistory">View customer order history and reorder with one click</li>
+            <li i18n="Team roles feature@@teamRolesFeature">Give each team member only the access they need, from cashier to accountant</li>
+            <li i18n="Control your own data@@controlData">Control your own data: import and export</li>
+            <li i18n="Multi language@@multiLanguage">Available in multiple languages</li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
-</div>
+    <img src="assets/images/form-banners/loom-app-laptop-mobile-1182.webp"
+      srcset="assets/images/form-banners/loom-app-laptop-mobile-640.webp 640w, assets/images/form-banners/loom-app-laptop-mobile-1182.webp 1182w"
+      sizes="(min-width: 992px) 820px, (min-width: 768px) 696px, (min-width: 576px) 516px, calc(100vw - 24px)"
+      alt="desktop and mobile application" class="features-shot" width="1182" height="665" loading="lazy" />
+  </div>
+</section>
 
 <!-- Payments Made Simple -->
 <div class="bg-light">
@@ -267,3 +282,16 @@
     </div>
   </section>
 </div>
+
+<!-- Closing call to action -->
+<section class="cta-band">
+  <div class="container">
+    <h2 i18n="Closing CTA title@@closingCtaTitle">Try Loom21 free</h2>
+    <p class="cta-band-sub" i18n="Closing CTA text@@closingCtaText">The free plan covers 50 orders a month, forever. Upgrade only when you need more.</p>
+    <div class="d-grid d-sm-flex gap-3 cta-band-buttons">
+      <a [href]="appUrl" target="_blank" class="btn cta-band-primary" i18n="Try for free button@@tryForFreeButton">Start free</a>
+      <a routerLink="/pricing" class="btn cta-band-secondary" i18n="Pricing nav@@pricingNav">Pricing</a>
+    </div>
+    <p class="cta-band-trust" i18n="Hero trust line@@heroTrustLine">No credit card · Funds go straight to your wallet · Cancel anytime</p>
+  </div>
+</section>

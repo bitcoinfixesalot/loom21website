@@ -4134,6 +4134,51 @@
         </context-group>
         <note priority="1" from="description">FAQ answer 6.5</note>
       </trans-unit>
+      <trans-unit id="featuresGroupSales" datatype="html">
+        <source>Sales and payments</source>
+        <target>Продажби и плащания</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">44,46</context>
+        </context-group>
+        <note priority="1" from="description">Features group sales</note>
+      </trans-unit>
+      <trans-unit id="featuresGroupStock" datatype="html">
+        <source>Inventory and pricing</source>
+        <target>Склад и цени</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">56,58</context>
+        </context-group>
+        <note priority="1" from="description">Features group stock</note>
+      </trans-unit>
+      <trans-unit id="featuresGroupBusiness" datatype="html">
+        <source>Customers, team and data</source>
+        <target>Клиенти, екип и данни</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">68,70</context>
+        </context-group>
+        <note priority="1" from="description">Features group business</note>
+      </trans-unit>
+      <trans-unit id="closingCtaTitle" datatype="html">
+        <source>Try Loom21 free</source>
+        <target>Изпробвайте Loom21 безплатно</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">289,290</context>
+        </context-group>
+        <note priority="1" from="description">Closing CTA title</note>
+      </trans-unit>
+      <trans-unit id="closingCtaText" datatype="html">
+        <source>The free plan covers 50 orders a month, forever. Upgrade only when you need more.</source>
+        <target>Безплатният план включва 50 поръчки на месец, завинаги. Надграждате само когато ви трябва повече.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">290,291</context>
+        </context-group>
+        <note priority="1" from="description">Closing CTA text</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>
