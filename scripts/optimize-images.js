@@ -22,7 +22,6 @@ const graphics = [
   { file: 'logos/glow-wallet-logo.png', height: 96 },
   { file: 'logos/speedwallet-logo.png', height: 96 },
   { file: 'logos/btcpay-logo.png', height: 80 },
-  { file: 'form-banners/bitcoin-lightning2.png', height: 234 },
 ];
 
 const base = (file) => file.replace(/\.(png|PNG)$/, '');

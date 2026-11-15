@@ -13,6 +13,20 @@ function run() {
   const port = process.env.PORT || 80;
   const server = express();
 
+  // Do not advertise the server software (the language apps in server.ts turn it off too)
+  server.disable('x-powered-by');
+
+  // Basic security headers on every response. No Content-Security-Policy here: the pages use
+  // inline scripts and several outside hosts (Bootstrap CDN, Simple Analytics, YouTube), so a
+  // policy needs its own careful pass. No HSTS either: that is a decision for the domain owner.
+  server.use((req, res, next) => {
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+    res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+    res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
+    next();
+  });
+
   // gzip/Brotli for HTML, CSS, JS, JSON, SVG (fonts and images are already compressed and are skipped)
   server.use(compression());
 

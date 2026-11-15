@@ -14,5 +14,6 @@ export const routes: Routes = [
     { path: '404', loadComponent: () => import('./not-found/not-found.component').then(m => m.NotFoundComponent) },
     { path: 'privacy-policy', loadComponent: () => import('./privacy/privacy.component').then(m => m.PrivacyComponent) },
     { path: 'terms', loadChildren: () => import('./terms/terms.routes') },
-    { path: '**', redirectTo: '/404', pathMatch: 'full'}
+    // Unknown URLs show the 404 page in place (the address stays, the server answers 404) instead of redirecting
+    { path: '**', loadComponent: () => import('./not-found/not-found.component').then(m => m.NotFoundComponent) }
 ];

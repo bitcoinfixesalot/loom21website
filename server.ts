@@ -12,6 +12,7 @@ import { REQUEST, RESPONSE } from './src/express.tokens';
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
+  server.disable('x-powered-by');
   const serverDistFolder = dirname(fileURLToPath(import.meta.url));
 
     /**

@@ -30,7 +30,7 @@ import { RevealDirective } from '../shared/reveal.directive';
 import { OgMetaService } from '../services/og-meta.service';
 import { StructuredDataService } from '../services/structured-data.service';
 
-// TODO: replace with the real Loom21 promo video ID once available (see https://youtube.com/watch?v=<id>)
+// The Loom21 promo video on YouTube (https://youtube.com/watch?v=<id>)
 const PROMO_VIDEO_ID = 'i5AcWrVMqxQ';
 const PROMO_VIDEO_ORIGIN = 'https://www.youtube-nocookie.com';
 
