@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
-import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
+import { BREADCRUMBS, DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
 import { IN_PROGRESS_ITEMS, PLANNED_ITEMS, ROADMAP_CONSTANTS, SHIPPED_ITEMS } from '../constants/roadmap-const';
 import { OgMetaService } from '../services/og-meta.service';
 import { StructuredDataService } from '../services/structured-data.service';
@@ -43,8 +43,8 @@ export class RoadmapComponent implements OnInit {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         'itemListElement': [
-          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `https://loom21.com/${this.localeId}/` },
-          { '@type': 'ListItem', 'position': 2, 'name': 'Roadmap', 'item': `https://loom21.com/${this.localeId}/roadmap/` }
+          { '@type': 'ListItem', 'position': 1, 'name': BREADCRUMBS.home, 'item': `https://loom21.com/${this.localeId}/` },
+          { '@type': 'ListItem', 'position': 2, 'name': BREADCRUMBS.roadmap, 'item': `https://loom21.com/${this.localeId}/roadmap/` }
         ]
       }
     ]);

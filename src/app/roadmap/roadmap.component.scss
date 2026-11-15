@@ -2,7 +2,7 @@
     padding: 60px 0;
 
     .intro {
-        color: #555;
+        color: var(--text-muted);
         max-width: 700px;
     }
 }
@@ -16,18 +16,9 @@
     }
 }
 
+// Surface, radius, padding and shadow come from the shared .ui-card (src/styles.scss)
 .roadmap-card {
-    background: white;
-    border-radius: 8px;
-    padding: 24px;
-    height: 100%;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     border-left: 4px solid #999;
-    transition: box-shadow 0.2s ease;
-
-    &:hover {
-        box-shadow: 0 4px 16px rgba(0,0,0,0.14);
-    }
 
     h3 {
         font-size: 1.05rem;
@@ -36,7 +27,7 @@
     }
 
     p {
-        color: #555;
+        color: var(--text-muted);
         margin: 0;
     }
 }
@@ -46,7 +37,7 @@
 }
 
 .roadmap-in-progress .roadmap-card {
-    border-left-color: #1976d2;
+    border-left-color: var(--brand);
 }
 
 .roadmap-planned .roadmap-card {

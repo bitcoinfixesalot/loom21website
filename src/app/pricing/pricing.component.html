@@ -1,27 +1,26 @@
 <div class="container pricing-page">
   <header class="pricing-header text-center">
-    <h1 class="title font-bold" i18n="Pricing H1@@pricingH1">Simple pricing. 0% of your sales.</h1>
+    <h1 class="page-title" i18n="Pricing H1@@pricingH1">Simple pricing. 0% of your sales.</h1>
     <p class="pricing-sub" i18n="Pricing subhead@@pricingSub">Start free forever. Upgrade when you grow. Loom21 never takes a cut of your Bitcoin or card payments.</p>
   </header>
 
   <!-- Billing toggle -->
-  <div class="btn-group d-flex justify-content-center" role="group" i18n-aria-label="Billing period selection@@pricingBillingToggle" aria-label="Billing period selection">
+  <div class="billing-toggle" role="group" i18n-aria-label="Billing period selection@@pricingBillingToggle" aria-label="Billing period selection">
     <input type="radio" class="btn-check" name="billing" id="month" value="month"
       [ngModel]="billing()" (ngModelChange)="billing.set($event)" autocomplete="off">
-    <label class="btn btn-outline-primary" for="month" i18n="Monthly button@@monthly">MONTHLY</label>
+    <label class="btn btn-outline-primary" for="month"><span i18n="Monthly button@@monthly">Monthly</span></label>
 
     <input type="radio" class="btn-check" name="billing" id="year" value="year"
       [ngModel]="billing()" (ngModelChange)="billing.set($event)" autocomplete="off">
     <label class="btn btn-outline-primary" for="year">
-      <ng-container i18n="Annual button@@annual">ANNUAL</ng-container>
+      <span i18n="Annual button@@annual">Annual</span>
       <span class="badge bg-success rounded-pill billing-badge">{{ ANNUAL_BADGE }}</span>
     </label>
 
     <input type="radio" class="btn-check" name="billing" id="bitcoin" value="bitcoin"
       [ngModel]="billing()" (ngModelChange)="billing.set($event)" autocomplete="off">
     <label class="btn btn-outline-primary" for="bitcoin">
-      <i class="fa fa-bitcoin" aria-hidden="true"></i>
-      <ng-container i18n="Bitcoin button@@bitcoin">BITCOIN</ng-container>
+      <span><i class="fa fa-bitcoin" aria-hidden="true"></i>&ngsp;<ng-container i18n="Bitcoin button@@bitcoin">Bitcoin</ng-container></span>
       <span class="badge bg-success rounded-pill billing-badge">{{ BITCOIN_BADGE }}</span>
     </label>
   </div>
@@ -33,7 +32,7 @@
   <!-- Plan cards -->
   <div class="pricing-grid">
     @for (card of cards(); track card.key) {
-      <div class="card pricing-plan text-center" [class.pricing-plan--highlight]="card.highlight" [id]="'plan-' + card.key">
+      <div class="card ui-card pricing-plan text-center" [class.pricing-plan--highlight]="card.highlight" [id]="'plan-' + card.key">
         @if (card.highlight) {
           <span class="pricing-ribbon" i18n="Most popular ribbon@@pricingMostPopular">Most popular</span>
         }
@@ -50,7 +49,7 @@
               <li class="list-group-item">{{ bullet }}</li>
             }
           </ul>
-          <button type="button" class="btn" [class.btn-primary]="card.key !== 'free'" [class.btn-success]="card.key === 'free'" (click)="onSelect(card)">{{ card.cta }}</button>
+          <button type="button" class="btn" [class.btn-primary]="card.highlight" [class.btn-outline-primary]="!card.highlight" (click)="onSelect(card)">{{ card.cta }}</button>
         </div>
       </div>
     }
@@ -58,11 +57,11 @@
 
   <!-- Custom plan -->
   <div class="custom-plan-section">
-    <div class="card text-center bg-light border-primary">
+    <div class="card custom-plan text-center">
       <div class="card-body">
-        <h2 class="card-title text-primary" i18n="Need custom plan@@needAcustomPlan">Need a Custom Plan?</h2>
+        <h2 class="card-title text-primary" i18n="Need custom plan@@needAcustomPlan">Need a custom plan?</h2>
         <p class="card-text" i18n="Personalized quote@@personalizedQuote">Need more stores, orders or an SLA? Custom plans with unlimited users and dedicated support.</p>
-        <a routerLink="/contact" class="btn btn-primary btn-lg" i18n="Contact us button@@contactUsPricing">Contact Us</a>
+        <a routerLink="/contact" class="btn btn-primary btn-lg" i18n="Contact us button@@contactUsPricing">Contact us</a>
       </div>
     </div>
   </div>
@@ -71,21 +70,21 @@
   <section class="compare-section">
     <h2 class="section-title text-center" i18n="Compare plans title@@pricingCompareTitle">Compare plans</h2>
     <div class="table-responsive">
-      <table class="table compare-table">
-        <thead>
-          <tr>
-            <th scope="col"><span class="visually-hidden" i18n="Compare feature column@@cmpFeature">Feature</span></th>
+      <table class="table compare-table" role="table">
+        <thead role="rowgroup">
+          <tr role="row">
+            <th scope="col" role="columnheader" class="compare-corner"><span class="visually-hidden" i18n="Compare feature column@@cmpFeature">Feature</span></th>
             @for (tier of TIERS; track tier.key) {
-              <th scope="col" [class.is-highlight]="tier.highlight">{{ tier.name }}</th>
+              <th scope="col" role="columnheader" [class.is-highlight]="tier.highlight">{{ tier.name }}</th>
             }
           </tr>
         </thead>
-        <tbody>
+        <tbody role="rowgroup">
           @for (row of COMPARE_ROWS; track row.label) {
-            <tr>
-              <th scope="row">{{ row.label }}</th>
+            <tr role="row">
+              <th scope="row" role="rowheader">{{ row.label }}</th>
               @for (value of row.values; track $index) {
-                <td>
+                <td role="cell">
                   @if (value === true) {
                     <i class="fa fa-check text-success" aria-hidden="true"></i><span class="visually-hidden" i18n="Compare yes@@cmpYes">Yes</span>
                   } @else if (value === false) {
@@ -117,6 +116,7 @@
       <div class="pay-item pay-item--zero">
         <h3 i18n="What you pay loom21 fee@@pricingPayFeeTitle">Loom21 fee on your sales</h3>
         <p class="pay-zero">{{ formatPrice(0) }}</p>
+        <p i18n="What you pay loom21 fee desc@@pricingPayFeeDesc">Loom21 never takes a percentage of your Bitcoin or card payments.</p>
       </div>
     </div>
     <p class="pay-disclaimer small text-muted text-center" i18n="What you pay disclaimer@@pricingPayDisclaimer">Loom21 doesn't set or collect processor fees. Check your provider's pricing for card and Lightning rates.</p>

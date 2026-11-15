@@ -49,4 +49,13 @@ export class AppComponent {
         this.canonicalService.setHreflangTags();
       });
   }
+
+  /** Moves keyboard focus past the header. Done here because the anchor service would only scroll. */
+  skipToContent(event: Event): void {
+    event.preventDefault();
+    event.stopPropagation();
+    const main = this.dom.getElementById('main-content');
+    main?.focus({ preventScroll: true });
+    main?.scrollIntoView();
+  }
 }

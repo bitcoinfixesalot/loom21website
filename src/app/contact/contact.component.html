@@ -1,16 +1,15 @@
-<div class="contact1">
+<div class="bg-light contact-page">
   <div class="row">
     <!-- <div class="col-md-12">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1619902.0054433027!2d-122.68851282163044!3d37.534535608111824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1507725785789" width="100%" height="450" frameborder="0" style="border:0"></iframe>
   </div> -->
-  <div class="spacer">
+  <div>
     <div class="container">
       <div class="row m-0">
         <div class="col-lg-8">
           <div class="contact-box p-r-40">
-            <h2 class="title" i18n="Contact us title@@contactUs">Contact Us</h2>
-            <form [formGroup]="form" (ngSubmit)="onSubmit()" data-aos="fade-left"
-              data-aos-duration="1200">
+            <h1 class="page-title" i18n="Contact us title@@contactUs">Contact us</h1>
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
               <div class="row">
                 <div class="col-lg-12">
                   <div class="form-group m-t-15">
@@ -31,7 +30,7 @@
                   </div>
                   <div class="col-lg-12">
                     <div class="form-group m-t-15">
-                      <label i18n="Email label@@email" for="inputEmail" class="mb-2">Email Address</label>
+                      <label i18n="Email label@@email" for="inputEmail" class="mb-2">Email address</label>
                       <input formControlName="email" id="inputEmail" class="form-control"
                         i18n-placeholder="Enter your email placeholder@@emailPlaceholder" type="text" placeholder="Enter your email...">
                         @if (email!.invalid && (email!.dirty || email!.touched)) {
@@ -87,7 +86,7 @@
                         </div>
                       </div>
                       <div class="col-lg-12">
-                        <button [disabled]="showSuccess() || isSubmitting()" type="submit" class="btn waves-effect waves-light btn-primary m-r-20 m-t-5">
+                        <button [disabled]="showSuccess() || isSubmitting()" type="submit" class="btn btn-primary m-r-20 m-t-5">
                           @if (isSubmitting()) {
                             <span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span>
                           }
@@ -102,13 +101,13 @@
                     </form>
                   </div>
                 </div>
-                <div class="col-lg-4" data-aos="fade-right" data-aos-duration="1200">
+                <div class="col-lg-4">
                   <div class="contact-detail-box">
-                    <h4 i18n="Contact detail title@@contactDetailTitle">We'd love to hear from you</h4>
+                    <h2 class="contact-detail-title" i18n="Contact detail title@@contactDetailTitle">We'd love to hear from you</h2>
                     <p i18n="Contact detail response@@contactDetailResponse">We typically respond within one business day.</p>
-                    <p><span i18n="Contact email label@@contactEmailLabel">Or email us:</span> <app-protected-email /></p>
+                    <p><span i18n="Contact email label@@contactEmailLabel">Or email us:</span>&ngsp;<app-protected-email /></p>
                     <hr />
-                    <h6 i18n="Contact community@@contactCommunity">Community</h6>
+                    <h3 class="contact-detail-label" i18n="Contact community@@contactCommunity">Community</h3>
                     <ul class="list-unstyled contact-links">
                       <li>
                         <a href="https://t.me/+kcFe6QiEau0yNTVk" target="_blank">
@@ -118,7 +117,7 @@
                       </li>
                       <li>
                         <a href="https://x.com/loom21app" target="_blank">
-                          <i class="fa fa-twitter" aria-hidden="true"></i>
+                          <svg class="x-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                           <span i18n="Follow twitter@@followTwitter">Follow on X</span>
                         </a>
                       </li>

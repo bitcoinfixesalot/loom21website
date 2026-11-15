@@ -27,7 +27,7 @@ src/app/
 ├── roadmap/         # Roadmap page (Shipped / In Progress / Planned)
 ├── terms/           # Terms of Service (markdown in terms/content/terms.{en,bg}.md, imported as text)
 ├── not-found/       # 404 page
-├── shared/          # Shared components (protected-email: click-to-reveal contact email)
+├── shared/          # Shared components (protected-email: click-to-reveal contact email; reveal.directive: scroll reveal)
 ├── services/        # Shared services (see below)
 └── constants/       # Localized content (en/bg)
     ├── localized-const.ts   # TITLES, DESCRIPTIONS, TAGS, LD_JSON constants
@@ -73,7 +73,21 @@ scripts/
 - `src/locale/` - Bulgarian translations (XLF format)
 - `src/sitemap.xml` - Auto-generated on build (do not edit manually)
 - `src/robots.txt` - Allows /en/ and /bg/, references sitemap
+- `src/styles.scss` - Design tokens, Bootstrap colour overrides, `.ui-card`, scroll-reveal and reduced-motion rules (see Design System)
 - `src/index.html` - Bootstrap 5 bundle (includes Popper v2), Montserrat font `<link>` (inlined at build), Simple Analytics. Material Icons is not loaded — use Font Awesome 4.7 (`fa fa-*`)
+
+## Design System
+
+- **Brand colour** is defined once: `$brand`, `$brand-dark`, `$brand-tint` in `src/assets/scss/variable.scss`. The theme's `$primary`, `$themecolor`, `$success` and `$info` all point at it, so `btn-primary` and `btn-success` are the same purple
+- **Tokens** are CSS custom properties on `:root` in `src/styles.scss`: `--brand`, `--brand-dark`, `--brand-tint`, `--brand-rgb` (for `rgba(var(--brand-rgb), 0.2)`), `--ink`, `--heading`, `--text`, `--text-muted`, `--border`, `--surface`, `--surface-alt`, `--radius-card`, `--radius-lg`, `--shadow-card*`, `--header-h`. Use these in component styles; do not hardcode hex colours, radii or shadows
+- `src/styles.scss` also overrides the Bootstrap CDN's hardcoded blue (links, `.border-primary`, focus rings, accordion)
+- **Cards**: use the global `.ui-card` (plus `.ui-card--compact`, `.ui-card--lift`) for raised cards; a page stylesheet only adds what is specific to that card. Tinted panels use `--brand-tint` with `--radius-card`. Tinted full-width sections use `.section-tint`
+- **Buttons**: one filled button per group for the main action (`btn-success` / `btn-primary`), `btn-outline-primary` for the rest (e.g. only the highlighted pricing plan is filled)
+- **Scroll reveal**: add `appReveal` (or `appReveal="80"` for a delay in ms) and import `RevealDirective`. It hides an element only in the browser and only if it starts below the viewport, so prerendered HTML stays fully visible. AOS and Waves are not loaded; do not add `data-aos` or `waves-effect`
+- **Reduced motion**: a global rule in `src/styles.scss` disables animations, transitions and smooth scrolling under `prefers-reduced-motion: reduce`
+- **Header** is sticky (`:host` in `banner.component.scss`). `--header-h` offsets in-page anchors (`scroll-padding-top`) and the docs sidebar. The "back to top" target is `<span id="top">` in `app.component.html`, not the header. The nav collapses to the menu button below 1200px (`navbar-expand-xl`): six links do not fit on one line below that, especially in Bulgarian. The mobile menu is closed on `NavigationEnd`
+- **Home video**: the YouTube embed ignores taps in browser phone emulation, so Pause/Play and Replay buttons under the video control it through `postMessage` (`enablejsapi=1`)
+- Component style budget is 4 kB warning / 10 kB error (`angular.json`); the home page stylesheet is about 7.6 kB
 
 ## SEO Architecture
 
@@ -117,11 +131,20 @@ Default: `https://loom21.com/en/assets/images/form-banners/loom-app-laptop-mobil
 - Bootstrap 5 bundle (includes Popper v2) is used — jQuery is not loaded
 - Roadmap page content (`roadmap-const.ts`) is draft copy inferred from existing product signals, not confirmed business commitments — review with the team before treating "In Progress"/"Planned" items as accurate
 
+- **Routes** (`src/app/app.routes.ts`): only the home page is in the initial bundle; every other page uses `loadComponent` / `loadChildren`. Keep new pages lazy. Unknown URLs render the 404 page in place with HTTP 404 (`NotFoundComponent` sets the status through the `RESPONSE` token); `/404` is also a route
+- **Security headers** are set in `src/proxy-server.mjs` (`nosniff`, `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy`); `X-Powered-By` is off there and in `server.ts`
+- **Page layout helpers** in `src/styles.scss`: `.page-title` on every inner page `<h1>`, `.legal-page` for Privacy and Terms, `.skip-link` (first Tab stop, jumps to `<main id="main-content">`), `.x-icon` for the inline X logo
+- **Breadcrumb names** for structured data come from `BREADCRUMBS` in `localized-const.ts`
+- `[appLeadIn]` (`shared/lead-in.component.ts`) bolds the part of a string before the first ": " (privacy lists)
+- After changing template text, run `npx ng extract-i18n --output-path src/locale`, add the Bulgarian `<target>` to `messages.bg.xlf`, then `npm run i18n:check`
+- `npm run build` rewrites `src/sitemap.xml` (`lastmod`); restore it with `git checkout -- src/sitemap.xml` if the build was only a check
+
 ## Remaining Improvements
 
 Low-priority items not yet implemented:
 
 - [x] WebP images on the home page (`srcset`/`sizes`, generated by `scripts/optimize-images.js`)
 - [x] Error state for documentation page if GitHub fetch fails (`(error)` on `<markdown>`)
-- [ ] `console.log` / `console.error` calls should be removed from production components (pricing, contact)
+- [x] `console.log` / `console.error` calls removed from components (two deliberate `console.warn` remain: pricing drift check, invalid locale)
+- [ ] Content-Security-Policy and HSTS headers (not set; see the comment in `src/proxy-server.mjs`)
 - [ ] Service worker / PWA for offline caching

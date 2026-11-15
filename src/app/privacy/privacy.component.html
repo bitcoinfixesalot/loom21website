@@ -1,6 +1,5 @@
-<div class="bg-light privacy">
-            <div class="container">
-          <div class="row">
+<div class="bg-light legal-page">
+<div class="container">
 <h1>{{ CONSTANTS.privacyPolicyTitle }}</h1>
 <p class="last-updated">{{ CONSTANTS.privacyPolicyLastUpdated }}</p>
 
@@ -15,7 +14,7 @@
   <p>
     <strong>{{ CONSTANTS.section1ContactInfo }}</strong><br>
     <a routerLink="/contact">{{ CONSTANTS.section1ContactForm }}</a><br>
-    <span>{{ CONSTANTS.privacyEmailLabel }}</span> <app-protected-email />
+    <span>{{ CONSTANTS.privacyEmailLabel }}</span>&ngsp;<app-protected-email />
   </p>
 </div>
 
@@ -24,14 +23,14 @@
   <p>{{ CONSTANTS.section2Intro }}</p>
   <h3>{{ CONSTANTS.section2aTitle }}</h3>
   <ul>
-    <li><strong>{{ CONSTANTS.section2aItem1 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section2aItem2 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section2aItem3 }}</strong></li>
+    <li [appLeadIn]="CONSTANTS.section2aItem1"></li>
+    <li [appLeadIn]="CONSTANTS.section2aItem2"></li>
+    <li [appLeadIn]="CONSTANTS.section2aItem3"></li>
   </ul>
   <h3>{{ CONSTANTS.section2bTitle }}</h3>
   <ul>
-    <li><strong>{{ CONSTANTS.section2bItem1 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section2bItem2 }}</strong></li>
+    <li [appLeadIn]="CONSTANTS.section2bItem1"></li>
+    <li [appLeadIn]="CONSTANTS.section2bItem2"></li>
   </ul>
   <h3>{{ CONSTANTS.section2cTitle }}</h3>
   <ul>
@@ -43,10 +42,10 @@
   <h2>{{ CONSTANTS.section3Title }}</h2>
   <p>{{ CONSTANTS.section3Intro }}</p>
   <ul>
-    <li><strong>{{ CONSTANTS.section3Item1 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section3Item2 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section3Item3 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section3Item4 }}</strong></li>
+    <li [appLeadIn]="CONSTANTS.section3Item1"></li>
+    <li [appLeadIn]="CONSTANTS.section3Item2"></li>
+    <li [appLeadIn]="CONSTANTS.section3Item3"></li>
+    <li [appLeadIn]="CONSTANTS.section3Item4"></li>
   </ul>
 </div>
 
@@ -98,7 +97,7 @@
   <p>{{ CONSTANTS.section5Intro }}</p>
   <ul>
     <li>
-      <strong>{{ CONSTANTS.section5Item1 }}</strong>
+      <span [appLeadIn]="CONSTANTS.section5Item1"></span>
       <div class="table-responsive mt-2">
         <table class="table table-sm">
           <thead>
@@ -121,9 +120,9 @@
       </div>
       <p class="small">{{ CONSTANTS.section5NotSubprocessors }}</p>
     </li>
-    <li><strong>{{ CONSTANTS.section5Item2 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section5Item3 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section5Item4 }}</strong></li>
+    <li [appLeadIn]="CONSTANTS.section5Item2"></li>
+    <li [appLeadIn]="CONSTANTS.section5Item3"></li>
+    <li [appLeadIn]="CONSTANTS.section5Item4"></li>
   </ul>
 </div>
 
@@ -131,9 +130,9 @@
   <h2>{{ CONSTANTS.section6Title }}</h2>
   <p>{{ CONSTANTS.section6Intro }}</p>
   <ul>
-    <li><strong>{{ CONSTANTS.section6Item1 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section6Item2 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section6Item3 }}</strong></li>
+    <li [appLeadIn]="CONSTANTS.section6Item1"></li>
+    <li [appLeadIn]="CONSTANTS.section6Item2"></li>
+    <li [appLeadIn]="CONSTANTS.section6Item3"></li>
   </ul>
 </div>
 
@@ -151,14 +150,14 @@
   <h2>{{ CONSTANTS.section8Title }}</h2>
   <p>{{ CONSTANTS.section8Intro }}</p>
   <ul>
-    <li><strong>{{ CONSTANTS.section8Item1 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section8Item2 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section8Item3 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section8Item4 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section8Item5 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section8Item6 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section8Item7 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section8Item8 }}</strong></li>
+    <li [appLeadIn]="CONSTANTS.section8Item1"></li>
+    <li [appLeadIn]="CONSTANTS.section8Item2"></li>
+    <li [appLeadIn]="CONSTANTS.section8Item3"></li>
+    <li [appLeadIn]="CONSTANTS.section8Item4"></li>
+    <li [appLeadIn]="CONSTANTS.section8Item5"></li>
+    <li [appLeadIn]="CONSTANTS.section8Item6"></li>
+    <li [appLeadIn]="CONSTANTS.section8Item7"></li>
+    <li [appLeadIn]="CONSTANTS.section8Item8"></li>
   </ul>
   <p>{{ CONSTANTS.section8Contact }} <a routerLink="/contact">{{ CONSTANTS.section8ContactForm }}</a>.</p>
 </div>
@@ -188,9 +187,9 @@
   <h2>{{ CONSTANTS.section12Title }}</h2>
   <p>{{ CONSTANTS.section12Intro }}</p>
   <ul>
-    <li><strong>{{ CONSTANTS.section12Item1 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section12Item2 }}</strong></li>
-    <li><strong>{{ CONSTANTS.section12Item3 }}</strong></li>
+    <li [appLeadIn]="CONSTANTS.section12Item1"></li>
+    <li [appLeadIn]="CONSTANTS.section12Item2"></li>
+    <li [appLeadIn]="CONSTANTS.section12Item3"></li>
   </ul>
   <p>{{ CONSTANTS.section12Contact }} <a routerLink="/contact">{{ CONSTANTS.section12ContactForm }}</a>.</p>
 </div>
@@ -211,5 +210,4 @@
   <p>{{ CONSTANTS.section14SeeAlso }} <a routerLink="/terms">{{ CONSTANTS.section14TermsLink }}</a>.</p>
 </div>
 </div>
-            </div>
 </div>

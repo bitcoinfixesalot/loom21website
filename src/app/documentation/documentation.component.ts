@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, ElementRef, Inject, LOCALE_ID, OnInit, signal } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { MarkdownComponent } from 'ngx-markdown';
-import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
+import { BREADCRUMBS, DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
 import { OgMetaService } from '../services/og-meta.service';
 import { StructuredDataService } from '../services/structured-data.service';
 
@@ -50,14 +50,14 @@ export class DocumentationComponent implements OnInit {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         'itemListElement': [
-          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `https://loom21.com/${this.localeId}/` },
-          { '@type': 'ListItem', 'position': 2, 'name': 'Documentation', 'item': `https://loom21.com/${this.localeId}/docs/` }
+          { '@type': 'ListItem', 'position': 1, 'name': BREADCRUMBS.home, 'item': `https://loom21.com/${this.localeId}/` },
+          { '@type': 'ListItem', 'position': 2, 'name': BREADCRUMBS.documentation, 'item': `https://loom21.com/${this.localeId}/docs/` }
         ]
       },
       {
         '@context': 'https://schema.org',
         '@type': 'WebPage',
-        'name': 'Documentation | Loom21',
+        'name': TITLES.documentation,
         'description': LD_JSON.documentation_description,
         'isPartOf': { '@type': 'WebSite', 'name': 'Loom21' }
       }
@@ -85,6 +85,14 @@ export class DocumentationComponent implements OnInit {
     event.preventDefault();
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     this.activeId.set(id);
+  }
+
+  /** Screenshots are too small to read on a phone: a tap opens the full-size image in a new tab. */
+  openImage(event: Event): void {
+    const target = event.target;
+    if (target instanceof HTMLImageElement && !target.closest('a')) {
+      window.open(target.currentSrc || target.src, '_blank', 'noopener');
+    }
   }
 
   private extractHeadings(): void {

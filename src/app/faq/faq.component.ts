@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
-import { DESCRIPTIONS, TITLES } from '../constants/localized-const';
+import { BREADCRUMBS, DESCRIPTIONS, TITLES } from '../constants/localized-const';
 import { FAQ_CATEGORIES, FAQ_CONSTANTS } from '../constants/faq-const';
 import { OgMetaService } from '../services/og-meta.service';
 import { StructuredDataService } from '../services/structured-data.service';
@@ -46,8 +46,8 @@ export class FaqComponent implements OnInit {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         'itemListElement': [
-          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `https://loom21.com/${this.localeId}/` },
-          { '@type': 'ListItem', 'position': 2, 'name': 'FAQ', 'item': `https://loom21.com/${this.localeId}/faq/` }
+          { '@type': 'ListItem', 'position': 1, 'name': BREADCRUMBS.home, 'item': `https://loom21.com/${this.localeId}/` },
+          { '@type': 'ListItem', 'position': 2, 'name': BREADCRUMBS.faq, 'item': `https://loom21.com/${this.localeId}/faq/` }
         ]
       }
     ]);

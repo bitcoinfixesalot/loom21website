@@ -5,7 +5,7 @@ import { RouterLink } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { first } from 'rxjs';
 import { SubscriptionPlanService, SubscriptionType } from '../services/subscription-plan.service';
-import { DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
+import { BREADCRUMBS, DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
 import {
   ANNUAL_BADGE, BITCOIN_BADGE, BillingMode, COMPARE_ROWS, CompareValue, PRICING_FAQ, TIER_BY_API_TYPE, TIER_PRICES, TIERS, TierKey
 } from '../constants/pricing-const';
@@ -155,8 +155,8 @@ export class PricingComponent implements OnInit {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       'itemListElement': [
-        { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `https://loom21.com/${this.localeId}/` },
-        { '@type': 'ListItem', 'position': 2, 'name': 'Pricing', 'item': `https://loom21.com/${this.localeId}/pricing/` }
+        { '@type': 'ListItem', 'position': 1, 'name': BREADCRUMBS.home, 'item': `https://loom21.com/${this.localeId}/` },
+        { '@type': 'ListItem', 'position': 2, 'name': BREADCRUMBS.pricing, 'item': `https://loom21.com/${this.localeId}/pricing/` }
       ]
     };
     this.structuredDataService.setJsonLd([breadcrumb, product]);

@@ -16,10 +16,10 @@
 
 .docs-sidebar {
   position: sticky;
-  top: 0;
+  top: var(--header-h); // below the sticky site header
   width: 240px;
   flex-shrink: 0;
-  max-height: 100vh;
+  max-height: calc(100vh - var(--header-h));
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #ddd transparent;
@@ -56,13 +56,13 @@
     transition: color 0.15s ease, border-color 0.15s ease;
 
     &:hover {
-      color: #316ce8;
-      border-left-color: #316ce8;
+      color: var(--brand);
+      border-left-color: var(--brand);
     }
 
     &.active {
-      color: #316ce8;
-      border-left-color: #316ce8;
+      color: var(--brand);
+      border-left-color: var(--brand);
       font-weight: 600;
     }
   }
@@ -145,7 +145,7 @@
   }
 
   a {
-    color: #316ce8;
+    color: var(--brand);
     text-decoration: none;
     &:hover { text-decoration: underline; }
   }
@@ -162,11 +162,11 @@
   }
 
   blockquote {
-    border-left: 4px solid #316ce8;
+    border-left: 4px solid var(--brand);
     margin: 1.5rem 0;
     padding: 0.5rem 1rem;
-    color: #555;
-    background: #f4f8ff;
+    color: var(--text-muted);
+    background: var(--brand-tint);
     border-radius: 0 4px 4px 0;
 
     p { margin: 0; }
@@ -204,7 +204,7 @@
     font-size: 0.9rem;
 
     th {
-      background: #f4f8ff;
+      background: var(--brand-tint);
       color: #3e4555;
       font-weight: 600;
       padding: 10px 14px;
@@ -235,5 +235,25 @@
     display: block;
     margin: 10px auto;
     border-radius: 12px;
+    cursor: zoom-in; // a click opens the full-size image
+  }
+}
+
+/* The page has its own h1, so the README's centred title is hidden and its intro is left-aligned */
+::ng-deep markdown {
+  h3[align='center'] {
+    display: none;
+  }
+
+  p[align='center'] {
+    text-align: left;
+    color: var(--text-muted);
+  }
+}
+
+/* The sidebar replaces the README's own table of contents where it is shown */
+@media (min-width: 992px) {
+  ::ng-deep markdown details {
+    display: none;
   }
 }

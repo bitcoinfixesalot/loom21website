@@ -1,3 +1,7 @@
+.contact-page {
+    padding: 60px 0;
+}
+
 textarea {
     height: 160px;
     overflow: auto;
@@ -5,27 +9,28 @@ textarea {
 }
 
 .contact-detail-box {
-    background-color: #e3f2fd;
-    border-radius: 8px;
+    background-color: var(--brand-tint);
+    border-radius: var(--radius-card);
     padding: 32px 24px;
-    margin-top: 48px;
+    margin-top: 8px;
 
-    h4 {
+    .contact-detail-title {
+        font-size: 1.25rem;
         font-weight: 600;
         margin-bottom: 12px;
     }
 
     p {
-        color: #555;
+        color: var(--text-muted);
         font-size: 0.95rem;
     }
 
-    h6 {
+    .contact-detail-label {
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.08em;
         font-size: 0.75rem;
-        color: #888;
+        color: var(--text-muted);
         margin-bottom: 12px;
     }
 }
@@ -52,5 +57,18 @@ textarea {
             width: 20px;
             font-size: 1.1rem;
         }
+
+        // the X logo is an inline SVG; same box as the icon font, so the labels line up
+        .x-icon {
+            flex: none;
+            width: 20px;
+            height: 1rem;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .contact-detail-box {
+        margin-top: 32px;
     }
 }

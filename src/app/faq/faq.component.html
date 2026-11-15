@@ -1,7 +1,7 @@
 <div class="bg-light faq">
   <div class="container">
     <div class="row">
-      <h1 class="title font-bold">{{ FAQ_CONSTANTS.pageTitle }}</h1>
+      <h1 class="page-title">{{ FAQ_CONSTANTS.pageTitle }}</h1>
       <p class="intro m-b-30">{{ FAQ_CONSTANTS.pageIntro }}</p>
 
       @for (category of categories; track category.title; let i = $index) {
@@ -30,13 +30,13 @@
   </div>
 </div>
 
-<div style="background-color: #e3f2fd;">
+<div class="section-tint">
   <section>
     <div class="banner spacer">
       <div class="container text-center">
         <h2 class="title font-bold m-b-20">{{ FAQ_CONSTANTS.ctaTitle }}</h2>
         <p class="m-b-30">{{ FAQ_CONSTANTS.ctaDesc }}</p>
-        <a routerLink="/contact" type="button" class="btn waves-effect waves-light btn-success" i18n="Contact us button@@contactUsButton">Contact Us</a>
+        <a routerLink="/contact" type="button" class="btn btn-success" i18n="Contact us button@@contactUsButton">Contact us</a>
       </div>
     </div>
   </section>
