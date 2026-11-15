@@ -50,7 +50,7 @@
               <li class="list-group-item">{{ bullet }}</li>
             }
           </ul>
-          <button type="button" class="btn" [class.btn-primary]="card.key !== 'free'" [class.btn-success]="card.key === 'free'" (click)="onSelect(card)">{{ card.cta }}</button>
+          <button type="button" class="btn" [class.btn-primary]="card.highlight" [class.btn-outline-primary]="!card.highlight" (click)="onSelect(card)">{{ card.cta }}</button>
         </div>
       </div>
     }

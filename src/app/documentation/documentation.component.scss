@@ -56,13 +56,13 @@
     transition: color 0.15s ease, border-color 0.15s ease;
 
     &:hover {
-      color: #316ce8;
-      border-left-color: #316ce8;
+      color: var(--brand);
+      border-left-color: var(--brand);
     }
 
     &.active {
-      color: #316ce8;
-      border-left-color: #316ce8;
+      color: var(--brand);
+      border-left-color: var(--brand);
       font-weight: 600;
     }
   }
@@ -145,7 +145,7 @@
   }
 
   a {
-    color: #316ce8;
+    color: var(--brand);
     text-decoration: none;
     &:hover { text-decoration: underline; }
   }
@@ -162,11 +162,11 @@
   }
 
   blockquote {
-    border-left: 4px solid #316ce8;
+    border-left: 4px solid var(--brand);
     margin: 1.5rem 0;
     padding: 0.5rem 1rem;
-    color: #555;
-    background: #f4f8ff;
+    color: var(--text-muted);
+    background: var(--brand-tint);
     border-radius: 0 4px 4px 0;
 
     p { margin: 0; }
@@ -204,7 +204,7 @@
     font-size: 0.9rem;
 
     th {
-      background: #f4f8ff;
+      background: var(--brand-tint);
       color: #3e4555;
       font-weight: 600;
       padding: 10px 14px;

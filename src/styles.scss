@@ -1,4 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'sass:color';
+@use './assets/scss/variable';
 
-// html, body { height: 100%; }
-// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// Design tokens. Component styles use these instead of hardcoded hex values.
+// The brand colour itself is set in src/assets/scss/variable.scss ($brand).
+:root {
+  --brand: #{variable.$brand};
+  --brand-dark: #{variable.$brand-dark};
+  --brand-tint: #{variable.$brand-tint};
+  // "r, g, b" for translucent brand colour: rgba(var(--brand-rgb), 0.2)
+  --brand-rgb: #{color.channel(variable.$brand, 'red', $space: rgb)}, #{color.channel(variable.$brand, 'green', $space: rgb)}, #{color.channel(variable.$brand, 'blue', $space: rgb)};
+
+  --ink: #1a1a2e;          // darkest surface (video poster, dark logo plate)
+  --heading: #{variable.$headingtext};
+  --text: #{variable.$bodytext};
+  --text-muted: #555;      // secondary text, 7.5:1 on white
+  --border: #e0e0e0;
+  --surface: #fff;
+  --surface-alt: #f6f9fc;  // zebra rows, quiet panels
+}
+
+// Tinted full-width section background
+.section-tint {
+  background-color: var(--brand-tint);
+}
+
+// Bootstrap (CDN, 5.1.3) hardcodes its blue in these places; bring them onto the brand colour.
+a {
+  color: var(--brand);
+
+  &:hover {
+    color: var(--brand-dark);
+  }
+}
+
+.border-primary {
+  border-color: var(--brand) !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: rgba(var(--brand-rgb), 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(var(--brand-rgb), 0.2);
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  box-shadow: 0 0 0 0.25rem rgba(var(--brand-rgb), 0.25);
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--brand-dark);
+  background-color: var(--brand-tint);
+  box-shadow: inset 0 -1px 0 rgba(var(--brand-rgb), 0.15);
+
+  // Bootstrap's open-state chevron is a blue SVG; same icon in $brand-dark
+  &::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%235e35b1'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+}
+
+.accordion-button:focus {
+  border-color: rgba(var(--brand-rgb), 0.25);
+  box-shadow: none;
+}

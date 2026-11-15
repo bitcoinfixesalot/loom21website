@@ -14,20 +14,27 @@ $headingfont:'Montserrat',
 sans-serif;
 $stylishfont: 'Calafia-Regular';
 
+/*Brand: the one place the site's accent colour is defined.
+  Everything below ($themecolor, $primary, $success, $info) and the CSS custom
+  properties in src/styles.scss (--brand, --brand-dark, --brand-tint) derive from these.*/
+$brand: #673ab7;       // 7.3:1 on white, passes WCAG AA for text
+$brand-dark: #5e35b1;  // hover / active
+$brand-tint: #f3effb;  // tinted section and callout backgrounds
+
 /*Theme Colors*/
 $bodycolor: #ffffff;
 $headingtext: #3e4555;
 $bodytext: #3c4049;
-$themecolor: #316ce8;
+$themecolor: $brand;
 $themecolor-alt: #26c6da;
-$themecolor-dark: #028ee1;
+$themecolor-dark: $brand-dark;
 
 /*bootstrap Color*/
 $danger: #ff4d7e;
-$success: #673ab7;
+$success: $brand;
 $warning: #030303;
-$primary: #1e88e5;
-$info: #188ef4;
+$primary: $brand;
+$info: $brand;
 $inverse: #3e4555;
 $muted: #3c4049;
 $dark: #263238;
@@ -49,10 +56,10 @@ $light-megna: #e0f2f4;
 
 
 $danger-dark: #d73e6b;
-$success-dark: #5e35b1;
+$success-dark: $brand-dark;
 $warning-dark: #dcaf17;
-$primary-dark: #345bcb;
-$info-dark: #2c73cb;
+$primary-dark: $brand-dark;
+$info-dark: $brand-dark;
 $red-dark: #d61f1f;
 $inverse-dark: #232a37;
 $dark-transparent:rgba(0, 0, 0, 0.05);

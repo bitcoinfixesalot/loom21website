@@ -2,7 +2,7 @@
     padding: 60px 0;
 
     .intro {
-        color: #555;
+        color: var(--text-muted);
         max-width: 700px;
     }
 }
@@ -36,7 +36,7 @@
     }
 
     p {
-        color: #555;
+        color: var(--text-muted);
         margin: 0;
     }
 }
@@ -46,7 +46,7 @@
 }
 
 .roadmap-in-progress .roadmap-card {
-    border-left-color: #1976d2;
+    border-left-color: var(--brand);
 }
 
 .roadmap-planned .roadmap-card {
