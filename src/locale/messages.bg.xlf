@@ -1386,8 +1386,8 @@
         <note priority="1" from="description">Github docs</note>
       </trans-unit>
       <trans-unit id="loom21footer" datatype="html">
-        <source>Loom21: Simplify inventory tracking and payment links for Bitcoin or fiat, plus manage sales and customers. Start now!</source>
-        <target>Loom21: Опростете проследяването на инвентара и връзките за плащане с Биткойн или фиат, плюс управлявайте продажби и клиенти. Започнете сега!</target>
+        <source>Loom21 keeps your inventory, invoices and customers in one place, and lets you get paid in Bitcoin or by card.</source>
+        <target>Loom21 събира склада, фактурите и клиентите ви на едно място и ви позволява да получавате плащания в Биткойн или с карта.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">6,8</context>
@@ -1537,15 +1537,6 @@
         </context-group>
         <note priority="1" from="description">Contact us button</note>
       </trans-unit>
-      <trans-unit id="featuresTitle" datatype="html">
-        <source>Features</source>
-        <target>Функционалности</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">30,31</context>
-        </context-group>
-        <note priority="1" from="description">Features title</note>
-      </trans-unit>
       <trans-unit id="benefitsAndFeatures" datatype="html">
         <source>Everything you need to sell, get paid and stay in stock</source>
         <target>Всичко необходимо, за да продавате, да получавате плащания и да имате наличност</target>
@@ -1557,7 +1548,7 @@
       </trans-unit>
       <trans-unit id="trackInventory" datatype="html">
         <source>Track product inventory across multiple stores</source>
-        <target>Удобно проследяване на складови наличности и продукти</target>
+        <target>Следете наличностите в няколко магазина</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">34,35</context>
@@ -1566,7 +1557,7 @@
       </trans-unit>
       <trans-unit id="flexiblePriceLists" datatype="html">
         <source>Set up wholesale, retail, or tiered price lists with customer-specific pricing</source>
-        <target>Управление на персонализирани ценови листи: лесно създаване на комбинация от цени на едро, дребно, както и сезонни промоции, дефинирани чрез предварително зададени формули</target>
+        <target>Създавайте ценови листи на едро, на дребно или на нива, с цени за конкретни клиенти</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">1</context>
@@ -1575,7 +1566,7 @@
       </trans-unit>
       <trans-unit id="customFieldsFeature" datatype="html">
         <source>Add custom fields to track exactly what matters for your products</source>
-        <target>В полетата за персонализирани данни можете да добавите допълнителна информация за вашите продукти (например срок на годност, гаранционен срок и други)</target>
+        <target>Добавяйте собствени полета, за да следите точно това, което е важно за продуктите ви</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">1</context>
@@ -1583,8 +1574,8 @@
         <note priority="1" from="description">Custom fields feature</note>
       </trans-unit>
       <trans-unit id="manageClientsSuppliers" datatype="html">
-        <source>Manage clients and suppliers</source>
-        <target>Спестява време при управление на клиенти и доставчици</target>
+        <source>Keep clients and suppliers in one place</source>
+        <target>Дръжте клиенти и доставчици на едно място</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">35,36</context>
@@ -1592,8 +1583,8 @@
         <note priority="1" from="description">Manage clients and suppliers</note>
       </trans-unit>
       <trans-unit id="controlData" datatype="html">
-        <source>Control your own data: import and export</source>
-        <target>Контролирайте собствените си данни: импортиране и експортиране в различни формати</target>
+        <source>Import and export your data whenever you want</source>
+        <target>Импортирайте и експортирайте данните си, когато поискате</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">36,37</context>
@@ -1610,8 +1601,8 @@
         <note priority="1" from="description">Send payment links</note>
       </trans-unit>
       <trans-unit id="acceptPayments" datatype="html">
-        <source>Accept Bitcoin (Lightning &amp; on-chain) and credit/debit card payments</source>
-        <target>Приемане на плащания с Биткойн (Lightning и он-чейн), както и с кредитни/дебитни карти</target>
+        <source>Accept Bitcoin (Lightning and on-chain) and card payments</source>
+        <target>Приемайте Биткойн (Lightning и он-чейн) и плащания с карта</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">38,39</context>
@@ -1620,7 +1611,7 @@
       </trans-unit>
       <trans-unit id="documentGeneration" datatype="html">
         <source>Generate quotes, invoices, receipts, and pickup lists</source>
-        <target>Генерира оферти, фактури, разписки и списъци при получаване на стока на едно място</target>
+        <target>Генерирайте оферти, фактури, разписки и списъци при получаване на стока</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">39,40</context>
@@ -1629,7 +1620,7 @@
       </trans-unit>
       <trans-unit id="orderHistory" datatype="html">
         <source>View customer order history and reorder with one click</source>
-        <target>Копиране на съществуващи поръчки с един клик от история на клиентите</target>
+        <target>Вижте историята на поръчките на клиента и повторете поръчка с един клик</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">40,41</context>
@@ -1638,7 +1629,7 @@
       </trans-unit>
       <trans-unit id="barcodeQr" datatype="html">
         <source>Generate barcodes and QR codes for products</source>
-        <target>Моментално генериране на баркодове и QR кодове за продукти</target>
+        <target>Генерирайте баркодове и QR кодове за продуктите</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">41,42</context>
@@ -1655,8 +1646,8 @@
         <note priority="1" from="description">Get notified</note>
       </trans-unit>
       <trans-unit id="multiLanguage" datatype="html">
-        <source>Available in multiple languages</source>
-        <target>Налично на различни езици</target>
+        <source>Use the app in English or Bulgarian</source>
+        <target>Работете на български или английски</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">43,45</context>
@@ -1664,8 +1655,8 @@
         <note priority="1" from="description">Multi language</note>
       </trans-unit>
       <trans-unit id="paymentsMadeSimple" datatype="html">
-        <source>Payments Made Simple</source>
-        <target>Плащанията, направени лесно</target>
+        <source>Payments made simple</source>
+        <target>Лесни плащания</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">66,67</context>
@@ -1673,25 +1664,16 @@
         <note priority="1" from="description">Payments made simple</note>
       </trans-unit>
       <trans-unit id="sendPaymentLinksAnd" datatype="html">
-        <source>Send payment links for Bitcoin Lightning, on-chain Bitcoin, or fiat card payments, powered by Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, LNbits, and more. Effortless invoicing for everyone, with 0% Loom21 fees.</source>
-        <target>Изпращайте връзки за плащане с Биткойн Lightning, он-чейн Биткойн или карти чрез Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, LNbits и други, с 0% такса от Loom21.</target>
+        <source>Share a payment link and let your customer choose how to pay: Lightning, on-chain Bitcoin or card. Loom21 shows you the moment the invoice is paid.</source>
+        <target>Споделете връзка за плащане и оставете клиента да избере как да плати: Lightning, он-чейн Биткойн или карта. Loom21 ви показва веднага, щом фактурата е платена.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">79,81</context>
         </context-group>
         <note priority="1" from="description">Send payment links and</note>
       </trans-unit>
-      <trans-unit id="getStarted" datatype="html">
-        <source>Get Started</source>
-        <target>Започнете</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">69,71</context>
-        </context-group>
-        <note priority="1" from="description">Get started</note>
-      </trans-unit>
       <trans-unit id="priceListsTitle" datatype="html">
-        <source>Pricing That Adapts to Your Business</source>
+        <source>Pricing that adapts to your business</source>
         <target>Ценообразуване, което се адаптира към вашия бизнес</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -1709,7 +1691,7 @@
         <note priority="1" from="description">Price lists description</note>
       </trans-unit>
       <trans-unit id="customFieldsTitle" datatype="html">
-        <source>Track What Matters to You</source>
+        <source>Track what matters to you</source>
         <target>Проследявайте това, което е важно за вас</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -2783,8 +2765,8 @@
         <note priority="1" from="description">View on GitHub button</note>
       </trans-unit>
       <trans-unit id="heroTrustLine" datatype="html">
-        <source>No credit card · Funds go straight to your wallet · Cancel anytime</source>
-        <target>Без кредитна карта · Средствата отиват директно във вашия портфейл · Без обвързване</target>
+        <source>No credit card · Funds go straight to your wallet</source>
+        <target>Без кредитна карта · Средствата отиват директно във вашия портфейл</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">13,15</context>
@@ -3901,7 +3883,7 @@
         <note priority="1" from="description">Language switcher label</note>
       </trans-unit>
       <trans-unit id="invoicingTitle" datatype="html">
-        <source>Invoices Your Accountant Can Work With</source>
+        <source>Invoices your accountant can work with</source>
         <target>Фактури, с които счетоводителят ви може да работи</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
