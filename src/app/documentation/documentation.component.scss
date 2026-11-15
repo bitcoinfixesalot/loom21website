@@ -16,10 +16,10 @@
 
 .docs-sidebar {
   position: sticky;
-  top: 0;
+  top: var(--header-h); // below the sticky site header
   width: 240px;
   flex-shrink: 0;
-  max-height: 100vh;
+  max-height: calc(100vh - var(--header-h));
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #ddd transparent;

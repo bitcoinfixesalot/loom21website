@@ -17,6 +17,8 @@
   --border: #e0e0e0;
   --surface: #fff;
   --surface-alt: #f6f9fc;  // zebra rows, quiet panels
+
+  --header-h: 80px;        // height of the sticky header (src/app/banner)
 }
 
 // Tinted full-width section background
@@ -94,4 +96,9 @@ a {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+// In-page anchors and "scroll into view" stop below the sticky header instead of under it
+html {
+  scroll-padding-top: calc(var(--header-h) + 12px);
 }

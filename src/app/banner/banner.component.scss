@@ -1,3 +1,41 @@
+// Sticky header: stays at the top while the page scrolls, slightly see-through.
+// --header-h (src/styles.scss) is what anchor targets and the docs sidebar offset by.
+:host {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: saturate(160%) blur(10px);
+}
+
+// Six links, the language switcher and the button only fit on one line from 1200px (navbar-expand-xl);
+// below that the menu button is used. Keep labels on one line and tighten the spacing until 1400px.
+@media (min-width: 1200px) {
+  .h1-nav .nav-link,
+  .h1-nav .btn {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .h1-nav .navbar-nav .nav-item {
+    margin: 0 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// Open mobile menu never grows past the screen
+@media (max-width: 1199.98px) {
+  .navbar-collapse {
+    max-height: calc(100vh - var(--header-h));
+    overflow-y: auto;
+  }
+}
+
 .locale-switcher {
   display: flex;
   align-items: center;

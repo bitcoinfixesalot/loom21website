@@ -34,11 +34,23 @@
         </context-group>
         <note priority="1" from="description">FAQ menu</note>
       </trans-unit>
+      <trans-unit id="roadmapNav" datatype="html">
+        <source>Roadmap</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/banner/banner.component.html</context>
+          <context context-type="linenumber">28,30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap nav</note>
+      </trans-unit>
       <trans-unit id="contact" datatype="html">
         <source>Contact</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">28,30</context>
+          <context context-type="linenumber">31,33</context>
         </context-group>
         <note priority="1" from="description">contact menu</note>
       </trans-unit>
@@ -46,7 +58,7 @@
         <source>Language:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">36,37</context>
+          <context context-type="linenumber">39,40</context>
         </context-group>
         <note priority="1" from="description">Language switcher label</note>
       </trans-unit>
@@ -54,7 +66,7 @@
         <source>Launch App</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">53,55</context>
+          <context context-type="linenumber">56,58</context>
         </context-group>
         <note priority="1" from="description">Launch app button</note>
       </trans-unit>
@@ -2896,14 +2908,6 @@
           <context context-type="linenumber">14,15</context>
         </context-group>
         <note priority="1" from="description">FAQ nav</note>
-      </trans-unit>
-      <trans-unit id="roadmapNav" datatype="html">
-        <source>Roadmap</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">15,16</context>
-        </context-group>
-        <note priority="1" from="description">Roadmap nav</note>
       </trans-unit>
       <trans-unit id="contactNav" datatype="html">
         <source>Contact</source>
