@@ -3647,7 +3647,7 @@
         <source>BITCOIN</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">24,25</context>
+          <context context-type="linenumber">23,24</context>
         </context-group>
         <note priority="1" from="description">Bitcoin button</note>
       </trans-unit>
@@ -3655,7 +3655,7 @@
         <source>Checkout is temporarily unavailable. Start free and upgrade from Settings.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">30,35</context>
+          <context context-type="linenumber">29,34</context>
         </context-group>
         <note priority="1" from="description">Checkout unavailable notice</note>
       </trans-unit>
@@ -3663,7 +3663,7 @@
         <source>Most popular</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">38,41</context>
+          <context context-type="linenumber">37,40</context>
         </context-group>
         <note priority="1" from="description">Most popular ribbon</note>
       </trans-unit>
@@ -3671,7 +3671,7 @@
         <source>or <x id="INTERPOLATION" equiv-text="{{ formatPrice(card.btcPrice) }}"/>/mo paying in Bitcoin</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">46,48</context>
+          <context context-type="linenumber">45,47</context>
         </context-group>
         <note priority="1" from="description">Bitcoin price hint</note>
       </trans-unit>
@@ -3679,7 +3679,7 @@
         <source>Need a Custom Plan?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">63,64</context>
+          <context context-type="linenumber">62,63</context>
         </context-group>
         <note priority="1" from="description">Need custom plan</note>
       </trans-unit>
@@ -3687,7 +3687,7 @@
         <source>Need more stores, orders or an SLA? Custom plans with unlimited users and dedicated support.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">64,65</context>
+          <context context-type="linenumber">63,64</context>
         </context-group>
         <note priority="1" from="description">Personalized quote</note>
       </trans-unit>
@@ -3695,7 +3695,7 @@
         <source>Contact Us</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">65,70</context>
+          <context context-type="linenumber">64,69</context>
         </context-group>
         <note priority="1" from="description">Contact us button</note>
       </trans-unit>
@@ -3703,7 +3703,7 @@
         <source>Compare plans</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">72,74</context>
+          <context context-type="linenumber">71,73</context>
         </context-group>
         <note priority="1" from="description">Compare plans title</note>
       </trans-unit>
@@ -3711,7 +3711,7 @@
         <source>Feature</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">77,78</context>
+          <context context-type="linenumber">76,77</context>
         </context-group>
         <note priority="1" from="description">Compare feature column</note>
       </trans-unit>
@@ -3719,7 +3719,7 @@
         <source>Yes</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">90,91</context>
+          <context context-type="linenumber">89,90</context>
         </context-group>
         <note priority="1" from="description">Compare yes</note>
       </trans-unit>
@@ -3727,7 +3727,7 @@
         <source>No</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">92,93</context>
+          <context context-type="linenumber">91,92</context>
         </context-group>
         <note priority="1" from="description">Compare no</note>
       </trans-unit>
@@ -3735,7 +3735,7 @@
         <source>What you really pay</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">107,109</context>
+          <context context-type="linenumber">106,108</context>
         </context-group>
         <note priority="1" from="description">What you pay title</note>
       </trans-unit>
@@ -3743,7 +3743,7 @@
         <source>Your Loom21 plan</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">110,111</context>
+          <context context-type="linenumber">109,110</context>
         </context-group>
         <note priority="1" from="description">What you pay plan</note>
       </trans-unit>
@@ -3751,7 +3751,7 @@
         <source>A fixed monthly or annual price, the same no matter how much you sell.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">111,114</context>
+          <context context-type="linenumber">110,113</context>
         </context-group>
         <note priority="1" from="description">What you pay plan desc</note>
       </trans-unit>
@@ -3759,7 +3759,7 @@
         <source>Your payment processor&apos;s fees</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">114,115</context>
+          <context context-type="linenumber">113,114</context>
         </context-group>
         <note priority="1" from="description">What you pay processor</note>
       </trans-unit>
@@ -3767,7 +3767,7 @@
         <source>Set by the provider you connect (Stripe for cards, or your Bitcoin wallet or server) and paid to them, not to us.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">115,118</context>
+          <context context-type="linenumber">114,117</context>
         </context-group>
         <note priority="1" from="description">What you pay processor desc</note>
       </trans-unit>
@@ -3775,7 +3775,7 @@
         <source>Loom21 fee on your sales</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">118,119</context>
+          <context context-type="linenumber">117,118</context>
         </context-group>
         <note priority="1" from="description">What you pay loom21 fee</note>
       </trans-unit>
@@ -3783,7 +3783,7 @@
         <source>Loom21 doesn&apos;t set or collect processor fees. Check your provider&apos;s pricing for card and Lightning rates.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">122,126</context>
+          <context context-type="linenumber">121,125</context>
         </context-group>
         <note priority="1" from="description">What you pay disclaimer</note>
       </trans-unit>
@@ -3791,7 +3791,7 @@
         <source>Pricing questions</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">127,128</context>
+          <context context-type="linenumber">126,127</context>
         </context-group>
         <note priority="1" from="description">Pricing FAQ title</note>
       </trans-unit>

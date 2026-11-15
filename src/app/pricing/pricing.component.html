@@ -5,23 +5,22 @@
   </header>
 
   <!-- Billing toggle -->
-  <div class="btn-group d-flex justify-content-center" role="group" i18n-aria-label="Billing period selection@@pricingBillingToggle" aria-label="Billing period selection">
+  <div class="billing-toggle" role="group" i18n-aria-label="Billing period selection@@pricingBillingToggle" aria-label="Billing period selection">
     <input type="radio" class="btn-check" name="billing" id="month" value="month"
       [ngModel]="billing()" (ngModelChange)="billing.set($event)" autocomplete="off">
-    <label class="btn btn-outline-primary" for="month" i18n="Monthly button@@monthly">MONTHLY</label>
+    <label class="btn btn-outline-primary" for="month"><span i18n="Monthly button@@monthly">MONTHLY</span></label>
 
     <input type="radio" class="btn-check" name="billing" id="year" value="year"
       [ngModel]="billing()" (ngModelChange)="billing.set($event)" autocomplete="off">
     <label class="btn btn-outline-primary" for="year">
-      <ng-container i18n="Annual button@@annual">ANNUAL</ng-container>
+      <span i18n="Annual button@@annual">ANNUAL</span>
       <span class="badge bg-success rounded-pill billing-badge">{{ ANNUAL_BADGE }}</span>
     </label>
 
     <input type="radio" class="btn-check" name="billing" id="bitcoin" value="bitcoin"
       [ngModel]="billing()" (ngModelChange)="billing.set($event)" autocomplete="off">
     <label class="btn btn-outline-primary" for="bitcoin">
-      <i class="fa fa-bitcoin" aria-hidden="true"></i>
-      <ng-container i18n="Bitcoin button@@bitcoin">BITCOIN</ng-container>
+      <span><i class="fa fa-bitcoin" aria-hidden="true"></i>&ngsp;<ng-container i18n="Bitcoin button@@bitcoin">BITCOIN</ng-container></span>
       <span class="badge bg-success rounded-pill billing-badge">{{ BITCOIN_BADGE }}</span>
     </label>
   </div>
@@ -71,21 +70,21 @@
   <section class="compare-section">
     <h2 class="section-title text-center" i18n="Compare plans title@@pricingCompareTitle">Compare plans</h2>
     <div class="table-responsive">
-      <table class="table compare-table">
-        <thead>
-          <tr>
-            <th scope="col"><span class="visually-hidden" i18n="Compare feature column@@cmpFeature">Feature</span></th>
+      <table class="table compare-table" role="table">
+        <thead role="rowgroup">
+          <tr role="row">
+            <th scope="col" role="columnheader" class="compare-corner"><span class="visually-hidden" i18n="Compare feature column@@cmpFeature">Feature</span></th>
             @for (tier of TIERS; track tier.key) {
-              <th scope="col" [class.is-highlight]="tier.highlight">{{ tier.name }}</th>
+              <th scope="col" role="columnheader" [class.is-highlight]="tier.highlight">{{ tier.name }}</th>
             }
           </tr>
         </thead>
-        <tbody>
+        <tbody role="rowgroup">
           @for (row of COMPARE_ROWS; track row.label) {
-            <tr>
-              <th scope="row">{{ row.label }}</th>
+            <tr role="row">
+              <th scope="row" role="rowheader">{{ row.label }}</th>
               @for (value of row.values; track $index) {
-                <td>
+                <td role="cell">
                   @if (value === true) {
                     <i class="fa fa-check text-success" aria-hidden="true"></i><span class="visually-hidden" i18n="Compare yes@@cmpYes">Yes</span>
                   } @else if (value === false) {

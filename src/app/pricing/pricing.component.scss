@@ -21,10 +21,44 @@ $accent: var(--brand);
   margin-bottom: 1.5rem;
 }
 
-/* Billing toggle */
-.btn-group {
+/* Billing toggle: three equal columns that never wrap, with the saving badge under the label */
+.billing-toggle {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   max-width: 480px;
   margin: 2rem auto;
+  border: 1px solid $accent;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    padding: 0.5rem 0.25rem;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    line-height: 1.2;
+  }
+
+  label + input + label {
+    border-left: 1px solid $accent;
+  }
+
+  // The group clips the usual focus ring, so draw it inside the button
+  .btn-check:focus-visible + .btn {
+    outline: 2px solid var(--ink);
+    outline-offset: -3px;
+  }
+
+  @media (max-width: 575px) {
+    .btn {
+      font-size: 0.8rem;
+    }
+  }
 }
 
 .btn-check:checked + .btn-outline-primary {
@@ -33,15 +67,10 @@ $accent: var(--brand);
   border-color: $accent;
 }
 
-// Billing toggle only, so the plan cards' outline buttons keep the same size as the filled one
-.btn-group .btn-outline-primary {
-  padding: 0.5rem 1rem;
-}
-
 .billing-badge {
-  margin-left: 0.35rem;
+  max-width: 100%;
   font-size: 0.7rem;
-  vertical-align: middle;
+  white-space: normal;
 }
 
 .checkout-notice {
@@ -159,14 +188,56 @@ $accent: var(--brand);
     background-color: var(--surface-alt);
   }
 
+  // Phones: all four plans fit without sideways scrolling. Each feature name gets its own line
+  // with the four values in a row under it, and the plan names stay in view below the site header.
   @media (max-width: 767px) {
-    th[scope="row"], thead th:first-child {
-      position: sticky;
-      left: 0;
-      z-index: 1;
-      background-color: white;
-      min-width: 150px;
+    display: block;
+    font-size: 0.85rem;
+
+    thead,
+    tbody {
+      display: block;
     }
+
+    tr {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .compare-corner {
+      display: none;
+    }
+
+    thead {
+      position: sticky;
+      top: var(--header-h);
+      z-index: 1;
+      background: var(--surface);
+      box-shadow: 0 1px 0 var(--border);
+    }
+
+    th[scope="row"] {
+      grid-column: 1 / -1;
+      padding-left: 0.75rem;
+      padding-bottom: 0;
+      border-bottom: 0 !important; // the theme sets this border with !important
+      font-weight: 600;
+    }
+
+    // Small enough for the longest Bulgarian value to fit one of four columns at 375px
+    td {
+      padding: 0.35rem 0 0.6rem;
+      font-size: 0.7rem;
+      overflow-wrap: anywhere;
+    }
+  }
+}
+
+// position: sticky on the plan names needs a parent that does not scroll
+@media (max-width: 767px) {
+  .compare-section .table-responsive {
+    overflow: visible;
+    margin-inline: -0.75rem; // use the page gutters, so four columns are wide enough
   }
 }
 
