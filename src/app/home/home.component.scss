@@ -39,26 +39,58 @@
     margin: 28px 0 0;
 }
 
-/* Hero is the page's h1 but keeps the h2 visual size used by the theme */
-h1.title {
-    font-size: 30px;
-    line-height: 36px;
+/* Hero */
+.hero {
+    padding: clamp(32px, 6vw, 80px) 0 clamp(40px, 6vw, 88px);
+    // Tint fades out behind the video, so the hero reads as one block under the white header
+    background: linear-gradient(180deg, var(--brand-tint) 0%, var(--surface) 75%);
+}
+
+.hero-copy {
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-eyebrow {
+    margin-bottom: 16px;
+    color: var(--brand);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-wrap: balance;
+}
+
+.hero-title {
+    margin: 0;
+    font-size: clamp(2rem, 1.1rem + 3vw, 3.25rem); // 52px from ~1150px wide
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
 
     // Keep the hero H1 to at most 4 lines at 375px (the BG text is ~15% longer than EN).
     @media (max-width: 575.98px) {
         font-size: 1.6rem;
         line-height: 1.2;
+        letter-spacing: -0.01em;
     }
 }
 
-.hero-trust {
-    margin-top: 16px;
-    font-size: 15px;
-    text-wrap: balance; // when it wraps, split into two even lines instead of leaving one word alone
+.hero-sub {
+    max-width: 700px;
+    margin: 24px auto 0;
+    color: var(--text-muted);
+    font-size: clamp(1rem, 0.9rem + 0.4vw, 1.1875rem);
+    line-height: 1.6;
 }
 
-.hero-eyebrow {
-    color: var(--brand);
+.hero-trust {
+    margin: 16px 0 0;
+    color: var(--text-muted);
+    font-size: 15px;
+    text-wrap: balance; // when it wraps, split into two even lines instead of leaving one word alone
 }
 
 // h3 for correct heading order, sized like the h4 it replaced
@@ -181,7 +213,10 @@ h1.title {
 }
 
 .video-wrapper.hero-video {
-    max-width: 100%;
+    max-width: 960px;
+    margin: clamp(32px, 5vw, 56px) auto 0;
+    border-radius: 16px;
+    box-shadow: 0 24px 60px rgba(var(--brand-rgb), 0.22), 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .video-play-facade {
@@ -251,7 +286,17 @@ h1.title {
 }
 
 .hero-buttons {
+    margin-top: 32px;
+
+    .btn {
+        padding: 12px 28px;
+        font-size: 1.0625rem;
+        font-weight: 600;
+    }
+
+    // Below 576px the buttons stack full width (d-grid)
     @media (min-width: 576px) {
+        justify-content: center;
         // Longer (BG) labels: keep each label on one line and move the second button below instead
         flex-wrap: wrap;
 
