@@ -235,6 +235,7 @@
     display: block;
     margin: 10px auto;
     border-radius: 12px;
+    cursor: zoom-in; // a click opens the full-size image
   }
 }
 
@@ -255,8 +256,4 @@
   ::ng-deep markdown details {
     display: none;
   }
-}
-
-::ng-deep markdown img {
-  cursor: zoom-in;
 }
