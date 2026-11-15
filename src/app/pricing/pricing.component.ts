@@ -124,7 +124,7 @@ export class PricingComponent implements OnInit {
 
   private appBase(): string {
     if (isDevMode()) return 'https://localhost:44412/';
-    return this.localeId === 'bg' ? 'https://app.loom21.com/bg/' : 'https://app.loom21.com/en-US/';
+    return this.localeId === 'bg' ? 'https://app.loom21.com/bg/' : 'https://app.loom21.com/en/';
   }
 
   onSelect(card: PricingCard): void {

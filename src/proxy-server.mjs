@@ -31,6 +31,16 @@ function run() {
     res.redirect(301, '/en/');
   });
 
+  // Old or guessed URLs Google has crawled: /en/home → home page, and the app subdomain's
+  // app's former 'en-US' prefix (app.loom21.com/en-US/...) used on this site → /en/...
+  server.get(/^\/(en|bg)\/home\/?$/, (req, res) => {
+    res.redirect(301, `/${req.params[0]}/`);
+  });
+  server.get(/^\/en-US(\/.*)?$/i, (req, res) => {
+    const query = req.originalUrl.includes('?') ? req.originalUrl.slice(req.originalUrl.indexOf('?')) : '';
+    res.redirect(301, `/en${req.params[0] || '/'}${query}`);
+  });
+
   server.use('/bg', serverBg());
   server.use('/en', serverEn());
 

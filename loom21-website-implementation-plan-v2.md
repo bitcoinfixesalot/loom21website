@@ -334,7 +334,7 @@ periodLabel(key: TierKey): string {
 
 private appBase(): string {
   if (isDevMode()) return 'https://localhost:44412/';
-  return this.localeId === 'bg' ? 'https://app.loom21.com/bg/' : 'https://app.loom21.com/en-US/';
+  return this.localeId === 'bg' ? 'https://app.loom21.com/bg/' : 'https://app.loom21.com/en/';
 }
 
 onSelect(card: { key: TierKey; apiId?: number }): void {
@@ -445,7 +445,7 @@ Claude Code writes this checklist into the PR description; it doesn't implement 
   - **never block payment links or checkout**
 - [ ] Retire the old plans (`basic`/`small`/`mid`): there are no subscribers on them (O2). Confirm that in the DB, stop returning them from `available-plans`, and archive their Stripe prices.
 - [ ] Fix `currency` padding on Bitcoin rows (`"eur       "` → `"eur"`).
-- [ ] Confirm the `signup/` route exists for `en-US` and `bg` (Free card and paid-plan fallback link there).
+- [ ] Confirm the `signup/` route exists for `en` and `bg` (Free card and paid-plan fallback link there).
 - [ ] The app's Settings → Subscription plan picker shows the same matrix.
 - [ ] `plans/{id}` route works for the new ids.
 
