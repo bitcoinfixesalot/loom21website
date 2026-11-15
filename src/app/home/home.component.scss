@@ -21,6 +21,96 @@
     left: 0;
 }
 
+/* Product screenshots: window frame with a title bar, rounded corners and a soft shadow */
+.shot-frame {
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--surface);
+    box-shadow: 0 16px 40px rgba(var(--brand-rgb), 0.16), 0 2px 6px rgba(0,0,0,0.06);
+
+    // Title bar with three window dots
+    &::before {
+        content: '';
+        display: block;
+        height: 26px;
+        border-bottom: 1px solid var(--border);
+        background:
+            radial-gradient(circle at 16px 50%, #cfd0d8 0 4.5px, transparent 5.5px),
+            radial-gradient(circle at 32px 50%, #cfd0d8 0 4.5px, transparent 5.5px),
+            radial-gradient(circle at 48px 50%, #cfd0d8 0 4.5px, transparent 5.5px),
+            #f4f4f7;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Payments Made Simple: the three ways to get paid */
+.pay-methods {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 20px;
+    list-style: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, var(--brand) 0%, var(--ink) 100%);
+    box-shadow: 0 20px 48px rgba(var(--brand-rgb), 0.25);
+}
+
+.pay-method {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: var(--surface);
+
+    & + & {
+        margin-top: 12px;
+    }
+}
+
+.pay-method-icon {
+    display: flex;
+    flex: 0 0 44px;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+
+    &--lightning { background: var(--brand); }
+    &--bitcoin { background: #f7931a; } // Bitcoin orange
+    &--card { background: var(--ink); }
+}
+
+.pay-method-text {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-width: 0;
+    line-height: 1.3;
+
+    strong {
+        color: var(--heading);
+        font-weight: 600;
+    }
+
+    span {
+        color: var(--text-muted);
+        font-size: 0.875rem;
+    }
+}
+
+.pay-method-check {
+    color: #2e7d32;
+    font-size: 20px;
+}
+
 /* Payment processor logos strip */
 .processors-strip {
     background-color: white;

@@ -105,7 +105,33 @@
       <div class="container">
         <div class="row">
           <div class="col-md-7 col-lg-5 align-self-center order-2 order-md-1 mt-4 mt-md-0" data-aos="fade-left" data-aos-duration="1500">
-            <img src="assets/images/form-banners/bitcoin-lightning2.webp" alt="bitcoin lightning" class="img-fluid" width="949" height="234" loading="lazy" />
+            <!-- The three ways to get paid, drawn in HTML instead of the old thin Bitcoin/Lightning logo strip -->
+            <ul class="pay-methods">
+              <li class="pay-method">
+                <span class="pay-method-icon pay-method-icon--lightning"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                <span class="pay-method-text">
+                  <strong i18n="Pay method lightning@@payMethodLightning">Lightning</strong>
+                  <span i18n="Pay method lightning note@@payMethodLightningNote">Settles in seconds</span>
+                </span>
+                <i class="fa fa-check-circle pay-method-check" aria-hidden="true"></i>
+              </li>
+              <li class="pay-method">
+                <span class="pay-method-icon pay-method-icon--bitcoin"><i class="fa fa-bitcoin" aria-hidden="true"></i></span>
+                <span class="pay-method-text">
+                  <strong i18n="Pay method on-chain@@payMethodOnchain">On-chain Bitcoin</strong>
+                  <span i18n="Pay method on-chain note@@payMethodOnchainNote">Straight to your wallet</span>
+                </span>
+                <i class="fa fa-check-circle pay-method-check" aria-hidden="true"></i>
+              </li>
+              <li class="pay-method">
+                <span class="pay-method-icon pay-method-icon--card"><i class="fa fa-credit-card" aria-hidden="true"></i></span>
+                <span class="pay-method-text">
+                  <strong i18n="Pay method card@@payMethodCard">Card</strong>
+                  <span i18n="Pay method card note@@payMethodCardNote">Powered by Stripe</span>
+                </span>
+                <i class="fa fa-check-circle pay-method-check" aria-hidden="true"></i>
+              </li>
+            </ul>
           </div>
           <div class="col-md-5 col-lg-6 align-self-center ms-auto order-1 order-md-2" data-aos="fade-right" data-aos-duration="1500">
             <h2 class="title font-bold" i18n="Payments made simple@@paymentsMadeSimple">Payments Made Simple</h2>
@@ -152,10 +178,12 @@
             </div>
           </div>
           <div class="col-md-5 col-lg-6 align-self-center ms-auto mt-4 mt-md-0" data-aos="fade-left" data-aos-duration="1500">
-            <img src="assets/images/form-banners/price-lists-1280.webp"
-              srcset="assets/images/form-banners/price-lists-640.webp 640w, assets/images/form-banners/price-lists-1280.webp 1280w"
-              sizes="(min-width: 1400px) 636px, (min-width: 1200px) 546px, (min-width: 992px) 456px, (min-width: 768px) 276px, (min-width: 576px) 516px, calc(100vw - 24px)"
-              alt="price list tiers and customer-specific pricing" class="img-fluid" width="1280" height="729" loading="lazy" />
+            <div class="shot-frame">
+              <img src="assets/images/form-banners/price-lists-1280.webp"
+                srcset="assets/images/form-banners/price-lists-640.webp 640w, assets/images/form-banners/price-lists-1280.webp 1280w"
+                sizes="(min-width: 1400px) 636px, (min-width: 1200px) 546px, (min-width: 992px) 456px, (min-width: 768px) 276px, (min-width: 576px) 516px, calc(100vw - 24px)"
+                alt="price list tiers and customer-specific pricing" width="1280" height="729" loading="lazy" />
+            </div>
           </div>
         </div>
       </div>
@@ -170,10 +198,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-7 col-lg-5 align-self-center order-2 order-md-1 mt-4 mt-md-0" data-aos="fade-left" data-aos-duration="1500">
-            <img src="assets/images/form-banners/custom-fields-1100.webp"
-              srcset="assets/images/form-banners/custom-fields-560.webp 560w, assets/images/form-banners/custom-fields-1100.webp 1100w"
-              sizes="(min-width: 1400px) 526px, (min-width: 1200px) 451px, (min-width: 992px) 376px, (min-width: 768px) 396px, (min-width: 576px) 516px, calc(100vw - 24px)"
-              alt="custom fields on a product edit page" class="img-fluid" width="1100" height="627" loading="lazy" />
+            <div class="shot-frame">
+              <img src="assets/images/form-banners/custom-fields-1100.webp"
+                srcset="assets/images/form-banners/custom-fields-560.webp 560w, assets/images/form-banners/custom-fields-1100.webp 1100w"
+                sizes="(min-width: 1400px) 526px, (min-width: 1200px) 451px, (min-width: 992px) 376px, (min-width: 768px) 396px, (min-width: 576px) 516px, calc(100vw - 24px)"
+                alt="custom fields on a product edit page" width="1100" height="627" loading="lazy" />
+            </div>
           </div>
           <div class="col-md-5 col-lg-6 align-self-center ms-auto order-1 order-md-2" data-aos="fade-right" data-aos-duration="1500">
             <h2 class="title font-bold" i18n="Custom fields title@@customFieldsTitle">Track What Matters to You</h2>
