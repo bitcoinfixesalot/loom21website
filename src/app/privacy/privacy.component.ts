@@ -4,7 +4,7 @@ import { ProtectedEmailComponent } from '../shared/protected-email/protected-ema
 import { LeadInComponent } from '../shared/lead-in.component';
 import { RouterLink } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
-import { TITLES, DESCRIPTIONS, LD_JSON } from '../constants/localized-const';
+import { BREADCRUMBS, TITLES, DESCRIPTIONS, LD_JSON } from '../constants/localized-const';
 import { OgMetaService } from '../services/og-meta.service';
 import { StructuredDataService } from '../services/structured-data.service';
 
@@ -53,8 +53,8 @@ export class PrivacyComponent implements OnInit{
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         'itemListElement': [
-          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `https://loom21.com/${this.localeId}/` },
-          { '@type': 'ListItem', 'position': 2, 'name': 'Privacy Policy', 'item': `https://loom21.com/${this.localeId}/privacy-policy/` }
+          { '@type': 'ListItem', 'position': 1, 'name': BREADCRUMBS.home, 'item': `https://loom21.com/${this.localeId}/` },
+          { '@type': 'ListItem', 'position': 2, 'name': BREADCRUMBS.privacy, 'item': `https://loom21.com/${this.localeId}/privacy-policy/` }
         ]
       }
     ]);

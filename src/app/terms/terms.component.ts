@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, Inject, LOCALE_ID, OnInit, PLATFORM
 import { isPlatformBrowser } from '@angular/common';
 import { Meta, Title } from '@angular/platform-browser';
 import { MarkdownComponent } from 'ngx-markdown';
-import { DESCRIPTIONS, TITLES } from '../constants/localized-const';
+import { BREADCRUMBS, DESCRIPTIONS, TITLES } from '../constants/localized-const';
 import { EMAIL_TOKEN, emailAddress, emailObfuscated } from '../constants/contact-const';
 import { OgMetaService } from '../services/og-meta.service';
 import { StructuredDataService } from '../services/structured-data.service';
@@ -50,8 +50,8 @@ export class TermsComponent implements OnInit {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: `https://loom21.com/${this.localeId}/` },
-          { '@type': 'ListItem', position: 2, name: 'Terms of Service', item: `https://loom21.com/${this.localeId}/terms/` },
+          { '@type': 'ListItem', position: 1, name: BREADCRUMBS.home, item: `https://loom21.com/${this.localeId}/` },
+          { '@type': 'ListItem', position: 2, name: BREADCRUMBS.terms, item: `https://loom21.com/${this.localeId}/terms/` },
         ],
       },
     ]);

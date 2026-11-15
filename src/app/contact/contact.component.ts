@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup,
 import { ActivatedRoute } from '@angular/router';
 import { first } from 'rxjs';
 import { EmailService } from '../services/email.service';
-import { DESCRIPTIONS, ERROR_MESSAGE, LD_JSON, SUCCESS_MESSAGE, TITLES } from '../constants/localized-const';
+import { BREADCRUMBS, DESCRIPTIONS, ERROR_MESSAGE, LD_JSON, SUCCESS_MESSAGE, TITLES } from '../constants/localized-const';
 import { Meta, Title } from '@angular/platform-browser';
 import { OgMetaService } from '../services/og-meta.service';
 import { StructuredDataService } from '../services/structured-data.service';
@@ -62,7 +62,7 @@ export class ContactComponent implements OnInit {
       {
         '@context': 'https://schema.org',
         '@type': 'ContactPage',
-        'name': 'Contact | Loom21',
+        'name': TITLES.contact,
         'description': LD_JSON.contact_description,
         'isPartOf': {
           '@type': 'WebSite',
@@ -73,8 +73,8 @@ export class ContactComponent implements OnInit {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
         'itemListElement': [
-          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `https://loom21.com/${this.localeId}/` },
-          { '@type': 'ListItem', 'position': 2, 'name': 'Contact', 'item': `https://loom21.com/${this.localeId}/contact/` }
+          { '@type': 'ListItem', 'position': 1, 'name': BREADCRUMBS.home, 'item': `https://loom21.com/${this.localeId}/` },
+          { '@type': 'ListItem', 'position': 2, 'name': BREADCRUMBS.contact, 'item': `https://loom21.com/${this.localeId}/contact/` }
         ]
       }
     ]);

@@ -48,8 +48,8 @@
         <note priority="1" from="description">Launch app button</note>
       </trans-unit>
       <trans-unit id="homeTitle" datatype="html">
-        <source>Loom21 - Bitcoin &amp; Card Payments with Real-Time Inventory</source>
-        <target>Loom21 — Биткойн и плащания с карти с инвентар в реално време</target>
+        <source>Loom21: inventory, invoices and Bitcoin or card payments</source>
+        <target>Loom21: склад, фактури и плащания с Биткойн или карта</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">6</context>
@@ -84,8 +84,8 @@
         <note priority="1" from="description">Pricing title</note>
       </trans-unit>
       <trans-unit id="privacyTitle" datatype="html">
-        <source>Privacy | Loom21</source>
-        <target>Поверителност | Loom21</target>
+        <source>Privacy Policy | Loom21</source>
+        <target>Политика за поверителност | Loom21</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">10</context>
@@ -102,8 +102,8 @@
         <note priority="1" from="description">Home description tag</note>
       </trans-unit>
       <trans-unit id="docDescription" datatype="html">
-        <source>App for inventory management, stock control, customer &amp; supplier tools, invoice &amp; Bitcoin payments, order fulfilment, and real-time tracking with analytics</source>
-        <target>Приложение за управление на инвентара, контрол на складови наличности, инструменти за клиенти и доставчици, фактуриране и плащания с биткойн, изпълнение на поръчки и проследяване в реално време с анализи.</target>
+        <source>How to set up and use Loom21: payment links, sales, deliveries, inventory, price lists, reports and payment processor settings.</source>
+        <target>Как да настроите и използвате Loom21: връзки за плащане, продажби, доставки, инвентар, ценови листи, справки и настройки на платежните процесори.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">15</context>
@@ -111,8 +111,8 @@
         <note priority="1" from="description">Documentation description tag</note>
       </trans-unit>
       <trans-unit id="contactDescription" datatype="html">
-        <source>Questions on sales, deliveries, or payments? Contact us for expert support to grow your business!</source>
-        <target>Имате въпроси относно продажби, доставки или плащания? Свържете се с нас за експертна помощ и развитие на вашия бизнес!</target>
+        <source>Questions about Loom21? Send us a message. We typically respond within one business day.</source>
+        <target>Имате въпроси за Loom21? Пишете ни. Обикновено отговаряме в рамките на един работен ден.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">16</context>
@@ -129,8 +129,8 @@
         <note priority="1" from="description">Pricing description tag</note>
       </trans-unit>
       <trans-unit id="privacyDescription" datatype="html">
-        <source>Learn about our privacy practices and how we protect your data.</source>
-        <target>Научете се за нашите практики за поверителност и как защитаваме вашите данни.</target>
+        <source>How Loom21 collects, uses and protects your personal data, and the rights you have under GDPR.</source>
+        <target>Как Loom21 събира, използва и защитава личните ви данни и какви права имате по GDPR.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">18</context>
@@ -147,8 +147,8 @@
         <note priority="1" from="description">Home description ld_json tag</note>
       </trans-unit>
       <trans-unit id="docDescription_ld_json" datatype="html">
-        <source>Learn to optimize sales, deliveries, and payments. Guides on inventory, user roles, and real-time tracking.</source>
-        <target>Научете се как да оптимизирате продажбите, доставките и плащанията. Ръководства за инвентар, потребителски роли и проследяване в реално време.</target>
+        <source>Guides for setting up and using Loom21: payment links, sales, deliveries, inventory, price lists and reports.</source>
+        <target>Ръководства за настройка и работа с Loom21: връзки за плащане, продажби, доставки, инвентар, ценови листи и справки.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">23</context>
@@ -156,8 +156,8 @@
         <note priority="1" from="description">Documentation description ld_json tag</note>
       </trans-unit>
       <trans-unit id="contactDescription_ld_json" datatype="html">
-        <source>Questions on sales, deliveries, or payments? Contact us for expert support to grow your business.</source>
-        <target>Имате въпроси относно продажби, доставки или плащания? Свържете се с нас за експертна помощ и развитие на вашия бизнес.</target>
+        <source>Questions about Loom21? Send us a message. We typically respond within one business day.</source>
+        <target>Имате въпроси за Loom21? Пишете ни. Обикновено отговаряме в рамките на един работен ден.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">24</context>
@@ -165,8 +165,8 @@
         <note priority="1" from="description">Contact description ld_json tag</note>
       </trans-unit>
       <trans-unit id="pricingDescription_ld_json" datatype="html">
-        <source>Loom21 plans: Free, Starter, Growth and Pro. Bitcoin and card payments with 0% platform fees.</source>
-        <target>Планове на Loom21: Free, Starter, Growth и Pro. Плащания с Биткойн и карти с 0% такси от платформата.</target>
+        <source>Loom21 plans: Free, Starter, Growth and Pro. Bitcoin and card payments with 0% Loom21 fees.</source>
+        <target>Планове на Loom21: Free, Starter, Growth и Pro. Плащания с Биткойн и карти с 0% такси от Loom21.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">27</context>
@@ -174,8 +174,8 @@
         <note priority="1" from="description">Pricing description ld_json tag</note>
       </trans-unit>
       <trans-unit id="privacyDescription_ld_json" datatype="html">
-        <source>Learn about our privacy practices and how we protect your data.</source>
-        <target>Научете се за нашите практики за поверителност и как защитаваме вашите данни.</target>
+        <source>How Loom21 collects, uses and protects your personal data, and the rights you have under GDPR.</source>
+        <target>Как Loom21 събира, използва и защитава личните ви данни и какви права имате по GDPR.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
           <context context-type="linenumber">26</context>
@@ -4241,6 +4241,78 @@
           <context context-type="linenumber">133,134</context>
         </context-group>
         <note priority="1" from="description">Pay method card note</note>
+      </trans-unit>
+      <trans-unit id="crumbHome" datatype="html">
+        <source>Home</source>
+        <target>Начало</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">Breadcrumb name</note>
+      </trans-unit>
+      <trans-unit id="crumbDocumentation" datatype="html">
+        <source>Documentation</source>
+        <target>Документация</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="description">Breadcrumb name</note>
+      </trans-unit>
+      <trans-unit id="crumbPricing" datatype="html">
+        <source>Pricing</source>
+        <target>Цени</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">Breadcrumb name</note>
+      </trans-unit>
+      <trans-unit id="crumbFaq" datatype="html">
+        <source>FAQ</source>
+        <target>ЧЗВ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description">Breadcrumb name</note>
+      </trans-unit>
+      <trans-unit id="crumbRoadmap" datatype="html">
+        <source>Roadmap</source>
+        <target>Пътна карта</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <note priority="1" from="description">Breadcrumb name</note>
+      </trans-unit>
+      <trans-unit id="crumbContact" datatype="html">
+        <source>Contact</source>
+        <target>Контакти</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note priority="1" from="description">Breadcrumb name</note>
+      </trans-unit>
+      <trans-unit id="crumbPrivacy" datatype="html">
+        <source>Privacy Policy</source>
+        <target>Политика за поверителност</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">Breadcrumb name</note>
+      </trans-unit>
+      <trans-unit id="crumbTerms" datatype="html">
+        <source>Terms of Service</source>
+        <target>Общи условия</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description">Breadcrumb name</note>
       </trans-unit>
     </body>
   </file>
