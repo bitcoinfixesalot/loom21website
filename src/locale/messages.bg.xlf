@@ -1779,46 +1779,6 @@
           <context context-type="linenumber">10,12</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="errorMessagePart1" datatype="html">
-        <source>Join Loom21 back at the </source>
-        <target>Присъединете се към Loom21 отново на </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">11</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="homepage" datatype="html">
-        <source>homepage</source>
-        <target>началната страница</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">12</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="errorMessagePart2" datatype="html">
-        <source> or </source>
-        <target> или се </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">13</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="contactUsPart" datatype="html">
-        <source>contact us</source>
-        <target>свържете с нас</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">14</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="errorMessagePart3" datatype="html">
-        <source> for help.</source>
-        <target> за помощ.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
-          <context context-type="linenumber">15</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="retryButton" datatype="html">
         <source>Try again</source>
         <target>Опитайте отново</target>
@@ -4313,6 +4273,51 @@
           <context context-type="linenumber">42</context>
         </context-group>
         <note priority="1" from="description">Breadcrumb name</note>
+      </trans-unit>
+      <trans-unit id="skipToContent" datatype="html">
+        <source>Skip to content</source>
+        <target>Към съдържанието</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+        <note priority="1" from="description">Skip link</note>
+      </trans-unit>
+      <trans-unit id="notFoundTitle" datatype="html">
+        <source>Page not found | Loom21</source>
+        <target>Страницата не е намерена | Loom21</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/not-found/not-found.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">Not found page title</note>
+      </trans-unit>
+      <trans-unit id="notFoundText" datatype="html">
+        <source>The page you are looking for doesn&apos;t exist or has moved.</source>
+        <target>Страницата, която търсите, не съществува или е преместена.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/not-found/not-found.component.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+        <note priority="1" from="description">Not found text</note>
+      </trans-unit>
+      <trans-unit id="backToHome" datatype="html">
+        <source>Back to home</source>
+        <target>Към началната страница</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/not-found/not-found.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <note priority="1" from="description">Back to home button</note>
+      </trans-unit>
+      <trans-unit id="pricingPayFeeDesc" datatype="html">
+        <source>Loom21 never takes a percentage of your Bitcoin or card payments.</source>
+        <target>Loom21 никога не взима процент от плащанията ви с Биткойн или карта.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
+          <context context-type="linenumber">119,122</context>
+        </context-group>
+        <note priority="1" from="description">What you pay loom21 fee desc</note>
       </trans-unit>
     </body>
   </file>

@@ -87,6 +87,14 @@ export class DocumentationComponent implements OnInit {
     this.activeId.set(id);
   }
 
+  /** Screenshots are too small to read on a phone: a tap opens the full-size image in a new tab. */
+  openImage(event: Event): void {
+    const target = event.target;
+    if (target instanceof HTMLImageElement && !target.closest('a')) {
+      window.open(target.currentSrc || target.src, '_blank', 'noopener');
+    }
+  }
+
   private extractHeadings(): void {
     const markdownEl: HTMLElement | null = this.elementRef.nativeElement.querySelector('markdown');
     if (!markdownEl) return;

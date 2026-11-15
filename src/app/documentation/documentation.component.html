@@ -50,7 +50,7 @@
       </div>
     }
 
-    <div [class.d-none]="isLoading() || hasError()">
+    <div [class.d-none]="isLoading() || hasError()" (click)="openImage($event)">
       <markdown [src]="srcPath" (load)="onMarkdownLoad()" (error)="onMarkdownError()"></markdown>
     </div>
 

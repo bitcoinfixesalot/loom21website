@@ -256,3 +256,7 @@
     display: none;
   }
 }
+
+::ng-deep markdown img {
+  cursor: zoom-in;
+}

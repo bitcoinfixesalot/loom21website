@@ -9,7 +9,7 @@
         <h2 class="section-title">{{ CONSTANTS.shippedTitle }}</h2>
         <div class="row">
           @for (item of shippedItems; track item.title) {
-            <div class="col-md-6 col-lg-4 m-b-30">
+            <div class="col-md-6 col-lg-4 col-xl-3 m-b-30">
               <div class="ui-card ui-card--lift roadmap-card">
                 <h3>{{ item.title }}</h3>
                 <p>{{ item.description }}</p>
@@ -23,7 +23,7 @@
         <h2 class="section-title">{{ CONSTANTS.inProgressTitle }}</h2>
         <div class="row">
           @for (item of inProgressItems; track item.title) {
-            <div class="col-md-6 col-lg-4 m-b-30">
+            <div class="col-md-6 col-lg-4 col-xl-3 m-b-30">
               <div class="ui-card ui-card--lift roadmap-card">
                 <h3>{{ item.title }}</h3>
                 <p>{{ item.description }}</p>
@@ -37,7 +37,7 @@
         <h2 class="section-title">{{ CONSTANTS.plannedTitle }}</h2>
         <div class="row">
           @for (item of plannedItems; track item.title) {
-            <div class="col-md-6 col-lg-4 m-b-30">
+            <div class="col-md-6 col-lg-4 col-xl-3 m-b-30">
               <div class="ui-card ui-card--lift roadmap-card">
                 <h3>{{ item.title }}</h3>
                 <p>{{ item.description }}</p>

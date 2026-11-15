@@ -1,4 +1,16 @@
-.error-text .error-code {
-    font-size: 130px;
-    line-height: 180px;
+.not-found {
+  padding: 72px 0 96px;
+}
+
+.error-code {
+  margin: 0;
+  color: var(--brand);
+  font-size: clamp(72px, 18vw, 130px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.error-text {
+  margin-bottom: 28px;
+  color: var(--text-muted);
 }

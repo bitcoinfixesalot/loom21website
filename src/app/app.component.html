@@ -1,6 +1,7 @@
 <div id="main-wrapper">
     <!-- Target of the "back to top" links. Not on the header itself: that is sticky, so it is always in view -->
     <span id="top"></span>
+    <a class="skip-link" href="#main-content" (click)="skipToContent($event)" i18n="Skip link@@skipToContent">Skip to content</a>
     <app-banner></app-banner>
     <div class="page-wrapper">
         <!-- ============================================================== -->
@@ -9,7 +10,7 @@
         <div class="container-fluid">
             <!-- <app-banner-content></app-banner-content>       -->
             <div class="blog-home2">
-                <main>
+                <main id="main-content" tabindex="-1">
                     <router-outlet></router-outlet>
                 </main>
             </div>

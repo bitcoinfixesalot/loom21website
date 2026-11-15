@@ -269,6 +269,8 @@ $accent: var(--brand);
 }
 
 .pay-item--zero .pay-zero {
+  margin-bottom: 0.25rem;
+  line-height: 1.1;
   font-size: 2rem;
   font-weight: 700;
   color: #198754;

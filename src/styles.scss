@@ -207,3 +207,34 @@ html {
     }
   }
 }
+
+// Keyboard users: first Tab stop, jumps past the header. Hidden until focused.
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 1100;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transform: translateY(-200%);
+
+  &:focus {
+    color: #fff;
+    transform: none;
+  }
+}
+
+main:focus {
+  outline: none;
+}
+
+// X logo (Font Awesome 4.7 only has the old Twitter bird)
+.x-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+}
