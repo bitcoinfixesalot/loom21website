@@ -57,10 +57,10 @@ $accent: var(--brand);
   margin-bottom: 2rem;
 }
 
+// Surface, border, radius and shadow come from the shared .ui-card (src/styles.scss)
 .pricing-plan {
   position: relative;
-  border: 1px solid #dee2e6;
-  border-radius: 0.5rem;
+  padding: 0; // the Bootstrap .card-body inside has the padding
 
   .card-body {
     display: flex;
@@ -102,7 +102,7 @@ $accent: var(--brand);
 
 .pricing-plan--highlight {
   border: 2px solid $accent;
-  box-shadow: 0 6px 20px rgba(var(--brand-rgb), 0.18);
+  box-shadow: var(--shadow-card-brand);
   transform: translateY(-4px);
 }
 
@@ -125,8 +125,11 @@ $accent: var(--brand);
   max-width: 640px;
   margin: 0 auto 3rem;
 
+  // Tinted panel, like the contact details box
   .card {
-    border-width: 2px;
+    border: 0;
+    border-radius: var(--radius-card);
+    background: var(--brand-tint);
   }
 
   .card-title {
@@ -180,7 +183,7 @@ $accent: var(--brand);
 
 .pay-item {
   background: var(--surface-alt);
-  border-radius: 0.5rem;
+  border-radius: var(--radius-card);
   padding: 1.25rem;
 
   h3 {

@@ -33,7 +33,7 @@
   <!-- Plan cards -->
   <div class="pricing-grid">
     @for (card of cards(); track card.key) {
-      <div class="card pricing-plan text-center" [class.pricing-plan--highlight]="card.highlight" [id]="'plan-' + card.key">
+      <div class="card ui-card pricing-plan text-center" [class.pricing-plan--highlight]="card.highlight" [id]="'plan-' + card.key">
         @if (card.highlight) {
           <span class="pricing-ribbon" i18n="Most popular ribbon@@pricingMostPopular">Most popular</span>
         }
@@ -58,7 +58,7 @@
 
   <!-- Custom plan -->
   <div class="custom-plan-section">
-    <div class="card text-center bg-light border-primary">
+    <div class="card custom-plan text-center">
       <div class="card-body">
         <h2 class="card-title text-primary" i18n="Need custom plan@@needAcustomPlan">Need a Custom Plan?</h2>
         <p class="card-text" i18n="Personalized quote@@personalizedQuote">Need more stores, orders or an SLA? Custom plans with unlimited users and dedicated support.</p>

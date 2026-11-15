@@ -19,6 +19,13 @@
   --surface-alt: #f6f9fc;  // zebra rows, quiet panels
 
   --header-h: 80px;        // height of the sticky header (src/app/banner)
+
+  // Cards and panels: one radius and one shadow scale for the whole site
+  --radius-card: 12px;
+  --radius-lg: 16px;       // large showpieces (hero video, payments panel)
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-card-brand: 0 6px 20px rgba(var(--brand-rgb), 0.18); // highlighted card
 }
 
 // Tinted full-width section background
@@ -101,4 +108,26 @@ a {
 // In-page anchors and "scroll into view" stop below the sticky header instead of under it
 html {
   scroll-padding-top: calc(var(--header-h) + 12px);
+}
+
+// Raised card used across pages (home, pricing plans, roadmap). Page styles only add what is specific to them.
+.ui-card {
+  height: 100%;
+  padding: 28px 24px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+.ui-card--compact {
+  padding: 20px;
+}
+
+.ui-card--lift {
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: var(--shadow-card-hover);
+  }
 }

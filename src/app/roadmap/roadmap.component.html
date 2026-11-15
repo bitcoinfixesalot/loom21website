@@ -10,7 +10,7 @@
         <div class="row">
           @for (item of shippedItems; track item.title) {
             <div class="col-md-6 col-lg-4 m-b-30">
-              <div class="roadmap-card">
+              <div class="ui-card ui-card--lift roadmap-card">
                 <h3>{{ item.title }}</h3>
                 <p>{{ item.description }}</p>
               </div>
@@ -24,7 +24,7 @@
         <div class="row">
           @for (item of inProgressItems; track item.title) {
             <div class="col-md-6 col-lg-4 m-b-30">
-              <div class="roadmap-card">
+              <div class="ui-card ui-card--lift roadmap-card">
                 <h3>{{ item.title }}</h3>
                 <p>{{ item.description }}</p>
               </div>
@@ -38,7 +38,7 @@
         <div class="row">
           @for (item of plannedItems; track item.title) {
             <div class="col-md-6 col-lg-4 m-b-30">
-              <div class="roadmap-card">
+              <div class="ui-card ui-card--lift roadmap-card">
                 <h3>{{ item.title }}</h3>
                 <p>{{ item.description }}</p>
               </div>
