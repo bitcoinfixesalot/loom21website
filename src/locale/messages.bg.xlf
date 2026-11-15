@@ -4179,6 +4179,33 @@
         </context-group>
         <note priority="1" from="description">Closing CTA text</note>
       </trans-unit>
+      <trans-unit id="videoPlay" datatype="html">
+        <source>Play</source>
+        <target>Пусни</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+        <note priority="1" from="description">Video play button</note>
+      </trans-unit>
+      <trans-unit id="videoPause" datatype="html">
+        <source>Pause</source>
+        <target>Пауза</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+        <note priority="1" from="description">Video pause button</note>
+      </trans-unit>
+      <trans-unit id="videoReplay" datatype="html">
+        <source>Replay</source>
+        <target>Отначало</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+        <note priority="1" from="description">Video replay button</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

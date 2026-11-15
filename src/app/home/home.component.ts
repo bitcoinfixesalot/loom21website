@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Inject, isDevMode, LOCALE_ID, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Inject, isDevMode, LOCALE_ID, OnDestroy, OnInit, signal, viewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { DomSanitizer, Meta, SafeResourceUrl, Title } from '@angular/platform-browser';
 import {
@@ -31,6 +31,7 @@ import { StructuredDataService } from '../services/structured-data.service';
 
 // TODO: replace with the real Loom21 promo video ID once available (see https://youtube.com/watch?v=<id>)
 const PROMO_VIDEO_ID = 'i5AcWrVMqxQ';
+const PROMO_VIDEO_ORIGIN = 'https://www.youtube-nocookie.com';
 
 @Component({
   selector: 'app-home',
@@ -39,9 +40,11 @@ const PROMO_VIDEO_ID = 'i5AcWrVMqxQ';
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnDestroy {
   appUrl: string;
   isVideoPlaying = false;
+  readonly isVideoPaused = signal(false);
+  private readonly promoFrame = viewChild<ElementRef<HTMLIFrameElement>>('promoFrame');
   promoVideoUrl: SafeResourceUrl;
   readonly apiStatus = API_STATUS;
   readonly integrationsCardText = API_STATUS === 'live'
@@ -56,12 +59,66 @@ export class HomeComponent implements OnInit {
     if (this.localeId == 'bg') {
       this.appUrl = 'https://app.loom21.com/bg/'
     }
-    this.promoVideoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube-nocookie.com/embed/${PROMO_VIDEO_ID}?autoplay=1`);
+    // enablejsapi lets the Pause/Replay buttons under the video control the player (see postToPlayer)
+    this.promoVideoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(`${PROMO_VIDEO_ORIGIN}/embed/${PROMO_VIDEO_ID}?autoplay=1&enablejsapi=1&playsinline=1`);
   }
 
   playPromoVideo(): void {
     this.isVideoPlaying = true;
+    this.isVideoPaused.set(false);
+    window.addEventListener('message', this.onPlayerMessage);
   }
+
+  /** Ask the player to report state changes, so the button also follows YouTube's own controls. */
+  onPromoFrameLoad(): void {
+    this.postToPlayer({ event: 'listening', id: 'promo', channel: 'widget' });
+  }
+
+  togglePromoVideo(): void {
+    const paused = this.isVideoPaused();
+    this.playerCommand(paused ? 'playVideo' : 'pauseVideo');
+    this.isVideoPaused.set(!paused);
+  }
+
+  replayPromoVideo(): void {
+    this.playerCommand('seekTo', [0, true]);
+    this.playerCommand('playVideo');
+    this.isVideoPaused.set(false);
+  }
+
+  ngOnDestroy(): void {
+    if (this.isVideoPlaying) {
+      window.removeEventListener('message', this.onPlayerMessage);
+    }
+  }
+
+  private playerCommand(func: string, args: unknown[] = []): void {
+    this.postToPlayer({ event: 'listening', id: 'promo', channel: 'widget' });
+    this.postToPlayer({ event: 'command', func, args });
+  }
+
+  // The YouTube embed takes commands as postMessage JSON. Its own touch controls can be unresponsive
+  // (seen in browser phone emulation), so the page's buttons must not depend on them.
+  private postToPlayer(message: object): void {
+    this.promoFrame()?.nativeElement.contentWindow?.postMessage(JSON.stringify(message), PROMO_VIDEO_ORIGIN);
+  }
+
+  private readonly onPlayerMessage = (event: MessageEvent): void => {
+    if (event.origin !== PROMO_VIDEO_ORIGIN || typeof event.data !== 'string') {
+      return;
+    }
+    try {
+      const state = JSON.parse(event.data)?.info?.playerState;
+      // 1 playing, 2 paused, 0 ended
+      if (state === 1) {
+        this.isVideoPaused.set(false);
+      } else if (state === 2 || state === 0) {
+        this.isVideoPaused.set(true);
+      }
+    } catch {
+      // not a player message
+    }
+  };
 
   ngOnInit() {
     this.titleService.setTitle(TITLES.home_title);
