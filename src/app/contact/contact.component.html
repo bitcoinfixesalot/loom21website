@@ -9,8 +9,7 @@
         <div class="col-lg-8">
           <div class="contact-box p-r-40">
             <h2 class="title" i18n="Contact us title@@contactUs">Contact Us</h2>
-            <form [formGroup]="form" (ngSubmit)="onSubmit()" data-aos="fade-left"
-              data-aos-duration="1200">
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
               <div class="row">
                 <div class="col-lg-12">
                   <div class="form-group m-t-15">
@@ -87,7 +86,7 @@
                         </div>
                       </div>
                       <div class="col-lg-12">
-                        <button [disabled]="showSuccess() || isSubmitting()" type="submit" class="btn waves-effect waves-light btn-primary m-r-20 m-t-5">
+                        <button [disabled]="showSuccess() || isSubmitting()" type="submit" class="btn btn-primary m-r-20 m-t-5">
                           @if (isSubmitting()) {
                             <span class="spinner-border spinner-border-sm me-1" role="status" aria-hidden="true"></span>
                           }
@@ -102,7 +101,7 @@
                     </form>
                   </div>
                 </div>
-                <div class="col-lg-4" data-aos="fade-right" data-aos-duration="1200">
+                <div class="col-lg-4">
                   <div class="contact-detail-box">
                     <h4 i18n="Contact detail title@@contactDetailTitle">We'd love to hear from you</h4>
                     <p i18n="Contact detail response@@contactDetailResponse">We typically respond within one business day.</p>

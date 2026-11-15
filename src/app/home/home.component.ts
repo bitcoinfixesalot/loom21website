@@ -26,6 +26,7 @@ import {
   WAREHOUSE_MANAGEMENT
 } from '../constants/localized-const';
 import { API_STATUS } from '../constants/product-const';
+import { RevealDirective } from '../shared/reveal.directive';
 import { OgMetaService } from '../services/og-meta.service';
 import { StructuredDataService } from '../services/structured-data.service';
 
@@ -35,7 +36,7 @@ const PROMO_VIDEO_ORIGIN = 'https://www.youtube-nocookie.com';
 
 @Component({
   selector: 'app-home',
-  imports: [RouterLink],
+  imports: [RouterLink, RevealDirective],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
