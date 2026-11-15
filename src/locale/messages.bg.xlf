@@ -39,7 +39,7 @@
         <note priority="1" from="description">contact menu</note>
       </trans-unit>
       <trans-unit id="launchApp" datatype="html">
-        <source>Launch App</source>
+        <source>Launch app</source>
         <target>Към Loom21</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
@@ -360,7 +360,7 @@
         <note priority="1" from="description">Privacy policy title</note>
       </trans-unit>
       <trans-unit id="privacyPolicyLastUpdated" datatype="html">
-        <source>Last Updated: October 8, 2026</source>
+        <source>Last updated: October 8, 2026</source>
         <target>Последна актуализация: 8 октомври 2026 г.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
@@ -387,7 +387,7 @@
         <note priority="1" from="description">Intro paragraph 2</note>
       </trans-unit>
       <trans-unit id="section1Title" datatype="html">
-        <source>1. Who We Are</source>
+        <source>1. Who we are</source>
         <target>1. Кои сме ние</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
@@ -423,7 +423,7 @@
         <note priority="1" from="description">Section 1 contact form</note>
       </trans-unit>
       <trans-unit id="section2Title" datatype="html">
-        <source>2. Information We Collect</source>
+        <source>2. Information we collect</source>
         <target>2. Информация, която събираме</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
@@ -441,7 +441,7 @@
         <note priority="1" from="description">Section 2 intro</note>
       </trans-unit>
       <trans-unit id="section2aTitle" datatype="html">
-        <source>a. Information You Provide Directly</source>
+        <source>a. Information you provide directly</source>
         <target>a. Информация, която предоставяте директно</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
@@ -477,7 +477,7 @@
         <note priority="1" from="description">Section 2a item 3</note>
       </trans-unit>
       <trans-unit id="section2bTitle" datatype="html">
-        <source>b. Information Collected Automatically</source>
+        <source>b. Information collected automatically</source>
         <target>b. Информация, събирана автоматично</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
@@ -495,7 +495,7 @@
         <note priority="1" from="description">Section 2b item 1</note>
       </trans-unit>
       <trans-unit id="section2cTitle" datatype="html">
-        <source>c. Information from Third Parties</source>
+        <source>c. Information from third parties</source>
         <target>c. Информация от трети страни</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
@@ -513,7 +513,7 @@
         <note priority="1" from="description">Section 2c item 1</note>
       </trans-unit>
       <trans-unit id="section3Title" datatype="html">
-        <source>3. Legal Basis for Processing (GDPR)</source>
+        <source>3. Legal basis for processing (GDPR)</source>
         <target>3. Правно основание за обработка (GDPR)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
@@ -567,7 +567,7 @@
         <note priority="1" from="description">Section 3 item 4</note>
       </trans-unit>
       <trans-unit id="section4Title" datatype="html">
-        <source>4. How We Use Your Information</source>
+        <source>4. How we use your information</source>
         <target>4. Как използваме вашата информация</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
@@ -729,7 +729,7 @@
         <note priority="1" from="description">Section 4 item 5a</note>
       </trans-unit>
       <trans-unit id="section5Title" datatype="html">
-        <source>5. How We Share Your Information</source>
+        <source>5. How we share your information</source>
         <target>5. Как споделяме вашата информация</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
@@ -783,7 +783,7 @@
         <note priority="1" from="description">Section 5 item 4</note>
       </trans-unit>
       <trans-unit id="section6Title" datatype="html">
-        <source>6. International Data Transfers</source>
+        <source>6. International data transfers</source>
         <target>6. Международни трансфери на данни</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
@@ -828,7 +828,7 @@
         <note priority="1" from="description">Section 6 item 3</note>
       </trans-unit>
       <trans-unit id="section7Title" datatype="html">
-        <source>7. Data Retention</source>
+        <source>7. Data retention</source>
         <target>7. Съхранение на данни</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
@@ -873,7 +873,7 @@
         <note priority="1" from="description">Section 7 item 3</note>
       </trans-unit>
       <trans-unit id="section8Title" datatype="html">
-        <source>8. Your Data Protection Rights</source>
+        <source>8. Your data protection rights</source>
         <target>8. Вашите права за защита на данните</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
@@ -981,7 +981,7 @@
         <note priority="1" from="description">Section 8 contact form</note>
       </trans-unit>
       <trans-unit id="section9Title" datatype="html">
-        <source>9. Data Security</source>
+        <source>9. Data security</source>
         <target>9. Сигурност на данните</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
@@ -1044,7 +1044,7 @@
         <note priority="1" from="description">Section 9 contact form</note>
       </trans-unit>
       <trans-unit id="section10Title" datatype="html">
-        <source>10. Third-Party Links</source>
+        <source>10. Third-party links</source>
         <target>10. Връзки към трети страни</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
@@ -1062,7 +1062,7 @@
         <note priority="1" from="description">Section 10 content</note>
       </trans-unit>
       <trans-unit id="section11Title" datatype="html">
-        <source>11. Children’s Privacy</source>
+        <source>11. Children’s privacy</source>
         <target>11. Поверителност на децата</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
@@ -1089,7 +1089,7 @@
         <note priority="1" from="description">Section 11 contact form</note>
       </trans-unit>
       <trans-unit id="section12Title" datatype="html">
-        <source>12. Compliance with Other Laws</source>
+        <source>12. Compliance with other laws</source>
         <target>12. Спазване на други закони</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
@@ -1152,7 +1152,7 @@
         <note priority="1" from="description">Section 12 contact form</note>
       </trans-unit>
       <trans-unit id="section13Title" datatype="html">
-        <source>13. Changes to This Privacy Policy</source>
+        <source>13. Changes to this Privacy Policy</source>
         <target>13. Промени в тази Политика за поверителност</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
@@ -1170,7 +1170,7 @@
         <note priority="1" from="description">Section 13 content</note>
       </trans-unit>
       <trans-unit id="section14Title" datatype="html">
-        <source>14. Contact Us</source>
+        <source>14. Contact us</source>
         <target>14. Свържете се с нас</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
@@ -1215,7 +1215,7 @@
         <note priority="1" from="description">Section 14 complaint</note>
       </trans-unit>
       <trans-unit id="contactUs" datatype="html">
-        <source>Contact Us</source>
+        <source>Contact us</source>
         <target>Пишете ни</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
@@ -1251,7 +1251,7 @@
         <note priority="1" from="description">Name requred</note>
       </trans-unit>
       <trans-unit id="email" datatype="html">
-        <source>Email Address</source>
+        <source>Email address</source>
         <target>Имейл адрес</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
@@ -1395,7 +1395,7 @@
         <note priority="1" from="description">Loom21 footer</note>
       </trans-unit>
       <trans-unit id="footerQuickLinks" datatype="html">
-        <source>Quick Links</source>
+        <source>Quick links</source>
         <target>Бързи връзки</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
@@ -1440,7 +1440,7 @@
         <note priority="1" from="description">Contact nav</note>
       </trans-unit>
       <trans-unit id="footerLegal" datatype="html">
-        <source>Legal &amp; Community</source>
+        <source>Legal &amp; community</source>
         <target>Правна информация и общност</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
@@ -1471,7 +1471,7 @@
         <note priority="1" from="description">Footer github</note>
       </trans-unit>
       <trans-unit id="footerTelegram" datatype="html">
-        <source>Telegram Community</source>
+        <source>Telegram community</source>
         <target>Общност в Telegram</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
@@ -1507,7 +1507,7 @@
         <note priority="1" from="description">Home top sub title</note>
       </trans-unit>
       <trans-unit id="watchDemoLabel" datatype="html">
-        <source>Watch Demo</source>
+        <source>Watch demo</source>
         <target>Гледайте демо</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -1529,7 +1529,7 @@
         <note priority="1" from="description">Try for free button</note>
       </trans-unit>
       <trans-unit id="contactUsButton" datatype="html">
-        <source>Contact Us</source>
+        <source>Contact us</source>
         <target>Свържете се с нас</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -1820,7 +1820,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="retryButton" datatype="html">
-        <source>Try Again</source>
+        <source>Try again</source>
         <target>Опитайте отново</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
@@ -1829,8 +1829,8 @@
         <note priority="1" from="description">Retry button</note>
       </trans-unit>
       <trans-unit id="monthly" datatype="html">
-        <source>MONTHLY</source>
-        <target>МЕСЕЧЕН</target>
+        <source>Monthly</source>
+        <target>Месечен</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
           <context context-type="linenumber">14,16</context>
@@ -1838,8 +1838,8 @@
         <note priority="1" from="description">Monthly button</note>
       </trans-unit>
       <trans-unit id="annual" datatype="html">
-        <source>ANNUAL</source>
-        <target>ГОДИШЕН</target>
+        <source>Annual</source>
+        <target>Годишен</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
           <context context-type="linenumber">19,20</context>
@@ -1847,8 +1847,8 @@
         <note priority="1" from="description">Annual button</note>
       </trans-unit>
       <trans-unit id="bitcoin" datatype="html">
-        <source>BITCOIN</source>
-        <target>БИТКОЙН</target>
+        <source>Bitcoin</source>
+        <target>Биткойн</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
           <context context-type="linenumber">28,29</context>
@@ -1856,7 +1856,7 @@
         <note priority="1" from="description">Bitcoin button</note>
       </trans-unit>
       <trans-unit id="needAcustomPlan" datatype="html">
-        <source>Need a Custom Plan? </source>
+        <source>Need a custom plan?</source>
         <target>Нуждаете се от персонализиран план?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
@@ -1874,7 +1874,7 @@
         <note priority="1" from="description">Personalized quote</note>
       </trans-unit>
       <trans-unit id="contactUsPricing" datatype="html">
-        <source> Contact Us </source>
+        <source>Contact us</source>
         <target> Пишете ни </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
@@ -1946,7 +1946,7 @@
         <note priority="1" from="description">FAQ nav</note>
       </trans-unit>
       <trans-unit id="faqPageTitle" datatype="html">
-        <source>Frequently Asked Questions</source>
+        <source>Frequently asked questions</source>
         <target>Често задавани въпроси</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
@@ -1964,7 +1964,7 @@
         <note priority="1" from="description">FAQ page intro</note>
       </trans-unit>
       <trans-unit id="faqCtaTitle" datatype="html">
-        <source>Still Have Questions?</source>
+        <source>Still have questions?</source>
         <target>Все още имате въпроси?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
@@ -1982,7 +1982,7 @@
         <note priority="1" from="description">FAQ CTA description</note>
       </trans-unit>
       <trans-unit id="faqCategory1Title" datatype="html">
-        <source>Getting Started</source>
+        <source>Getting started</source>
         <target>Първи стъпки</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
@@ -2063,8 +2063,8 @@
         <note priority="1" from="description">FAQ question 2.1</note>
       </trans-unit>
       <trans-unit id="faqA2_1" datatype="html">
-        <source>Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNbits, covering both Lightning and on-chain Bitcoin.</source>
-        <target>Stripe за кредитни и дебитни карти, и Биткойн чрез BTCPay Server, Lightning Wallet (Glow), Speed Wallet и LNbits, покриващи както Lightning, така и он-чейн Биткойн.</target>
+        <source>Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Glow, Speed Wallet, and LNbits, covering both Lightning and on-chain Bitcoin.</source>
+        <target>Stripe за кредитни и дебитни карти, и Биткойн чрез BTCPay Server, Glow, Speed Wallet и LNbits, покриващи както Lightning, така и он-чейн Биткойн.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2126,7 +2126,7 @@
         <note priority="1" from="description">FAQ answer 2.4</note>
       </trans-unit>
       <trans-unit id="faqCategory3Title" datatype="html">
-        <source>Pricing &amp; Price Lists</source>
+        <source>Pricing &amp; price lists</source>
         <target>Цени и ценови листи</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
@@ -2207,7 +2207,7 @@
         <note priority="1" from="description">FAQ answer 3.4</note>
       </trans-unit>
       <trans-unit id="faqCategory4Title" datatype="html">
-        <source>Products, Inventory &amp; Custom Fields</source>
+        <source>Products, inventory &amp; custom fields</source>
         <target>Продукти, инвентар и персонализирани полета</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
@@ -2234,7 +2234,7 @@
         <note priority="1" from="description">FAQ answer 4.1</note>
       </trans-unit>
       <trans-unit id="faqQ4_2" datatype="html">
-        <source>What are Custom Fields and what can I use them for?</source>
+        <source>What are custom fields and what can I use them for?</source>
         <target>Какво представляват персонализираните полета и за какво мога да ги използвам?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
@@ -2288,7 +2288,7 @@
         <note priority="1" from="description">FAQ answer 4.4</note>
       </trans-unit>
       <trans-unit id="faqCategory5Title" datatype="html">
-        <source>Orders &amp; Invoicing</source>
+        <source>Orders &amp; invoicing</source>
         <target>Поръчки и фактуриране</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
@@ -2351,7 +2351,7 @@
         <note priority="1" from="description">FAQ answer 5.3</note>
       </trans-unit>
       <trans-unit id="faqCategory6Title" datatype="html">
-        <source>Data, Team &amp; Security</source>
+        <source>Data, team &amp; security</source>
         <target>Данни, екип и сигурност</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
@@ -2468,7 +2468,7 @@
         <note priority="1" from="description">Roadmap nav</note>
       </trans-unit>
       <trans-unit id="roadmapPageTitle" datatype="html">
-        <source>Loom21 Roadmap</source>
+        <source>Loom21 roadmap</source>
         <target>Пътна карта на Loom21</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
@@ -2486,7 +2486,7 @@
         <note priority="1" from="description">Roadmap page intro</note>
       </trans-unit>
       <trans-unit id="roadmapCtaTitle" datatype="html">
-        <source>Have a Feature Request?</source>
+        <source>Have a feature request?</source>
         <target>Имате предложение за функция?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
@@ -2513,7 +2513,7 @@
         <note priority="1" from="description">Roadmap shipped section title</note>
       </trans-unit>
       <trans-unit id="roadmapInProgressTitle" datatype="html">
-        <source>In Progress</source>
+        <source>In progress</source>
         <target>В процес на разработка</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
@@ -2531,7 +2531,7 @@
         <note priority="1" from="description">Roadmap planned section title</note>
       </trans-unit>
       <trans-unit id="roadmapShipped1Title" datatype="html">
-        <source>Bitcoin &amp; Card Payments</source>
+        <source>Bitcoin &amp; card payments</source>
         <target>Плащания с Биткойн и карта</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
@@ -2540,8 +2540,8 @@
         <note priority="1" from="description">Roadmap shipped item 1 title</note>
       </trans-unit>
       <trans-unit id="roadmapShipped1Desc" datatype="html">
-        <source>Accept payments via Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNbits.</source>
-        <target>Приемайте плащания чрез Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet и LNbits.</target>
+        <source>Accept payments via Stripe, BTCPay Server, Glow, Speed Wallet, and LNbits.</source>
+        <target>Приемайте плащания чрез Stripe, BTCPay Server, Glow, Speed Wallet и LNbits.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2549,7 +2549,7 @@
         <note priority="1" from="description">Roadmap shipped item 1 description</note>
       </trans-unit>
       <trans-unit id="roadmapShipped2Title" datatype="html">
-        <source>Flexible Price Lists</source>
+        <source>Flexible price lists</source>
         <target>Гъвкави ценови листи</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
@@ -2567,7 +2567,7 @@
         <note priority="1" from="description">Roadmap shipped item 2 description</note>
       </trans-unit>
       <trans-unit id="roadmapShipped3Title" datatype="html">
-        <source>Custom Fields</source>
+        <source>Custom fields</source>
         <target>Персонализирани полета</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
@@ -2585,7 +2585,7 @@
         <note priority="1" from="description">Roadmap shipped item 3 description</note>
       </trans-unit>
       <trans-unit id="roadmapShipped4Title" datatype="html">
-        <source>Excel &amp; CSV Import and Export</source>
+        <source>Excel &amp; CSV import and export</source>
         <target>Импорт и експорт в Excel и CSV</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
@@ -2603,7 +2603,7 @@
         <note priority="1" from="description">Roadmap shipped item 4 description</note>
       </trans-unit>
       <trans-unit id="roadmapShipped5Title" datatype="html">
-        <source>Multi-Store Inventory</source>
+        <source>Multi-store inventory</source>
         <target>Инвентар в множество складове</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
@@ -2621,7 +2621,7 @@
         <note priority="1" from="description">Roadmap shipped item 5 description</note>
       </trans-unit>
       <trans-unit id="roadmapShipped6Title" datatype="html">
-        <source>Sales &amp; Deliveries Reports</source>
+        <source>Sales &amp; deliveries reports</source>
         <target>Справки за продажби и доставки</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
@@ -2639,7 +2639,7 @@
         <note priority="1" from="description">Roadmap shipped item 6 description</note>
       </trans-unit>
       <trans-unit id="roadmapInProgress1Title" datatype="html">
-        <source>More Payment Processors</source>
+        <source>More payment processors</source>
         <target>Още платежни процесори</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
@@ -2648,8 +2648,8 @@
         <note priority="1" from="description">Roadmap in progress item 1 title</note>
       </trans-unit>
       <trans-unit id="roadmapInProgress1Desc" datatype="html">
-        <source>Expanding the list of supported Bitcoin and fiat payment processors.</source>
-        <target>Разширяваме списъка с поддържани Биткойн и фиатни платежни процесори.</target>
+        <source>Expanding the list of supported Bitcoin and card payment processors.</source>
+        <target>Разширяваме списъка с поддържани процесори за плащания с Биткойн и карта.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2657,7 +2657,7 @@
         <note priority="1" from="description">Roadmap in progress item 1 description</note>
       </trans-unit>
       <trans-unit id="roadmapInProgress2Title" datatype="html">
-        <source>Expanded Reporting &amp; Analytics</source>
+        <source>Expanded reporting &amp; analytics</source>
         <target>Разширени справки и анализи</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
@@ -2675,7 +2675,7 @@
         <note priority="1" from="description">Roadmap in progress item 2 description</note>
       </trans-unit>
       <trans-unit id="roadmapInProgress3Title" datatype="html">
-        <source>Installable, Mobile-Friendly App</source>
+        <source>Installable, mobile-friendly app</source>
         <target>Инсталируемо, удобно за мобилни устройства приложение</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
@@ -2693,7 +2693,7 @@
         <note priority="1" from="description">Roadmap in progress item 3 description</note>
       </trans-unit>
       <trans-unit id="roadmapPlanned1Title" datatype="html">
-        <source>Full API &amp; Webhooks</source>
+        <source>Full API &amp; webhooks</source>
         <target>Пълен API и webhooks</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
@@ -2711,7 +2711,7 @@
         <note priority="1" from="description">Roadmap planned item 1 description</note>
       </trans-unit>
       <trans-unit id="roadmapPlanned2Title" datatype="html">
-        <source>More Languages</source>
+        <source>More languages</source>
         <target>Още езици</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
@@ -2729,7 +2729,7 @@
         <note priority="1" from="description">Roadmap planned item 2 description</note>
       </trans-unit>
       <trans-unit id="roadmapPlanned3Title" datatype="html">
-        <source>Native Mobile Apps</source>
+        <source>Native mobile apps</source>
         <target>Нативни мобилни приложения</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
@@ -3681,7 +3681,7 @@
         <note priority="1" from="description">Forever</note>
       </trans-unit>
       <trans-unit id="roadmapShipped7Title" datatype="html">
-        <source>Free Forever Plan</source>
+        <source>Free forever plan</source>
         <target>Безплатен план завинаги</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>

@@ -1,46 +1,46 @@
 // DRAFT CONTENT — inferred from existing product signals, not confirmed commitments. Review before publishing.
 
 export const ROADMAP_CONSTANTS = {
-  pageTitle: $localize`:Roadmap page title@@roadmapPageTitle:Loom21 Roadmap`,
+  pageTitle: $localize`:Roadmap page title@@roadmapPageTitle:Loom21 roadmap`,
   pageIntro: $localize`:Roadmap page intro@@roadmapPageIntro:A look at what we've shipped, what we're working on now, and what's coming next.`,
   lastUpdated: $localize`:Roadmap last updated@@roadmapLastUpdated:Last updated: October 2026`,
-  ctaTitle: $localize`:Roadmap CTA title@@roadmapCtaTitle:Have a Feature Request?`,
+  ctaTitle: $localize`:Roadmap CTA title@@roadmapCtaTitle:Have a feature request?`,
   ctaDesc: $localize`:Roadmap CTA description@@roadmapCtaDesc:We'd love to hear what would make Loom21 more useful for your business.`,
 
   shippedTitle: $localize`:Roadmap shipped section title@@roadmapShippedTitle:Shipped`,
-  inProgressTitle: $localize`:Roadmap in progress section title@@roadmapInProgressTitle:In Progress`,
+  inProgressTitle: $localize`:Roadmap in progress section title@@roadmapInProgressTitle:In progress`,
   plannedTitle: $localize`:Roadmap planned section title@@roadmapPlannedTitle:Planned`,
 
   // Shipped
-  shipped1Title: $localize`:Roadmap shipped item 1 title@@roadmapShipped1Title:Bitcoin & Card Payments`,
-  shipped1Desc: $localize`:Roadmap shipped item 1 description@@roadmapShipped1Desc:Accept payments via Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNbits.`,
-  shipped2Title: $localize`:Roadmap shipped item 2 title@@roadmapShipped2Title:Flexible Price Lists`,
+  shipped1Title: $localize`:Roadmap shipped item 1 title@@roadmapShipped1Title:Bitcoin & card payments`,
+  shipped1Desc: $localize`:Roadmap shipped item 1 description@@roadmapShipped1Desc:Accept payments via Stripe, BTCPay Server, Glow, Speed Wallet, and LNbits.`,
+  shipped2Title: $localize`:Roadmap shipped item 2 title@@roadmapShipped2Title:Flexible price lists`,
   shipped2Desc: $localize`:Roadmap shipped item 2 description@@roadmapShipped2Desc:Quantity tiers, percentage discounts, custom formulas, and customer-specific price overrides.`,
-  shipped3Title: $localize`:Roadmap shipped item 3 title@@roadmapShipped3Title:Custom Fields`,
+  shipped3Title: $localize`:Roadmap shipped item 3 title@@roadmapShipped3Title:Custom fields`,
   shipped3Desc: $localize`:Roadmap shipped item 3 description@@roadmapShipped3Desc:Add your own data fields to any product, beyond the standard name, price, and category.`,
-  shipped4Title: $localize`:Roadmap shipped item 4 title@@roadmapShipped4Title:Excel & CSV Import and Export`,
+  shipped4Title: $localize`:Roadmap shipped item 4 title@@roadmapShipped4Title:Excel & CSV import and export`,
   shipped4Desc: $localize`:Roadmap shipped item 4 description@@roadmapShipped4Desc:Bulk add or update products, services, customers, and suppliers from an Excel or CSV file.`,
-  shipped5Title: $localize`:Roadmap shipped item 5 title@@roadmapShipped5Title:Multi-Store Inventory`,
+  shipped5Title: $localize`:Roadmap shipped item 5 title@@roadmapShipped5Title:Multi-store inventory`,
   shipped5Desc: $localize`:Roadmap shipped item 5 description@@roadmapShipped5Desc:Track stock levels per store location across sales and delivery orders.`,
-  shipped6Title: $localize`:Roadmap shipped item 6 title@@roadmapShipped6Title:Sales & Deliveries Reports`,
+  shipped6Title: $localize`:Roadmap shipped item 6 title@@roadmapShipped6Title:Sales & deliveries reports`,
   shipped6Desc: $localize`:Roadmap shipped item 6 description@@roadmapShipped6Desc:Searchable, filterable reports with Excel, CSV and JSON export.`,
-  shipped7Title: $localize`:Roadmap shipped item 7 title@@roadmapShipped7Title:Free Forever Plan`,
+  shipped7Title: $localize`:Roadmap shipped item 7 title@@roadmapShipped7Title:Free forever plan`,
   shipped7Desc: $localize`:Roadmap shipped item 7 description@@roadmapShipped7Desc:Start selling with Bitcoin and card payments at no cost: 50 orders a month, no credit card.`,
 
   // In Progress
-  inProgress1Title: $localize`:Roadmap in progress item 1 title@@roadmapInProgress1Title:More Payment Processors`,
-  inProgress1Desc: $localize`:Roadmap in progress item 1 description@@roadmapInProgress1Desc:Expanding the list of supported Bitcoin and fiat payment processors.`,
-  inProgress2Title: $localize`:Roadmap in progress item 2 title@@roadmapInProgress2Title:Expanded Reporting & Analytics`,
+  inProgress1Title: $localize`:Roadmap in progress item 1 title@@roadmapInProgress1Title:More payment processors`,
+  inProgress1Desc: $localize`:Roadmap in progress item 1 description@@roadmapInProgress1Desc:Expanding the list of supported Bitcoin and card payment processors.`,
+  inProgress2Title: $localize`:Roadmap in progress item 2 title@@roadmapInProgress2Title:Expanded reporting & analytics`,
   inProgress2Desc: $localize`:Roadmap in progress item 2 description@@roadmapInProgress2Desc:Deeper insight into sales trends and performance across your stores.`,
-  inProgress3Title: $localize`:Roadmap in progress item 3 title@@roadmapInProgress3Title:Installable, Mobile-Friendly App`,
+  inProgress3Title: $localize`:Roadmap in progress item 3 title@@roadmapInProgress3Title:Installable, mobile-friendly app`,
   inProgress3Desc: $localize`:Roadmap in progress item 3 description@@roadmapInProgress3Desc:A smoother, installable experience for managing your business on the go.`,
 
   // Planned
-  planned1Title: $localize`:Roadmap planned item 1 title@@roadmapPlanned1Title:Full API & Webhooks`,
+  planned1Title: $localize`:Roadmap planned item 1 title@@roadmapPlanned1Title:Full API & webhooks`,
   planned1Desc: $localize`:Roadmap planned item 1 description@@roadmapPlanned1Desc:Read and write access to your Loom21 data, plus event webhooks. Included on Growth and Pro.`,
-  planned2Title: $localize`:Roadmap planned item 2 title@@roadmapPlanned2Title:More Languages`,
+  planned2Title: $localize`:Roadmap planned item 2 title@@roadmapPlanned2Title:More languages`,
   planned2Desc: $localize`:Roadmap planned item 2 description@@roadmapPlanned2Desc:Expanding beyond English and Bulgarian to support more of our users.`,
-  planned3Title: $localize`:Roadmap planned item 3 title@@roadmapPlanned3Title:Native Mobile Apps`,
+  planned3Title: $localize`:Roadmap planned item 3 title@@roadmapPlanned3Title:Native mobile apps`,
   planned3Desc: $localize`:Roadmap planned item 3 description@@roadmapPlanned3Desc:Dedicated iOS and Android apps for managing your business from anywhere.`
 };
 

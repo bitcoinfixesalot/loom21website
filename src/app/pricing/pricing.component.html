@@ -8,19 +8,19 @@
   <div class="billing-toggle" role="group" i18n-aria-label="Billing period selection@@pricingBillingToggle" aria-label="Billing period selection">
     <input type="radio" class="btn-check" name="billing" id="month" value="month"
       [ngModel]="billing()" (ngModelChange)="billing.set($event)" autocomplete="off">
-    <label class="btn btn-outline-primary" for="month"><span i18n="Monthly button@@monthly">MONTHLY</span></label>
+    <label class="btn btn-outline-primary" for="month"><span i18n="Monthly button@@monthly">Monthly</span></label>
 
     <input type="radio" class="btn-check" name="billing" id="year" value="year"
       [ngModel]="billing()" (ngModelChange)="billing.set($event)" autocomplete="off">
     <label class="btn btn-outline-primary" for="year">
-      <span i18n="Annual button@@annual">ANNUAL</span>
+      <span i18n="Annual button@@annual">Annual</span>
       <span class="badge bg-success rounded-pill billing-badge">{{ ANNUAL_BADGE }}</span>
     </label>
 
     <input type="radio" class="btn-check" name="billing" id="bitcoin" value="bitcoin"
       [ngModel]="billing()" (ngModelChange)="billing.set($event)" autocomplete="off">
     <label class="btn btn-outline-primary" for="bitcoin">
-      <span><i class="fa fa-bitcoin" aria-hidden="true"></i>&ngsp;<ng-container i18n="Bitcoin button@@bitcoin">BITCOIN</ng-container></span>
+      <span><i class="fa fa-bitcoin" aria-hidden="true"></i>&ngsp;<ng-container i18n="Bitcoin button@@bitcoin">Bitcoin</ng-container></span>
       <span class="badge bg-success rounded-pill billing-badge">{{ BITCOIN_BADGE }}</span>
     </label>
   </div>
@@ -59,9 +59,9 @@
   <div class="custom-plan-section">
     <div class="card custom-plan text-center">
       <div class="card-body">
-        <h2 class="card-title text-primary" i18n="Need custom plan@@needAcustomPlan">Need a Custom Plan?</h2>
+        <h2 class="card-title text-primary" i18n="Need custom plan@@needAcustomPlan">Need a custom plan?</h2>
         <p class="card-text" i18n="Personalized quote@@personalizedQuote">Need more stores, orders or an SLA? Custom plans with unlimited users and dedicated support.</p>
-        <a routerLink="/contact" class="btn btn-primary btn-lg" i18n="Contact us button@@contactUsPricing">Contact Us</a>
+        <a routerLink="/contact" class="btn btn-primary btn-lg" i18n="Contact us button@@contactUsPricing">Contact us</a>
       </div>
     </div>
   </div>

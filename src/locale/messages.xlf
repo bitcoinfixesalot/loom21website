@@ -67,7 +67,7 @@
         <note priority="1" from="description">Language switcher label</note>
       </trans-unit>
       <trans-unit id="launchApp" datatype="html">
-        <source>Launch App</source>
+        <source>Launch app</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
           <context context-type="linenumber">56,58</context>
@@ -75,7 +75,7 @@
         <note priority="1" from="description">Launch app button</note>
       </trans-unit>
       <trans-unit id="faqPageTitle" datatype="html">
-        <source>Frequently Asked Questions</source>
+        <source>Frequently asked questions</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">2</context>
@@ -91,7 +91,7 @@
         <note priority="1" from="description">FAQ page intro</note>
       </trans-unit>
       <trans-unit id="faqCtaTitle" datatype="html">
-        <source>Still Have Questions?</source>
+        <source>Still have questions?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">4</context>
@@ -107,7 +107,7 @@
         <note priority="1" from="description">FAQ CTA description</note>
       </trans-unit>
       <trans-unit id="faqCategory1Title" datatype="html">
-        <source>Getting Started</source>
+        <source>Getting started</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">8</context>
@@ -211,7 +211,7 @@
         <note priority="1" from="description">FAQ question 2.1</note>
       </trans-unit>
       <trans-unit id="faqA2_1" datatype="html">
-        <source>Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNbits, covering both Lightning and on-chain Bitcoin.</source>
+        <source>Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Glow, Speed Wallet, and LNbits, covering both Lightning and on-chain Bitcoin.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">24</context>
@@ -267,7 +267,7 @@
         <note priority="1" from="description">FAQ answer 2.4</note>
       </trans-unit>
       <trans-unit id="faqCategory3Title" datatype="html">
-        <source>Pricing &amp; Price Lists</source>
+        <source>Pricing &amp; price lists</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">33</context>
@@ -355,7 +355,7 @@
         <note priority="1" from="description">FAQ answer 3.5</note>
       </trans-unit>
       <trans-unit id="faqCategory4Title" datatype="html">
-        <source>Products, Inventory &amp; Custom Fields</source>
+        <source>Products, inventory &amp; custom fields</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">46</context>
@@ -379,7 +379,7 @@
         <note priority="1" from="description">FAQ answer 4.1</note>
       </trans-unit>
       <trans-unit id="faqQ4_2" datatype="html">
-        <source>What are Custom Fields and what can I use them for?</source>
+        <source>What are custom fields and what can I use them for?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">49</context>
@@ -427,7 +427,7 @@
         <note priority="1" from="description">FAQ answer 4.4</note>
       </trans-unit>
       <trans-unit id="faqCategory5Title" datatype="html">
-        <source>Orders &amp; Invoicing</source>
+        <source>Orders &amp; invoicing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">57</context>
@@ -547,7 +547,7 @@
         <note priority="1" from="description">FAQ answer 5.7</note>
       </trans-unit>
       <trans-unit id="faqCategory6Title" datatype="html">
-        <source>Data, Team &amp; Security</source>
+        <source>Data, team &amp; security</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">75</context>
@@ -1502,7 +1502,7 @@
         <note priority="1" from="description">Privacy policy title</note>
       </trans-unit>
       <trans-unit id="privacyPolicyLastUpdated" datatype="html">
-        <source>Last Updated: October 8, 2026</source>
+        <source>Last updated: October 8, 2026</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">4</context>
@@ -1526,7 +1526,7 @@
         <note priority="1" from="description">Intro paragraph 2</note>
       </trans-unit>
       <trans-unit id="section1Title" datatype="html">
-        <source>1. Who We Are</source>
+        <source>1. Who we are</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">9</context>
@@ -1566,7 +1566,7 @@
         <note priority="1" from="description">Privacy email label</note>
       </trans-unit>
       <trans-unit id="section2Title" datatype="html">
-        <source>2. Information We Collect</source>
+        <source>2. Information we collect</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">16</context>
@@ -1582,7 +1582,7 @@
         <note priority="1" from="description">Section 2 intro</note>
       </trans-unit>
       <trans-unit id="section2aTitle" datatype="html">
-        <source>a. Information You Provide Directly</source>
+        <source>a. Information you provide directly</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">18</context>
@@ -1614,7 +1614,7 @@
         <note priority="1" from="description">Section 2a item 3</note>
       </trans-unit>
       <trans-unit id="section2bTitle" datatype="html">
-        <source>b. Information Collected Automatically</source>
+        <source>b. Information collected automatically</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">22</context>
@@ -1638,7 +1638,7 @@
         <note priority="1" from="description">Section 2b item 2</note>
       </trans-unit>
       <trans-unit id="section2cTitle" datatype="html">
-        <source>c. Information from Third Parties</source>
+        <source>c. Information from third parties</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">25</context>
@@ -1654,7 +1654,7 @@
         <note priority="1" from="description">Section 2c item 1</note>
       </trans-unit>
       <trans-unit id="section3Title" datatype="html">
-        <source>3. Legal Basis for Processing (GDPR)</source>
+        <source>3. Legal basis for processing (GDPR)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">29</context>
@@ -1702,7 +1702,7 @@
         <note priority="1" from="description">Section 3 item 4</note>
       </trans-unit>
       <trans-unit id="section4Title" datatype="html">
-        <source>4. How We Use Your Information</source>
+        <source>4. How we use your information</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">37</context>
@@ -1846,7 +1846,7 @@
         <note priority="1" from="description">Section 4 item 5a</note>
       </trans-unit>
       <trans-unit id="section5Title" datatype="html">
-        <source>5. How We Share Your Information</source>
+        <source>5. How we share your information</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">57</context>
@@ -1926,7 +1926,7 @@
         <note priority="1" from="description">Section 5 item 4</note>
       </trans-unit>
       <trans-unit id="section6Title" datatype="html">
-        <source>6. International Data Transfers</source>
+        <source>6. International data transfers</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">69</context>
@@ -1966,7 +1966,7 @@
         <note priority="1" from="description">Section 6 item 3</note>
       </trans-unit>
       <trans-unit id="section7Title" datatype="html">
-        <source>7. Data Retention</source>
+        <source>7. Data retention</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">76</context>
@@ -2006,7 +2006,7 @@
         <note priority="1" from="description">Section 7 item 3</note>
       </trans-unit>
       <trans-unit id="section8Title" datatype="html">
-        <source>8. Your Data Protection Rights</source>
+        <source>8. Your data protection rights</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">83</context>
@@ -2102,7 +2102,7 @@
         <note priority="1" from="description">Section 8 contact form</note>
       </trans-unit>
       <trans-unit id="section9Title" datatype="html">
-        <source>9. Data Security</source>
+        <source>9. Data security</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">97</context>
@@ -2158,7 +2158,7 @@
         <note priority="1" from="description">Section 9 contact form</note>
       </trans-unit>
       <trans-unit id="section10Title" datatype="html">
-        <source>10. Third-Party Links</source>
+        <source>10. Third-party links</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">106</context>
@@ -2174,7 +2174,7 @@
         <note priority="1" from="description">Section 10 content</note>
       </trans-unit>
       <trans-unit id="section11Title" datatype="html">
-        <source>11. Children’s Privacy</source>
+        <source>11. Children’s privacy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">110</context>
@@ -2198,7 +2198,7 @@
         <note priority="1" from="description">Section 11 contact form</note>
       </trans-unit>
       <trans-unit id="section12Title" datatype="html">
-        <source>12. Compliance with Other Laws</source>
+        <source>12. Compliance with other laws</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">115</context>
@@ -2254,7 +2254,7 @@
         <note priority="1" from="description">Section 12 contact form</note>
       </trans-unit>
       <trans-unit id="section13Title" datatype="html">
-        <source>13. Changes to This Privacy Policy</source>
+        <source>13. Changes to this Privacy Policy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">124</context>
@@ -2270,7 +2270,7 @@
         <note priority="1" from="description">Section 13 content</note>
       </trans-unit>
       <trans-unit id="section14Title" datatype="html">
-        <source>14. Contact Us</source>
+        <source>14. Contact us</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">128</context>
@@ -2390,7 +2390,7 @@
         <note priority="1" from="description">Subprocessor sa location</note>
       </trans-unit>
       <trans-unit id="roadmapPageTitle" datatype="html">
-        <source>Loom21 Roadmap</source>
+        <source>Loom21 roadmap</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">4</context>
@@ -2414,7 +2414,7 @@
         <note priority="1" from="description">Roadmap last updated</note>
       </trans-unit>
       <trans-unit id="roadmapCtaTitle" datatype="html">
-        <source>Have a Feature Request?</source>
+        <source>Have a feature request?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">7</context>
@@ -2438,7 +2438,7 @@
         <note priority="1" from="description">Roadmap shipped section title</note>
       </trans-unit>
       <trans-unit id="roadmapInProgressTitle" datatype="html">
-        <source>In Progress</source>
+        <source>In progress</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">11</context>
@@ -2454,7 +2454,7 @@
         <note priority="1" from="description">Roadmap planned section title</note>
       </trans-unit>
       <trans-unit id="roadmapShipped1Title" datatype="html">
-        <source>Bitcoin &amp; Card Payments</source>
+        <source>Bitcoin &amp; card payments</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">15</context>
@@ -2462,7 +2462,7 @@
         <note priority="1" from="description">Roadmap shipped item 1 title</note>
       </trans-unit>
       <trans-unit id="roadmapShipped1Desc" datatype="html">
-        <source>Accept payments via Stripe, BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNbits.</source>
+        <source>Accept payments via Stripe, BTCPay Server, Glow, Speed Wallet, and LNbits.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">16</context>
@@ -2470,7 +2470,7 @@
         <note priority="1" from="description">Roadmap shipped item 1 description</note>
       </trans-unit>
       <trans-unit id="roadmapShipped2Title" datatype="html">
-        <source>Flexible Price Lists</source>
+        <source>Flexible price lists</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">17</context>
@@ -2486,7 +2486,7 @@
         <note priority="1" from="description">Roadmap shipped item 2 description</note>
       </trans-unit>
       <trans-unit id="roadmapShipped3Title" datatype="html">
-        <source>Custom Fields</source>
+        <source>Custom fields</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">19</context>
@@ -2502,7 +2502,7 @@
         <note priority="1" from="description">Roadmap shipped item 3 description</note>
       </trans-unit>
       <trans-unit id="roadmapShipped4Title" datatype="html">
-        <source>Excel &amp; CSV Import and Export</source>
+        <source>Excel &amp; CSV import and export</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">21</context>
@@ -2518,7 +2518,7 @@
         <note priority="1" from="description">Roadmap shipped item 4 description</note>
       </trans-unit>
       <trans-unit id="roadmapShipped5Title" datatype="html">
-        <source>Multi-Store Inventory</source>
+        <source>Multi-store inventory</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">23</context>
@@ -2534,7 +2534,7 @@
         <note priority="1" from="description">Roadmap shipped item 5 description</note>
       </trans-unit>
       <trans-unit id="roadmapShipped6Title" datatype="html">
-        <source>Sales &amp; Deliveries Reports</source>
+        <source>Sales &amp; deliveries reports</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">25</context>
@@ -2550,7 +2550,7 @@
         <note priority="1" from="description">Roadmap shipped item 6 description</note>
       </trans-unit>
       <trans-unit id="roadmapShipped7Title" datatype="html">
-        <source>Free Forever Plan</source>
+        <source>Free forever plan</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">27</context>
@@ -2566,7 +2566,7 @@
         <note priority="1" from="description">Roadmap shipped item 7 description</note>
       </trans-unit>
       <trans-unit id="roadmapInProgress1Title" datatype="html">
-        <source>More Payment Processors</source>
+        <source>More payment processors</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">31</context>
@@ -2574,7 +2574,7 @@
         <note priority="1" from="description">Roadmap in progress item 1 title</note>
       </trans-unit>
       <trans-unit id="roadmapInProgress1Desc" datatype="html">
-        <source>Expanding the list of supported Bitcoin and fiat payment processors.</source>
+        <source>Expanding the list of supported Bitcoin and card payment processors.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">32</context>
@@ -2582,7 +2582,7 @@
         <note priority="1" from="description">Roadmap in progress item 1 description</note>
       </trans-unit>
       <trans-unit id="roadmapInProgress2Title" datatype="html">
-        <source>Expanded Reporting &amp; Analytics</source>
+        <source>Expanded reporting &amp; analytics</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">33</context>
@@ -2598,7 +2598,7 @@
         <note priority="1" from="description">Roadmap in progress item 2 description</note>
       </trans-unit>
       <trans-unit id="roadmapInProgress3Title" datatype="html">
-        <source>Installable, Mobile-Friendly App</source>
+        <source>Installable, mobile-friendly app</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">35</context>
@@ -2614,7 +2614,7 @@
         <note priority="1" from="description">Roadmap in progress item 3 description</note>
       </trans-unit>
       <trans-unit id="roadmapPlanned1Title" datatype="html">
-        <source>Full API &amp; Webhooks</source>
+        <source>Full API &amp; webhooks</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">39</context>
@@ -2630,7 +2630,7 @@
         <note priority="1" from="description">Roadmap planned item 1 description</note>
       </trans-unit>
       <trans-unit id="roadmapPlanned2Title" datatype="html">
-        <source>More Languages</source>
+        <source>More languages</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">41</context>
@@ -2646,7 +2646,7 @@
         <note priority="1" from="description">Roadmap planned item 2 description</note>
       </trans-unit>
       <trans-unit id="roadmapPlanned3Title" datatype="html">
-        <source>Native Mobile Apps</source>
+        <source>Native mobile apps</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">43</context>
@@ -2662,7 +2662,7 @@
         <note priority="1" from="description">Roadmap planned item 3 description</note>
       </trans-unit>
       <trans-unit id="contactUs" datatype="html">
-        <source>Contact Us</source>
+        <source>Contact us</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
           <context context-type="linenumber">11,12</context>
@@ -2694,7 +2694,7 @@
         <note priority="1" from="description">Name requred</note>
       </trans-unit>
       <trans-unit id="email" datatype="html">
-        <source>Email Address</source>
+        <source>Email address</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
           <context context-type="linenumber">33,34</context>
@@ -2830,7 +2830,7 @@
         <note priority="1" from="description">Docs load error</note>
       </trans-unit>
       <trans-unit id="retryButton" datatype="html">
-        <source>Try Again</source>
+        <source>Try again</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/documentation/documentation.component.html</context>
           <context context-type="linenumber">47,48</context>
@@ -2846,7 +2846,7 @@
         <note priority="1" from="description">View on GitHub button</note>
       </trans-unit>
       <trans-unit id="contactUsButton" datatype="html">
-        <source>Contact Us</source>
+        <source>Contact us</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/faq/faq.component.html</context>
           <context context-type="linenumber">39,43</context>
@@ -2870,7 +2870,7 @@
         <note priority="1" from="description">Loom21 footer</note>
       </trans-unit>
       <trans-unit id="footerQuickLinks" datatype="html">
-        <source>Quick Links</source>
+        <source>Quick links</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">9,10</context>
@@ -2922,7 +2922,7 @@
         <note priority="1" from="description">Contact nav</note>
       </trans-unit>
       <trans-unit id="footerLegal" datatype="html">
-        <source>Legal &amp; Community</source>
+        <source>Legal &amp; community</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">20,21</context>
@@ -2962,7 +2962,7 @@
         <note priority="1" from="description">Footer github</note>
       </trans-unit>
       <trans-unit id="footerTelegram" datatype="html">
-        <source>Telegram Community</source>
+        <source>Telegram community</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
           <context context-type="linenumber">25,27</context>
@@ -3042,7 +3042,7 @@
         <note priority="1" from="description">Hero trust line</note>
       </trans-unit>
       <trans-unit id="watchDemoLabel" datatype="html">
-        <source>Watch Demo</source>
+        <source>Watch demo</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">23,26</context>
@@ -3628,7 +3628,7 @@
         <note priority="1" from="description">Billing period selection</note>
       </trans-unit>
       <trans-unit id="monthly" datatype="html">
-        <source>MONTHLY</source>
+        <source>Monthly</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
           <context context-type="linenumber">11,13</context>
@@ -3636,7 +3636,7 @@
         <note priority="1" from="description">Monthly button</note>
       </trans-unit>
       <trans-unit id="annual" datatype="html">
-        <source>ANNUAL</source>
+        <source>Annual</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
           <context context-type="linenumber">16,17</context>
@@ -3644,7 +3644,7 @@
         <note priority="1" from="description">Annual button</note>
       </trans-unit>
       <trans-unit id="bitcoin" datatype="html">
-        <source>BITCOIN</source>
+        <source>Bitcoin</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
           <context context-type="linenumber">23,24</context>
@@ -3676,7 +3676,7 @@
         <note priority="1" from="description">Bitcoin price hint</note>
       </trans-unit>
       <trans-unit id="needAcustomPlan" datatype="html">
-        <source>Need a Custom Plan?</source>
+        <source>Need a custom plan?</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
           <context context-type="linenumber">62,63</context>
@@ -3692,7 +3692,7 @@
         <note priority="1" from="description">Personalized quote</note>
       </trans-unit>
       <trans-unit id="contactUsPricing" datatype="html">
-        <source>Contact Us</source>
+        <source>Contact us</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
           <context context-type="linenumber">64,69</context>

@@ -1,11 +1,11 @@
 export const FAQ_CONSTANTS = {
-  pageTitle: $localize`:FAQ page title@@faqPageTitle:Frequently Asked Questions`,
+  pageTitle: $localize`:FAQ page title@@faqPageTitle:Frequently asked questions`,
   pageIntro: $localize`:FAQ page intro@@faqPageIntro:Everything you need to know about payments, pricing, inventory, and more. Can't find what you're looking for? Reach out to us.`,
-  ctaTitle: $localize`:FAQ CTA title@@faqCtaTitle:Still Have Questions?`,
+  ctaTitle: $localize`:FAQ CTA title@@faqCtaTitle:Still have questions?`,
   ctaDesc: $localize`:FAQ CTA description@@faqCtaDesc:Can't find the answer you're looking for? Our team is happy to help.`,
 
   // Category 1: Getting Started
-  category1Title: $localize`:FAQ category 1 title@@faqCategory1Title:Getting Started`,
+  category1Title: $localize`:FAQ category 1 title@@faqCategory1Title:Getting started`,
   q1_1: $localize`:FAQ question 1.1@@faqQ1_1:How do I create a Loom21 account?`,
   a1_1: $localize`:FAQ answer 1.1@@faqA1_1:Sign up on the Loom21 website and confirm your email from the confirmation message you receive. Once confirmed, you can sign in and start setting up your organization.`,
   q1_2: $localize`:FAQ question 1.2@@faqQ1_2:Is there a free plan?`,
@@ -21,7 +21,7 @@ export const FAQ_CONSTANTS = {
   q2_0: $localize`:FAQ question 2.0@@faqQ2_0:Does Loom21 ever hold my money?`,
   a2_0: $localize`:FAQ answer 2.0@@faqA2_0:No. Loom21 never takes custody of your funds. Bitcoin payments go straight to the wallet or server you connect: your BTCPay Server, a Lightning Address such as Glow, your Speed Wallet account or your LNbits wallet. Card payments go to your own Stripe account. Loom21 creates the invoice and tracks its status.`,
   q2_1: $localize`:FAQ question 2.1@@faqQ2_1:What payment methods does Loom21 support?`,
-  a2_1: $localize`:FAQ answer 2.1@@faqA2_1:Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Lightning Wallet (Glow), Speed Wallet, and LNbits, covering both Lightning and on-chain Bitcoin.`,
+  a2_1: $localize`:FAQ answer 2.1@@faqA2_1:Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Glow, Speed Wallet, and LNbits, covering both Lightning and on-chain Bitcoin.`,
   q2_2: $localize`:FAQ question 2.2@@faqQ2_2:Can I accept both Bitcoin Lightning and on-chain payments?`,
   a2_2: $localize`:FAQ answer 2.2@@faqA2_2:Yes. Most of our Bitcoin processors support Lightning and on-chain payments side by side with card payments, so you can offer whichever methods suit your customers.`,
   q2_3: $localize`:FAQ question 2.3@@faqQ2_3:Do I need my own Bitcoin wallet or node to use Loom21?`,
@@ -30,7 +30,7 @@ export const FAQ_CONSTANTS = {
   a2_4: $localize`:FAQ answer 2.4@@faqA2_4:For BTCPay Server, Speed Wallet, and LNbits, confirmation is real-time: the order status updates automatically the moment the payment settles. For Lightning Wallet (Glow) and other Lightning Address wallets, real-time confirmation depends on your wallet provider supporting it; use the Test Connection button in Settings to check your specific address.`,
 
   // Category 3: Pricing & Price Lists
-  category3Title: $localize`:FAQ category 3 title@@faqCategory3Title:Pricing & Price Lists`,
+  category3Title: $localize`:FAQ category 3 title@@faqCategory3Title:Pricing & price lists`,
   q3_1: $localize`:FAQ question 3.1@@faqQ3_1:How does Loom21's own pricing work?`,
   a3_1: $localize`:FAQ answer 3.1@@faqA3_1:Start on the Free plan, then upgrade to Starter, Growth or Pro as you grow. Pay monthly, annually (2 months free) or in Bitcoin (about 25% off). Loom21 never takes a percentage of your sales.`,
   q3_2: $localize`:FAQ question 3.2@@faqQ3_2:Can I set different prices for different customers?`,
@@ -43,10 +43,10 @@ export const FAQ_CONSTANTS = {
   a3_5: $localize`:FAQ answer 3.5@@faqA3_5:No. Loom21 charges 0% on every payment method, including card payments through Stripe. You only pay your plan and your payment processor's own fees.`,
 
   // Category 4: Products, Inventory & Custom Fields
-  category4Title: $localize`:FAQ category 4 title@@faqCategory4Title:Products, Inventory & Custom Fields`,
+  category4Title: $localize`:FAQ category 4 title@@faqCategory4Title:Products, inventory & custom fields`,
   q4_1: $localize`:FAQ question 4.1@@faqQ4_1:Can I track stock across multiple store locations?`,
   a4_1: $localize`:FAQ answer 4.1@@faqA4_1:Yes. Inventory is tracked per store, and every sale or delivery order is linked to a specific store, so stock levels stay accurate everywhere.`,
-  q4_2: $localize`:FAQ question 4.2@@faqQ4_2:What are Custom Fields and what can I use them for?`,
+  q4_2: $localize`:FAQ question 4.2@@faqQ4_2:What are custom fields and what can I use them for?`,
   a4_2: $localize`:FAQ answer 4.2@@faqA4_2:Custom Fields let you add your own data fields to every product, like a warranty expiry date, a certification flag, or a supplier reference number, beyond the standard name, price, and category fields.`,
   q4_3: $localize`:FAQ question 4.3@@faqQ4_3:Can I import my existing product or customer list?`,
   a4_3: $localize`:FAQ answer 4.3@@faqA4_3:Yes. You can import products, services, customers, and suppliers from an Excel (.xlsx) or CSV file, using the downloadable templates. To change many records at once, export them to Excel, edit the file and import it back. Existing records are updated, not duplicated.`,
@@ -54,7 +54,7 @@ export const FAQ_CONSTANTS = {
   a4_4: $localize`:FAQ answer 4.4@@faqA4_4:Yes. You can enter or scan barcodes for products, and QR codes are generated automatically.`,
 
   // Category 5: Orders & Invoicing
-  category5Title: $localize`:FAQ category 5 title@@faqCategory5Title:Orders & Invoicing`,
+  category5Title: $localize`:FAQ category 5 title@@faqCategory5Title:Orders & invoicing`,
   q5_1: $localize`:FAQ question 5.1@@faqQ5_1:What documents can I generate from a sale order?`,
   a5_1: $localize`:FAQ answer 5.1@@faqA5_1:Quotes, invoices, receipts, and pickup lists, all as downloadable PDFs. Invoices and receipts become available once an order is marked as paid.`,
   q5_2: $localize`:FAQ question 5.2@@faqQ5_2:Can customers pay without creating a Loom21 account?`,
@@ -72,7 +72,7 @@ export const FAQ_CONSTANTS = {
   a5_7: $localize`:FAQ answer 5.7@@faqA5_7:Loom21's invoicing is built to Bulgarian VAT law, and today it applies the same rules to every account. Most of them (sequential numbers, the tax point, both VAT numbers, the tax base) are what EU VAT rules ask of any invoice. A few, such as annulment and the VAT sales ledger layout, are Bulgarian only, so if you invoice outside Bulgaria, check those with your accountant.`,
 
   // Category 6: Data, Team & Security
-  category6Title: $localize`:FAQ category 6 title@@faqCategory6Title:Data, Team & Security`,
+  category6Title: $localize`:FAQ category 6 title@@faqCategory6Title:Data, team & security`,
   q6_1: $localize`:FAQ question 6.1@@faqQ6_1:Can I export my data?`,
   a6_1: $localize`:FAQ answer 6.1@@faqA6_1:Yes. You can export your products, services, customers, suppliers, and reports as Excel, CSV or JSON at any time. Your data is never locked in.`,
   q6_2: $localize`:FAQ question 6.2@@faqQ6_2:How many team members can I invite?`,
