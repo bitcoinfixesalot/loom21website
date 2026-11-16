@@ -2851,8 +2851,8 @@
         <note priority="1" from="description">Terms description tag</note>
       </trans-unit>
       <trans-unit id="roadmapLastUpdated" datatype="html">
-        <source>Last updated: October 2026</source>
-        <target>Последна актуализация: октомври 2026</target>
+        <source>Last updated: November 2026</source>
+        <target>Последна актуализация: ноември 2026</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">6</context>
@@ -4822,6 +4822,244 @@
           <context context-type="linenumber">13,14</context>
         </context-group>
         <note priority="1" from="description">Buy button nav</note>
+      </trans-unit>
+      <trans-unit id="faqQ2_5" datatype="html">
+        <source>Can I sell from my existing website?</source>
+        <target>Мога ли да продавам от сайта, който вече имам?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">FAQ question 2.5</note>
+      </trans-unit>
+      <trans-unit id="faqA2_5" datatype="html">
+        <source>Yes. The Buy button adds a checkout to any website with one line of code. Customers pay by card or Bitcoin, and stock updates automatically. It&apos;s included on every plan.</source>
+        <target>Да. Бутонът за покупка добавя плащане към всеки сайт с един ред код. Клиентите плащат с карта или Биткойн, а наличността се обновява автоматично. Включен е във всеки план.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="description">FAQ answer 2.5</note>
+      </trans-unit>
+      <trans-unit id="cmpBuyButton" datatype="html">
+        <source>Buy button</source>
+        <target>Бутон за покупка</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/pricing-const.ts</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+        <note priority="1" from="description">Cmp buy button</note>
+      </trans-unit>
+      <trans-unit id="learnMore" datatype="html">
+        <source>Learn more</source>
+        <target>Научете повече</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">123,126</context>
+        </context-group>
+        <note priority="1" from="description">Learn more link</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped8Title" datatype="html">
+        <source>Buy button</source>
+        <target>Бутон за покупка</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 8 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped8Desc" datatype="html">
+        <source>Accept cards and Bitcoin on any website with one line of code. Open source, included on every plan.</source>
+        <target>Приемайте карти и Биткойн на всеки сайт с един ред код. С отворен код и включен във всеки план.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 8 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped9Title" datatype="html">
+        <source>Payment links</source>
+        <target>Линкове за плащане</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 9 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped9Desc" datatype="html">
+        <source>Send a link by email, chat or QR and get paid by card or Bitcoin.</source>
+        <target>Изпратете линк по имейл, в чат или като QR код и получете плащане с карта или Биткойн.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 9 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapInProgress4Title" datatype="html">
+        <source>Online store</source>
+        <target>Онлайн магазин</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap in progress item 4 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapInProgress4Desc" datatype="html">
+        <source>A hosted shop for your products, connected to your Loom21 inventory and payments. Now in testing.</source>
+        <target>Хостван магазин за вашите продукти, свързан с наличностите и плащанията ви в Loom21. В момента се тества.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap in progress item 4 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlanned4Title" datatype="html">
+        <source>WordPress plugin for the Buy button</source>
+        <target>WordPress плъгин за бутона за покупка</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned item 4 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlanned4Desc" datatype="html">
+        <source>Add the Buy button to a WordPress site without editing HTML.</source>
+        <target>Добавете бутона за покупка към WordPress сайт, без да редактирате HTML.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned item 4 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlanned5Title" datatype="html">
+        <source>More card processors for Europe</source>
+        <target>Още доставчици на картови плащания за Европа</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned item 5 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlanned5Desc" datatype="html">
+        <source>More ways for European businesses to take card payments, alongside Stripe.</source>
+        <target>Повече начини европейските бизнеси да приемат плащания с карта, освен Stripe.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned item 5 description</note>
+      </trans-unit>
+      <trans-unit id="announceNew" datatype="html">
+        <source>New</source>
+        <target>Ново</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Announcement new label</note>
+      </trans-unit>
+      <trans-unit id="announceBuyButton" datatype="html">
+        <source>Buy button. Accept cards and Bitcoin on any website</source>
+        <target>Бутон за покупка. Приемайте карти и Биткойн на всеки сайт</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Buy button announcement</note>
+      </trans-unit>
+      <trans-unit id="sellAnywhereTitle" datatype="html">
+        <source>Sell anywhere, from one inventory</source>
+        <target>Продавайте навсякъде, с една обща наличност</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">107,110</context>
+        </context-group>
+        <note priority="1" from="description">Sell anywhere title</note>
+      </trans-unit>
+      <trans-unit id="channelLinksTitle" datatype="html">
+        <source>Payment links</source>
+        <target>Линкове за плащане</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">113,114</context>
+        </context-group>
+        <note priority="1" from="description">Channel payment links title</note>
+      </trans-unit>
+      <trans-unit id="channelLinksText" datatype="html">
+        <source>Send a link by email, chat or QR and get paid by card or Bitcoin.</source>
+        <target>Изпратете линк по имейл, в чат или като QR код и получете плащане с карта или Биткойн.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">114,115</context>
+        </context-group>
+        <note priority="1" from="description">Channel payment links text</note>
+      </trans-unit>
+      <trans-unit id="channelLinksLink" datatype="html">
+        <source>Read the guide</source>
+        <target>Прочетете ръководството</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">115,118</context>
+        </context-group>
+        <note priority="1" from="description">Channel payment links link</note>
+      </trans-unit>
+      <trans-unit id="channelBuyButtonTitle" datatype="html">
+        <source>Buy button</source>
+        <target>Бутон за покупка</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">121,122</context>
+        </context-group>
+        <note priority="1" from="description">Channel buy button title</note>
+      </trans-unit>
+      <trans-unit id="channelBuyButtonText" datatype="html">
+        <source>Add a checkout to your existing website with one line of code.</source>
+        <target>Добавете плащане към сайта, който вече имате, с един ред код.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">122,123</context>
+        </context-group>
+        <note priority="1" from="description">Channel buy button text</note>
+      </trans-unit>
+      <trans-unit id="channelStoreTitle" datatype="html">
+        <source>Online store</source>
+        <target>Онлайн магазин</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+        <note priority="1" from="description">Channel online store title</note>
+      </trans-unit>
+      <trans-unit id="comingSoon" datatype="html">
+        <source>Coming soon</source>
+        <target>Очаквайте скоро</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">129,130</context>
+        </context-group>
+        <note priority="1" from="description">Coming soon badge</note>
+      </trans-unit>
+      <trans-unit id="channelStoreText" datatype="html">
+        <source>A ready-made shop for your products, connected to the same stock and payments.</source>
+        <target>Готов магазин за вашите продукти, свързан със същата наличност и същите плащания.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">130,134</context>
+        </context-group>
+        <note priority="1" from="description">Channel online store text</note>
+      </trans-unit>
+      <trans-unit id="sellAnywhereNote" datatype="html">
+        <source>Every sale updates your stock and lands in the same dashboard. 0% Loom21 fees on every channel.</source>
+        <target>Всяка продажба обновява наличността ви и се появява в същото табло. 0% такси от Loom21 във всеки канал.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">134,138</context>
+        </context-group>
+        <note priority="1" from="description">Sell anywhere note</note>
       </trans-unit>
     </body>
   </file>

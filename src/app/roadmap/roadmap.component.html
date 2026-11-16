@@ -13,6 +13,9 @@
               <div class="ui-card ui-card--lift roadmap-card">
                 <h3>{{ item.title }}</h3>
                 <p>{{ item.description }}</p>
+                @if (item.link) {
+                  <a [routerLink]="item.link" class="d-inline-block mt-2">{{ CONSTANTS.learnMore }}</a>
+                }
               </div>
             </div>
           }

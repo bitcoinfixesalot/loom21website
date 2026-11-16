@@ -28,6 +28,8 @@ export const FAQ_CONSTANTS = {
   a2_3: $localize`:FAQ answer 2.3@@faqA2_3:It depends on the method. BTCPay Server, Speed Wallet, and LNbits connect using an API key or URL you enter in Settings. Lightning Wallet (Glow) works differently: just enter any LNURL-compatible Lightning Address (Glow's own address works out of the box), then use the Test Connection button to verify it.`,
   q2_4: $localize`:FAQ question 2.4@@faqQ2_4:How are Bitcoin payments confirmed?`,
   a2_4: $localize`:FAQ answer 2.4@@faqA2_4:For BTCPay Server, Speed Wallet, and LNbits, confirmation is real-time: the order status updates automatically the moment the payment settles. For Lightning Wallet (Glow) and other Lightning Address wallets, real-time confirmation depends on your wallet provider supporting it; use the Test Connection button in Settings to check your specific address.`,
+  q2_5: $localize`:FAQ question 2.5@@faqQ2_5:Can I sell from my existing website?`,
+  a2_5: $localize`:FAQ answer 2.5@@faqA2_5:Yes. The Buy button adds a checkout to any website with one line of code. Customers pay by card or Bitcoin, and stock updates automatically. It's included on every plan.`,
 
   // Category 3: Pricing & Price Lists
   category3Title: $localize`:FAQ category 3 title@@faqCategory3Title:Pricing & price lists`,
@@ -114,7 +116,8 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       { question: FAQ_CONSTANTS.q2_1, answer: FAQ_CONSTANTS.a2_1 },
       { question: FAQ_CONSTANTS.q2_2, answer: FAQ_CONSTANTS.a2_2 },
       { question: FAQ_CONSTANTS.q2_3, answer: FAQ_CONSTANTS.a2_3 },
-      { question: FAQ_CONSTANTS.q2_4, answer: FAQ_CONSTANTS.a2_4 }
+      { question: FAQ_CONSTANTS.q2_4, answer: FAQ_CONSTANTS.a2_4 },
+      { question: FAQ_CONSTANTS.q2_5, answer: FAQ_CONSTANTS.a2_5 }
     ]
   },
   {

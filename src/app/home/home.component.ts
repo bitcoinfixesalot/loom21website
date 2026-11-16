@@ -25,7 +25,7 @@ import {
   VENDOR_MANAGEMENT,
   WAREHOUSE_MANAGEMENT
 } from '../constants/localized-const';
-import { API_STATUS } from '../constants/product-const';
+import { API_STATUS, SHOW_BUY_BUTTON_ANNOUNCEMENT } from '../constants/product-const';
 import { RevealDirective } from '../shared/reveal.directive';
 import { OgMetaService } from '../services/og-meta.service';
 import { StructuredDataService } from '../services/structured-data.service';
@@ -48,6 +48,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   private readonly promoFrame = viewChild<ElementRef<HTMLIFrameElement>>('promoFrame');
   promoVideoUrl: SafeResourceUrl;
   readonly apiStatus = API_STATUS;
+  readonly showBuyButtonAnnouncement = SHOW_BUY_BUTTON_ANNOUNCEMENT;
   readonly integrationsCardText = API_STATUS === 'live'
     ? $localize`:Stat integrations desc (API live)@@statIntegrationsDescLive:Connect your ERP, CRM or custom apps through the Loom21 API.`
     : $localize`:Stat integrations desc (API soon)@@statIntegrationsDescSoon:Stripe, BTCPay Server, Glow, Speed Wallet and LNbits today; open API coming soon.`;

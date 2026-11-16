@@ -142,6 +142,28 @@
     text-align: center;
 }
 
+// Announcement pill above the H1 (SHOW_BUY_BUTTON_ANNOUNCEMENT). Wraps on phones, unlike a plain .badge
+.hero-announce {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding: 6px 14px 6px 6px;
+    border: 1px solid rgba(var(--brand-rgb), 0.25);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--heading);
+    font-size: 0.875rem;
+    text-align: left;
+    text-decoration: none;
+
+    &:hover {
+        border-color: var(--brand);
+        color: var(--brand);
+    }
+}
+
 .hero-eyebrow {
     margin-bottom: 16px;
     color: var(--brand);
@@ -235,6 +257,12 @@
     background: var(--brand-tint);
     color: var(--brand);
     font-size: 22px;
+}
+
+.features-note {
+    margin: 32px 0 0;
+    color: var(--text-muted);
+    text-wrap: balance;
 }
 
 .features-shot {
