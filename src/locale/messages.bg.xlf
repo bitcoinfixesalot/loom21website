@@ -2608,14 +2608,15 @@
         <note priority="1" from="description">Roadmap in progress item 1 title</note>
       </trans-unit>
       <trans-unit id="roadmapInProgress1Desc" datatype="html">
-        <source>Expanding the list of supported Bitcoin and card payment processors.</source>
-        <target>Разширяваме списъка с поддържани процесори за плащания с Биткойн и карта.</target>
+        <source>More card processors for Europe and more Bitcoin wallets, all paid straight to your own account.</source>
+        <target>Още доставчици на картови плащания за Европа и още Биткойн портфейли, като плащанията отиват директно във вашия собствен акаунт.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
-          <context context-type="linenumber">1</context>
+          <context context-type="linenumber">39</context>
         </context-group>
         <note priority="1" from="description">Roadmap in progress item 1 description</note>
       </trans-unit>
+
       <trans-unit id="roadmapInProgress2Title" datatype="html">
         <source>Expanded reporting &amp; analytics</source>
         <target>Разширени справки и анализи</target>
@@ -2653,23 +2654,25 @@
         <note priority="1" from="description">Roadmap in progress item 3 description</note>
       </trans-unit>
       <trans-unit id="roadmapPlanned1Title" datatype="html">
-        <source>Full API &amp; webhooks</source>
-        <target>Пълен API и webhooks</target>
+        <source>Full API (write access) &amp; webhooks</source>
+        <target>Пълен API (със запис) и webhooks</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">48</context>
         </context-group>
         <note priority="1" from="description">Roadmap planned item 1 title</note>
       </trans-unit>
+
       <trans-unit id="roadmapPlanned1Desc" datatype="html">
-        <source>Read and write access to your Loom21 data, plus event webhooks. Included on Growth and Pro.</source>
-        <target>Достъп за четене и запис до вашите данни в Loom21, плюс webhooks за събития. Включени в Growth и Pro.</target>
+        <source>Adds write access to your Loom21 data on top of read access, plus event webhooks. Included on Growth and Pro.</source>
+        <target>Добавя достъп за запис до данните ви в Loom21 към достъпа за четене, както и webhooks за събития. Включен в Growth и Pro.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
-          <context context-type="linenumber">38</context>
+          <context context-type="linenumber">49</context>
         </context-group>
         <note priority="1" from="description">Roadmap planned item 1 description</note>
       </trans-unit>
+
       <trans-unit id="roadmapPlanned2Title" datatype="html">
         <source>More languages</source>
         <target>Още езици</target>
@@ -4935,24 +4938,6 @@
         </context-group>
         <note priority="1" from="description">Roadmap planned item 4 description</note>
       </trans-unit>
-      <trans-unit id="roadmapPlanned5Title" datatype="html">
-        <source>More card processors for Europe</source>
-        <target>Още доставчици на картови плащания за Европа</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
-          <context context-type="linenumber">54</context>
-        </context-group>
-        <note priority="1" from="description">Roadmap planned item 5 title</note>
-      </trans-unit>
-      <trans-unit id="roadmapPlanned5Desc" datatype="html">
-        <source>More ways for European businesses to take card payments, alongside Stripe.</source>
-        <target>Повече начини европейските бизнеси да приемат плащания с карта, освен Stripe.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
-          <context context-type="linenumber">55</context>
-        </context-group>
-        <note priority="1" from="description">Roadmap planned item 5 description</note>
-      </trans-unit>
       <trans-unit id="announceNew" datatype="html">
         <source>New</source>
         <target>Ново</target>
@@ -5060,6 +5045,42 @@
           <context context-type="linenumber">134,138</context>
         </context-group>
         <note priority="1" from="description">Sell anywhere note</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped10Title" datatype="html">
+        <source>Storefront API</source>
+        <target>Storefront API</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 10 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapShipped10Desc" datatype="html">
+        <source>A public API with publishable keys for selling Loom21 products from any website or app. It powers the Buy button.</source>
+        <target>Публичен API с публични ключове за продажба на продукти от Loom21 от всеки сайт или приложение. На него работи бутонът за покупка.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap shipped item 10 description</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlanned6Title" datatype="html">
+        <source>Low-stock alerts &amp; stock transfers</source>
+        <target>Известия за ниска наличност и прехвърляне на стоки</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned item 6 title</note>
+      </trans-unit>
+      <trans-unit id="roadmapPlanned6Desc" datatype="html">
+        <source>Get warned before you run out, and move stock between your stores.</source>
+        <target>Получавайте предупреждение, преди да ви свърши стоката, и прехвърляйте наличност между магазините си.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <note priority="1" from="description">Roadmap planned item 6 description</note>
       </trans-unit>
     </body>
   </file>
