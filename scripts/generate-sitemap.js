@@ -13,6 +13,7 @@ const mainPages = [
   { path: '/',               changefreq: 'weekly',  priority: '0.8' },
   { path: '/docs/',          changefreq: 'weekly',  priority: '0.7' },
   { path: '/pricing/',       changefreq: 'weekly',  priority: '0.8' },
+  { path: '/buy-button/',    changefreq: 'monthly', priority: '0.7' },
   { path: '/contact/',       changefreq: 'monthly', priority: '0.7' },
   { path: '/faq/',           changefreq: 'monthly', priority: '0.6' },
   { path: '/roadmap/',       changefreq: 'weekly',  priority: '0.5' },

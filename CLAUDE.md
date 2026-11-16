@@ -25,6 +25,7 @@ src/app/
 ├── privacy/         # Privacy policy
 ├── faq/             # FAQ page (FAQPage structured data)
 ├── roadmap/         # Roadmap page (Shipped / In Progress / Planned)
+├── buy-button/      # Buy button landing page (embed snippet with Copy, payment methods, FAQ; copy in buy-button-const.ts)
 ├── terms/           # Terms of Service (markdown in terms/content/terms.{en,bg}.md, imported as text)
 ├── not-found/       # 404 page
 ├── shared/          # Shared components (protected-email: click-to-reveal contact email; reveal.directive: scroll reveal)
@@ -97,7 +98,7 @@ All SEO meta is set dynamically in each page component's `ngOnInit`:
 2. **Description** — via `Meta.updateTag({ name: 'description', ... })`
 3. **Open Graph + Twitter Cards** — via `OgMetaService.setOgTags({ title, description })`
 4. **LD-JSON structured data** — via `StructuredDataService.setJsonLd([...])` (injects real `<script type="application/ld+json">` elements into `<head>`; **do not** use `Meta.addTag`/`updateTag` with `name: 'application/ld+json'` — Angular's `Meta` service only ever creates `<meta>` tags, which search engines do not parse as structured data)
-5. **BreadcrumbList** — second LD-JSON block on all inner pages (contact, pricing, docs, privacy, faq, roadmap)
+5. **BreadcrumbList** — second LD-JSON block on all inner pages (contact, pricing, docs, privacy, faq, roadmap, buy-button)
 6. **Canonical URL + hreflang** — via `CanonicalService` (triggered on every `NavigationEnd` in `AppComponent`)
 7. **`html[lang]`** — set in `AppComponent` constructor from `LOCALE_ID` (en → `lang="en"`, bg → `lang="bg"`)
 
@@ -113,6 +114,7 @@ All SEO meta is set dynamically in each page component's `ngOnInit`:
 | FAQ | `FAQPage`, `BreadcrumbList` |
 | Roadmap | `WebPage`, `BreadcrumbList` |
 | Terms | `WebPage`, `BreadcrumbList` |
+| Buy button | `FAQPage` (from `BUY_BUTTON_FAQ`), `BreadcrumbList` |
 
 ### OG image
 
@@ -129,6 +131,7 @@ Default: `https://loom21.com/en/assets/images/form-banners/loom-app-laptop-mobil
 - Documentation markdown is fetched at runtime from `https://raw.githubusercontent.com/loom21/loom21doc/main/README.md` (BG: `README-bg.md`). A shimmer skeleton is shown while loading; on fetch failure an error state with Retry and a GitHub link is shown
 - Focus outlines use `:focus-visible` — keyboard users see a blue ring, mouse users do not
 - Bootstrap 5 bundle (includes Popper v2) is used — jQuery is not loaded
+- Buy button page copy must present it as a checkout for any merchant (cards and Bitcoin together, never Bitcoin-only), never say "crypto", and state that Stripe's own card fees still apply. The snippet uses a placeholder key only. Sign-up links carry `utm_campaign=buy_button`
 - Roadmap page content (`roadmap-const.ts`) is draft copy inferred from existing product signals, not confirmed business commitments — review with the team before treating "In Progress"/"Planned" items as accurate
 
 - **Routes** (`src/app/app.routes.ts`): only the home page is in the initial bundle; every other page uses `loadComponent` / `loadChildren`. Keep new pages lazy. Unknown URLs render the 404 page in place with HTTP 404 (`NotFoundComponent` sets the status through the `RESPONSE` token); `/404` is also a route

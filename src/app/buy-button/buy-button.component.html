@@ -1,0 +1,134 @@
+<!-- Hero -->
+<section class="bb-hero">
+  <div class="container bb-narrow text-center">
+    <p class="bb-eyebrow">{{ CONSTANTS.eyebrow }}</p>
+    <h1 class="bb-title">{{ CONSTANTS.heroTitle }}</h1>
+    <p class="bb-sub">{{ CONSTANTS.heroSub }}</p>
+    <div class="d-grid d-sm-flex justify-content-sm-center gap-3 bb-buttons">
+      <a [href]="signupUrl" target="_blank" rel="noopener" class="btn btn-success" i18n="Try for free button@@tryForFreeButton">Start free</a>
+      <a [href]="githubUrl" target="_blank" rel="noopener" class="btn btn-outline-primary"><i class="fa fa-github" aria-hidden="true"></i> {{ CONSTANTS.github }}</a>
+    </div>
+  </div>
+</section>
+
+<!-- Snippet -->
+<section class="bb-section">
+  <div class="container bb-narrow">
+    <h2 class="bb-h2 text-center">{{ CONSTANTS.snippetTitle }}</h2>
+    <p class="bb-lead text-center">{{ CONSTANTS.snippetCaption }}</p>
+    <div class="bb-code">
+      <button type="button" class="btn btn-sm bb-copy" (click)="copySnippet()">
+        <i class="fa" [class.fa-check]="copyState() === 'copied'" [class.fa-clipboard]="copyState() !== 'copied'" aria-hidden="true"></i>
+        {{ copyState() === 'copied' ? CONSTANTS.copied : CONSTANTS.copy }}
+      </button>
+      <pre tabindex="0" [attr.aria-label]="CONSTANTS.snippetLabel"><code>{{ snippet }}</code></pre>
+    </div>
+    <p class="bb-note" aria-live="polite">
+      @if (copyState() === 'failed') { {{ CONSTANTS.copyFailed }} }
+      @else if (copyState() === 'copied') { <span class="visually-hidden">{{ CONSTANTS.copied }}</span>{{ CONSTANTS.snippetNote }} }
+      @else { {{ CONSTANTS.snippetNote }} }
+    </p>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="bb-section section-tint">
+  <div class="container">
+    <h2 class="bb-h2 text-center">{{ CONSTANTS.howTitle }}</h2>
+    <ol class="row g-4 list-unstyled bb-steps">
+      @for (step of steps; track step.title; let i = $index) {
+        <li class="col-md-4" [appReveal]="i * 80">
+          <div class="ui-card ui-card--compact h-100">
+            <span class="bb-step-num" aria-hidden="true">{{ i + 1 }}</span>
+            <h3 class="bb-h3">{{ step.title }}</h3>
+            <p>{{ step.description }}</p>
+          </div>
+        </li>
+      }
+    </ol>
+  </div>
+</section>
+
+<!-- Payment methods -->
+<section class="bb-section">
+  <div class="container">
+    <h2 class="bb-h2 text-center">{{ CONSTANTS.methodsTitle }}</h2>
+    <div class="row g-4">
+      @for (method of methods; track method.title; let i = $index) {
+        <div class="col-md-4" [appReveal]="i * 80">
+          <div class="ui-card ui-card--compact h-100">
+            <i class="fa {{ method.icon }} bb-icon" aria-hidden="true"></i>
+            <h3 class="bb-h3">{{ method.title }}</h3>
+            <p>{{ method.description }}</p>
+          </div>
+        </div>
+      }
+    </div>
+    <p class="bb-lead text-center bb-after">{{ CONSTANTS.methodsNote }}</p>
+    <p class="bb-note text-center">{{ CONSTANTS.feesNote }}</p>
+  </div>
+</section>
+
+<!-- Benefits -->
+<section class="bb-section section-tint">
+  <div class="container">
+    <h2 class="bb-h2 text-center">{{ CONSTANTS.benefitsTitle }}</h2>
+    <div class="row g-4">
+      @for (benefit of benefits; track benefit.title; let i = $index) {
+        <div class="col-md-4" [appReveal]="i * 80">
+          <div class="ui-card ui-card--lift h-100">
+            <i class="fa {{ benefit.icon }} bb-icon" aria-hidden="true"></i>
+            <h3 class="bb-h3">{{ benefit.title }}</h3>
+            <p>{{ benefit.description }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Works with (text only, no third-party logos) -->
+<section class="bb-section">
+  <div class="container text-center">
+    <h2 class="bb-h2">{{ CONSTANTS.worksWithTitle }}</h2>
+    <ul class="list-unstyled bb-platforms">
+      @for (platform of platforms; track platform) {
+        <li>{{ platform }}</li>
+      }
+    </ul>
+    <p class="bb-note">{{ CONSTANTS.worksWithNote }}</p>
+  </div>
+</section>
+
+<!-- FAQ: same accordion markup as the FAQ and pricing pages -->
+<section class="bb-section section-tint">
+  <div class="container bb-narrow">
+    <h2 class="bb-h2 text-center">{{ CONSTANTS.faqTitle }}</h2>
+    <div class="accordion" id="bb-faq">
+      @for (item of faq; track item.question; let i = $index) {
+        <div class="accordion-item">
+          <h3 class="accordion-header" [id]="'bb-faq-heading-' + i">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              [attr.data-bs-target]="'#bb-faq-collapse-' + i" aria-expanded="false"
+              [attr.aria-controls]="'bb-faq-collapse-' + i">
+              {{ item.question }}
+            </button>
+          </h3>
+          <div [id]="'bb-faq-collapse-' + i" class="accordion-collapse collapse"
+            [attr.aria-labelledby]="'bb-faq-heading-' + i" data-bs-parent="#bb-faq">
+            <div class="accordion-body">{{ item.answer }}</div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Closing call to action -->
+<section class="bb-cta">
+  <div class="container">
+    <h2>{{ CONSTANTS.ctaTitle }}</h2>
+    <p class="bb-cta-sub">{{ CONSTANTS.ctaSub }}</p>
+    <a [href]="signupUrl" target="_blank" rel="noopener" class="btn bb-cta-btn" i18n="Try for free button@@tryForFreeButton">Start free</a>
+  </div>
+</section>

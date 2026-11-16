@@ -14,7 +14,7 @@
         <source>Home</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">16,17</context>
         </context-group>
         <note priority="1" from="description">Home menu</note>
       </trans-unit>
@@ -54,7 +54,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">15,16</context>
+          <context context-type="linenumber">16,17</context>
         </context-group>
         <note priority="1" from="description">Roadmap nav</note>
       </trans-unit>
@@ -81,6 +81,458 @@
           <context context-type="linenumber">56,58</context>
         </context-group>
         <note priority="1" from="description">Launch app button</note>
+      </trans-unit>
+      <trans-unit id="tryForFreeButton" datatype="html">
+        <source>Start free</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/buy-button/buy-button.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/buy-button/buy-button.component.html</context>
+          <context context-type="linenumber">132,135</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">139,142</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">176,179</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">211,214</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">233,234</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">336,337</context>
+        </context-group>
+        <note priority="1" from="description">Try for free button</note>
+      </trans-unit>
+      <trans-unit id="buyButtonEyebrow" datatype="html">
+        <source>Buy button</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">Buy button page eyebrow</note>
+      </trans-unit>
+      <trans-unit id="buyButtonHeroTitle" datatype="html">
+        <source>Accept cards and Bitcoin on any website with one line of code</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">Buy button hero title</note>
+      </trans-unit>
+      <trans-unit id="buyButtonHeroSub" datatype="html">
+        <source>Customers pay by card or with Bitcoin over Lightning. The money goes straight to your own Stripe account or Bitcoin wallet, stock updates the moment it&apos;s paid, and Loom21 takes 0% of every sale.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">Buy button hero subtitle</note>
+      </trans-unit>
+      <trans-unit id="buyButtonGithub" datatype="html">
+        <source>View on GitHub</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Buy button GitHub button</note>
+      </trans-unit>
+      <trans-unit id="buyButtonSnippetTitle" datatype="html">
+        <source>Add it to your page</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">Buy button snippet title</note>
+      </trans-unit>
+      <trans-unit id="buyButtonSnippetCaption" datatype="html">
+        <source>Paste it where you want the button. That&apos;s the whole setup.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">Buy button snippet caption</note>
+      </trans-unit>
+      <trans-unit id="buyButtonSnippetNote" datatype="html">
+        <source>Replace the key and product with the ones from your product&apos;s Embed dialog in Loom21.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description">Buy button snippet note</note>
+      </trans-unit>
+      <trans-unit id="buyButtonSnippetLabel" datatype="html">
+        <source>Buy button embed code</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">Buy button snippet aria label</note>
+      </trans-unit>
+      <trans-unit id="buyButtonCopy" datatype="html">
+        <source>Copy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description">Buy button copy code button</note>
+      </trans-unit>
+      <trans-unit id="buyButtonCopied" datatype="html">
+        <source>Copied</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">Buy button code copied</note>
+      </trans-unit>
+      <trans-unit id="buyButtonCopyFailed" datatype="html">
+        <source>Copy failed. Select the code and copy it manually.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">Buy button copy failed</note>
+      </trans-unit>
+      <trans-unit id="buyButtonHowTitle" datatype="html">
+        <source>How it works</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <note priority="1" from="description">Buy button how it works title</note>
+      </trans-unit>
+      <trans-unit id="buyButtonMethodsTitle" datatype="html">
+        <source>Payment methods</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">Buy button payment methods title</note>
+      </trans-unit>
+      <trans-unit id="buyButtonMethodsNote" datatype="html">
+        <source>Turn on only the methods you want.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="description">Buy button payment methods note</note>
+      </trans-unit>
+      <trans-unit id="buyButtonFeesNote" datatype="html">
+        <source>Loom21 takes 0% on every payment method, cards included. Stripe still charges its own card processing fees.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note priority="1" from="description">Buy button fees note</note>
+      </trans-unit>
+      <trans-unit id="buyButtonBenefitsTitle" datatype="html">
+        <source>What stays yours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">Buy button benefits title</note>
+      </trans-unit>
+      <trans-unit id="buyButtonWorksWithTitle" datatype="html">
+        <source>Works with</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">Buy button works with title</note>
+      </trans-unit>
+      <trans-unit id="buyButtonWorksWithNote" datatype="html">
+        <source>Any site where you can add an HTML or embed block.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description">Buy button works with note</note>
+      </trans-unit>
+      <trans-unit id="buyButtonFaqTitle" datatype="html">
+        <source>Buy button questions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note priority="1" from="description">Buy button FAQ title</note>
+      </trans-unit>
+      <trans-unit id="buyButtonCtaTitle" datatype="html">
+        <source>Add a Buy button to your site</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description">Buy button closing CTA title</note>
+      </trans-unit>
+      <trans-unit id="buyButtonCtaSub" datatype="html">
+        <source>Included on every plan, Free included. 0% Loom21 fees on every sale.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note priority="1" from="description">Buy button closing CTA text</note>
+      </trans-unit>
+      <trans-unit id="buyButtonStep1Title" datatype="html">
+        <source>Add your product</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <note priority="1" from="description">Buy button step 1 title</note>
+      </trans-unit>
+      <trans-unit id="buyButtonStep1Desc" datatype="html">
+        <source>Add your product in Loom21 and connect Stripe, a Bitcoin wallet, or both.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <note priority="1" from="description">Buy button step 1 description</note>
+      </trans-unit>
+      <trans-unit id="buyButtonStep2Title" datatype="html">
+        <source>Copy the snippet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <note priority="1" from="description">Buy button step 2 title</note>
+      </trans-unit>
+      <trans-unit id="buyButtonStep2Desc" datatype="html">
+        <source>Copy the snippet from the product&apos;s Embed dialog.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <note priority="1" from="description">Buy button step 2 description</note>
+      </trans-unit>
+      <trans-unit id="buyButtonStep3Title" datatype="html">
+        <source>Paste it into your site</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <note priority="1" from="description">Buy button step 3 title</note>
+      </trans-unit>
+      <trans-unit id="buyButtonStep3Desc" datatype="html">
+        <source>Paste it into your site. Orders and stock update automatically.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <note priority="1" from="description">Buy button step 3 description</note>
+      </trans-unit>
+      <trans-unit id="buyButtonMethodCardTitle" datatype="html">
+        <source>Card</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <note priority="1" from="description">Buy button method card title</note>
+      </trans-unit>
+      <trans-unit id="buyButtonMethodCardDesc" datatype="html">
+        <source>Paid through your own Stripe account, on Loom21&apos;s secure payment page in a new tab.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <note priority="1" from="description">Buy button method card description</note>
+      </trans-unit>
+      <trans-unit id="buyButtonMethodLightningTitle" datatype="html">
+        <source>Bitcoin Lightning</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+        <note priority="1" from="description">Buy button method Lightning title</note>
+      </trans-unit>
+      <trans-unit id="buyButtonMethodLightningDesc" datatype="html">
+        <source>QR code right on your page, settles in seconds.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <note priority="1" from="description">Buy button method Lightning description</note>
+      </trans-unit>
+      <trans-unit id="buyButtonMethodOnchainTitle" datatype="html">
+        <source>Bitcoin on-chain</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+        <note priority="1" from="description">Buy button method on-chain title</note>
+      </trans-unit>
+      <trans-unit id="buyButtonMethodOnchainDesc" datatype="html">
+        <source>For larger payments, on Loom21&apos;s secure payment page in a new tab.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <note priority="1" from="description">Buy button method on-chain description</note>
+      </trans-unit>
+      <trans-unit id="buyButtonBenefit1Title" datatype="html">
+        <source>Own your money</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+        <note priority="1" from="description">Buy button benefit 1 title</note>
+      </trans-unit>
+      <trans-unit id="buyButtonBenefit1Desc" datatype="html">
+        <source>Card payments land in your Stripe account, Bitcoin in your own wallet. Loom21 never holds your funds and takes 0%.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <note priority="1" from="description">Buy button benefit 1 description</note>
+      </trans-unit>
+      <trans-unit id="buyButtonBenefit2Title" datatype="html">
+        <source>Own your data</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+        <note priority="1" from="description">Buy button benefit 2 title</note>
+      </trans-unit>
+      <trans-unit id="buyButtonBenefit2Desc" datatype="html">
+        <source>Every sale is a normal Loom21 order with customer and stock records you can export at any time.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+        <note priority="1" from="description">Buy button benefit 2 description</note>
+      </trans-unit>
+      <trans-unit id="buyButtonBenefit3Title" datatype="html">
+        <source>Own your integrations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+        <note priority="1" from="description">Buy button benefit 3 title</note>
+      </trans-unit>
+      <trans-unit id="buyButtonBenefit3Desc" datatype="html">
+        <source>The button is MIT open source on a public API, so you can restyle it, fork it or self-host the script.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <note priority="1" from="description">Buy button benefit 3 description</note>
+      </trans-unit>
+      <trans-unit id="buyButtonPlainHtml" datatype="html">
+        <source>Plain HTML</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+        <note priority="1" from="description">Buy button works with plain HTML</note>
+      </trans-unit>
+      <trans-unit id="buyButtonFaqQ1" datatype="html">
+        <source>Do I need a developer?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+        <note priority="1" from="description">Buy button FAQ question 1</note>
+      </trans-unit>
+      <trans-unit id="buyButtonFaqA1" datatype="html">
+        <source>No. Copy the snippet and paste it into your site builder&apos;s HTML or embed block.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+        <note priority="1" from="description">Buy button FAQ answer 1</note>
+      </trans-unit>
+      <trans-unit id="buyButtonFaqQ2" datatype="html">
+        <source>Do I have to accept Bitcoin?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+        <note priority="1" from="description">Buy button FAQ question 2</note>
+      </trans-unit>
+      <trans-unit id="buyButtonFaqA2" datatype="html">
+        <source>No. You can take card payments only, Bitcoin only, or both. You can change this at any time.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+        <note priority="1" from="description">Buy button FAQ answer 2</note>
+      </trans-unit>
+      <trans-unit id="buyButtonFaqQ3" datatype="html">
+        <source>Which payment methods are supported?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+        <note priority="1" from="description">Buy button FAQ question 3</note>
+      </trans-unit>
+      <trans-unit id="buyButtonFaqA3" datatype="html">
+        <source>Card via Stripe, Bitcoin over Lightning, and on-chain Bitcoin.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+        <note priority="1" from="description">Buy button FAQ answer 3</note>
+      </trans-unit>
+      <trans-unit id="buyButtonFaqQ4" datatype="html">
+        <source>Does the buyer leave my website?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+        <note priority="1" from="description">Buy button FAQ question 4</note>
+      </trans-unit>
+      <trans-unit id="buyButtonFaqA4" datatype="html">
+        <source>Lightning is paid right on your page. Card and on-chain payments open a secure Loom21 payment page in a new tab, and your page updates when the payment is complete.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+        <note priority="1" from="description">Buy button FAQ answer 4</note>
+      </trans-unit>
+      <trans-unit id="buyButtonFaqQ5" datatype="html">
+        <source>What does it cost?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+        <note priority="1" from="description">Buy button FAQ question 5</note>
+      </trans-unit>
+      <trans-unit id="buyButtonFaqA5" datatype="html">
+        <source>It&apos;s included on every plan, Free included. Loom21 charges 0% per sale; your card processor&apos;s own fees still apply. Each paid order counts toward your plan&apos;s monthly order limit.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+        <note priority="1" from="description">Buy button FAQ answer 5</note>
+      </trans-unit>
+      <trans-unit id="buyButtonFaqQ6" datatype="html">
+        <source>Does it track my visitors?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+        <note priority="1" from="description">Buy button FAQ question 6</note>
+      </trans-unit>
+      <trans-unit id="buyButtonFaqA6" datatype="html">
+        <source>No. No cookies, no analytics, no third-party requests.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+        <note priority="1" from="description">Buy button FAQ answer 6</note>
       </trans-unit>
       <trans-unit id="faqPageTitle" datatype="html">
         <source>Frequently asked questions</source>
@@ -706,11 +1158,19 @@
         </context-group>
         <note priority="1" from="description">Terms title tag</note>
       </trans-unit>
+      <trans-unit id="buyButtonPageTitle" datatype="html">
+        <source>Buy button: accept cards and Bitcoin on any website | Loom21</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Buy button title tag</note>
+      </trans-unit>
       <trans-unit id="homeDescription" datatype="html">
         <source>Accept Bitcoin (Lightning &amp; on-chain) and cards with 0% Loom21 fees, keep inventory in sync with every sale, and export your data any time. Free forever plan.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">13</context>
+          <context context-type="linenumber">14</context>
         </context-group>
         <note priority="1" from="description">Home description tag</note>
       </trans-unit>
@@ -718,7 +1178,7 @@
         <source>How to set up and use Loom21: payment links, sales, deliveries, inventory, price lists, reports and payment processor settings.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">14</context>
+          <context context-type="linenumber">15</context>
         </context-group>
         <note priority="1" from="description">Documentation description tag</note>
       </trans-unit>
@@ -726,7 +1186,7 @@
         <source>Questions about Loom21? Send us a message. We typically respond within one business day.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">15</context>
+          <context context-type="linenumber">16</context>
         </context-group>
         <note priority="1" from="description">Contact description tag</note>
       </trans-unit>
@@ -734,7 +1194,7 @@
         <source>Free forever plan, then from €24/month. Accept Bitcoin and cards with 0% Loom21 transaction fees, unlimited users from Growth, and full data export.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="linenumber">17</context>
         </context-group>
         <note priority="1" from="description">Pricing description tag</note>
       </trans-unit>
@@ -742,7 +1202,7 @@
         <source>How Loom21 collects, uses and protects your personal data, and the rights you have under GDPR.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">18</context>
         </context-group>
         <note priority="1" from="description">Privacy description tag</note>
       </trans-unit>
@@ -750,7 +1210,7 @@
         <source>Answers to common questions about Loom21: payments, Bitcoin, pricing, price lists, inventory, custom fields, and more.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">19</context>
         </context-group>
         <note priority="1" from="description">FAQ description tag</note>
       </trans-unit>
@@ -758,7 +1218,7 @@
         <source>See what&apos;s shipped, in progress, and planned for Loom21: payments, pricing, inventory, and more.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">20</context>
         </context-group>
         <note priority="1" from="description">Roadmap description tag</note>
       </trans-unit>
@@ -766,15 +1226,23 @@
         <source>The terms for using Loom21: plans and billing, Bitcoin payments, 0% transaction fees, your data and export rights.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">20</context>
+          <context context-type="linenumber">21</context>
         </context-group>
         <note priority="1" from="description">Terms description tag</note>
+      </trans-unit>
+      <trans-unit id="buyButtonDescription" datatype="html">
+        <source>Add a checkout to any website with one line of code. Take card and Bitcoin payments straight to your own accounts, with stock updated on every sale and 0% Loom21 fees.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">Buy button description tag</note>
       </trans-unit>
       <trans-unit id="homeDescription_ld_json" datatype="html">
         <source>Accept Bitcoin and card payments with 0% Loom21 fees, track inventory in real time and export your data any time.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">26</context>
         </context-group>
         <note priority="1" from="description">Home description ld_json tag</note>
       </trans-unit>
@@ -782,7 +1250,7 @@
         <source>Guides for setting up and using Loom21: payment links, sales, deliveries, inventory, price lists and reports.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">25</context>
+          <context context-type="linenumber">27</context>
         </context-group>
         <note priority="1" from="description">Documentation description ld_json tag</note>
       </trans-unit>
@@ -790,7 +1258,7 @@
         <source>Questions about Loom21? Send us a message. We typically respond within one business day.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">26</context>
+          <context context-type="linenumber">28</context>
         </context-group>
         <note priority="1" from="description">Contact description ld_json tag</note>
       </trans-unit>
@@ -798,7 +1266,7 @@
         <source>Loom21 plans: Free, Starter, Growth and Pro. Bitcoin and card payments with 0% Loom21 fees.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">27</context>
+          <context context-type="linenumber">29</context>
         </context-group>
         <note priority="1" from="description">Pricing description ld_json tag</note>
       </trans-unit>
@@ -806,7 +1274,7 @@
         <source>How Loom21 collects, uses and protects your personal data, and the rights you have under GDPR.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">28</context>
+          <context context-type="linenumber">30</context>
         </context-group>
         <note priority="1" from="description">Privacy description ld_json tag</note>
       </trans-unit>
@@ -814,7 +1282,7 @@
         <source>Answers to common questions about Loom21&apos;s payments, Bitcoin support, pricing, price lists, inventory, and custom fields.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">29</context>
+          <context context-type="linenumber">31</context>
         </context-group>
         <note priority="1" from="description">FAQ description ld_json tag</note>
       </trans-unit>
@@ -822,7 +1290,7 @@
         <source>Loom21&apos;s product roadmap: shipped features, work in progress, and planned improvements.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="linenumber">32</context>
         </context-group>
         <note priority="1" from="description">Roadmap description ld_json tag</note>
       </trans-unit>
@@ -830,7 +1298,7 @@
         <source>Home</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">37</context>
         </context-group>
         <note priority="1" from="description">Breadcrumb name</note>
       </trans-unit>
@@ -838,7 +1306,7 @@
         <source>Documentation</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">36</context>
+          <context context-type="linenumber">38</context>
         </context-group>
         <note priority="1" from="description">Breadcrumb name</note>
       </trans-unit>
@@ -846,7 +1314,7 @@
         <source>Pricing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">39</context>
         </context-group>
         <note priority="1" from="description">Breadcrumb name</note>
       </trans-unit>
@@ -854,7 +1322,7 @@
         <source>FAQ</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">38</context>
+          <context context-type="linenumber">40</context>
         </context-group>
         <note priority="1" from="description">Breadcrumb name</note>
       </trans-unit>
@@ -862,7 +1330,7 @@
         <source>Roadmap</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">41</context>
         </context-group>
         <note priority="1" from="description">Breadcrumb name</note>
       </trans-unit>
@@ -870,7 +1338,7 @@
         <source>Contact</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">40</context>
+          <context context-type="linenumber">42</context>
         </context-group>
         <note priority="1" from="description">Breadcrumb name</note>
       </trans-unit>
@@ -878,7 +1346,7 @@
         <source>Privacy Policy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">43</context>
         </context-group>
         <note priority="1" from="description">Breadcrumb name</note>
       </trans-unit>
@@ -886,7 +1354,15 @@
         <source>Terms of Service</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">42</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <note priority="1" from="description">Breadcrumb name</note>
+      </trans-unit>
+      <trans-unit id="crumbBuyButton" datatype="html">
+        <source>Buy button</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
+          <context context-type="linenumber">45</context>
         </context-group>
         <note priority="1" from="description">Breadcrumb name</note>
       </trans-unit>
@@ -894,147 +1370,147 @@
         <source>Inventory Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">45</context>
+          <context context-type="linenumber">48</context>
         </context-group>
       </trans-unit>
       <trans-unit id="stockControl" datatype="html">
         <source>Stock Control</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="productManagement" datatype="html">
         <source>Product Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">47</context>
+          <context context-type="linenumber">50</context>
         </context-group>
       </trans-unit>
       <trans-unit id="invoiceProcessing" datatype="html">
         <source>Invoice Processing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">48</context>
+          <context context-type="linenumber">51</context>
         </context-group>
       </trans-unit>
       <trans-unit id="customerManagement" datatype="html">
         <source>Customer Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">49</context>
+          <context context-type="linenumber">52</context>
         </context-group>
       </trans-unit>
       <trans-unit id="supplierManagement" datatype="html">
         <source>Supplier Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="vendorManagement" datatype="html">
         <source>Vendor Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="orderFulfillment" datatype="html">
         <source>Order Fulfillment</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="linenumber">55</context>
         </context-group>
       </trans-unit>
       <trans-unit id="paymentProcessing" datatype="html">
         <source>Payment Processing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="bitcoinPayments" datatype="html">
         <source>Bitcoin Payments</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">54</context>
+          <context context-type="linenumber">57</context>
         </context-group>
       </trans-unit>
       <trans-unit id="salesTracking" datatype="html">
         <source>Sales Tracking</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">58</context>
         </context-group>
       </trans-unit>
       <trans-unit id="serviceManagement" datatype="html">
         <source>Service Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">56</context>
+          <context context-type="linenumber">59</context>
         </context-group>
       </trans-unit>
       <trans-unit id="deliveryManagement" datatype="html">
         <source>Delivery Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">57</context>
+          <context context-type="linenumber">60</context>
         </context-group>
       </trans-unit>
       <trans-unit id="userRolesPermissions" datatype="html">
         <source>User Roles and Permissions</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">58</context>
+          <context context-type="linenumber">61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="inventoryAnalytics" datatype="html">
         <source>Inventory Analytics</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">59</context>
+          <context context-type="linenumber">62</context>
         </context-group>
       </trans-unit>
       <trans-unit id="warehouseManagement" datatype="html">
         <source>Warehouse Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">60</context>
+          <context context-type="linenumber">63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="realTimeInventoryTracking" datatype="html">
         <source>Real-Time Inventory Tracking</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">61</context>
+          <context context-type="linenumber">64</context>
         </context-group>
       </trans-unit>
       <trans-unit id="priceListManagement" datatype="html">
         <source>Price List Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">62</context>
+          <context context-type="linenumber">65</context>
         </context-group>
       </trans-unit>
       <trans-unit id="customFieldsManagement" datatype="html">
         <source>Custom Fields Management</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">63</context>
+          <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="successMessage" datatype="html">
         <source>Thank You! Your message has been received. We&apos;ll get back to you soon.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">66</context>
+          <context context-type="linenumber">69</context>
         </context-group>
       </trans-unit>
       <trans-unit id="errorMessage" datatype="html">
         <source>Something went wrong and your message wasn&apos;t sent. Please try again, or email us directly.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/localized-const.ts</context>
-          <context context-type="linenumber">67</context>
+          <context context-type="linenumber">70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="pricingAnnualBadge" datatype="html">
@@ -2801,7 +3277,7 @@
         <source>Enter your business...</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/contact/contact.component.html</context>
-          <context context-type="linenumber">51,54</context>
+          <context context-type="linenumber">51,53</context>
         </context-group>
         <note priority="1" from="description">Enter your business placeholder</note>
       </trans-unit>
@@ -2969,11 +3445,19 @@
         </context-group>
         <note priority="1" from="description">Documentation nav</note>
       </trans-unit>
+      <trans-unit id="buyButtonNav" datatype="html">
+        <source>Buy button</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/footer/footer.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+        <note priority="1" from="description">Buy button nav</note>
+      </trans-unit>
       <trans-unit id="pricingNav" datatype="html">
         <source>Pricing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">13,14</context>
+          <context context-type="linenumber">14,15</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -2985,7 +3469,7 @@
         <source>FAQ</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">14,15</context>
+          <context context-type="linenumber">15,16</context>
         </context-group>
         <note priority="1" from="description">FAQ nav</note>
       </trans-unit>
@@ -2993,7 +3477,7 @@
         <source>Contact</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">16,18</context>
+          <context context-type="linenumber">17,19</context>
         </context-group>
         <note priority="1" from="description">Contact nav</note>
       </trans-unit>
@@ -3001,7 +3485,7 @@
         <source>Legal &amp; community</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">20,21</context>
+          <context context-type="linenumber">21,22</context>
         </context-group>
         <note priority="1" from="description">Footer legal</note>
       </trans-unit>
@@ -3009,7 +3493,7 @@
         <source>Privacy Policy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">22,23</context>
+          <context context-type="linenumber">23,24</context>
         </context-group>
         <note priority="1" from="description">Privacy</note>
       </trans-unit>
@@ -3017,7 +3501,7 @@
         <source>Terms of Service</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">23,24</context>
+          <context context-type="linenumber">24,25</context>
         </context-group>
         <note priority="1" from="description">Terms link</note>
       </trans-unit>
@@ -3025,7 +3509,7 @@
         <source>GitHub</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">24,25</context>
+          <context context-type="linenumber">25,26</context>
         </context-group>
         <note priority="1" from="description">Footer github</note>
       </trans-unit>
@@ -3033,7 +3517,7 @@
         <source>Telegram community</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">25,27</context>
+          <context context-type="linenumber">26,28</context>
         </context-group>
         <note priority="1" from="description">Footer telegram</note>
       </trans-unit>
@@ -3041,7 +3525,7 @@
         <source>Get in touch</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">30,31</context>
+          <context context-type="linenumber">31,32</context>
         </context-group>
         <note priority="1" from="description">Get in touch</note>
       </trans-unit>
@@ -3068,34 +3552,6 @@
           <context context-type="linenumber">7,8</context>
         </context-group>
         <note priority="1" from="description">Home top sub title</note>
-      </trans-unit>
-      <trans-unit id="tryForFreeButton" datatype="html">
-        <source>Start free</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">9,10</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">139,142</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">176,179</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">211,214</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">233,234</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">336,337</context>
-        </context-group>
-        <note priority="1" from="description">Try for free button</note>
       </trans-unit>
       <trans-unit id="heroTrustLine" datatype="html">
         <source>No credit card · Funds go straight to your wallet</source>
@@ -3137,7 +3593,7 @@
         <source>Replay</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">40,44</context>
+          <context context-type="linenumber">40,43</context>
         </context-group>
         <note priority="1" from="description">Video replay button</note>
       </trans-unit>
@@ -3185,7 +3641,7 @@
         <source>Generate quotes, invoices, receipts, and pickup lists</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">63,67</context>
+          <context context-type="linenumber">63,66</context>
         </context-group>
         <note priority="1" from="description">Document generation</note>
       </trans-unit>
@@ -3593,7 +4049,7 @@
         <source>Start with 50 orders a month at no cost. No credit card required.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
-          <context context-type="linenumber">321,324</context>
+          <context context-type="linenumber">321,323</context>
         </context-group>
         <note priority="1" from="description">Stat free desc</note>
       </trans-unit>
@@ -3720,7 +4176,7 @@
         <source>Most popular</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">37,40</context>
+          <context context-type="linenumber">37,39</context>
         </context-group>
         <note priority="1" from="description">Most popular ribbon</note>
       </trans-unit>
@@ -3728,7 +4184,7 @@
         <source>or <x id="INTERPOLATION" equiv-text="{{ formatPrice(card.btcPrice) }}"/>/mo paying in Bitcoin</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/pricing/pricing.component.html</context>
-          <context context-type="linenumber">45,47</context>
+          <context context-type="linenumber">45,46</context>
         </context-group>
         <note priority="1" from="description">Bitcoin price hint</note>
       </trans-unit>
