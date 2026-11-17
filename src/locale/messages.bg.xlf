@@ -4576,7 +4576,7 @@
       </trans-unit>
       <trans-unit id="buyButtonMethodCardDesc" datatype="html">
         <source>Paid through your own Stripe account, on Loom21&apos;s secure payment page in a new tab.</source>
-        <target>Плащането минава през вашия собствен Stripe акаунт, на защитената страница за плащане на Loom21 в нов раздел.</target>
+        <target>Плащането се обработва през вашия собствен Stripe акаунт на защитената страница за плащане на Loom21 в нов раздел.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/buy-button-const.ts</context>
           <context context-type="linenumber">68</context>
