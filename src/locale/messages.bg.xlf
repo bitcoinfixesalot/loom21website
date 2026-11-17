@@ -1499,7 +1499,7 @@
       </trans-unit>
       <trans-unit id="homeTopSubTitle" datatype="html">
         <source>Loom21 keeps your stock, sales orders and customers in one place, and lets you get paid over Lightning, on-chain Bitcoin or card. 0% Loom21 fees, a free forever plan, and you can export all your data at any time.</source>
-        <target>Loom21 събира наличностите, поръчките и клиентите ви на едно място и ви позволява да получавате плащания през Lightning, он-чейн Биткойн или с карта. 0% такси от Loom21, безплатен план завинаги и пълен експорт на данните по всяко време.</target>
+        <target>Loom21 събира наличностите, поръчките и клиентите ви на едно място и ви позволява да приемате плащания през Lightning, он-чейн Биткойн или с карта. 0% такси от Loom21, безплатен план завинаги и възможност да експортирате всичките си данни по всяко време.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">9,10</context>
@@ -1557,7 +1557,7 @@
       </trans-unit>
       <trans-unit id="flexiblePriceLists" datatype="html">
         <source>Set up wholesale, retail, or tiered price lists with customer-specific pricing</source>
-        <target>Създавайте ценови листи на едро, на дребно или на нива, с цени за конкретни клиенти</target>
+        <target>Настройвайте ценови листи на едро, на дребно или на нива с индивидуални клиентски цени</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">1</context>
@@ -1575,7 +1575,7 @@
       </trans-unit>
       <trans-unit id="manageClientsSuppliers" datatype="html">
         <source>Keep clients and suppliers in one place</source>
-        <target>Дръжте клиенти и доставчици на едно място</target>
+        <target>Съберете клиентите и доставчиците си на едно място</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">35,36</context>
@@ -1638,7 +1638,7 @@
       </trans-unit>
       <trans-unit id="getInvoiceNotification" datatype="html">
         <source>See instantly when an invoice is paid</source>
-        <target>Виждайте веднага, когато фактура е платена</target>
+        <target>Разберете веднага щом фактурата бъде платена</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">54,55</context>
@@ -2222,7 +2222,7 @@
       </trans-unit>
       <trans-unit id="faqA4_3" datatype="html">
         <source>Yes. You can import products, services, customers, and suppliers from an Excel (.xlsx) or CSV file, using the downloadable templates. To change many records at once, export them to Excel, edit the file and import it back. Existing records are updated, not duplicated.</source>
-        <target>Да. Можете да импортирате продукти, услуги, клиенти и доставчици от файл в Excel (.xlsx) или CSV, като използвате шаблоните за изтегляне. За да промените много записи наведнъж, експортирайте ги в Excel, редактирайте файла и го импортирайте обратно. Съществуващите записи се обновяват, без да се създават копия.</target>
+        <target>Да. Можете да импортирате продукти, услуги, клиенти и доставчици от Excel (.xlsx) или CSV файл, като използвате готовите шаблони за изтегляне. За да промените много записи наведнъж, експортирайте ги в Excel, редактирайте файла и го импортирайте обратно. Съществуващите записи се обновяват, а не се дублират.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2438,7 +2438,7 @@
       </trans-unit>
       <trans-unit id="roadmapPageIntro" datatype="html">
         <source>A look at what we've shipped, what we're working on now, and what's coming next.</source>
-        <target>Поглед към това, което вече пуснахме, върху какво работим в момента и какво предстои.</target>
+        <target>Поглед върху това какво вече сме пуснали, върху какво работим в момента и какво предстои.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2555,7 +2555,7 @@
       </trans-unit>
       <trans-unit id="roadmapShipped4Desc" datatype="html">
         <source>Bulk add or update products, services, customers, and suppliers from an Excel or CSV file.</source>
-        <target>Масово добавяне или обновяване на продукти, услуги, клиенти и доставчици от файл в Excel или CSV.</target>
+        <target>Масово добавяне или обновяване на продукти, услуги, клиенти и доставчици от Excel или CSV файл.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2637,7 +2637,7 @@
       </trans-unit>
       <trans-unit id="roadmapInProgress3Title" datatype="html">
         <source>Installable, mobile-friendly app</source>
-        <target>Инсталируемо, удобно за мобилни устройства приложение</target>
+        <target>Приложение, удобно за мобилни устройства и готово за инсталиране</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2655,7 +2655,7 @@
       </trans-unit>
       <trans-unit id="roadmapPlanned1Title" datatype="html">
         <source>Full API (write access) &amp; webhooks</source>
-        <target>Пълен API (със запис) и webhooks</target>
+        <target>Пълен API (с достъп за запис) и webhooks</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">48</context>
@@ -3829,7 +3829,7 @@
       </trans-unit>
       <trans-unit id="heroEyebrow" datatype="html">
         <source>Own your money · Own your data · Own your integrations</source>
-        <target>Вашите пари · Вашите данни · Вашите интеграции</target>
+        <target>Вие контролирате парите си · Данните си · Интеграциите си</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">7,8</context>
@@ -3964,7 +3964,7 @@
       </trans-unit>
       <trans-unit id="faqA5_4" datatype="html">
         <source>Issue a credit note from the invoice, for returned goods or as an amount for a discount after the sale. Issued invoices are never edited or deleted, so your numbering stays continuous. An invoice issued by mistake can be annulled instead, as long as it is unpaid, has no credit notes and was issued this calendar month. Loom21 prepares the annulment protocol for you to sign with the customer.</source>
-        <target>Издайте кредитно известие от фактурата, за върната стока или като сума за отстъпка след продажбата. Издадените фактури никога не се редактират и не се изтриват, така че номерацията ви остава непрекъсната. Фактура, издадена по грешка, може вместо това да бъде анулирана, ако е неплатена, няма кредитни известия и е издадена през текущия календарен месец. Loom21 подготвя протокола за анулиране, който да подпишете с клиента.</target>
+        <target>Издайте кредитно известие от фактурата за върната стока или като сума за отстъпка след продажбата. Издадените фактури никога не се редактират и не се изтриват, така че номерацията ви остава непрекъсната. Фактура, издадена по грешка, може вместо това да бъде анулирана, стига да е неплатена, да няма кредитни известия и да е издадена през текущия календарен месец. Loom21 подготвя протокола за анулиране, който да подпишете с клиента.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">64</context>
@@ -4027,7 +4027,7 @@
       </trans-unit>
       <trans-unit id="invoicingSwitch" datatype="html">
         <source>Switching from another program? Import your past invoices and credit notes from Excel or CSV, and Loom21&apos;s numbering carries on after your last one.</source>
-        <target>Преминавате от друга програма? Импортирайте издадените си фактури и кредитни известия от Excel или CSV и номерацията в Loom21 продължава след последната ви фактура.</target>
+        <target>Преминавате от друга програма? Импортирайте предишните си фактури и кредитни известия от Excel или CSV и номерацията в Loom21 продължава след последния ви документ.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">177,178</context>
@@ -4162,7 +4162,7 @@
       </trans-unit>
       <trans-unit id="payMethodLightningNote" datatype="html">
         <source>Settles in seconds</source>
-        <target>Урежда се за секунди</target>
+        <target>Приключва за секунди</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">117,118</context>
@@ -5057,7 +5057,7 @@
       </trans-unit>
       <trans-unit id="roadmapShipped10Desc" datatype="html">
         <source>A public API with publishable keys for selling Loom21 products from any website or app. It powers the Buy button.</source>
-        <target>Публичен API с публични ключове за продажба на продукти от Loom21 от всеки сайт или приложение. На него работи бутонът за покупка.</target>
+        <target>Публичен API с публикуеми ключове за продажба на продуктите ви от Loom21 във всеки уебсайт или приложение. Той задвижва бутона „Купи“.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">35</context>
