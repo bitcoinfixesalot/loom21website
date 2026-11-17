@@ -106,7 +106,7 @@ export const TIERS: TierDef[] = [
 
 /** Comparison table. `true` → ✓, `false` → —, number → locale-formatted, string → shown as-is. Order: free, starter, growth, pro. */
 export type CompareValue = boolean | number | string;
-export interface CompareRow { label: string; values: CompareValue[]; }
+export interface CompareRow { label: string; values: CompareValue[]; link?: string; }
 
 const UNL = $localize`:Unlimited short@@unlimitedShort:Unlimited`;
 const API_RO = $localize`:Cmp api ro@@cmpApiRo:Read-only`;
@@ -122,6 +122,7 @@ export const COMPARE_ROWS: CompareRow[] = [
   { label: $localize`:Cmp links@@cmpLinks:Payment links (each payment counts as an order)`, values: [UNL, UNL, UNL, UNL] },
   { label: $localize`:Cmp btc@@cmpBitcoin:Bitcoin (Lightning & on-chain)`, values: [true, true, true, true] },
   { label: $localize`:Cmp cards@@cmpCards:Card payments (Stripe)`, values: [true, true, true, true] },
+  { label: $localize`:Cmp buy button@@cmpBuyButton:Buy button`, values: [true, true, true, true], link: '/buy-button' },
   { label: $localize`:Cmp fee@@cmpFee:Loom21 transaction fee`, values: ['0%', '0%', '0%', '0%'] },
   { label: $localize`:Cmp export@@cmpExport:Excel / CSV import & export`, values: [true, true, true, true] },
   { label: $localize`:Cmp pricing@@cmpPriceLists:Price lists, tiers & custom fields`, values: [true, true, true, true] },

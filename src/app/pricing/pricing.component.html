@@ -82,7 +82,9 @@
         <tbody role="rowgroup">
           @for (row of COMPARE_ROWS; track row.label) {
             <tr role="row">
-              <th scope="row" role="rowheader">{{ row.label }}</th>
+              <th scope="row" role="rowheader">
+                @if (row.link) { <a [routerLink]="row.link">{{ row.label }}</a> } @else { {{ row.label }} }
+              </th>
               @for (value of row.values; track $index) {
                 <td role="cell">
                   @if (value === true) {

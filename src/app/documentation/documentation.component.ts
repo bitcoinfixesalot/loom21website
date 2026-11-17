@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, ElementRef, Inject, LOCALE_ID, OnInit, signal } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 import { MarkdownComponent } from 'ngx-markdown';
 import { BREADCRUMBS, DESCRIPTIONS, LD_JSON, TITLES } from '../constants/localized-const';
 import { OgMetaService } from '../services/og-meta.service';
@@ -32,7 +33,8 @@ export class DocumentationComponent implements OnInit {
     private metaService: Meta,
     private ogMetaService: OgMetaService,
     private structuredDataService: StructuredDataService,
-    private elementRef: ElementRef
+    private elementRef: ElementRef,
+    private route: ActivatedRoute
   ) {}
 
   ngOnInit(): void {
@@ -68,6 +70,28 @@ export class DocumentationComponent implements OnInit {
     this.isLoading.set(false);
     this.hasError.set(false);
     this.extractHeadings();
+    this.scrollToFragment();
+  }
+
+  // The router's anchor scrolling runs before the markdown arrives, so links like /docs#payment-links
+  // would land at the top. Scroll once the content is in the page, and again after the screenshots
+  // above the anchor have loaded (they have no size attributes, so they push the anchor down).
+  private scrollToFragment(): void {
+    const id = this.route.snapshot.fragment;
+    if (!id) return;
+    setTimeout(() => {
+      const target = document.getElementById(id);
+      if (!target) return;
+      const scroll = () => target.scrollIntoView({ block: 'start' });
+      scroll();
+      this.activeId.set(id);
+      const pending = [...this.elementRef.nativeElement.querySelectorAll('markdown img')]
+        .filter((img: HTMLImageElement) => !img.complete && (target.compareDocumentPosition(img) & Node.DOCUMENT_POSITION_PRECEDING))
+        .map((img: HTMLImageElement) => new Promise(done => { img.addEventListener('load', done, { once: true }); img.addEventListener('error', done, { once: true }); }));
+      if (pending.length) {
+        Promise.race([Promise.all(pending), new Promise(done => setTimeout(done, 3000))]).then(scroll);
+      }
+    });
   }
 
   onMarkdownError(): void {

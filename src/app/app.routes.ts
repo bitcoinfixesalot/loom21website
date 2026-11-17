@@ -10,6 +10,7 @@ export const routes: Routes = [
     { path: 'contact', loadComponent: () => import('./contact/contact.component').then(m => m.ContactComponent) },
     { path: 'pricing', loadComponent: () => import('./pricing/pricing.component').then(m => m.PricingComponent) },
     { path: 'faq', loadComponent: () => import('./faq/faq.component').then(m => m.FaqComponent) },
+    { path: 'buy-button', loadComponent: () => import('./buy-button/buy-button.component').then(m => m.BuyButtonComponent) },
     { path: 'roadmap', loadComponent: () => import('./roadmap/roadmap.component').then(m => m.RoadmapComponent) },
     { path: '404', loadComponent: () => import('./not-found/not-found.component').then(m => m.NotFoundComponent) },
     { path: 'privacy-policy', loadComponent: () => import('./privacy/privacy.component').then(m => m.PrivacyComponent) },

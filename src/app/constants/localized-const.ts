@@ -7,6 +7,7 @@ export const TITLES = {
     faq: $localize`:FAQ title@@faqTitle:FAQ | Loom21`,
     roadmap: $localize`:Roadmap title@@roadmapTitle:Roadmap | Loom21`,
     terms: $localize`:Terms title tag@@termsPageTitle:Terms of Service | Loom21`,
+    buyButton: $localize`:Buy button title tag@@buyButtonPageTitle:Buy button: accept cards and Bitcoin on any website | Loom21`,
 }
 
 export const DESCRIPTIONS = {
@@ -18,6 +19,7 @@ export const DESCRIPTIONS = {
     faq_description: $localize`:FAQ description tag@@faqDescription:Answers to common questions about Loom21: payments, Bitcoin, pricing, price lists, inventory, custom fields, and more.`,
     roadmap_description: $localize`:Roadmap description tag@@roadmapDescription:See what's shipped, in progress, and planned for Loom21: payments, pricing, inventory, and more.`,
     terms_description: $localize`:Terms description tag@@termsDescription:The terms for using Loom21: plans and billing, Bitcoin payments, 0% transaction fees, your data and export rights.`,
+    buy_button_description: $localize`:Buy button description tag@@buyButtonDescription:Add a checkout to any website with one line of code. Take card and Bitcoin payments straight to your own accounts, with stock updated on every sale and 0% Loom21 fees.`,
 }
 
 export const LD_JSON = {
@@ -40,6 +42,7 @@ export const BREADCRUMBS = {
     contact: $localize`:Breadcrumb name@@crumbContact:Contact`,
     privacy: $localize`:Breadcrumb name@@crumbPrivacy:Privacy Policy`,
     terms: $localize`:Breadcrumb name@@crumbTerms:Terms of Service`,
+    buyButton: $localize`:Breadcrumb name@@crumbBuyButton:Buy button`,
 }
 
 export const INVENTORY_MANAGEMENT = $localize`:@@inventoryManagement:Inventory Management`;
