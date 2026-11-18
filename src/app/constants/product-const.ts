@@ -4,4 +4,4 @@ export type ApiStatus = 'live' | 'early' | 'soon';
 export const API_STATUS: ApiStatus = 'soon';
 
 /** "New: Buy button" pill above the home page H1. Set to false to remove it. */
-export const SHOW_BUY_BUTTON_ANNOUNCEMENT = true;
+export const SHOW_BUY_BUTTON_ANNOUNCEMENT = false;
