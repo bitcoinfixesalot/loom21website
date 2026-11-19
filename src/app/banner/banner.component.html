@@ -15,6 +15,31 @@
                     <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                         <a class="nav-link" routerLink="/" i18n="Home menu@@home">Home</a>
                     </li>
+                    <!-- Features: the sales channels, same as the home page "Sell anywhere" section -->
+                    <li class="nav-item dropdown" [class.active]="buyButtonActive.isActive">
+                        <button class="nav-link features-toggle" type="button" id="featuresDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span i18n="Features menu@@featuresMenu">Features</span>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="dropdown-menu features-menu" aria-labelledby="featuresDropdown">
+                            <li>
+                                <a class="dropdown-item" routerLink="/docs" fragment="payment-links"
+                                    i18n="Channel payment links title@@channelLinksTitle">Payment links</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" routerLink="/buy-button" routerLinkActive="active"
+                                    #buyButtonActive="routerLinkActive" ariaCurrentWhenActive="page"
+                                    i18n="Channel buy button title@@channelBuyButtonTitle">Buy button</a>
+                            </li>
+                            <li>
+                                <span class="dropdown-item-text features-soon">
+                                    <span i18n="Channel online store title@@channelStoreTitle">Online store</span>
+                                    <span class="badge bg-success rounded-pill" i18n="Coming soon badge@@comingSoon">Coming soon</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="nav-item" routerLinkActive="active">
                         <a class="nav-link" routerLink="/docs" i18n="Docs menu@@documentation">Documentation</a>
                     </li>

@@ -80,3 +80,51 @@
   background-color: var(--brand);
   color: #fff;
 }
+// Features dropdown: a <button> styled like the other nav links (theme colours come from .h1-nav .nav-link)
+.features-toggle {
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+
+  .fa {
+    margin-left: 4px;
+  }
+}
+
+.features-menu {
+  min-width: 220px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+
+  .dropdown-item {
+    padding: 0.5rem 1rem;
+
+    &:hover,
+    &:focus,
+    &.active {
+      background-color: var(--brand-tint);
+      color: var(--brand-dark);
+    }
+  }
+}
+
+.features-soon {
+  color: var(--text-muted);
+  white-space: nowrap;
+
+  .badge {
+    margin-left: 6px;
+    font-size: 0.7rem;
+  }
+}
+
+// Inside the open mobile menu the list sits inline under its button
+@media (max-width: 1199.98px) {
+  .features-menu {
+    border: 0;
+    box-shadow: none;
+    padding-top: 0;
+    background: transparent;
+  }
+}
