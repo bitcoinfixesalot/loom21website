@@ -35,14 +35,23 @@ export class CanonicalService {
     const isAppSubdomain = this.dom.location.hostname.includes('app.loom21.com');
     const baseDomain = isAppSubdomain ? 'https://app.loom21.com' : 'https://loom21.com';
 
-    // router.url is relative to APP_BASE_HREF (language prefix already stripped)
-    let currentPath = this.router.url;
-    currentPath = currentPath.endsWith('/') ? currentPath : `${currentPath}/`;
+    const currentPath = this.currentPath();
 
     // Construct canonical URL using LOCALE_ID to get the correct language prefix
     const canonicalUrl = url || `${baseDomain}/${this.localeId}${currentPath}`;
     link.setAttribute('href', canonicalUrl);
     this.dom.head.appendChild(link);
+  }
+
+  /**
+   * The current page path with a trailing slash and without query string or fragment.
+   * The server 301-redirects paths without a trailing slash, so canonical and hreflang
+   * URLs must always end in '/' or Google reports them as "Page with redirect".
+   * router.url is relative to APP_BASE_HREF (language prefix already stripped).
+   */
+  private currentPath(): string {
+    const path = this.router.url.split(/[?#]/)[0].replace(/^\/(en|bg)(?=\/|$)/, '') || '/';
+    return path.endsWith('/') ? path : `${path}/`;
   }
 
   setHreflangTags() {
@@ -51,8 +60,7 @@ export class CanonicalService {
     const existingLinks = this.dom.querySelectorAll('link[rel="alternate"][hreflang]');
     existingLinks.forEach((link) => link.remove());
 
-    // Get current path without language prefix
-    const currentPath = this.router.url.replace(/^\/(en|bg)/, '') || '/';
+    const currentPath = this.currentPath();
     //const isLocal = this.dom.location.hostname.includes('localhost');
     const isAppSubdomain = this.dom.location.hostname.includes('app.loom21.com');
 

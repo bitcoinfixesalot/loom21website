@@ -47,12 +47,19 @@ function run() {
 
   // Old or guessed URLs Google has crawled: /en/home → home page, and the app subdomain's
   // app's former 'en-US' prefix (app.loom21.com/en-US/...) used on this site → /en/...
+  // /en and /bg without the slash would otherwise render the home page at a second URL
+  server.get(/^\/(en|bg)$/, (req, res) => {
+    const query = req.originalUrl.includes('?') ? req.originalUrl.slice(req.originalUrl.indexOf('?')) : '';
+    res.redirect(301, `/${req.params[0]}/${query}`);
+  });
   server.get(/^\/(en|bg)\/home\/?$/, (req, res) => {
     res.redirect(301, `/${req.params[0]}/`);
   });
   server.get(/^\/en-US(\/.*)?$/i, (req, res) => {
     const query = req.originalUrl.includes('?') ? req.originalUrl.slice(req.originalUrl.indexOf('?')) : '';
-    res.redirect(301, `/en${req.params[0] || '/'}${query}`);
+    const path = req.params[0] || '/';
+    const slash = path.endsWith('/') || path.includes('.') ? '' : '/';
+    res.redirect(301, `/en${path}${slash}${query}`);
   });
 
   server.use('/bg', serverBg());
@@ -61,7 +68,9 @@ function run() {
   // Paths without a locale prefix (e.g. /pricing, /terms, as referenced in the Terms) → English page.
   server.get(/^\/(?!en(\/|$)|bg(\/|$))[^.]*$/, (req, res) => {
     const query = req.originalUrl.includes('?') ? req.originalUrl.slice(req.originalUrl.indexOf('?')) : '';
-    res.redirect(301, `/en${req.path}${query}`);
+    // Add the trailing slash here so this is one redirect, not two (server.ts would add it next)
+    const path = req.path.endsWith('/') ? req.path : `${req.path}/`;
+    res.redirect(301, `/en${path}${query}`);
   });
 
   server.listen(port, '0.0.0.0', () => {

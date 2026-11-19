@@ -11,7 +11,8 @@
     "serve:ssr:loom21website": "node dist/loom21website/proxy-server.mjs",
     "dev-bg:ssr": "ng serve --configuration bg -o",
     "dev-en:ssr": "ng serve --configuration development -o",
-    "i18n:check": "node scripts/check-i18n.js"
+    "i18n:check": "node scripts/check-i18n.js",
+    "check:seo": "node scripts/check-seo.mjs"
   },
   "private": true,
   "dependencies": {

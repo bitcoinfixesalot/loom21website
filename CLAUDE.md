@@ -63,6 +63,7 @@ scripts/
 - `npm run serve:ssr:loom21website` - Serve SSR build locally
 - `npm run dev-en:ssr` - Dev SSR server for English
 - `npm run dev-bg:ssr` - Dev SSR server for Bulgarian
+- `npm run check:seo` - Pre-deploy Search Console check (`scripts/check-seo.mjs`). Start the built site first with `PORT=4321 npm run serve:ssr:loom21website`; after a deploy run `npm run check:seo -- https://loom21.com`. It checks that every sitemap URL answers 200 with a canonical pointing to itself, that hreflang links are reciprocal and match the sitemap, that internal links and assets don't redirect or 404, that known redirects take one hop, and that unknown URLs return 404. Every page URL ends in `/`; anything without the slash gets a 301
 - `node scripts/generate-sitemap.js` - Regenerate sitemap manually
 - `node scripts/optimize-images.js` - Regenerate WebP images after replacing a source PNG (originals are kept; `loom-app-laptop-mobile.png` is also the OG image)
 
