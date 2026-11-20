@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy, Component, ElementRef, Inject, isDevMode, LOCA
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { filter } from 'rxjs';
+import { SHOW_FEATURES_MENU } from '../constants/product-const';
 import { LanguageService } from '../services/language.service';
 
 @Component({
@@ -13,6 +14,7 @@ import { LanguageService } from '../services/language.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BannerComponent {
+  readonly showFeaturesMenu = SHOW_FEATURES_MENU;
   appUrl: string;
   currentLocale: string;
   private readonly menu = viewChild<ElementRef<HTMLElement>>('menu');

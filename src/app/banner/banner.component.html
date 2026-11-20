@@ -15,7 +15,8 @@
                     <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                         <a class="nav-link" routerLink="/" i18n="Home menu@@home">Home</a>
                     </li>
-                    <!-- Features: the sales channels, same as the home page "Sell anywhere" section -->
+                    <!-- Features: the sales channels, same as the home page "Sell anywhere" section (SHOW_FEATURES_MENU in product-const.ts) -->
+                    @if (showFeaturesMenu) {
                     <li class="nav-item dropdown" [class.active]="buyButtonActive.isActive">
                         <button class="nav-link features-toggle" type="button" id="featuresDropdown"
                             data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,6 +41,7 @@
                             </li>
                         </ul>
                     </li>
+                    }
                     <li class="nav-item" routerLinkActive="active">
                         <a class="nav-link" routerLink="/docs" i18n="Docs menu@@documentation">Documentation</a>
                     </li>

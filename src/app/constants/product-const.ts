@@ -5,3 +5,6 @@ export const API_STATUS: ApiStatus = 'soon';
 
 /** "New: Buy button" pill above the home page H1. Set to false to remove it. */
 export const SHOW_BUY_BUTTON_ANNOUNCEMENT = false;
+
+/** "Features" dropdown in the header (Payment links, Buy button, Online store). Hidden for now: the home "Sell anywhere" section links to the same pages. */
+export const SHOW_FEATURES_MENU = false;

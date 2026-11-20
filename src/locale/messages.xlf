@@ -22,7 +22,7 @@
         <source>Features</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">22,23</context>
+          <context context-type="linenumber">23,24</context>
         </context-group>
         <note priority="1" from="description">Features menu</note>
       </trans-unit>
@@ -30,7 +30,7 @@
         <source>Payment links</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">28,30</context>
+          <context context-type="linenumber">29,31</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -42,7 +42,7 @@
         <source>Buy button</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">33,35</context>
+          <context context-type="linenumber">34,36</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -54,7 +54,7 @@
         <source>Online store</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">37,38</context>
+          <context context-type="linenumber">38,39</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -66,7 +66,7 @@
         <source>Coming soon</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">38,39</context>
+          <context context-type="linenumber">39,40</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
@@ -78,7 +78,7 @@
         <source>Documentation</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">44,46</context>
+          <context context-type="linenumber">46,48</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/documentation/documentation.component.html</context>
@@ -90,7 +90,7 @@
         <source>Pricing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">47,49</context>
+          <context context-type="linenumber">49,51</context>
         </context-group>
         <note priority="1" from="description">Pricing menu</note>
       </trans-unit>
@@ -98,7 +98,7 @@
         <source>FAQ</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">53</context>
         </context-group>
         <note priority="1" from="description">FAQ menu</note>
       </trans-unit>
@@ -106,7 +106,7 @@
         <source>Roadmap</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">53,55</context>
+          <context context-type="linenumber">55,57</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
@@ -118,7 +118,7 @@
         <source>Contact</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">56,58</context>
+          <context context-type="linenumber">58,60</context>
         </context-group>
         <note priority="1" from="description">contact menu</note>
       </trans-unit>
@@ -126,7 +126,7 @@
         <source>Language:</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">64,65</context>
+          <context context-type="linenumber">66,67</context>
         </context-group>
         <note priority="1" from="description">Language switcher label</note>
       </trans-unit>
@@ -134,7 +134,7 @@
         <source>Launch app</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/banner/banner.component.html</context>
-          <context context-type="linenumber">81,83</context>
+          <context context-type="linenumber">83,85</context>
         </context-group>
         <note priority="1" from="description">Launch app button</note>
       </trans-unit>
