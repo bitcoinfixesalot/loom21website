@@ -26,7 +26,7 @@ In these Terms, "Loom21", "we", "us" and "our" mean Loom21 LTD.
 - **User** means any person you allow to access your Account.
 - **Your Data** means all data you or your Users put into the Service. This includes products, inventory, orders, invoices, customers, suppliers and settings.
 - **Your Customers** means the people and businesses that buy from you, including through payment links or sale orders created in the Service.
-- **Payment Processor** means a third-party service you connect to the Service to receive payments, such as Stripe, BTCPay Server, a Lightning Address wallet (for example Glow), Speed Wallet or LNbits.
+- **Payment Processor** means a third-party service you connect to the Service to receive payments, such as Stripe, BTCPay Server, Speed Wallet, LNbits or any Lightning wallet connected through its Lightning Address (for example Glow).
 - **Plan** means the subscription tier you choose, as described on our Pricing page.
 - **Order** means a sale order or a paid payment link recorded in your Account.
 

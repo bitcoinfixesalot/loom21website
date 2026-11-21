@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   readonly showBuyButtonAnnouncement = SHOW_BUY_BUTTON_ANNOUNCEMENT;
   readonly integrationsCardText = API_STATUS === 'live'
     ? $localize`:Stat integrations desc (API live)@@statIntegrationsDescLive:Connect your ERP, CRM or custom apps through the Loom21 API.`
-    : $localize`:Stat integrations desc (API soon)@@statIntegrationsDescSoon:Stripe, BTCPay Server, Glow, Speed Wallet and LNbits today; open API coming soon.`;
+    : $localize`:Stat integrations desc (API soon)@@statIntegrationsDescSoon:Stripe, BTCPay Server, Speed Wallet, LNbits and any Lightning Address wallet today; open API coming soon.`;
 
   constructor(@Inject(LOCALE_ID) protected localeId: string, private titleService: Title, private metaService: Meta, private ogMetaService: OgMetaService, private structuredDataService: StructuredDataService, private sanitizer: DomSanitizer) {
     this.appUrl = 'https://app.loom21.com/';

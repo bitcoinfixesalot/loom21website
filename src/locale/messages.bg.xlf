@@ -2032,8 +2032,8 @@
         <note priority="1" from="description">FAQ question 2.1</note>
       </trans-unit>
       <trans-unit id="faqA2_1" datatype="html">
-        <source>Stripe for credit and debit cards, and Bitcoin through BTCPay Server, Glow, Speed Wallet, and LNbits, covering both Lightning and on-chain Bitcoin.</source>
-        <target>Stripe за кредитни и дебитни карти, и Биткойн чрез BTCPay Server, Glow, Speed Wallet и LNbits, покриващи както Lightning, така и он-чейн Биткойн.</target>
+        <source>Stripe for credit and debit cards. For Bitcoin: BTCPay Server, Speed Wallet and LNbits, plus any Lightning wallet or service that gives you a Lightning Address (LNURL-pay), such as Glow. Together these cover both Lightning and on-chain Bitcoin.</source>
+        <target>Stripe за кредитни и дебитни карти. За Биткойн: BTCPay Server, Speed Wallet и LNbits, както и всеки Lightning портфейл или услуга, която ви дава Lightning адрес (LNURL-pay), например Glow. Заедно те покриват както Lightning, така и он-чейн Биткойн.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2068,8 +2068,8 @@
         <note priority="1" from="description">FAQ question 2.3</note>
       </trans-unit>
       <trans-unit id="faqA2_3" datatype="html">
-        <source>It depends on the method. BTCPay Server, Speed Wallet, and LNbits connect using an API key or URL you enter in Settings. Lightning Wallet (Glow) works differently: just enter any LNURL-compatible Lightning Address (Glow&apos;s own address works out of the box), then use the Test Connection button to verify it.</source>
-        <target>Зависи от метода. BTCPay Server, Speed Wallet и LNbits се свързват чрез API ключ или URL адрес, които въвеждате в Настройки. Lightning Wallet (Glow) работи по различен начин: просто въведете произволен LNURL-съвместим Lightning адрес (собственият адрес на Glow работи директно), след което използвайте бутона Test Connection, за да го проверите.</target>
+        <source>It depends on the method. BTCPay Server, Speed Wallet, and LNbits connect using an API key or URL you enter in Settings. Any other Lightning wallet works through its Lightning Address (LNURL): just enter the address, for example your Glow address, then use the Test Connection button to verify it.</source>
+        <target>Зависи от метода. BTCPay Server, Speed Wallet и LNbits се свързват чрез API ключ или URL адрес, които въвеждате в Настройки. Всеки друг Lightning портфейл работи чрез своя Lightning адрес (LNURL): просто въведете адреса, например вашия адрес в Glow, след което използвайте бутона Test Connection, за да го проверите.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2086,8 +2086,8 @@
         <note priority="1" from="description">FAQ question 2.4</note>
       </trans-unit>
       <trans-unit id="faqA2_4" datatype="html">
-        <source>For BTCPay Server, Speed Wallet, and LNbits, confirmation is real-time: the order status updates automatically the moment the payment settles. For Lightning Wallet (Glow) and other Lightning Address wallets, real-time confirmation depends on your wallet provider supporting it; use the Test Connection button in Settings to check your specific address.</source>
-        <target>За BTCPay Server, Speed Wallet и LNbits потвърждението е в реално време: статусът на поръчката се актуализира автоматично в момента на уреждане на плащането. За Lightning Wallet (Glow) и други портфейли с Lightning адрес, потвърждението в реално време зависи от това дали доставчикът на портфейла го поддържа; използвайте бутона Test Connection в Настройки, за да проверите своя конкретен адрес.</target>
+        <source>For BTCPay Server, Speed Wallet, and LNbits, confirmation is real-time: the order status updates automatically the moment the payment settles. For Lightning Address wallets such as Glow, real-time confirmation depends on your wallet provider supporting it; use the Test Connection button in Settings to check your specific address.</source>
+        <target>За BTCPay Server, Speed Wallet и LNbits потвърждението е в реално време: статусът на поръчката се актуализира автоматично в момента на уреждане на плащането. За портфейли с Lightning адрес, като Glow, потвърждението в реално време зависи от това дали доставчикът на портфейла го поддържа; използвайте бутона Test Connection в Настройки, за да проверите своя конкретен адрес.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2509,8 +2509,8 @@
         <note priority="1" from="description">Roadmap shipped item 1 title</note>
       </trans-unit>
       <trans-unit id="roadmapShipped1Desc" datatype="html">
-        <source>Accept payments via Stripe, BTCPay Server, Glow, Speed Wallet, and LNbits.</source>
-        <target>Приемайте плащания чрез Stripe, BTCPay Server, Glow, Speed Wallet и LNbits.</target>
+        <source>Accept payments via Stripe, BTCPay Server, Speed Wallet, LNbits, and any Lightning Address wallet (e.g. Glow).</source>
+        <target>Приемайте плащания чрез Stripe, BTCPay Server, Speed Wallet, LNbits и всеки портфейл с Lightning адрес (напр. Glow).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/roadmap-const.ts</context>
           <context context-type="linenumber">1</context>
@@ -2755,8 +2755,8 @@
         <note priority="1" from="description">Integrations title</note>
       </trans-unit>
       <trans-unit id="integrationsDesc" datatype="html">
-        <source>Connect Stripe for cards and BTCPay Server, Glow, Speed Wallet or LNbits for Bitcoin. Move data in and out with Excel, CSV and JSON.</source>
-        <target>Свържете Stripe за карти и BTCPay Server, Glow, Speed Wallet или LNbits за Биткойн. Пренасяйте данни с Excel, CSV и JSON.</target>
+        <source>Connect Stripe for cards, and BTCPay Server, Speed Wallet, LNbits or any Lightning wallet with a Lightning Address (such as Glow) for Bitcoin. Move data in and out with Excel, CSV and JSON.</source>
+        <target>Свържете Stripe за карти и BTCPay Server, Speed Wallet, LNbits или всеки Lightning портфейл с Lightning адрес (например Glow) за Биткойн. Пренасяйте данни с Excel, CSV и JSON.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">94,96</context>
@@ -2771,6 +2771,15 @@
           <context context-type="linenumber">103,108</context>
         </context-group>
         <note priority="1" from="description">Open API coming soon</note>
+      </trans-unit>
+      <trans-unit id="integrationsAnyWallet" datatype="html">
+        <source>Plus any Lightning wallet with a Lightning Address (LNURL).</source>
+        <target>Както и всеки Lightning портфейл с Lightning адрес (LNURL).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">198,200</context>
+        </context-group>
+        <note priority="1" from="description">Integrations any Lightning wallet note</note>
       </trans-unit>
       <trans-unit id="statIntegrations" datatype="html">
         <source>Own your integrations</source>
@@ -2791,8 +2800,8 @@
         <note priority="1" from="description">Stat integrations desc (API live)</note>
       </trans-unit>
       <trans-unit id="statIntegrationsDescSoon" datatype="html">
-        <source>Stripe, BTCPay Server, Glow, Speed Wallet and LNbits today; open API coming soon.</source>
-        <target>Stripe, BTCPay Server, Glow, Speed Wallet и LNbits още днес; отворен API скоро.</target>
+        <source>Stripe, BTCPay Server, Speed Wallet, LNbits and any Lightning Address wallet today; open API coming soon.</source>
+        <target>Stripe, BTCPay Server, Speed Wallet, LNbits и всеки портфейл с Lightning адрес още днес; отворен API скоро.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.ts</context>
           <context context-type="linenumber">49</context>
@@ -2881,8 +2890,8 @@
         <note priority="1" from="description">FAQ question 2.0</note>
       </trans-unit>
       <trans-unit id="faqA2_0" datatype="html">
-        <source>No. Loom21 never takes custody of your funds. Bitcoin payments go straight to the wallet or server you connect: your BTCPay Server, a Lightning Address such as Glow, your Speed Wallet account or your LNbits wallet. Card payments go to your own Stripe account. Loom21 creates the invoice and tracks its status.</source>
-        <target>Не. Loom21 никога не съхранява вашите средства. Плащанията с Биткойн отиват директно в портфейла или сървъра, който свържете: вашия BTCPay Server, Lightning адрес като Glow, акаунт в Speed Wallet или LNbits портфейл. Плащанията с карти отиват във вашия собствен Stripe акаунт. Loom21 създава фактурата и следи нейния статус.</target>
+        <source>No. Loom21 never takes custody of your funds. Bitcoin payments go straight to the wallet or server you connect: your BTCPay Server, your Speed Wallet account, your LNbits wallet or any Lightning Address, such as Glow. Card payments go to your own Stripe account. Loom21 creates the invoice and tracks its status.</source>
+        <target>Не. Loom21 никога не съхранява вашите средства. Плащанията с Биткойн отиват директно в портфейла или сървъра, който свържете: вашия BTCPay Server, акаунт в Speed Wallet, LNbits портфейл или произволен Lightning адрес, например Glow. Плащанията с карти отиват във вашия собствен Stripe акаунт. Loom21 създава фактурата и следи нейния статус.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/faq-const.ts</context>
           <context context-type="linenumber">20</context>
@@ -3756,8 +3765,8 @@
         <note priority="1" from="description">Subprocessor table location</note>
       </trans-unit>
       <trans-unit id="section5NotSubprocessors" datatype="html">
-        <source>Payment processors that you connect to receive payments from your own customers, such as Stripe (your own account), BTCPay Server, Glow or other Lightning Address wallets, Speed Wallet and LNbits, are not our sub-processors. You choose them, your customers pay them directly, and their own terms and privacy policies apply. Loom21 never holds your funds.</source>
-        <target>Платежните процесори, които свързвате, за да получавате плащания от вашите клиенти, като Stripe (вашият собствен акаунт), BTCPay Server, Glow или други Lightning Address портфейли, Speed Wallet и LNbits, не са наши подизпълнители. Вие ги избирате, клиентите ви плащат директно на тях и важат техните собствени условия и политики за поверителност. Loom21 никога не държи вашите средства.</target>
+        <source>Payment processors that you connect to receive payments from your own customers, such as Stripe (your own account), BTCPay Server, Speed Wallet, LNbits and Lightning Address wallets such as Glow, are not our sub-processors. You choose them, your customers pay them directly, and their own terms and privacy policies apply. Loom21 never holds your funds.</source>
+        <target>Платежните процесори, които свързвате, за да получавате плащания от вашите клиенти, като Stripe (вашият собствен акаунт), BTCPay Server, Speed Wallet, LNbits и портфейли с Lightning адрес като Glow, не са наши подизпълнители. Вие ги избирате, клиентите ви плащат директно на тях и важат техните собствени условия и политики за поверителност. Loom21 никога не държи вашите средства.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/constants/privacy-policy-const.ts</context>
           <context context-type="linenumber">63</context>

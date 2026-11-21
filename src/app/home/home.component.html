@@ -187,7 +187,7 @@
 <div class="processors-strip">
   <section class="container text-center">
     <h2 class="title font-bold" i18n="Integrations title@@integrationsTitle">Works with the tools you already use</h2>
-    <p class="integrations-desc" i18n="Integrations description@@integrationsDesc">Connect Stripe for cards and BTCPay Server, Glow, Speed Wallet or LNbits for Bitcoin. Move data in and out with Excel, CSV and JSON.</p>
+    <p class="integrations-desc" i18n="Integrations description@@integrationsDesc">Connect Stripe for cards, and BTCPay Server, Speed Wallet, LNbits or any Lightning wallet with a Lightning Address (such as Glow) for Bitcoin. Move data in and out with Excel, CSV and JSON.</p>
     <div class="processor-logos">
       <img src="assets/images/logos/stripe-logo.webp" alt="Stripe" width="120" height="48" loading="lazy" />
       <img src="assets/images/logos/btcpay-logo.webp" alt="BTCPay Server" width="120" height="48" loading="lazy" />
@@ -195,6 +195,7 @@
       <img src="assets/images/logos/lnbits-logo.webp" alt="LNbits" width="120" height="48" loading="lazy" />
       <img src="assets/images/logos/glow-wallet-logo.webp" alt="Glow" width="120" height="48" loading="lazy" />
     </div>
+    <p class="integrations-api small" i18n="Integrations any Lightning wallet note@@integrationsAnyWallet">Plus any Lightning wallet with a Lightning Address (LNURL).</p>
     @if (apiStatus !== 'live') {
       <p class="integrations-api small"><a routerLink="/contact" i18n="Open API coming soon@@integrationsApiSoon">Open API coming soon. Tell us what you'd connect.</a></p>
     }
